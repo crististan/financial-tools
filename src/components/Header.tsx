@@ -11,7 +11,7 @@ import {
   } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import Container from "./Container";
-import { NavMenu } from "./NavMenu";
+import { Nav } from "./nav/Nav";
 
 export default function Header() {
     return (
@@ -21,7 +21,7 @@ export default function Header() {
                     <div>
                         LOGO
                     </div>
-                    <NavMenu />
+                    <Nav />
                 </div>
             </Container>
         </header>
