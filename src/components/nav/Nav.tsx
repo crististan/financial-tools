@@ -80,9 +80,9 @@ export function Nav() {
     <NavigationMenu viewport={false}>
       <NavigationMenuList>
         <NavItem type="link" url="/" label="Home" dropdownItems={[]} />
-        <NavItem type="gridList" url="" label="Tools" dropdownItems={tools} />
-        <NavItem type="link" url="/docs" label="Docs" dropdownItems={[]} />
-        <NavItem type="list" url="" label="Projects" dropdownItems={projects} />
+        <NavItem type="list" url="" label="Tools" dropdownItems={tools} />
+        {/* <NavItem type="link" url="/docs" label="Docs" dropdownItems={[]} />
+        <NavItem type="list" url="" label="Projects" dropdownItems={projects} /> */}
         <NavItem type="simpleList" url="" label="More" dropdownItems={samples} />
         <NavItem type="link" url="/contact" label="Contact" dropdownItems={[]} />
       </NavigationMenuList>
