@@ -46,6 +46,7 @@
 :root {
   /* custom colors */
   --clr-neutral-0: #FCFBFB;
+  --clr-neutral-100: #ececec;
   --clr-neutral-1000: #0F1216;
 
   --clr-green-500: #09E789;
