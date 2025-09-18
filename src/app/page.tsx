@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero from "@/components/Hero";
+import Hero from "@/components/hero";
 
 export default function Home() {
   return (
@@ -9,9 +9,6 @@ export default function Home() {
         primaryCta={{ text: "Discover", href: "/tools" }}
         secondaryCta={{ text: "Monthly Budget", href: "/monthly-budget" }}
       />
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        
-      </footer>
     </>
   );
 }

@@ -10,8 +10,8 @@ import {
     navigationMenuTriggerStyle
   } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-import Container from "./Container";
-import { Nav } from "./nav/Nav";
+import Container from "./container";
+import { Nav } from "./nav/nav";
 
 export default function Header() {
     return (

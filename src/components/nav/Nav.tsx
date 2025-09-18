@@ -2,7 +2,7 @@ import {
   NavigationMenu,
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
-import NavItem from "./NavItem";
+import NavItem from "./nav-item";
 
 const tools: { title: string; href: string; description: string }[] = [
   {

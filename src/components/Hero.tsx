@@ -1,5 +1,6 @@
-import Container from "./Container";
+import Container from "./container";
 import Image from "next/image";
+import Button from "./ui/button";
 
 type propsTypes = {
     headline: string,
@@ -15,13 +16,10 @@ export default function Hero({ headline, primaryCta, secondaryCta }: propsTypes)
                     <h1 className="text-4xl md:text-7xl font-medium text-center mb-8 md:mb-10">{headline}</h1>
                     <div className="flex justify-center gap-4">
                         {primaryCta && (
-                            <a href={primaryCta.href} className="px-6 py-3 bg-[var(--clr-green-500)] border-1 border-[var(--clr-green-500)] text-[var(--clr-neutral-1000)] rounded-full hover:bg-[var(--clr-neutral-0)] hover:border-[var(--clr-neutral-0)] transition">
-                                {primaryCta.text}
-                            </a>
+                            <Button link={{ href: primaryCta.href }} style="primary" text={primaryCta.text} />
                         )}
-                        {secondaryCta && ( <a href={secondaryCta.href} className="px-6 py-3 bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)] border-1 border-[var(--clr-neutral-0)] rounded-full hover:bg-[var(--clr-neutral-0)] hover:text-[var(--clr-neutral-1000)] transition">
-                                {secondaryCta.text}
-                            </a>
+                        {secondaryCta && ( 
+                            <Button link={{ href: secondaryCta.href }} style="secondary" text={secondaryCta.text} />
                         )}
                     </div>
                 </div>
