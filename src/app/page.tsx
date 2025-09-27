@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Hero from "@/components/hero";
 import Container from "@/components/container";
+import CardsContainer from "@/components/cards-container";
 import Card from "@/components/ui/card";
 
 export default function Home() {
@@ -27,27 +28,29 @@ export default function Home() {
 
       <section>
         <Container>
-          <Card 
-            icon="/icons/currency-converter-icon.svg" 
-            slug="currency-converter" 
-            title="Currency Converter" 
-            shortDescription="Convert currencies quickly and reliably with up-to-date exchange rates." 
-            cta={{ text: "Learn More", href: "#" }} 
-          />
-          <Card 
-            icon="/icons/loan-repayment-calculator-icon.svg" 
-            slug="loan-repayment-calculator" 
-            title="Loan Repayment Calculator" 
-            shortDescription="Estimate your monthly loan payments and interest over time with ease." 
-            cta={{ text: "Learn More", href: "#" }} 
-          />
-          <Card 
-            icon="/icons/monthly-budget-tracker-icon.svg" 
-            slug="monthly-budget-tracker" 
-            title="Monthly Budget Tracker" 
-            shortDescription="Create, manage, and track your monthly budget effortlessly." 
-            cta={{ text: "Learn More", href: "/read-more" }} 
-          />
+          <CardsContainer cols="3">
+            <Card 
+              icon="/icons/currency-converter-icon.svg" 
+              slug="currency-converter" 
+              title="Currency Converter" 
+              shortDescription="Convert currencies quickly and reliably with up-to-date exchange rates." 
+              cta={{ text: "Learn More", href: "#" }} 
+            />
+            <Card 
+              icon="/icons/loan-repayment-calculator-icon.svg" 
+              slug="loan-repayment-calculator" 
+              title="Loan Repayment Calculator" 
+              shortDescription="Estimate your monthly loan payments and interest over time with ease." 
+              cta={{ text: "Learn More", href: "#" }} 
+            />
+            <Card 
+              icon="/icons/monthly-budget-tracker-icon.svg" 
+              slug="monthly-budget-tracker" 
+              title="Monthly Budget Tracker" 
+              shortDescription="Create, manage, and track your monthly budget effortlessly." 
+              cta={{ text: "Learn More", href: "#" }} 
+            />
+          </CardsContainer>
         </Container>
       </section>
     </>

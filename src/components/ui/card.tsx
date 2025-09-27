@@ -11,7 +11,7 @@ type Props = {
 
 export default function Card({ icon, slug, title, shortDescription, cta }: Props) {
     return (
-        <div className="w-full bg-[var(--clr-neutral-900)] text-[var(--clr-neutral-0)] rounded-4xl py-12 px-10 flex flex-col gap-5">
+        <div className="w-full bg-[var(--clr-neutral-900)] text-[var(--clr-neutral-0)] rounded-4xl py-12 px-10 flex flex-col gap-5 border-1 border-[var(--clr-neutral-900)] transition-discrete duration-300 ease-in-out hover:border-[var(--clr-green-500)]">
             <Image
                 src={icon}
                 width={64}
@@ -19,7 +19,7 @@ export default function Card({ icon, slug, title, shortDescription, cta }: Props
                 className="w-[64px] h-auto"
                 alt={title}
             />
-            <h2 className="text-[24px] md:text-[32px] font-medium">{title}</h2>
+            <h2 className="text-base md:text-[24px] lg:text-[32px] font-medium leading-[1.2]">{title}</h2>
             <p className="text-base">{shortDescription}</p>
             <Button 
                 link={{
