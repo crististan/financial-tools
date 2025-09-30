@@ -1,4 +1,5 @@
 import Container from "./container";
+import Section from "./section";
 import Image from "next/image";
 import Button from "./ui/button";
 
@@ -10,7 +11,7 @@ type propsTypes = {
 
 export default function Hero({ headline, primaryCta, secondaryCta }: propsTypes) {
     return (
-        <section className="py-[80px] md:py-[160px]">
+        <Section className="py-[80px] md:py-[160px]">
             <Container>
                 <div className="w-full max-w-[800px] mx-auto">
                     <h1 className="text-4xl md:text-7xl font-medium text-center mb-8 md:mb-10">{headline}</h1>
@@ -31,6 +32,6 @@ export default function Hero({ headline, primaryCta, secondaryCta }: propsTypes)
                 className="w-full h-auto mt-[64px] md:mt-[100px]"
                 alt="Hero image"
             />
-        </section>
+        </Section>
     )
 }

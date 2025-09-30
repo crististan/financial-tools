@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Hero from "@/components/hero";
 import Container from "@/components/container";
+import Section from "@/components/section";
 import CardsContainer from "@/components/cards-container";
 import Card from "@/components/ui/card";
 
@@ -13,7 +14,7 @@ export default function Home() {
         secondaryCta={{ text: "Monthly Budget", href: "/monthly-budget" }}
       />
 
-      <section>
+      <Section>
         <Container>
           <h2 className="text-[20px] md:text-[32px] mb-[20px] md:mb-[40px] leading-none">Our platform offers a wide range of free financial tools designed to help individuals manage their money effectively. From budgeting and saving to investment planning, our resources provide clear, practical insights to support informed financial decisions.</h2>
           <Image
@@ -24,9 +25,9 @@ export default function Home() {
               alt="Discover tools"
           />
         </Container>
-      </section>
+      </Section>
 
-      <section>
+      <Section>
         <Container>
           <CardsContainer cols="3">
             <Card 
@@ -52,7 +53,7 @@ export default function Home() {
             />
           </CardsContainer>
         </Container>
-      </section>
+      </Section>
     </>
   );
 }
