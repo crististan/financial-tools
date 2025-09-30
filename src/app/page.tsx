@@ -4,6 +4,7 @@ import Container from "@/components/container";
 import Section from "@/components/section";
 import CardsContainer from "@/components/cards-container";
 import Card from "@/components/ui/card";
+import { CONFIG } from "@/lib/config";
 
 export default function Home() {
   return (
@@ -30,27 +31,15 @@ export default function Home() {
       <Section>
         <Container>
           <CardsContainer cols="3">
-            <Card 
-              icon="/icons/currency-converter-icon.svg" 
-              slug="currency-converter" 
-              title="Currency Converter" 
-              shortDescription="Convert currencies quickly and reliably with up-to-date exchange rates." 
-              cta={{ text: "Learn More", href: "#" }} 
-            />
-            <Card 
-              icon="/icons/loan-repayment-calculator-icon.svg" 
-              slug="loan-repayment-calculator" 
-              title="Loan Repayment Calculator" 
-              shortDescription="Estimate your monthly loan payments and interest over time with ease." 
-              cta={{ text: "Learn More", href: "#" }} 
-            />
-            <Card 
-              icon="/icons/monthly-budget-tracker-icon.svg" 
-              slug="monthly-budget-tracker" 
-              title="Monthly Budget Tracker" 
-              shortDescription="Create, manage, and track your monthly budget effortlessly." 
-              cta={{ text: "Learn More", href: "#" }} 
-            />
+            {CONFIG.tools.map((tool) => (
+              <Card 
+                icon={tool.iconPath} 
+                slug={tool.slug} 
+                title={tool.title} 
+                shortDescription={tool.shortDescription}
+                cta={tool.cta} 
+              />
+            ))}
           </CardsContainer>
         </Container>
       </Section>
