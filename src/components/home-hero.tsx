@@ -16,7 +16,7 @@ type propsTypes = {
     };
 }
 
-export default function Hero({ headline, description, primaryCta, secondaryCta }: propsTypes) {
+export default function HomeHero({ headline, description, primaryCta, secondaryCta }: propsTypes) {
     return (
         <Section className="py-[80px] md:py-[160px]">
             <Container>

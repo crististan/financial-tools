@@ -1,5 +1,5 @@
 import Image from "next/image";
-import Hero from "@/components/hero";
+import HomeHero from "@/components/home-hero";
 import Separator from "@/components/separator";
 import Container from "@/components/container";
 import Section from "@/components/section";
@@ -10,7 +10,7 @@ import { CONFIG } from "@/lib/config";
 export default function Home() {
   return (
     <>
-      <Hero 
+      <HomeHero 
         headline="Free financial tools for everyone" 
         primaryCta={{ text: "Discover", href: "/tools" }}
         secondaryCta={{ text: "Monthly Budget", href: "/monthly-budget" }}
