@@ -2,11 +2,14 @@ import Image from "next/image";
 import Button from "./button";
 
 type Props = {
-    icon: string,
-    slug: string,
-    title: string,
-    shortDescription: string,
-    cta: { text: string, href: string }
+    icon: string;
+    slug: string;
+    title: string;
+    shortDescription: string;
+    cta: { 
+        text: string; 
+        href: string; 
+    }
 };
 
 export default function Card({ icon, slug, title, shortDescription, cta }: Props) {

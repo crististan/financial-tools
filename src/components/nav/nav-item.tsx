@@ -10,9 +10,14 @@ import {
 import Link from "next/link";
 
 type DropdownItem = {
+    slug: string;
     title: string;
-    href: string;
-    description?: string;
+    iconPath?: string;
+    shortDescription?: string;
+    cta?: {
+        href: string;
+        text: string;
+    }
 };
   
 
@@ -65,9 +70,9 @@ export default function NavItem({ type, url, label, dropdownItems }: NavItemProp
                         <ListItem
                             key={item.title}
                             title={item.title}
-                            href={item.href}
+                            href={item.slug}
                         >
-                            {item.description}
+                            {item.shortDescription}
                         </ListItem>
                         ))}
                     </ul>
@@ -84,10 +89,10 @@ export default function NavItem({ type, url, label, dropdownItems }: NavItemProp
                             <li>
                                 {dropdownItems.map((item, index) => (
                                     <NavigationMenuLink key={index}  asChild>
-                                    <Link href={item.href}>
+                                    <Link href={item.slug}>
                                         <div className="font-medium">{item.title}</div>
                                         <div className="text-muted-foreground">
-                                            {item.description}
+                                            {item.shortDescription}
                                         </div>
                                     </Link>
                                     </NavigationMenuLink>
@@ -107,7 +112,7 @@ export default function NavItem({ type, url, label, dropdownItems }: NavItemProp
                             <li>
                                 {dropdownItems.map((item, index) => (
                                     <NavigationMenuLink key={index} asChild>
-                                        <Link href={item.href}>{item.title}</Link>
+                                        <Link href={item.slug}>{item.title}</Link>
                                     </NavigationMenuLink>
                                 ))}
                             </li>

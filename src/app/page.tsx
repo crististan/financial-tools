@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Hero from "@/components/hero";
+import Separator from "@/components/separator";
 import Container from "@/components/container";
 import Section from "@/components/section";
 import CardsContainer from "@/components/cards-container";
@@ -14,6 +15,8 @@ export default function Home() {
         primaryCta={{ text: "Discover", href: "/tools" }}
         secondaryCta={{ text: "Monthly Budget", href: "/monthly-budget" }}
       />
+
+      <Separator />
 
       <Section>
         <Container>

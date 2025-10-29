@@ -1,8 +1,8 @@
 import type { ReactNode } from "react";
 
 type Props = {
-    cols: "1" | "2" | "3" | "4",
-    children: ReactNode
+    cols: "1" | "2" | "3" | "4";
+    children: ReactNode;
 }
 
 export default function CardsContainer({ cols, children }: Props) {

@@ -4,17 +4,25 @@ import Image from "next/image";
 import Button from "./ui/button";
 
 type propsTypes = {
-    headline: string,
-    primaryCta?: { text: string, href: string },
-    secondaryCta?: { text: string, href: string },
+    headline: string;
+    description?: string;
+    primaryCta?: { 
+        text: string; 
+        href: string;
+    };
+    secondaryCta?: { 
+        text: string; 
+        href: string; 
+    };
 }
 
-export default function Hero({ headline, primaryCta, secondaryCta }: propsTypes) {
+export default function Hero({ headline, description, primaryCta, secondaryCta }: propsTypes) {
     return (
         <Section className="py-[80px] md:py-[160px]">
             <Container>
                 <div className="w-full max-w-[800px] mx-auto">
                     <h1 className="text-4xl md:text-7xl font-medium text-center mb-8 md:mb-10">{headline}</h1>
+                    <p className="w-full max-w-[480px] my-8 mx-auto text-center">{description}</p>
                     <div className="flex justify-center gap-4">
                         {primaryCta && (
                             <Button link={{ href: primaryCta.href }} style="primary" text={primaryCta.text} />
@@ -25,13 +33,6 @@ export default function Hero({ headline, primaryCta, secondaryCta }: propsTypes)
                     </div>
                 </div>
             </Container>
-            <Image
-                src="/hero-image.png"
-                width={1200}
-                height={800}
-                className="w-full h-auto mt-[64px] md:mt-[100px]"
-                alt="Hero image"
-            />
         </Section>
     )
 }

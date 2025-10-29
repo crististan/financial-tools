@@ -2,15 +2,15 @@ import Link from "next/link";
 
 type propsTypes = {
     link?: {
-        href: string,
-        isExternal?: boolean
+        href: string;
+        isExternal?: boolean;
     },
     button?: {
-        type: "button" | "submit" | "reset" | undefined,
-        onClick?: () => void
+        type: "button" | "submit" | "reset" | undefined;
+        onClick?: () => void;
     },
-    style: string,
-    text: string
+    style: string;
+    text: string;
 }
 
 export default function Button({ link, button, style, text }: propsTypes) {
