@@ -35,12 +35,13 @@ export default function Home() {
         <Container>
           <CardsContainer cols="3">
             {CONFIG.tools.map((tool) => (
-              <Card 
-                icon={tool.iconPath} 
-                slug={tool.slug} 
-                title={tool.title} 
+              <Card
+                key={tool.slug}
+                icon={tool.iconPath}
+                slug={tool.slug}
+                title={tool.title}
                 shortDescription={tool.shortDescription}
-                cta={tool.cta} 
+                cta={tool.cta}
               />
             ))}
           </CardsContainer>
