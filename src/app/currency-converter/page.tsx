@@ -26,6 +26,8 @@ export default function CurrencyConverter() {
     const [to, setTo] = useState(currencies[1].code);
     const [result, setResult] = useState(0);
 
+    console.log('render');
+
     function changeAmount(e: ChangeEvent<HTMLInputElement>) {
         setAmount(parseFloat(e.target.value));
     }
@@ -71,7 +73,7 @@ export default function CurrencyConverter() {
                             <div className="my-1 bg-[var(--clr-neutral-800)] relative">
                                 <button 
                                     type="button"
-                                    className="w-10 h-10 rounded-[50%] bg-[var(--clr-green-500)] grid place-items-center absolute top-3/6 left-2/4 -translate-1/2 rotate-0 hover:rotate-180 hover:cursor-pointer transition-all duration-500"
+                                    className="w-10 h-10 rounded-[50%] bg-[var(--clr-green-500)] grid place-items-center absolute top-3/6 left-2/4 -translate-1/2 rotate-0 hover:rotate-180 hover:cursor-pointer transition-all duration-500 border-4 border-[var(--clr-neutral-1000)]"
                                     onClick={switchCurrencies}
                                 >
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--clr-neutral-1000)" className="bi bi-arrow-repeat" viewBox="0 0 16 16">
