@@ -21,6 +21,16 @@ export const CONFIG = {
             }
         },
         {
+            slug: "unit-converter",
+            title: "Meter Converter",
+            iconPath: "/icons/unit-converter-icon.svg",
+            shortDescription: "Convert meters to miles, feet, yards, nautical miles, and more instantly.",
+            cta: {
+                href: "/unit-converter",
+                text: "Learn more"
+            }
+        },
+        {
             slug: "monthly-budget-tracker",
             title: "Monthly Budget Tracker",
             iconPath: "/icons/monthly-budget-tracker-icon.svg",
