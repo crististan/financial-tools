@@ -40,5 +40,7 @@ yarn-error.log*
 *.tsbuildinfo
 next-env.d.ts
 
-# project docs (local only)
-FEATURES.md
+.claude/
+
+# project instructions (local only)
+CLAUDE.md

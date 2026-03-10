@@ -39,6 +39,18 @@ export default function CurrencyConverterLayout({
         },
     };
 
+    const howToSchema = {
+        "@context": "https://schema.org",
+        "@type": "HowTo",
+        name: dictionary.howItWorks.sectionTitle,
+        step: dictionary.howItWorks.steps.map((step, index) => ({
+            "@type": "HowToStep",
+            position: index + 1,
+            name: step.title,
+            text: step.description,
+        })),
+    };
+
     return (
         <>
             <script
@@ -48,6 +60,10 @@ export default function CurrencyConverterLayout({
             <script
                 type="application/ld+json"
                 dangerouslySetInnerHTML={{ __html: JSON.stringify(appSchema) }}
+            />
+            <script
+                type="application/ld+json"
+                dangerouslySetInnerHTML={{ __html: JSON.stringify(howToSchema) }}
             />
             {children}
         </>

@@ -22,24 +22,27 @@ export default function ExchangeRatesTable({ rates, pairs, headers, title, descr
                 <table className="w-full text-left">
                     <thead>
                         <tr className="bg-[var(--clr-neutral-900)]">
-                            <th className="px-4 py-3 text-sm font-medium text-[var(--clr-neutral-100)]">{headers.pair}</th>
-                            <th className="px-4 py-3 text-sm font-medium text-[var(--clr-neutral-100)]">{headers.rate}</th>
-                            <th className="px-4 py-3 text-sm font-medium text-[var(--clr-neutral-100)]">{headers.inverseRate}</th>
+                            <th className="px-5 py-4 text-sm font-medium text-[var(--clr-green-500)]">{headers.pair}</th>
+                            <th className="px-5 py-4 text-sm font-medium text-[var(--clr-green-500)]">{headers.rate}</th>
+                            <th className="px-5 py-4 text-sm font-medium text-[var(--clr-green-500)]">{headers.inverseRate}</th>
                         </tr>
                     </thead>
                     <tbody>
-                        {pairs.map((pair) => {
+                        {pairs.map((pair, index) => {
                             const rate = getRate(pair.from, pair.to, rates);
                             const inverse = getRate(pair.to, pair.from, rates);
                             return (
-                                <tr key={`${pair.from}-${pair.to}`} className="border-b border-[var(--clr-neutral-900)] last:border-b-0">
-                                    <td className="px-4 py-3 text-sm">
+                                <tr
+                                    key={`${pair.from}-${pair.to}`}
+                                    className={`border-b border-[var(--clr-neutral-900)] last:border-b-0 transition-colors duration-200 hover:bg-[var(--clr-neutral-900)] ${index % 2 === 1 ? 'bg-[var(--clr-neutral-900)]/30' : ''}`}
+                                >
+                                    <td className="px-5 py-3.5 text-sm">
                                         <span className="text-[var(--clr-green-500)] font-medium">{pair.from}</span>
                                         <span className="text-[var(--clr-neutral-100)]"> / </span>
                                         <span className="font-medium">{pair.to}</span>
                                     </td>
-                                    <td className="px-4 py-3 text-sm">{rate.toFixed(4)}</td>
-                                    <td className="px-4 py-3 text-sm">{inverse.toFixed(4)}</td>
+                                    <td className="px-5 py-3.5 text-sm font-mono">{rate.toFixed(4)}</td>
+                                    <td className="px-5 py-3.5 text-sm font-mono">{inverse.toFixed(4)}</td>
                                 </tr>
                             );
                         })}

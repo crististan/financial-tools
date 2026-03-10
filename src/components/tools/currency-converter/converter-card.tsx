@@ -13,6 +13,7 @@ type ConverterCardProps = {
         amountPlaceholder: string;
         switchButtonAriaLabel: string;
         rateDisplay: string;
+        lastUpdated: string;
     };
 };
 
@@ -41,6 +42,9 @@ export default function ConverterCard({ currencies, rates, labels }: ConverterCa
         .replace('{rate}', currentRate.toFixed(4))
         .replace('{to}', toCurrency);
 
+    const lastUpdatedText = labels.lastUpdated
+        .replace('{date}', new Date().toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' }));
+
     function handleAmountChange(e: ChangeEvent<HTMLInputElement>) {
         const parsed = parseFloat(e.target.value);
         setAmount(isNaN(parsed) ? 0 : parsed);
@@ -60,7 +64,7 @@ export default function ConverterCard({ currencies, rates, labels }: ConverterCa
     }
 
     return (
-        <div className="w-full max-w-[520px] mx-auto bg-[var(--clr-neutral-1000)] border border-[var(--clr-neutral-900)] rounded-4xl p-2">
+        <div className="w-full max-w-[600px] mx-auto bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
             <CurrencyInput
                 label={labels.fromLabel}
                 value={amount}
@@ -71,11 +75,11 @@ export default function ConverterCard({ currencies, rates, labels }: ConverterCa
                 onChangeSelect={handleFromCurrencyChange}
             />
 
-            <div className="my-1 relative">
-                <div className="h-px bg-[var(--clr-neutral-800)]" />
+            <div className="my-2 relative">
+                <div className="h-px bg-[var(--clr-neutral-1000)]" />
                 <button
                     type="button"
-                    className="w-10 h-10 rounded-full bg-[var(--clr-green-500)] grid place-items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-0 hover:rotate-180 hover:cursor-pointer transition-all duration-500"
+                    className="w-12 h-12 rounded-full bg-[var(--clr-green-500)] grid place-items-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rotate-0 hover:rotate-180 hover:cursor-pointer transition-all duration-500"
                     onClick={switchCurrencies}
                     aria-label={labels.switchButtonAriaLabel}
                 >
@@ -95,9 +99,14 @@ export default function ConverterCard({ currencies, rates, labels }: ConverterCa
                 onChangeSelect={handleToCurrencyChange}
             />
 
-            <p className="text-center text-sm text-[var(--clr-neutral-100)] mt-4 mb-2">
-                {rateDisplayText}
-            </p>
+            <div className="text-center mt-6 mb-2">
+                <p className="text-lg font-medium">
+                    <span className="text-[var(--clr-green-500)]">{rateDisplayText}</span>
+                </p>
+                <p className="text-xs text-[var(--clr-neutral-100)] mt-1">
+                    {lastUpdatedText}
+                </p>
+            </div>
         </div>
     );
 }
