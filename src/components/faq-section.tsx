@@ -1,4 +1,4 @@
-import FaqItem from './faq-item';
+import FaqItem from '@/components/faq-item';
 
 type FaqSectionProps = {
     title: string;
