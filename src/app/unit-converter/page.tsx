@@ -6,10 +6,10 @@ import FeatureCards from "@/components/feature-cards";
 import EducationalContent from "@/components/educational-content";
 import FaqSection from "@/components/faq-section";
 import ToolsCta from "@/components/tools-cta";
-import UnitConverterCard from "@/components/tools/unit-converter/converter-card";
-import ConversionTable from "@/components/tools/unit-converter/conversion-table";
+import ConverterCard from "@/components/converter-card";
+import RatesTable from "@/components/rates-table";
 import dictionary from "@/dictionaries/en/unit-converter";
-import { popularConversions } from "@/lib/mock-units";
+import { unitFactors, popularConversions } from "@/lib/mock-units";
 import { CONFIG } from "@/lib/config";
 
 export default function UnitConverterPage() {
@@ -22,9 +22,12 @@ export default function UnitConverterPage() {
 
             <Section>
                 <Container>
-                    <UnitConverterCard
-                        units={dictionary.units}
+                    <ConverterCard
+                        options={dictionary.options}
+                        factors={unitFactors}
                         labels={dictionary.converter}
+                        defaultFrom="m"
+                        defaultTo="ft"
                     />
                 </Container>
             </Section>
@@ -40,12 +43,13 @@ export default function UnitConverterPage() {
 
             <Section>
                 <Container>
-                    <ConversionTable
+                    <RatesTable
                         pairs={popularConversions}
-                        unitNames={dictionary.units}
-                        headers={dictionary.conversionTable.headers}
-                        title={dictionary.conversionTable.sectionTitle}
-                        description={dictionary.conversionTable.sectionDescription}
+                        factors={unitFactors}
+                        headers={dictionary.ratesTable.headers}
+                        title={dictionary.ratesTable.sectionTitle}
+                        description={dictionary.ratesTable.sectionDescription}
+                        names={dictionary.options}
                     />
                 </Container>
             </Section>

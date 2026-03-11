@@ -24,13 +24,13 @@ export type UnitConverterDictionary = {
             description: string;
         }>;
     };
-    conversionTable: {
+    ratesTable: {
         sectionTitle: string;
         sectionDescription: string;
         headers: {
             pair: string;
-            factor: string;
-            inverseFactor: string;
+            rate: string;
+            inverseRate: string;
         };
     };
     features: {
@@ -60,7 +60,7 @@ export type UnitConverterDictionary = {
         title: string;
         description: string;
     };
-    units: Record<string, string>;
+    options: Record<string, string>;
 };
 
 const unitConverterDictionary: UnitConverterDictionary = {
@@ -113,13 +113,13 @@ const unitConverterDictionary: UnitConverterDictionary = {
             },
         ],
     },
-    conversionTable: {
+    ratesTable: {
         sectionTitle: "Common Length Conversions",
         sectionDescription: "Quick reference for the most commonly used length unit conversions from meters.",
         headers: {
             pair: "Conversion",
-            factor: "Factor",
-            inverseFactor: "Inverse Factor",
+            rate: "Factor",
+            inverseRate: "Inverse Factor",
         },
     },
     features: {
@@ -214,7 +214,7 @@ const unitConverterDictionary: UnitConverterDictionary = {
         title: "Explore Our Other Financial Tools",
         description: "Manage every aspect of your finances with our free, easy-to-use calculators and trackers.",
     },
-    units: {
+    options: {
         mm: "Millimeter",
         cm: "Centimeter",
         m: "Meter",
