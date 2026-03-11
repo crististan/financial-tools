@@ -6,13 +6,11 @@ import FeatureCards from "@/components/feature-cards";
 import EducationalContent from "@/components/educational-content";
 import FaqSection from "@/components/faq-section";
 import ToolsCta from "@/components/tools-cta";
-import ConverterCard from "@/components/converter-card";
-import RatesTable from "@/components/rates-table";
-import dictionary from "@/dictionaries/en/currency-converter";
-import { mockExchangeRates, popularPairs } from "@/lib/mock-rates";
+import LoanCalculator from "@/components/loan-calculator";
+import dictionary from "@/dictionaries/en/loan-repayment-calculator";
 import { CONFIG } from "@/lib/config";
 
-export default function CurrencyConverterPage() {
+export default function LoanRepaymentCalculatorPage() {
     return (
         <>
             <DefaultHero
@@ -22,13 +20,9 @@ export default function CurrencyConverterPage() {
 
             <Section>
                 <Container>
-                    <ConverterCard
-                        options={dictionary.options}
-                        factors={mockExchangeRates.rates}
-                        labels={dictionary.converter}
-                        defaultFrom="USD"
-                        defaultTo="EUR"
-                        decimals={4}
+                    <LoanCalculator
+                        labels={dictionary.calculator}
+                        amortizationLabels={dictionary.amortizationTable}
                     />
                 </Container>
             </Section>
@@ -38,19 +32,6 @@ export default function CurrencyConverterPage() {
                     <HowItWorks
                         sectionTitle={dictionary.howItWorks.sectionTitle}
                         steps={dictionary.howItWorks.steps}
-                    />
-                </Container>
-            </Section>
-
-            <Section>
-                <Container>
-                    <RatesTable
-                        pairs={popularPairs}
-                        factors={mockExchangeRates.rates}
-                        headers={dictionary.ratesTable.headers}
-                        title={dictionary.ratesTable.sectionTitle}
-                        description={dictionary.ratesTable.sectionDescription}
-                        decimals={4}
                     />
                 </Container>
             </Section>
@@ -89,7 +70,7 @@ export default function CurrencyConverterPage() {
                         title={dictionary.cta.title}
                         description={dictionary.cta.description}
                         tools={CONFIG.tools}
-                        currentToolSlug="currency-converter"
+                        currentToolSlug="loan-repayment-calculator"
                     />
                 </Container>
             </Section>

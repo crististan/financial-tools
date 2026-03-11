@@ -25,7 +25,7 @@ export type CurrencyConverterDictionary = {
             description: string;
         }>;
     };
-    exchangeRatesTable: {
+    ratesTable: {
         sectionTitle: string;
         sectionDescription: string;
         headers: {
@@ -61,7 +61,7 @@ export type CurrencyConverterDictionary = {
         title: string;
         description: string;
     };
-    currencies: Record<string, string>;
+    options: Record<string, string>;
 };
 
 const currencyConverterDictionary: CurrencyConverterDictionary = {
@@ -113,7 +113,7 @@ const currencyConverterDictionary: CurrencyConverterDictionary = {
             },
         ],
     },
-    exchangeRatesTable: {
+    ratesTable: {
         sectionTitle: "Popular Exchange Rates",
         sectionDescription: "Compare exchange rates between the most commonly traded currency pairs worldwide.",
         headers: {
@@ -214,7 +214,7 @@ const currencyConverterDictionary: CurrencyConverterDictionary = {
         title: "Explore Our Other Financial Tools",
         description: "Manage every aspect of your finances with our free, easy-to-use calculators and trackers.",
     },
-    currencies: {
+    options: {
         USD: "US Dollar",
         EUR: "Euro",
         GBP: "British Pound",
