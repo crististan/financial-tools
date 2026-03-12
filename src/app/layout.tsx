@@ -1,7 +1,5 @@
 import type { Metadata } from "next";
 import "./globals.css";
-
-import Header from "@/components/header";
 import { Outfit } from "next/font/google";
 
 const outfit = Outfit({
@@ -20,14 +18,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body
-        className={`${outfit.className} antialiased`}
-      >
-        <Header />
-        <main>
-          {children}
-        </main>
+    <html>
+      <body className={`${outfit.className} antialiased`}>
+        {children}
       </body>
     </html>
   );

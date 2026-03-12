@@ -1,45 +1,31 @@
+import type { CommonDictionary } from "@/dictionaries/en/common";
+
 export const CONFIG = {
     tools: [
         {
             slug: "currency-converter",
-            title: "Currency Converter",
             iconPath: "/icons/currency-converter-icon.svg",
-            shortDescription: "Convert currencies quickly and reliably with up-to-date exchange rates.",
-            cta: {
-                href: "/currency-converter",
-                text: "Learn more"
-            }
+            titleKey: "currencyConverter" as const,
+            descriptionKey: "currencyConverterDescription" as const,
         },
         {
             slug: "loan-repayment-calculator",
-            title: "Loan Repayment Calculator",
             iconPath: "/icons/loan-repayment-calculator-icon.svg",
-            shortDescription: "Estimate your monthly loan payments and interest over time with ease.",
-            cta: {
-                href: "/loan-repayment-calculator",
-                text: "Learn more"
-            }
+            titleKey: "loanRepaymentCalculator" as const,
+            descriptionKey: "loanRepaymentCalculatorDescription" as const,
         },
         {
             slug: "unit-converter",
-            title: "Meter Converter",
             iconPath: "/icons/unit-converter-icon.svg",
-            shortDescription: "Convert meters to miles, feet, yards, nautical miles, and more instantly.",
-            cta: {
-                href: "/unit-converter",
-                text: "Learn more"
-            }
+            titleKey: "meterConverter" as const,
+            descriptionKey: "meterConverterDescription" as const,
         },
         {
             slug: "monthly-budget-tracker",
-            title: "Monthly Budget Tracker",
             iconPath: "/icons/monthly-budget-tracker-icon.svg",
-            shortDescription: "Create, manage, and track your monthly budget effortlessly.",
-            cta: {
-                href: "/monthly-budget-tracker",
-                text: "Learn more"
-            }
-        }
+            titleKey: "monthlyBudgetTracker" as const,
+            descriptionKey: "monthlyBudgetTrackerDescription" as const,
+        },
     ],
     usefulLinks: [
         {
@@ -53,6 +39,22 @@ export const CONFIG = {
         {
             slug: "/blog",
             title: "Blog",
-        }
-    ]
+        },
+    ],
 };
+
+export type ToolConfig = (typeof CONFIG.tools)[number];
+
+export function getLocalizedTools(common: CommonDictionary, lang: string) {
+    const prefix = lang === "en" ? "" : `/${lang}`;
+    return CONFIG.tools.map((tool) => ({
+        slug: tool.slug,
+        iconPath: tool.iconPath,
+        title: common.tools[tool.titleKey],
+        shortDescription: common.tools[tool.descriptionKey],
+        cta: {
+            href: `${prefix}/${tool.slug}`,
+            text: common.tools.cta,
+        },
+    }));
+}

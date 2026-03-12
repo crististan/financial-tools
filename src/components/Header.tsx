@@ -1,19 +1,13 @@
-import {
-    NavigationMenu,
-    NavigationMenuContent,
-    NavigationMenuIndicator,
-    NavigationMenuItem,
-    NavigationMenuLink,
-    NavigationMenuList,
-    NavigationMenuTrigger,
-    NavigationMenuViewport,
-    navigationMenuTriggerStyle
-  } from "@/components/ui/navigation-menu";
-import Link from "next/link";
 import Container from "./container";
 import { Nav } from "./nav/nav";
+import LanguageSelector from "./language-selector";
+import type { CommonDictionary } from "@/dictionaries/en/common";
+type HeaderProps = {
+    lang: string;
+    common: CommonDictionary;
+};
 
-export default function Header() {
+export default function Header({ lang, common }: HeaderProps) {
     return (
         <header>
             <Container>
@@ -21,7 +15,10 @@ export default function Header() {
                     <div>
                         LOGO
                     </div>
-                    <Nav />
+                    <div className="flex items-center gap-4">
+                        <Nav lang={lang} common={common} />
+                        <LanguageSelector lang={lang} labels={common.languageSelector} />
+                    </div>
                 </div>
             </Container>
         </header>

@@ -1,17 +1,27 @@
 import type { Metadata } from "next";
-import dictionary from "@/dictionaries/en/currency-converter";
+import { getDictionary } from "@/lib/dictionaries";
+import type { CurrencyConverterDictionary } from "@/dictionaries/en/currency-converter";
 
-export const metadata: Metadata = {
-    title: dictionary.meta.title,
-    description: dictionary.meta.description,
-    keywords: dictionary.meta.keywords,
-};
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+    const { lang } = await params;
+    const dictionary = await getDictionary<CurrencyConverterDictionary>(lang, 'currency-converter');
+    return {
+        title: dictionary.meta.title,
+        description: dictionary.meta.description,
+        keywords: dictionary.meta.keywords,
+    };
+}
 
-export default function CurrencyConverterLayout({
+export default async function CurrencyConverterLayout({
     children,
+    params,
 }: {
     children: React.ReactNode;
+    params: Promise<{ lang: string }>;
 }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary<CurrencyConverterDictionary>(lang, 'currency-converter');
+
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",

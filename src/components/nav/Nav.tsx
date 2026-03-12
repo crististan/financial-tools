@@ -3,36 +3,30 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import NavItem from "./nav-item";
-import { CONFIG } from "@/lib/config";
+import { getLocalizedTools, CONFIG } from "@/lib/config";
+import type { CommonDictionary } from "@/dictionaries/en/common";
+type NavProps = {
+  lang: string;
+  common: CommonDictionary;
+};
 
-const projects: { slug: string; title: string; shortDescription: string }[] = [
-  {
-    slug: "#",
-    title: "Components",
-    shortDescription: "Browse all components in the library.",
-  },
-  {
-    slug: "#",
-    title: "Documentation",
-    shortDescription: "Learn how to use the library.",
-  },
-  {
-    slug: "#",
-    title: "Blog",
-    shortDescription: "Read our latest blog posts.",
-  }
-];
+export function Nav({ lang, common }: NavProps) {
+  const prefix = lang === "en" ? "" : `/${lang}`;
+  const tools = getLocalizedTools(common, lang);
 
-export function Nav() {
+  const navTools = tools.map((tool) => ({
+    slug: `${prefix}/${tool.slug}`,
+    title: tool.title,
+    shortDescription: tool.shortDescription,
+  }));
+
   return (
     <NavigationMenu viewport={false}>
       <NavigationMenuList>
-        <NavItem type="link" url="/" label="Home" dropdownItems={[]} />
-        <NavItem type="list" url="" label="Tools" dropdownItems={CONFIG.tools} />
-        {/* <NavItem type="link" url="/docs" label="Docs" dropdownItems={[]} />
-        <NavItem type="list" url="" label="Projects" dropdownItems={projects} /> */}
-        <NavItem type="simpleList" url="" label="More" dropdownItems={CONFIG.usefulLinks} />
-        <NavItem type="link" url="/contact" label="Contact" dropdownItems={[]} />
+        <NavItem type="link" url={prefix || "/"} label={common.nav.home} dropdownItems={[]} />
+        <NavItem type="list" url="" label={common.nav.tools} dropdownItems={navTools} />
+        <NavItem type="simpleList" url="" label={common.nav.more} dropdownItems={CONFIG.usefulLinks} />
+        <NavItem type="link" url={`${prefix}/contact`} label={common.nav.contact} dropdownItems={[]} />
       </NavigationMenuList>
     </NavigationMenu>
   )

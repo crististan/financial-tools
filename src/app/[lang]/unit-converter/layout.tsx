@@ -1,17 +1,27 @@
 import type { Metadata } from "next";
-import dictionary from "@/dictionaries/en/loan-repayment-calculator";
+import { getDictionary } from "@/lib/dictionaries";
+import type { UnitConverterDictionary } from "@/dictionaries/en/unit-converter";
 
-export const metadata: Metadata = {
-    title: dictionary.meta.title,
-    description: dictionary.meta.description,
-    keywords: dictionary.meta.keywords,
-};
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+    const { lang } = await params;
+    const dictionary = await getDictionary<UnitConverterDictionary>(lang, 'unit-converter');
+    return {
+        title: dictionary.meta.title,
+        description: dictionary.meta.description,
+        keywords: dictionary.meta.keywords,
+    };
+}
 
-export default function LoanRepaymentCalculatorLayout({
+export default async function UnitConverterLayout({
     children,
+    params,
 }: {
     children: React.ReactNode;
+    params: Promise<{ lang: string }>;
 }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary<UnitConverterDictionary>(lang, 'unit-converter');
+
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
@@ -30,7 +40,7 @@ export default function LoanRepaymentCalculatorLayout({
         "@type": "WebApplication",
         name: dictionary.hero.headline,
         description: dictionary.hero.description,
-        applicationCategory: "FinanceApplication",
+        applicationCategory: "UtilityApplication",
         operatingSystem: "Any",
         offers: {
             "@type": "Offer",
