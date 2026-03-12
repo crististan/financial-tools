@@ -1,17 +1,27 @@
 import type { Metadata } from "next";
-import dictionary from "@/dictionaries/en/monthly-budget-tracker";
+import { getDictionary } from "@/lib/dictionaries";
+import type { LoanRepaymentCalculatorDictionary } from "@/dictionaries/en/loan-repayment-calculator";
 
-export const metadata: Metadata = {
-    title: dictionary.meta.title,
-    description: dictionary.meta.description,
-    keywords: dictionary.meta.keywords,
-};
+export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
+    const { lang } = await params;
+    const dictionary = await getDictionary<LoanRepaymentCalculatorDictionary>(lang, 'loan-repayment-calculator');
+    return {
+        title: dictionary.meta.title,
+        description: dictionary.meta.description,
+        keywords: dictionary.meta.keywords,
+    };
+}
 
-export default function MonthlyBudgetTrackerLayout({
+export default async function LoanRepaymentCalculatorLayout({
     children,
+    params,
 }: {
     children: React.ReactNode;
+    params: Promise<{ lang: string }>;
 }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary<LoanRepaymentCalculatorDictionary>(lang, 'loan-repayment-calculator');
+
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",

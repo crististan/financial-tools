@@ -8,11 +8,18 @@ import FaqSection from "@/components/faq-section";
 import ToolsCta from "@/components/tools-cta";
 import ConverterCard from "@/components/converter-card";
 import RatesTable from "@/components/rates-table";
-import dictionary from "@/dictionaries/en/unit-converter";
-import { unitFactors, popularConversions } from "@/lib/mock-units";
-import { CONFIG } from "@/lib/config";
+import { mockExchangeRates, popularPairs } from "@/lib/mock-rates";
+import { getLocalizedTools } from "@/lib/config";
+import { getDictionary } from "@/lib/dictionaries";
+import type { CurrencyConverterDictionary } from "@/dictionaries/en/currency-converter";
+import type { CommonDictionary } from "@/dictionaries/en/common";
 
-export default function UnitConverterPage() {
+export default async function CurrencyConverterPage({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary<CurrencyConverterDictionary>(lang, 'currency-converter');
+    const common = await getDictionary<CommonDictionary>(lang, 'common');
+    const tools = getLocalizedTools(common, lang);
+
     return (
         <>
             <DefaultHero
@@ -24,10 +31,11 @@ export default function UnitConverterPage() {
                 <Container>
                     <ConverterCard
                         options={dictionary.options}
-                        factors={unitFactors}
+                        factors={mockExchangeRates.rates}
                         labels={dictionary.converter}
-                        defaultFrom="m"
-                        defaultTo="ft"
+                        defaultFrom="USD"
+                        defaultTo="EUR"
+                        decimals={4}
                     />
                 </Container>
             </Section>
@@ -44,12 +52,12 @@ export default function UnitConverterPage() {
             <Section>
                 <Container>
                     <RatesTable
-                        pairs={popularConversions}
-                        factors={unitFactors}
+                        pairs={popularPairs}
+                        factors={mockExchangeRates.rates}
                         headers={dictionary.ratesTable.headers}
                         title={dictionary.ratesTable.sectionTitle}
                         description={dictionary.ratesTable.sectionDescription}
-                        names={dictionary.options}
+                        decimals={4}
                     />
                 </Container>
             </Section>
@@ -87,8 +95,8 @@ export default function UnitConverterPage() {
                     <ToolsCta
                         title={dictionary.cta.title}
                         description={dictionary.cta.description}
-                        tools={CONFIG.tools}
-                        currentToolSlug="unit-converter"
+                        tools={tools}
+                        currentToolSlug="currency-converter"
                     />
                 </Container>
             </Section>

@@ -6,11 +6,18 @@ import FeatureCards from "@/components/feature-cards";
 import EducationalContent from "@/components/educational-content";
 import FaqSection from "@/components/faq-section";
 import ToolsCta from "@/components/tools-cta";
-import LoanCalculator from "@/components/loan-calculator";
-import dictionary from "@/dictionaries/en/loan-repayment-calculator";
-import { CONFIG } from "@/lib/config";
+import BudgetTracker from "@/components/budget-tracker";
+import { getLocalizedTools } from "@/lib/config";
+import { getDictionary } from "@/lib/dictionaries";
+import type { MonthlyBudgetTrackerDictionary } from "@/dictionaries/en/monthly-budget-tracker";
+import type { CommonDictionary } from "@/dictionaries/en/common";
 
-export default function LoanRepaymentCalculatorPage() {
+export default async function MonthlyBudgetTrackerPage({ params }: { params: Promise<{ lang: string }> }) {
+    const { lang } = await params;
+    const dictionary = await getDictionary<MonthlyBudgetTrackerDictionary>(lang, 'monthly-budget-tracker');
+    const common = await getDictionary<CommonDictionary>(lang, 'common');
+    const tools = getLocalizedTools(common, lang);
+
     return (
         <>
             <DefaultHero
@@ -20,9 +27,9 @@ export default function LoanRepaymentCalculatorPage() {
 
             <Section>
                 <Container>
-                    <LoanCalculator
-                        labels={dictionary.calculator}
-                        amortizationLabels={dictionary.amortizationTable}
+                    <BudgetTracker
+                        labels={dictionary.tracker}
+                        defaultCategories={dictionary.defaultCategories}
                     />
                 </Container>
             </Section>
@@ -69,8 +76,8 @@ export default function LoanRepaymentCalculatorPage() {
                     <ToolsCta
                         title={dictionary.cta.title}
                         description={dictionary.cta.description}
-                        tools={CONFIG.tools}
-                        currentToolSlug="loan-repayment-calculator"
+                        tools={tools}
+                        currentToolSlug="monthly-budget-tracker"
                     />
                 </Container>
             </Section>
