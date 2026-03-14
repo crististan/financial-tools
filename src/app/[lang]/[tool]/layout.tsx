@@ -1,31 +1,43 @@
 import type { Metadata } from "next";
-import { getDictionary } from "@/lib/dictionaries";
-import type { UnitConverterDictionary } from "@/dictionaries/en/unit-converter";
+import { getToolBySlug, getToolTranslation } from "@/lib/tool-data";
 
-export async function generateMetadata({ params }: { params: Promise<{ lang: string }> }): Promise<Metadata> {
-    const { lang } = await params;
-    const dictionary = await getDictionary<UnitConverterDictionary>(lang, 'unit-converter');
+export async function generateMetadata({ params }: { params: Promise<{ lang: string; tool: string }> }): Promise<Metadata> {
+    const { lang, tool: toolSlug } = await params;
+    const toolData = await getToolBySlug(toolSlug, lang);
+
+    if (!toolData) {
+        return { title: "Not Found" };
+    }
+
+    const translation = getToolTranslation(toolData, lang);
+
     return {
-        title: dictionary.meta.title,
-        description: dictionary.meta.description,
-        keywords: dictionary.meta.keywords,
+        title: translation.meta.title,
+        description: translation.meta.description,
+        keywords: translation.meta.keywords,
     };
 }
 
-export default async function UnitConverterLayout({
+export default async function ToolLayout({
     children,
     params,
 }: {
     children: React.ReactNode;
-    params: Promise<{ lang: string }>;
+    params: Promise<{ lang: string; tool: string }>;
 }) {
-    const { lang } = await params;
-    const dictionary = await getDictionary<UnitConverterDictionary>(lang, 'unit-converter');
+    const { lang, tool: toolSlug } = await params;
+    const toolData = await getToolBySlug(toolSlug, lang);
+
+    if (!toolData) {
+        return <>{children}</>;
+    }
+
+    const translation = getToolTranslation(toolData, lang);
 
     const faqSchema = {
         "@context": "https://schema.org",
         "@type": "FAQPage",
-        mainEntity: dictionary.faq.items.map((item) => ({
+        mainEntity: translation.faq.items.map((item) => ({
             "@type": "Question",
             name: item.question,
             acceptedAnswer: {
@@ -38,9 +50,9 @@ export default async function UnitConverterLayout({
     const appSchema = {
         "@context": "https://schema.org",
         "@type": "WebApplication",
-        name: dictionary.hero.headline,
-        description: dictionary.hero.description,
-        applicationCategory: "UtilityApplication",
+        name: translation.hero.headline,
+        description: translation.hero.description,
+        applicationCategory: toolData.applicationCategory,
         operatingSystem: "Any",
         offers: {
             "@type": "Offer",
@@ -52,8 +64,8 @@ export default async function UnitConverterLayout({
     const howToSchema = {
         "@context": "https://schema.org",
         "@type": "HowTo",
-        name: dictionary.howItWorks.sectionTitle,
-        step: dictionary.howItWorks.steps.map((step, index) => ({
+        name: translation.howItWorks.sectionTitle,
+        step: translation.howItWorks.steps.map((step, index) => ({
             "@type": "HowToStep",
             position: index + 1,
             name: step.title,

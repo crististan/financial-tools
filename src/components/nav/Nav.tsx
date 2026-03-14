@@ -3,16 +3,17 @@ import {
   NavigationMenuList,
 } from "@/components/ui/navigation-menu";
 import NavItem from "./nav-item";
-import { getLocalizedTools, CONFIG } from "@/lib/config";
+import { CONFIG } from "@/lib/config";
+import { getLocalizedToolsFromJson } from "@/lib/tool-data";
 import type { CommonDictionary } from "@/dictionaries/en/common";
 type NavProps = {
   lang: string;
   common: CommonDictionary;
 };
 
-export function Nav({ lang, common }: NavProps) {
+export async function Nav({ lang, common }: NavProps) {
   const prefix = lang === "en" ? "" : `/${lang}`;
-  const tools = getLocalizedTools(common, lang);
+  const tools = await getLocalizedToolsFromJson(lang);
 
   const navTools = tools.map((tool) => ({
     slug: `${prefix}/${tool.slug}`,
