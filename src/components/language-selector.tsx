@@ -10,9 +10,10 @@ type LanguageSelectorProps = {
         en: string;
         ro: string;
     };
+    slugMaps?: Record<string, Record<string, string>>;
 };
 
-export default function LanguageSelector({ lang, labels }: LanguageSelectorProps) {
+export default function LanguageSelector({ lang, labels, slugMaps }: LanguageSelectorProps) {
     const router = useRouter();
     const pathname = usePathname();
 
@@ -22,15 +23,18 @@ export default function LanguageSelector({ lang, labels }: LanguageSelectorProps
         let newPath: string;
 
         if (lang === "en") {
-            // Currently EN (no prefix) -> add /ro prefix
-            newPath = `/${newLang}${pathname}`;
+            // Currently EN (no prefix) -> add new locale prefix
+            // Try to translate the slug
+            const translatedPath = translateSlugInPath(pathname, lang, newLang, slugMaps);
+            newPath = `/${newLang}${translatedPath}`;
         } else {
-            // Currently has a prefix (e.g. /ro) -> remove it
+            // Currently has a prefix (e.g. /ro) -> remove it and translate slug
             const pathWithoutLocale = pathname.replace(`/${lang}`, "") || "/";
+            const translatedPath = translateSlugInPath(pathWithoutLocale, lang, newLang, slugMaps);
             if (newLang === "en") {
-                newPath = pathWithoutLocale;
+                newPath = translatedPath;
             } else {
-                newPath = `/${newLang}${pathWithoutLocale}`;
+                newPath = `/${newLang}${translatedPath}`;
             }
         }
 
@@ -51,4 +55,28 @@ export default function LanguageSelector({ lang, labels }: LanguageSelectorProps
             ))}
         </select>
     );
+}
+
+function translateSlugInPath(
+    path: string,
+    fromLang: string,
+    toLang: string,
+    slugMaps?: Record<string, Record<string, string>>
+): string {
+    if (!slugMaps) return path;
+    const mapKey = `${fromLang}->${toLang}`;
+    const map = slugMaps[mapKey];
+    if (!map) return path;
+
+    // Extract the first path segment (the tool slug)
+    const segments = path.split("/").filter(Boolean);
+    if (segments.length === 0) return path;
+
+    const slug = segments[0];
+    const translated = map[slug];
+    if (translated) {
+        segments[0] = translated;
+        return "/" + segments.join("/");
+    }
+    return path;
 }

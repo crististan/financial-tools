@@ -1,5 +1,6 @@
 import Image from "next/image";
 import HomeHero from "@/components/home-hero";
+import Header from "@/components/header";
 import Separator from "@/components/separator";
 import Container from "@/components/container";
 import Section from "@/components/section";
@@ -9,19 +10,20 @@ import { getDictionary } from "@/lib/dictionaries";
 import { getLocalizedToolsFromJson } from "@/lib/tool-data";
 import type { CommonDictionary } from "@/dictionaries/en/common";
 
-
-export default async function Home({ params }: { params: Promise<{ lang: string }> }) {
-    const { lang } = await params;
+export default async function RootHome() {
+    const lang = "en";
     const common = await getDictionary<CommonDictionary>(lang);
     const toolsRaw = await getLocalizedToolsFromJson(lang);
     const tools = toolsRaw.map((t) => ({ ...t, cta: { ...t.cta, text: common.tools.cta } }));
 
     return (
         <>
+            <Header lang={lang} common={common} />
+            <main>
             <HomeHero
                 headline={common.homepage.headline}
-                primaryCta={{ text: common.homepage.primaryCta, href: lang === "en" ? "/" : `/${lang}` }}
-                secondaryCta={{ text: common.homepage.secondaryCta, href: tools.find(t => t.id === "monthly-budget-tracker")?.cta.href ?? "/monthly-budget-tracker" }}
+                primaryCta={{ text: common.homepage.primaryCta, href: "/" }}
+                secondaryCta={{ text: common.homepage.secondaryCta, href: "/monthly-budget-tracker" }}
             />
 
             <Separator />
@@ -55,6 +57,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                     </CardsContainer>
                 </Container>
             </Section>
+            </main>
         </>
     );
 }

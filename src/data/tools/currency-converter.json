@@ -1,0 +1,326 @@
+{
+  "id": "currency-converter",
+  "component": "currency-converter",
+  "iconPath": "/icons/currency-converter-icon.svg",
+  "applicationCategory": "FinanceApplication",
+  "config": {
+    "defaultFrom": "USD",
+    "defaultTo": "EUR",
+    "decimals": 4,
+    "dataSource": "mock-rates"
+  },
+  "translations": {
+    "en": {
+      "slug": "currency-converter",
+      "meta": {
+        "title": "Free Currency Converter | Real-Time Exchange Rates",
+        "description": "Convert between 10 major world currencies with our free online currency converter. Get instant exchange rates for USD, EUR, GBP, JPY, and more.",
+        "keywords": ["currency converter", "exchange rates", "USD to EUR", "convert currency", "foreign exchange", "currency calculator", "money converter"]
+      },
+      "hero": {
+        "headline": "Currency Converter",
+        "description": "Convert currencies quickly and reliably with up-to-date exchange rates. Supporting 10 major world currencies."
+      },
+      "tool": {
+        "fromLabel": "From",
+        "toLabel": "To",
+        "amountPlaceholder": "Enter amount",
+        "switchButtonAriaLabel": "Switch currencies",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "lastUpdated": "Last updated: {date}",
+        "options": {
+          "USD": "US Dollar",
+          "EUR": "Euro",
+          "GBP": "British Pound",
+          "JPY": "Japanese Yen",
+          "AUD": "Australian Dollar",
+          "CAD": "Canadian Dollar",
+          "CHF": "Swiss Franc",
+          "CNY": "Chinese Yuan",
+          "SEK": "Swedish Krona",
+          "NZD": "New Zealand Dollar"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Convert Currency Online",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "keyboard",
+            "title": "Enter Your Amount",
+            "description": "Type the amount you want to convert in the input field. Our converter accepts any value from 0.01 to 999,999,999."
+          },
+          {
+            "number": 2,
+            "icon": "arrowLeftRight",
+            "title": "Select Currencies",
+            "description": "Choose your source currency and target currency from the dropdown menus. We support 10 major world currencies."
+          },
+          {
+            "number": 3,
+            "icon": "zap",
+            "title": "Get Instant Results",
+            "description": "Your conversion is calculated automatically in real time. No buttons to click, no waiting. Results update as you type."
+          }
+        ]
+      },
+      "ratesTable": {
+        "sectionTitle": "Popular Exchange Rates",
+        "sectionDescription": "Compare exchange rates between the most commonly traded currency pairs worldwide.",
+        "headers": {
+          "pair": "Currency Pair",
+          "rate": "Exchange Rate",
+          "inverseRate": "Inverse Rate"
+        }
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Currency Converter",
+        "sectionDescription": "Trusted features designed for accurate and hassle-free currency conversions.",
+        "items": [
+          {
+            "icon": "refreshCw",
+            "title": "Real-Time Exchange Rates",
+            "description": "Our rates are updated regularly to reflect the latest market conditions, ensuring your conversions are always accurate."
+          },
+          {
+            "icon": "globe",
+            "title": "10+ Major Currencies",
+            "description": "Convert between USD, EUR, GBP, JPY, and 6 other major world currencies used in international trade and travel."
+          },
+          {
+            "icon": "badgeDollarSign",
+            "title": "100% Free Forever",
+            "description": "No hidden fees, no premium tiers, no subscriptions. Our currency converter is completely free to use, always."
+          },
+          {
+            "icon": "userX",
+            "title": "No Registration Required",
+            "description": "Start converting currencies instantly. No account creation, no email verification, no personal data collection."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Understanding Currency Exchange",
+        "articles": [
+          {
+            "title": "What Drives Exchange Rate Movements?",
+            "content": "Exchange rates are influenced by a complex interplay of economic factors. Interest rate differentials between countries, inflation rates, trade balances, and political stability all play significant roles. When a country raises its interest rates, its currency typically strengthens as foreign investors seek higher returns. Conversely, high inflation erodes purchasing power and tends to weaken a currency over time."
+          },
+          {
+            "title": "The World's Most Traded Currencies",
+            "content": "The US Dollar dominates global foreign exchange markets, involved in approximately 88% of all transactions. The Euro follows as the second most traded currency, accounting for about 31% of trades. The Japanese Yen, British Pound, and Australian Dollar round out the top five. Together, these five currencies represent the vast majority of the $7.5 trillion traded daily in forex markets."
+          },
+          {
+            "title": "Tips for Getting the Best Exchange Rates",
+            "content": "To maximize the value of your currency exchange, compare rates across multiple providers before converting. Avoid exchanging money at airports or hotels, where rates are typically unfavorable. Consider using online converters to check rates before visiting a physical exchange bureau. For large amounts, even small differences in exchange rates can translate to significant savings."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "How does a currency converter work?",
+            "answer": "A currency converter uses current exchange rates to calculate how much one currency is worth in another. You enter an amount, select the source and target currencies, and the converter multiplies the amount by the exchange rate to show the equivalent value."
+          },
+          {
+            "question": "What are exchange rates and how are they determined?",
+            "answer": "Exchange rates represent the value of one currency relative to another. They are determined by supply and demand in foreign exchange markets, influenced by factors such as interest rates, inflation, trade balances, and economic stability."
+          },
+          {
+            "question": "What is the difference between a bid and ask rate?",
+            "answer": "The bid rate is the price at which a dealer will buy a currency, while the ask rate is the price at which they will sell it. The difference between the two is called the spread, which represents the dealer's profit margin."
+          },
+          {
+            "question": "Why do exchange rates fluctuate?",
+            "answer": "Exchange rates fluctuate due to changes in economic indicators, geopolitical events, central bank policies, market speculation, and differences in interest rates between countries. These factors affect the supply and demand for each currency."
+          },
+          {
+            "question": "What are the most traded currencies in the world?",
+            "answer": "The most traded currencies are the US Dollar (USD), Euro (EUR), Japanese Yen (JPY), British Pound (GBP), and Australian Dollar (AUD). The USD is involved in approximately 88% of all foreign exchange transactions."
+          },
+          {
+            "question": "Is it better to exchange currency at a bank or online?",
+            "answer": "Online currency exchange services typically offer more competitive rates than banks because they have lower overhead costs. However, banks provide added security and are suitable for large transactions. Always compare rates and fees before exchanging."
+          },
+          {
+            "question": "What is a currency pair?",
+            "answer": "A currency pair shows the exchange rate between two currencies. The first currency listed is the base currency and the second is the quote currency. For example, USD/EUR = 0.92 means 1 US Dollar equals 0.92 Euros."
+          },
+          {
+            "question": "How often are exchange rates updated?",
+            "answer": "Our exchange rates are updated regularly throughout the day to reflect current market conditions. For the most time-sensitive transactions, we recommend checking rates immediately before converting, as forex markets operate 24 hours a day, five days a week."
+          },
+          {
+            "question": "Can I convert currencies on my mobile phone?",
+            "answer": "Yes, our currency converter is fully responsive and works on any device including smartphones, tablets, and desktop computers. Simply open the page in your mobile browser and start converting immediately with no app download required."
+          },
+          {
+            "question": "What is the mid-market exchange rate?",
+            "answer": "The mid-market rate, also called the interbank rate, is the midpoint between the buy and sell prices of two currencies on the global market. It is considered the fairest exchange rate and is the rate our converter displays. Banks and exchange services typically add a markup to this rate as their profit margin."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore Our Other Financial Tools",
+        "description": "Manage every aspect of your finances with our free, easy-to-use calculators and trackers."
+      }
+    },
+    "ro": {
+      "slug": "convertor-valutar",
+      "meta": {
+        "title": "Convertor Valutar Gratuit | Cursuri de Schimb în Timp Real",
+        "description": "Convertește între 10 valute principale cu convertorul nostru valutar online gratuit. Obține cursuri de schimb instant pentru USD, EUR, GBP, JPY și altele.",
+        "keywords": ["convertor valutar", "cursuri de schimb", "USD în EUR", "convertire valută", "schimb valutar", "calculator valutar", "convertor bani"]
+      },
+      "hero": {
+        "headline": "Convertor Valutar",
+        "description": "Convertește valutele rapid și sigur cu cursuri de schimb actualizate. Suportă 10 valute principale din lume."
+      },
+      "tool": {
+        "fromLabel": "Din",
+        "toLabel": "În",
+        "amountPlaceholder": "Introduceți suma",
+        "switchButtonAriaLabel": "Inversează valutele",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "lastUpdated": "Ultima actualizare: {date}",
+        "options": {
+          "USD": "Dolar American",
+          "EUR": "Euro",
+          "GBP": "Liră Sterlină",
+          "JPY": "Yen Japonez",
+          "AUD": "Dolar Australian",
+          "CAD": "Dolar Canadian",
+          "CHF": "Franc Elvețian",
+          "CNY": "Yuan Chinezesc",
+          "SEK": "Coroană Suedeză",
+          "NZD": "Dolar Neozeelandez"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum să Convertești Valuta Online",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "keyboard",
+            "title": "Introduceți Suma",
+            "description": "Tastați suma pe care doriți să o convertiți în câmpul de introducere. Convertorul nostru acceptă orice valoare de la 0,01 la 999.999.999."
+          },
+          {
+            "number": 2,
+            "icon": "arrowLeftRight",
+            "title": "Selectați Valutele",
+            "description": "Alegeți valuta sursă și valuta țintă din meniurile derulante. Suportăm 10 valute principale din lume."
+          },
+          {
+            "number": 3,
+            "icon": "zap",
+            "title": "Obțineți Rezultate Instant",
+            "description": "Conversia se calculează automat în timp real. Fără butoane de apăsat, fără așteptare. Rezultatele se actualizează pe măsură ce tastați."
+          }
+        ]
+      },
+      "ratesTable": {
+        "sectionTitle": "Cursuri de Schimb Populare",
+        "sectionDescription": "Comparați cursurile de schimb între cele mai tranzacționate perechi valutare din lume.",
+        "headers": {
+          "pair": "Pereche Valutară",
+          "rate": "Curs de Schimb",
+          "inverseRate": "Curs Invers"
+        }
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Convertorul Nostru Valutar",
+        "sectionDescription": "Funcționalități de încredere concepute pentru conversii valutare precise și fără bătăi de cap.",
+        "items": [
+          {
+            "icon": "refreshCw",
+            "title": "Cursuri de Schimb în Timp Real",
+            "description": "Cursurile noastre sunt actualizate regulat pentru a reflecta cele mai recente condiții de piață, asigurând conversii mereu precise."
+          },
+          {
+            "icon": "globe",
+            "title": "10+ Valute Principale",
+            "description": "Convertește între USD, EUR, GBP, JPY și alte 6 valute principale folosite în comerțul și călătoriile internaționale."
+          },
+          {
+            "icon": "badgeDollarSign",
+            "title": "100% Gratuit pentru Totdeauna",
+            "description": "Fără taxe ascunse, fără niveluri premium, fără abonamente. Convertorul nostru valutar este complet gratuit, întotdeauna."
+          },
+          {
+            "icon": "userX",
+            "title": "Fără Înregistrare Necesară",
+            "description": "Începeți să convertiți valute instant. Fără creare de cont, fără verificare email, fără colectare de date personale."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Înțelegerea Schimbului Valutar",
+        "articles": [
+          {
+            "title": "Ce Influențează Mișcările Cursurilor de Schimb?",
+            "content": "Cursurile de schimb sunt influențate de un joc complex de factori economici. Diferențele de rate ale dobânzii între țări, ratele inflației, balanțele comerciale și stabilitatea politică joacă toate roluri semnificative. Când o țară crește ratele dobânzii, moneda sa se întărește de obicei, pe măsură ce investitorii străini caută randamente mai mari. Invers, inflația ridicată erodează puterea de cumpărare și tinde să slăbească o monedă în timp."
+          },
+          {
+            "title": "Cele Mai Tranzacționate Valute din Lume",
+            "content": "Dolarul american domină piețele globale de schimb valutar, fiind implicat în aproximativ 88% din toate tranzacțiile. Euro urmează ca a doua cea mai tranzacționată valută, reprezentând aproximativ 31% din tranzacții. Yenul japonez, lira sterlină și dolarul australian completează top cinci. Împreună, aceste cinci valute reprezintă marea majoritate din cele 7,5 trilioane de dolari tranzacționate zilnic pe piețele forex."
+          },
+          {
+            "title": "Sfaturi pentru a Obține Cele Mai Bune Cursuri de Schimb",
+            "content": "Pentru a maximiza valoarea schimbului valutar, comparați cursurile de la mai mulți furnizori înainte de a converti. Evitați schimbul de bani la aeroporturi sau hoteluri, unde cursurile sunt de obicei nefavorabile. Luați în considerare utilizarea convertoarelor online pentru a verifica cursurile înainte de a vizita un birou de schimb fizic. Pentru sume mari, chiar și diferențe mici în cursurile de schimb se pot traduce în economii semnificative."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Cum funcționează un convertor valutar?",
+            "answer": "Un convertor valutar folosește cursurile de schimb actuale pentru a calcula cât valorează o monedă în alta. Introduceți o sumă, selectați valutele sursă și țintă, iar convertorul înmulțește suma cu cursul de schimb pentru a afișa valoarea echivalentă."
+          },
+          {
+            "question": "Ce sunt cursurile de schimb și cum sunt determinate?",
+            "answer": "Cursurile de schimb reprezintă valoarea unei monede în raport cu alta. Sunt determinate de cererea și oferta de pe piețele valutare, influențate de factori precum ratele dobânzii, inflația, balanțele comerciale și stabilitatea economică."
+          },
+          {
+            "question": "Care este diferența între cursul bid și ask?",
+            "answer": "Cursul bid este prețul la care un dealer va cumpăra o monedă, în timp ce cursul ask este prețul la care o va vinde. Diferența dintre cele două se numește spread, care reprezintă marja de profit a dealer-ului."
+          },
+          {
+            "question": "De ce fluctuează cursurile de schimb?",
+            "answer": "Cursurile de schimb fluctuează din cauza schimbărilor în indicatorii economici, evenimentele geopolitice, politicile băncilor centrale, speculația pieței și diferențele de rate ale dobânzii între țări. Acești factori afectează cererea și oferta pentru fiecare monedă."
+          },
+          {
+            "question": "Care sunt cele mai tranzacționate valute din lume?",
+            "answer": "Cele mai tranzacționate valute sunt Dolarul American (USD), Euro (EUR), Yenul Japonez (JPY), Lira Sterlină (GBP) și Dolarul Australian (AUD). USD este implicat în aproximativ 88% din toate tranzacțiile valutare."
+          },
+          {
+            "question": "Este mai bine să schimbi valuta la bancă sau online?",
+            "answer": "Serviciile de schimb valutar online oferă de obicei cursuri mai competitive decât băncile, deoarece au costuri operaționale mai mici. Cu toate acestea, băncile oferă securitate suplimentară și sunt potrivite pentru tranzacții mari. Comparați întotdeauna cursurile și comisioanele înainte de a schimba."
+          },
+          {
+            "question": "Ce este o pereche valutară?",
+            "answer": "O pereche valutară arată cursul de schimb între două monede. Prima monedă listată este moneda de bază, iar a doua este moneda cotată. De exemplu, USD/EUR = 0,92 înseamnă că 1 Dolar American este egal cu 0,92 Euro."
+          },
+          {
+            "question": "Cât de des se actualizează cursurile de schimb?",
+            "answer": "Cursurile noastre de schimb sunt actualizate regulat pe parcursul zilei pentru a reflecta condițiile actuale ale pieței. Pentru tranzacțiile cele mai sensibile la timp, vă recomandăm să verificați cursurile imediat înainte de conversie, deoarece piețele forex funcționează 24 de ore pe zi, cinci zile pe săptămână."
+          },
+          {
+            "question": "Pot converti valute pe telefonul mobil?",
+            "answer": "Da, convertorul nostru valutar este complet responsiv și funcționează pe orice dispozitiv, inclusiv smartphone-uri, tablete și calculatoare desktop. Pur și simplu deschideți pagina în browser-ul mobil și începeți să convertiți imediat, fără a fi nevoie de descărcarea unei aplicații."
+          },
+          {
+            "question": "Ce este cursul de schimb mid-market?",
+            "answer": "Cursul mid-market, numit și cursul interbancar, este punctul de mijloc între prețurile de cumpărare și vânzare ale două monede pe piața globală. Este considerat cel mai corect curs de schimb și este cursul pe care îl afișează convertorul nostru. Băncile și serviciile de schimb adaugă de obicei un adaos la acest curs ca marjă de profit."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Celelalte Instrumente Financiare",
+        "description": "Gestionează fiecare aspect al finanțelor tale cu calculatoarele și urmăritoarele noastre gratuite și ușor de utilizat."
+      }
+    }
+  }
+}

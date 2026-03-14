@@ -1,5 +1,5 @@
 import Header from "@/components/header";
-import { locales, type Locale } from "@/lib/i18n";
+import { locales } from "@/lib/i18n";
 import { getDictionary } from "@/lib/dictionaries";
 import type { CommonDictionary } from "@/dictionaries/en/common";
 
@@ -15,7 +15,7 @@ export default async function LangLayout({
     params: Promise<{ lang: string }>;
 }) {
     const { lang } = await params;
-    const common = await getDictionary<CommonDictionary>(lang, 'common');
+    const common = await getDictionary<CommonDictionary>(lang);
 
     return (
         <>
