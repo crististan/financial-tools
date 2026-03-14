@@ -4,7 +4,7 @@ import { locales } from "./i18n";
 
 export interface ToolStep {
     number: number;
-    icon: string;
+    icon?: string;
     title: string;
     description: string;
 }
@@ -89,10 +89,10 @@ export interface ToolData {
 // ---- Loaders ----
 
 const toolModules: Record<string, () => Promise<ToolData>> = {
-    "currency-converter": () => import("@/data/tools/currency-converter.json").then((m) => m.default as ToolData),
-    "unit-converter": () => import("@/data/tools/unit-converter.json").then((m) => m.default as ToolData),
-    "loan-repayment-calculator": () => import("@/data/tools/loan-repayment-calculator.json").then((m) => m.default as ToolData),
-    "monthly-budget-tracker": () => import("@/data/tools/monthly-budget-tracker.json").then((m) => m.default as ToolData),
+    "currency-converter": () => import("@/data/tools/currency-converter.json").then((m) => m.default as unknown as ToolData),
+    "unit-converter": () => import("@/data/tools/unit-converter.json").then((m) => m.default as unknown as ToolData),
+    "loan-repayment-calculator": () => import("@/data/tools/loan-repayment-calculator.json").then((m) => m.default as unknown as ToolData),
+    "monthly-budget-tracker": () => import("@/data/tools/monthly-budget-tracker.json").then((m) => m.default as unknown as ToolData),
 };
 
 const toolIds = Object.keys(toolModules);

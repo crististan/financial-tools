@@ -318,6 +318,162 @@
         "title": "Explorează Celelalte Instrumente Financiare",
         "description": "Gestionează fiecare aspect al finanțelor tale cu calculatoarele și urmăritoarele noastre gratuite și ușor de utilizat."
       }
+    },
+    "de": {
+      "slug": "waehrungsrechner",
+      "meta": {
+        "title": "Kostenloser Währungsrechner | Wechselkurse in Echtzeit",
+        "description": "Rechnen Sie zwischen 10 wichtigen Weltwährungen mit unserem kostenlosen Online-Währungsrechner um. Erhalten Sie sofortige Wechselkurse für USD, EUR, GBP, JPY und mehr.",
+        "keywords": ["Währungsrechner", "Wechselkurse", "USD in EUR", "Währung umrechnen", "Devisenkurse", "Währungsumrechner", "Geld umrechnen", "Fremdwährung", "Devisenrechner", "Euro Kurs"]
+      },
+      "hero": {
+        "headline": "Währungsrechner",
+        "description": "Rechnen Sie Währungen schnell und zuverlässig mit aktuellen Wechselkursen um. Unterstützung für 10 wichtige Weltwährungen."
+      },
+      "tool": {
+        "fromLabel": "Von",
+        "toLabel": "Nach",
+        "amountPlaceholder": "Betrag eingeben",
+        "switchButtonAriaLabel": "Währungen tauschen",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "lastUpdated": "Zuletzt aktualisiert: {date}",
+        "options": {
+          "USD": "US-Dollar",
+          "EUR": "Euro",
+          "GBP": "Britisches Pfund",
+          "JPY": "Japanischer Yen",
+          "AUD": "Australischer Dollar",
+          "CAD": "Kanadischer Dollar",
+          "CHF": "Schweizer Franken",
+          "CNY": "Chinesischer Yuan",
+          "SEK": "Schwedische Krone",
+          "NZD": "Neuseeland-Dollar"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "So rechnen Sie Währungen online um",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "keyboard",
+            "title": "Betrag eingeben",
+            "description": "Geben Sie den umzurechnenden Betrag in das Eingabefeld ein. Unser Rechner akzeptiert jeden Wert von 0,01 bis 999.999.999."
+          },
+          {
+            "number": 2,
+            "icon": "arrowLeftRight",
+            "title": "Währungen auswählen",
+            "description": "Wählen Sie die Ausgangs- und Zielwährung aus den Dropdown-Menüs. Wir unterstützen 10 wichtige Weltwährungen."
+          },
+          {
+            "number": 3,
+            "icon": "zap",
+            "title": "Sofortige Ergebnisse erhalten",
+            "description": "Ihre Umrechnung wird automatisch in Echtzeit berechnet. Keine Schaltflächen, kein Warten. Die Ergebnisse werden während der Eingabe aktualisiert."
+          }
+        ]
+      },
+      "ratesTable": {
+        "sectionTitle": "Beliebte Wechselkurse",
+        "sectionDescription": "Vergleichen Sie Wechselkurse zwischen den weltweit am häufigsten gehandelten Währungspaaren.",
+        "headers": {
+          "pair": "Währungspaar",
+          "rate": "Wechselkurs",
+          "inverseRate": "Umgekehrter Kurs"
+        }
+      },
+      "features": {
+        "sectionTitle": "Warum unseren Währungsrechner nutzen",
+        "sectionDescription": "Vertrauenswürdige Funktionen für präzise und unkomplizierte Währungsumrechnungen.",
+        "items": [
+          {
+            "icon": "refreshCw",
+            "title": "Wechselkurse in Echtzeit",
+            "description": "Unsere Kurse werden regelmäßig aktualisiert, um die neuesten Marktbedingungen widerzuspiegeln und stets genaue Umrechnungen zu gewährleisten."
+          },
+          {
+            "icon": "globe",
+            "title": "10+ Wichtige Währungen",
+            "description": "Rechnen Sie zwischen USD, EUR, GBP, JPY und 6 weiteren wichtigen Weltwährungen um, die im internationalen Handel und auf Reisen verwendet werden."
+          },
+          {
+            "icon": "badgeDollarSign",
+            "title": "100 % kostenlos – für immer",
+            "description": "Keine versteckten Gebühren, keine Premium-Stufen, keine Abonnements. Unser Währungsrechner ist und bleibt vollständig kostenlos."
+          },
+          {
+            "icon": "userX",
+            "title": "Keine Registrierung erforderlich",
+            "description": "Starten Sie sofort mit der Währungsumrechnung. Keine Kontoerstellung, keine E-Mail-Verifizierung, keine Erhebung persönlicher Daten."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Wechselkurse verstehen",
+        "articles": [
+          {
+            "title": "Was beeinflusst die Entwicklung von Wechselkursen?",
+            "content": "Wechselkurse werden durch ein komplexes Zusammenspiel wirtschaftlicher Faktoren beeinflusst. Zinsunterschiede zwischen Ländern, Inflationsraten, Handelsbilanzen und politische Stabilität spielen dabei eine wesentliche Rolle. Erhöht ein Land seine Zinsen, stärkt sich seine Währung in der Regel, da ausländische Investoren höhere Renditen suchen. Umgekehrt schwächt eine hohe Inflation die Kaufkraft und damit tendenziell auch die Währung."
+          },
+          {
+            "title": "Die meistgehandelten Währungen der Welt",
+            "content": "Der US-Dollar dominiert die globalen Devisenmärkte und ist an rund 88 % aller Transaktionen beteiligt. Der Euro folgt als zweithäufigst gehandelte Währung mit etwa 31 % der Geschäfte. Japanischer Yen, Britisches Pfund und Australischer Dollar vervollständigen die Top 5. Zusammen machen diese fünf Währungen den Großteil der täglich 7,5 Billionen US-Dollar aus, die auf den Devisenmärkten gehandelt werden."
+          },
+          {
+            "title": "Tipps für die besten Wechselkurse",
+            "content": "Um den besten Gegenwert beim Währungstausch zu erzielen, vergleichen Sie die Kurse mehrerer Anbieter, bevor Sie umtauschen. Vermeiden Sie den Geldwechsel an Flughäfen oder in Hotels, wo die Kurse in der Regel ungünstig sind. Nutzen Sie Online-Währungsrechner, um Kurse zu prüfen, bevor Sie eine Wechselstube aufsuchen. Bei größeren Beträgen können selbst kleine Kursunterschiede zu erheblichen Einsparungen führen."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie funktioniert ein Währungsrechner?",
+            "answer": "Ein Währungsrechner verwendet aktuelle Wechselkurse, um zu berechnen, wie viel eine Währung in einer anderen wert ist. Sie geben einen Betrag ein, wählen die Ausgangs- und Zielwährung aus, und der Rechner multipliziert den Betrag mit dem Wechselkurs, um den entsprechenden Gegenwert anzuzeigen."
+          },
+          {
+            "question": "Was sind Wechselkurse und wie werden sie bestimmt?",
+            "answer": "Wechselkurse geben den Wert einer Währung im Verhältnis zu einer anderen an. Sie werden durch Angebot und Nachfrage auf den Devisenmärkten bestimmt und von Faktoren wie Zinssätzen, Inflation, Handelsbilanzen und wirtschaftlicher Stabilität beeinflusst."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Geld- und Briefkurs?",
+            "answer": "Der Geldkurs (Bid) ist der Preis, zu dem ein Händler eine Währung kauft, während der Briefkurs (Ask) der Preis ist, zu dem er sie verkauft. Die Differenz zwischen beiden wird als Spread bezeichnet und stellt die Gewinnspanne des Händlers dar."
+          },
+          {
+            "question": "Warum schwanken Wechselkurse?",
+            "answer": "Wechselkurse schwanken aufgrund von Veränderungen bei Wirtschaftsindikatoren, geopolitischen Ereignissen, Zentralbankpolitik, Marktspekulationen und Zinsunterschieden zwischen Ländern. Diese Faktoren beeinflussen Angebot und Nachfrage für jede Währung."
+          },
+          {
+            "question": "Welche Währungen werden weltweit am meisten gehandelt?",
+            "answer": "Die am häufigsten gehandelten Währungen sind der US-Dollar (USD), der Euro (EUR), der Japanische Yen (JPY), das Britische Pfund (GBP) und der Australische Dollar (AUD). Der USD ist an rund 88 % aller Devisentransaktionen beteiligt."
+          },
+          {
+            "question": "Ist es besser, Geld bei der Bank oder online zu wechseln?",
+            "answer": "Online-Wechselstuben bieten in der Regel günstigere Kurse als Banken, da sie geringere Betriebskosten haben. Banken bieten jedoch zusätzliche Sicherheit und eignen sich gut für große Transaktionen. Vergleichen Sie stets Kurse und Gebühren, bevor Sie tauschen."
+          },
+          {
+            "question": "Was ist ein Währungspaar?",
+            "answer": "Ein Währungspaar zeigt den Wechselkurs zwischen zwei Währungen. Die erste Währung ist die Basiswährung und die zweite die Kurswährung. Zum Beispiel bedeutet USD/EUR = 0,92, dass 1 US-Dollar 0,92 Euro entspricht."
+          },
+          {
+            "question": "Wie oft werden die Wechselkurse aktualisiert?",
+            "answer": "Unsere Wechselkurse werden im Laufe des Tages regelmäßig aktualisiert, um die aktuellen Marktbedingungen abzubilden. Für besonders zeitkritische Transaktionen empfehlen wir, die Kurse unmittelbar vor der Umrechnung zu prüfen, da die Devisenmärkte 24 Stunden am Tag an fünf Tagen pro Woche geöffnet sind."
+          },
+          {
+            "question": "Kann ich Währungen auf meinem Smartphone umrechnen?",
+            "answer": "Ja, unser Währungsrechner ist vollständig responsiv und funktioniert auf jedem Gerät – einschließlich Smartphones, Tablets und Desktop-Computern. Öffnen Sie einfach die Seite in Ihrem mobilen Browser und beginnen Sie sofort mit der Umrechnung, ohne eine App herunterladen zu müssen."
+          },
+          {
+            "question": "Was ist der Devisenmittelkurs?",
+            "answer": "Der Devisenmittelkurs, auch Interbankenkurs genannt, ist der Mittelpunkt zwischen dem Kauf- und Verkaufspreis zweier Währungen auf dem Weltmarkt. Er gilt als der fairste Wechselkurs und ist der Kurs, den unser Rechner anzeigt. Banken und Wechselstuben berechnen in der Regel einen Aufschlag auf diesen Kurs als Gewinnspanne."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Entdecken Sie unsere weiteren Finanztools",
+        "description": "Verwalten Sie jeden Aspekt Ihrer Finanzen mit unseren kostenlosen und benutzerfreundlichen Rechnern und Trackern."
+      }
     }
   }
 }

@@ -320,6 +320,163 @@
         "title": "Explorează Celelalte Instrumente Financiare",
         "description": "Gestionează fiecare aspect al finanțelor tale cu calculatoarele și urmăritoarele noastre gratuite și ușor de utilizat."
       }
+    },
+    "de": {
+      "slug": "einheitenrechner",
+      "meta": {
+        "title": "Meterumrechner | Meter in Meilen, Fuß, Yards und mehr umrechnen",
+        "description": "Kostenloser Online-Meterumrechner. Rechnen Sie Meter in Kilometer, Meilen, Seemeilen, Fuß, Zoll, Yards und mehr um. Sofortige Ergebnisse ohne Registrierung.",
+        "keywords": ["Meterumrechner", "Meter in Fuß", "Meter in Meilen", "Meter in Seemeilen", "Längenumrechner", "Einheitenrechner", "Entfernungsrechner", "Meter in Yards", "Meter in Zoll"]
+      },
+      "hero": {
+        "headline": "Meterumrechner",
+        "description": "Rechnen Sie Meter sofort in jede Längeneinheit um. Unterstützt Kilometer, Meilen, Seemeilen, Fuß, Zoll, Yards und mehr."
+      },
+      "tool": {
+        "fromLabel": "Von",
+        "toLabel": "Nach",
+        "amountPlaceholder": "Wert eingeben",
+        "switchButtonAriaLabel": "Einheiten tauschen",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "options": {
+          "mm": "Millimeter",
+          "cm": "Zentimeter",
+          "m": "Meter",
+          "km": "Kilometer",
+          "in": "Zoll",
+          "ft": "Fuß",
+          "yd": "Yard",
+          "mi": "Meile",
+          "nmi": "Seemeile",
+          "fathom": "Faden",
+          "furlong": "Furlong",
+          "league": "League"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "So rechnen Sie Längeneinheiten online um",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "keyboard",
+            "title": "Wert eingeben",
+            "description": "Geben Sie den Längenwert ein, den Sie umrechnen möchten. Unser Umrechner unterstützt jeden numerischen Wert mit hoher Genauigkeit."
+          },
+          {
+            "number": 2,
+            "icon": "arrowLeftRight",
+            "title": "Einheiten auswählen",
+            "description": "Wählen Sie die Quell- und Zieleinheiten aus den Dropdown-Menüs. Wir unterstützen 12 Längeneinheiten von Millimetern bis Seemeilen."
+          },
+          {
+            "number": 3,
+            "icon": "zap",
+            "title": "Sofortige Ergebnisse erhalten",
+            "description": "Ihre Umrechnung wird automatisch mit präzisen Umrechnungsfaktoren berechnet. Die Ergebnisse werden in Echtzeit aktualisiert, während Sie tippen."
+          }
+        ]
+      },
+      "ratesTable": {
+        "sectionTitle": "Gängige Längenumrechnungen",
+        "sectionDescription": "Kurzreferenz für die am häufigsten verwendeten Längenumrechnungen von Metern.",
+        "headers": {
+          "pair": "Umrechnung",
+          "rate": "Faktor",
+          "inverseRate": "Umkehrfaktor"
+        }
+      },
+      "features": {
+        "sectionTitle": "Warum unseren Meterumrechner verwenden",
+        "sectionDescription": "Präzise und zuverlässige Längenumrechnungen für Technik, Wissenschaft, Reisen und den Alltag.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Sofortige Umrechnung",
+            "description": "Ergebnisse erscheinen in Echtzeit, während Sie tippen. Keine Schaltflächen, kein Neuladen der Seite. Einfach schnelle, genaue Umrechnungen."
+          },
+          {
+            "icon": "globe",
+            "title": "12 Längeneinheiten",
+            "description": "Rechnen Sie zwischen metrischen, imperialen und nautischen Einheiten um, einschließlich Meter, Kilometer, Meilen, Seemeilen, Fuß und mehr."
+          },
+          {
+            "icon": "shield",
+            "title": "Hohe Genauigkeit",
+            "description": "Unsere Umrechnungsfaktoren basieren auf international vereinbarten Standards und gewährleisten Ergebnisse, denen Sie für den professionellen Einsatz vertrauen können."
+          },
+          {
+            "icon": "calculator",
+            "title": "Funktioniert in beide Richtungen",
+            "description": "Wechseln Sie einfach mit einem Klick zwischen den Einheiten. Rechnen Sie Meter in Fuß oder Fuß in Meter mit demselben Werkzeug um."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Längenmessung verstehen",
+        "articles": [
+          {
+            "title": "Das metrische System und der Meter",
+            "content": "Der Meter ist die Basiseinheit der Länge im Internationalen Einheitensystem (SI). Ursprünglich 1793 als ein Zehnmillionstel der Entfernung vom Äquator zum Nordpol definiert, wird er heute durch die Lichtgeschwindigkeit bestimmt: Ein Meter ist die Strecke, die Licht im Vakuum in 1/299.792.458 Sekunde zurücklegt. Die dezimale Struktur des metrischen Systems macht die Umrechnung zwischen Millimetern, Zentimetern, Metern und Kilometern einfach."
+          },
+          {
+            "title": "Imperial vs. Metrisch: Eine globale Kluft",
+            "content": "Während der Großteil der Welt das metrische System verwendet, nutzen die Vereinigten Staaten, Liberia und Myanmar im Alltag noch hauptsächlich imperiale Einheiten. Das imperiale System umfasst Zoll, Fuß, Yards und Meilen. Eine Meile entspricht genau 1.609,344 Metern. Das Verständnis der Umrechnungen zwischen diesen Systemen ist für den internationalen Handel, Reisen und die wissenschaftliche Zusammenarbeit unerlässlich."
+          },
+          {
+            "title": "Seemeilen: Entfernungsmessung auf See",
+            "content": "Eine Seemeile basiert auf dem Erdumfang und entspricht genau 1.852 Metern. Sie wird in der Luft- und Seefahrt verwendet, da sie einer Bogenminute der geografischen Breite entspricht. Knoten, die Geschwindigkeitseinheit auf See, messen Seemeilen pro Stunde. Diese Beziehung macht Seekarten und Navigationsberechnungen einfach und intuitiv."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie viele Fuß hat ein Meter?",
+            "answer": "Ein Meter entspricht genau 3,28084 Fuß. Diese Umrechnung basiert auf der internationalen Vereinbarung, dass ein Zoll genau 25,4 Millimetern entspricht, wodurch ein Fuß (12 Zoll) 0,3048 Metern entspricht."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen einer Meile und einer Seemeile?",
+            "answer": "Eine Landmeile entspricht 1.609,344 Metern (5.280 Fuß), während eine Seemeile genau 1.852 Metern entspricht. Eine Seemeile ist etwa 15 % länger als eine Landmeile. Seemeilen werden in der See- und Luftfahrtnavigation verwendet, da sie direkt mit den Breitengraden zusammenhängen."
+          },
+          {
+            "question": "Wie rechne ich Meter in Kilometer um?",
+            "answer": "Um Meter in Kilometer umzurechnen, teilen Sie die Anzahl der Meter durch 1.000. Zum Beispiel entsprechen 5.000 Meter 5 Kilometern. Das Präfix 'Kilo' bedeutet tausend, ein Kilometer ist also buchstäblich tausend Meter."
+          },
+          {
+            "question": "Warum verwenden die USA noch imperiale Einheiten?",
+            "answer": "Die USA übernahmen die auf dem imperialen System basierenden Einheiten, bevor das metrische System weit verbreitet war. Obwohl die US-Regierung seit 1975 die freiwillige Metrifizierung unterstützt, haben die Kosten und die Umstellung der alltäglichen Messungen die Einführung verlangsamt. Viele US-Branchen, insbesondere Wissenschaft und Medizin, verwenden bereits metrische Einheiten."
+          },
+          {
+            "question": "Was ist die kleinste Längeneinheit?",
+            "answer": "Im Alltag gehören Millimeter (0,001 Meter) zu den kleinsten praktischen Einheiten. In der Wissenschaft messen Mikrometer (0,000001 Meter) Zellen, Nanometer (0,000000001 Meter) Moleküle, und die Planck-Länge (etwa 1,6 x 10^-35 Meter) gilt als die kleinste physikalisch sinnvolle Länge."
+          },
+          {
+            "question": "Wie genau sind Online-Einheitenumrechner?",
+            "answer": "Online-Einheitenumrechner wie unserer verwenden international standardisierte Umrechnungsfaktoren und sind für praktische Zwecke äußerst genau. Unser Umrechner nutzt die exakten, offiziell definierten Beziehungen zwischen Einheiten (z. B. 1 Zoll = genau 25,4 mm) und gewährleistet Ergebnisse, die für Ingenieur- und wissenschaftliche Arbeiten zuverlässig genug sind."
+          },
+          {
+            "question": "Was ist ein Yard und wie verhält es sich zum Meter?",
+            "answer": "Ein Yard ist eine imperiale Längeneinheit, die 3 Fuß oder 36 Zoll entspricht. Ein Yard entspricht genau 0,9144 Metern. Das Yard wurde historisch durch eine physische Standardstange in England definiert, wird heute jedoch zur Präzision in Bezug auf den Meter definiert."
+          },
+          {
+            "question": "Wie viele Meter hat eine Meile?",
+            "answer": "Eine Meile entspricht genau 1.609,344 Metern. Dies ist die Landmeile, die für Entfernungen an Land verwendet wird. Um Meilen in Meter umzurechnen, multiplizieren Sie die Anzahl der Meilen mit 1.609,344. Zum Beispiel entspricht ein 5-km-Lauf etwa 3,107 Meilen."
+          },
+          {
+            "question": "Welche Einheiten verwenden Wissenschaftler zur Längenmessung?",
+            "answer": "Wissenschaftler verwenden das metrische System mit dem Meter als Basiseinheit. Je nach Maßstab nutzen sie Kilometer für große Entfernungen, Meter und Zentimeter für Alltagsgegenstände, Millimeter für kleine Objekte, Mikrometer für Zellen und Nanometer für Moleküle und Lichtwellenlängen."
+          },
+          {
+            "question": "Kann ich diesen Umrechner auf meinem Handy verwenden?",
+            "answer": "Ja, unser Einheitenumrechner ist vollständig responsiv und funktioniert einwandfrei auf Smartphones, Tablets und Desktop-Computern. Öffnen Sie einfach die Seite in Ihrem mobilen Browser und beginnen Sie sofort mit der Umrechnung – kein App-Download erforderlich."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Entdecken Sie unsere weiteren Finanztools",
+        "description": "Verwalten Sie jeden Aspekt Ihrer Finanzen mit unseren kostenlosen, benutzerfreundlichen Rechnern und Trackern."
+      }
     }
   }
 }

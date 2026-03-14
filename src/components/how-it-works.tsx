@@ -15,7 +15,7 @@ const iconMap: Record<string, ComponentType<{ className?: string }>> = {
 
 type Step = {
     number: number;
-    icon: string;
+    icon?: string;
     title: string;
     description: string;
 };
