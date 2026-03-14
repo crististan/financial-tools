@@ -10,6 +10,8 @@ import ToolsCta from "@/components/tools-cta";
 import { getToolBySlug, getToolTranslation, getStaticToolParams, getLocalizedToolsFromJson } from "@/lib/tool-data";
 import { getToolComponent } from "@/components/tools";
 import { getDictionary } from "@/lib/dictionaries";
+import { getSponsorsForPage } from "@/lib/site-config";
+import SponsorSection from "@/components/sponsor-section";
 import type { CommonDictionary } from "@/dictionaries/en/common";
 
 export async function generateStaticParams() {
@@ -35,6 +37,9 @@ export default async function ToolPage({ params }: { params: Promise<{ lang: str
         cta: { ...t.cta, text: common.tools.cta },
     }));
 
+    // Get sponsors for this tool page
+    const sponsors = await getSponsorsForPage(toolData.id, lang);
+
     // Get the unique tool component
     const ToolComponent = getToolComponent(toolData.component);
     if (!ToolComponent) {
@@ -53,6 +58,14 @@ export default async function ToolPage({ params }: { params: Promise<{ lang: str
                 translation={translation}
                 config={toolData.config}
             />
+
+            {sponsors.length > 0 && (
+                <Section>
+                    <Container>
+                        <SponsorSection sponsors={sponsors} label={common.sponsor.label} />
+                    </Container>
+                </Section>
+            )}
 
             <Section>
                 <Container>

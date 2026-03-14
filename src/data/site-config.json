@@ -1,0 +1,26 @@
+{
+  "sponsors": [
+    {
+      "id": "revolut-affiliate",
+      "status": "active",
+      "pages": ["homepage", "currency-converter", "monthly-budget-tracker"],
+      "translations": {
+        "en": {
+          "text": "Open a free Revolut account and enjoy instant currency exchange at interbank rates, fee-free spending abroad, and smart budgeting tools — all from one app.",
+          "linkText": "Get Revolut for free →",
+          "linkUrl": "https://revolut.com/referral/EXAMPLE"
+        },
+        "ro": {
+          "text": "Deschide un cont Revolut gratuit și bucură-te de schimb valutar instant la cursul interbancar, cheltuieli fără comision în străinătate și instrumente inteligente de bugetare — totul dintr-o singură aplicație.",
+          "linkText": "Obține Revolut gratuit →",
+          "linkUrl": "https://revolut.com/referral/EXAMPLE"
+        },
+        "de": {
+          "text": "Eröffnen Sie ein kostenloses Revolut-Konto und genießen Sie sofortigen Währungsumtausch zu Interbankenkursen, gebührenfreies Bezahlen im Ausland und intelligente Budgetierungstools — alles in einer App.",
+          "linkText": "Revolut kostenlos erhalten →",
+          "linkUrl": "https://revolut.com/referral/EXAMPLE"
+        }
+      }
+    }
+  ]
+}

@@ -31,6 +31,9 @@ const commonDictionary: CommonDictionary = {
         ro: "Română",
         de: "Deutsch",
     },
+    sponsor: {
+        label: "Gesponsert",
+    },
 };
 
 export default commonDictionary;
