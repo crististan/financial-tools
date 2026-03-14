@@ -32,7 +32,7 @@ export default function ToolsCta({ title, description, tools, currentToolSlug }:
                     <p className="text-[var(--clr-neutral-100)] max-w-[600px] mx-auto">{description}</p>
                 )}
             </div>
-            <div className={`grid grid-cols-1 ${otherTools.length >= 2 ? 'md:grid-cols-2' : ''} gap-6 max-w-[900px] mx-auto`}>
+            <div className={`grid grid-cols-1 ${otherTools.length >= 2 ? 'md:grid-cols-3' : ''} gap-6 max-w-[1440px] mx-auto`}>
                 {otherTools.map((tool) => (
                     <div
                         key={tool.slug}

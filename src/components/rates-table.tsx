@@ -30,8 +30,8 @@ function getRate(from: string, to: string, factors: Record<string, number>): num
 export default function RatesTable({ pairs, factors, headers, title, description, names, decimals }: RatesTableProps) {
     return (
         <div>
-            <h2 className="text-2xl md:text-4xl font-medium mb-4">{title}</h2>
-            <p className="text-[var(--clr-neutral-100)] mb-8 max-w-[600px]">{description}</p>
+            <h2 className="text-2xl md:text-4xl font-medium mb-4 text-center">{title}</h2>
+            <p className="text-[var(--clr-neutral-100)] mb-8 max-w-[600px] mx-auto">{description}</p>
 
             <div className="overflow-x-auto rounded-2xl border border-[var(--clr-neutral-900)]">
                 <table className="w-full text-left">
