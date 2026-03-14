@@ -15,6 +15,8 @@ export interface SponsorEntry {
 
 export interface SiteConfig {
     sponsors: SponsorEntry[];
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    solarEstimator?: Record<string, any>;
 }
 
 // ---- Loader ----
@@ -27,6 +29,13 @@ async function getSiteConfig(): Promise<SiteConfig> {
         cachedConfig = mod.default as unknown as SiteConfig;
     }
     return cachedConfig;
+}
+
+/** Get solar estimator config data from site-config.json */
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+export async function getSolarEstimatorConfig(): Promise<any> {
+    const config = await getSiteConfig();
+    return config.solarEstimator;
 }
 
 /** Get active sponsors for a specific page + language (returns translated items) */

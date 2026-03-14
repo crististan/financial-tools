@@ -93,6 +93,7 @@ const toolModules: Record<string, () => Promise<ToolData>> = {
     "unit-converter": () => import("@/data/tools/unit-converter.json").then((m) => m.default as unknown as ToolData),
     "loan-repayment-calculator": () => import("@/data/tools/loan-repayment-calculator.json").then((m) => m.default as unknown as ToolData),
     "monthly-budget-tracker": () => import("@/data/tools/monthly-budget-tracker.json").then((m) => m.default as unknown as ToolData),
+    "solar-energy-estimator": () => import("@/data/tools/solar-energy-estimator.json").then((m) => m.default as unknown as ToolData),
 };
 
 const toolIds = Object.keys(toolModules);
@@ -165,23 +166,26 @@ export async function getSlugMap(fromLang: string, toLang: string): Promise<Reco
     return map;
 }
 
-/** Get localized tools data for homepage cards & CTA sections */
+/** Get localized tools data for homepage cards & CTA sections.
+ *  Only includes tools that have a translation for the requested language. */
 export async function getLocalizedToolsFromJson(lang: string) {
     const allTools = await getAllTools();
     const prefix = lang === "en" ? "" : `/${lang}`;
 
-    return allTools.map((tool) => {
-        const tr = tool.translations[lang] ?? tool.translations["en"];
-        return {
-            id: tool.id,
-            slug: tr.slug,
-            iconPath: tool.iconPath,
-            title: tr.hero.headline,
-            shortDescription: tr.hero.description,
-            cta: {
-                href: `${prefix}/${tr.slug}`,
-                text: "", // Will be filled by common dictionary cta text
-            },
-        };
-    });
+    return allTools
+        .filter((tool) => tool.translations[lang] != null)
+        .map((tool) => {
+            const tr = tool.translations[lang];
+            return {
+                id: tool.id,
+                slug: tr.slug,
+                iconPath: tool.iconPath,
+                title: tr.hero.headline,
+                shortDescription: tr.hero.description,
+                cta: {
+                    href: `${prefix}/${tr.slug}`,
+                    text: "", // Will be filled by common dictionary cta text
+                },
+            };
+        });
 }
