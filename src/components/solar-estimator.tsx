@@ -171,7 +171,6 @@ export default function SolarEstimator({ labels, config }: SolarEstimatorProps) 
         const subsidizedCost = Math.max(ap.casaVerdeMinContribution, systemCost - ap.casaVerdeSubsidy);
         const paybackWithSubsidy = totals.totalSavings > 0 ? subsidizedCost / totals.totalSavings : 0;
 
-        // 25-year cumulative savings with degradation and price increase
         let cumulativeSavings = 0;
         for (let year = 1; year <= ap.panelLifespan; year++) {
             const degradationFactor = Math.pow(1 - ap.panelDegradation, year - 1);
@@ -223,7 +222,7 @@ export default function SolarEstimator({ labels, config }: SolarEstimatorProps) 
         };
     }, [annualProduction, normalizedDistribution, monthlyConsumption, provider, consumptionProfile, systemPower, config.selfConsumption, config.systemCosts]);
 
-    // Chart data (short month names for display)
+    // Chart data
     const chartData = useMemo(() => {
         return monthlyData.map((m) => ({
             name: m.month.substring(0, 3),
@@ -233,336 +232,249 @@ export default function SolarEstimator({ labels, config }: SolarEstimatorProps) 
         }));
     }, [monthlyData, labels]);
 
-    const inputClasses = "w-full p-3 bg-[var(--clr-neutral-800)] text-lg font-medium text-[var(--clr-neutral-0)] border border-[var(--clr-neutral-1000)] rounded-md";
-    const labelClasses = "block text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2";
-    const resultCardClasses = "bg-[var(--clr-neutral-1000)] rounded-xl p-4 text-center";
+    const inputCls = "w-full p-3 bg-[var(--clr-neutral-800)] text-base font-medium text-[var(--clr-neutral-0)] border border-[var(--clr-neutral-1000)] rounded-md";
+    const lblCls = "block text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-1.5";
+    const metricCls = "bg-[var(--clr-neutral-1000)] rounded-xl p-3 text-center";
+    const toggleBtnActive = "flex-1 py-2 px-3 rounded-md text-sm font-medium cursor-pointer bg-[var(--clr-green-500)] text-[var(--clr-neutral-1000)]";
+    const toggleBtnInactive = "flex-1 py-2 px-3 rounded-md text-sm font-medium cursor-pointer bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)] border border-[var(--clr-neutral-1000)]";
 
     return (
-        <div className="w-full max-w-[800px] mx-auto space-y-8">
-            {/* Input Form */}
-            <div className="bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
-                {/* System Power - Slider */}
-                <div className="mb-5">
-                    <label className={labelClasses}>
-                        {labels.systemPowerLabel}: <span className="text-[var(--clr-green-500)] font-bold text-sm">{systemPower} kWp</span>
-                    </label>
-                    <input
-                        type="range"
-                        className="w-full accent-[var(--clr-green-500)] h-2 cursor-pointer"
-                        min={labels.systemPowerMin}
-                        max={labels.systemPowerMax}
-                        step={0.5}
-                        value={systemPower}
-                        onChange={(e) => setSystemPower(parseFloat(e.target.value))}
-                    />
-                    <div className="flex justify-between text-xs text-[var(--clr-neutral-100)] mt-1">
-                        <span>{labels.systemPowerMin} kWp</span>
-                        <span>{labels.systemPowerMax} kWp</span>
-                    </div>
-                </div>
+        <div className="w-full max-w-[1440px] mx-auto px-4">
+            {/* ═══ MAIN DASHBOARD: inputs left, results right ═══ */}
+            <div className="grid grid-cols-1 lg:grid-cols-[300px_1fr] gap-5">
 
-                {/* Region */}
-                <div className="mb-5">
-                    <label className={labelClasses}>{labels.regionLabel}</label>
-                    <select
-                        className={inputClasses}
-                        value={regionId}
-                        onChange={(e) => setRegionId(e.target.value)}
-                    >
-                        {config.regions.map((r) => (
-                            <option key={r.id} value={r.id} className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">
-                                {r.label} ({r.kwhPerKwp} kWh/kWp/an)
-                            </option>
-                        ))}
-                    </select>
-                    {region.counties && (
-                        <p className="text-xs text-[var(--clr-neutral-100)] mt-1">{region.counties}</p>
-                    )}
-                </div>
-
-                {/* Consumption Profile */}
-                <div className="mb-5">
-                    <label className={labelClasses}>{labels.consumptionProfileLabel}</label>
-                    <div className="flex gap-3">
-                        <button
-                            type="button"
-                            className={`flex-1 p-3 rounded-md text-sm font-medium transition-colors cursor-pointer ${
-                                consumptionProfile === 'home'
-                                    ? 'bg-[var(--clr-green-500)] text-[var(--clr-neutral-1000)]'
-                                    : 'bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)] border border-[var(--clr-neutral-1000)]'
-                            }`}
-                            onClick={() => setConsumptionProfile('home')}
-                        >
-                            {labels.profileHome}
-                        </button>
-                        <button
-                            type="button"
-                            className={`flex-1 p-3 rounded-md text-sm font-medium transition-colors cursor-pointer ${
-                                consumptionProfile === 'office'
-                                    ? 'bg-[var(--clr-green-500)] text-[var(--clr-neutral-1000)]'
-                                    : 'bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)] border border-[var(--clr-neutral-1000)]'
-                            }`}
-                            onClick={() => setConsumptionProfile('office')}
-                        >
-                            {labels.profileOffice}
-                        </button>
-                    </div>
-                </div>
-
-                {/* Monthly Consumption */}
-                <div className="mb-5">
-                    <label className={labelClasses}>{labels.monthlyConsumptionLabel}</label>
-                    <input
-                        type="number"
-                        className={inputClasses}
-                        value={monthlyConsumption || ''}
-                        onChange={(e) => {
-                            const v = parseInt(e.target.value);
-                            setMonthlyConsumption(isNaN(v) ? 0 : v);
-                        }}
-                        min={0}
-                    />
-                </div>
-
-                {/* Battery Toggle */}
-                <div className="mb-5">
-                    <label className={labelClasses}>{labels.hasBatteryLabel}</label>
-                    <div className="flex gap-3">
-                        <button
-                            type="button"
-                            className={`flex-1 p-3 rounded-md text-sm font-medium transition-colors cursor-pointer ${
-                                !hasBattery
-                                    ? 'bg-[var(--clr-green-500)] text-[var(--clr-neutral-1000)]'
-                                    : 'bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)] border border-[var(--clr-neutral-1000)]'
-                            }`}
-                            onClick={() => setHasBattery(false)}
-                        >
-                            {labels.batteryNo}
-                        </button>
-                        <button
-                            type="button"
-                            className={`flex-1 p-3 rounded-md text-sm font-medium transition-colors cursor-pointer ${
-                                hasBattery
-                                    ? 'bg-[var(--clr-green-500)] text-[var(--clr-neutral-1000)]'
-                                    : 'bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)] border border-[var(--clr-neutral-1000)]'
-                            }`}
-                            onClick={() => setHasBattery(true)}
-                        >
-                            {labels.batteryYes}
-                        </button>
-                    </div>
-                </div>
-
-                {/* Battery Capacity Slider */}
-                {hasBattery && (
-                    <div className="mb-5">
-                        <label className={labelClasses}>
-                            {labels.batteryCapacityLabel}: <span className="text-[var(--clr-green-500)] font-bold text-sm">{batteryCapacity} kWh</span>
+                {/* ── LEFT: Inputs ── */}
+                <div className="bg-[var(--clr-neutral-900)] rounded-2xl p-5 space-y-4 lg:self-start">
+                    {/* System Power */}
+                    <div>
+                        <label className={lblCls}>
+                            {labels.systemPowerLabel}: <span className="text-[var(--clr-green-500)] font-bold">{systemPower} kWp</span>
                         </label>
                         <input
                             type="range"
                             className="w-full accent-[var(--clr-green-500)] h-2 cursor-pointer"
-                            min={labels.batteryCapacityMin}
-                            max={labels.batteryCapacityMax}
-                            step={1}
-                            value={batteryCapacity}
-                            onChange={(e) => setBatteryCapacity(parseInt(e.target.value))}
+                            min={labels.systemPowerMin}
+                            max={labels.systemPowerMax}
+                            step={0.5}
+                            value={systemPower}
+                            onChange={(e) => setSystemPower(parseFloat(e.target.value))}
                         />
-                        <div className="flex justify-between text-xs text-[var(--clr-neutral-100)] mt-1">
-                            <span>{labels.batteryCapacityMin} kWh</span>
-                            <span>{labels.batteryCapacityMax} kWh</span>
+                        <div className="flex justify-between text-xs text-[var(--clr-neutral-100)]">
+                            <span>{labels.systemPowerMin}</span>
+                            <span>{labels.systemPowerMax} kWp</span>
                         </div>
                     </div>
-                )}
 
-                {/* Energy Provider */}
-                <div className="mb-5">
-                    <label className={labelClasses}>{labels.providerLabel}</label>
-                    <select
-                        className={inputClasses}
-                        value={providerId}
-                        onChange={(e) => setProviderId(e.target.value)}
-                    >
-                        {config.energyProviders.map((p) => (
-                            <option key={p.id} value={p.id} className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">
-                                {p.name} — {p.retailPrice.toFixed(2)} {labels.leiUnit}/kWh
-                            </option>
-                        ))}
-                    </select>
-                    <p className="text-xs text-[var(--clr-neutral-100)] mt-1">
-                        {labels.retailPriceNote}: {provider.retailPrice.toFixed(2)} {labels.leiUnit}/kWh | {labels.prosumerPriceNote}: {provider.prosumerPrice.toFixed(2)} {labels.leiUnit}/kWh
-                    </p>
-                </div>
-            </div>
+                    {/* Region */}
+                    <div>
+                        <label className={lblCls}>{labels.regionLabel}</label>
+                        <select className={inputCls} value={regionId} onChange={(e) => setRegionId(e.target.value)}>
+                            {config.regions.map((r) => (
+                                <option key={r.id} value={r.id} className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">
+                                    {r.label} ({r.kwhPerKwp})
+                                </option>
+                            ))}
+                        </select>
+                    </div>
 
-            {/* Results */}
-            <div className="bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
-                <h3 className="text-lg font-bold text-[var(--clr-neutral-0)] mb-6">{labels.resultsTitle}</h3>
+                    {/* Profile */}
+                    <div>
+                        <label className={lblCls}>{labels.consumptionProfileLabel}</label>
+                        <div className="flex gap-2">
+                            <button type="button" className={consumptionProfile === 'home' ? toggleBtnActive : toggleBtnInactive} onClick={() => setConsumptionProfile('home')}>
+                                {labels.profileHome}
+                            </button>
+                            <button type="button" className={consumptionProfile === 'office' ? toggleBtnActive : toggleBtnInactive} onClick={() => setConsumptionProfile('office')}>
+                                {labels.profileOffice}
+                            </button>
+                        </div>
+                    </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.annualProductionLabel}</p>
-                        <p className="text-xl font-bold text-[var(--clr-green-500)]">{formatNumber(totals.totalProduction)}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.kwhPerYearUnit}</p>
+                    {/* Monthly Consumption */}
+                    <div>
+                        <label className={lblCls}>{labels.monthlyConsumptionLabel}</label>
+                        <input
+                            type="number"
+                            className={inputCls}
+                            value={monthlyConsumption || ''}
+                            onChange={(e) => { const v = parseInt(e.target.value); setMonthlyConsumption(isNaN(v) ? 0 : v); }}
+                            min={0}
+                        />
                     </div>
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.selfConsumptionLabel}</p>
-                        <p className="text-xl font-bold text-[var(--clr-neutral-0)]">{formatNumber(totals.totalSelfConsumption)}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.kwhPerYearUnit} ({formatNumber(selfConsumptionPercent, 0)}%)</p>
-                    </div>
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.surplusLabel}</p>
-                        <p className="text-xl font-bold text-[var(--clr-neutral-0)]">{formatNumber(totals.totalSurplus)}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.kwhPerYearUnit}</p>
-                    </div>
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.totalAnnualSavingsLabel}</p>
-                        <p className="text-xl font-bold text-[var(--clr-green-500)]">{formatNumber(totals.totalSavings)}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.leiPerYearUnit}</p>
-                    </div>
-                </div>
 
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.monthlyProductionLabel}</p>
-                        <p className="text-lg font-bold text-[var(--clr-neutral-0)]">{formatNumber(Math.round(totals.totalProduction / 12))}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.kwhUnit}</p>
+                    {/* Battery */}
+                    <div>
+                        <label className={lblCls}>{labels.hasBatteryLabel}</label>
+                        <div className="flex gap-2">
+                            <button type="button" className={!hasBattery ? toggleBtnActive : toggleBtnInactive} onClick={() => setHasBattery(false)}>
+                                {labels.batteryNo}
+                            </button>
+                            <button type="button" className={hasBattery ? toggleBtnActive : toggleBtnInactive} onClick={() => setHasBattery(true)}>
+                                {labels.batteryYes}
+                            </button>
+                        </div>
                     </div>
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.savingsFromSelfConsumptionLabel}</p>
-                        <p className="text-lg font-bold text-[var(--clr-neutral-0)]">{formatNumber(Math.round(totals.totalSelfConsumption * provider.retailPrice))}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.leiPerYearUnit}</p>
-                    </div>
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.surplusValueLabel}</p>
-                        <p className="text-lg font-bold text-[var(--clr-neutral-0)]">{formatNumber(Math.round(totals.totalSurplus * provider.prosumerPrice))}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.leiPerYearUnit}</p>
-                    </div>
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.totalMonthlySavingsLabel}</p>
-                        <p className="text-lg font-bold text-[var(--clr-green-500)]">{formatNumber(Math.round(totals.totalSavings / 12))}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.leiPerMonthUnit}</p>
-                    </div>
-                </div>
-            </div>
 
-            {/* Chart */}
-            <div className="bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
-                <h3 className="text-lg font-bold text-[var(--clr-neutral-0)] mb-6">{labels.chartTitle}</h3>
-                <div className="w-full h-[300px] md:h-[400px]">
-                    <ResponsiveContainer width="100%" height="100%">
-                        <BarChart data={chartData} margin={{ top: 5, right: 5, left: -10, bottom: 5 }}>
-                            <CartesianGrid strokeDasharray="3 3" stroke="var(--clr-neutral-800)" />
-                            <XAxis dataKey="name" tick={{ fill: 'var(--clr-neutral-100)', fontSize: 12 }} />
-                            <YAxis tick={{ fill: 'var(--clr-neutral-100)', fontSize: 12 }} />
-                            <Tooltip
-                                contentStyle={{
-                                    backgroundColor: 'var(--clr-neutral-1000)',
-                                    border: '1px solid var(--clr-neutral-800)',
-                                    borderRadius: '8px',
-                                    color: 'var(--clr-neutral-0)',
-                                }}
-                                labelStyle={{ color: 'var(--clr-neutral-0)' }}
+                    {/* Battery Capacity */}
+                    {hasBattery && (
+                        <div>
+                            <label className={lblCls}>
+                                {labels.batteryCapacityLabel}: <span className="text-[var(--clr-green-500)] font-bold">{batteryCapacity} kWh</span>
+                            </label>
+                            <input
+                                type="range"
+                                className="w-full accent-[var(--clr-green-500)] h-2 cursor-pointer"
+                                min={labels.batteryCapacityMin}
+                                max={labels.batteryCapacityMax}
+                                step={1}
+                                value={batteryCapacity}
+                                onChange={(e) => setBatteryCapacity(parseInt(e.target.value))}
                             />
-                            <Legend wrapperStyle={{ fontSize: 12, color: 'var(--clr-neutral-100)' }} />
-                            <Bar dataKey={labels.chartSelfConsumption} stackId="production" fill="#09E789" radius={[0, 0, 0, 0]} />
-                            <Bar dataKey={labels.chartSurplus} stackId="production" fill="#F59E0B" radius={[4, 4, 0, 0]} />
-                            <Bar dataKey={labels.chartConsumption} fill="#3B82F6" radius={[4, 4, 0, 0]} />
-                        </BarChart>
-                    </ResponsiveContainer>
-                </div>
-                <p className="text-xs text-[var(--clr-neutral-100)] mt-4">{labels.netMeteringNote}</p>
-            </div>
+                            <div className="flex justify-between text-xs text-[var(--clr-neutral-100)]">
+                                <span>{labels.batteryCapacityMin}</span>
+                                <span>{labels.batteryCapacityMax} kWh</span>
+                            </div>
+                        </div>
+                    )}
 
-            {/* Comparison: with vs without battery */}
-            <div className="bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
-                <h3 className="text-lg font-bold text-[var(--clr-neutral-0)] mb-6">{labels.comparisonTitle}</h3>
-                <div className="grid grid-cols-2 gap-4">
-                    <div className="bg-[var(--clr-neutral-1000)] rounded-xl p-5">
-                        <h4 className="text-sm font-bold text-[var(--clr-neutral-0)] mb-4">{labels.comparisonWithoutBattery}</h4>
-                        <div className="space-y-3">
-                            <div>
-                                <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonSelfConsumption}</p>
-                                <p className="text-lg font-bold text-[var(--clr-neutral-0)]">{comparison.noBattery.rate}%</p>
+                    {/* Provider */}
+                    <div>
+                        <label className={lblCls}>{labels.providerLabel}</label>
+                        <select className={inputCls} value={providerId} onChange={(e) => setProviderId(e.target.value)}>
+                            {config.energyProviders.map((p) => (
+                                <option key={p.id} value={p.id} className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">
+                                    {p.name} — {p.retailPrice.toFixed(2)} lei
+                                </option>
+                            ))}
+                        </select>
+                        <p className="text-xs text-[var(--clr-neutral-100)] mt-1">
+                            Retail: {provider.retailPrice.toFixed(2)} | Prosumator: {provider.prosumerPrice.toFixed(2)} lei/kWh
+                        </p>
+                    </div>
+                </div>
+
+                {/* ── RIGHT: Results ── */}
+                <div className="space-y-5">
+                    {/* Key metrics row */}
+                    <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                        <div className={metricCls}>
+                            <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-1">{labels.annualProductionLabel}</p>
+                            <p className="text-xl font-bold text-[var(--clr-green-500)] leading-tight">{formatNumber(totals.totalProduction)}</p>
+                            <p className="text-xs text-[var(--clr-neutral-100)]">{labels.kwhPerYearUnit}</p>
+                        </div>
+                        <div className={metricCls}>
+                            <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-1">{labels.selfConsumptionLabel}</p>
+                            <p className="text-xl font-bold text-[var(--clr-neutral-0)] leading-tight">{formatNumber(totals.totalSelfConsumption)}</p>
+                            <p className="text-xs text-[var(--clr-neutral-100)]">{labels.kwhPerYearUnit} ({formatNumber(selfConsumptionPercent, 0)}%)</p>
+                        </div>
+                        <div className={metricCls}>
+                            <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-1">{labels.surplusLabel}</p>
+                            <p className="text-xl font-bold text-amber-400 leading-tight">{formatNumber(totals.totalSurplus)}</p>
+                            <p className="text-xs text-[var(--clr-neutral-100)]">{labels.kwhPerYearUnit}</p>
+                        </div>
+                        <div className={metricCls}>
+                            <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-1">{labels.totalAnnualSavingsLabel}</p>
+                            <p className="text-xl font-bold text-[var(--clr-green-500)] leading-tight">{formatNumber(totals.totalSavings)}</p>
+                            <p className="text-xs text-[var(--clr-neutral-100)]">{labels.leiPerYearUnit} (~{formatNumber(Math.round(totals.totalSavings / 12))} {labels.leiPerMonthUnit})</p>
+                        </div>
+                    </div>
+
+                    {/* Chart + Comparison side by side */}
+                    <div className="grid grid-cols-1 xl:grid-cols-[1fr_300px] gap-5">
+                        {/* Chart */}
+                        <div className="bg-[var(--clr-neutral-900)] rounded-2xl p-5">
+                            <h3 className="text-lg font-bold text-[var(--clr-neutral-0)] mb-4">{labels.chartTitle}</h3>
+                            <div className="w-full h-[280px]">
+                                <ResponsiveContainer width="100%" height="100%">
+                                    <BarChart data={chartData} margin={{ top: 5, right: 5, left: -10, bottom: 5 }}>
+                                        <CartesianGrid strokeDasharray="3 3" stroke="var(--clr-neutral-800)" />
+                                        <XAxis dataKey="name" tick={{ fill: 'var(--clr-neutral-100)', fontSize: 12 }} />
+                                        <YAxis tick={{ fill: 'var(--clr-neutral-100)', fontSize: 12 }} />
+                                        <Tooltip
+                                            contentStyle={{
+                                                backgroundColor: 'var(--clr-neutral-1000)',
+                                                border: '1px solid var(--clr-neutral-800)',
+                                                borderRadius: '8px',
+                                                color: 'var(--clr-neutral-0)',
+                                                fontSize: 13,
+                                            }}
+                                            labelStyle={{ color: 'var(--clr-neutral-0)' }}
+                                        />
+                                        <Legend wrapperStyle={{ fontSize: 12, color: 'var(--clr-neutral-100)' }} />
+                                        <Bar dataKey={labels.chartSelfConsumption} stackId="production" fill="#09E789" radius={[0, 0, 0, 0]} />
+                                        <Bar dataKey={labels.chartSurplus} stackId="production" fill="#F59E0B" radius={[4, 4, 0, 0]} />
+                                        <Bar dataKey={labels.chartConsumption} fill="#3B82F6" radius={[4, 4, 0, 0]} />
+                                    </BarChart>
+                                </ResponsiveContainer>
                             </div>
-                            <div>
-                                <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonAnnualSavings}</p>
-                                <p className="text-lg font-bold text-[var(--clr-neutral-0)]">{formatNumber(comparison.noBattery.savings)} {labels.leiUnit}</p>
-                            </div>
-                            <div>
-                                <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonPayback}</p>
-                                <p className="text-lg font-bold text-[var(--clr-neutral-0)]">{comparison.noBattery.payback} {labels.yearsUnit}</p>
+                        </div>
+
+                        {/* Comparison */}
+                        <div className="bg-[var(--clr-neutral-900)] rounded-2xl p-5">
+                            <h3 className="text-lg font-bold text-[var(--clr-neutral-0)] mb-4">{labels.comparisonTitle}</h3>
+                            <div className="grid grid-cols-2 gap-3">
+                                <div className="bg-[var(--clr-neutral-1000)] rounded-xl p-4">
+                                    <p className="text-xs font-bold text-[var(--clr-neutral-100)] mb-3">{labels.comparisonWithoutBattery}</p>
+                                    <p className="text-base font-bold text-[var(--clr-neutral-0)]">{comparison.noBattery.rate}%</p>
+                                    <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonSelfConsumption}</p>
+                                    <p className="text-base font-bold text-[var(--clr-neutral-0)] mt-2">{formatNumber(comparison.noBattery.savings)} lei</p>
+                                    <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonAnnualSavings}</p>
+                                    <p className="text-base font-bold text-[var(--clr-neutral-0)] mt-2">{comparison.noBattery.payback} {labels.yearsUnit}</p>
+                                    <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonPayback}</p>
+                                </div>
+                                <div className="bg-[var(--clr-neutral-1000)] rounded-xl p-4 border border-[var(--clr-green-500)]">
+                                    <p className="text-xs font-bold text-[var(--clr-green-500)] mb-3">{labels.comparisonWithBattery}</p>
+                                    <p className="text-base font-bold text-[var(--clr-green-500)]">{comparison.withBattery.rate}%</p>
+                                    <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonSelfConsumption}</p>
+                                    <p className="text-base font-bold text-[var(--clr-green-500)] mt-2">{formatNumber(comparison.withBattery.savings)} lei</p>
+                                    <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonAnnualSavings}</p>
+                                    <p className="text-base font-bold text-[var(--clr-green-500)] mt-2">{comparison.withBattery.payback} {labels.yearsUnit}</p>
+                                    <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonPayback}</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div className="bg-[var(--clr-neutral-1000)] rounded-xl p-5 border border-[var(--clr-green-500)]">
-                        <h4 className="text-sm font-bold text-[var(--clr-green-500)] mb-4">{labels.comparisonWithBattery}</h4>
-                        <div className="space-y-3">
-                            <div>
-                                <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonSelfConsumption}</p>
-                                <p className="text-lg font-bold text-[var(--clr-green-500)]">{comparison.withBattery.rate}%</p>
+
+                    {/* ROI — full width under chart */}
+                    <div className="bg-[var(--clr-neutral-900)] rounded-2xl p-5">
+                        <h3 className="text-lg font-bold text-[var(--clr-neutral-0)] mb-4">{labels.roiTitle}</h3>
+                        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+                            <div className={metricCls}>
+                                <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-1">{labels.systemCostLabel}</p>
+                                <p className="text-xl font-bold text-[var(--clr-neutral-0)]">{formatNumber(systemCost)}</p>
+                                <p className="text-xs text-[var(--clr-neutral-100)]">{labels.leiUnit}</p>
                             </div>
-                            <div>
-                                <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonAnnualSavings}</p>
-                                <p className="text-lg font-bold text-[var(--clr-green-500)]">{formatNumber(comparison.withBattery.savings)} {labels.leiUnit}</p>
+                            <div className={metricCls}>
+                                <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-1">{labels.savings25YearsLabel}</p>
+                                <p className="text-xl font-bold text-[var(--clr-green-500)]">{formatNumber(roi.cumulativeSavings)}</p>
+                                <p className="text-xs text-[var(--clr-neutral-100)]">{labels.leiUnit}</p>
                             </div>
-                            <div>
-                                <p className="text-xs text-[var(--clr-neutral-100)]">{labels.comparisonPayback}</p>
-                                <p className="text-lg font-bold text-[var(--clr-green-500)]">{comparison.withBattery.payback} {labels.yearsUnit}</p>
+                            <div className={metricCls}>
+                                <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-1">{labels.withoutSubsidyLabel}</p>
+                                <p className="text-xl font-bold text-[var(--clr-neutral-0)]">{roi.paybackNoSubsidy} {labels.yearsUnit}</p>
+                            </div>
+                            <div className={metricCls}>
+                                <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-1">{labels.withSubsidyLabel}</p>
+                                <p className="text-xl font-bold text-[var(--clr-green-500)]">{roi.paybackWithSubsidy} {labels.yearsUnit}</p>
                             </div>
                         </div>
+                        <p className="text-xs text-[var(--clr-neutral-100)] mt-3">{labels.casaVerdeNote}</p>
                     </div>
                 </div>
             </div>
 
-            {/* ROI Section */}
-            <div className="bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
-                <h3 className="text-lg font-bold text-[var(--clr-neutral-0)] mb-6">{labels.roiTitle}</h3>
-                <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-4">
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.systemCostLabel}</p>
-                        <p className="text-xl font-bold text-[var(--clr-neutral-0)]">{formatNumber(systemCost)}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.leiUnit}</p>
-                    </div>
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.paybackPeriodLabel} ({labels.withoutSubsidyLabel})</p>
-                        <p className="text-xl font-bold text-[var(--clr-neutral-0)]">{roi.paybackNoSubsidy}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.yearsUnit}</p>
-                    </div>
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.paybackPeriodLabel} ({labels.withSubsidyLabel})</p>
-                        <p className="text-xl font-bold text-[var(--clr-green-500)]">{roi.paybackWithSubsidy}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.yearsUnit}</p>
-                    </div>
-                    <div className={resultCardClasses}>
-                        <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{labels.savings25YearsLabel}</p>
-                        <p className="text-xl font-bold text-[var(--clr-green-500)]">{formatNumber(roi.cumulativeSavings)}</p>
-                        <p className="text-xs text-[var(--clr-neutral-100)]">{labels.leiUnit}</p>
-                    </div>
-                </div>
-                <p className="text-xs text-[var(--clr-neutral-100)]">{labels.casaVerdeNote}</p>
-            </div>
-
-            {/* Monthly Breakdown Table (collapsible) */}
-            <div>
+            {/* ═══ BOTTOM: Monthly table (collapsible) + Disclaimer ═══ */}
+            <div className="mt-5 space-y-4">
                 <button
                     type="button"
-                    className="flex items-center gap-2 text-[var(--clr-green-500)] hover:text-[var(--clr-neutral-0)] transition-colors cursor-pointer mb-4"
+                    className="flex items-center gap-2 text-[var(--clr-green-500)] hover:text-[var(--clr-neutral-0)] transition-colors cursor-pointer"
                     onClick={() => setShowMonthlyTable(!showMonthlyTable)}
                 >
-                    <svg
-                        xmlns="http://www.w3.org/2000/svg"
-                        width="20"
-                        height="20"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke="currentColor"
-                        strokeWidth={2}
-                        className={`transition-transform duration-300 ${showMonthlyTable ? 'rotate-90' : ''}`}
-                    >
+                    <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2}
+                        className={`transition-transform duration-300 ${showMonthlyTable ? 'rotate-90' : ''}`}>
                         <path strokeLinecap="round" strokeLinejoin="round" d="M9 5l7 7-7 7" />
                     </svg>
-                    <span className="text-sm font-medium">{labels.monthlyBreakdownTitle}</span>
+                    <span className="text-base font-medium">{labels.monthlyBreakdownTitle}</span>
                 </button>
 
                 {showMonthlyTable && (
@@ -598,12 +510,11 @@ export default function SolarEstimator({ labels, config }: SolarEstimatorProps) 
                         </table>
                     </div>
                 )}
-            </div>
 
-            {/* Disclaimer */}
-            <p className="text-xs text-[var(--clr-neutral-100)] leading-relaxed bg-[var(--clr-neutral-900)] rounded-lg p-4 border-l-4 border-amber-400">
-                {labels.disclaimer}
-            </p>
+                <p className="text-xs text-[var(--clr-neutral-100)] leading-relaxed bg-[var(--clr-neutral-900)] rounded-lg p-4 border-l-4 border-amber-400">
+                    {labels.disclaimer}
+                </p>
+            </div>
         </div>
     );
 }

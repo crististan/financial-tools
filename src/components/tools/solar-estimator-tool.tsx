@@ -1,6 +1,5 @@
 import SolarEstimator from "@/components/solar-estimator";
 import Section from "@/components/section";
-import Container from "@/components/container";
 import type { ToolTranslation } from "@/lib/tool-data";
 import { getSolarEstimatorConfig } from "@/lib/site-config";
 
@@ -13,12 +12,10 @@ export default async function SolarEstimatorTool({ translation }: SolarEstimator
 
     return (
         <Section>
-            <Container>
-                <SolarEstimator
-                    labels={translation.tool}
-                    config={solarConfig}
-                />
-            </Container>
+            <SolarEstimator
+                labels={translation.tool}
+                config={solarConfig}
+            />
         </Section>
     );
 }
