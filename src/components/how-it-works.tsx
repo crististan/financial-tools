@@ -10,7 +10,7 @@ const iconMap: Record<string, ComponentType<{ className?: string }>> = {
     piggyBank: PiggyBank,
     listChecks: ListChecks,
     target: Target,
-    trendingUp: TrendingUp,
+    trendingUp: TrendingUp
 };
 
 type Step = {

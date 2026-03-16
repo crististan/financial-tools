@@ -230,9 +230,9 @@ export default function CompoundInterestCalculator({ labels }: CompoundInterestC
                             value={compounding}
                             onChange={(e) => setCompounding(e.target.value as CompoundingFrequency)}
                         >
-                            <option value="monthly" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.compoundingOptions.monthly}</option>
-                            <option value="quarterly" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.compoundingOptions.quarterly}</option>
-                            <option value="annually" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.compoundingOptions.annually}</option>
+                            <option value="monthly" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.compoundingOptions.monthly}</option>
+                            <option value="quarterly" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.compoundingOptions.quarterly}</option>
+                            <option value="annually" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.compoundingOptions.annually}</option>
                         </select>
                     </div>
                 </div>

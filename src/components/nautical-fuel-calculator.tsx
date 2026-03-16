@@ -204,9 +204,9 @@ export default function NauticalFuelCalculator({ labels }: NauticalFuelCalculato
                             value={engineType}
                             onChange={(e) => setEngineType(e.target.value as EngineType)}
                         >
-                            <option value="outboard" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.engineTypes.outboard}</option>
-                            <option value="inboard" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.engineTypes.inboard}</option>
-                            <option value="sailAux" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.engineTypes.sailAux}</option>
+                            <option value="outboard" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.engineTypes.outboard}</option>
+                            <option value="inboard" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.engineTypes.inboard}</option>
+                            <option value="sailAux" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.engineTypes.sailAux}</option>
                         </select>
                     </div>
                     <div>
@@ -267,10 +267,10 @@ export default function NauticalFuelCalculator({ labels }: NauticalFuelCalculato
                             value={wind}
                             onChange={(e) => setWind(e.target.value as WindCondition)}
                         >
-                            <option value="calm" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.windOptions.calm}</option>
-                            <option value="light" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.windOptions.light}</option>
-                            <option value="moderate" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.windOptions.moderate}</option>
-                            <option value="strong" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.windOptions.strong}</option>
+                            <option value="calm" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.windOptions.calm}</option>
+                            <option value="light" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.windOptions.light}</option>
+                            <option value="moderate" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.windOptions.moderate}</option>
+                            <option value="strong" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.windOptions.strong}</option>
                         </select>
                     </div>
                     <div>
@@ -282,9 +282,9 @@ export default function NauticalFuelCalculator({ labels }: NauticalFuelCalculato
                             value={current}
                             onChange={(e) => setCurrent(e.target.value as CurrentCondition)}
                         >
-                            <option value="none" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.currentOptions.none}</option>
-                            <option value="favorable" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.currentOptions.favorable}</option>
-                            <option value="against" className="bg-[var(--clr-neutral-800)] text-[var(--clr-neutral-0)]">{labels.currentOptions.against}</option>
+                            <option value="none" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.currentOptions.none}</option>
+                            <option value="favorable" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.currentOptions.favorable}</option>
+                            <option value="against" className="bg-[var(--clr-neutral-1000)] text-[var(--clr-neutral-0)]">{labels.currentOptions.against}</option>
                         </select>
                     </div>
                 </div>
