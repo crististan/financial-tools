@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <rect x="8" y="8" width="48" height="48" rx="12" fill="#09E789" fill-opacity="0.15"/>
+  <!-- Boat hull -->
+  <path d="M12 40 L18 44 L46 44 L52 40 L48 40 C46 36 42 34 38 34 L26 34 C22 34 18 36 16 40 Z" fill="#09E789" fill-opacity="0.3" stroke="#09E789" stroke-width="2" stroke-linejoin="round"/>
+  <!-- Mast -->
+  <line x1="32" y1="34" x2="32" y2="16" stroke="#09E789" stroke-width="2" stroke-linecap="round"/>
+  <!-- Sail -->
+  <path d="M32 18 L42 30 L32 30 Z" fill="#09E789" fill-opacity="0.4" stroke="#09E789" stroke-width="1.5" stroke-linejoin="round"/>
+  <!-- Fuel drop -->
+  <path d="M20 22 C20 22 17 26 17 28 C17 29.7 18.3 31 20 31 C21.7 31 23 29.7 23 28 C23 26 20 22 20 22Z" fill="#09E789" stroke="#09E789" stroke-width="1"/>
+  <!-- Water waves -->
+  <path d="M10 48 Q16 45 22 48 Q28 51 34 48 Q40 45 46 48 Q52 51 54 48" stroke="#09E789" stroke-width="1.5" stroke-linecap="round" fill="none" opacity="0.5"/>
+</svg>

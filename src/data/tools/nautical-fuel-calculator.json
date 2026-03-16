@@ -1,0 +1,462 @@
+{
+  "id": "nautical-fuel-calculator",
+  "component": "nautical-fuel-calculator",
+  "iconPath": "/icons/nautical-fuel-calculator-icon.svg",
+  "applicationCategory": "TransportApplication",
+  "config": {},
+  "translations": {
+    "en": {
+      "slug": "nautical-fuel-calculator",
+      "meta": {
+        "title": "Nautical Fuel Calculator | Boat Fuel Consumption & Range Estimator",
+        "description": "Free nautical fuel consumption calculator for skippers. Estimate fuel usage based on distance, speed, engine type, horsepower, and weather conditions. View fuel vs speed chart, total cost, and boat range.",
+        "keywords": ["nautical fuel calculator", "boat fuel consumption", "marine fuel calculator", "sailing fuel estimator", "boat range calculator", "nautical miles fuel", "boat fuel cost", "skipper tools"]
+      },
+      "hero": {
+        "headline": "Nautical Fuel Calculator",
+        "description": "Estimate your boat's fuel consumption based on distance, speed, engine type, and weather conditions. View a fuel vs speed chart, calculate total cost, and check your vessel's autonomy range."
+      },
+      "tool": {
+        "distanceLabel": "Distance (Nautical Miles)",
+        "distancePlaceholder": "e.g. 50",
+        "speedLabel": "Speed (Knots)",
+        "speedPlaceholder": "e.g. 8",
+        "engineTypeLabel": "Engine Type",
+        "engineTypes": {
+          "outboard": "Outboard (Gasoline)",
+          "inboard": "Inboard (Diesel)",
+          "sailAux": "Sail + Auxiliary Motor"
+        },
+        "enginePowerLabel": "Engine Power (HP)",
+        "enginePowerPlaceholder": "e.g. 150",
+        "tankCapacityLabel": "Tank Capacity (Liters)",
+        "tankCapacityPlaceholder": "e.g. 300",
+        "fuelPriceLabel": "Fuel Price (per Liter)",
+        "fuelPricePlaceholder": "e.g. 1.85",
+        "windLabel": "Wind Conditions",
+        "windOptions": {
+          "calm": "Calm",
+          "light": "Light Breeze",
+          "moderate": "Moderate Wind",
+          "strong": "Strong Wind"
+        },
+        "currentLabel": "Sea Current",
+        "currentOptions": {
+          "none": "No Current",
+          "favorable": "Favorable Current",
+          "against": "Against Current"
+        },
+        "resultTravelTime": "Travel Time",
+        "resultFuelConsumption": "Fuel Needed",
+        "resultTotalCost": "Total Cost",
+        "resultAutonomy": "Autonomy Range",
+        "hoursUnit": "hours",
+        "litersUnit": "L",
+        "nmiUnit": "nmi",
+        "chartTitle": "Fuel Consumption vs Speed",
+        "chartFuelRate": "Base (L/h)",
+        "chartFuelRateWeather": "With Weather (L/h)",
+        "chartSpeed": "Speed (knots)",
+        "currencySymbol": "$",
+        "currentSpeedMarker": "Your speed"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Estimate Your Boat's Fuel Consumption",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "ship",
+            "title": "Enter Voyage Details",
+            "description": "Input your planned distance in nautical miles, cruising speed in knots, and select your engine type with its horsepower rating."
+          },
+          {
+            "number": 2,
+            "icon": "cloudRain",
+            "title": "Set Weather Conditions",
+            "description": "Select wind conditions and sea current direction. These factors significantly affect fuel consumption and effective speed during your voyage."
+          },
+          {
+            "number": 3,
+            "icon": "fuel",
+            "title": "Review Fuel Estimates",
+            "description": "See your estimated travel time, total fuel needed, cost, and autonomy range. The fuel vs speed chart helps you find the most efficient cruising speed."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Nautical Fuel Calculator",
+        "sectionDescription": "Essential features for skippers and boat owners to plan fuel-efficient voyages.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Fuel vs Speed Chart",
+            "description": "Interactive chart showing how fuel consumption increases with speed. Find the sweet spot between travel time and fuel efficiency for your engine."
+          },
+          {
+            "icon": "wind",
+            "title": "Weather Impact Analysis",
+            "description": "See how wind and current conditions affect your fuel consumption. Plan your departure window for the most fuel-efficient passage."
+          },
+          {
+            "icon": "gauge",
+            "title": "Autonomy Range",
+            "description": "Know exactly how far your boat can travel on a full tank under current conditions. Critical safety information for voyage planning."
+          },
+          {
+            "icon": "zap",
+            "title": "Real-Time Calculation",
+            "description": "All results update instantly as you adjust inputs. Quickly compare different speeds, routes, and conditions to optimize your voyage plan."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Understanding Marine Fuel Consumption",
+        "articles": [
+          {
+            "title": "Speed and Fuel: The Square Law",
+            "content": "Fuel consumption in boats increases roughly with the square of speed — doubling your speed can nearly quadruple fuel usage. This is because water resistance (drag) increases exponentially with velocity. For displacement hulls, the most efficient cruising speed is typically 60-70% of maximum hull speed. Understanding this relationship is key to fuel-efficient voyaging and can save hundreds of dollars on longer passages."
+          },
+          {
+            "title": "How Weather Affects Fuel Consumption",
+            "content": "Wind and sea state have a dramatic impact on marine fuel consumption. Heading into moderate wind and waves can increase fuel usage by 25-50% compared to calm conditions. Favorable winds under sail can reduce engine usage dramatically. Sea currents also play a major role: a 1-2 knot adverse current effectively reduces your speed over ground while maintaining engine output, significantly increasing fuel per nautical mile traveled."
+          },
+          {
+            "title": "Diesel vs Gasoline Marine Engines",
+            "content": "Marine diesel engines are significantly more fuel-efficient than gasoline outboards, typically consuming 30-40% less fuel per horsepower-hour. Diesel fuel also contains about 10% more energy per liter. However, diesel engines are heavier and more expensive to maintain. For small boats and tenders, gasoline outboards offer simplicity. For cruising sailboats, small auxiliary diesels provide the best combination of efficiency and reliability for long passages."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "How accurate is this fuel consumption estimate?",
+            "answer": "This calculator provides reasonable estimates based on established marine engineering formulas. Actual consumption can vary by 10-20% depending on hull condition, boat loading, sea state, propeller efficiency, and engine maintenance. Always carry a 20-30% fuel reserve beyond calculated requirements for safety."
+          },
+          {
+            "question": "What engine type should I select for my boat?",
+            "answer": "Select 'Outboard (Gasoline)' for boats with external gasoline motors. Choose 'Inboard (Diesel)' for boats with built-in diesel engines, which includes most cruising yachts and motorboats. Select 'Sail + Auxiliary Motor' for sailing vessels that use their engine primarily for maneuvering and calm conditions."
+          },
+          {
+            "question": "How does wind affect fuel consumption?",
+            "answer": "Wind creates waves and increases air resistance, requiring more engine power to maintain speed. A light breeze adds roughly 10% to consumption, moderate wind adds about 25%, and strong wind can increase consumption by 50% or more. Headwinds have the greatest impact, while beam winds create uncomfortable rolling that also increases fuel use."
+          },
+          {
+            "question": "What is a safe fuel reserve for boating?",
+            "answer": "The standard rule of thumb is the 'rule of thirds': one-third of fuel for the outbound trip, one-third for the return, and one-third as reserve. For open water passages, a minimum 30% reserve above calculated consumption is recommended. This accounts for unexpected weather changes, navigation detours, and engine inefficiencies."
+          },
+          {
+            "question": "Why does the chart show exponential fuel increase with speed?",
+            "answer": "Water resistance (drag) increases roughly with the square of speed due to wave-making resistance and friction. This means pushing a boat faster requires disproportionately more power and fuel. Most displacement boats have an economical cruising speed around 60-70% of their maximum hull speed, where the fuel-per-mile ratio is most favorable."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore Our Other Tools",
+        "description": "Discover our full range of free calculators and planning tools for finances, navigation, and more."
+      }
+    },
+    "ro": {
+      "slug": "calculator-combustibil-nautic",
+      "meta": {
+        "title": "Calculator Combustibil Nautic | Estimare Consum și Autonomie Barcă",
+        "description": "Calculator gratuit de consum combustibil nautic pentru skipperi. Estimează consumul de combustibil în funcție de distanță, viteză, tip de motor, putere și condiții meteo. Grafic consum vs viteză, cost total și autonomie.",
+        "keywords": ["calculator combustibil nautic", "consum combustibil barcă", "calculator combustibil marin", "estimator combustibil navigație", "calculator autonomie barcă", "mile nautice combustibil", "cost combustibil barcă", "instrumente skipper"]
+      },
+      "hero": {
+        "headline": "Calculator Combustibil Nautic",
+        "description": "Estimează consumul de combustibil al bărcii tale în funcție de distanță, viteză, tip de motor și condiții meteo. Vizualizează graficul consum vs viteză, calculează costul total și verifică autonomia navei."
+      },
+      "tool": {
+        "distanceLabel": "Distanță (Mile Nautice)",
+        "distancePlaceholder": "ex. 50",
+        "speedLabel": "Viteză (Noduri)",
+        "speedPlaceholder": "ex. 8",
+        "engineTypeLabel": "Tip Motor",
+        "engineTypes": {
+          "outboard": "Outboard (Benzină)",
+          "inboard": "Inboard (Diesel)",
+          "sailAux": "Velă + Motor Auxiliar"
+        },
+        "enginePowerLabel": "Putere Motor (CP)",
+        "enginePowerPlaceholder": "ex. 150",
+        "tankCapacityLabel": "Capacitate Rezervor (Litri)",
+        "tankCapacityPlaceholder": "ex. 300",
+        "fuelPriceLabel": "Preț Combustibil (per Litru)",
+        "fuelPricePlaceholder": "ex. 7.50",
+        "windLabel": "Condiții de Vânt",
+        "windOptions": {
+          "calm": "Calm",
+          "light": "Briză Ușoară",
+          "moderate": "Vânt Moderat",
+          "strong": "Vânt Puternic"
+        },
+        "currentLabel": "Curent Marin",
+        "currentOptions": {
+          "none": "Fără Curent",
+          "favorable": "Curent Favorabil",
+          "against": "Curent Împotrivă"
+        },
+        "resultTravelTime": "Timp de Călătorie",
+        "resultFuelConsumption": "Combustibil Necesar",
+        "resultTotalCost": "Cost Total",
+        "resultAutonomy": "Autonomie",
+        "hoursUnit": "ore",
+        "litersUnit": "L",
+        "nmiUnit": "mn",
+        "chartTitle": "Consum Combustibil vs Viteză",
+        "chartFuelRate": "Bază (L/h)",
+        "chartFuelRateWeather": "Cu Meteo (L/h)",
+        "chartSpeed": "Viteză (noduri)",
+        "currencySymbol": "€",
+        "currentSpeedMarker": "Viteza ta"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum Să Estimezi Consumul de Combustibil al Bărcii",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "ship",
+            "title": "Introdu Detaliile Călătoriei",
+            "description": "Completează distanța planificată în mile nautice, viteza de croazieră în noduri și selectează tipul de motor cu puterea în cai putere."
+          },
+          {
+            "number": 2,
+            "icon": "cloudRain",
+            "title": "Setează Condițiile Meteo",
+            "description": "Selectează condițiile de vânt și direcția curentului marin. Acești factori afectează semnificativ consumul de combustibil și viteza efectivă."
+          },
+          {
+            "number": 3,
+            "icon": "fuel",
+            "title": "Analizează Estimările",
+            "description": "Vezi timpul estimat de călătorie, combustibilul total necesar, costul și autonomia. Graficul consum vs viteză te ajută să găsești viteza optimă de croazieră."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Calculatorul Nostru Nautic",
+        "sectionDescription": "Funcționalități esențiale pentru skipperi și proprietari de bărci pentru planificarea călătoriilor eficiente.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Grafic Consum vs Viteză",
+            "description": "Grafic interactiv care arată cum crește consumul de combustibil cu viteza. Găsește echilibrul optim între timpul de călătorie și eficiența combustibilului."
+          },
+          {
+            "icon": "wind",
+            "title": "Analiza Impactului Meteo",
+            "description": "Vezi cum condițiile de vânt și curent afectează consumul. Planifică plecarea pentru cea mai eficientă traversare."
+          },
+          {
+            "icon": "gauge",
+            "title": "Autonomie de Navigație",
+            "description": "Află exact cât de departe poate naviga barca ta cu un plin de combustibil în condițiile actuale. Informație critică pentru siguranța navigației."
+          },
+          {
+            "icon": "zap",
+            "title": "Calcul în Timp Real",
+            "description": "Rezultatele se actualizează instant la modificarea oricărui parametru. Compară rapid diferite viteze, rute și condiții."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Înțelegerea Consumului de Combustibil Marin",
+        "articles": [
+          {
+            "title": "Viteză și Combustibil: Legea Pătratică",
+            "content": "Consumul de combustibil la bărci crește aproximativ cu pătratul vitezei — dublarea vitezei poate aproape cvadrupla consumul. Aceasta se datorează faptului că rezistența apei crește exponențial cu viteza. Pentru corpurile cu deplasament, viteza de croazieră cea mai eficientă este de obicei 60-70% din viteza maximă a corpului. Înțelegerea acestei relații este esențială pentru navigația eficientă."
+          },
+          {
+            "title": "Cum Afectează Vremea Consumul de Combustibil",
+            "content": "Vântul și starea mării au un impact dramatic asupra consumului de combustibil marin. Navigarea în vânt și valuri moderate poate crește consumul cu 25-50% comparativ cu condițiile de calm. Curenții marini joacă de asemenea un rol major: un curent advers de 1-2 noduri reduce efectiv viteza pe fund menținând același regim de motor, crescând semnificativ consumul pe milă nautică parcursă."
+          },
+          {
+            "title": "Motoare Marine: Diesel vs Benzină",
+            "content": "Motoarele marine diesel sunt semnificativ mai eficiente decât cele pe benzină, consumând de obicei cu 30-40% mai puțin combustibil per cal putere-oră. Motorina conține de asemenea cu aproximativ 10% mai multă energie per litru. Pentru bărci mici, motoarele outboard pe benzină oferă simplitate. Pentru iahturile de croazieră, motoarele auxiliare diesel oferă cea mai bună combinație de eficiență și fiabilitate pentru pasajele lungi."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Cât de precis este acest estimator de consum?",
+            "answer": "Calculatorul oferă estimări rezonabile bazate pe formule consacrate de inginerie navală. Consumul real poate varia cu 10-20% în funcție de starea corpului, încărcarea bărcii, starea mării, eficiența elicei și întreținerea motorului. Păstrează întotdeauna o rezervă de 20-30% peste cerințele calculate pentru siguranță."
+          },
+          {
+            "question": "Ce tip de motor ar trebui să selectez?",
+            "answer": "Selectează 'Outboard (Benzină)' pentru bărci cu motoare externe pe benzină. Alege 'Inboard (Diesel)' pentru bărci cu motoare diesel integrate, inclusiv majoritatea iahturilor de croazieră. Selectează 'Velă + Motor Auxiliar' pentru ambarcațiuni cu vele care folosesc motorul în principal pentru manevrare."
+          },
+          {
+            "question": "Cum afectează vântul consumul de combustibil?",
+            "answer": "Vântul creează valuri și crește rezistența aerului, necesitând mai multă putere pentru a menține viteza. O briză ușoară adaugă aproximativ 10% la consum, vântul moderat aproximativ 25%, iar vântul puternic poate crește consumul cu 50% sau mai mult."
+          },
+          {
+            "question": "Care este rezerva de combustibil sigură pentru navigație?",
+            "answer": "Regula standard este 'regula treimilor': o treime din combustibil pentru deplasarea dus, o treime pentru întoarcere și o treime ca rezervă. Pentru traversări în mare deschisă, se recomandă o rezervă minimă de 30% peste consumul calculat."
+          },
+          {
+            "question": "De ce graficul arată creștere exponențială a consumului cu viteza?",
+            "answer": "Rezistența apei crește aproximativ cu pătratul vitezei din cauza rezistenței la formarea valurilor și a frecării. Majoritatea bărcilor cu deplasament au o viteză economică de croazieră în jurul a 60-70% din viteza maximă, unde raportul combustibil per milă este cel mai favorabil."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Celelalte Instrumente",
+        "description": "Descoperă gama completă de calculatoare și instrumente gratuite de planificare pentru finanțe, navigație și multe altele."
+      }
+    },
+    "de": {
+      "slug": "nautischer-kraftstoffrechner",
+      "meta": {
+        "title": "Nautischer Kraftstoffrechner | Bootsverbrauch & Reichweite berechnen",
+        "description": "Kostenloser nautischer Kraftstoffverbrauchsrechner für Skipper. Schätzen Sie den Kraftstoffverbrauch basierend auf Entfernung, Geschwindigkeit, Motortyp, Leistung und Wetterbedingungen. Verbrauchsdiagramm, Gesamtkosten und Reichweite.",
+        "keywords": ["nautischer Kraftstoffrechner", "Boot Kraftstoffverbrauch", "Marine Kraftstoffrechner", "Segelboot Verbrauch", "Boot Reichweite Rechner", "Seemeilen Kraftstoff", "Boot Kraftstoffkosten", "Skipper Werkzeuge"]
+      },
+      "hero": {
+        "headline": "Nautischer Kraftstoffrechner",
+        "description": "Schätzen Sie den Kraftstoffverbrauch Ihres Bootes basierend auf Entfernung, Geschwindigkeit, Motortyp und Wetterbedingungen. Sehen Sie das Verbrauchsdiagramm, berechnen Sie die Gesamtkosten und prüfen Sie die Reichweite."
+      },
+      "tool": {
+        "distanceLabel": "Entfernung (Seemeilen)",
+        "distancePlaceholder": "z.B. 50",
+        "speedLabel": "Geschwindigkeit (Knoten)",
+        "speedPlaceholder": "z.B. 8",
+        "engineTypeLabel": "Motortyp",
+        "engineTypes": {
+          "outboard": "Außenborder (Benzin)",
+          "inboard": "Innenborder (Diesel)",
+          "sailAux": "Segel + Hilfsmotor"
+        },
+        "enginePowerLabel": "Motorleistung (PS)",
+        "enginePowerPlaceholder": "z.B. 150",
+        "tankCapacityLabel": "Tankkapazität (Liter)",
+        "tankCapacityPlaceholder": "z.B. 300",
+        "fuelPriceLabel": "Kraftstoffpreis (pro Liter)",
+        "fuelPricePlaceholder": "z.B. 1,85",
+        "windLabel": "Windbedingungen",
+        "windOptions": {
+          "calm": "Windstille",
+          "light": "Leichte Brise",
+          "moderate": "Mäßiger Wind",
+          "strong": "Starker Wind"
+        },
+        "currentLabel": "Meeresströmung",
+        "currentOptions": {
+          "none": "Keine Strömung",
+          "favorable": "Günstige Strömung",
+          "against": "Gegenströmung"
+        },
+        "resultTravelTime": "Reisezeit",
+        "resultFuelConsumption": "Kraftstoffbedarf",
+        "resultTotalCost": "Gesamtkosten",
+        "resultAutonomy": "Reichweite",
+        "hoursUnit": "Stunden",
+        "litersUnit": "L",
+        "nmiUnit": "sm",
+        "chartTitle": "Kraftstoffverbrauch vs Geschwindigkeit",
+        "chartFuelRate": "Basis (L/h)",
+        "chartFuelRateWeather": "Mit Wetter (L/h)",
+        "chartSpeed": "Geschwindigkeit (Knoten)",
+        "currencySymbol": "€",
+        "currentSpeedMarker": "Ihre Geschwindigkeit"
+      },
+      "howItWorks": {
+        "sectionTitle": "So schätzen Sie den Kraftstoffverbrauch Ihres Bootes",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "ship",
+            "title": "Reisedetails eingeben",
+            "description": "Geben Sie die geplante Entfernung in Seemeilen, die Reisegeschwindigkeit in Knoten und den Motortyp mit Leistung in PS ein."
+          },
+          {
+            "number": 2,
+            "icon": "cloudRain",
+            "title": "Wetterbedingungen festlegen",
+            "description": "Wählen Sie die Windbedingungen und die Richtung der Meeresströmung. Diese Faktoren beeinflussen den Kraftstoffverbrauch und die effektive Geschwindigkeit erheblich."
+          },
+          {
+            "number": 3,
+            "icon": "fuel",
+            "title": "Schätzungen überprüfen",
+            "description": "Sehen Sie die geschätzte Reisezeit, den Gesamtkraftstoffbedarf, die Kosten und die Reichweite. Das Verbrauchsdiagramm hilft Ihnen, die effizienteste Reisegeschwindigkeit zu finden."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum unseren nautischen Kraftstoffrechner nutzen",
+        "sectionDescription": "Wesentliche Funktionen für Skipper und Bootseigner zur Planung kraftstoffeffizienter Reisen.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Verbrauch-Geschwindigkeit-Diagramm",
+            "description": "Interaktives Diagramm, das zeigt, wie der Kraftstoffverbrauch mit der Geschwindigkeit steigt. Finden Sie den optimalen Kompromiss zwischen Reisezeit und Effizienz."
+          },
+          {
+            "icon": "wind",
+            "title": "Wettereinfluss-Analyse",
+            "description": "Sehen Sie, wie Wind- und Strömungsbedingungen Ihren Verbrauch beeinflussen. Planen Sie Ihre Abfahrt für die effizienteste Überfahrt."
+          },
+          {
+            "icon": "gauge",
+            "title": "Reichweite",
+            "description": "Erfahren Sie genau, wie weit Ihr Boot mit einem vollen Tank unter aktuellen Bedingungen fahren kann. Kritische Sicherheitsinformation für die Reiseplanung."
+          },
+          {
+            "icon": "zap",
+            "title": "Echtzeit-Berechnung",
+            "description": "Alle Ergebnisse werden sofort aktualisiert, wenn Sie Eingaben ändern. Vergleichen Sie schnell verschiedene Geschwindigkeiten, Routen und Bedingungen."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Maritimen Kraftstoffverbrauch verstehen",
+        "articles": [
+          {
+            "title": "Geschwindigkeit und Kraftstoff: Das Quadratgesetz",
+            "content": "Der Kraftstoffverbrauch bei Booten steigt annähernd mit dem Quadrat der Geschwindigkeit — eine Verdoppelung der Geschwindigkeit kann den Verbrauch nahezu vervierfachen. Dies liegt daran, dass der Wasserwiderstand exponentiell mit der Geschwindigkeit zunimmt. Für Verdrängerrümpfe liegt die effizienteste Reisegeschwindigkeit typischerweise bei 60-70% der maximalen Rumpfgeschwindigkeit."
+          },
+          {
+            "title": "Wie das Wetter den Kraftstoffverbrauch beeinflusst",
+            "content": "Wind und Seegang haben einen dramatischen Einfluss auf den maritimen Kraftstoffverbrauch. Fahren gegen mäßigen Wind und Wellen kann den Verbrauch um 25-50% im Vergleich zu ruhigen Bedingungen erhöhen. Meeresströmungen spielen ebenfalls eine große Rolle: eine Gegenströmung von 1-2 Knoten reduziert effektiv die Geschwindigkeit über Grund bei gleichbleibender Motorleistung und erhöht den Verbrauch pro Seemeile erheblich."
+          },
+          {
+            "title": "Diesel- vs Benzin-Schiffsmotoren",
+            "content": "Marine-Dieselmotoren sind deutlich kraftstoffeffizienter als Benzin-Außenborder und verbrauchen typischerweise 30-40% weniger Kraftstoff pro PS-Stunde. Dieselkraftstoff enthält zudem etwa 10% mehr Energie pro Liter. Für kleine Boote bieten Benzin-Außenborder Einfachheit. Für Fahrtenyachten bieten kleine Hilfsdiesel die beste Kombination aus Effizienz und Zuverlässigkeit für lange Passagen."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie genau ist diese Verbrauchsschätzung?",
+            "answer": "Dieser Rechner liefert vernünftige Schätzungen basierend auf bewährten Formeln der Schiffstechnik. Der tatsächliche Verbrauch kann je nach Rumpfzustand, Bootsbeladung, Seegang, Propellereffizienz und Motorwartung um 10-20% abweichen. Führen Sie immer eine 20-30% Kraftstoffreserve über den berechneten Bedarf hinaus mit."
+          },
+          {
+            "question": "Welchen Motortyp sollte ich auswählen?",
+            "answer": "Wählen Sie 'Außenborder (Benzin)' für Boote mit externen Benzinmotoren. Wählen Sie 'Innenborder (Diesel)' für Boote mit eingebauten Dieselmotoren, einschließlich der meisten Fahrtenyachten. Wählen Sie 'Segel + Hilfsmotor' für Segelboote, die ihren Motor hauptsächlich zum Manövrieren verwenden."
+          },
+          {
+            "question": "Wie beeinflusst Wind den Kraftstoffverbrauch?",
+            "answer": "Wind erzeugt Wellen und erhöht den Luftwiderstand, was mehr Motorleistung erfordert. Eine leichte Brise erhöht den Verbrauch um etwa 10%, mäßiger Wind um etwa 25%, und starker Wind kann den Verbrauch um 50% oder mehr steigern."
+          },
+          {
+            "question": "Was ist eine sichere Kraftstoffreserve?",
+            "answer": "Die Standardregel ist die 'Drittel-Regel': ein Drittel des Kraftstoffs für die Hinfahrt, ein Drittel für die Rückfahrt und ein Drittel als Reserve. Für Überfahrten auf offener See wird eine Mindrestreserve von 30% über dem berechneten Verbrauch empfohlen."
+          },
+          {
+            "question": "Warum zeigt das Diagramm einen exponentiellen Verbrauchsanstieg?",
+            "answer": "Der Wasserwiderstand steigt annähernd mit dem Quadrat der Geschwindigkeit durch Wellenwiderstand und Reibung. Die meisten Verdränger haben eine wirtschaftliche Reisegeschwindigkeit bei etwa 60-70% der Höchstgeschwindigkeit, wo das Kraftstoff-pro-Meile-Verhältnis am günstigsten ist."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Entdecken Sie unsere weiteren Tools",
+        "description": "Entdecken Sie unsere vollständige Palette an kostenlosen Rechnern und Planungstools für Finanzen, Navigation und mehr."
+      }
+    }
+  }
+}

@@ -1,0 +1,444 @@
+{
+  "id": "compound-interest-calculator",
+  "component": "compound-interest-calculator",
+  "iconPath": "/icons/compound-interest-calculator-icon.svg",
+  "applicationCategory": "FinanceApplication",
+  "config": {},
+  "translations": {
+    "en": {
+      "slug": "compound-interest-calculator",
+      "meta": {
+        "title": "Compound Interest Calculator | Growth Visualization & Scenario Comparison",
+        "description": "Free compound interest calculator with interactive chart. Calculate investment growth with monthly contributions, compare scenarios, and view year-by-year breakdown. Visualize the power of compound interest.",
+        "keywords": ["compound interest calculator", "investment calculator", "compound interest", "interest calculator", "savings calculator", "investment growth calculator", "monthly contribution calculator", "compound interest chart"]
+      },
+      "hero": {
+        "headline": "Compound Interest Calculator",
+        "description": "Calculate how your investments grow over time with compound interest. Visualize growth on an interactive chart and compare different contribution scenarios side by side."
+      },
+      "tool": {
+        "initialDepositLabel": "Initial Deposit",
+        "initialDepositPlaceholder": "e.g. 10000",
+        "monthlyContributionLabel": "Monthly Contribution",
+        "monthlyContributionPlaceholder": "e.g. 500",
+        "interestRateLabel": "Annual Interest Rate (%)",
+        "interestRatePlaceholder": "e.g. 7",
+        "periodLabel": "Investment Period (Years)",
+        "periodPlaceholder": "e.g. 20",
+        "compoundingLabel": "Compounding Frequency",
+        "compoundingOptions": {
+          "monthly": "Monthly",
+          "quarterly": "Quarterly",
+          "annually": "Annually"
+        },
+        "scenarioToggleLabel": "Compare with different monthly contribution",
+        "scenario2Label": "Scenario 2 — Monthly Contribution",
+        "scenario2Placeholder": "e.g. 1000",
+        "resultFinalAmount": "Final Amount",
+        "resultTotalContributions": "Total Contributions",
+        "resultTotalInterest": "Interest Earned",
+        "comparisonTitle": "Scenario Comparison",
+        "scenario1Name": "Scenario 1",
+        "scenario2Name": "Scenario 2",
+        "differenceLabel": "Difference",
+        "breakdownTitle": "Annual Breakdown",
+        "breakdownToggle": "Show annual breakdown",
+        "breakdownHeaders": {
+          "year": "Year",
+          "contributions": "Contributions",
+          "interest": "Interest",
+          "balance": "Balance"
+        },
+        "chartContributions": "Contributions",
+        "chartInterest": "Interest Earned",
+        "chartScenario2": "Scenario 2 Balance",
+        "currencySymbol": "$"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Use the Compound Interest Calculator",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "dollarSign",
+            "title": "Enter Your Investment Details",
+            "description": "Input your initial deposit, monthly contribution amount, expected annual interest rate, and investment time horizon."
+          },
+          {
+            "number": 2,
+            "icon": "trendingUp",
+            "title": "View Your Growth Chart",
+            "description": "Watch your investment grow on an interactive area chart that shows how contributions and compound interest build your wealth over time."
+          },
+          {
+            "number": 3,
+            "icon": "gitCompare",
+            "title": "Compare Scenarios",
+            "description": "Enable scenario comparison to see how different monthly contribution amounts impact your final balance. The chart overlays both scenarios for easy comparison."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Compound Interest Calculator",
+        "sectionDescription": "Powerful features to help you understand and plan your long-term investment strategy.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Interactive Growth Chart",
+            "description": "Visualize your investment growth with a stacked area chart that clearly shows the split between your contributions and earned interest over time."
+          },
+          {
+            "icon": "gitCompare",
+            "title": "Scenario Comparison",
+            "description": "Compare two different monthly contribution amounts side by side. See exactly how much extra saving today translates to in the future."
+          },
+          {
+            "icon": "zap",
+            "title": "Real-Time Calculation",
+            "description": "Results update instantly as you change any input. No buttons to click — just adjust values and see the impact immediately."
+          },
+          {
+            "icon": "table",
+            "title": "Year-by-Year Breakdown",
+            "description": "Expand the annual breakdown table to see exactly how your balance grows each year, with contributions and interest separated."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Understanding Compound Interest",
+        "articles": [
+          {
+            "title": "The Power of Compound Interest",
+            "content": "Compound interest is often called the eighth wonder of the world. Unlike simple interest, which is calculated only on the initial principal, compound interest is calculated on the principal plus all previously accumulated interest. This means your money earns interest on interest, creating exponential growth over time. The longer your investment horizon, the more dramatic this compounding effect becomes."
+          },
+          {
+            "title": "How Compounding Frequency Matters",
+            "content": "The frequency at which interest is compounded affects your total returns. Monthly compounding earns slightly more than quarterly, which earns more than annual compounding. This is because more frequent compounding means interest is added to your balance sooner, allowing it to start earning its own interest earlier. For most savings and investment accounts, monthly compounding is standard."
+          },
+          {
+            "title": "The Impact of Starting Early",
+            "content": "Time is the most powerful factor in compound interest. An investor who starts saving $300 per month at age 25 with a 7% annual return would accumulate approximately $680,000 by age 60. Starting the same savings at age 35 would yield only about $320,000 — less than half. Those extra 10 years of compounding nearly double the final amount, even though the additional contributions only total $36,000."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "What is compound interest?",
+            "answer": "Compound interest is interest calculated on both the initial principal and the accumulated interest from previous periods. This creates a snowball effect where your money grows increasingly faster over time, as each period's interest is added to the balance and earns interest itself in future periods."
+          },
+          {
+            "question": "How is compound interest calculated?",
+            "answer": "The formula is A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)], where P is the initial deposit, r is the annual interest rate (as a decimal), n is the number of times interest is compounded per year, t is the number of years, and PMT is the monthly contribution. This formula accounts for both the initial lump sum and regular contributions."
+          },
+          {
+            "question": "What compounding frequency should I choose?",
+            "answer": "Choose the frequency that matches your actual investment or savings account. Most bank savings accounts compound monthly or daily, while some certificates of deposit compound quarterly or annually. Monthly compounding is the most common and produces slightly higher returns than quarterly or annual compounding."
+          },
+          {
+            "question": "What is a realistic interest rate to use?",
+            "answer": "Realistic rates depend on the investment type. High-yield savings accounts currently offer 4-5% annually. Stock market index funds have historically returned about 7-10% annually over long periods (after inflation, closer to 5-7%). Bonds typically yield 3-5%. Use a conservative estimate for financial planning to avoid overestimating future wealth."
+          },
+          {
+            "question": "How does the scenario comparison work?",
+            "answer": "When you enable scenario comparison, you can enter a second monthly contribution amount. The calculator computes both scenarios using the same initial deposit, interest rate, and time period. The chart overlays both scenarios, and a comparison table shows the final amounts and the difference between them."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore Our Other Financial Tools",
+        "description": "Manage every aspect of your finances with our free, easy-to-use calculators and trackers."
+      }
+    },
+    "ro": {
+      "slug": "calculator-dobanda-compusa",
+      "meta": {
+        "title": "Calculator Dobândă Compusă | Vizualizare Creștere și Comparație Scenarii",
+        "description": "Calculator de dobândă compusă gratuit cu grafic interactiv. Calculează creșterea investiției cu contribuții lunare, compară scenarii și vizualizează detalii an cu an.",
+        "keywords": ["calculator dobândă compusă", "calculator investiții", "dobândă compusă", "calculator dobândă", "calculator economii", "calculator creștere investiție", "calculator contribuții lunare", "grafic dobândă compusă"]
+      },
+      "hero": {
+        "headline": "Calculator Dobândă Compusă",
+        "description": "Calculează cum cresc investițiile tale în timp cu dobânda compusă. Vizualizează creșterea pe un grafic interactiv și compară scenarii cu contribuții lunare diferite."
+      },
+      "tool": {
+        "initialDepositLabel": "Depozit Inițial",
+        "initialDepositPlaceholder": "ex. 10000",
+        "monthlyContributionLabel": "Contribuție Lunară",
+        "monthlyContributionPlaceholder": "ex. 500",
+        "interestRateLabel": "Rata Anuală a Dobânzii (%)",
+        "interestRatePlaceholder": "ex. 7",
+        "periodLabel": "Perioada de Investiție (Ani)",
+        "periodPlaceholder": "ex. 20",
+        "compoundingLabel": "Frecvența Compunerii",
+        "compoundingOptions": {
+          "monthly": "Lunar",
+          "quarterly": "Trimestrial",
+          "annually": "Anual"
+        },
+        "scenarioToggleLabel": "Compară cu o contribuție lunară diferită",
+        "scenario2Label": "Scenariul 2 — Contribuție Lunară",
+        "scenario2Placeholder": "ex. 1000",
+        "resultFinalAmount": "Suma Finală",
+        "resultTotalContributions": "Total Contribuții",
+        "resultTotalInterest": "Dobânda Câștigată",
+        "comparisonTitle": "Comparație Scenarii",
+        "scenario1Name": "Scenariul 1",
+        "scenario2Name": "Scenariul 2",
+        "differenceLabel": "Diferența",
+        "breakdownTitle": "Detaliere Anuală",
+        "breakdownToggle": "Afișează detalierea anuală",
+        "breakdownHeaders": {
+          "year": "An",
+          "contributions": "Contribuții",
+          "interest": "Dobândă",
+          "balance": "Sold"
+        },
+        "chartContributions": "Contribuții",
+        "chartInterest": "Dobândă Câștigată",
+        "chartScenario2": "Sold Scenariul 2",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum Să Folosești Calculatorul de Dobândă Compusă",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "dollarSign",
+            "title": "Introdu Detaliile Investiției",
+            "description": "Completează depozitul inițial, contribuția lunară, rata anuală estimată a dobânzii și orizontul de timp al investiției."
+          },
+          {
+            "number": 2,
+            "icon": "trendingUp",
+            "title": "Vizualizează Graficul de Creștere",
+            "description": "Urmărește cum crește investiția ta pe un grafic interactiv care arată cum contribuțiile și dobânda compusă îți construiesc averea în timp."
+          },
+          {
+            "number": 3,
+            "icon": "gitCompare",
+            "title": "Compară Scenarii",
+            "description": "Activează comparația de scenarii pentru a vedea cum diferite contribuții lunare influențează soldul final. Graficul suprapune ambele scenarii pentru o comparație ușoară."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Calculatorul Nostru de Dobândă Compusă",
+        "sectionDescription": "Funcționalități puternice care te ajută să înțelegi și să planifici strategia de investiții pe termen lung.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Grafic Interactiv de Creștere",
+            "description": "Vizualizează creșterea investiției cu un grafic care arată clar separarea între contribuțiile tale și dobânda câștigată în timp."
+          },
+          {
+            "icon": "gitCompare",
+            "title": "Comparație Scenarii",
+            "description": "Compară două contribuții lunare diferite. Vezi exact cât de mult contează economisirea suplimentară de astăzi pentru viitor."
+          },
+          {
+            "icon": "zap",
+            "title": "Calcul în Timp Real",
+            "description": "Rezultatele se actualizează instant la modificarea oricărei valori. Fără butoane — doar ajustează și vezi impactul imediat."
+          },
+          {
+            "icon": "table",
+            "title": "Detaliere An cu An",
+            "description": "Extinde tabelul de detaliere anuală pentru a vedea exact cum crește soldul tău în fiecare an, cu contribuții și dobândă separate."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Înțelegerea Dobânzii Compuse",
+        "articles": [
+          {
+            "title": "Puterea Dobânzii Compuse",
+            "content": "Dobânda compusă este adesea numită a opta minune a lumii. Spre deosebire de dobânda simplă, care se calculează doar pe principalul inițial, dobânda compusă se calculează pe principal plus toată dobânda acumulată anterior. Aceasta înseamnă că banii tăi câștigă dobândă la dobândă, creând o creștere exponențială în timp. Cu cât orizontul de investiție este mai lung, cu atât efectul compunerii devine mai dramatic."
+          },
+          {
+            "title": "Cum Contează Frecvența Compunerii",
+            "content": "Frecvența cu care dobânda este compusă afectează randamentul total. Compunerea lunară câștigă puțin mai mult decât cea trimestrială, care câștigă mai mult decât compunerea anuală. Aceasta pentru că o compunere mai frecventă înseamnă că dobânda este adăugată la sold mai devreme, permițându-i să înceapă să câștige propria dobândă mai repede. Pentru majoritatea conturilor de economii și investiții, compunerea lunară este standard."
+          },
+          {
+            "title": "Impactul Începerii Devreme",
+            "content": "Timpul este cel mai puternic factor în dobânda compusă. Un investitor care începe să economisească 300 € pe lună la 25 de ani cu un randament anual de 7% ar acumula aproximativ 680.000 € până la 60 de ani. Începând aceeași economisire la 35 de ani ar produce doar aproximativ 320.000 € — mai puțin de jumătate. Cei 10 ani suplimentari de compunere aproape dublează suma finală, deși contribuțiile suplimentare totalizează doar 36.000 €."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Ce este dobânda compusă?",
+            "answer": "Dobânda compusă este dobânda calculată atât pe principalul inițial, cât și pe dobânda acumulată din perioadele anterioare. Aceasta creează un efect de bulgăre de zăpadă unde banii tăi cresc din ce în ce mai rapid în timp, deoarece dobânda fiecărei perioade este adăugată la sold și câștigă ea însăși dobândă în perioadele viitoare."
+          },
+          {
+            "question": "Cum se calculează dobânda compusă?",
+            "answer": "Formula este A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)], unde P este depozitul inițial, r este rata anuală a dobânzii (ca zecimală), n este numărul de compuneri pe an, t este numărul de ani, iar PMT este contribuția lunară. Formula ia în calcul atât suma forfetară inițială, cât și contribuțiile regulate."
+          },
+          {
+            "question": "Ce frecvență de compunere ar trebui să aleg?",
+            "answer": "Alege frecvența care corespunde contului tău real de investiții sau economii. Majoritatea conturilor de economii bancare compun lunar sau zilnic, în timp ce unele certificate de depozit compun trimestrial sau anual. Compunerea lunară este cea mai comună și produce randamente ușor mai mari decât compunerea trimestrială sau anuală."
+          },
+          {
+            "question": "Ce rată a dobânzii este realistă?",
+            "answer": "Ratele realiste depind de tipul investiției. Conturile de economii cu randament ridicat oferă în prezent 4-5% anual. Fondurile indexate de pe piața bursieră au returnat istoric aproximativ 7-10% anual pe perioade lungi (după inflație, mai aproape de 5-7%). Obligațiunile oferă de obicei 3-5%. Folosește o estimare conservatoare pentru planificarea financiară."
+          },
+          {
+            "question": "Cum funcționează comparația de scenarii?",
+            "answer": "Când activezi comparația de scenarii, poți introduce o a doua sumă de contribuție lunară. Calculatorul calculează ambele scenarii folosind același depozit inițial, rată a dobânzii și perioadă de timp. Graficul suprapune ambele scenarii, iar un tabel comparativ arată sumele finale și diferența dintre ele."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Celelalte Instrumente Financiare",
+        "description": "Gestionează fiecare aspect al finanțelor tale cu calculatoarele și urmăritoarele noastre gratuite și ușor de utilizat."
+      }
+    },
+    "de": {
+      "slug": "zinseszinsrechner",
+      "meta": {
+        "title": "Zinseszinsrechner | Wachstumsvisualisierung & Szenariovergleich",
+        "description": "Kostenloser Zinseszinsrechner mit interaktivem Diagramm. Berechnen Sie das Investitionswachstum mit monatlichen Beiträgen, vergleichen Sie Szenarien und sehen Sie eine jährliche Aufschlüsselung.",
+        "keywords": ["Zinseszinsrechner", "Investitionsrechner", "Zinseszins", "Zinsrechner", "Sparrechner", "Investitionswachstum Rechner", "monatlicher Beitrag Rechner", "Zinseszins Diagramm"]
+      },
+      "hero": {
+        "headline": "Zinseszinsrechner",
+        "description": "Berechnen Sie, wie Ihre Investitionen mit Zinseszins im Laufe der Zeit wachsen. Visualisieren Sie das Wachstum auf einem interaktiven Diagramm und vergleichen Sie verschiedene Beitragsszenarien."
+      },
+      "tool": {
+        "initialDepositLabel": "Anfangseinlage",
+        "initialDepositPlaceholder": "z.B. 10000",
+        "monthlyContributionLabel": "Monatlicher Beitrag",
+        "monthlyContributionPlaceholder": "z.B. 500",
+        "interestRateLabel": "Jährlicher Zinssatz (%)",
+        "interestRatePlaceholder": "z.B. 7",
+        "periodLabel": "Anlagezeitraum (Jahre)",
+        "periodPlaceholder": "z.B. 20",
+        "compoundingLabel": "Zinseszinshäufigkeit",
+        "compoundingOptions": {
+          "monthly": "Monatlich",
+          "quarterly": "Vierteljährlich",
+          "annually": "Jährlich"
+        },
+        "scenarioToggleLabel": "Mit anderem monatlichen Beitrag vergleichen",
+        "scenario2Label": "Szenario 2 — Monatlicher Beitrag",
+        "scenario2Placeholder": "z.B. 1000",
+        "resultFinalAmount": "Endbetrag",
+        "resultTotalContributions": "Gesamtbeiträge",
+        "resultTotalInterest": "Verdiente Zinsen",
+        "comparisonTitle": "Szenariovergleich",
+        "scenario1Name": "Szenario 1",
+        "scenario2Name": "Szenario 2",
+        "differenceLabel": "Unterschied",
+        "breakdownTitle": "Jährliche Aufschlüsselung",
+        "breakdownToggle": "Jährliche Aufschlüsselung anzeigen",
+        "breakdownHeaders": {
+          "year": "Jahr",
+          "contributions": "Beiträge",
+          "interest": "Zinsen",
+          "balance": "Saldo"
+        },
+        "chartContributions": "Beiträge",
+        "chartInterest": "Verdiente Zinsen",
+        "chartScenario2": "Szenario 2 Saldo",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "So verwenden Sie den Zinseszinsrechner",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "dollarSign",
+            "title": "Anlagedetails eingeben",
+            "description": "Geben Sie Ihre Anfangseinlage, den monatlichen Beitrag, den erwarteten jährlichen Zinssatz und den Anlagehorizont ein."
+          },
+          {
+            "number": 2,
+            "icon": "trendingUp",
+            "title": "Wachstumsdiagramm anzeigen",
+            "description": "Beobachten Sie, wie Ihre Investition auf einem interaktiven Flächendiagramm wächst, das zeigt, wie Beiträge und Zinseszins Ihr Vermögen im Laufe der Zeit aufbauen."
+          },
+          {
+            "number": 3,
+            "icon": "gitCompare",
+            "title": "Szenarien vergleichen",
+            "description": "Aktivieren Sie den Szenariovergleich, um zu sehen, wie unterschiedliche monatliche Beiträge Ihr Endergebnis beeinflussen. Das Diagramm überlagert beide Szenarien für einen einfachen Vergleich."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum unseren Zinseszinsrechner nutzen",
+        "sectionDescription": "Leistungsstarke Funktionen, die Ihnen helfen, Ihre langfristige Anlagestrategie zu verstehen und zu planen.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Interaktives Wachstumsdiagramm",
+            "description": "Visualisieren Sie Ihr Investitionswachstum mit einem Flächendiagramm, das die Aufteilung zwischen Ihren Beiträgen und verdienten Zinsen deutlich zeigt."
+          },
+          {
+            "icon": "gitCompare",
+            "title": "Szenariovergleich",
+            "description": "Vergleichen Sie zwei verschiedene monatliche Beiträge nebeneinander. Sehen Sie genau, wie viel zusätzliches Sparen heute in der Zukunft ausmacht."
+          },
+          {
+            "icon": "zap",
+            "title": "Echtzeit-Berechnung",
+            "description": "Ergebnisse werden sofort aktualisiert, wenn Sie eine Eingabe ändern. Keine Schaltflächen — einfach Werte anpassen und die Auswirkung sofort sehen."
+          },
+          {
+            "icon": "table",
+            "title": "Jährliche Aufschlüsselung",
+            "description": "Erweitern Sie die jährliche Aufschlüsselungstabelle, um genau zu sehen, wie Ihr Saldo jedes Jahr wächst, mit separat aufgeführten Beiträgen und Zinsen."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Zinseszins verstehen",
+        "articles": [
+          {
+            "title": "Die Kraft des Zinseszinses",
+            "content": "Zinseszins wird oft als das achte Weltwunder bezeichnet. Im Gegensatz zu einfachen Zinsen, die nur auf das Anfangskapital berechnet werden, wird Zinseszins auf das Kapital plus alle zuvor angesammelten Zinsen berechnet. Das bedeutet, dass Ihr Geld Zinsen auf Zinsen verdient und so exponentielles Wachstum im Laufe der Zeit erzeugt. Je länger Ihr Anlagehorizont, desto dramatischer wird dieser Zinseszinseffekt."
+          },
+          {
+            "title": "Warum die Zinseszinshäufigkeit wichtig ist",
+            "content": "Die Häufigkeit, mit der Zinsen berechnet werden, beeinflusst Ihre Gesamtrendite. Monatliche Zinsberechnung bringt etwas mehr als vierteljährliche, die wiederum mehr als jährliche Zinsberechnung einbringt. Häufigere Zinsberechnung bedeutet, dass Zinsen früher zu Ihrem Saldo hinzugefügt werden und somit früher eigene Zinsen verdienen können. Für die meisten Spar- und Anlagekonten ist monatliche Zinsberechnung Standard."
+          },
+          {
+            "title": "Die Bedeutung eines frühen Starts",
+            "content": "Zeit ist der mächtigste Faktor beim Zinseszins. Ein Anleger, der mit 25 Jahren beginnt, 300 € monatlich bei einer jährlichen Rendite von 7 % zu sparen, würde bis zum Alter von 60 Jahren etwa 680.000 € ansammeln. Beginnt man erst mit 35, ergäbe sich nur etwa 320.000 € — weniger als die Hälfte. Die zusätzlichen 10 Jahre Zinseszins verdoppeln nahezu den Endbetrag, obwohl die zusätzlichen Beiträge nur 36.000 € betragen."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "question": "Was ist Zinseszins?",
+            "answer": "Zinseszins sind Zinsen, die sowohl auf das Anfangskapital als auch auf die angesammelten Zinsen aus früheren Perioden berechnet werden. Dies erzeugt einen Schneeballeffekt, bei dem Ihr Geld im Laufe der Zeit immer schneller wächst, da die Zinsen jeder Periode zum Saldo hinzugefügt werden und in zukünftigen Perioden selbst Zinsen verdienen."
+          },
+          {
+            "question": "Wie wird Zinseszins berechnet?",
+            "answer": "Die Formel lautet A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)], wobei P die Anfangseinlage, r der jährliche Zinssatz (als Dezimalzahl), n die Anzahl der Zinsberechnungen pro Jahr, t die Anzahl der Jahre und PMT der monatliche Beitrag ist. Diese Formel berücksichtigt sowohl die anfängliche Einmalzahlung als auch regelmäßige Beiträge."
+          },
+          {
+            "question": "Welche Zinseszinshäufigkeit sollte ich wählen?",
+            "answer": "Wählen Sie die Häufigkeit, die Ihrem tatsächlichen Anlage- oder Sparkonto entspricht. Die meisten Banksparbücher berechnen Zinsen monatlich oder täglich, während einige Festgeldkonten vierteljährlich oder jährlich berechnen. Monatliche Zinsberechnung ist am häufigsten und erzielt etwas höhere Renditen als vierteljährliche oder jährliche Berechnung."
+          },
+          {
+            "question": "Welcher Zinssatz ist realistisch?",
+            "answer": "Realistische Zinssätze hängen von der Anlageart ab. Hochverzinsliche Sparkonten bieten derzeit 4-5 % jährlich. Aktienindex-Fonds haben historisch etwa 7-10 % jährlich über lange Zeiträume erbracht (nach Inflation näher an 5-7 %). Anleihen bringen typischerweise 3-5 %. Verwenden Sie eine konservative Schätzung für die Finanzplanung."
+          },
+          {
+            "question": "Wie funktioniert der Szenariovergleich?",
+            "answer": "Wenn Sie den Szenariovergleich aktivieren, können Sie einen zweiten monatlichen Beitrag eingeben. Der Rechner berechnet beide Szenarien mit derselben Anfangseinlage, demselben Zinssatz und demselben Zeitraum. Das Diagramm überlagert beide Szenarien, und eine Vergleichstabelle zeigt die Endbeträge und den Unterschied zwischen ihnen."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Entdecken Sie unsere weiteren Finanztools",
+        "description": "Verwalten Sie jeden Aspekt Ihrer Finanzen mit unseren kostenlosen, benutzerfreundlichen Rechnern und Trackern."
+      }
+    }
+  }
+}
