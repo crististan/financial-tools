@@ -1,3 +1,5 @@
+import Image from "next/image";
+import Link from "next/link";
 import Container from "./container";
 import { Nav } from "./nav/nav";
 import LanguageSelector from "./language-selector";
@@ -24,9 +26,15 @@ export default async function Header({ lang, common }: HeaderProps) {
         <header>
             <Container>
                 <div className="flex justify-between items-center">
-                    <div>
-                        LOGO
-                    </div>
+                    <Link href={lang === 'en' ? '/' : `/${lang}`} className="flex-shrink-0">
+                        <Image
+                            src="/logo.svg"
+                            alt="ToolFrame"
+                            width={160}
+                            height={36}
+                            priority
+                        />
+                    </Link>
                     <div className="flex items-center gap-4">
                         <Nav lang={lang} common={common} />
                         <LanguageSelector lang={lang} labels={common.languageSelector} slugMaps={slugMaps} />
