@@ -83,6 +83,7 @@ export interface ToolData {
     iconPath: string;
     categories: string[];
     applicationCategory: string;
+    layout?: "side-by-side" | "fullwidth";
     config: ToolConfig;
     translations: Record<string, ToolTranslation>;
 }

@@ -45,30 +45,52 @@ export default async function ToolPage({ params }: { params: Promise<{ lang: str
         notFound();
     }
 
+    const isFullwidth = toolData.layout === "fullwidth";
+
     return (
         <>
-            {/* Hero + Tool: side-by-side on desktop, stacked on mobile */}
-            <Section className="pt-8 md:pt-12 pb-12 md:pb-20">
-                <Container>
-                    <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
-                        {/* Hero — left column, sticky within tool boundary */}
-                        <div className="w-full lg:w-[340px] xl:w-[400px] flex-shrink-0 lg:sticky lg:top-8 lg:self-start">
-                            <h1 className="text-2xl md:text-3xl font-medium mb-3 md:mb-4">{translation.hero.headline}</h1>
+            {isFullwidth ? (
+                /* Fullwidth layout: hero banner on top, tool full-width below */
+                <>
+                    <Section className="pt-8 md:pt-12 pb-6 md:pb-8">
+                        <Container>
+                            <h1 className="text-2xl md:text-3xl font-medium mb-2 md:mb-3">{translation.hero.headline}</h1>
                             {translation.hero.description && (
-                                <p className="text-[var(--clr-neutral-100)] text-sm leading-relaxed">{translation.hero.description}</p>
+                                <p className="text-[var(--clr-neutral-100)] text-sm md:text-base leading-relaxed max-w-[720px]">{translation.hero.description}</p>
                             )}
-                        </div>
+                        </Container>
+                    </Section>
+                    <Section className="pt-0 pb-12 md:pb-20">
+                        <ToolComponent
+                            translation={translation}
+                            config={toolData.config}
+                        />
+                    </Section>
+                </>
+            ) : (
+                /* Side-by-side layout: hero left + tool right */
+                <Section className="pt-8 md:pt-12 pb-12 md:pb-20">
+                    <Container>
+                        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-start">
+                            {/* Hero — left column, sticky within tool boundary */}
+                            <div className="w-full lg:w-[340px] xl:w-[400px] flex-shrink-0 lg:sticky lg:top-8 lg:self-start">
+                                <h1 className="text-2xl md:text-3xl font-medium mb-3 md:mb-4">{translation.hero.headline}</h1>
+                                {translation.hero.description && (
+                                    <p className="text-[var(--clr-neutral-100)] text-sm leading-relaxed">{translation.hero.description}</p>
+                                )}
+                            </div>
 
-                        {/* Tool — right column, fills remaining space */}
-                        <div className="w-full lg:flex-1 min-w-0">
-                            <ToolComponent
-                                translation={translation}
-                                config={toolData.config}
-                            />
+                            {/* Tool — right column, fills remaining space */}
+                            <div className="w-full lg:flex-1 min-w-0">
+                                <ToolComponent
+                                    translation={translation}
+                                    config={toolData.config}
+                                />
+                            </div>
                         </div>
-                    </div>
-                </Container>
-            </Section>
+                    </Container>
+                </Section>
+            )}
 
             {sponsors.length > 0 && (
                 <Section>

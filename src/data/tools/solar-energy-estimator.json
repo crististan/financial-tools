@@ -4,6 +4,7 @@
   "iconPath": "/icons/solar-energy-estimator-icon.svg",
   "categories": ["planning", "energy"],
   "applicationCategory": "UtilityApplication",
+  "layout": "fullwidth",
   "config": {
     "dataSource": "site-config"
   },
