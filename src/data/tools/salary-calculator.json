@@ -59,17 +59,14 @@
         "sectionTitle": "Cum funcționează",
         "steps": [
           {
-            "icon": "FileText",
             "title": "Introdu salariul",
             "description": "Introdu salariul brut sau net și selectează perioada, numărul de persoane în întreținere și opțiunile speciale."
           },
           {
-            "icon": "Calculator",
             "title": "Calcul automat",
             "description": "Calculatorul aplică automat contribuțiile CAS (25%), CASS (10%), deducerile personale și impozitul pe venit (10%)."
           },
           {
-            "icon": "PieChart",
             "title": "Rezultate detaliate",
             "description": "Vizualizează salariul net/brut, totalul contribuțiilor, costul angajatorului și detaliile fiecărei rețineri."
           }
@@ -80,7 +77,7 @@
         "sectionDescription": "Calculator complet pentru salariu net și brut, adaptat legislației fiscale din România 2026.",
         "items": [
         {
-          "icon": "ArrowLeftRight",
+          "icon": "arrowLeftRight",
           "title": "Calcul în ambele sensuri",
           "description": "Calculează salariul net din brut sau brut din net, cu rezultate instantanee."
         },

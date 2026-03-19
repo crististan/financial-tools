@@ -46,17 +46,14 @@
         "sectionTitle": "How to Convert Currency Online",
         "steps": [
           {
-            "number": 1,
             "title": "Enter Your Amount",
             "description": "Type the amount you want to convert in the input field. Our converter accepts any value from 0.01 to 999,999,999."
           },
           {
-            "number": 2,
             "title": "Select Currencies",
             "description": "Choose your source currency and target currency from the dropdown menus. We support 10 major world currencies."
           },
           {
-            "number": 3,
             "title": "Get Instant Results",
             "description": "Your conversion is calculated automatically in real time. No buttons to click, no waiting. Results update as you type."
           }

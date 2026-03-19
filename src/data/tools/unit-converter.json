@@ -47,17 +47,14 @@
         "sectionTitle": "How to Convert Length Units Online",
         "steps": [
           {
-            "number": 1,
             "title": "Enter Your Value",
             "description": "Type the length value you want to convert. Our converter supports any numeric value with high precision."
           },
           {
-            "number": 2,
             "title": "Select Units",
             "description": "Choose the source and target units from the dropdown menus. We support 12 length units from millimeters to nautical miles."
           },
           {
-            "number": 3,
             "title": "Get Instant Results",
             "description": "Your conversion is calculated automatically using precise conversion factors. Results update in real time as you type."
           }

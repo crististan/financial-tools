@@ -59,20 +59,14 @@
         "sectionTitle": "How to Use the Compound Interest Calculator",
         "steps": [
           {
-            "number": 1,
-            "icon": "dollarSign",
             "title": "Enter Your Investment Details",
             "description": "Input your initial deposit, monthly contribution amount, expected annual interest rate, and investment time horizon."
           },
           {
-            "number": 2,
-            "icon": "trendingUp",
             "title": "View Your Growth Chart",
             "description": "Watch your investment grow on an interactive area chart that shows how contributions and compound interest build your wealth over time."
           },
           {
-            "number": 3,
-            "icon": "gitCompare",
             "title": "Compare Scenarios",
             "description": "Enable scenario comparison to see how different monthly contribution amounts impact your final balance. The chart overlays both scenarios for easy comparison."
           }

@@ -91,20 +91,14 @@
         "sectionTitle": "Cum funcționează estimatorul solar?",
         "steps": [
           {
-            "number": 1,
-            "icon": "Sliders",
             "title": "Configurează sistemul",
             "description": "Introdu puterea instalată, regiunea, profilul de consum și furnizorul de energie. Opțional, adaugă o baterie de stocare."
           },
           {
-            "number": 2,
-            "icon": "BarChart3",
             "title": "Vizualizează producția",
             "description": "Estimatorul calculează automat producția lunară și anuală, autoconsumul și surplusul injectat în rețea pe baza datelor regionale."
           },
           {
-            "number": 3,
-            "icon": "PiggyBank",
             "title": "Analizează economiile",
             "description": "Obții o estimare detaliată a economiilor din autoconsum, valoarea surplusului compensat și perioada de amortizare a investiției."
           }

@@ -65,20 +65,14 @@
         "sectionTitle": "How to Estimate Your Boat's Fuel Consumption",
         "steps": [
           {
-            "number": 1,
-            "icon": "ship",
             "title": "Enter Voyage Details",
             "description": "Input your planned distance in nautical miles, cruising speed in knots, and select your engine type with its horsepower rating."
           },
           {
-            "number": 2,
-            "icon": "cloudRain",
             "title": "Set Weather Conditions",
             "description": "Select wind conditions and sea current direction. These factors significantly affect fuel consumption and effective speed during your voyage."
           },
           {
-            "number": 3,
-            "icon": "fuel",
             "title": "Review Fuel Estimates",
             "description": "See your estimated travel time, total fuel needed, cost, and autonomy range. The fuel vs speed chart helps you find the most efficient cruising speed."
           }

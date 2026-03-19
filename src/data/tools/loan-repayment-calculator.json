@@ -47,17 +47,14 @@
         "sectionTitle": "How to Calculate Your Loan Repayment",
         "steps": [
           {
-            "number": 1,
             "title": "Enter Loan Amount",
             "description": "Type the total amount you plan to borrow. This is the principal balance before any interest is applied."
           },
           {
-            "number": 2,
             "title": "Set Interest Rate & Term",
             "description": "Enter your annual interest rate and the loan duration in years or months. The calculator handles the conversion automatically."
           },
           {
-            "number": 3,
             "title": "Review Your Results",
             "description": "Instantly see your monthly payment, total amount paid, and total interest. Expand the amortization table for a month-by-month breakdown."
           }

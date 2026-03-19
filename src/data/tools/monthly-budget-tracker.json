@@ -61,17 +61,14 @@
         "sectionTitle": "How to Track Your Monthly Budget",
         "steps": [
           {
-            "number": 1,
             "title": "Set Up Categories",
             "description": "Start with the predefined income and expense categories, or customize them to match your financial life. Add or remove categories anytime."
           },
           {
-            "number": 2,
             "title": "Enter Planned & Actual Amounts",
             "description": "At the start of the month, set planned budgets for each category. As you spend and earn, update the actual amounts to track your progress."
           },
           {
-            "number": 3,
             "title": "Review Your Summary",
             "description": "The summary updates instantly, showing total income, expenses, balance, and how your actual spending compares to your plan. Green means on track, red means over budget."
           }
