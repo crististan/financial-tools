@@ -223,7 +223,7 @@ export default function SalaryCalculator({ labels }: SalaryCalculatorProps) {
   }, [salary, mode, semester, dependents, hasDisability, isMinimumWage]);
 
   return (
-    <div className="mx-auto max-w-[700px] rounded-4xl bg-[var(--clr-neutral-900)] p-6 md:p-8">
+    <div className="w-full rounded-4xl bg-[var(--clr-neutral-900)] p-6 md:p-8">
       {/* Mode Toggle */}
       <div className="mb-6">
         <label className="mb-2 block text-xs uppercase tracking-wider text-[var(--clr-neutral-100)]">

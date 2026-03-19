@@ -15,25 +15,21 @@ export default function CurrencyConverterTool({ translation, config }: CurrencyC
 
     return (
         <>
-            <Section>
-                <Container>
-                    <ConverterCard
-                        options={toolLabels.options}
-                        factors={mockExchangeRates.rates}
-                        labels={{
-                            fromLabel: toolLabels.fromLabel,
-                            toLabel: toolLabels.toLabel,
-                            amountPlaceholder: toolLabels.amountPlaceholder,
-                            switchButtonAriaLabel: toolLabels.switchButtonAriaLabel,
-                            rateDisplay: toolLabels.rateDisplay,
-                            lastUpdated: toolLabels.lastUpdated,
-                        }}
-                        defaultFrom={config.defaultFrom ?? "USD"}
-                        defaultTo={config.defaultTo ?? "EUR"}
-                        decimals={config.decimals}
-                    />
-                </Container>
-            </Section>
+            <ConverterCard
+                options={toolLabels.options}
+                factors={mockExchangeRates.rates}
+                labels={{
+                    fromLabel: toolLabels.fromLabel,
+                    toLabel: toolLabels.toLabel,
+                    amountPlaceholder: toolLabels.amountPlaceholder,
+                    switchButtonAriaLabel: toolLabels.switchButtonAriaLabel,
+                    rateDisplay: toolLabels.rateDisplay,
+                    lastUpdated: toolLabels.lastUpdated,
+                }}
+                defaultFrom={config.defaultFrom ?? "USD"}
+                defaultTo={config.defaultTo ?? "EUR"}
+                decimals={config.decimals}
+            />
 
             {translation.ratesTable && (
                 <Section>

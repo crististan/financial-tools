@@ -130,7 +130,7 @@ export default function LoanCalculator({ labels, amortizationLabels }: LoanCalcu
     const isValid = loanAmount > 0 && interestRate >= 0 && totalMonths > 0;
 
     return (
-        <div className="w-full max-w-[600px] mx-auto">
+        <div className="w-full">
             <div className="bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
                 {/* Loan Amount */}
                 <div className="mb-5">
