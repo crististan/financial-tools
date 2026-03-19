@@ -90,7 +90,7 @@ export default function ConverterCard({ options, factors, labels, defaultFrom, d
     }
 
     return (
-        <div className="w-full max-w-[600px] mx-auto bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
+        <div className="w-full bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
             <ConverterInput
                 label={labels.fromLabel}
                 value={amount.toString()}

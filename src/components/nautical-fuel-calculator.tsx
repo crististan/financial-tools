@@ -159,7 +159,7 @@ export default function NauticalFuelCalculator({ labels }: NauticalFuelCalculato
     }
 
     return (
-        <div className="w-full max-w-[700px] mx-auto">
+        <div className="w-full">
             <div className="bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
                 {/* Row 1: Distance + Speed */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">

@@ -15,24 +15,20 @@ export default function UnitConverterTool({ translation, config }: UnitConverter
 
     return (
         <>
-            <Section>
-                <Container>
-                    <ConverterCard
-                        options={toolLabels.options}
-                        factors={unitFactors}
-                        labels={{
-                            fromLabel: toolLabels.fromLabel,
-                            toLabel: toolLabels.toLabel,
-                            amountPlaceholder: toolLabels.amountPlaceholder,
-                            switchButtonAriaLabel: toolLabels.switchButtonAriaLabel,
-                            rateDisplay: toolLabels.rateDisplay,
-                        }}
-                        defaultFrom={config.defaultFrom ?? "m"}
-                        defaultTo={config.defaultTo ?? "ft"}
-                        decimals={config.decimals}
-                    />
-                </Container>
-            </Section>
+            <ConverterCard
+                options={toolLabels.options}
+                factors={unitFactors}
+                labels={{
+                    fromLabel: toolLabels.fromLabel,
+                    toLabel: toolLabels.toLabel,
+                    amountPlaceholder: toolLabels.amountPlaceholder,
+                    switchButtonAriaLabel: toolLabels.switchButtonAriaLabel,
+                    rateDisplay: toolLabels.rateDisplay,
+                }}
+                defaultFrom={config.defaultFrom ?? "m"}
+                defaultTo={config.defaultTo ?? "ft"}
+                decimals={config.decimals}
+            />
 
             {translation.ratesTable && (
                 <Section>

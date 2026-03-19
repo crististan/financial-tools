@@ -159,7 +159,7 @@ export default function CompoundInterestCalculator({ labels }: CompoundInterestC
     }
 
     return (
-        <div className="w-full max-w-[700px] mx-auto">
+        <div className="w-full">
             <div className="bg-[var(--clr-neutral-900)] rounded-4xl p-6 md:p-8">
                 {/* Inputs */}
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-5 mb-5">
