@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "./container";
-import { Nav } from "./nav/nav";
+import ToolsMenu from "./tools-menu";
 import LanguageSelector from "./language-selector";
 import { locales } from "@/lib/i18n";
-import { getSlugMap } from "@/lib/tool-data";
+import { getSlugMap, getCategoriesWithTools } from "@/lib/tool-data";
 import type { CommonDictionary } from "@/dictionaries/en/common";
 
 type HeaderProps = {
@@ -22,11 +22,14 @@ export default async function Header({ lang, common }: HeaderProps) {
         }
     }
 
+    const prefix = lang === "en" ? "" : `/${lang}`;
+    const categoriesWithTools = await getCategoriesWithTools(lang);
+
     return (
         <header>
             <Container>
                 <div className="flex justify-between items-center">
-                    <Link href={lang === 'en' ? '/' : `/${lang}`} className="flex-shrink-0">
+                    <Link href={prefix || "/"} className="flex-shrink-0">
                         <Image
                             src="/logo.svg"
                             alt="ToolFrame"
@@ -35,8 +38,18 @@ export default async function Header({ lang, common }: HeaderProps) {
                             priority
                         />
                     </Link>
-                    <div className="flex items-center gap-4">
-                        <Nav lang={lang} common={common} />
+                    <div className="flex items-center gap-2">
+                        <Link
+                            href={prefix || "/"}
+                            className="text-sm font-medium text-[var(--clr-neutral-0)] hover:text-[var(--clr-green-500)] transition-colors px-3 py-2"
+                        >
+                            {common.nav.home}
+                        </Link>
+                        <ToolsMenu
+                            label={common.nav.tools}
+                            categories={categoriesWithTools}
+                            defaultCategoryId="financial"
+                        />
                         <LanguageSelector lang={lang} labels={common.languageSelector} slugMaps={slugMaps} />
                     </div>
                 </div>

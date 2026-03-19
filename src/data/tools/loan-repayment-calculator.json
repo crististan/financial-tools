@@ -2,6 +2,7 @@
   "id": "loan-repayment-calculator",
   "component": "loan-calculator",
   "iconPath": "/icons/loan-repayment-calculator-icon.svg",
+  "categories": ["financial"],
   "applicationCategory": "FinanceApplication",
   "config": {},
   "translations": {

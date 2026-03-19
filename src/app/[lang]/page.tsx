@@ -24,7 +24,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
             <HomeHero
                 headline={common.homepage.headline}
                 primaryCta={{ text: common.homepage.primaryCta, href: lang === "en" ? "/" : `/${lang}` }}
-                secondaryCta={{ text: common.homepage.secondaryCta, href: tools.find(t => t.id === "monthly-budget-tracker")?.cta.href ?? "/monthly-budget-tracker" }}
+                secondaryCta={{ text: common.homepage.secondaryCta, href: tools.find(t => t.id === "monthly-budget-tracker")?.cta.href ?? "/planning/monthly-budget-tracker" }}
             />
 
             <Separator />

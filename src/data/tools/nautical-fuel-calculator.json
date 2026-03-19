@@ -2,6 +2,7 @@
   "id": "nautical-fuel-calculator",
   "component": "nautical-fuel-calculator",
   "iconPath": "/icons/nautical-fuel-calculator-icon.svg",
+  "categories": ["nautical"],
   "applicationCategory": "TransportApplication",
   "config": {},
   "translations": {

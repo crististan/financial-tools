@@ -2,6 +2,7 @@
   "id": "compound-interest-calculator",
   "component": "compound-interest-calculator",
   "iconPath": "/icons/compound-interest-calculator-icon.svg",
+  "categories": ["financial"],
   "applicationCategory": "FinanceApplication",
   "config": {},
   "translations": {

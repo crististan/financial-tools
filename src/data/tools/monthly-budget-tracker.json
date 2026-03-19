@@ -2,6 +2,7 @@
   "id": "monthly-budget-tracker",
   "component": "budget-tracker",
   "iconPath": "/icons/monthly-budget-tracker-icon.svg",
+  "categories": ["planning"],
   "applicationCategory": "FinanceApplication",
   "config": {},
   "translations": {

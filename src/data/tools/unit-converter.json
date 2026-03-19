@@ -2,6 +2,7 @@
   "id": "unit-converter",
   "component": "unit-converter",
   "iconPath": "/icons/unit-converter-icon.svg",
+  "categories": ["converters"],
   "applicationCategory": "UtilityApplication",
   "config": {
     "defaultFrom": "m",

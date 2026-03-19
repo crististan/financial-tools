@@ -26,7 +26,7 @@ export default async function RootHome() {
             <HomeHero
                 headline={common.homepage.headline}
                 primaryCta={{ text: common.homepage.primaryCta, href: "/" }}
-                secondaryCta={{ text: common.homepage.secondaryCta, href: "/monthly-budget-tracker" }}
+                secondaryCta={{ text: common.homepage.secondaryCta, href: "/planning/monthly-budget-tracker" }}
             />
 
             <Separator />

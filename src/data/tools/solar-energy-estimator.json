@@ -2,6 +2,7 @@
   "id": "solar-energy-estimator",
   "component": "solar-estimator",
   "iconPath": "/icons/solar-energy-estimator-icon.svg",
+  "categories": ["planning", "energy"],
   "applicationCategory": "UtilityApplication",
   "config": {
     "dataSource": "site-config"

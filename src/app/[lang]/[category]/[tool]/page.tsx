@@ -18,7 +18,7 @@ export async function generateStaticParams() {
     return getStaticToolParams();
 }
 
-export default async function ToolPage({ params }: { params: Promise<{ lang: string; tool: string }> }) {
+export default async function ToolPage({ params }: { params: Promise<{ lang: string; category: string; tool: string }> }) {
     const { lang, tool: toolSlug } = await params;
 
     // Reverse-lookup: find tool data by translated slug

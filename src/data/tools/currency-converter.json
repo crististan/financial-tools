@@ -2,6 +2,7 @@
   "id": "currency-converter",
   "component": "currency-converter",
   "iconPath": "/icons/currency-converter-icon.svg",
+  "categories": ["converters"],
   "applicationCategory": "FinanceApplication",
   "config": {
     "defaultFrom": "USD",
