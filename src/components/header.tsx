@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import Container from "./container";
-import ToolsMenu from "./tools-menu";
+import HeaderClient from "./header-client";
 import LanguageSelector from "./language-selector";
 import { locales } from "@/lib/i18n";
 import { getSlugMap, getCategoriesWithTools } from "@/lib/tool-data";
@@ -28,7 +28,7 @@ export default async function Header({ lang, common }: HeaderProps) {
     return (
         <header>
             <Container>
-                <div className="flex justify-between items-center">
+                <div className="flex justify-between items-center h-[60px]">
                     <Link href={prefix || "/"} className="flex-shrink-0">
                         <Image
                             src="/logo.svg"
@@ -38,22 +38,18 @@ export default async function Header({ lang, common }: HeaderProps) {
                             priority
                         />
                     </Link>
-                    <div className="flex items-center gap-2">
-                        <Link
-                            href={prefix || "/"}
-                            className="text-sm font-medium text-[var(--clr-neutral-0)] hover:text-[var(--clr-green-500)] transition-colors px-3 py-2"
-                        >
-                            {common.nav.home}
-                        </Link>
-                        <ToolsMenu
-                            label={common.nav.tools}
-                            categories={categoriesWithTools}
-                            defaultCategoryId="financial"
-                        />
-                        <LanguageSelector lang={lang} labels={common.languageSelector} slugMaps={slugMaps} />
-                    </div>
+                    <HeaderClient
+                        homeHref={prefix || "/"}
+                        homeLabel={common.nav.home}
+                        toolsLabel={common.nav.tools}
+                        categories={categoriesWithTools}
+                        defaultCategoryId="financial"
+                        languageSelector={
+                            <LanguageSelector lang={lang} labels={common.languageSelector} slugMaps={slugMaps} />
+                        }
+                    />
                 </div>
             </Container>
         </header>
-    )
+    );
 }
