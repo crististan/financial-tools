@@ -29,6 +29,10 @@ const commonDictionary: CommonDictionary = {
         label: "Limbă",
         en: "English",
         ro: "Română",
+        de: "Germană",
+    },
+    sponsor: {
+        label: "Publicitate",
     },
 };
 

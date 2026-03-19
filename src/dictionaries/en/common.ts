@@ -27,6 +27,10 @@ export type CommonDictionary = {
         label: string;
         en: string;
         ro: string;
+        de: string;
+    };
+    sponsor: {
+        label: string;
     };
 };
 
@@ -59,6 +63,10 @@ const commonDictionary: CommonDictionary = {
         label: "Language",
         en: "English",
         ro: "Romana",
+        de: "Deutsch",
+    },
+    sponsor: {
+        label: "Sponsored",
     },
 };
 

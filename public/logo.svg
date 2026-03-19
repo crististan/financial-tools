@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 190 40" fill="none">
+  <!-- Icon: ascending bar chart -->
+  <g>
+    <rect x="2" y="24" width="5" height="12" rx="1.5" fill="#09E789" opacity="0.5"/>
+    <rect x="10" y="18" width="5" height="18" rx="1.5" fill="#09E789" opacity="0.7"/>
+    <rect x="18" y="10" width="5" height="26" rx="1.5" fill="#09E789" opacity="0.85"/>
+    <rect x="26" y="4" width="5" height="32" rx="1.5" fill="#09E789"/>
+  </g>
+  <!-- "Tool" text -->
+  <text x="40" y="29" font-family="Outfit, sans-serif" font-weight="700" font-size="24" fill="#FAFAFA" letter-spacing="-0.5">
+    Tool
+  </text>
+  <!-- "Frame" text -->
+  <text x="90" y="29" font-family="Outfit, sans-serif" font-weight="400" font-size="24" fill="#09E789" letter-spacing="-0.5">
+    Frame
+  </text>
+</svg>

@@ -1,8 +1,10 @@
+import Image from "next/image";
+import Link from "next/link";
 import Container from "./container";
-import { Nav } from "./nav/nav";
+import HeaderClient from "./header-client";
 import LanguageSelector from "./language-selector";
 import { locales } from "@/lib/i18n";
-import { getSlugMap } from "@/lib/tool-data";
+import { getSlugMap, getCategoriesWithTools } from "@/lib/tool-data";
 import type { CommonDictionary } from "@/dictionaries/en/common";
 
 type HeaderProps = {
@@ -20,19 +22,34 @@ export default async function Header({ lang, common }: HeaderProps) {
         }
     }
 
+    const prefix = lang === "en" ? "" : `/${lang}`;
+    const categoriesWithTools = await getCategoriesWithTools(lang);
+
     return (
         <header>
             <Container>
-                <div className="flex justify-between items-center">
-                    <div>
-                        LOGO
-                    </div>
-                    <div className="flex items-center gap-4">
-                        <Nav lang={lang} common={common} />
-                        <LanguageSelector lang={lang} labels={common.languageSelector} slugMaps={slugMaps} />
-                    </div>
+                <div className="flex justify-between items-center h-[60px]">
+                    <Link href={prefix || "/"} className="flex-shrink-0">
+                        <Image
+                            src="/logo.svg"
+                            alt="ToolFrame"
+                            width={160}
+                            height={36}
+                            priority
+                        />
+                    </Link>
+                    <HeaderClient
+                        homeHref={prefix || "/"}
+                        homeLabel={common.nav.home}
+                        toolsLabel={common.nav.tools}
+                        categories={categoriesWithTools}
+                        defaultCategoryId="financial"
+                        languageSelector={
+                            <LanguageSelector lang={lang} labels={common.languageSelector} slugMaps={slugMaps} />
+                        }
+                    />
                 </div>
             </Container>
         </header>
-    )
+    );
 }

@@ -9,6 +9,7 @@ type LanguageSelectorProps = {
         label: string;
         en: string;
         ro: string;
+        de: string;
     };
     slugMaps?: Record<string, Record<string, string>>;
 };
@@ -24,7 +25,6 @@ export default function LanguageSelector({ lang, labels, slugMaps }: LanguageSel
 
         if (lang === "en") {
             // Currently EN (no prefix) -> add new locale prefix
-            // Try to translate the slug
             const translatedPath = translateSlugInPath(pathname, lang, newLang, slugMaps);
             newPath = `/${newLang}${translatedPath}`;
         } else {
@@ -68,15 +68,27 @@ function translateSlugInPath(
     const map = slugMaps[mapKey];
     if (!map) return path;
 
-    // Extract the first path segment (the tool slug)
     const segments = path.split("/").filter(Boolean);
     if (segments.length === 0) return path;
 
-    const slug = segments[0];
-    const translated = map[slug];
+    // Try composite path first (category/tool — 2 segments)
+    if (segments.length >= 2) {
+        const compositeKey = `${segments[0]}/${segments[1]}`;
+        const translated = map[compositeKey];
+        if (translated) {
+            const [newCat, newTool] = translated.split("/");
+            segments[0] = newCat;
+            segments[1] = newTool;
+            return "/" + segments.join("/");
+        }
+    }
+
+    // Try single segment (category page or fallback)
+    const translated = map[segments[0]];
     if (translated) {
         segments[0] = translated;
         return "/" + segments.join("/");
     }
+
     return path;
 }

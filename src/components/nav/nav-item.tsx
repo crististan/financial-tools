@@ -1,9 +1,7 @@
-import {ReactNode } from "react";
 import {
     NavigationMenuContent,
     NavigationMenuItem,
     NavigationMenuLink,
-    NavigationMenuList,
     NavigationMenuTrigger,
     navigationMenuTriggerStyle,
 } from "@/components/ui/navigation-menu";
@@ -19,13 +17,24 @@ type DropdownItem = {
         text: string;
     }
 };
-  
+
+type GroupedCategory = {
+    id: string;
+    headline: string;
+    slug: string;
+    tools: {
+        slug: string;
+        title: string;
+        shortDescription: string;
+    }[];
+};
 
 type NavItemProps = {
     type: string;
     url: string;
     label: string;
     dropdownItems: DropdownItem[];
+    groupedItems?: GroupedCategory[];
 }
 
 function ListItem({
@@ -47,9 +56,9 @@ function ListItem({
       </li>
     )
   }
-  
 
-export default function NavItem({ type, url, label, dropdownItems }: NavItemProps) {
+
+export default function NavItem({ type, url, label, dropdownItems, groupedItems }: NavItemProps) {
     let content;
 
     switch (type) {
@@ -99,6 +108,38 @@ export default function NavItem({ type, url, label, dropdownItems }: NavItemProp
                                 ))}
                             </li>
                         </ul>
+                    </NavigationMenuContent>
+                </>
+            );
+            break;
+        case "groupedList":
+            content = (
+                <>
+                    <NavigationMenuTrigger>{label}</NavigationMenuTrigger>
+                    <NavigationMenuContent>
+                        <div className="w-[320px] md:w-[400px] max-h-[70vh] overflow-y-auto">
+                            {groupedItems?.map((category) => (
+                                <div key={category.id} className="mb-3 last:mb-0">
+                                    <Link
+                                        href={category.slug}
+                                        className="block px-3 py-1.5 text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] hover:text-[var(--clr-green-500)] transition-colors font-semibold"
+                                    >
+                                        {category.headline}
+                                    </Link>
+                                    <ul>
+                                        {category.tools.map((tool) => (
+                                            <li key={tool.slug}>
+                                                <NavigationMenuLink asChild>
+                                                    <Link href={tool.slug}>
+                                                        <div className="font-medium">{tool.title}</div>
+                                                    </Link>
+                                                </NavigationMenuLink>
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
+                            ))}
+                        </div>
                     </NavigationMenuContent>
                 </>
             );

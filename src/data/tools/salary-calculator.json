@@ -1,0 +1,149 @@
+{
+  "id": "salary-calculator",
+  "component": "salary-calculator",
+  "iconPath": "/icons/salary-calculator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "config": {},
+  "translations": {
+    "ro": {
+      "slug": "calculator-salariu",
+      "meta": {
+        "title": "Calculator Salariu Net/Brut Romania 2026 — Calcul Contribuții și Impozit",
+        "description": "Calculator salariu net din brut și brut din net pentru România 2026. Calculează CAS, CASS, impozit pe venit, deduceri personale și costul total al angajatorului. Actualizat cu salariul minim din iulie 2026.",
+        "keywords": ["calculator salariu", "salariu net", "salariu brut", "calculator salariu net", "calculator salariu brut", "CAS", "CASS", "impozit pe venit", "deducere personala", "salariu romania 2026", "contributii salariale", "calculator salarial"]
+      },
+      "hero": {
+        "headline": "Calculator Salariu Net / Brut",
+        "description": "Calculează salariul net din brut sau brut din net pentru România 2026. Include CAS, CASS, impozit pe venit, deduceri personale și costul total al angajatorului."
+      },
+      "tool": {
+        "modeLabel": "Mod calcul",
+        "modeBrutToNet": "Brut → Net",
+        "modeNetToBrut": "Net → Brut",
+        "salaryLabel": "Salariu brut (lei)",
+        "salaryNetLabel": "Salariu net (lei)",
+        "semesterLabel": "Perioadă",
+        "semesterS1": "S1 2026 (ian – iun)",
+        "semesterS2": "S2 2026 (iul – dec)",
+        "dependentsLabel": "Persoane în întreținere",
+        "dependents0": "0 persoane",
+        "dependents1": "1 persoană",
+        "dependents2": "2 persoane",
+        "dependents3": "3 persoane",
+        "dependents4": "4+ persoane",
+        "disabilityLabel": "Handicap grav sau accentuat",
+        "disabilityDescription": "Scutire impozit pe venit (Art. 60 Cod Fiscal)",
+        "minimumWageLabel": "Salariu minim cu normă întreagă",
+        "minimumWageDescription": "Activează suma neimpozabilă",
+        "resultNetLabel": "Salariu Net",
+        "resultBrutLabel": "Salariu Brut",
+        "resultContributionsLabel": "Total Contribuții",
+        "resultTaxLabel": "Impozit pe Venit",
+        "resultEmployerCostLabel": "Cost Angajator",
+        "detailsTitle": "Detalii calcul",
+        "detailsCAS": "CAS (pensie)",
+        "detailsCASS": "CASS (sănătate)",
+        "detailsPersonalDeduction": "Deducere personală",
+        "detailsTaxableBase": "Bază impozabilă",
+        "detailsIncomeTax": "Impozit pe venit",
+        "detailsCAM": "CAM angajator",
+        "detailsNonTaxableAmount": "Sumă neimpozabilă",
+        "detailsRate": "Cotă",
+        "detailsAmount": "Sumă",
+        "currency": "lei",
+        "showDetails": "Afișează detalii",
+        "hideDetails": "Ascunde detalii"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum funcționează",
+        "steps": [
+          {
+            "title": "Introdu salariul",
+            "description": "Introdu salariul brut sau net și selectează perioada, numărul de persoane în întreținere și opțiunile speciale."
+          },
+          {
+            "title": "Calcul automat",
+            "description": "Calculatorul aplică automat contribuțiile CAS (25%), CASS (10%), deducerile personale și impozitul pe venit (10%)."
+          },
+          {
+            "title": "Rezultate detaliate",
+            "description": "Vizualizează salariul net/brut, totalul contribuțiilor, costul angajatorului și detaliile fiecărei rețineri."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De ce să folosești calculatorul nostru?",
+        "sectionDescription": "Calculator complet pentru salariu net și brut, adaptat legislației fiscale din România 2026.",
+        "items": [
+        {
+          "icon": "arrowLeftRight",
+          "title": "Calcul în ambele sensuri",
+          "description": "Calculează salariul net din brut sau brut din net, cu rezultate instantanee."
+        },
+        {
+          "icon": "Users",
+          "title": "Deduceri personale",
+          "description": "Include sistemul complet de deduceri personale în funcție de persoanele aflate în întreținere."
+        },
+        {
+          "icon": "Shield",
+          "title": "Cazuri speciale",
+          "description": "Suport pentru scutire impozit handicap grav/accentuat și suma neimpozabilă la salariul minim."
+        },
+        {
+          "icon": "TrendingUp",
+          "title": "Actualizat 2026",
+          "description": "Date actualizate cu salariul minim din iulie 2026 (4.325 lei) și legislația fiscală în vigoare."
+        }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid: Salarizare în România 2026",
+        "articles": [
+        {
+          "title": "Cum se calculează salariul net în România?",
+          "content": "Salariul net se obține prin scăderea din salariul brut a trei contribuții obligatorii: CAS 25% (contribuția la pensie), CASS 10% (contribuția la sănătate) și impozitul pe venit de 10% aplicat la baza impozabilă. Pentru salarii mici și medii, deducerea personală reduce semnificativ impozitul datorat."
+        },
+        {
+          "title": "Ce sunt deducerile personale?",
+          "content": "Deducerile personale sunt reduceri ale bazei impozabile acordate angajaților cu salarii brute de până la salariul minim + 2.000 lei. Procentul deducerii scade progresiv pe măsură ce salariul crește și se majorează în funcție de numărul persoanelor aflate în întreținere (soț/soție, copii, rude până la gradul II)."
+        },
+        {
+          "title": "Ce este costul total al angajatorului?",
+          "content": "Pe lângă salariul brut, angajatorul plătește contribuția asiguratorie pentru muncă (CAM) de 2,25% din salariul brut. Aceasta acoperă fondul de șomaj și riscurile profesionale. Costul total al angajatorului este salariul brut × 1,0225."
+        }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări frecvente",
+        "items": [
+        {
+          "question": "Care este salariul minim brut în România în 2026?",
+          "answer": "Salariul minim brut pe economie este de 4.050 lei în semestrul I (ianuarie – iunie) și 4.325 lei în semestrul II (iulie – decembrie 2026), conform HG 146/2026."
+        },
+        {
+          "question": "Mai beneficiază angajații IT de scutire de impozit în 2026?",
+          "answer": "Nu. Facilitățile fiscale pentru sectorul IT au fost complet eliminate din 1 ianuarie 2025 prin OUG 156/2024. Toți angajații, inclusiv cei din IT, plătesc aceleași contribuții: CAS 25%, CASS 10% și impozit pe venit 10%."
+        },
+        {
+          "question": "Cum funcționează suma neimpozabilă la salariul minim?",
+          "answer": "Pentru angajații cu contract de muncă cu normă întreagă la funcția de bază și cu salariul egal cu minimul pe economie, o sumă de 200 lei (S2) sau 300 lei (S1) din brut este scutită de CAS, CASS și impozit, conform OUG 89/2025."
+        },
+        {
+          "question": "Ce înseamnă scutirea de impozit pentru persoanele cu handicap?",
+          "answer": "Persoanele cu handicap grav sau accentuat sunt scutite de impozitul pe venit salarial (Art. 60 Cod Fiscal). CAS și CASS se plătesc integral. Rezultatul: salariul net este aproximativ 65% din brut."
+        },
+        {
+          "question": "Cum se calculează deducerea personală?",
+          "answer": "Deducerea personală se aplică salariilor brute de până la salariul minim + 2.000 lei. Procentul de bază (fără persoane în întreținere) pornește de la 20% la salariul minim și scade cu 0,5 puncte procentuale la fiecare 50 lei peste minim. Se adaugă bonificații pentru persoane în întreținere: +5pp (1 persoană), +10pp (2), +15pp (3), +25pp (4+)."
+        }
+        ]
+      },
+      "cta": {
+        "title": "Alte instrumente financiare",
+        "description": "Explorează și celelalte calculatoare financiare disponibile."
+      }
+    }
+  }
+}

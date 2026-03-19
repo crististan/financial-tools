@@ -1,0 +1,66 @@
+{
+  "sponsors": [
+    {
+      "id": "revolut-affiliate",
+      "status": "active",
+      "pages": ["homepage", "currency-converter", "monthly-budget-tracker"],
+      "translations": {
+        "en": {
+          "text": "Open a free Revolut account and enjoy instant currency exchange at interbank rates, fee-free spending abroad, and smart budgeting tools — all from one app.",
+          "linkText": "Get Revolut for free →",
+          "linkUrl": "https://revolut.com/referral/EXAMPLE"
+        },
+        "ro": {
+          "text": "Deschide un cont Revolut gratuit și bucură-te de schimb valutar instant la cursul interbancar, cheltuieli fără comision în străinătate și instrumente inteligente de bugetare — totul dintr-o singură aplicație.",
+          "linkText": "Obține Revolut gratuit →",
+          "linkUrl": "https://revolut.com/referral/EXAMPLE"
+        },
+        "de": {
+          "text": "Eröffnen Sie ein kostenloses Revolut-Konto und genießen Sie sofortigen Währungsumtausch zu Interbankenkursen, gebührenfreies Bezahlen im Ausland und intelligente Budgetierungstools — alles in einer App.",
+          "linkText": "Revolut kostenlos erhalten →",
+          "linkUrl": "https://revolut.com/referral/EXAMPLE"
+        }
+      }
+    }
+  ],
+  "solarEstimator": {
+    "regions": [
+      { "id": "dobrogea-oltenia", "label": "Dobrogea & Oltenia de Sud", "kwhPerKwp": 1460, "counties": "Constanța, Tulcea, Dolj, Olt, Teleorman" },
+      { "id": "campia-romana-moldova-sud", "label": "Câmpia Română & Moldova de Sud", "kwhPerKwp": 1370, "counties": "București, Ilfov, Giurgiu, Călărași, Brăila, Galați" },
+      { "id": "transilvania-banat", "label": "Transilvania de Sud & Banat", "kwhPerKwp": 1300, "counties": "Sibiu, Brașov, Timișoara, Arad, Hunedoara" },
+      { "id": "moldova-nord-maramures", "label": "Moldova de Nord & Maramureș", "kwhPerKwp": 1230, "counties": "Iași, Suceava, Botoșani, Maramureș" },
+      { "id": "medie-nationala", "label": "Medie națională", "kwhPerKwp": 1300, "counties": "" }
+    ],
+    "monthlyDistribution": [3.7, 4.9, 7.6, 9.7, 11.3, 12.1, 12.6, 11.7, 9.5, 6.8, 4.1, 3.2],
+    "monthNames": ["Ianuarie", "Februarie", "Martie", "Aprilie", "Mai", "Iunie", "Iulie", "August", "Septembrie", "Octombrie", "Noiembrie", "Decembrie"],
+    "energyProviders": [
+      { "id": "hidroelectrica", "name": "Hidroelectrica", "retailPrice": 1.06, "prosumerPrice": 0.28 },
+      { "id": "eon", "name": "E.ON Duo Fix", "retailPrice": 1.19, "prosumerPrice": 0.80 },
+      { "id": "electrica", "name": "Electrica Furnizare", "retailPrice": 1.21, "prosumerPrice": 0.48 },
+      { "id": "ppc", "name": "PPC Energy (ex-Enel)", "retailPrice": 1.30, "prosumerPrice": 0.72 },
+      { "id": "enel", "name": "Enel Energie", "retailPrice": 1.38, "prosumerPrice": 0.86 },
+      { "id": "nova", "name": "Nova Power", "retailPrice": 1.55, "prosumerPrice": 0.62 },
+      { "id": "medie", "name": "Medie piață", "retailPrice": 1.25, "prosumerPrice": 0.55 }
+    ],
+    "systemCosts": {
+      "panelsPerKw": { "min": 3000, "avg": 5000, "premium": 7500 },
+      "batteryPerKwh": { "min": 1400, "avg": 2000, "premium": 3500 },
+      "baseInstallation": { "min": 1000, "avg": 2000, "premium": 3000 }
+    },
+    "selfConsumption": {
+      "homeBaseRate": 0.45,
+      "officeBaseRate": 0.33,
+      "batteryFactor": 0.04,
+      "maxRate": 0.95
+    },
+    "advancedParams": {
+      "panelDegradation": 0.005,
+      "energyPriceIncrease": 0.03,
+      "panelLifespan": 25,
+      "batteryLifespan": 12,
+      "performanceRatio": 0.80,
+      "casaVerdeSubsidy": 30000,
+      "casaVerdeMinContribution": 3000
+    }
+  }
+}

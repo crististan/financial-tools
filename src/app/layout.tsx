@@ -8,8 +8,8 @@ const outfit = Outfit({
 });
 
 export const metadata: Metadata = {
-  title: "Financial tools",
-  description: "Free financial tools for smart investors.",
+  title: "ToolFrame",
+  description: "Free financial tools for smart decisions.",
 };
 
 export default function RootLayout({

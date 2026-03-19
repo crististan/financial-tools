@@ -1,4 +1,4 @@
-import { RefreshCw, Globe, BadgeDollarSign, UserX, Shield, Clock, Calculator, Wallet, TrendingUp, Zap } from 'lucide-react';
+import { Gauge, Wind, GitCompare, BarChart3, LayoutList, Save, ArrowLeftRight, Table, RefreshCw, Globe, BadgeDollarSign, UserX, Shield, Clock, Calculator, Wallet, TrendingUp, Zap } from 'lucide-react';
 import type { ComponentType } from 'react';
 
 const iconMap: Record<string, ComponentType<{ className?: string }>> = {
@@ -12,6 +12,14 @@ const iconMap: Record<string, ComponentType<{ className?: string }>> = {
     wallet: Wallet,
     trendingUp: TrendingUp,
     zap: Zap,
+    table: Table,
+    arrowLeftRight: ArrowLeftRight,
+    save: Save,
+    layoutList: LayoutList,
+    barChart3: BarChart3,
+     gitCompare: GitCompare,
+     wind: Wind,
+     gauge: Gauge
 };
 
 type FeatureItem = {

@@ -11,8 +11,8 @@ type EducationalContentProps = {
 export default function EducationalContent({ sectionTitle, articles }: EducationalContentProps) {
     return (
         <div>
-            <h2 className="text-2xl md:text-4xl font-medium mb-10">{sectionTitle}</h2>
-            <div className="max-w-[800px] space-y-8">
+            <h2 className="text-2xl md:text-4xl font-medium mb-10 text-center">{sectionTitle}</h2>
+            <div className="max-w-[800px] space-y-8 mx-auto">
                 {articles.map((article, index) => (
                     <article
                         key={index}

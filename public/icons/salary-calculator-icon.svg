@@ -1,0 +1,12 @@
+<svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
+<rect width="64" height="64" rx="20" fill="#09E789" fill-opacity="0.25"/>
+<path d="M22 26C22 23.7909 23.7909 22 26 22H38C40.2091 22 42 23.7909 42 26V38C42 40.2091 40.2091 42 38 42H26C23.7909 42 22 40.2091 22 38V26Z" stroke="#09E789" stroke-width="1.8"/>
+<path d="M22 30H42" stroke="#09E789" stroke-width="1.8"/>
+<path d="M29 22V30" stroke="#09E789" stroke-width="1.8"/>
+<circle cx="27" cy="26" r="1.5" fill="#09E789"/>
+<path d="M33 35H37" stroke="#09E789" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M33 38H37" stroke="#09E789" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M27 35H29" stroke="#09E789" stroke-width="1.8" stroke-linecap="round"/>
+<path d="M27 38H29" stroke="#09E789" stroke-width="1.8" stroke-linecap="round"/>
+<text x="34" y="27.5" font-family="Arial" font-size="7" font-weight="bold" fill="#09E789" text-anchor="middle">LEI</text>
+</svg>

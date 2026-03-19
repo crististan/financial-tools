@@ -8,6 +8,8 @@ import CardsContainer from "@/components/cards-container";
 import Card from "@/components/ui/card";
 import { getDictionary } from "@/lib/dictionaries";
 import { getLocalizedToolsFromJson } from "@/lib/tool-data";
+import { getSponsorsForPage } from "@/lib/site-config";
+import SponsorSection from "@/components/sponsor-section";
 import type { CommonDictionary } from "@/dictionaries/en/common";
 
 export default async function RootHome() {
@@ -15,6 +17,7 @@ export default async function RootHome() {
     const common = await getDictionary<CommonDictionary>(lang);
     const toolsRaw = await getLocalizedToolsFromJson(lang);
     const tools = toolsRaw.map((t) => ({ ...t, cta: { ...t.cta, text: common.tools.cta } }));
+    const sponsors = await getSponsorsForPage("homepage", lang);
 
     return (
         <>
@@ -23,7 +26,7 @@ export default async function RootHome() {
             <HomeHero
                 headline={common.homepage.headline}
                 primaryCta={{ text: common.homepage.primaryCta, href: "/" }}
-                secondaryCta={{ text: common.homepage.secondaryCta, href: "/monthly-budget-tracker" }}
+                secondaryCta={{ text: common.homepage.secondaryCta, href: "/planning/monthly-budget-tracker" }}
             />
 
             <Separator />
@@ -57,6 +60,14 @@ export default async function RootHome() {
                     </CardsContainer>
                 </Container>
             </Section>
+
+            {sponsors.length > 0 && (
+                <Section>
+                    <Container>
+                        <SponsorSection sponsors={sponsors} label={common.sponsor.label} />
+                    </Container>
+                </Section>
+            )}
             </main>
         </>
     );

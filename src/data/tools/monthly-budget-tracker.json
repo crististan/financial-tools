@@ -2,6 +2,7 @@
   "id": "monthly-budget-tracker",
   "component": "budget-tracker",
   "iconPath": "/icons/monthly-budget-tracker-icon.svg",
+  "categories": ["planning"],
   "applicationCategory": "FinanceApplication",
   "config": {},
   "translations": {
@@ -60,20 +61,14 @@
         "sectionTitle": "How to Track Your Monthly Budget",
         "steps": [
           {
-            "number": 1,
-            "icon": "listPlus",
             "title": "Set Up Categories",
             "description": "Start with the predefined income and expense categories, or customize them to match your financial life. Add or remove categories anytime."
           },
           {
-            "number": 2,
-            "icon": "pencilLine",
             "title": "Enter Planned & Actual Amounts",
             "description": "At the start of the month, set planned budgets for each category. As you spend and earn, update the actual amounts to track your progress."
           },
           {
-            "number": 3,
-            "icon": "chartBar",
             "title": "Review Your Summary",
             "description": "The summary updates instantly, showing total income, expenses, balance, and how your actual spending compares to your plan. Green means on track, red means over budget."
           }
@@ -337,6 +332,173 @@
       "cta": {
         "title": "Explorează Celelalte Instrumente Financiare",
         "description": "Gestionează fiecare aspect al finanțelor tale cu calculatoarele și urmăritoarele noastre gratuite și ușor de utilizat."
+      }
+    },
+    "de": {
+      "slug": "budgetplaner",
+      "meta": {
+        "title": "Monatlicher Budgetplaner | Kostenloser Einnahmen- & Ausgabenplaner",
+        "description": "Kostenloser monatlicher Budgetplaner. Planen und verfolgen Sie Ihre Einnahmen und Ausgaben, vergleichen Sie geplante mit tatsächlichen Ausgaben und behalten Sie die Kontrolle über Ihre persönlichen Finanzen. Keine Registrierung erforderlich.",
+        "keywords": ["Budgetplaner", "Monatsbudget", "Ausgabentracker", "Einnahmentracker", "Budgetplanung", "persönliche Finanzen", "Ausgabenverfolgung", "Geldmanagement", "Haushaltsplan", "Finanzplanung"]
+      },
+      "hero": {
+        "headline": "Monatlicher Budgetplaner",
+        "description": "Planen Sie Ihre monatlichen Einnahmen und Ausgaben, verfolgen Sie die tatsächlichen Ausgaben und sehen Sie genau, wohin Ihr Geld fließt. Alle Daten bleiben in Ihrem Browser."
+      },
+      "tool": {
+        "incomeTitle": "Einnahmen",
+        "expensesTitle": "Ausgaben",
+        "categoryLabel": "Kategorie",
+        "categoryPlaceholder": "Kategoriename",
+        "plannedLabel": "Geplant",
+        "plannedPlaceholder": "0.00",
+        "actualLabel": "Tatsächlich",
+        "actualPlaceholder": "0.00",
+        "addButtonLabel": "Kategorie hinzufügen",
+        "removeButtonAriaLabel": "Kategorie entfernen",
+        "summaryTitle": "Monatliche Übersicht",
+        "totalIncomePlanLabel": "Gesamteinnahmen (Geplant)",
+        "totalIncomeActualLabel": "Gesamteinnahmen (Tatsächlich)",
+        "totalExpensesPlanLabel": "Gesamtausgaben (Geplant)",
+        "totalExpensesActualLabel": "Gesamtausgaben (Tatsächlich)",
+        "balancePlanLabel": "Saldo (Geplant)",
+        "balanceActualLabel": "Saldo (Tatsächlich)",
+        "differenceLabel": "Differenz",
+        "resetButtonLabel": "Alle Daten zurücksetzen",
+        "resetConfirmMessage": "Sind Sie sicher, dass Sie alle Budgetdaten zurücksetzen möchten? Diese Aktion kann nicht rückgängig gemacht werden.",
+        "noDataMessage": "Fügen Sie mindestens eine Einnahmen- und eine Ausgabenkategorie hinzu, um Ihre Übersicht zu sehen.",
+        "progressLabel": "{percent}% des Geplanten",
+        "defaultCategories": {
+          "income": [
+            { "name": "Gehalt", "planned": 5000 },
+            { "name": "Freiberufliche Tätigkeit / Nebeneinkommen", "planned": 0 }
+          ],
+          "expenses": [
+            { "name": "Miete / Hypothek", "planned": 1500 },
+            { "name": "Nebenkosten", "planned": 200 },
+            { "name": "Lebensmittel", "planned": 400 },
+            { "name": "Transport", "planned": 150 },
+            { "name": "Gesundheit", "planned": 100 },
+            { "name": "Unterhaltung", "planned": 100 },
+            { "name": "Abonnements", "planned": 50 },
+            { "name": "Sparen", "planned": 500 }
+          ]
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "So verfolgen Sie Ihr Monatsbudget",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "listPlus",
+            "title": "Kategorien einrichten",
+            "description": "Beginnen Sie mit den vordefinierten Einnahmen- und Ausgabenkategorien oder passen Sie diese an Ihre finanzielle Situation an. Kategorien können jederzeit hinzugefügt oder entfernt werden."
+          },
+          {
+            "number": 2,
+            "icon": "pencilLine",
+            "title": "Geplante und tatsächliche Beträge eingeben",
+            "description": "Legen Sie zu Beginn des Monats geplante Budgets für jede Kategorie fest. Aktualisieren Sie im Laufe des Monats die tatsächlichen Beträge, um Ihren Fortschritt zu verfolgen."
+          },
+          {
+            "number": 3,
+            "icon": "chartBar",
+            "title": "Übersicht prüfen",
+            "description": "Die Übersicht wird sofort aktualisiert und zeigt Gesamteinnahmen, Ausgaben, Saldo und wie Ihre tatsächlichen Ausgaben im Vergleich zum Plan stehen. Grün bedeutet im Rahmen, Rot bedeutet Budgetüberschreitung."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum unseren Budgetplaner verwenden",
+        "sectionDescription": "Einfache, aber leistungsstarke Werkzeuge, die Ihnen helfen, die Kontrolle über Ihre monatlichen Finanzen zu übernehmen.",
+        "items": [
+          {
+            "icon": "save",
+            "title": "Automatische Speicherung im Browser",
+            "description": "Ihre Budgetdaten werden automatisch im lokalen Speicher Ihres Browsers gesichert. Kommen Sie jederzeit zurück und machen Sie genau dort weiter, wo Sie aufgehört haben."
+          },
+          {
+            "icon": "layoutList",
+            "title": "Individuelle Kategorien",
+            "description": "Beginnen Sie mit intelligenten Standardkategorien oder erstellen Sie Ihre eigenen. Fügen Sie Kategorien hinzu, benennen Sie sie um oder entfernen Sie sie, damit sie perfekt zu Ihren Ausgabegewohnheiten passen."
+          },
+          {
+            "icon": "barChart3",
+            "title": "Soll-Ist-Vergleich",
+            "description": "Legen Sie geplante Budgets zu Monatsbeginn fest und verfolgen Sie die tatsächlichen Ausgaben laufend. Sehen Sie sofort, wo Sie unter oder über dem Budget liegen."
+          },
+          {
+            "icon": "shield",
+            "title": "Privat und sicher",
+            "description": "Alle Ihre Finanzdaten bleiben in Ihrem Browser. Wir erheben, speichern oder übermitteln niemals Ihre persönlichen Budgetinformationen an einen Server."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ihr Monatsbudget meistern",
+        "articles": [
+          {
+            "title": "Die 50/30/20-Budgetregel",
+            "content": "Eines der beliebtesten Budgetierungsmodelle teilt 50 % des Nettoeinkommens für Grundbedürfnisse (Miete, Nebenkosten, Lebensmittel), 30 % für persönliche Wünsche (Unterhaltung, Restaurantbesuche, Hobbys) und 20 % für Sparen und Schuldenrückzahlung ein. Diese einfache Regel bietet einen ausgewogenen Ausgangspunkt für alle, die mit der Budgetplanung beginnen. Passen Sie die Prozentsätze an Ihre Situation an, aber das Grundprinzip bleibt: Priorisieren Sie Grundbedürfnisse, genießen Sie das Leben und zahlen Sie sich selbst immer zuerst durch Sparen."
+          },
+          {
+            "title": "Warum die Ausgabenverfolgung wichtig ist",
+            "content": "Studien zeigen, dass Menschen, die ihre Ausgaben aktiv verfolgen, deutlich mehr sparen als diejenigen, die es nicht tun. Das Aufzeichnen von Ausgaben schafft ein Bewusstsein für Ausgabenmuster und reduziert Impulskäufe. Untersuchungen belegen, dass die bloße Überwachung der Finanzen unnötige Ausgaben um 15–20 % senken kann. Ein monatlicher Budgetplaner macht diesen Prozess mühelos, indem er genau zeigt, wohin Ihr Geld fließt, und Bereiche hervorhebt, in denen Sie sparen können."
+          },
+          {
+            "title": "Aufbau eines Notfallfonds",
+            "content": "Finanzexperten empfehlen, Lebenshaltungskosten für drei bis sechs Monate in einem leicht zugänglichen Notfallfonds anzusparen. Beginnen Sie damit, eine Sparkategorie in Ihrem monatlichen Budget einzuplanen, auch wenn Sie zunächst nur einen kleinen Betrag zurücklegen können. Regelmäßigkeit ist wichtiger als die Höhe des Betrags. Sobald Sie einen Puffer für unerwartete Ausgaben wie Autoreparaturen, Arztrechnungen oder Jobverlust haben, gewinnen Sie finanzielle Sicherheit und innere Ruhe, die Stress reduziert und die Entscheidungsfindung verbessert."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "question": "Wo werden meine Budgetdaten gespeichert?",
+            "answer": "Ihre Budgetdaten werden ausschließlich im lokalen Speicher Ihres Browsers gespeichert. Wir senden niemals Ihre Finanzinformationen an einen Server. Das bedeutet, dass Ihre Daten vollständig privat sind, aber auch, dass das Löschen Ihrer Browserdaten Ihr Budget löscht. Erwägen Sie, Ihre Daten regelmäßig als Sicherung zu exportieren."
+          },
+          {
+            "question": "Kann ich die Budgetkategorien anpassen?",
+            "answer": "Ja, Sie können Ihre Budgetkategorien vollständig anpassen. Fügen Sie neue Kategorien hinzu, indem Sie auf die Schaltfläche 'Kategorie hinzufügen' unter dem Bereich Einnahmen oder Ausgaben klicken. Sie können auch jede bestehende Kategorie umbenennen, indem Sie das Namensfeld bearbeiten, oder nicht benötigte Kategorien entfernen."
+          },
+          {
+            "question": "Was bedeuten die Farben in der Übersicht?",
+            "answer": "Grüne Werte zeigen positive Ergebnisse an: Ihre tatsächlichen Einnahmen haben den Plan erreicht oder übertroffen, oder Ihre tatsächlichen Ausgaben blieben im Budget. Rote Werte weisen auf Bereiche hin, die Aufmerksamkeit erfordern: Die Einnahmen blieben hinter dem Plan zurück, oder die Ausgaben überschritten das Budget. Dieses visuelle System ermöglicht es, Probleme auf einen Blick zu erkennen."
+          },
+          {
+            "question": "Wie beginne ich einen neuen Monat?",
+            "answer": "Verwenden Sie die Schaltfläche 'Alle Daten zurücksetzen', um alle tatsächlichen Beträge zu löschen und neu zu beginnen. Ihre geplanten Beträge und Kategorien bleiben als Vorlage erhalten. Alternativ können Sie die tatsächlichen Beträge für jede Kategorie manuell auf Null setzen und dabei Ihre geplanten Budgets beibehalten."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen geplanten und tatsächlichen Beträgen?",
+            "answer": "Geplante Beträge stellen Ihre Budgetziele dar, die zu Beginn des Monats festgelegt werden. Tatsächliche Beträge spiegeln wider, was Sie wirklich verdient oder ausgegeben haben. Der Vergleich beider zeigt, ob Sie auf Kurs sind, unter dem Budget liegen oder in jeder Kategorie zu viel ausgeben."
+          },
+          {
+            "question": "Kann ich diesen Planer für eine andere Währung verwenden?",
+            "answer": "Ja, der Planer funktioniert mit jeder Währung. Die eingegebenen Beträge sind einfache Zahlen, und die Berechnungen in der Übersicht funktionieren unabhängig von der Währung gleich. Derzeit wird das Dollarzeichen ($) zur Anzeige verwendet, aber die Werte stehen für jede Währung, in der Sie Ihr Budget planen."
+          },
+          {
+            "question": "Wie gehe ich mit unregelmäßigem Einkommen um?",
+            "answer": "Für unregelmäßiges Einkommen wie freiberufliche Arbeit oder Provisionen schätzen Sie einen konservativen geplanten Betrag basierend auf Ihren durchschnittlichen Einnahmen der letzten Monate. Aktualisieren Sie den tatsächlichen Betrag, sobald Zahlungen eingehen. Dieser Ansatz bietet Ihnen eine realistische Grundlage und berücksichtigt gleichzeitig die Schwankungen."
+          },
+          {
+            "question": "Was bedeutet die 'Differenz' in der Übersicht?",
+            "answer": "Die Differenz zeigt, wie Ihr tatsächlicher Saldo im Vergleich zum geplanten Saldo abschneidet. Eine positive Differenz bedeutet, dass Sie besser als geplant abgeschnitten haben (mehr verdient oder weniger ausgegeben). Eine negative Differenz bedeutet, dass Sie Ihre Budgetziele nicht erreicht haben. Sie liefert eine einzelne Kennzahl zur Bewertung Ihrer gesamten monatlichen Finanzleistung."
+          },
+          {
+            "question": "Sollte ich Sparen als Ausgabe einplanen?",
+            "answer": "Ja, Sparen als Ausgabe zu behandeln ist eine bewährte Budgetierungsstrategie namens 'Zahle dich selbst zuerst'. Indem Sie Sparen als geplante Ausgabe einbeziehen, priorisieren Sie den Aufbau Ihrer finanziellen Reserven vor den freien Ausgaben. Dies gewährleistet ein konstantes Sparen jeden Monat, selbst wenn andere Ausgaben schwanken."
+          },
+          {
+            "question": "Kann ich diesen Planer auf meinem Smartphone verwenden?",
+            "answer": "Ja, unser Budgetplaner ist vollständig responsiv und funktioniert einwandfrei auf Smartphones, Tablets und Desktop-Computern. Öffnen Sie einfach die Seite in Ihrem mobilen Browser, um sofort mit der Budgetverfolgung zu beginnen – ohne App-Download erforderlich."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Entdecken Sie unsere weiteren Finanztools",
+        "description": "Verwalten Sie jeden Aspekt Ihrer Finanzen mit unseren kostenlosen und benutzerfreundlichen Rechnern und Planern."
       }
     }
   }

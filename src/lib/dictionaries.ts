@@ -3,6 +3,7 @@ import type { Locale } from './i18n';
 const commonDictionaries: Record<string, () => Promise<Record<string, unknown>>> = {
     en: () => import('@/dictionaries/en/common').then(m => m.default),
     ro: () => import('@/dictionaries/ro/common').then(m => m.default),
+    de: () => import('@/dictionaries/de/common').then(m => m.default),
 };
 
 export async function getDictionary<T = Record<string, unknown>>(lang: string): Promise<T> {

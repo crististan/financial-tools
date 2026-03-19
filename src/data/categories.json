@@ -1,0 +1,499 @@
+{
+  "categories": [
+    {
+      "id": "financial",
+      "order": 1,
+      "translations": {
+        "en": {
+          "slug": "financial",
+          "meta": {
+            "title": "Financial Calculators – Loans, Interest & Salary Tools | ToolFrame",
+            "description": "Free online financial calculators for loan repayment, compound interest, and salary calculations. Plan your finances with accurate, easy-to-use tools.",
+            "keywords": ["financial calculator", "loan calculator", "compound interest calculator", "salary calculator", "finance tools", "money calculator"]
+          },
+          "headline": "Financial Calculators",
+          "description": "Plan your finances with precision. Our free financial calculators help you estimate loan repayments, calculate compound interest growth, and understand your salary breakdown — all in one place.",
+          "faq": {
+            "sectionTitle": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "What financial calculators are available on ToolFrame?",
+                "answer": "ToolFrame offers a Loan Repayment Calculator for estimating monthly payments and amortization schedules, a Compound Interest Calculator for projecting investment growth over time, and a Salary Calculator for understanding net vs. gross salary with tax breakdowns."
+              },
+              {
+                "question": "Are these financial calculators free to use?",
+                "answer": "Yes, all financial calculators on ToolFrame are completely free to use with no registration required. You can perform unlimited calculations at any time."
+              },
+              {
+                "question": "How accurate are the financial calculations?",
+                "answer": "Our calculators use standard financial formulas — such as the amortization formula for loans and compound interest formulas for investments. The results are mathematically accurate based on the inputs you provide. For official financial decisions, always consult a qualified financial advisor."
+              },
+              {
+                "question": "Can I compare different financial scenarios?",
+                "answer": "Yes. The Compound Interest Calculator includes a scenario comparison feature showing results for different monthly contribution amounts. The Loan Repayment Calculator displays a full amortization schedule so you can evaluate different loan terms."
+              }
+            ]
+          }
+        },
+        "ro": {
+          "slug": "financiar",
+          "meta": {
+            "title": "Calculatoare Financiare – Credite, Dobânzi și Salarii | ToolFrame",
+            "description": "Calculatoare financiare gratuite online pentru rate de credit, dobândă compusă și calcul salariu. Planifică-ți finanțele cu instrumente precise și ușor de folosit.",
+            "keywords": ["calculator financiar", "calculator rate credit", "calculator dobanda compusa", "calculator salariu", "instrumente financiare", "calculator bani"]
+          },
+          "headline": "Calculatoare Financiare",
+          "description": "Planifică-ți finanțele cu precizie. Calculatoarele noastre financiare gratuite te ajută să estimezi ratele de credit, să calculezi creșterea dobânzii compuse și să înțelegi defalcarea salariului — toate într-un singur loc.",
+          "faq": {
+            "sectionTitle": "Întrebări Frecvente",
+            "items": [
+              {
+                "question": "Ce calculatoare financiare sunt disponibile pe ToolFrame?",
+                "answer": "ToolFrame oferă un Calculator de Rate Credit pentru estimarea plăților lunare și a graficului de amortizare, un Calculator de Dobândă Compusă pentru proiectarea creșterii investițiilor în timp și un Calculator de Salariu pentru înțelegerea salariului net vs. brut cu defalcarea taxelor."
+              },
+              {
+                "question": "Sunt gratuite aceste calculatoare financiare?",
+                "answer": "Da, toate calculatoarele financiare de pe ToolFrame sunt complet gratuite, fără a fi necesară înregistrarea. Poți efectua calcule nelimitate oricând."
+              },
+              {
+                "question": "Cât de precise sunt calculele financiare?",
+                "answer": "Calculatoarele noastre folosesc formule financiare standard — cum ar fi formula de amortizare pentru credite și formulele de dobândă compusă pentru investiții. Rezultatele sunt precise matematic pe baza datelor introduse. Pentru decizii financiare oficiale, consultați întotdeauna un consilier financiar calificat."
+              },
+              {
+                "question": "Pot compara diferite scenarii financiare?",
+                "answer": "Da. Calculatorul de Dobândă Compusă include o funcție de comparare a scenariilor care arată rezultatele pentru diferite sume de contribuție lunară. Calculatorul de Rate Credit afișează un grafic complet de amortizare pentru a evalua diferite termene de credit."
+              }
+            ]
+          }
+        },
+        "de": {
+          "slug": "finanzen",
+          "meta": {
+            "title": "Finanzrechner – Kredite, Zinsen & Gehaltstools | ToolFrame",
+            "description": "Kostenlose Online-Finanzrechner für Kreditrückzahlung, Zinseszins und Gehaltsberechnungen. Planen Sie Ihre Finanzen mit genauen, benutzerfreundlichen Tools.",
+            "keywords": ["Finanzrechner", "Kreditrechner", "Zinseszinsrechner", "Gehaltsrechner", "Finanztools", "Geldrechner"]
+          },
+          "headline": "Finanzrechner",
+          "description": "Planen Sie Ihre Finanzen mit Präzision. Unsere kostenlosen Finanzrechner helfen Ihnen, Kreditrückzahlungen zu schätzen, das Wachstum von Zinseszinsen zu berechnen und Ihre Gehaltsaufschlüsselung zu verstehen — alles an einem Ort.",
+          "faq": {
+            "sectionTitle": "Häufig gestellte Fragen",
+            "items": [
+              {
+                "question": "Welche Finanzrechner sind auf ToolFrame verfügbar?",
+                "answer": "ToolFrame bietet einen Kreditrechner zur Schätzung monatlicher Zahlungen und Tilgungspläne, einen Zinseszinsrechner zur Projektion des Investitionswachstums im Laufe der Zeit und einen Gehaltsrechner zum Verständnis von Netto- und Bruttogehalt mit Steueraufschlüsselung."
+              },
+              {
+                "question": "Sind diese Finanzrechner kostenlos?",
+                "answer": "Ja, alle Finanzrechner auf ToolFrame sind völlig kostenlos und ohne Registrierung nutzbar. Sie können jederzeit unbegrenzt Berechnungen durchführen."
+              },
+              {
+                "question": "Wie genau sind die Finanzberechnungen?",
+                "answer": "Unsere Rechner verwenden standardmäßige Finanzformeln — wie die Tilgungsformel für Kredite und Zinseszinsformeln für Investitionen. Die Ergebnisse sind mathematisch genau basierend auf Ihren Eingaben. Für offizielle Finanzentscheidungen konsultieren Sie immer einen qualifizierten Finanzberater."
+              },
+              {
+                "question": "Kann ich verschiedene Finanzszenarien vergleichen?",
+                "answer": "Ja. Der Zinseszinsrechner enthält eine Szenariovergleichsfunktion, die Ergebnisse für verschiedene monatliche Beitragsbeträge zeigt. Der Kreditrechner zeigt einen vollständigen Tilgungsplan, damit Sie verschiedene Kreditlaufzeiten bewerten können."
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "nautical",
+      "order": 2,
+      "translations": {
+        "en": {
+          "slug": "nautical",
+          "meta": {
+            "title": "Nautical Tools – Fuel Calculator & Marine Planning | ToolFrame",
+            "description": "Free nautical tools for marine fuel consumption calculation, trip planning, and cost estimation. Essential tools for boat owners and sailors.",
+            "keywords": ["nautical calculator", "marine fuel calculator", "boat fuel consumption", "nautical tools", "sailing calculator", "marine planning"]
+          },
+          "headline": "Nautical Tools",
+          "description": "Essential tools for the sea. Calculate fuel consumption, estimate trip costs, and plan your voyages with confidence using our free nautical calculators.",
+          "faq": {
+            "sectionTitle": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "What nautical tools does ToolFrame offer?",
+                "answer": "ToolFrame currently offers a Nautical Fuel Calculator that estimates fuel consumption, total trip cost, travel time, and autonomy range based on distance, speed, engine type, and weather conditions."
+              },
+              {
+                "question": "Does the fuel calculator account for weather conditions?",
+                "answer": "Yes. The Nautical Fuel Calculator includes wind conditions (calm, light, moderate, strong) and current (none, favorable, against) factors that affect fuel consumption through realistic multipliers."
+              },
+              {
+                "question": "What engine types are supported?",
+                "answer": "The calculator supports outboard engines, inboard engines, and sail auxiliary engines. Each engine type has different base fuel consumption rates that reflect real-world performance."
+              },
+              {
+                "question": "Will more nautical tools be added?",
+                "answer": "Yes, we plan to expand our nautical tools section with additional calculators for multi-leg trip planning, fuel type comparisons, and more marine-specific utilities."
+              }
+            ]
+          }
+        },
+        "ro": {
+          "slug": "nautic",
+          "meta": {
+            "title": "Instrumente Nautice – Calculator Combustibil & Planificare Marină | ToolFrame",
+            "description": "Instrumente nautice gratuite pentru calculul consumului de combustibil marin, planificarea călătoriilor și estimarea costurilor. Esențiale pentru proprietarii de bărci și navigatori.",
+            "keywords": ["calculator nautic", "calculator combustibil marin", "consum combustibil barca", "instrumente nautice", "calculator navigatie", "planificare marina"]
+          },
+          "headline": "Instrumente Nautice",
+          "description": "Instrumente esențiale pentru mare. Calculează consumul de combustibil, estimează costurile călătoriei și planifică-ți voiajurile cu încredere folosind calculatoarele noastre nautice gratuite.",
+          "faq": {
+            "sectionTitle": "Întrebări Frecvente",
+            "items": [
+              {
+                "question": "Ce instrumente nautice oferă ToolFrame?",
+                "answer": "ToolFrame oferă în prezent un Calculator de Combustibil Nautic care estimează consumul de combustibil, costul total al călătoriei, timpul de parcurgere și autonomia pe baza distanței, vitezei, tipului de motor și condițiilor meteo."
+              },
+              {
+                "question": "Calculatorul de combustibil ține cont de condițiile meteo?",
+                "answer": "Da. Calculatorul de Combustibil Nautic include factori pentru condițiile de vânt (calm, ușor, moderat, puternic) și curent (absent, favorabil, împotrivă) care afectează consumul de combustibil prin multiplicatori realiști."
+              },
+              {
+                "question": "Ce tipuri de motoare sunt suportate?",
+                "answer": "Calculatorul suportă motoare outboard, motoare inboard și motoare auxiliare de navigație. Fiecare tip de motor are rate diferite de consum de bază care reflectă performanța reală."
+              },
+              {
+                "question": "Vor fi adăugate mai multe instrumente nautice?",
+                "answer": "Da, planificăm să extindem secțiunea de instrumente nautice cu calculatoare suplimentare pentru planificarea rutelor multi-segment, comparații de tipuri de combustibil și alte utilități marine."
+              }
+            ]
+          }
+        },
+        "de": {
+          "slug": "nautik",
+          "meta": {
+            "title": "Nautische Tools – Kraftstoffrechner & Marineplanung | ToolFrame",
+            "description": "Kostenlose nautische Tools zur Berechnung des Kraftstoffverbrauchs, Reiseplanung und Kostenschätzung. Unverzichtbare Werkzeuge für Bootsbesitzer und Segler.",
+            "keywords": ["nautischer Rechner", "Marine-Kraftstoffrechner", "Boot Kraftstoffverbrauch", "nautische Tools", "Segelrechner", "Marineplanung"]
+          },
+          "headline": "Nautische Tools",
+          "description": "Unverzichtbare Werkzeuge für die See. Berechnen Sie den Kraftstoffverbrauch, schätzen Sie Reisekosten und planen Sie Ihre Fahrten mit Vertrauen mit unseren kostenlosen nautischen Rechnern.",
+          "faq": {
+            "sectionTitle": "Häufig gestellte Fragen",
+            "items": [
+              {
+                "question": "Welche nautischen Tools bietet ToolFrame an?",
+                "answer": "ToolFrame bietet derzeit einen nautischen Kraftstoffrechner, der den Kraftstoffverbrauch, die Gesamtreisekosten, die Reisezeit und die Reichweite basierend auf Entfernung, Geschwindigkeit, Motortyp und Wetterbedingungen schätzt."
+              },
+              {
+                "question": "Berücksichtigt der Kraftstoffrechner Wetterbedingungen?",
+                "answer": "Ja. Der nautische Kraftstoffrechner berücksichtigt Windbedingungen (ruhig, leicht, mäßig, stark) und Strömung (keine, günstig, gegen), die den Kraftstoffverbrauch durch realistische Multiplikatoren beeinflussen."
+              },
+              {
+                "question": "Welche Motortypen werden unterstützt?",
+                "answer": "Der Rechner unterstützt Außenbordmotoren, Innenbordmotoren und Hilfssegelantriebe. Jeder Motortyp hat unterschiedliche Basisverbrauchsraten, die die tatsächliche Leistung widerspiegeln."
+              },
+              {
+                "question": "Werden weitere nautische Tools hinzugefügt?",
+                "answer": "Ja, wir planen die Erweiterung unseres nautischen Bereichs mit zusätzlichen Rechnern für die Planung mehrteiliger Reisen, Kraftstoffartvergleiche und weitere marinespezifische Werkzeuge."
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "converters",
+      "order": 3,
+      "translations": {
+        "en": {
+          "slug": "converters",
+          "meta": {
+            "title": "Free Online Converters – Currency & Unit Conversion Tools | ToolFrame",
+            "description": "Convert currencies and measurement units instantly with our free online conversion tools. Accurate, real-time conversions with no registration required.",
+            "keywords": ["online converter", "currency converter", "unit converter", "conversion tools", "measurement converter", "free converter"]
+          },
+          "headline": "Converters",
+          "description": "Instant, accurate conversions at your fingertips. Convert between currencies and measurement units with our free online tools — no registration required.",
+          "faq": {
+            "sectionTitle": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "What types of conversions can I do on ToolFrame?",
+                "answer": "ToolFrame offers a Currency Converter supporting 10 major world currencies (USD, EUR, GBP, JPY, and more) and a Unit Converter for 12 length measurement units (millimeters to leagues, including nautical miles)."
+              },
+              {
+                "question": "Are the conversions calculated in real time?",
+                "answer": "Yes, all conversions are calculated instantly as you type — there's no need to press a calculate button. Results update automatically with every input change."
+              },
+              {
+                "question": "Can I swap the source and target values?",
+                "answer": "Yes, both the Currency Converter and Unit Converter include a swap button that instantly reverses the conversion direction with a smooth rotation animation."
+              },
+              {
+                "question": "Are these conversion tools free?",
+                "answer": "Yes, all conversion tools on ToolFrame are completely free to use with no registration or account required. You can perform unlimited conversions at any time."
+              }
+            ]
+          }
+        },
+        "ro": {
+          "slug": "convertoare",
+          "meta": {
+            "title": "Convertoare Online Gratuite – Valute și Unități de Măsură | ToolFrame",
+            "description": "Convertește valute și unități de măsură instant cu instrumentele noastre gratuite de conversie online. Conversii precise, în timp real, fără înregistrare.",
+            "keywords": ["convertor online", "convertor valutar", "convertor unitati", "instrumente conversie", "convertor masuri", "convertor gratuit"]
+          },
+          "headline": "Convertoare",
+          "description": "Conversii instantanee și precise la îndemâna ta. Convertește între valute și unități de măsură cu instrumentele noastre gratuite — fără înregistrare necesară.",
+          "faq": {
+            "sectionTitle": "Întrebări Frecvente",
+            "items": [
+              {
+                "question": "Ce tipuri de conversii pot face pe ToolFrame?",
+                "answer": "ToolFrame oferă un Convertor Valutar care suportă 10 valute majore mondiale (USD, EUR, GBP, JPY și altele) și un Convertor de Unități pentru 12 unități de măsură a lungimii (de la milimetri la leghe, inclusiv mile nautice)."
+              },
+              {
+                "question": "Conversiile sunt calculate în timp real?",
+                "answer": "Da, toate conversiile sunt calculate instant pe măsură ce tastezi — nu este necesar să apeși un buton de calcul. Rezultatele se actualizează automat la fiecare modificare."
+              },
+              {
+                "question": "Pot inversa valorile sursă și destinație?",
+                "answer": "Da, atât Convertorul Valutar cât și Convertorul de Unități includ un buton de inversare care schimbă instantaneu direcția conversiei cu o animație fluidă de rotație."
+              },
+              {
+                "question": "Sunt gratuite aceste instrumente de conversie?",
+                "answer": "Da, toate instrumentele de conversie de pe ToolFrame sunt complet gratuite, fără a fi necesară înregistrarea sau un cont. Poți efectua conversii nelimitate oricând."
+              }
+            ]
+          }
+        },
+        "de": {
+          "slug": "umrechner",
+          "meta": {
+            "title": "Kostenlose Online-Umrechner – Währungs- & Einheitenumrechnung | ToolFrame",
+            "description": "Rechnen Sie Währungen und Maßeinheiten sofort mit unseren kostenlosen Online-Umrechnungstools um. Genaue Echtzeit-Umrechnungen ohne Registrierung.",
+            "keywords": ["Online-Umrechner", "Währungsrechner", "Einheitenrechner", "Umrechnungstools", "Maßeinheiten-Umrechner", "kostenloser Umrechner"]
+          },
+          "headline": "Umrechner",
+          "description": "Sofortige, genaue Umrechnungen auf Knopfdruck. Rechnen Sie zwischen Währungen und Maßeinheiten mit unseren kostenlosen Online-Tools um — keine Registrierung erforderlich.",
+          "faq": {
+            "sectionTitle": "Häufig gestellte Fragen",
+            "items": [
+              {
+                "question": "Welche Arten von Umrechnungen kann ich auf ToolFrame durchführen?",
+                "answer": "ToolFrame bietet einen Währungsrechner für 10 wichtige Weltwährungen (USD, EUR, GBP, JPY und mehr) und einen Einheitenrechner für 12 Längenmaßeinheiten (von Millimetern bis Leagues, einschließlich Seemeilen)."
+              },
+              {
+                "question": "Werden die Umrechnungen in Echtzeit berechnet?",
+                "answer": "Ja, alle Umrechnungen werden sofort beim Tippen berechnet — es ist kein Klick auf einen Berechnen-Button nötig. Die Ergebnisse aktualisieren sich automatisch bei jeder Eingabeänderung."
+              },
+              {
+                "question": "Kann ich Quell- und Zielwerte tauschen?",
+                "answer": "Ja, sowohl der Währungsrechner als auch der Einheitenrechner verfügen über eine Tausch-Schaltfläche, die die Umrechnungsrichtung sofort mit einer flüssigen Rotationsanimation umkehrt."
+              },
+              {
+                "question": "Sind diese Umrechnungstools kostenlos?",
+                "answer": "Ja, alle Umrechnungstools auf ToolFrame sind völlig kostenlos und ohne Registrierung oder Konto nutzbar. Sie können jederzeit unbegrenzt Umrechnungen durchführen."
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "planning",
+      "order": 4,
+      "translations": {
+        "en": {
+          "slug": "planning",
+          "meta": {
+            "title": "Planning Tools – Budget Tracker & Energy Estimator | ToolFrame",
+            "description": "Free planning tools for monthly budgets and energy estimation. Track your spending, plan your finances, and estimate solar energy production with our easy-to-use tools.",
+            "keywords": ["planning tools", "budget tracker", "budget planner", "energy estimator", "financial planning", "expense tracker"]
+          },
+          "headline": "Planning Tools",
+          "description": "Plan smarter, live better. Track your monthly budget, manage expenses, and estimate energy production with our free planning tools designed for everyday decisions.",
+          "faq": {
+            "sectionTitle": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "What planning tools are available on ToolFrame?",
+                "answer": "ToolFrame offers a Monthly Budget Tracker for managing income and expenses with visual progress indicators, and a Solar Panel Energy Estimator for calculating solar energy production and return on investment."
+              },
+              {
+                "question": "Is my budget data saved between sessions?",
+                "answer": "Yes. The Monthly Budget Tracker automatically saves your data to your browser's local storage, so your budget information persists between sessions without requiring any account or registration."
+              },
+              {
+                "question": "Can I customize budget categories?",
+                "answer": "Yes. The Budget Tracker comes with predefined income and expense categories, but you can add custom categories or remove existing ones to match your personal financial structure."
+              },
+              {
+                "question": "Are these planning tools free to use?",
+                "answer": "Yes, all planning tools on ToolFrame are completely free with no registration required. Your data stays in your browser for maximum privacy."
+              }
+            ]
+          }
+        },
+        "ro": {
+          "slug": "planificare",
+          "meta": {
+            "title": "Instrumente de Planificare – Buget Lunar și Estimator Energie | ToolFrame",
+            "description": "Instrumente gratuite de planificare pentru bugete lunare și estimarea energiei. Urmărește cheltuielile, planifică-ți finanțele și estimează producția de energie solară.",
+            "keywords": ["instrumente planificare", "tracker buget", "planificator buget", "estimator energie", "planificare financiara", "tracker cheltuieli"]
+          },
+          "headline": "Instrumente de Planificare",
+          "description": "Planifică mai inteligent, trăiește mai bine. Urmărește bugetul lunar, gestionează cheltuielile și estimează producția de energie cu instrumentele noastre gratuite de planificare create pentru deciziile de zi cu zi.",
+          "faq": {
+            "sectionTitle": "Întrebări Frecvente",
+            "items": [
+              {
+                "question": "Ce instrumente de planificare sunt disponibile pe ToolFrame?",
+                "answer": "ToolFrame oferă un Tracker de Buget Lunar pentru gestionarea veniturilor și cheltuielilor cu indicatori vizuali de progres și un Estimator de Energie Solară pentru calcularea producției de energie solară și a returnului investiției."
+              },
+              {
+                "question": "Datele bugetului meu sunt salvate între sesiuni?",
+                "answer": "Da. Tracker-ul de Buget Lunar salvează automat datele în stocarea locală a browserului, astfel încât informațiile bugetare persistă între sesiuni fără a necesita cont sau înregistrare."
+              },
+              {
+                "question": "Pot personaliza categoriile de buget?",
+                "answer": "Da. Tracker-ul de Buget vine cu categorii predefinite de venituri și cheltuieli, dar poți adăuga categorii personalizate sau elimina cele existente pentru a se potrivi structurii tale financiare."
+              },
+              {
+                "question": "Sunt gratuite aceste instrumente de planificare?",
+                "answer": "Da, toate instrumentele de planificare de pe ToolFrame sunt complet gratuite, fără înregistrare necesară. Datele tale rămân în browser pentru confidențialitate maximă."
+              }
+            ]
+          }
+        },
+        "de": {
+          "slug": "planung",
+          "meta": {
+            "title": "Planungstools – Budgetplaner & Energieschätzer | ToolFrame",
+            "description": "Kostenlose Planungstools für Monatsbudgets und Energieschätzung. Verfolgen Sie Ihre Ausgaben, planen Sie Ihre Finanzen und schätzen Sie die Solarenergieproduktion.",
+            "keywords": ["Planungstools", "Budgetplaner", "Budget-Tracker", "Energieschätzer", "Finanzplanung", "Ausgabentracker"]
+          },
+          "headline": "Planungstools",
+          "description": "Smarter planen, besser leben. Verfolgen Sie Ihr Monatsbudget, verwalten Sie Ausgaben und schätzen Sie die Energieproduktion mit unseren kostenlosen Planungstools für alltägliche Entscheidungen.",
+          "faq": {
+            "sectionTitle": "Häufig gestellte Fragen",
+            "items": [
+              {
+                "question": "Welche Planungstools sind auf ToolFrame verfügbar?",
+                "answer": "ToolFrame bietet einen monatlichen Budgetplaner zur Verwaltung von Einnahmen und Ausgaben mit visuellen Fortschrittsindikatoren und einen Solarenergie-Schätzer zur Berechnung der Solarenergieproduktion und Kapitalrendite."
+              },
+              {
+                "question": "Werden meine Budgetdaten zwischen Sitzungen gespeichert?",
+                "answer": "Ja. Der monatliche Budgetplaner speichert Ihre Daten automatisch im lokalen Speicher Ihres Browsers, sodass Ihre Budgetinformationen zwischen Sitzungen erhalten bleiben, ohne dass ein Konto oder eine Registrierung erforderlich ist."
+              },
+              {
+                "question": "Kann ich Budgetkategorien anpassen?",
+                "answer": "Ja. Der Budgetplaner enthält vordefinierte Einnahmen- und Ausgabenkategorien, aber Sie können benutzerdefinierte Kategorien hinzufügen oder vorhandene entfernen, um sie an Ihre persönliche Finanzstruktur anzupassen."
+              },
+              {
+                "question": "Sind diese Planungstools kostenlos?",
+                "answer": "Ja, alle Planungstools auf ToolFrame sind völlig kostenlos und ohne Registrierung nutzbar. Ihre Daten bleiben in Ihrem Browser für maximalen Datenschutz."
+              }
+            ]
+          }
+        }
+      }
+    },
+    {
+      "id": "energy",
+      "order": 5,
+      "translations": {
+        "en": {
+          "slug": "energy",
+          "meta": {
+            "title": "Energy Tools – Solar Panel Estimator & Production Calculator | ToolFrame",
+            "description": "Free energy tools for solar panel production estimation, ROI calculation, and energy cost analysis. Plan your renewable energy investment with confidence.",
+            "keywords": ["energy tools", "solar calculator", "solar panel estimator", "energy production", "solar ROI", "renewable energy calculator"]
+          },
+          "headline": "Energy Tools",
+          "description": "Power your decisions with data. Estimate solar energy production, calculate return on investment, and compare energy scenarios with our free energy tools.",
+          "faq": {
+            "sectionTitle": "Frequently Asked Questions",
+            "items": [
+              {
+                "question": "What energy tools does ToolFrame offer?",
+                "answer": "ToolFrame offers a Solar Panel Energy Estimator that calculates annual and monthly solar production, self-consumption rates, system costs, and 25-year return on investment based on your location and system configuration."
+              },
+              {
+                "question": "How accurate is the solar energy estimation?",
+                "answer": "The estimator uses region-specific solar irradiance data (kWh/kWp values) and accounts for panel degradation over 25 years, energy price increases, battery impact, and local subsidy programs to provide realistic projections."
+              },
+              {
+                "question": "Does the estimator account for battery storage?",
+                "answer": "Yes. You can toggle battery storage on or off and set the capacity. The tool compares scenarios with and without battery, showing how storage affects self-consumption rates and overall savings."
+              },
+              {
+                "question": "Will more energy tools be added?",
+                "answer": "Yes, we plan to expand our energy tools section with additional calculators for different renewable energy sources and energy efficiency analysis."
+              }
+            ]
+          }
+        },
+        "ro": {
+          "slug": "energie",
+          "meta": {
+            "title": "Instrumente Energie – Estimator Panouri Solare & Calculator Producție | ToolFrame",
+            "description": "Instrumente gratuite de energie pentru estimarea producției panourilor solare, calculul ROI și analiza costurilor energetice. Planifică-ți investiția în energie regenerabilă cu încredere.",
+            "keywords": ["instrumente energie", "calculator solar", "estimator panouri solare", "productie energie", "ROI solar", "calculator energie regenerabila"]
+          },
+          "headline": "Instrumente Energie",
+          "description": "Alimentează-ți deciziile cu date. Estimează producția de energie solară, calculează returnul investiției și compară scenarii energetice cu instrumentele noastre gratuite de energie.",
+          "faq": {
+            "sectionTitle": "Întrebări Frecvente",
+            "items": [
+              {
+                "question": "Ce instrumente de energie oferă ToolFrame?",
+                "answer": "ToolFrame oferă un Estimator de Energie Solară care calculează producția solară anuală și lunară, ratele de autoconsum, costurile sistemului și returnul investiției pe 25 de ani pe baza locației și configurației sistemului."
+              },
+              {
+                "question": "Cât de precisă este estimarea energiei solare?",
+                "answer": "Estimatorul folosește date de iradiație solară specifice regiunii (valori kWh/kWp) și ține cont de degradarea panourilor pe 25 de ani, creșterile prețurilor la energie, impactul bateriei și programele locale de subvenții pentru a oferi proiecții realiste."
+              },
+              {
+                "question": "Estimatorul ține cont de stocarea pe baterie?",
+                "answer": "Da. Poți activa sau dezactiva stocarea pe baterie și seta capacitatea. Instrumentul compară scenariile cu și fără baterie, arătând cum afectează stocarea ratele de autoconsum și economiile totale."
+              },
+              {
+                "question": "Vor fi adăugate mai multe instrumente de energie?",
+                "answer": "Da, planificăm să extindem secțiunea de instrumente de energie cu calculatoare suplimentare pentru diferite surse de energie regenerabilă și analiză a eficienței energetice."
+              }
+            ]
+          }
+        },
+        "de": {
+          "slug": "energie",
+          "meta": {
+            "title": "Energietools – Solarschätzer & Produktionsrechner | ToolFrame",
+            "description": "Kostenlose Energietools zur Schätzung der Solarpanelproduktion, ROI-Berechnung und Energiekostenanalyse. Planen Sie Ihre Investition in erneuerbare Energien mit Vertrauen.",
+            "keywords": ["Energietools", "Solarrechner", "Solarpanel-Schätzer", "Energieproduktion", "Solar-ROI", "Rechner erneuerbare Energien"]
+          },
+          "headline": "Energietools",
+          "description": "Treffen Sie datenbasierte Entscheidungen. Schätzen Sie die Solarenergieproduktion, berechnen Sie die Kapitalrendite und vergleichen Sie Energieszenarien mit unseren kostenlosen Energietools.",
+          "faq": {
+            "sectionTitle": "Häufig gestellte Fragen",
+            "items": [
+              {
+                "question": "Welche Energietools bietet ToolFrame an?",
+                "answer": "ToolFrame bietet einen Solarenergie-Schätzer, der die jährliche und monatliche Solarproduktion, Eigenverbrauchsraten, Systemkosten und die 25-Jahres-Kapitalrendite basierend auf Ihrem Standort und Ihrer Systemkonfiguration berechnet."
+              },
+              {
+                "question": "Wie genau ist die Solarenergieschätzung?",
+                "answer": "Der Schätzer verwendet regionsspezifische Solareinstrahlungsdaten (kWh/kWp-Werte) und berücksichtigt die Paneldegradation über 25 Jahre, Energiepreissteigerungen, Batterieauswirkungen und lokale Förderprogramme für realistische Prognosen."
+              },
+              {
+                "question": "Berücksichtigt der Schätzer Batteriespeicher?",
+                "answer": "Ja. Sie können den Batteriespeicher ein- oder ausschalten und die Kapazität festlegen. Das Tool vergleicht Szenarien mit und ohne Batterie und zeigt, wie die Speicherung die Eigenverbrauchsraten und Gesamteinsparungen beeinflusst."
+              },
+              {
+                "question": "Werden weitere Energietools hinzugefügt?",
+                "answer": "Ja, wir planen die Erweiterung unseres Energiebereichs mit zusätzlichen Rechnern für verschiedene erneuerbare Energiequellen und Energieeffizienzanalysen."
+              }
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

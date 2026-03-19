@@ -1,0 +1,185 @@
+{
+  "id": "solar-energy-estimator",
+  "component": "solar-estimator",
+  "iconPath": "/icons/solar-energy-estimator-icon.svg",
+  "categories": ["planning", "energy"],
+  "applicationCategory": "UtilityApplication",
+  "config": {
+    "dataSource": "site-config"
+  },
+  "translations": {
+    "ro": {
+      "slug": "estimator-energie-solara",
+      "meta": {
+        "title": "Estimator Energie Solară România — Calculator Producție Panouri Fotovoltaice",
+        "description": "Calculează producția de energie solară, economiile și perioada de amortizare pentru sistemul tău fotovoltaic rezidențial din România. Date actualizate 2025–2026.",
+        "keywords": ["estimator energie solara", "calculator panouri fotovoltaice", "producție solara romania", "prosumator", "panouri solare", "fotovoltaice", "Casa Verde", "economii energie", "autoconsum"]
+      },
+      "hero": {
+        "headline": "Estimator Energie Solară",
+        "description": "Calculează producția estimată, economiile lunare și perioada de amortizare pentru un sistem fotovoltaic rezidențial în România."
+      },
+      "tool": {
+        "systemPowerLabel": "Putere instalată (kWp)",
+        "systemPowerMin": 1,
+        "systemPowerMax": 20,
+        "systemPowerDefault": 6,
+        "regionLabel": "Regiune",
+        "regionPlaceholder": "Selectează regiunea",
+        "hasBatteryLabel": "Baterie de stocare",
+        "batteryYes": "Da",
+        "batteryNo": "Nu",
+        "batteryCapacityLabel": "Capacitate baterie (kWh)",
+        "batteryCapacityMin": 5,
+        "batteryCapacityMax": 20,
+        "batteryCapacityDefault": 10,
+        "consumptionProfileLabel": "Profil de consum",
+        "profileHome": "Lucrez de acasă",
+        "profileOffice": "Lucrez la birou",
+        "monthlyConsumptionLabel": "Consum lunar gospodărie (kWh)",
+        "monthlyConsumptionDefault": 420,
+        "providerLabel": "Furnizor energie",
+        "providerPlaceholder": "Selectează furnizorul",
+        "resultsTitle": "Rezultate estimare",
+        "annualProductionLabel": "Producție anuală estimată",
+        "monthlyProductionLabel": "Producție lunară medie",
+        "selfConsumptionLabel": "Autoconsum anual",
+        "surplusLabel": "Surplus injectat în rețea",
+        "savingsFromSelfConsumptionLabel": "Economie din autoconsum",
+        "surplusValueLabel": "Valoare surplus compensat",
+        "totalAnnualSavingsLabel": "Economie totală anuală",
+        "totalMonthlySavingsLabel": "Economie medie lunară",
+        "kwhUnit": "kWh",
+        "kwhPerYearUnit": "kWh/an",
+        "leiUnit": "lei",
+        "leiPerMonthUnit": "lei/lună",
+        "leiPerYearUnit": "lei/an",
+        "percentUnit": "%",
+        "chartTitle": "Producție vs. Consum — Defalcare lunară",
+        "chartProduction": "Producție",
+        "chartSelfConsumption": "Autoconsum",
+        "chartSurplus": "Surplus",
+        "chartConsumption": "Consum din rețea",
+        "monthlyBreakdownTitle": "Defalcare lunară detaliată",
+        "monthlyHeaders": {
+          "month": "Luna",
+          "production": "Producție (kWh)",
+          "selfConsumption": "Autoconsum (kWh)",
+          "surplus": "Surplus (kWh)",
+          "savings": "Economie (lei)"
+        },
+        "roiTitle": "Estimare amortizare investiție",
+        "systemCostLabel": "Cost estimat sistem",
+        "paybackPeriodLabel": "Perioadă amortizare",
+        "yearsUnit": "ani",
+        "savings25YearsLabel": "Economii cumulate (25 ani)",
+        "withSubsidyLabel": "Cu subvenție Casa Verde",
+        "withoutSubsidyLabel": "Fără subvenție",
+        "casaVerdeNote": "Subvenția Casa Verde acoperă până la 30.000 lei din costul sistemului (contribuție proprie minimă 3.000 lei).",
+        "comparisonTitle": "Comparație: cu baterie vs. fără baterie",
+        "comparisonWithBattery": "Cu baterie",
+        "comparisonWithoutBattery": "Fără baterie",
+        "comparisonSelfConsumption": "Rată autoconsum",
+        "comparisonAnnualSavings": "Economie anuală",
+        "comparisonPayback": "Amortizare",
+        "disclaimer": "Estimările sunt orientative. Producția reală depinde de orientare, înclinare, umbrire, calitatea echipamentelor și condițiile meteo locale. Recomandăm consultarea unui instalator autorizat pentru dimensionare precisă.",
+        "retailPriceNote": "Preț retail (TVA inclus)",
+        "prosumerPriceNote": "Preț activ prosumator",
+        "netMeteringNote": "Compensarea cantitativă: fiecare kWh injectat compensează 1:1 un kWh consumat, dar DOAR pe componenta de energie activă."
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum funcționează estimatorul solar?",
+        "steps": [
+          {
+            "title": "Configurează sistemul",
+            "description": "Introdu puterea instalată, regiunea, profilul de consum și furnizorul de energie. Opțional, adaugă o baterie de stocare."
+          },
+          {
+            "title": "Vizualizează producția",
+            "description": "Estimatorul calculează automat producția lunară și anuală, autoconsumul și surplusul injectat în rețea pe baza datelor regionale."
+          },
+          {
+            "title": "Analizează economiile",
+            "description": "Obții o estimare detaliată a economiilor din autoconsum, valoarea surplusului compensat și perioada de amortizare a investiției."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De ce să folosești estimatorul nostru?",
+        "sectionDescription": "Estimator complet pentru sisteme fotovoltaice rezidențiale, adaptat pieței din România.",
+        "items": [
+          {
+            "icon": "MapPin",
+            "title": "Date regionale reale",
+            "description": "Producția specifică este calculată pe baza iradiației solare din cele 4 zone climatice ale României, nu pe medii europene."
+          },
+          {
+            "icon": "Zap",
+            "title": "Prețuri actualizate 2025–2026",
+            "description": "Prețurile retail și de prosumator sunt preluate de la principalii furnizori de energie din România, post-liberalizare."
+          },
+          {
+            "icon": "Battery",
+            "title": "Analiză cu și fără baterie",
+            "description": "Compară scenarii cu baterie LiFePO4 vs. fără baterie pentru a lua cea mai bună decizie de investiție."
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Calculul ROI complet",
+            "description": "Estimare de amortizare pe 25 de ani, incluzând degradarea panourilor, creșterea prețurilor la energie și subvenția Casa Verde."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid: Energie solară pentru acasă în România",
+        "articles": [
+          {
+            "title": "Ce înseamnă prosumator și cum funcționează compensarea cantitativă?",
+            "content": "Un prosumator este un consumator casnic care produce și energie electrică, de regulă prin panouri fotovoltaice. În România, surplusul de energie injectat în rețea este compensat cantitativ: fiecare kWh injectat compensează 1:1 un kWh consumat ulterior. Important: compensarea se aplică doar pe componenta de energie activă, nu pe întregul preț retail. Astfel, un kWh autoconsumat direct valorează semnificativ mai mult decât unul injectat în rețea."
+          },
+          {
+            "title": "Cum aleg dimensiunea optimă a sistemului fotovoltaic?",
+            "content": "Dimensiunea ideală depinde de consumul anual, spațiul disponibil pe acoperiș și buget. Pentru o gospodărie cu consum mediu de 5.000 kWh/an, un sistem de 5–6 kWp acoperă aproximativ 70–90% din necesar. Un sistem prea mare generează mult surplus compensat la preț activ (mai mic), iar unul prea mic nu acoperă suficient din consum. Recomandarea generală: dimensionează sistemul pentru un autoconsum de 60–80%."
+          },
+          {
+            "title": "Merită bateria de stocare în 2025?",
+            "content": "Bateria LiFePO4 crește autoconsumul de la ~35% la 60–80%, ceea ce înseamnă mai puțin surplus vândut la preț mic și mai multă energie consumată la preț retail. Cu toate acestea, costul bateriilor (12.000–35.000 lei) prelungește perioada de amortizare. Bateria devine avantajoasă mai ales dacă: prețul retail al energiei este mare, prețul activ de prosumator este mic, sau ai un profil de consum preponderent seară/noapte."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări frecvente",
+        "items": [
+          {
+            "question": "Cât de precise sunt estimările calculatorului?",
+            "answer": "Estimările se bazează pe date medii de irațiere solară per regiune și pe performanțe tipice ale panourilor. Producția reală poate varia cu ±15% în funcție de orientarea și înclinarea acoperișului, umbrirea, calitatea echipamentelor și condițiile meteo specifice."
+          },
+          {
+            "question": "Ce este subvenția Casa Verde și cum o obțin?",
+            "answer": "Programul Casa Verde Fotovoltaice finanțează până la 30.000 lei din costul unui sistem fotovoltaic rezidențial, cu o contribuție proprie minimă de 3.000 lei. Programul este administrat de AFM (Administrația Fondului pentru Mediu) și are sesiuni de înscriere periodice."
+          },
+          {
+            "question": "Cât durează amortizarea unui sistem fotovoltaic?",
+            "answer": "Fără subvenție, amortizarea unui sistem de 5–6 kWp este de obicei între 6 și 10 ani, în funcție de furnizor și profil de consum. Cu subvenția Casa Verde, perioada scade la 3–5 ani. Panourile au durată de viață de 25–30 ani, deci restul perioadei generează economii nete."
+          },
+          {
+            "question": "Primesc bani pe surplusul de energie injectat în rețea?",
+            "answer": "Nu direct. În România, compensarea este cantitativă: surplusul injectat compensează consumul viitor, dar doar pe componenta de energie activă. Nu primești bani fizic. Diferența dintre prețul retail și prețul activ (tarife de distribuție, transport, taxe) se pierde la injecție."
+          },
+          {
+            "question": "De ce diferă prețul activ de prosumator de prețul retail?",
+            "answer": "Prețul retail include: energia activă + distribuție + transport + taxe + TVA. Când injectezi surplus, furnizorul compensează doar componenta de energie activă. De aceea, prețul activ (0.28–0.86 lei/kWh) este semnificativ mai mic decât prețul retail (1.06–1.55 lei/kWh)."
+          },
+          {
+            "question": "Care este diferența dintre kWp și kWh?",
+            "answer": "kWp (kilowatt-peak) reprezintă puterea maximă a panourilor în condiții standard de test. kWh (kilowatt-oră) reprezintă energia efectiv produsă. Un sistem de 1 kWp produce în România între 1.230 și 1.460 kWh/an, în funcție de regiune."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează și alte instrumente financiare",
+        "description": "Calculatoare gratuite pentru buget, credite, conversii valutare și unități de măsură."
+      }
+    }
+  }
+}
