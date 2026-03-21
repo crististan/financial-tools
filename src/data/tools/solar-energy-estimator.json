@@ -21,6 +21,15 @@
         "description": "Calculează producția estimată, economiile lunare și perioada de amortizare pentru un sistem fotovoltaic rezidențial în România."
       },
       "tool": {
+        "stepLabels": ["Sistem", "Consum", "Financiar"],
+        "step1Title": "Sistemul tău solar",
+        "step1Subtitle": "Configurează puterea și locația sistemului fotovoltaic",
+        "step2Title": "Consumul tău",
+        "step2Subtitle": "Câtă energie consumi lunar?",
+        "step3Title": "Analiză financiară",
+        "step3Subtitle": "Alege furnizorul pentru calculul economiilor",
+        "nextButton": "Continuă",
+        "backButton": "Înapoi",
         "systemPowerLabel": "Putere instalată (kWp)",
         "systemPowerMin": 1,
         "systemPowerMax": 20,
