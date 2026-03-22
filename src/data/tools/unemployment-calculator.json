@@ -1,0 +1,218 @@
+{
+  "id": "unemployment-calculator",
+  "component": "unemployment-calculator",
+  "iconPath": "/icons/unemployment-calculator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "config": {},
+  "translations": {
+    "ro": {
+      "slug": "calculator-somaj",
+      "meta": {
+        "title": "Calculator Indemnizație Șomaj România 2026 — Calcul ISR și Durată",
+        "description": "Calculator indemnizație de șomaj pentru România 2026. Calculează cuantumul lunar pe baza ISR (660 lei), salariului mediu brut și stagiului de cotizare. Include durata și totalul estimat.",
+        "keywords": ["calculator somaj", "indemnizatie somaj", "somaj romania 2026", "calcul somaj", "ISR", "indemnizatie de somaj", "ajutor somaj", "stagiu cotizare somaj", "calculator indemnizatie somaj"]
+      },
+      "hero": {
+        "headline": "Calculator Indemnizație Șomaj",
+        "description": "Calculează indemnizația de șomaj pentru România 2026. Include formula ISR (660 lei), durata beneficiului în funcție de stagiul de cotizare, opțiune pentru absolvenți și totalul estimat."
+      },
+      "tool": {
+        "tabSalary": "Salariu",
+        "tabUnemployment": "Șomaj",
+        "tabPension": "Pensie",
+        "salary": {
+          "modeLabel": "Mod calcul",
+          "modeBrutToNet": "Brut → Net",
+          "modeNetToBrut": "Net → Brut",
+          "salaryLabel": "Salariu brut (lei)",
+          "salaryNetLabel": "Salariu net (lei)",
+          "semesterLabel": "Perioadă",
+          "semesterS1": "S1 2026 (ian – iun)",
+          "semesterS2": "S2 2026 (iul – dec)",
+          "dependentsLabel": "Persoane în întreținere",
+          "dependents0": "0 persoane",
+          "dependents1": "1 persoană",
+          "dependents2": "2 persoane",
+          "dependents3": "3 persoane",
+          "dependents4": "4+ persoane",
+          "disabilityLabel": "Handicap grav sau accentuat",
+          "disabilityDescription": "Scutire impozit pe venit (Art. 60 Cod Fiscal)",
+          "minimumWageLabel": "Salariu minim cu normă întreagă",
+          "minimumWageDescription": "Activează suma neimpozabilă",
+          "resultNetLabel": "Salariu Net",
+          "resultBrutLabel": "Salariu Brut",
+          "resultContributionsLabel": "Total Contribuții",
+          "resultTaxLabel": "Impozit pe Venit",
+          "resultEmployerCostLabel": "Cost Angajator",
+          "detailsTitle": "Detalii calcul",
+          "detailsCAS": "CAS (pensie)",
+          "detailsCASS": "CASS (sănătate)",
+          "detailsPersonalDeduction": "Deducere personală",
+          "detailsTaxableBase": "Bază impozabilă",
+          "detailsIncomeTax": "Impozit pe venit",
+          "detailsCAM": "CAM angajator",
+          "detailsNonTaxableAmount": "Sumă neimpozabilă",
+          "detailsRate": "Cotă",
+          "detailsAmount": "Sumă",
+          "currency": "lei",
+          "showDetails": "Afișează detalii",
+          "hideDetails": "Ascunde detalii"
+        },
+        "unemployment": {
+          "data": {
+            "isrValue": 660,
+            "isrPercentWorker": 75,
+            "isrPercentGraduate": 50,
+            "graduateDurationMonths": 6,
+            "brackets": [
+              { "key": "graduate", "label": "Absolvent (liceu / facultate)", "durationMonths": 6, "salaryPercent": 0 },
+              { "key": "under-12m", "label": "Sub 12 luni", "durationMonths": 0, "salaryPercent": 0 },
+              { "key": "1-3", "label": "1 – 3 ani", "durationMonths": 6, "salaryPercent": 0 },
+              { "key": "3-5", "label": "3 – 5 ani", "durationMonths": 6, "salaryPercent": 3 },
+              { "key": "5-10", "label": "5 – 10 ani", "durationMonths": 9, "salaryPercent": 5 },
+              { "key": "10-20", "label": "10 – 20 ani", "durationMonths": 12, "salaryPercent": 7 },
+              { "key": "20+", "label": "Peste 20 ani", "durationMonths": 12, "salaryPercent": 10 }
+            ]
+          },
+          "avgGrossSalaryLabel": "Salariu brut mediu (ultimele 12 luni)",
+          "contributionYearsLabel": "Stagiu de cotizare",
+          "isrLabel": "ISR (Indicator Social de Referință)",
+          "resultBenefitLabel": "Indemnizație Lunară",
+          "resultDurationLabel": "Durată Beneficiu",
+          "resultTotalLabel": "Total Estimat",
+          "resultIsrComponentLabel": "Componentă ISR",
+          "notEligibleMessage": "Stagiu insuficient — minim 12 luni de contribuție în ultimele 24 de luni.",
+          "graduateNote": "Absolvenții trebuie să se înregistreze la AJOFM în cel mult 60 de zile de la terminarea studiilor.",
+          "months": "luni",
+          "currency": "lei",
+          "showDetails": "Afișează detalii",
+          "hideDetails": "Ascunde detalii",
+          "detailsTitle": "Detalii calcul",
+          "detailsISRBase": "Bază ISR",
+          "detailsSalaryComponent": "Componentă salarială",
+          "detailsDuration": "Durată indemnizație",
+          "detailsMonthlyTotal": "Indemnizație lunară totală",
+          "detailsRate": "Cotă",
+          "detailsAmount": "Sumă"
+        },
+        "pension": {
+          "genderLabel": "Gen",
+          "genderMale": "Bărbat",
+          "genderFemale": "Femeie",
+          "currentAgeLabel": "Vârsta curentă",
+          "contributionYearsLabel": "Ani de contribuție",
+          "avgGrossSalaryLabel": "Salariu brut mediu pe carieră (lei)",
+          "nationalAvgSalaryLabel": "Salariu mediu brut pe economie (lei)",
+          "pointValueLabel": "Valoarea punctului de pensie (lei)",
+          "resultMonthlyPensionLabel": "Pensie Lunară Estimată",
+          "resultRetirementAgeLabel": "Vârstă Pensionare",
+          "resultTotalPointsLabel": "Total Puncte",
+          "resultYearsUntilRetirementLabel": "Ani Până la Pensionare",
+          "alreadyRetired": "Vârstă de pensionare atinsă",
+          "years": "ani",
+          "currency": "lei",
+          "showDetails": "Afișează detalii",
+          "hideDetails": "Ascunde detalii",
+          "detailsTitle": "Detalii calcul",
+          "detailsAnnualPoints": "Punctaj anual",
+          "detailsTotalPoints": "Total puncte acumulate",
+          "detailsPointValue": "Valoare punct pensie",
+          "detailsRetirementAge": "Vârstă standard pensionare",
+          "detailsContributionPeriod": "Perioadă de contribuție",
+          "detailsRate": "Valoare",
+          "detailsAmount": "Rezultat"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum funcționează",
+        "steps": [
+          {
+            "title": "Introdu datele",
+            "description": "Introdu salariul brut mediu din ultimele 12 luni și selectează intervalul de stagiu de cotizare."
+          },
+          {
+            "title": "Calcul automat",
+            "description": "Calculatorul aplică formula ISR: 50% din Indicatorul Social de Referință (500 lei) plus un procent din salariul mediu brut, în funcție de stagiul de cotizare."
+          },
+          {
+            "title": "Rezultate complete",
+            "description": "Vizualizează indemnizația lunară, durata beneficiului (6, 9 sau 12 luni) și totalul estimat pe întreaga perioadă."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De ce să folosești calculatorul de șomaj?",
+        "sectionDescription": "Calculator complet pentru indemnizația de șomaj, adaptat legislației din România 2026.",
+        "items": [
+          {
+            "icon": "Calculator",
+            "title": "Formula ISR completă",
+            "description": "Calculează indemnizația pe baza formulei oficiale ISR, incluzând componenta fixă și cea variabilă."
+          },
+          {
+            "icon": "Clock",
+            "title": "Durată personalizată",
+            "description": "Determină automat durata beneficiului (6, 9 sau 12 luni) în funcție de stagiul de cotizare."
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Estimare totală",
+            "description": "Calculează totalul estimat al indemnizațiilor pe întreaga perioadă de acordare."
+          },
+          {
+            "icon": "arrowLeftRight",
+            "title": "Integrat cu calculatorul salarial",
+            "description": "Folosește datele din calculatorul de salariu pentru a estima rapid indemnizația de șomaj."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid: Indemnizația de Șomaj în România 2026",
+        "articles": [
+          {
+            "title": "Cum se calculează indemnizația de șomaj?",
+            "content": "Indemnizația de șomaj se calculează pe baza Indicatorului Social de Referință (ISR), care este de 660 lei. Pentru salariați, formula include o componentă fixă (75% din ISR = 495 lei) la care se adaugă un procent din salariul mediu brut realizat în ultimele 12 luni, procent care variază în funcție de stagiul de cotizare. Pentru absolvenți, indemnizația este de 50% din ISR (330 lei) timp de 6 luni."
+          },
+          {
+            "title": "Cât durează indemnizația de șomaj?",
+            "content": "Durata indemnizației depinde de stagiul de cotizare: 6 luni pentru 1-5 ani de contribuții, 9 luni pentru 5-10 ani și 12 luni pentru peste 10 ani de contribuții la fondul de șomaj. Stagiul minim necesar este de 12 luni în ultimele 24 de luni anterioare înregistrării. Absolvenții beneficiază de 6 luni de indemnizație dacă se înregistrează la AJOFM în cel mult 60 de zile de la terminarea studiilor."
+          },
+          {
+            "title": "Cine poate beneficia de indemnizația de șomaj?",
+            "content": "Au dreptul la indemnizație de șomaj persoanele care au fost asigurate cel puțin 12 luni în ultimele 24 de luni, care nu realizează venituri sau realizează venituri mai mici decât indemnizația, care nu îndeplinesc condițiile de pensionare și care sunt înregistrate la AJOFM."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări frecvente",
+        "items": [
+          {
+            "question": "Care este valoarea ISR în 2026?",
+            "answer": "Indicatorul Social de Referință (ISR) este de 660 lei în 2026. Acesta servește drept bază de calcul pentru indemnizația de șomaj și alte prestații sociale."
+          },
+          {
+            "question": "Ce stagiu minim trebuie să am pentru a primi șomaj?",
+            "answer": "Trebuie să fi contribuit cel puțin 12 luni la fondul de șomaj în ultimele 24 de luni anterioare datei înregistrării ca șomer."
+          },
+          {
+            "question": "Se plătesc taxe pe indemnizația de șomaj?",
+            "answer": "Indemnizația de șomaj este supusă contribuției la sănătate (CASS) de 10%, dar nu se plătesc CAS sau impozit pe venit."
+          },
+          {
+            "question": "Pot lucra în timp ce primesc șomaj?",
+            "answer": "Da, puteți realiza venituri din activități autorizate, cu condiția ca acestea să fie mai mici decât valoarea indicatorului social de referință (660 lei)."
+          },
+          {
+            "question": "Când se suspendă plata indemnizației de șomaj?",
+            "answer": "Indemnizația se suspendă dacă beneficiarul se angajează cu contract de muncă, refuză un loc de muncă corespunzător sau nu se prezintă la AJOFM conform programului stabilit."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Alte instrumente financiare",
+        "description": "Explorează și celelalte calculatoare financiare disponibile."
+      }
+    }
+  }
+}

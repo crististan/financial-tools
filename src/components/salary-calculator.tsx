@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 interface SalaryLabels {
@@ -44,6 +44,7 @@ interface SalaryLabels {
 
 interface SalaryCalculatorProps {
   labels: SalaryLabels;
+  onSalaryChange?: (gross: number) => void;
 }
 
 // Semester configuration
@@ -202,7 +203,7 @@ function formatNumber(value: number): string {
   });
 }
 
-export default function SalaryCalculator({ labels }: SalaryCalculatorProps) {
+export default function SalaryCalculator({ labels, onSalaryChange }: SalaryCalculatorProps) {
   const [mode, setMode] = useState<'brutToNet' | 'netToBrut'>('brutToNet');
   const [salary, setSalary] = useState<string>('5000');
   const [semester, setSemester] = useState<'S1' | 'S2'>('S2');
@@ -221,6 +222,12 @@ export default function SalaryCalculator({ labels }: SalaryCalculatorProps) {
       return calculateNetToBrut(salaryValue, semester, dependents, hasDisability, isMinimumWage);
     }
   }, [salary, mode, semester, dependents, hasDisability, isMinimumWage]);
+
+  useEffect(() => {
+    if (onSalaryChange && result) {
+      onSalaryChange(result.gross);
+    }
+  }, [result, onSalaryChange]);
 
   return (
     <div className="w-full rounded-4xl bg-[var(--clr-neutral-900)] p-6 md:p-8">

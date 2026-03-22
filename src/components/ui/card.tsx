@@ -19,7 +19,7 @@ export default function Card({ icon, slug, title, shortDescription, cta }: Props
                 src={icon}
                 width={64}
                 height={64}
-                className="w-[64px] h-auto"
+                className="w-[64px] h-auto themed-icon"
                 alt={title}
             />
             <h2 className="text-base md:text-[24px] lg:text-[32px] font-medium leading-[1.2]">{title}</h2>

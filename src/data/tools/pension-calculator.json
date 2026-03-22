@@ -1,21 +1,21 @@
 {
-  "id": "salary-calculator",
-  "component": "salary-calculator",
-  "iconPath": "/icons/salary-calculator-icon.svg",
+  "id": "pension-calculator",
+  "component": "pension-calculator",
+  "iconPath": "/icons/pension-calculator-icon.svg",
   "categories": ["financial"],
   "applicationCategory": "FinanceApplication",
   "config": {},
   "translations": {
     "ro": {
-      "slug": "calculator-salariu",
+      "slug": "calculator-pensie",
       "meta": {
-        "title": "Calculator Salariu Net/Brut Romania 2026 — Calcul Contribuții și Impozit",
-        "description": "Calculator salariu net din brut și brut din net pentru România 2026. Calculează CAS, CASS, impozit pe venit, deduceri personale și costul total al angajatorului. Actualizat cu salariul minim din iulie 2026.",
-        "keywords": ["calculator salariu", "salariu net", "salariu brut", "calculator salariu net", "calculator salariu brut", "CAS", "CASS", "impozit pe venit", "deducere personala", "salariu romania 2026", "contributii salariale", "calculator salarial"]
+        "title": "Calculator Pensie România 2026 — Estimare Puncte și Pensie Lunară",
+        "description": "Calculator pensie pentru România 2026. Estimează pensia lunară pe baza sistemului de puncte, salariului mediu brut, anilor de contribuție și valorii punctului de pensie.",
+        "keywords": ["calculator pensie", "pensie romania 2026", "calcul pensie", "puncte pensie", "valoare punct pensie", "estimare pensie", "varsta pensionare", "contributii pensie", "pensie lunara"]
       },
       "hero": {
-        "headline": "Calculator Salariu Net / Brut",
-        "description": "Calculează salariul net din brut sau brut din net pentru România 2026. Include CAS, CASS, impozit pe venit, deduceri personale și costul total al angajatorului."
+        "headline": "Calculator Pensie România",
+        "description": "Estimează pensia lunară pentru România 2026. Calculează pe baza sistemului de puncte, anilor de contribuție și valorii actuale a punctului de pensie."
       },
       "tool": {
         "tabSalary": "Salariu",
@@ -128,85 +128,85 @@
         "sectionTitle": "Cum funcționează",
         "steps": [
           {
-            "title": "Introdu salariul",
-            "description": "Introdu salariul brut sau net și selectează perioada, numărul de persoane în întreținere și opțiunile speciale."
+            "title": "Introdu datele personale",
+            "description": "Selectează genul, introdu vârsta curentă, anii de contribuție și salariul mediu brut pe carieră."
           },
           {
-            "title": "Calcul automat",
-            "description": "Calculatorul aplică automat contribuțiile CAS (25%), CASS (10%), deducerile personale și impozitul pe venit (10%)."
+            "title": "Calcul puncte pensie",
+            "description": "Calculatorul determină punctajul anual (salariul tău / salariul mediu pe economie) și totalul punctelor acumulate pe întreaga perioadă de contribuție."
           },
           {
-            "title": "Rezultate detaliate",
-            "description": "Vizualizează salariul net/brut, totalul contribuțiilor, costul angajatorului și detaliile fiecărei rețineri."
+            "title": "Estimare pensie",
+            "description": "Pensia lunară estimată = total puncte × valoarea punctului de pensie (2.032 lei în 2026). Include și vârsta de pensionare și anii rămași."
           }
         ]
       },
       "features": {
-        "sectionTitle": "De ce să folosești calculatorul nostru?",
-        "sectionDescription": "Calculator complet pentru salariu net și brut, adaptat legislației fiscale din România 2026.",
+        "sectionTitle": "De ce să folosești calculatorul de pensie?",
+        "sectionDescription": "Calculator complet pentru estimarea pensiei, adaptat sistemului de puncte din România 2026.",
         "items": [
-        {
-          "icon": "arrowLeftRight",
-          "title": "Calcul în ambele sensuri",
-          "description": "Calculează salariul net din brut sau brut din net, cu rezultate instantanee."
-        },
-        {
-          "icon": "Users",
-          "title": "Deduceri personale",
-          "description": "Include sistemul complet de deduceri personale în funcție de persoanele aflate în întreținere."
-        },
-        {
-          "icon": "Shield",
-          "title": "Cazuri speciale",
-          "description": "Suport pentru scutire impozit handicap grav/accentuat și suma neimpozabilă la salariul minim."
-        },
-        {
-          "icon": "TrendingUp",
-          "title": "Actualizat 2026",
-          "description": "Date actualizate cu salariul minim din iulie 2026 (4.325 lei) și legislația fiscală în vigoare."
-        }
+          {
+            "icon": "Calculator",
+            "title": "Sistem de puncte oficial",
+            "description": "Calculează pensia pe baza sistemului oficial de puncte, cu valoarea actualizată a punctului de pensie."
+          },
+          {
+            "icon": "Users",
+            "title": "Personalizat pe gen",
+            "description": "Vârstă de pensionare diferită pentru bărbați (65 ani) și femei (63 ani), conform legislației în vigoare."
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "Actualizat 2026",
+            "description": "Valoarea punctului de pensie actualizată la 2.032 lei și salariul mediu pe economie la zi."
+          },
+          {
+            "icon": "arrowLeftRight",
+            "title": "Integrat cu calculatorul salarial",
+            "description": "Folosește datele din calculatorul de salariu pentru estimări rapide ale pensiei viitoare."
+          }
         ]
       },
       "educational": {
-        "sectionTitle": "Ghid: Salarizare în România 2026",
+        "sectionTitle": "Ghid: Pensia în România 2026",
         "articles": [
-        {
-          "title": "Cum se calculează salariul net în România?",
-          "content": "Salariul net se obține prin scăderea din salariul brut a trei contribuții obligatorii: CAS 25% (contribuția la pensie), CASS 10% (contribuția la sănătate) și impozitul pe venit de 10% aplicat la baza impozabilă. Pentru salarii mici și medii, deducerea personală reduce semnificativ impozitul datorat."
-        },
-        {
-          "title": "Ce sunt deducerile personale?",
-          "content": "Deducerile personale sunt reduceri ale bazei impozabile acordate angajaților cu salarii brute de până la salariul minim + 2.000 lei. Procentul deducerii scade progresiv pe măsură ce salariul crește și se majorează în funcție de numărul persoanelor aflate în întreținere (soț/soție, copii, rude până la gradul II)."
-        },
-        {
-          "title": "Ce este costul total al angajatorului?",
-          "content": "Pe lângă salariul brut, angajatorul plătește contribuția asiguratorie pentru muncă (CAM) de 2,25% din salariul brut. Aceasta acoperă fondul de șomaj și riscurile profesionale. Costul total al angajatorului este salariul brut × 1,0225."
-        }
+          {
+            "title": "Cum funcționează sistemul de puncte de pensie?",
+            "content": "Pensia în România se calculează pe baza punctelor de pensie acumulate pe parcursul carierei. Punctajul anual = salariul brut realizat / salariul mediu brut pe economie. De exemplu, dacă ai câștigat exact media pe economie, acumulezi 1 punct pe an. Pensia lunară = total puncte × valoarea punctului de pensie."
+          },
+          {
+            "title": "Care este vârsta de pensionare în 2026?",
+            "content": "Vârsta standard de pensionare este de 65 de ani pentru bărbați și 63 de ani pentru femei. Aceasta se aplică conform Legii 127/2019 privind sistemul public de pensii. Există posibilitatea pensionării anticipate cu până la 5 ani înainte, dar cu penalizări la cuantumul pensiei."
+          },
+          {
+            "title": "Ce este valoarea punctului de pensie?",
+            "content": "Valoarea punctului de pensie este stabilită anual prin lege. În 2026, aceasta este de 2.032 lei. Pensia lunară se obține prin înmulțirea numărului total de puncte acumulate cu această valoare. Valoarea punctului se majorează periodic pentru a ține pasul cu inflația și creșterea salariilor."
+          }
         ]
       },
       "faq": {
         "sectionTitle": "Întrebări frecvente",
         "items": [
-        {
-          "question": "Care este salariul minim brut în România în 2026?",
-          "answer": "Salariul minim brut pe economie este de 4.050 lei în semestrul I (ianuarie – iunie) și 4.325 lei în semestrul II (iulie – decembrie 2026), conform HG 146/2026."
-        },
-        {
-          "question": "Mai beneficiază angajații IT de scutire de impozit în 2026?",
-          "answer": "Nu. Facilitățile fiscale pentru sectorul IT au fost complet eliminate din 1 ianuarie 2025 prin OUG 156/2024. Toți angajații, inclusiv cei din IT, plătesc aceleași contribuții: CAS 25%, CASS 10% și impozit pe venit 10%."
-        },
-        {
-          "question": "Cum funcționează suma neimpozabilă la salariul minim?",
-          "answer": "Pentru angajații cu contract de muncă cu normă întreagă la funcția de bază și cu salariul egal cu minimul pe economie, o sumă de 200 lei (S2) sau 300 lei (S1) din brut este scutită de CAS, CASS și impozit, conform OUG 89/2025."
-        },
-        {
-          "question": "Ce înseamnă scutirea de impozit pentru persoanele cu handicap?",
-          "answer": "Persoanele cu handicap grav sau accentuat sunt scutite de impozitul pe venit salarial (Art. 60 Cod Fiscal). CAS și CASS se plătesc integral. Rezultatul: salariul net este aproximativ 65% din brut."
-        },
-        {
-          "question": "Cum se calculează deducerea personală?",
-          "answer": "Deducerea personală se aplică salariilor brute de până la salariul minim + 2.000 lei. Procentul de bază (fără persoane în întreținere) pornește de la 20% la salariul minim și scade cu 0,5 puncte procentuale la fiecare 50 lei peste minim. Se adaugă bonificații pentru persoane în întreținere: +5pp (1 persoană), +10pp (2), +15pp (3), +25pp (4+)."
-        }
+          {
+            "question": "Care este valoarea punctului de pensie în 2026?",
+            "answer": "Valoarea punctului de pensie în 2026 este de 2.032 lei, conform legislației în vigoare."
+          },
+          {
+            "question": "Câți ani de contribuție sunt necesari pentru pensie completă?",
+            "answer": "Stagiul complet de cotizare este de 35 de ani atât pentru bărbați, cât și pentru femei. Cu un stagiu mai mic, pensia se reduce proporțional."
+          },
+          {
+            "question": "Se poate ieși la pensie anticipat?",
+            "answer": "Da, pensionarea anticipată este posibilă cu până la 5 ani înainte de vârsta standard, dar cu o reducere de 0,75% din pensie pentru fiecare lună de anticipare."
+          },
+          {
+            "question": "Cum se calculează punctajul anual?",
+            "answer": "Punctajul anual = salariul brut lunar realizat / salariul mediu brut pe economie. Dacă ai câștigat exact media pe economie, punctajul anual este 1,00."
+          },
+          {
+            "question": "Pensia minimă este garantată?",
+            "answer": "Da, există o pensie minimă garantată. Dacă pensia calculată pe baza punctelor este sub acest prag, statul garantează un nivel minim de pensie, conform legii pensiilor."
+          }
         ]
       },
       "cta": {
