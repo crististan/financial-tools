@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 500" fill="none" preserveAspectRatio="none">
+  <defs>
+    <linearGradient id="wg1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#09E789" stop-opacity="0.15"/>
+      <stop offset="30%" stop-color="#09E789" stop-opacity="0.7"/>
+      <stop offset="50%" stop-color="#09E789" stop-opacity="0.9"/>
+      <stop offset="70%" stop-color="#09E789" stop-opacity="0.7"/>
+      <stop offset="100%" stop-color="#09E789" stop-opacity="0.15"/>
+    </linearGradient>
+    <linearGradient id="wg2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#09E789" stop-opacity="0.1"/>
+      <stop offset="25%" stop-color="#09E789" stop-opacity="0.5"/>
+      <stop offset="50%" stop-color="#09E789" stop-opacity="0.75"/>
+      <stop offset="75%" stop-color="#09E789" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#09E789" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Wave group 1 — main flowing lines -->
+  <path d="M0,320 C180,280 360,180 540,200 C720,220 900,340 1080,300 C1260,260 1440,160 1620,180 C1720,190 1820,220 1920,240" stroke="url(#wg1)" stroke-width="1.5" opacity="0.9"/>
+  <path d="M0,310 C180,260 360,170 540,195 C720,220 900,330 1080,285 C1260,240 1440,150 1620,175 C1720,185 1820,215 1920,230" stroke="url(#wg1)" stroke-width="1.5" opacity="0.85"/>
+  <path d="M0,300 C180,240 360,160 540,190 C720,220 900,320 1080,270 C1260,220 1440,140 1620,170 C1720,180 1820,210 1920,220" stroke="url(#wg1)" stroke-width="1.5" opacity="0.8"/>
+  <path d="M0,290 C180,220 360,150 540,185 C720,220 900,310 1080,255 C1260,200 1440,130 1620,165 C1720,175 1820,205 1920,210" stroke="url(#wg1)" stroke-width="1.5" opacity="0.75"/>
+  <path d="M0,280 C180,200 360,140 540,180 C720,220 900,300 1080,240 C1260,180 1440,120 1620,160 C1720,170 1820,200 1920,200" stroke="url(#wg1)" stroke-width="1.5" opacity="0.7"/>
+  <path d="M0,270 C180,185 360,130 540,175 C720,220 900,290 1080,228 C1260,165 1440,112 1620,155 C1720,165 1820,195 1920,192" stroke="url(#wg1)" stroke-width="1.5" opacity="0.65"/>
+  <path d="M0,260 C180,170 360,120 540,170 C720,220 900,280 1080,216 C1260,150 1440,105 1620,150 C1720,160 1820,190 1920,185" stroke="url(#wg1)" stroke-width="1.5" opacity="0.6"/>
+  <path d="M0,250 C180,155 360,112 540,165 C720,218 900,270 1080,205 C1260,140 1440,98 1620,145 C1720,155 1820,185 1920,178" stroke="url(#wg1)" stroke-width="1.2" opacity="0.55"/>
+  <path d="M0,240 C180,142 360,105 540,160 C720,215 900,260 1080,195 C1260,130 1440,92 1620,140 C1720,150 1820,180 1920,172" stroke="url(#wg1)" stroke-width="1.2" opacity="0.5"/>
+  <path d="M0,230 C180,130 360,98 540,155 C720,212 900,250 1080,185 C1260,120 1440,86 1620,136 C1720,146 1820,175 1920,166" stroke="url(#wg1)" stroke-width="1.2" opacity="0.45"/>
+  <path d="M0,220 C180,120 360,92 540,150 C720,208 900,240 1080,178 C1260,115 1440,82 1620,132 C1720,142 1820,170 1920,162" stroke="url(#wg1)" stroke-width="1" opacity="0.4"/>
+  <path d="M0,210 C180,112 360,88 540,146 C720,204 900,232 1080,172 C1260,112 1440,78 1620,128 C1720,138 1820,165 1920,158" stroke="url(#wg1)" stroke-width="1" opacity="0.35"/>
+
+  <!-- Wave group 2 — secondary layer, offset -->
+  <path d="M0,340 C200,310 400,220 600,250 C800,280 1000,360 1200,310 C1400,260 1600,200 1750,220 C1840,230 1880,245 1920,255" stroke="url(#wg2)" stroke-width="1.5" opacity="0.8"/>
+  <path d="M0,330 C200,290 400,210 600,245 C800,280 1000,350 1200,295 C1400,240 1600,190 1750,215 C1840,225 1880,240 1920,248" stroke="url(#wg2)" stroke-width="1.5" opacity="0.7"/>
+  <path d="M0,350 C200,325 400,235 600,258 C800,280 1000,370 1200,322 C1400,275 1600,210 1750,228 C1840,235 1880,250 1920,262" stroke="url(#wg2)" stroke-width="1.2" opacity="0.6"/>
+  <path d="M0,360 C200,340 400,248 600,265 C800,282 1000,378 1200,335 C1400,290 1600,218 1750,235 C1840,240 1880,255 1920,268" stroke="url(#wg2)" stroke-width="1" opacity="0.45"/>
+
+  <!-- Wave group 3 — upper accent lines -->
+  <path d="M0,200 C180,100 360,80 540,140 C720,200 900,220 1080,165 C1260,110 1440,70 1620,120 C1720,135 1820,158 1920,150" stroke="url(#wg2)" stroke-width="1" opacity="0.35"/>
+  <path d="M0,190 C180,90 360,74 540,135 C720,196 900,212 1080,158 C1260,105 1440,65 1620,115 C1720,130 1820,152 1920,145" stroke="url(#wg2)" stroke-width="1" opacity="0.28"/>
+  <path d="M0,180 C180,82 360,68 540,130 C720,192 900,205 1080,152 C1260,100 1440,60 1620,110 C1720,125 1820,146 1920,140" stroke="url(#wg2)" stroke-width="0.8" opacity="0.2"/>
+
+  <!-- Wave group 4 — lower accent lines -->
+  <path d="M0,370 C200,355 400,260 600,272 C800,284 1000,385 1200,345 C1400,305 1600,228 1750,242 C1840,248 1880,260 1920,275" stroke="url(#wg2)" stroke-width="1" opacity="0.35"/>
+  <path d="M0,380 C200,368 400,272 600,280 C800,288 1000,392 1200,355 C1400,318 1600,238 1750,250 C1840,255 1880,266 1920,282" stroke="url(#wg2)" stroke-width="0.8" opacity="0.25"/>
+  <path d="M0,388 C200,378 400,282 600,288 C800,294 1000,398 1200,362 C1400,326 1600,248 1750,258 C1840,262 1880,272 1920,288" stroke="url(#wg2)" stroke-width="0.8" opacity="0.18"/>
+</svg>

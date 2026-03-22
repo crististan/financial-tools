@@ -36,7 +36,7 @@ export default async function Home({ params }: { params: Promise<{ lang: string 
                         src="/arrow-down.svg"
                         width={64}
                         height={64}
-                        className="w-[32px] md:w-[64px] h-auto"
+                        className="w-[32px] md:w-[64px] h-auto themed-icon"
                         alt={common.homepage.arrowAlt}
                     />
                 </Container>

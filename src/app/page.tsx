@@ -38,7 +38,7 @@ export default async function RootHome() {
                         src="/arrow-down.svg"
                         width={64}
                         height={64}
-                        className="w-[32px] md:w-[64px] h-auto"
+                        className="w-[32px] md:w-[64px] h-auto themed-icon"
                         alt={common.homepage.arrowAlt}
                     />
                 </Container>

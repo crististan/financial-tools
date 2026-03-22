@@ -42,7 +42,7 @@ export default function ToolsCta({ title, description, tools, currentToolSlug }:
                             src={tool.iconPath}
                             width={48}
                             height={48}
-                            className="w-[48px] h-auto"
+                            className="w-[48px] h-auto themed-icon"
                             alt={tool.title}
                         />
                         <h3 className="text-lg md:text-2xl font-medium">{tool.title}</h3>

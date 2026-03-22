@@ -3,6 +3,7 @@ import Link from "next/link";
 import Container from "./container";
 import HeaderClient from "./header-client";
 import LanguageSelector from "./language-selector";
+import ThemeToggle from "./theme-toggle";
 import { locales } from "@/lib/i18n";
 import { getSlugMap, getCategoriesWithTools } from "@/lib/tool-data";
 import type { CommonDictionary } from "@/dictionaries/en/common";
@@ -36,6 +37,15 @@ export default async function Header({ lang, common }: HeaderProps) {
                             width={160}
                             height={36}
                             priority
+                            className="hidden dark:block"
+                        />
+                        <Image
+                            src="/logo-light.svg"
+                            alt="ToolFrame"
+                            width={160}
+                            height={36}
+                            priority
+                            className="block dark:hidden"
                         />
                     </Link>
                     <HeaderClient
@@ -47,6 +57,7 @@ export default async function Header({ lang, common }: HeaderProps) {
                         languageSelector={
                             <LanguageSelector lang={lang} labels={common.languageSelector} slugMaps={slugMaps} />
                         }
+                        themeToggle={<ThemeToggle />}
                     />
                 </div>
             </Container>

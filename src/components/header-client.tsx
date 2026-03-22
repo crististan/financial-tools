@@ -25,6 +25,7 @@ type HeaderClientProps = {
     categories: Category[];
     defaultCategoryId: string;
     languageSelector: React.ReactNode;
+    themeToggle?: React.ReactNode;
 };
 
 export default function HeaderClient({
@@ -34,6 +35,7 @@ export default function HeaderClient({
     categories,
     defaultCategoryId,
     languageSelector,
+    themeToggle,
 }: HeaderClientProps) {
     const [toolsOpen, setToolsOpen] = useState(false);
     const [mobileOpen, setMobileOpen] = useState(false);
@@ -121,6 +123,7 @@ export default function HeaderClient({
                 </button>
 
                 {languageSelector}
+                {themeToggle}
             </div>
 
             {/* ── Mobile hamburger ── */}
@@ -162,8 +165,9 @@ export default function HeaderClient({
                         >
                             {toolsLabel}
                         </button>
-                        <div className="pt-4">
+                        <div className="pt-4 flex items-center gap-3">
                             {languageSelector}
+                            {themeToggle}
                         </div>
                     </nav>
                 </div>
@@ -228,7 +232,7 @@ export default function HeaderClient({
                                             src={tool.iconPath}
                                             width={40}
                                             height={40}
-                                            className="w-[36px] md:w-[40px] h-auto flex-shrink-0"
+                                            className="w-[36px] md:w-[40px] h-auto flex-shrink-0 themed-icon"
                                             alt={tool.title}
                                         />
                                         <div>
