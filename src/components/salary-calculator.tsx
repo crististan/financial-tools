@@ -42,44 +42,30 @@ interface SalaryLabels {
   hideDetails: string;
 }
 
+interface SalaryConfigData {
+  semesters: Record<string, { minWage: number; nonTaxableAmount: number; nonTaxableCeiling: number }>;
+  taxRates: { cas: number; cass: number; tax: number; cam: number };
+  dependentBonus: Record<string, number>;
+}
+
 interface SalaryCalculatorProps {
   labels: SalaryLabels;
+  configData: SalaryConfigData;
   onSalaryChange?: (gross: number) => void;
   initialSalary?: number;
 }
-
-// Semester configuration
-const SEMESTERS = {
-  S1: { minWage: 4050, nonTaxableAmount: 300, nonTaxableCeiling: 4300 },
-  S2: { minWage: 4325, nonTaxableAmount: 200, nonTaxableCeiling: 4600 },
-};
-
-// Tax rates
-const CAS_RATE = 0.25;
-const CASS_RATE = 0.10;
-const TAX_RATE = 0.10;
-const CAM_RATE = 0.0225;
-
-// Personal deduction bonus per dependent category (percentage points)
-const DEPENDENT_BONUS: Record<number, number> = {
-  0: 0,
-  1: 5,
-  2: 10,
-  3: 15,
-  4: 25,
-};
 
 /**
  * Calculate personal deduction percentage based on gross salary and dependents.
  * The deduction starts at a base rate at minimum wage and decreases by 0.5pp per 50 lei above minimum.
  * There are 40 brackets total. Above minWage + 2000, deduction is 0.
  */
-function getPersonalDeductionPercent(gross: number, minWage: number, dependents: number): number {
+function getPersonalDeductionPercent(gross: number, minWage: number, dependents: number, dependentBonus: Record<string, number>): number {
   const maxEligible = minWage + 2000;
   if (gross > maxEligible) return 0;
 
   const baseAtMin = 20; // base percentage at minimum wage for 0 dependents
-  const bonus = DEPENDENT_BONUS[Math.min(dependents, 4)] || 0;
+  const bonus = dependentBonus[String(Math.min(dependents, 4))] || 0;
 
   if (gross <= minWage) {
     return baseAtMin + bonus;
@@ -99,19 +85,21 @@ function getPersonalDeductionPercent(gross: number, minWage: number, dependents:
  */
 function calculateBrutToNet(
   gross: number,
-  semester: 'S1' | 'S2',
+  semester: string,
   dependents: number,
   hasDisability: boolean,
-  isMinimumWage: boolean
+  isMinimumWage: boolean,
+  cfgData: SalaryConfigData
 ) {
-  const config = SEMESTERS[semester];
+  const semConfig = cfgData.semesters[semester];
+  const { cas: CAS_RATE, cass: CASS_RATE, tax: TAX_RATE, cam: CAM_RATE } = cfgData.taxRates;
 
   let effectiveGross = gross;
   let nonTaxableAmount = 0;
 
   // Minimum wage non-taxable amount
-  if (isMinimumWage && gross <= config.nonTaxableCeiling && gross === config.minWage) {
-    nonTaxableAmount = config.nonTaxableAmount;
+  if (isMinimumWage && gross <= semConfig.nonTaxableCeiling && gross === semConfig.minWage) {
+    nonTaxableAmount = semConfig.nonTaxableAmount;
     effectiveGross = gross - nonTaxableAmount;
   }
 
@@ -119,7 +107,7 @@ function calculateBrutToNet(
   const cass = Math.round(effectiveGross * CASS_RATE * 100) / 100;
 
   // Personal deduction applied to the full gross salary
-  const deductionPercent = getPersonalDeductionPercent(gross, config.minWage, dependents);
+  const deductionPercent = getPersonalDeductionPercent(gross, semConfig.minWage, dependents, cfgData.dependentBonus);
   const personalDeduction = Math.round(gross * (deductionPercent / 100) * 100) / 100;
 
   // Taxable base
@@ -129,7 +117,6 @@ function calculateBrutToNet(
   const incomeTax = hasDisability ? 0 : Math.round(taxableBase * TAX_RATE * 100) / 100;
 
   // Net = gross - cas - cass - incomeTax
-  // CAS and CASS are calculated on effectiveGross (gross - nonTaxableAmount)
   const actualNet = Math.round((gross - cas - cass - incomeTax) * 100) / 100;
 
   const cam = Math.round(gross * CAM_RATE * 100) / 100;
@@ -158,28 +145,28 @@ function calculateBrutToNet(
  */
 function calculateNetToBrut(
   targetNet: number,
-  semester: 'S1' | 'S2',
+  semester: string,
   dependents: number,
   hasDisability: boolean,
-  isMinimumWage: boolean
+  isMinimumWage: boolean,
+  cfgData: SalaryConfigData
 ): ReturnType<typeof calculateBrutToNet> {
-  // For disability: net = gross - cas - cass = gross - 0.25*gross - 0.10*gross = 0.65*gross
-  // (simplified without non-taxable amount and deductions affecting only tax which is 0)
+  // For disability: net = gross - cas - cass
   if (hasDisability && !isMinimumWage) {
-    // net = gross - 0.25*gross - 0.10*gross = 0.65*gross
-    const estimatedGross = targetNet / 0.65;
-    return calculateBrutToNet(Math.round(estimatedGross * 100) / 100, semester, dependents, true, false);
+    const { cas, cass } = cfgData.taxRates;
+    const estimatedGross = targetNet / (1 - cas - cass);
+    return calculateBrutToNet(Math.round(estimatedGross * 100) / 100, semester, dependents, true, false, cfgData);
   }
 
   // Binary search approach for precision
   let low = targetNet;
   let high = targetNet * 2.5;
-  let bestResult = calculateBrutToNet(low, semester, dependents, hasDisability, isMinimumWage);
+  let bestResult = calculateBrutToNet(low, semester, dependents, hasDisability, isMinimumWage, cfgData);
 
   for (let i = 0; i < 100; i++) {
     const mid = (low + high) / 2;
     const roundedMid = Math.round(mid * 100) / 100;
-    const result = calculateBrutToNet(roundedMid, semester, dependents, hasDisability, isMinimumWage);
+    const result = calculateBrutToNet(roundedMid, semester, dependents, hasDisability, isMinimumWage, cfgData);
 
     if (Math.abs(result.net - targetNet) < 0.5) {
       bestResult = result;
@@ -204,10 +191,10 @@ function formatNumber(value: number): string {
   });
 }
 
-export default function SalaryCalculator({ labels, onSalaryChange, initialSalary }: SalaryCalculatorProps) {
+export default function SalaryCalculator({ labels, configData, onSalaryChange, initialSalary }: SalaryCalculatorProps) {
   const [mode, setMode] = useState<'brutToNet' | 'netToBrut'>('brutToNet');
   const [salary, setSalary] = useState<string>(initialSalary?.toString() || '5000');
-  const [semester, setSemester] = useState<'S1' | 'S2'>('S2');
+  const [semester, setSemester] = useState<string>('S2');
   const [dependents, setDependents] = useState<number>(0);
   const [hasDisability, setHasDisability] = useState(false);
   const [isMinimumWage, setIsMinimumWage] = useState(false);
@@ -218,11 +205,11 @@ export default function SalaryCalculator({ labels, onSalaryChange, initialSalary
     if (salaryValue <= 0) return null;
 
     if (mode === 'brutToNet') {
-      return calculateBrutToNet(salaryValue, semester, dependents, hasDisability, isMinimumWage);
+      return calculateBrutToNet(salaryValue, semester, dependents, hasDisability, isMinimumWage, configData);
     } else {
-      return calculateNetToBrut(salaryValue, semester, dependents, hasDisability, isMinimumWage);
+      return calculateNetToBrut(salaryValue, semester, dependents, hasDisability, isMinimumWage, configData);
     }
-  }, [salary, mode, semester, dependents, hasDisability, isMinimumWage]);
+  }, [salary, mode, semester, dependents, hasDisability, isMinimumWage, configData]);
 
   useEffect(() => {
     if (onSalaryChange && result) {

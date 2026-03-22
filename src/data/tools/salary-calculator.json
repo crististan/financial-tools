@@ -4,7 +4,39 @@
   "iconPath": "/icons/salary-calculator-icon.svg",
   "categories": ["financial"],
   "applicationCategory": "FinanceApplication",
-  "config": {},
+  "config": {
+    "data": {
+      "salary": {
+        "semesters": {
+          "S1": { "minWage": 4050, "nonTaxableAmount": 300, "nonTaxableCeiling": 4300 },
+          "S2": { "minWage": 4325, "nonTaxableAmount": 200, "nonTaxableCeiling": 4600 }
+        },
+        "taxRates": { "cas": 0.25, "cass": 0.10, "tax": 0.10, "cam": 0.0225 },
+        "dependentBonus": { "0": 0, "1": 5, "2": 10, "3": 15, "4": 25 }
+      },
+      "unemployment": {
+        "isrValue": 660,
+        "isrPercentWorker": 75,
+        "isrPercentGraduate": 50,
+        "graduateDurationMonths": 6,
+        "brackets": [
+          { "key": "graduate", "label": "Absolvent (liceu / facultate)", "durationMonths": 6, "salaryPercent": 0 },
+          { "key": "under-12m", "label": "Sub 12 luni", "durationMonths": 0, "salaryPercent": 0 },
+          { "key": "1-3", "label": "1 – 3 ani", "durationMonths": 6, "salaryPercent": 3 },
+          { "key": "3-5", "label": "3 – 5 ani", "durationMonths": 6, "salaryPercent": 5 },
+          { "key": "5-10", "label": "5 – 10 ani", "durationMonths": 9, "salaryPercent": 7 },
+          { "key": "10-20", "label": "10 – 20 ani", "durationMonths": 12, "salaryPercent": 10 },
+          { "key": "20+", "label": "Peste 20 ani", "durationMonths": 12, "salaryPercent": 10 }
+        ]
+      },
+      "pension": {
+        "defaultPointValue": 2032,
+        "defaultNationalAvgSalary": 8000,
+        "retirementAgeMale": 65,
+        "retirementAgeFemale": 63
+      }
+    }
+  },
   "translations": {
     "ro": {
       "slug": "calculator-salariu",
@@ -60,21 +92,6 @@
           "hideDetails": "Ascunde detalii"
         },
         "unemployment": {
-          "data": {
-            "isrValue": 660,
-            "isrPercentWorker": 75,
-            "isrPercentGraduate": 50,
-            "graduateDurationMonths": 6,
-            "brackets": [
-              { "key": "graduate", "label": "Absolvent (liceu / facultate)", "durationMonths": 6, "salaryPercent": 0 },
-              { "key": "under-12m", "label": "Sub 12 luni", "durationMonths": 0, "salaryPercent": 0 },
-              { "key": "1-3", "label": "1 – 3 ani", "durationMonths": 6, "salaryPercent": 3 },
-              { "key": "3-5", "label": "3 – 5 ani", "durationMonths": 6, "salaryPercent": 5 },
-              { "key": "5-10", "label": "5 – 10 ani", "durationMonths": 9, "salaryPercent": 7 },
-              { "key": "10-20", "label": "10 – 20 ani", "durationMonths": 12, "salaryPercent": 10 },
-              { "key": "20+", "label": "Peste 20 ani", "durationMonths": 12, "salaryPercent": 10 }
-            ]
-          },
           "avgGrossSalaryLabel": "Salariu brut mediu (ultimele 12 luni)",
           "contributionYearsLabel": "Stagiu de cotizare",
           "isrLabel": "ISR (Indicator Social de Referință)",

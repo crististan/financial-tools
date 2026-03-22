@@ -12,6 +12,8 @@ interface RomanianFinancialCalculatorProps {
   primaryMode: CalculatorMode;
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   labels: Record<string, any>;
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  configData: Record<string, any>;
 }
 
 const TAB_CONFIG: { key: CalculatorMode; labelKey: string; slug: string }[] = [
@@ -26,7 +28,7 @@ function getSalaryFromUrl(): number {
   return parseFloat(params.get('salary') || '0') || 0;
 }
 
-export default function RomanianFinancialCalculator({ primaryMode, labels }: RomanianFinancialCalculatorProps) {
+export default function RomanianFinancialCalculator({ primaryMode, labels, configData }: RomanianFinancialCalculatorProps) {
   const [initialSalaryFromUrl, setInitialSalaryFromUrl] = useState<number | undefined>(undefined);
   const [currentGrossSalary, setCurrentGrossSalary] = useState<number>(0);
 
@@ -85,6 +87,7 @@ export default function RomanianFinancialCalculator({ primaryMode, labels }: Rom
       {primaryMode === 'salary' && (
         <SalaryCalculator
           labels={labels.salary}
+          configData={configData.salary}
           onSalaryChange={handleSalaryChange}
           initialSalary={initialSalaryFromUrl}
         />
@@ -92,6 +95,7 @@ export default function RomanianFinancialCalculator({ primaryMode, labels }: Rom
       {primaryMode === 'unemployment' && (
         <UnemploymentCalculator
           labels={labels.unemployment}
+          configData={configData.unemployment}
           initialSalary={initialSalaryFromUrl}
           onSalaryChange={handleSalaryChange}
         />
@@ -99,6 +103,7 @@ export default function RomanianFinancialCalculator({ primaryMode, labels }: Rom
       {primaryMode === 'pension' && (
         <PensionCalculator
           labels={labels.pension}
+          configData={configData.pension}
           initialSalary={initialSalaryFromUrl}
           onSalaryChange={handleSalaryChange}
         />

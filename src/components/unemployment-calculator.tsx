@@ -19,7 +19,6 @@ interface UnemploymentData {
 }
 
 interface UnemploymentLabels {
-  data: UnemploymentData;
   avgGrossSalaryLabel: string;
   contributionYearsLabel: string;
   isrLabel: string;
@@ -44,6 +43,7 @@ interface UnemploymentLabels {
 
 interface UnemploymentCalculatorProps {
   labels: UnemploymentLabels;
+  configData: UnemploymentData;
   initialSalary?: number;
   onSalaryChange?: (gross: number) => void;
 }
@@ -55,8 +55,8 @@ function formatNumber(value: number): string {
   });
 }
 
-export default function UnemploymentCalculator({ labels, initialSalary, onSalaryChange }: UnemploymentCalculatorProps) {
-  const { data } = labels;
+export default function UnemploymentCalculator({ labels, configData, initialSalary, onSalaryChange }: UnemploymentCalculatorProps) {
+  const data = configData;
   const [avgGrossSalary, setAvgGrossSalary] = useState<string>(initialSalary?.toString() || '5000');
   const [selectedBracket, setSelectedBracket] = useState<string>(data.brackets[2]?.key || '1-3');
   const [showDetails, setShowDetails] = useState(false);
