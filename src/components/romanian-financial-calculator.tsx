@@ -1,6 +1,7 @@
 'use client';
 
-import { useState, useCallback } from 'react';
+import Link from 'next/link';
+import { useState, useCallback, useEffect } from 'react';
 import SalaryCalculator from '@/components/salary-calculator';
 import UnemploymentCalculator from '@/components/unemployment-calculator';
 import PensionCalculator from '@/components/pension-calculator';
@@ -13,58 +14,93 @@ interface RomanianFinancialCalculatorProps {
   labels: Record<string, any>;
 }
 
-const TAB_CONFIG: { key: CalculatorMode; labelKey: string }[] = [
-  { key: 'salary', labelKey: 'tabSalary' },
-  { key: 'unemployment', labelKey: 'tabUnemployment' },
-  { key: 'pension', labelKey: 'tabPension' },
+const TAB_CONFIG: { key: CalculatorMode; labelKey: string; slug: string }[] = [
+  { key: 'salary', labelKey: 'tabSalary', slug: 'calculator-salariu' },
+  { key: 'unemployment', labelKey: 'tabUnemployment', slug: 'calculator-somaj' },
+  { key: 'pension', labelKey: 'tabPension', slug: 'calculator-pensie' },
 ];
 
+function getSalaryFromUrl(): number {
+  if (typeof window === 'undefined') return 0;
+  const params = new URLSearchParams(window.location.search);
+  return parseFloat(params.get('salary') || '0') || 0;
+}
+
 export default function RomanianFinancialCalculator({ primaryMode, labels }: RomanianFinancialCalculatorProps) {
-  const [activeTab, setActiveTab] = useState<CalculatorMode>(primaryMode);
-  const [sharedGrossSalary, setSharedGrossSalary] = useState<number>(0);
+  const [initialSalaryFromUrl, setInitialSalaryFromUrl] = useState<number | undefined>(undefined);
+  const [currentGrossSalary, setCurrentGrossSalary] = useState<number>(0);
+
+  // Read salary from URL on mount (client-side only)
+  useEffect(() => {
+    const urlSalary = getSalaryFromUrl();
+    if (urlSalary > 0) {
+      setInitialSalaryFromUrl(urlSalary);
+      setCurrentGrossSalary(urlSalary);
+    }
+  }, []);
 
   const handleSalaryChange = useCallback((gross: number) => {
-    setSharedGrossSalary(gross);
+    setCurrentGrossSalary(gross);
   }, []);
+
+  const buildHref = (slug: string) => {
+    const base = `/ro/financiar/${slug}`;
+    if (currentGrossSalary > 0) {
+      return `${base}?salary=${currentGrossSalary}`;
+    }
+    return base;
+  };
 
   return (
     <div className="w-full">
-      {/* Tab Bar */}
+      {/* Navigation Tab Bar */}
       <div className="mb-4">
         <div className="grid grid-cols-3 gap-1 rounded-xl bg-[var(--clr-neutral-1000)] p-1">
-          {TAB_CONFIG.map(({ key, labelKey }) => (
-            <button
-              key={key}
-              onClick={() => setActiveTab(key)}
-              className={`rounded-lg px-3 py-2.5 text-sm font-medium transition-colors ${
-                activeTab === key
-                  ? 'bg-[var(--clr-green-500)] text-[var(--clr-neutral-1000)]'
-                  : 'text-[var(--clr-neutral-100)] hover:text-[var(--clr-neutral-0)]'
-              }`}
-            >
-              {labels[labelKey]}
-            </button>
-          ))}
+          {TAB_CONFIG.map(({ key, labelKey, slug }) => {
+            const isActive = primaryMode === key;
+            if (isActive) {
+              return (
+                <span
+                  key={key}
+                  className="rounded-lg px-3 py-2.5 text-center text-sm font-medium bg-[var(--clr-green-500)] text-[var(--clr-neutral-1000)]"
+                >
+                  {labels[labelKey]}
+                </span>
+              );
+            }
+            return (
+              <Link
+                key={key}
+                href={buildHref(slug)}
+                className="rounded-lg px-3 py-2.5 text-center text-sm font-medium text-[var(--clr-neutral-100)] hover:text-[var(--clr-neutral-0)] transition-colors"
+              >
+                {labels[labelKey]}
+              </Link>
+            );
+          })}
         </div>
       </div>
 
-      {/* Active Panel */}
-      {activeTab === 'salary' && (
+      {/* Active Calculator — only the primary one */}
+      {primaryMode === 'salary' && (
         <SalaryCalculator
           labels={labels.salary}
           onSalaryChange={handleSalaryChange}
+          initialSalary={initialSalaryFromUrl}
         />
       )}
-      {activeTab === 'unemployment' && (
+      {primaryMode === 'unemployment' && (
         <UnemploymentCalculator
           labels={labels.unemployment}
-          initialSalary={sharedGrossSalary > 0 ? sharedGrossSalary : undefined}
+          initialSalary={initialSalaryFromUrl}
+          onSalaryChange={handleSalaryChange}
         />
       )}
-      {activeTab === 'pension' && (
+      {primaryMode === 'pension' && (
         <PensionCalculator
           labels={labels.pension}
-          initialSalary={sharedGrossSalary > 0 ? sharedGrossSalary : undefined}
+          initialSalary={initialSalaryFromUrl}
+          onSalaryChange={handleSalaryChange}
         />
       )}
     </div>

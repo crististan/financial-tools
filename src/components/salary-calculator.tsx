@@ -45,6 +45,7 @@ interface SalaryLabels {
 interface SalaryCalculatorProps {
   labels: SalaryLabels;
   onSalaryChange?: (gross: number) => void;
+  initialSalary?: number;
 }
 
 // Semester configuration
@@ -203,9 +204,9 @@ function formatNumber(value: number): string {
   });
 }
 
-export default function SalaryCalculator({ labels, onSalaryChange }: SalaryCalculatorProps) {
+export default function SalaryCalculator({ labels, onSalaryChange, initialSalary }: SalaryCalculatorProps) {
   const [mode, setMode] = useState<'brutToNet' | 'netToBrut'>('brutToNet');
-  const [salary, setSalary] = useState<string>('5000');
+  const [salary, setSalary] = useState<string>(initialSalary?.toString() || '5000');
   const [semester, setSemester] = useState<'S1' | 'S2'>('S2');
   const [dependents, setDependents] = useState<number>(0);
   const [hasDisability, setHasDisability] = useState(false);

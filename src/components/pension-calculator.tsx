@@ -34,6 +34,7 @@ interface PensionLabels {
 interface PensionCalculatorProps {
   labels: PensionLabels;
   initialSalary?: number;
+  onSalaryChange?: (gross: number) => void;
 }
 
 // 2026 values
@@ -49,7 +50,7 @@ function formatNumber(value: number): string {
   });
 }
 
-export default function PensionCalculator({ labels, initialSalary }: PensionCalculatorProps) {
+export default function PensionCalculator({ labels, initialSalary, onSalaryChange }: PensionCalculatorProps) {
   const [gender, setGender] = useState<'male' | 'female'>('male');
   const [currentAge, setCurrentAge] = useState<string>('35');
   const [contributionYears, setContributionYears] = useState<string>('15');
@@ -63,6 +64,13 @@ export default function PensionCalculator({ labels, initialSalary }: PensionCalc
       setAvgGrossSalary(initialSalary.toString());
     }
   }, [initialSalary]);
+
+  useEffect(() => {
+    const salary = parseFloat(avgGrossSalary) || 0;
+    if (onSalaryChange && salary > 0) {
+      onSalaryChange(salary);
+    }
+  }, [avgGrossSalary, onSalaryChange]);
 
   const result = useMemo(() => {
     const salary = parseFloat(avgGrossSalary) || 0;

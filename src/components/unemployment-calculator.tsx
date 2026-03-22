@@ -45,6 +45,7 @@ interface UnemploymentLabels {
 interface UnemploymentCalculatorProps {
   labels: UnemploymentLabels;
   initialSalary?: number;
+  onSalaryChange?: (gross: number) => void;
 }
 
 function formatNumber(value: number): string {
@@ -54,7 +55,7 @@ function formatNumber(value: number): string {
   });
 }
 
-export default function UnemploymentCalculator({ labels, initialSalary }: UnemploymentCalculatorProps) {
+export default function UnemploymentCalculator({ labels, initialSalary, onSalaryChange }: UnemploymentCalculatorProps) {
   const { data } = labels;
   const [avgGrossSalary, setAvgGrossSalary] = useState<string>(initialSalary?.toString() || '5000');
   const [selectedBracket, setSelectedBracket] = useState<string>(data.brackets[2]?.key || '1-3');
@@ -65,6 +66,13 @@ export default function UnemploymentCalculator({ labels, initialSalary }: Unempl
       setAvgGrossSalary(initialSalary.toString());
     }
   }, [initialSalary]);
+
+  useEffect(() => {
+    const salary = parseFloat(avgGrossSalary) || 0;
+    if (onSalaryChange && salary > 0) {
+      onSalaryChange(salary);
+    }
+  }, [avgGrossSalary, onSalaryChange]);
 
   const bracket = useMemo(() => {
     return data.brackets.find(b => b.key === selectedBracket) || data.brackets[2];
