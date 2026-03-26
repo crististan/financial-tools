@@ -472,6 +472,162 @@
         "title": "Entdecken Sie unsere weiteren Finanztools",
         "description": "Verwalten Sie jeden Aspekt Ihrer Finanzen mit unseren kostenlosen und benutzerfreundlichen Rechnern und Trackern."
       }
+    },
+    "fr": {
+      "slug": "convertisseur-devises",
+      "meta": {
+        "title": "Convertisseur de Devises Gratuit | Taux de Change en Temps Réel",
+        "description": "Convertissez entre 10 grandes devises mondiales avec notre convertisseur de devises en ligne gratuit. Obtenez des taux de change instantanés pour USD, EUR, GBP, JPY et plus encore.",
+        "keywords": ["convertisseur de devises", "taux de change", "USD en EUR", "convertir devise", "change de devises", "calculateur de devises", "convertisseur monnaie"]
+      },
+      "hero": {
+        "headline": "Convertisseur de Devises",
+        "description": "Convertissez vos devises rapidement et en toute fiabilité grâce à des taux de change actualisés. Prise en charge de 10 grandes devises mondiales."
+      },
+      "tool": {
+        "fromLabel": "De",
+        "toLabel": "Vers",
+        "amountPlaceholder": "Entrez le montant",
+        "switchButtonAriaLabel": "Inverser les devises",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "lastUpdated": "Dernière mise à jour : {date}",
+        "options": {
+          "USD": "Dollar américain",
+          "EUR": "Euro",
+          "GBP": "Livre sterling",
+          "JPY": "Yen japonais",
+          "AUD": "Dollar australien",
+          "CAD": "Dollar canadien",
+          "CHF": "Franc suisse",
+          "CNY": "Yuan chinois",
+          "SEK": "Couronne suédoise",
+          "NZD": "Dollar néo-zélandais"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment convertir des devises en ligne",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "keyboard",
+            "title": "Saisissez votre montant",
+            "description": "Entrez le montant que vous souhaitez convertir dans le champ de saisie. Notre convertisseur accepte toute valeur de 0,01 à 999 999 999."
+          },
+          {
+            "number": 2,
+            "icon": "arrowLeftRight",
+            "title": "Sélectionnez les devises",
+            "description": "Choisissez votre devise source et votre devise cible dans les menus déroulants. Nous prenons en charge 10 grandes devises mondiales."
+          },
+          {
+            "number": 3,
+            "icon": "zap",
+            "title": "Obtenez des résultats instantanés",
+            "description": "Votre conversion est calculée automatiquement en temps réel. Aucun bouton à cliquer, aucune attente. Les résultats se mettent à jour au fur et à mesure de votre saisie."
+          }
+        ]
+      },
+      "ratesTable": {
+        "sectionTitle": "Taux de change populaires",
+        "sectionDescription": "Comparez les taux de change entre les paires de devises les plus échangées au monde.",
+        "headers": {
+          "pair": "Paire de devises",
+          "rate": "Taux de change",
+          "inverseRate": "Taux inverse"
+        }
+      },
+      "features": {
+        "sectionTitle": "Pourquoi utiliser notre convertisseur de devises",
+        "sectionDescription": "Des fonctionnalités fiables conçues pour des conversions de devises précises et sans tracas.",
+        "items": [
+          {
+            "icon": "refreshCw",
+            "title": "Taux de change en temps réel",
+            "description": "Nos taux sont mis à jour régulièrement pour refléter les dernières conditions du marché, garantissant des conversions toujours précises."
+          },
+          {
+            "icon": "globe",
+            "title": "10+ devises majeures",
+            "description": "Convertissez entre USD, EUR, GBP, JPY et 6 autres grandes devises mondiales utilisées dans le commerce et les voyages internationaux."
+          },
+          {
+            "icon": "badgeDollarSign",
+            "title": "100 % gratuit pour toujours",
+            "description": "Aucun frais caché, aucune offre premium, aucun abonnement. Notre convertisseur de devises est entièrement gratuit, pour toujours."
+          },
+          {
+            "icon": "userX",
+            "title": "Aucune inscription requise",
+            "description": "Commencez à convertir des devises instantanément. Pas de création de compte, pas de vérification par e-mail, pas de collecte de données personnelles."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Comprendre le change de devises",
+        "articles": [
+          {
+            "title": "Qu'est-ce qui influence les mouvements des taux de change ?",
+            "content": "Les taux de change sont influencés par une interaction complexe de facteurs économiques. Les écarts de taux d'intérêt entre les pays, les taux d'inflation, les balances commerciales et la stabilité politique jouent tous un rôle significatif. Lorsqu'un pays augmente ses taux d'intérêt, sa monnaie se renforce généralement car les investisseurs étrangers recherchent des rendements plus élevés. À l'inverse, une inflation élevée érode le pouvoir d'achat et tend à affaiblir une monnaie au fil du temps."
+          },
+          {
+            "title": "Les devises les plus échangées au monde",
+            "content": "Le dollar américain domine les marchés des changes mondiaux, intervenant dans environ 88 % de toutes les transactions. L'euro suit en tant que deuxième devise la plus échangée, représentant environ 31 % des opérations. Le yen japonais, la livre sterling et le dollar australien complètent le top cinq. Ensemble, ces cinq devises représentent la grande majorité des 7 500 milliards de dollars échangés quotidiennement sur les marchés des changes."
+          },
+          {
+            "title": "Conseils pour obtenir les meilleurs taux de change",
+            "content": "Pour maximiser la valeur de votre change, comparez les taux de plusieurs prestataires avant de convertir. Évitez de changer de l'argent dans les aéroports ou les hôtels, où les taux sont généralement défavorables. Pensez à utiliser des convertisseurs en ligne pour vérifier les taux avant de vous rendre dans un bureau de change physique. Pour les montants importants, même de petites différences de taux de change peuvent se traduire par des économies significatives."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions fréquemment posées",
+        "items": [
+          {
+            "question": "Comment fonctionne un convertisseur de devises ?",
+            "answer": "Un convertisseur de devises utilise les taux de change actuels pour calculer la valeur d'une monnaie dans une autre. Vous saisissez un montant, sélectionnez les devises source et cible, et le convertisseur multiplie le montant par le taux de change pour afficher la valeur équivalente."
+          },
+          {
+            "question": "Que sont les taux de change et comment sont-ils déterminés ?",
+            "answer": "Les taux de change représentent la valeur d'une monnaie par rapport à une autre. Ils sont déterminés par l'offre et la demande sur les marchés des changes, influencés par des facteurs tels que les taux d'intérêt, l'inflation, les balances commerciales et la stabilité économique."
+          },
+          {
+            "question": "Quelle est la différence entre le cours acheteur et le cours vendeur ?",
+            "answer": "Le cours acheteur (bid) est le prix auquel un cambiste achète une devise, tandis que le cours vendeur (ask) est le prix auquel il la vend. La différence entre les deux s'appelle le spread, qui représente la marge bénéficiaire du cambiste."
+          },
+          {
+            "question": "Pourquoi les taux de change fluctuent-ils ?",
+            "answer": "Les taux de change fluctuent en raison des variations des indicateurs économiques, des événements géopolitiques, des politiques des banques centrales, de la spéculation des marchés et des différences de taux d'intérêt entre les pays. Ces facteurs influencent l'offre et la demande pour chaque devise."
+          },
+          {
+            "question": "Quelles sont les devises les plus échangées au monde ?",
+            "answer": "Les devises les plus échangées sont le dollar américain (USD), l'euro (EUR), le yen japonais (JPY), la livre sterling (GBP) et le dollar australien (AUD). Le USD intervient dans environ 88 % de toutes les transactions de change."
+          },
+          {
+            "question": "Vaut-il mieux changer des devises en banque ou en ligne ?",
+            "answer": "Les services de change en ligne offrent généralement des taux plus compétitifs que les banques, car leurs coûts de fonctionnement sont plus faibles. Cependant, les banques offrent une sécurité accrue et conviennent aux transactions importantes. Comparez toujours les taux et les frais avant de procéder au change."
+          },
+          {
+            "question": "Qu'est-ce qu'une paire de devises ?",
+            "answer": "Une paire de devises indique le taux de change entre deux monnaies. La première monnaie est la devise de base et la seconde est la devise de cotation. Par exemple, USD/EUR = 0,92 signifie que 1 dollar américain équivaut à 0,92 euro."
+          },
+          {
+            "question": "À quelle fréquence les taux de change sont-ils mis à jour ?",
+            "answer": "Nos taux de change sont mis à jour régulièrement tout au long de la journée pour refléter les conditions actuelles du marché. Pour les transactions les plus sensibles au temps, nous recommandons de vérifier les taux juste avant la conversion, car les marchés des changes fonctionnent 24 heures sur 24, cinq jours sur sept."
+          },
+          {
+            "question": "Puis-je convertir des devises sur mon téléphone portable ?",
+            "answer": "Oui, notre convertisseur de devises est entièrement responsive et fonctionne sur tout appareil, y compris les smartphones, tablettes et ordinateurs de bureau. Ouvrez simplement la page dans votre navigateur mobile et commencez à convertir immédiatement, sans téléchargement d'application."
+          },
+          {
+            "question": "Qu'est-ce que le taux de change interbancaire ?",
+            "answer": "Le taux interbancaire, également appelé taux mid-market, est le point médian entre les prix d'achat et de vente de deux devises sur le marché mondial. Il est considéré comme le taux de change le plus juste et c'est celui qu'affiche notre convertisseur. Les banques et les services de change ajoutent généralement une marge sur ce taux comme bénéfice."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez nos autres outils financiers",
+        "description": "Gérez chaque aspect de vos finances avec nos calculateurs et outils de suivi gratuits et faciles à utiliser."
+      }
     }
   }
 }

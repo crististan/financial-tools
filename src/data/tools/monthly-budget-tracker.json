@@ -500,6 +500,173 @@
         "title": "Entdecken Sie unsere weiteren Finanztools",
         "description": "Verwalten Sie jeden Aspekt Ihrer Finanzen mit unseren kostenlosen und benutzerfreundlichen Rechnern und Planern."
       }
+    },
+    "fr": {
+      "slug": "suivi-budget-mensuel",
+      "meta": {
+        "title": "Suivi de Budget Mensuel | Planificateur Gratuit de Revenus et Dépenses",
+        "description": "Outil gratuit de suivi de budget mensuel. Planifiez et suivez vos revenus et dépenses, comparez les montants prévus et réels, et gardez le contrôle de vos finances personnelles. Aucune inscription requise.",
+        "keywords": ["suivi budget", "budget mensuel", "suivi dépenses", "suivi revenus", "planificateur budget", "finances personnelles", "gestion dépenses", "gestion argent"]
+      },
+      "hero": {
+        "headline": "Suivi de Budget Mensuel",
+        "description": "Planifiez vos revenus et dépenses mensuels, suivez vos dépenses réelles et voyez exactement où va votre argent. Toutes les données restent dans votre navigateur."
+      },
+      "tool": {
+        "incomeTitle": "Revenus",
+        "expensesTitle": "Dépenses",
+        "categoryLabel": "Catégorie",
+        "categoryPlaceholder": "Nom de la catégorie",
+        "plannedLabel": "Prévu",
+        "plannedPlaceholder": "0.00",
+        "actualLabel": "Réel",
+        "actualPlaceholder": "0.00",
+        "addButtonLabel": "Ajouter une catégorie",
+        "removeButtonAriaLabel": "Supprimer la catégorie",
+        "summaryTitle": "Résumé mensuel",
+        "totalIncomePlanLabel": "Total revenus (Prévu)",
+        "totalIncomeActualLabel": "Total revenus (Réel)",
+        "totalExpensesPlanLabel": "Total dépenses (Prévu)",
+        "totalExpensesActualLabel": "Total dépenses (Réel)",
+        "balancePlanLabel": "Solde (Prévu)",
+        "balanceActualLabel": "Solde (Réel)",
+        "differenceLabel": "Différence",
+        "resetButtonLabel": "Réinitialiser toutes les données",
+        "resetConfirmMessage": "Êtes-vous sûr de vouloir réinitialiser toutes les données budgétaires ? Cette action est irréversible.",
+        "noDataMessage": "Ajoutez au moins une catégorie de revenus et une catégorie de dépenses pour voir votre résumé.",
+        "progressLabel": "{percent}% du prévu",
+        "defaultCategories": {
+          "income": [
+            { "name": "Salaire", "planned": 5000 },
+            { "name": "Freelance / Revenus secondaires", "planned": 0 }
+          ],
+          "expenses": [
+            { "name": "Loyer / Hypothèque", "planned": 1500 },
+            { "name": "Charges", "planned": 200 },
+            { "name": "Alimentation", "planned": 400 },
+            { "name": "Transport", "planned": 150 },
+            { "name": "Santé", "planned": 100 },
+            { "name": "Divertissement", "planned": 100 },
+            { "name": "Abonnements", "planned": 50 },
+            { "name": "Épargne", "planned": 500 }
+          ]
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment suivre votre budget mensuel",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "listPlus",
+            "title": "Configurez vos catégories",
+            "description": "Commencez avec les catégories prédéfinies de revenus et de dépenses, ou personnalisez-les selon votre situation financière. Ajoutez ou supprimez des catégories à tout moment."
+          },
+          {
+            "number": 2,
+            "icon": "pencilLine",
+            "title": "Saisissez les montants prévus et réels",
+            "description": "En début de mois, définissez les budgets prévus pour chaque catégorie. Au fil de vos dépenses et revenus, mettez à jour les montants réels pour suivre votre progression."
+          },
+          {
+            "number": 3,
+            "icon": "chartBar",
+            "title": "Consultez votre résumé",
+            "description": "Le résumé se met à jour instantanément, affichant le total des revenus, des dépenses, le solde et la comparaison entre vos dépenses réelles et votre plan. Le vert signifie que vous êtes dans les clous, le rouge indique un dépassement de budget."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi utiliser notre outil de suivi budgétaire",
+        "sectionDescription": "Des outils simples mais puissants pour vous aider à maîtriser vos finances mensuelles.",
+        "items": [
+          {
+            "icon": "save",
+            "title": "Sauvegarde automatique dans le navigateur",
+            "description": "Vos données budgétaires sont automatiquement sauvegardées dans le stockage local de votre navigateur. Revenez à tout moment et reprenez exactement là où vous vous êtes arrêté."
+          },
+          {
+            "icon": "layoutList",
+            "title": "Catégories personnalisables",
+            "description": "Commencez avec des catégories par défaut intelligentes ou créez les vôtres. Ajoutez, renommez ou supprimez des catégories pour les adapter parfaitement à vos habitudes de dépenses."
+          },
+          {
+            "icon": "barChart3",
+            "title": "Suivi prévu vs réel",
+            "description": "Définissez des budgets prévisionnels en début de mois et suivez les dépenses réelles au fur et à mesure. Voyez instantanément où vous êtes en dessous ou au-dessus du budget."
+          },
+          {
+            "icon": "shield",
+            "title": "Privé et sécurisé",
+            "description": "Toutes vos données financières restent dans votre navigateur. Nous ne collectons, ne stockons et ne transmettons jamais vos informations budgétaires personnelles à aucun serveur."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Maîtriser votre budget mensuel",
+        "articles": [
+          {
+            "title": "La règle budgétaire 50/30/20",
+            "content": "L'un des cadres budgétaires les plus populaires consiste à allouer 50 % des revenus nets aux besoins essentiels (loyer, charges, alimentation), 30 % aux envies (divertissement, sorties au restaurant, loisirs) et 20 % à l'épargne et au remboursement des dettes. Cette règle simple offre un point de départ équilibré pour quiconque débute dans la gestion budgétaire. Ajustez les pourcentages à votre situation, mais le principe clé demeure : priorisez les besoins, profitez de la vie et payez-vous toujours en premier grâce à l'épargne."
+          },
+          {
+            "title": "Pourquoi le suivi des dépenses est important",
+            "content": "Les recherches montrent que les personnes qui suivent activement leurs dépenses épargnent nettement plus que celles qui ne le font pas. Le fait d'enregistrer ses dépenses sensibilise aux habitudes de consommation et réduit les achats impulsifs. Des études révèlent que le simple suivi de ses finances peut réduire les dépenses superflues de 15 à 20 %. Un outil de suivi budgétaire mensuel rend ce processus sans effort en montrant exactement où va votre argent et en mettant en évidence les postes où vous pouvez réduire."
+          },
+          {
+            "title": "Constituer un fonds d'urgence",
+            "content": "Les experts financiers recommandent d'épargner l'équivalent de trois à six mois de dépenses courantes dans un fonds d'urgence facilement accessible. Commencez par inclure une catégorie d'épargne dans votre budget mensuel, même si vous ne pouvez mettre de côté qu'une petite somme au départ. La régularité compte plus que le montant. Une fois que vous disposez d'un coussin pour les dépenses imprévues comme les réparations automobiles, les frais médicaux ou une perte d'emploi, vous gagnez en sécurité financière et en tranquillité d'esprit, ce qui réduit le stress et améliore la prise de décision."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions fréquemment posées",
+        "items": [
+          {
+            "question": "Où sont stockées mes données budgétaires ?",
+            "answer": "Vos données budgétaires sont stockées exclusivement dans le stockage local de votre navigateur. Nous n'envoyons jamais vos informations financières à aucun serveur. Cela signifie que vos données sont totalement privées, mais aussi que la suppression des données de votre navigateur effacera votre budget. Pensez à exporter régulièrement vos données en guise de sauvegarde."
+          },
+          {
+            "question": "Puis-je personnaliser les catégories budgétaires ?",
+            "answer": "Oui, vous pouvez entièrement personnaliser vos catégories budgétaires. Ajoutez de nouvelles catégories en cliquant sur le bouton « Ajouter une catégorie » sous la section Revenus ou Dépenses. Vous pouvez également renommer n'importe quelle catégorie existante en modifiant son champ de nom, ou supprimer les catégories dont vous n'avez pas besoin."
+          },
+          {
+            "question": "Que signifient les couleurs dans le résumé ?",
+            "answer": "Les valeurs vertes indiquent des résultats positifs : vos revenus réels ont atteint ou dépassé le plan, ou vos dépenses réelles sont restées dans le budget. Les valeurs rouges signalent des points nécessitant votre attention : les revenus sont restés en deçà du plan, ou les dépenses ont dépassé le budget. Ce système visuel permet de repérer les problèmes en un coup d'œil."
+          },
+          {
+            "question": "Comment démarrer un nouveau mois ?",
+            "answer": "Utilisez le bouton « Réinitialiser toutes les données » pour effacer tous les montants réels et repartir de zéro. Vos montants prévus et vos catégories resteront en tant que modèle. Vous pouvez aussi mettre à jour manuellement les montants réels à zéro pour chaque catégorie tout en conservant vos budgets prévisionnels."
+          },
+          {
+            "question": "Quelle est la différence entre les montants prévus et réels ?",
+            "answer": "Les montants prévus représentent vos objectifs budgétaires définis en début de mois. Les montants réels reflètent ce que vous avez véritablement gagné ou dépensé. La comparaison des deux révèle si vous êtes dans les clous, en dessous du budget ou en situation de dépassement dans chaque catégorie."
+          },
+          {
+            "question": "Puis-je utiliser cet outil pour une autre devise ?",
+            "answer": "Oui, l'outil fonctionne avec n'importe quelle devise. Les montants que vous saisissez sont simplement des chiffres, et les calculs du résumé fonctionnent de la même manière quelle que soit la devise. Actuellement, le symbole du dollar ($) est utilisé pour l'affichage, mais les valeurs représentent la devise de votre choix pour votre budget."
+          },
+          {
+            "question": "Comment gérer des revenus irréguliers ?",
+            "answer": "Pour les revenus irréguliers tels que le travail en freelance ou les commissions, estimez un montant prévisionnel prudent basé sur vos revenus moyens des derniers mois. Mettez à jour le montant réel au fur et à mesure que les paiements arrivent. Cette approche vous offre une base réaliste tout en tenant compte de la variabilité."
+          },
+          {
+            "question": "Que représente la « Différence » dans le résumé ?",
+            "answer": "La Différence montre comment votre solde réel se compare à votre solde prévu. Une différence positive signifie que vous avez fait mieux que prévu (gagné plus ou dépensé moins). Une différence négative signifie que vous n'avez pas atteint vos objectifs budgétaires. C'est un indicateur unique pour évaluer votre performance financière mensuelle globale."
+          },
+          {
+            "question": "Faut-il inclure l'épargne comme une dépense ?",
+            "answer": "Oui, considérer l'épargne comme une dépense est une stratégie budgétaire éprouvée appelée « se payer en premier ». En incluant l'épargne comme dépense prévue, vous donnez la priorité à la constitution de vos réserves financières avant les dépenses discrétionnaires. Cela garantit une épargne régulière chaque mois, même lorsque d'autres dépenses fluctuent."
+          },
+          {
+            "question": "Puis-je utiliser cet outil sur mon téléphone ?",
+            "answer": "Oui, notre outil de suivi budgétaire est entièrement responsive et fonctionne parfaitement sur les smartphones, tablettes et ordinateurs de bureau. Ouvrez simplement la page dans le navigateur de votre téléphone pour commencer à suivre votre budget instantanément, sans aucun téléchargement d'application."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez nos autres outils financiers",
+        "description": "Gérez tous les aspects de vos finances grâce à nos calculateurs et outils de suivi gratuits et faciles à utiliser."
+      }
     }
   }
 }
