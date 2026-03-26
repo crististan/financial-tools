@@ -31,16 +31,19 @@ interface PensionLabels {
   detailsAmount: string;
 }
 
-interface PensionCalculatorProps {
-  labels: PensionLabels;
-  initialSalary?: number;
+interface PensionConfigData {
+  defaultPointValue: number;
+  defaultNationalAvgSalary: number;
+  retirementAgeMale: number;
+  retirementAgeFemale: number;
 }
 
-// 2026 values
-const DEFAULT_POINT_VALUE = 2032;
-const DEFAULT_NATIONAL_AVG_SALARY = 8000;
-const RETIREMENT_AGE_MALE = 65;
-const RETIREMENT_AGE_FEMALE = 63;
+interface PensionCalculatorProps {
+  labels: PensionLabels;
+  configData: PensionConfigData;
+  initialSalary?: number;
+  onSalaryChange?: (gross: number) => void;
+}
 
 function formatNumber(value: number): string {
   return value.toLocaleString('ro-RO', {
@@ -49,13 +52,13 @@ function formatNumber(value: number): string {
   });
 }
 
-export default function PensionCalculator({ labels, initialSalary }: PensionCalculatorProps) {
+export default function PensionCalculator({ labels, configData, initialSalary, onSalaryChange }: PensionCalculatorProps) {
   const [gender, setGender] = useState<'male' | 'female'>('male');
   const [currentAge, setCurrentAge] = useState<string>('35');
   const [contributionYears, setContributionYears] = useState<string>('15');
   const [avgGrossSalary, setAvgGrossSalary] = useState<string>(initialSalary?.toString() || '5000');
-  const [nationalAvgSalary, setNationalAvgSalary] = useState<string>(DEFAULT_NATIONAL_AVG_SALARY.toString());
-  const [pointValue, setPointValue] = useState<string>(DEFAULT_POINT_VALUE.toString());
+  const [nationalAvgSalary, setNationalAvgSalary] = useState<string>(configData.defaultNationalAvgSalary.toString());
+  const [pointValue, setPointValue] = useState<string>(configData.defaultPointValue.toString());
   const [showDetails, setShowDetails] = useState(false);
 
   useEffect(() => {
@@ -63,6 +66,13 @@ export default function PensionCalculator({ labels, initialSalary }: PensionCalc
       setAvgGrossSalary(initialSalary.toString());
     }
   }, [initialSalary]);
+
+  useEffect(() => {
+    const salary = parseFloat(avgGrossSalary) || 0;
+    if (onSalaryChange && salary > 0) {
+      onSalaryChange(salary);
+    }
+  }, [avgGrossSalary, onSalaryChange]);
 
   const result = useMemo(() => {
     const salary = parseFloat(avgGrossSalary) || 0;
@@ -73,7 +83,7 @@ export default function PensionCalculator({ labels, initialSalary }: PensionCalc
 
     if (salary <= 0 || natAvg <= 0 || pValue <= 0 || years <= 0) return null;
 
-    const retirementAge = gender === 'male' ? RETIREMENT_AGE_MALE : RETIREMENT_AGE_FEMALE;
+    const retirementAge = gender === 'male' ? configData.retirementAgeMale : configData.retirementAgeFemale;
     const annualPoints = Math.round((salary / natAvg) * 10000) / 10000;
     const totalPoints = Math.round(annualPoints * years * 100) / 100;
     const monthlyPension = Math.round(totalPoints * pValue * 100) / 100;
@@ -86,7 +96,7 @@ export default function PensionCalculator({ labels, initialSalary }: PensionCalc
       retirementAge,
       yearsUntilRetirement,
     };
-  }, [avgGrossSalary, nationalAvgSalary, pointValue, currentAge, contributionYears, gender]);
+  }, [avgGrossSalary, nationalAvgSalary, pointValue, currentAge, contributionYears, gender, configData]);
 
   return (
     <div className="w-full rounded-4xl bg-[var(--clr-neutral-900)] p-6 md:p-8">

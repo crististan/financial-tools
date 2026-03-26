@@ -434,6 +434,151 @@
         "title": "Entdecken Sie unsere weiteren Finanztools",
         "description": "Verwalten Sie jeden Aspekt Ihrer Finanzen mit unseren kostenlosen, benutzerfreundlichen Rechnern und Trackern."
       }
+    },
+    "fr": {
+      "slug": "calculateur-interets-composes",
+      "meta": {
+        "title": "Calculateur d'intérêts composés | Visualisation de croissance et comparaison de scénarios",
+        "description": "Calculateur d'intérêts composés gratuit avec graphique interactif. Calculez la croissance de vos investissements avec des contributions mensuelles, comparez des scénarios et consultez le détail année par année.",
+        "keywords": ["calculateur intérêts composés", "calculateur investissement", "intérêts composés", "calculateur intérêts", "calculateur épargne", "calculateur croissance investissement", "calculateur contributions mensuelles", "graphique intérêts composés"]
+      },
+      "hero": {
+        "headline": "Calculateur d'intérêts composés",
+        "description": "Calculez comment vos investissements croissent au fil du temps grâce aux intérêts composés. Visualisez la croissance sur un graphique interactif et comparez différents scénarios de contributions."
+      },
+      "tool": {
+        "initialDepositLabel": "Dépôt initial",
+        "initialDepositPlaceholder": "ex. 10000",
+        "monthlyContributionLabel": "Contribution mensuelle",
+        "monthlyContributionPlaceholder": "ex. 500",
+        "interestRateLabel": "Taux d'intérêt annuel (%)",
+        "interestRatePlaceholder": "ex. 7",
+        "periodLabel": "Période d'investissement (Années)",
+        "periodPlaceholder": "ex. 20",
+        "compoundingLabel": "Fréquence de capitalisation",
+        "compoundingOptions": {
+          "monthly": "Mensuelle",
+          "quarterly": "Trimestrielle",
+          "annually": "Annuelle"
+        },
+        "scenarioToggleLabel": "Comparer avec une contribution mensuelle différente",
+        "scenario2Label": "Scénario 2 — Contribution mensuelle",
+        "scenario2Placeholder": "ex. 1000",
+        "resultFinalAmount": "Montant final",
+        "resultTotalContributions": "Total des contributions",
+        "resultTotalInterest": "Intérêts gagnés",
+        "comparisonTitle": "Comparaison de scénarios",
+        "scenario1Name": "Scénario 1",
+        "scenario2Name": "Scénario 2",
+        "differenceLabel": "Différence",
+        "breakdownTitle": "Détail annuel",
+        "breakdownToggle": "Afficher le détail annuel",
+        "breakdownHeaders": {
+          "year": "Année",
+          "contributions": "Contributions",
+          "interest": "Intérêts",
+          "balance": "Solde"
+        },
+        "chartContributions": "Contributions",
+        "chartInterest": "Intérêts gagnés",
+        "chartScenario2": "Solde Scénario 2",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment utiliser le calculateur d'intérêts composés",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "dollarSign",
+            "title": "Saisissez les détails de votre investissement",
+            "description": "Renseignez votre dépôt initial, votre contribution mensuelle, le taux d'intérêt annuel estimé et la durée de votre investissement."
+          },
+          {
+            "number": 2,
+            "icon": "trendingUp",
+            "title": "Consultez le graphique de croissance",
+            "description": "Observez la croissance de votre investissement sur un graphique interactif qui montre comment les contributions et les intérêts composés construisent votre patrimoine au fil du temps."
+          },
+          {
+            "number": 3,
+            "icon": "gitCompare",
+            "title": "Comparez des scénarios",
+            "description": "Activez la comparaison de scénarios pour voir comment différentes contributions mensuelles influencent votre solde final. Le graphique superpose les deux scénarios pour une comparaison facile."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi utiliser notre calculateur d'intérêts composés",
+        "sectionDescription": "Des fonctionnalités puissantes pour vous aider à comprendre et planifier votre stratégie d'investissement à long terme.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Graphique de croissance interactif",
+            "description": "Visualisez la croissance de votre investissement avec un graphique en aires qui montre clairement la répartition entre vos contributions et les intérêts gagnés au fil du temps."
+          },
+          {
+            "icon": "gitCompare",
+            "title": "Comparaison de scénarios",
+            "description": "Comparez deux contributions mensuelles différentes côte à côte. Voyez exactement combien l'épargne supplémentaire d'aujourd'hui rapporte dans le futur."
+          },
+          {
+            "icon": "zap",
+            "title": "Calcul en temps réel",
+            "description": "Les résultats se mettent à jour instantanément lorsque vous modifiez une valeur. Aucun bouton à cliquer — ajustez simplement les valeurs et voyez l'impact immédiatement."
+          },
+          {
+            "icon": "table",
+            "title": "Détail année par année",
+            "description": "Développez le tableau de détail annuel pour voir exactement comment votre solde croît chaque année, avec les contributions et les intérêts séparés."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Comprendre les intérêts composés",
+        "articles": [
+          {
+            "title": "La puissance des intérêts composés",
+            "content": "Les intérêts composés sont souvent qualifiés de huitième merveille du monde. Contrairement aux intérêts simples, calculés uniquement sur le capital initial, les intérêts composés sont calculés sur le capital plus tous les intérêts précédemment accumulés. Cela signifie que votre argent génère des intérêts sur les intérêts, créant une croissance exponentielle au fil du temps. Plus votre horizon d'investissement est long, plus cet effet de capitalisation devient spectaculaire."
+          },
+          {
+            "title": "L'importance de la fréquence de capitalisation",
+            "content": "La fréquence à laquelle les intérêts sont capitalisés affecte votre rendement total. La capitalisation mensuelle rapporte légèrement plus que la trimestrielle, qui rapporte plus que la capitalisation annuelle. En effet, une capitalisation plus fréquente signifie que les intérêts sont ajoutés à votre solde plus tôt, leur permettant de commencer à générer leurs propres intérêts plus rapidement. Pour la plupart des comptes d'épargne et d'investissement, la capitalisation mensuelle est la norme."
+          },
+          {
+            "title": "L'impact de commencer tôt",
+            "content": "Le temps est le facteur le plus puissant des intérêts composés. Un investisseur qui commence à épargner 300 € par mois à 25 ans avec un rendement annuel de 7 % accumulerait environ 680 000 € à 60 ans. Commencer la même épargne à 35 ans ne produirait qu'environ 320 000 € — moins de la moitié. Ces 10 années supplémentaires de capitalisation doublent presque le montant final, bien que les contributions supplémentaires ne totalisent que 36 000 €."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions fréquemment posées",
+        "items": [
+          {
+            "question": "Qu'est-ce que les intérêts composés ?",
+            "answer": "Les intérêts composés sont des intérêts calculés à la fois sur le capital initial et sur les intérêts accumulés des périodes précédentes. Cela crée un effet boule de neige où votre argent croît de plus en plus rapidement au fil du temps, car les intérêts de chaque période sont ajoutés au solde et génèrent eux-mêmes des intérêts dans les périodes futures."
+          },
+          {
+            "question": "Comment calcule-t-on les intérêts composés ?",
+            "answer": "La formule est A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)], où P est le dépôt initial, r est le taux d'intérêt annuel (en décimal), n est le nombre de capitalisations par an, t est le nombre d'années et PMT est la contribution mensuelle. Cette formule prend en compte à la fois le versement initial et les contributions régulières."
+          },
+          {
+            "question": "Quelle fréquence de capitalisation choisir ?",
+            "answer": "Choisissez la fréquence qui correspond à votre compte d'investissement ou d'épargne réel. La plupart des comptes d'épargne bancaires capitalisent mensuellement ou quotidiennement, tandis que certains dépôts à terme capitalisent trimestriellement ou annuellement. La capitalisation mensuelle est la plus courante et produit des rendements légèrement supérieurs à la capitalisation trimestrielle ou annuelle."
+          },
+          {
+            "question": "Quel taux d'intérêt est réaliste ?",
+            "answer": "Les taux réalistes dépendent du type d'investissement. Les comptes d'épargne à haut rendement offrent actuellement 4 à 5 % par an. Les fonds indiciels boursiers ont historiquement rapporté environ 7 à 10 % par an sur de longues périodes (après inflation, plutôt 5 à 7 %). Les obligations rapportent généralement 3 à 5 %. Utilisez une estimation prudente pour la planification financière."
+          },
+          {
+            "question": "Comment fonctionne la comparaison de scénarios ?",
+            "answer": "Lorsque vous activez la comparaison de scénarios, vous pouvez saisir un deuxième montant de contribution mensuelle. Le calculateur calcule les deux scénarios en utilisant le même dépôt initial, le même taux d'intérêt et la même durée. Le graphique superpose les deux scénarios et un tableau comparatif affiche les montants finaux et la différence entre eux."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez nos autres outils financiers",
+        "description": "Gérez chaque aspect de vos finances avec nos calculateurs et suivis gratuits et faciles à utiliser."
+      }
     }
   }
 }

@@ -30,6 +30,7 @@ const commonDictionary: CommonDictionary = {
         en: "English",
         ro: "Română",
         de: "Deutsch",
+        fr: "Französisch",
     },
     sponsor: {
         label: "Gesponsert",

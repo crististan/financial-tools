@@ -458,6 +458,159 @@
         "title": "Entdecken Sie unsere weiteren Finanztools",
         "description": "Verwalten Sie jeden Aspekt Ihrer Finanzen mit unseren kostenlosen, benutzerfreundlichen Rechnern und Trackern."
       }
+    },
+    "fr": {
+      "slug": "calculateur-remboursement-pret",
+      "meta": {
+        "title": "Calculateur de Remboursement de Prêt | Mensualité et Tableau d'Amortissement",
+        "description": "Calculateur de remboursement de prêt gratuit. Calculez vos mensualités, le total des intérêts et consultez un tableau d'amortissement complet pour tout type de prêt. Compatible avec les prêts immobiliers, automobiles et personnels.",
+        "keywords": ["calculateur de prêt", "calculateur de remboursement", "calculateur de mensualité", "calculateur hypothécaire", "tableau d'amortissement", "calculateur d'intérêts", "calculateur prêt auto", "calculateur prêt personnel"]
+      },
+      "hero": {
+        "headline": "Calculateur de Remboursement de Prêt",
+        "description": "Calculez vos mensualités de prêt, le total des intérêts et consultez un tableau d'amortissement détaillé. Compatible avec les prêts immobiliers, automobiles, personnels et bien d'autres."
+      },
+      "tool": {
+        "loanAmountLabel": "Montant du prêt",
+        "loanAmountPlaceholder": "ex. 250000",
+        "interestRateLabel": "Taux d'intérêt annuel (%)",
+        "interestRatePlaceholder": "ex. 6,5",
+        "loanTermLabel": "Durée du prêt",
+        "loanTermPlaceholder": "ex. 30",
+        "termUnitLabel": "Unité de durée",
+        "termUnitYears": "Années",
+        "termUnitMonths": "Mois",
+        "monthlyPaymentLabel": "Mensualité",
+        "totalPaymentLabel": "Total payé",
+        "totalInterestLabel": "Total des intérêts",
+        "amortizationTable": {
+          "sectionTitle": "Tableau d'amortissement",
+          "sectionDescription": "Découvrez comment chaque mensualité est répartie entre le capital et les intérêts sur toute la durée de votre prêt.",
+          "toggleLabel": "Afficher le tableau d'amortissement",
+          "headers": {
+            "month": "Mois",
+            "payment": "Mensualité",
+            "principal": "Capital",
+            "interest": "Intérêts",
+            "balance": "Solde restant"
+          }
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment calculer le remboursement de votre prêt",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "dollarSign",
+            "title": "Saisissez le montant du prêt",
+            "description": "Entrez le montant total que vous souhaitez emprunter. Il s'agit du capital avant l'application des intérêts."
+          },
+          {
+            "number": 2,
+            "icon": "percent",
+            "title": "Définissez le taux et la durée",
+            "description": "Entrez votre taux d'intérêt annuel et la durée du prêt en années ou en mois. Le calculateur effectue la conversion automatiquement."
+          },
+          {
+            "number": 3,
+            "icon": "chartBar",
+            "title": "Consultez vos résultats",
+            "description": "Visualisez instantanément votre mensualité, le montant total payé et le total des intérêts. Développez le tableau d'amortissement pour un détail mois par mois."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi utiliser notre calculateur de prêt",
+        "sectionDescription": "Des fonctionnalités puissantes pour comprendre et planifier votre stratégie de remboursement.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Calcul instantané",
+            "description": "Les résultats se mettent à jour en temps réel dès que vous modifiez une valeur. Aucun bouton à cliquer, aucun rechargement de page. Des calculs rapides et précis, tout simplement."
+          },
+          {
+            "icon": "table",
+            "title": "Tableau d'amortissement complet",
+            "description": "Consultez un détail mois par mois montrant comment chaque mensualité est répartie entre le capital et les intérêts sur toute la durée de votre prêt."
+          },
+          {
+            "icon": "arrowLeftRight",
+            "title": "Unités de durée flexibles",
+            "description": "Saisissez la durée de votre prêt en années ou en mois. Le calculateur effectue la conversion automatiquement, vous offrant une flexibilité totale pour simuler tout scénario."
+          },
+          {
+            "icon": "shield",
+            "title": "Précis et transparent",
+            "description": "Utilise la formule d'amortissement standard employée par les banques et les établissements de crédit du monde entier. Aucun frais caché, aucune surprise dans nos calculs."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Comprendre le remboursement d'un prêt",
+        "articles": [
+          {
+            "title": "Comment fonctionne l'amortissement",
+            "content": "L'amortissement est le processus de remboursement d'un prêt par des mensualités régulières. Chaque paiement couvre deux parties : les intérêts calculés sur le solde restant et une portion qui réduit le capital. Au cours des premières années du prêt, la majeure partie de chaque mensualité est consacrée aux intérêts. À mesure que le solde diminue, une part croissante de chaque paiement est affectée au capital. C'est pourquoi effectuer des remboursements anticipés en début de prêt peut réduire considérablement le total des intérêts payés."
+          },
+          {
+            "title": "Prêts à taux fixe vs taux variable",
+            "content": "Un prêt à taux fixe verrouille votre taux d'intérêt pour toute la durée du contrat, rendant les mensualités prévisibles et faciles à budgétiser. Un prêt à taux variable commence avec un taux plus bas qui peut évoluer périodiquement en fonction des conditions du marché. Le taux fixe offre de la stabilité, tandis que le taux variable peut permettre des économies si les taux baissent. Notre calculateur modélise les prêts à taux fixe, le type le plus courant pour les prêts immobiliers et automobiles."
+          },
+          {
+            "title": "Le coût réel de l'emprunt",
+            "content": "Le coût total d'un prêt va bien au-delà du montant emprunté. Pour un prêt immobilier de 300 000 $ sur 30 ans à 6,5 % d'intérêt, vous paieriez environ 382 000 $ d'intérêts seuls, soit presque le double du prêt initial. Des durées plus courtes réduisent considérablement le total des intérêts : le même prêt sur 15 ans ne coûterait qu'environ 170 000 $ d'intérêts. Comprendre cette relation entre la durée et le coût total est essentiel pour prendre des décisions d'emprunt éclairées."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions fréquemment posées",
+        "items": [
+          {
+            "question": "Comment la mensualité est-elle calculée ?",
+            "answer": "La mensualité est calculée à l'aide de la formule d'amortissement standard : M = P × [r(1+r)^n] / [(1+r)^n – 1], où P est le montant du prêt, r est le taux d'intérêt mensuel (taux annuel divisé par 12) et n est le nombre total de mensualités. Cette formule garantit des paiements égaux sur toute la durée du prêt."
+          },
+          {
+            "question": "Que se passe-t-il si le taux d'intérêt est de 0 % ?",
+            "answer": "Avec un taux d'intérêt de 0 %, la mensualité correspond simplement au montant du prêt divisé par le nombre de mois. Il n'y a aucun frais d'intérêt, vous ne remboursez donc que le capital. Ce cas de figure est courant avec les offres de financement promotionnelles proposées par les commerçants ou les concessionnaires automobiles."
+          },
+          {
+            "question": "Quelle est la différence entre le taux d'intérêt et le TAEG ?",
+            "answer": "Le taux d'intérêt représente le coût de l'emprunt du capital. Le TAEG (Taux Annuel Effectif Global) inclut le taux d'intérêt ainsi que d'autres frais tels que les frais de dossier, les frais de clôture et l'assurance emprunteur. Le TAEG donne une image plus complète du coût total de l'emprunt et est généralement supérieur au taux d'intérêt de base."
+          },
+          {
+            "question": "Comment la durée du prêt affecte-t-elle le coût total ?",
+            "answer": "Des durées de prêt plus longues entraînent des mensualités plus faibles mais un total d'intérêts nettement plus élevé. Une durée plus courte signifie des mensualités plus élevées mais moins d'intérêts au total. Par exemple, un prêt de 200 000 $ à 6 % coûte environ 231 000 $ d'intérêts sur 30 ans, mais seulement environ 103 000 $ d'intérêts sur 15 ans."
+          },
+          {
+            "question": "Puis-je rembourser mon prêt par anticipation ?",
+            "answer": "La plupart des prêts autorisent le remboursement anticipé, bien que certains puissent comporter des indemnités de remboursement anticipé. Effectuer des versements supplémentaires sur le capital réduit le total des intérêts et raccourcit la durée du prêt. Même de petits paiements mensuels supplémentaires peuvent permettre d'économiser des milliers d'euros sur la durée d'un prêt immobilier."
+          },
+          {
+            "question": "Qu'est-ce qu'un tableau d'amortissement ?",
+            "answer": "Un tableau d'amortissement est un relevé détaillant chaque mensualité, décomposée en parts de capital et d'intérêts, accompagnée du solde restant. Il illustre comment le solde du prêt diminue au fil du temps et comment la proportion de chaque paiement affectée au capital augmente à mesure que le prêt avance."
+          },
+          {
+            "question": "Ce calculateur est-il fiable pour mon prêt immobilier ?",
+            "answer": "Ce calculateur fournit des estimations précises pour les prêts à taux fixe en utilisant la formule d'amortissement standard. Cependant, les mensualités réelles d'un prêt immobilier peuvent légèrement différer en raison des taxes foncières, de l'assurance habitation, de l'assurance emprunteur et des charges de copropriété, qui sont souvent incluses dans la mensualité totale mais ne font pas partie du calcul du prêt lui-même."
+          },
+          {
+            "question": "Pour quels types de prêts ce calculateur fonctionne-t-il ?",
+            "answer": "Ce calculateur fonctionne pour tout prêt amortissable à taux fixe, y compris les prêts immobiliers, les crédits automobiles, les prêts personnels, les prêts étudiants et les crédits professionnels. Il calcule les mensualités selon la méthode d'amortissement standard à paiements égaux utilisée par la plupart des établissements de crédit."
+          },
+          {
+            "question": "Pourquoi la majeure partie de mes premiers paiements va-t-elle aux intérêts ?",
+            "answer": "Les intérêts sont calculés chaque mois sur le solde restant. Lorsque le solde est élevé en début de prêt, la charge d'intérêts est importante, laissant une part moindre de chaque paiement pour la réduction du capital. À mesure que vous remboursez le solde, la part des intérêts diminue et une proportion croissante de chaque mensualité est consacrée au capital. C'est une caractéristique naturelle des prêts amortissables."
+          },
+          {
+            "question": "Puis-je utiliser ce calculateur sur mon téléphone ?",
+            "answer": "Oui, notre calculateur de remboursement de prêt est entièrement adaptatif et fonctionne parfaitement sur les smartphones, tablettes et ordinateurs de bureau. Ouvrez simplement la page dans votre navigateur mobile et commencez à calculer instantanément, sans aucun téléchargement d'application."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez nos autres outils financiers",
+        "description": "Gérez tous les aspects de vos finances grâce à nos calculateurs et outils de suivi gratuits et faciles à utiliser."
+      }
     }
   }
 }

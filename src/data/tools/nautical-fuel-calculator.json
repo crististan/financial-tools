@@ -452,6 +452,157 @@
         "title": "Entdecken Sie unsere weiteren Tools",
         "description": "Entdecken Sie unsere vollständige Palette an kostenlosen Rechnern und Planungstools für Finanzen, Navigation und mehr."
       }
+    },
+    "fr": {
+      "slug": "calculateur-carburant-nautique",
+      "meta": {
+        "title": "Calculateur de Carburant Nautique | Estimation Consommation & Autonomie Bateau",
+        "description": "Calculateur gratuit de consommation de carburant nautique pour skippers. Estimez la consommation en fonction de la distance, la vitesse, le type de moteur, la puissance et les conditions météo. Graphique consommation vs vitesse, coût total et autonomie.",
+        "keywords": ["calculateur carburant nautique", "consommation carburant bateau", "calculateur carburant marin", "estimateur carburant navigation", "calculateur autonomie bateau", "milles nautiques carburant", "coût carburant bateau", "outils skipper"]
+      },
+      "hero": {
+        "headline": "Calculateur de Carburant Nautique",
+        "description": "Estimez la consommation de carburant de votre bateau en fonction de la distance, la vitesse, le type de moteur et les conditions météo. Consultez le graphique consommation vs vitesse, calculez le coût total et vérifiez l'autonomie de votre navire."
+      },
+      "tool": {
+        "distanceLabel": "Distance (Milles nautiques)",
+        "distancePlaceholder": "ex. 50",
+        "speedLabel": "Vitesse (Nœuds)",
+        "speedPlaceholder": "ex. 8",
+        "engineTypeLabel": "Type de moteur",
+        "engineTypes": {
+          "outboard": "Hors-bord (Essence)",
+          "inboard": "In-bord (Diesel)",
+          "sailAux": "Voile + Moteur auxiliaire"
+        },
+        "enginePowerLabel": "Puissance moteur (CV)",
+        "enginePowerPlaceholder": "ex. 150",
+        "tankCapacityLabel": "Capacité du réservoir (Litres)",
+        "tankCapacityPlaceholder": "ex. 300",
+        "fuelPriceLabel": "Prix du carburant (par litre)",
+        "fuelPricePlaceholder": "ex. 1,85",
+        "windLabel": "Conditions de vent",
+        "windOptions": {
+          "calm": "Calme",
+          "light": "Brise légère",
+          "moderate": "Vent modéré",
+          "strong": "Vent fort"
+        },
+        "currentLabel": "Courant marin",
+        "currentOptions": {
+          "none": "Pas de courant",
+          "favorable": "Courant favorable",
+          "against": "Courant contraire"
+        },
+        "resultTravelTime": "Temps de trajet",
+        "resultFuelConsumption": "Carburant nécessaire",
+        "resultTotalCost": "Coût total",
+        "resultAutonomy": "Autonomie",
+        "hoursUnit": "heures",
+        "litersUnit": "L",
+        "nmiUnit": "mn",
+        "chartTitle": "Consommation de carburant vs Vitesse",
+        "chartFuelRate": "Base (L/h)",
+        "chartFuelRateWeather": "Avec Météo (L/h)",
+        "chartSpeed": "Vitesse (nœuds)",
+        "currencySymbol": "€",
+        "currentSpeedMarker": "Votre vitesse"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment estimer la consommation de carburant de votre bateau",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "ship",
+            "title": "Saisissez les détails du voyage",
+            "description": "Entrez la distance prévue en milles nautiques, la vitesse de croisière en nœuds et sélectionnez le type de moteur avec sa puissance en chevaux."
+          },
+          {
+            "number": 2,
+            "icon": "cloudRain",
+            "title": "Définissez les conditions météo",
+            "description": "Sélectionnez les conditions de vent et la direction du courant marin. Ces facteurs affectent considérablement la consommation de carburant et la vitesse effective."
+          },
+          {
+            "number": 3,
+            "icon": "fuel",
+            "title": "Consultez les estimations",
+            "description": "Visualisez le temps de trajet estimé, le carburant total nécessaire, le coût et l'autonomie. Le graphique consommation vs vitesse vous aide à trouver la vitesse de croisière optimale."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi utiliser notre calculateur nautique",
+        "sectionDescription": "Des fonctionnalités essentielles pour les skippers et propriétaires de bateaux afin de planifier des voyages économes en carburant.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Graphique Consommation vs Vitesse",
+            "description": "Graphique interactif montrant comment la consommation augmente avec la vitesse. Trouvez le compromis idéal entre temps de trajet et efficacité énergétique pour votre moteur."
+          },
+          {
+            "icon": "wind",
+            "title": "Analyse de l'impact météo",
+            "description": "Découvrez comment les conditions de vent et de courant affectent votre consommation. Planifiez votre départ pour la traversée la plus économique."
+          },
+          {
+            "icon": "gauge",
+            "title": "Autonomie de navigation",
+            "description": "Sachez exactement quelle distance votre bateau peut parcourir avec un plein dans les conditions actuelles. Une information de sécurité essentielle pour la planification de voyage."
+          },
+          {
+            "icon": "zap",
+            "title": "Calcul en temps réel",
+            "description": "Tous les résultats se mettent à jour instantanément lorsque vous modifiez les paramètres. Comparez rapidement différentes vitesses, routes et conditions pour optimiser votre plan de navigation."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Comprendre la consommation de carburant en mer",
+        "articles": [
+          {
+            "title": "Vitesse et carburant : la loi du carré",
+            "content": "La consommation de carburant des bateaux augmente approximativement avec le carré de la vitesse — doubler la vitesse peut pratiquement quadrupler la consommation. Cela s'explique par la résistance de l'eau qui croît de manière exponentielle avec la vitesse. Pour les coques à déplacement, la vitesse de croisière la plus efficace se situe généralement entre 60 et 70 % de la vitesse maximale de coque. Comprendre cette relation est essentiel pour naviguer de manière économique."
+          },
+          {
+            "title": "Comment la météo affecte la consommation de carburant",
+            "content": "Le vent et l'état de la mer ont un impact considérable sur la consommation de carburant en mer. Naviguer face à un vent et des vagues modérés peut augmenter la consommation de 25 à 50 % par rapport aux conditions de calme. Les courants marins jouent également un rôle majeur : un courant contraire de 1 à 2 nœuds réduit effectivement la vitesse sur le fond tout en maintenant le même régime moteur, augmentant significativement la consommation par mille nautique parcouru."
+          },
+          {
+            "title": "Moteurs marins : diesel contre essence",
+            "content": "Les moteurs diesel marins sont nettement plus économes que les moteurs hors-bord à essence, consommant généralement 30 à 40 % de carburant en moins par cheval-heure. Le diesel contient également environ 10 % d'énergie de plus par litre. Pour les petites embarcations, les hors-bord à essence offrent la simplicité. Pour les voiliers de croisière, les petits moteurs auxiliaires diesel offrent la meilleure combinaison d'efficacité et de fiabilité pour les longues traversées."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions fréquemment posées",
+        "items": [
+          {
+            "question": "Quelle est la précision de cette estimation de consommation ?",
+            "answer": "Ce calculateur fournit des estimations raisonnables basées sur des formules éprouvées d'ingénierie navale. La consommation réelle peut varier de 10 à 20 % selon l'état de la coque, le chargement du bateau, l'état de la mer, l'efficacité de l'hélice et l'entretien du moteur. Prévoyez toujours une réserve de 20 à 30 % au-delà des besoins calculés pour la sécurité."
+          },
+          {
+            "question": "Quel type de moteur dois-je sélectionner ?",
+            "answer": "Sélectionnez « Hors-bord (Essence) » pour les bateaux équipés de moteurs externes à essence. Choisissez « In-bord (Diesel) » pour les bateaux avec moteurs diesel intégrés, y compris la plupart des yachts de croisière. Sélectionnez « Voile + Moteur auxiliaire » pour les voiliers qui utilisent leur moteur principalement pour les manœuvres et par temps calme."
+          },
+          {
+            "question": "Comment le vent affecte-t-il la consommation de carburant ?",
+            "answer": "Le vent crée des vagues et augmente la résistance de l'air, nécessitant davantage de puissance moteur pour maintenir la vitesse. Une brise légère ajoute environ 10 % à la consommation, un vent modéré environ 25 %, et un vent fort peut augmenter la consommation de 50 % ou plus. Le vent de face a le plus grand impact, tandis que le vent de travers crée un roulis inconfortable qui augmente également la consommation."
+          },
+          {
+            "question": "Quelle est la réserve de carburant recommandée en navigation ?",
+            "answer": "La règle standard est la « règle des tiers » : un tiers du carburant pour l'aller, un tiers pour le retour et un tiers en réserve. Pour les traversées en haute mer, une réserve minimale de 30 % au-dessus de la consommation calculée est recommandée. Cela tient compte des changements météo imprévus, des détours de navigation et des inefficacités du moteur."
+          },
+          {
+            "question": "Pourquoi le graphique montre-t-il une augmentation exponentielle de la consommation avec la vitesse ?",
+            "answer": "La résistance de l'eau augmente approximativement avec le carré de la vitesse en raison de la résistance de vague et de la friction. La plupart des bateaux à déplacement ont une vitesse de croisière économique autour de 60 à 70 % de leur vitesse maximale de coque, où le rapport carburant par mille est le plus favorable."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez nos autres outils",
+        "description": "Explorez notre gamme complète de calculateurs et d'outils de planification gratuits pour les finances, la navigation et bien plus encore."
+      }
     }
   }
 }
