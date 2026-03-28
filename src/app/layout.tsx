@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Outfit } from "next/font/google";
+import ConfigInitializer from "@/components/config-initializer";
 
 const outfit = Outfit({
   subsets: ["latin"],
@@ -27,6 +28,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${outfit.className} antialiased`}>
+        <ConfigInitializer />
         {children}
       </body>
     </html>

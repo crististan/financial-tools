@@ -5,6 +5,7 @@ import { useState, useCallback, useEffect } from 'react';
 import SalaryCalculator from '@/components/salary-calculator';
 import UnemploymentCalculator from '@/components/unemployment-calculator';
 import PensionCalculator from '@/components/pension-calculator';
+import { getConfigKey, setConfigKey } from '@/lib/local-storage';
 
 type CalculatorMode = 'salary' | 'unemployment' | 'pension';
 
@@ -22,36 +23,24 @@ const TAB_CONFIG: { key: CalculatorMode; labelKey: string; slug: string }[] = [
   { key: 'pension', labelKey: 'tabPension', slug: 'calculator-pensie' },
 ];
 
-function getSalaryFromUrl(): number {
-  if (typeof window === 'undefined') return 0;
-  const params = new URLSearchParams(window.location.search);
-  return parseFloat(params.get('salary') || '0') || 0;
-}
-
 export default function RomanianFinancialCalculator({ primaryMode, labels, configData }: RomanianFinancialCalculatorProps) {
-  const [initialSalaryFromUrl, setInitialSalaryFromUrl] = useState<number | undefined>(undefined);
+  const [initialSalary, setInitialSalary] = useState<number | undefined>(undefined);
   const [currentGrossSalary, setCurrentGrossSalary] = useState<number>(0);
 
-  // Read salary from URL on mount (client-side only)
+  // Read salary from localStorage on mount
   useEffect(() => {
-    const urlSalary = getSalaryFromUrl();
-    if (urlSalary > 0) {
-      setInitialSalaryFromUrl(urlSalary);
-      setCurrentGrossSalary(urlSalary);
+    const salaryTool = getConfigKey<{ income: number }>('salary_tool');
+    if (salaryTool?.income && salaryTool.income > 0) {
+      setInitialSalary(salaryTool.income);
+      setCurrentGrossSalary(salaryTool.income);
     }
   }, []);
 
   const handleSalaryChange = useCallback((gross: number) => {
     setCurrentGrossSalary(gross);
+    // Persist to localStorage
+    setConfigKey('salary_tool', { income: gross });
   }, []);
-
-  const buildHref = (slug: string) => {
-    const base = `/ro/financiar/${slug}`;
-    if (currentGrossSalary > 0) {
-      return `${base}?salary=${currentGrossSalary}`;
-    }
-    return base;
-  };
 
   return (
     <div className="w-full">
@@ -73,7 +62,7 @@ export default function RomanianFinancialCalculator({ primaryMode, labels, confi
             return (
               <Link
                 key={key}
-                href={buildHref(slug)}
+                href={`/ro/financiar/${slug}`}
                 className="rounded-lg px-3 py-2.5 text-center text-sm font-medium text-[var(--clr-neutral-100)] hover:text-[var(--clr-neutral-0)] transition-colors"
               >
                 {labels[labelKey]}
@@ -89,14 +78,14 @@ export default function RomanianFinancialCalculator({ primaryMode, labels, confi
           labels={labels.salary}
           configData={configData.salary}
           onSalaryChange={handleSalaryChange}
-          initialSalary={initialSalaryFromUrl}
+          initialSalary={initialSalary}
         />
       )}
       {primaryMode === 'unemployment' && (
         <UnemploymentCalculator
           labels={labels.unemployment}
           configData={configData.unemployment}
-          initialSalary={initialSalaryFromUrl}
+          initialSalary={initialSalary}
           onSalaryChange={handleSalaryChange}
         />
       )}
@@ -104,7 +93,7 @@ export default function RomanianFinancialCalculator({ primaryMode, labels, confi
         <PensionCalculator
           labels={labels.pension}
           configData={configData.pension}
-          initialSalary={initialSalaryFromUrl}
+          initialSalary={initialSalary}
           onSalaryChange={handleSalaryChange}
         />
       )}
