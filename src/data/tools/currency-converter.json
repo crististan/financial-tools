@@ -628,6 +628,162 @@
         "title": "Découvrez nos autres outils financiers",
         "description": "Gérez chaque aspect de vos finances avec nos calculateurs et outils de suivi gratuits et faciles à utiliser."
       }
+    },
+    "it": {
+      "slug": "convertitore-valuta",
+      "meta": {
+        "title": "Convertitore di Valuta Gratuito | Tassi di Cambio in Tempo Reale",
+        "description": "Converti tra 10 principali valute mondiali con il nostro convertitore di valuta online gratuito. Ottieni tassi di cambio istantanei per USD, EUR, GBP, JPY e altre.",
+        "keywords": ["convertitore di valuta", "tassi di cambio", "USD in EUR", "convertire valuta", "cambio valute", "calcolatore di valuta", "convertitore di denaro"]
+      },
+      "hero": {
+        "headline": "Convertitore di Valuta",
+        "description": "Converti le valute in modo rapido e affidabile con tassi di cambio aggiornati. Supporto per 10 principali valute mondiali."
+      },
+      "tool": {
+        "fromLabel": "Da",
+        "toLabel": "A",
+        "amountPlaceholder": "Inserisci l'importo",
+        "switchButtonAriaLabel": "Inverti le valute",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "lastUpdated": "Ultimo aggiornamento: {date}",
+        "options": {
+          "USD": "Dollaro statunitense",
+          "EUR": "Euro",
+          "GBP": "Sterlina britannica",
+          "JPY": "Yen giapponese",
+          "AUD": "Dollaro australiano",
+          "CAD": "Dollaro canadese",
+          "CHF": "Franco svizzero",
+          "CNY": "Yuan cinese",
+          "SEK": "Corona svedese",
+          "NZD": "Dollaro neozelandese"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Come convertire le valute online",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "keyboard",
+            "title": "Inserisci l'importo",
+            "description": "Digita l'importo che desideri convertire nel campo di inserimento. Il nostro convertitore accetta qualsiasi valore da 0,01 a 999.999.999."
+          },
+          {
+            "number": 2,
+            "icon": "arrowLeftRight",
+            "title": "Seleziona le valute",
+            "description": "Scegli la valuta di origine e quella di destinazione dai menu a tendina. Supportiamo 10 principali valute mondiali."
+          },
+          {
+            "number": 3,
+            "icon": "zap",
+            "title": "Ottieni risultati istantanei",
+            "description": "La conversione viene calcolata automaticamente in tempo reale. Nessun pulsante da cliccare, nessuna attesa. I risultati si aggiornano mentre digiti."
+          }
+        ]
+      },
+      "ratesTable": {
+        "sectionTitle": "Tassi di cambio popolari",
+        "sectionDescription": "Confronta i tassi di cambio tra le coppie di valute più scambiate al mondo.",
+        "headers": {
+          "pair": "Coppia di valute",
+          "rate": "Tasso di cambio",
+          "inverseRate": "Tasso inverso"
+        }
+      },
+      "features": {
+        "sectionTitle": "Perché usare il nostro convertitore di valuta",
+        "sectionDescription": "Funzionalità affidabili progettate per conversioni di valuta precise e senza complicazioni.",
+        "items": [
+          {
+            "icon": "refreshCw",
+            "title": "Tassi di cambio in tempo reale",
+            "description": "I nostri tassi vengono aggiornati regolarmente per riflettere le ultime condizioni di mercato, garantendo conversioni sempre accurate."
+          },
+          {
+            "icon": "globe",
+            "title": "10+ valute principali",
+            "description": "Converti tra USD, EUR, GBP, JPY e altre 6 principali valute mondiali utilizzate nel commercio e nei viaggi internazionali."
+          },
+          {
+            "icon": "badgeDollarSign",
+            "title": "100% gratuito per sempre",
+            "description": "Nessun costo nascosto, nessun livello premium, nessun abbonamento. Il nostro convertitore di valuta è completamente gratuito, per sempre."
+          },
+          {
+            "icon": "userX",
+            "title": "Nessuna registrazione richiesta",
+            "description": "Inizia a convertire le valute immediatamente. Nessuna creazione di account, nessuna verifica e-mail, nessuna raccolta di dati personali."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Capire il cambio valutario",
+        "articles": [
+          {
+            "title": "Cosa influenza i movimenti dei tassi di cambio?",
+            "content": "I tassi di cambio sono influenzati da una complessa interazione di fattori economici. I differenziali dei tassi di interesse tra i paesi, i tassi di inflazione, le bilance commerciali e la stabilità politica giocano tutti un ruolo significativo. Quando un paese aumenta i tassi di interesse, la sua valuta tende a rafforzarsi poiché gli investitori stranieri cercano rendimenti più elevati. Al contrario, un'inflazione elevata erode il potere d'acquisto e tende a indebolire una valuta nel tempo."
+          },
+          {
+            "title": "Le valute più scambiate al mondo",
+            "content": "Il dollaro statunitense domina i mercati valutari globali, intervenendo in circa l'88% di tutte le transazioni. L'euro segue come seconda valuta più scambiata, rappresentando circa il 31% delle operazioni. Lo yen giapponese, la sterlina britannica e il dollaro australiano completano la top cinque. Insieme, queste cinque valute rappresentano la stragrande maggioranza dei 7.500 miliardi di dollari scambiati quotidianamente sui mercati forex."
+          },
+          {
+            "title": "Consigli per ottenere i migliori tassi di cambio",
+            "content": "Per massimizzare il valore del cambio valutario, confronta i tassi di diversi fornitori prima di convertire. Evita di cambiare denaro negli aeroporti o negli hotel, dove i tassi sono generalmente sfavorevoli. Considera l'utilizzo di convertitori online per verificare i tassi prima di recarti presso un ufficio di cambio fisico. Per importi elevati, anche piccole differenze nei tassi di cambio possono tradursi in risparmi significativi."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande frequenti",
+        "items": [
+          {
+            "question": "Come funziona un convertitore di valuta?",
+            "answer": "Un convertitore di valuta utilizza i tassi di cambio attuali per calcolare quanto vale una valuta in un'altra. Inserisci un importo, selezioni le valute di origine e di destinazione, e il convertitore moltiplica l'importo per il tasso di cambio per mostrare il valore equivalente."
+          },
+          {
+            "question": "Cosa sono i tassi di cambio e come vengono determinati?",
+            "answer": "I tassi di cambio rappresentano il valore di una valuta rispetto a un'altra. Sono determinati dalla domanda e dall'offerta sui mercati valutari, influenzati da fattori come i tassi di interesse, l'inflazione, le bilance commerciali e la stabilità economica."
+          },
+          {
+            "question": "Qual è la differenza tra il prezzo denaro e il prezzo lettera?",
+            "answer": "Il prezzo denaro (bid) è il prezzo al quale un operatore acquista una valuta, mentre il prezzo lettera (ask) è il prezzo al quale la vende. La differenza tra i due si chiama spread e rappresenta il margine di profitto dell'operatore."
+          },
+          {
+            "question": "Perché i tassi di cambio fluttuano?",
+            "answer": "I tassi di cambio fluttuano a causa di variazioni negli indicatori economici, eventi geopolitici, politiche delle banche centrali, speculazione di mercato e differenze nei tassi di interesse tra i paesi. Questi fattori influenzano la domanda e l'offerta per ciascuna valuta."
+          },
+          {
+            "question": "Quali sono le valute più scambiate al mondo?",
+            "answer": "Le valute più scambiate sono il dollaro statunitense (USD), l'euro (EUR), lo yen giapponese (JPY), la sterlina britannica (GBP) e il dollaro australiano (AUD). Il USD interviene in circa l'88% di tutte le transazioni valutarie."
+          },
+          {
+            "question": "È meglio cambiare valuta in banca o online?",
+            "answer": "I servizi di cambio online offrono generalmente tassi più competitivi rispetto alle banche, poiché hanno costi operativi inferiori. Tuttavia, le banche offrono maggiore sicurezza e sono adatte per transazioni di importo elevato. Confronta sempre tassi e commissioni prima di effettuare il cambio."
+          },
+          {
+            "question": "Cos'è una coppia di valute?",
+            "answer": "Una coppia di valute mostra il tasso di cambio tra due monete. La prima valuta indicata è la valuta base e la seconda è la valuta quotata. Ad esempio, USD/EUR = 0,92 significa che 1 dollaro statunitense equivale a 0,92 euro."
+          },
+          {
+            "question": "Con quale frequenza vengono aggiornati i tassi di cambio?",
+            "answer": "I nostri tassi di cambio vengono aggiornati regolarmente durante la giornata per riflettere le condizioni attuali del mercato. Per le transazioni più sensibili al fattore tempo, consigliamo di verificare i tassi immediatamente prima della conversione, poiché i mercati forex operano 24 ore su 24, cinque giorni alla settimana."
+          },
+          {
+            "question": "Posso convertire le valute dal mio telefono?",
+            "answer": "Sì, il nostro convertitore di valuta è completamente responsive e funziona su qualsiasi dispositivo, inclusi smartphone, tablet e computer desktop. Basta aprire la pagina nel browser del telefono e iniziare a convertire immediatamente, senza bisogno di scaricare alcuna app."
+          },
+          {
+            "question": "Cos'è il tasso di cambio interbancario?",
+            "answer": "Il tasso interbancario, detto anche tasso mid-market, è il punto medio tra i prezzi di acquisto e di vendita di due valute sul mercato globale. È considerato il tasso di cambio più equo ed è quello visualizzato dal nostro convertitore. Le banche e i servizi di cambio applicano generalmente un margine su questo tasso come profitto."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri i nostri altri strumenti finanziari",
+        "description": "Gestisci ogni aspetto delle tue finanze con i nostri calcolatori e strumenti di monitoraggio gratuiti e facili da usare."
+      }
     }
   }
 }

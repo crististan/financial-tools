@@ -5,6 +5,7 @@ const commonDictionaries: Record<string, () => Promise<Record<string, unknown>>>
     ro: () => import('@/dictionaries/ro/common').then(m => m.default),
     de: () => import('@/dictionaries/de/common').then(m => m.default),
     fr: () => import('@/dictionaries/fr/common').then(m => m.default),
+    it: () => import('@/dictionaries/it/common').then(m => m.default),
 };
 
 export async function getDictionary<T = Record<string, unknown>>(lang: string): Promise<T> {

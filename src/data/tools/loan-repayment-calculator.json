@@ -611,6 +611,159 @@
         "title": "Découvrez nos autres outils financiers",
         "description": "Gérez tous les aspects de vos finances grâce à nos calculateurs et outils de suivi gratuits et faciles à utiliser."
       }
+    },
+    "it": {
+      "slug": "calcolatore-rate-prestito",
+      "meta": {
+        "title": "Calcolatore Rate Prestito | Rata Mensile e Piano di Ammortamento",
+        "description": "Calcolatore di rate prestito gratuito. Calcola le rate mensili, gli interessi totali e visualizza un piano di ammortamento completo per qualsiasi prestito. Supporta mutui, prestiti auto e prestiti personali.",
+        "keywords": ["calcolatore prestito", "calcolatore rate prestito", "calcolatore rata mensile", "calcolatore mutuo", "piano di ammortamento", "calcolatore interessi", "calcolatore prestito auto", "calcolatore prestito personale"]
+      },
+      "hero": {
+        "headline": "Calcolatore Rate Prestito",
+        "description": "Calcola le rate mensili del tuo prestito, gli interessi totali e visualizza un piano di ammortamento dettagliato. Adatto per mutui, prestiti auto, prestiti personali e molto altro."
+      },
+      "tool": {
+        "loanAmountLabel": "Importo del prestito",
+        "loanAmountPlaceholder": "es. 250000",
+        "interestRateLabel": "Tasso di interesse annuo (%)",
+        "interestRatePlaceholder": "es. 6,5",
+        "loanTermLabel": "Durata del prestito",
+        "loanTermPlaceholder": "es. 30",
+        "termUnitLabel": "Unità di durata",
+        "termUnitYears": "Anni",
+        "termUnitMonths": "Mesi",
+        "monthlyPaymentLabel": "Rata mensile",
+        "totalPaymentLabel": "Totale pagato",
+        "totalInterestLabel": "Interessi totali",
+        "amortizationTable": {
+          "sectionTitle": "Piano di ammortamento",
+          "sectionDescription": "Scopri come ogni rata viene suddivisa tra capitale e interessi per l'intera durata del prestito.",
+          "toggleLabel": "Mostra il piano di ammortamento",
+          "headers": {
+            "month": "Mese",
+            "payment": "Rata",
+            "principal": "Capitale",
+            "interest": "Interessi",
+            "balance": "Saldo residuo"
+          }
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Come calcolare il rimborso del prestito",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "dollarSign",
+            "title": "Inserisci l'importo del prestito",
+            "description": "Digita l'importo totale che intendi prendere in prestito. Questo rappresenta il capitale prima dell'applicazione degli interessi."
+          },
+          {
+            "number": 2,
+            "icon": "percent",
+            "title": "Imposta il tasso e la durata",
+            "description": "Inserisci il tasso di interesse annuo e la durata del prestito in anni o mesi. Il calcolatore effettua la conversione automaticamente."
+          },
+          {
+            "number": 3,
+            "icon": "chartBar",
+            "title": "Analizza i risultati",
+            "description": "Visualizza istantaneamente la rata mensile, l'importo totale pagato e gli interessi totali. Espandi il piano di ammortamento per un dettaglio mese per mese."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché usare il nostro calcolatore di prestiti",
+        "sectionDescription": "Funzionalità avanzate per comprendere e pianificare la tua strategia di rimborso del prestito.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Calcolo istantaneo",
+            "description": "I risultati si aggiornano in tempo reale ogni volta che modifichi un valore. Nessun pulsante da cliccare, nessun ricaricamento della pagina. Solo calcoli rapidi e precisi."
+          },
+          {
+            "icon": "table",
+            "title": "Piano di ammortamento completo",
+            "description": "Visualizza un dettaglio mese per mese che mostra come ogni rata viene suddivisa tra capitale e interessi per l'intera durata del prestito."
+          },
+          {
+            "icon": "arrowLeftRight",
+            "title": "Unità di durata flessibili",
+            "description": "Inserisci la durata del prestito in anni o mesi. Il calcolatore effettua la conversione automaticamente, offrendoti la massima flessibilità per simulare qualsiasi scenario."
+          },
+          {
+            "icon": "shield",
+            "title": "Preciso e trasparente",
+            "description": "Utilizza la formula di ammortamento standard impiegata da banche e istituti di credito in tutto il mondo. Nessun costo nascosto, nessuna sorpresa nei nostri calcoli."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Capire il rimborso del prestito",
+        "articles": [
+          {
+            "title": "Come funziona l'ammortamento",
+            "content": "L'ammortamento è il processo di rimborso di un prestito attraverso rate mensili regolari. Ogni pagamento copre due componenti: gli interessi calcolati sul saldo residuo e una quota che riduce il capitale. Nei primi anni del prestito, la maggior parte di ogni rata è destinata agli interessi. Man mano che il saldo diminuisce, una quota sempre maggiore di ogni rata viene destinata al capitale. Ecco perché effettuare pagamenti anticipati all'inizio del prestito può ridurre significativamente gli interessi totali pagati."
+          },
+          {
+            "title": "Prestiti a tasso fisso e a tasso variabile",
+            "content": "Un prestito a tasso fisso blocca il tasso di interesse per l'intera durata, rendendo le rate mensili prevedibili e facili da gestire nel budget. Un prestito a tasso variabile inizia con un tasso più basso che può cambiare periodicamente in base alle condizioni di mercato. Il tasso fisso offre stabilità, mentre il tasso variabile può far risparmiare se i tassi scendono. Il nostro calcolatore modella i prestiti a tasso fisso, il tipo più diffuso per mutui e prestiti auto."
+          },
+          {
+            "title": "Il costo reale del prestito",
+            "content": "Il costo totale di un prestito va ben oltre l'importo preso in prestito. Per un mutuo trentennale di 300.000 $ al 6,5% di interesse, si pagherebbero circa 382.000 $ di soli interessi, quasi raddoppiando il prestito originale. Durate più brevi riducono drasticamente gli interessi totali: lo stesso prestito su 15 anni costerebbe circa 170.000 $ di interessi. Comprendere questa relazione tra durata e costo totale è fondamentale per prendere decisioni di finanziamento consapevoli."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande frequenti",
+        "items": [
+          {
+            "question": "Come viene calcolata la rata mensile?",
+            "answer": "La rata mensile viene calcolata utilizzando la formula di ammortamento standard: M = P × [r(1+r)^n] / [(1+r)^n – 1], dove P è l'importo del prestito, r è il tasso di interesse mensile (tasso annuo diviso per 12) e n è il numero totale di rate mensili. Questa formula garantisce pagamenti uguali per l'intera durata del prestito."
+          },
+          {
+            "question": "Cosa succede se il tasso di interesse è 0%?",
+            "answer": "Con un tasso di interesse dello 0%, la rata mensile corrisponde semplicemente all'importo del prestito diviso per il numero di mesi. Non vengono addebitati interessi, quindi si rimborsa solo il capitale. Questa situazione è comune nelle offerte di finanziamento promozionali proposte da rivenditori o concessionari auto."
+          },
+          {
+            "question": "Qual è la differenza tra tasso di interesse e TAEG?",
+            "answer": "Il tasso di interesse è il costo del prestito del capitale. Il TAEG (Tasso Annuo Effettivo Globale) include il tasso di interesse più altri costi come le spese di istruttoria, le spese di chiusura e l'assicurazione. Il TAEG offre un quadro più completo del costo totale del finanziamento ed è generalmente superiore al tasso di interesse base."
+          },
+          {
+            "question": "Come influisce la durata del prestito sul costo totale?",
+            "answer": "Durate più lunghe comportano rate mensili più basse ma interessi totali significativamente più elevati. Una durata più breve significa rate mensili più alte ma meno interessi complessivi. Ad esempio, un prestito di 200.000 $ al 6% costa circa 231.000 $ di interessi in 30 anni, ma solo circa 103.000 $ di interessi in 15 anni."
+          },
+          {
+            "question": "Posso estinguere il prestito anticipatamente?",
+            "answer": "La maggior parte dei prestiti consente l'estinzione anticipata, anche se alcuni possono prevedere penali di rimborso anticipato. Effettuare pagamenti aggiuntivi sul capitale riduce gli interessi totali e accorcia la durata del prestito. Anche piccoli pagamenti mensili extra possono far risparmiare migliaia di euro nel corso di un mutuo."
+          },
+          {
+            "question": "Cos'è un piano di ammortamento?",
+            "answer": "Un piano di ammortamento è una tabella che mostra ogni rata mensile suddivisa nelle componenti di capitale e interessi, insieme al saldo residuo. Illustra come il debito residuo diminuisce nel tempo e come la quota di ogni pagamento destinata al capitale aumenta man mano che il prestito avanza."
+          },
+          {
+            "question": "Questo calcolatore è accurato per il mio mutuo?",
+            "answer": "Questo calcolatore fornisce stime accurate per i prestiti a tasso fisso utilizzando la formula di ammortamento standard. Tuttavia, le rate effettive del mutuo possono differire leggermente a causa di imposte sulla proprietà, assicurazione sulla casa, assicurazione ipotecaria e spese condominiali, che sono spesso incluse nella rata mensile totale ma non fanno parte del calcolo del prestito stesso."
+          },
+          {
+            "question": "Per quali tipi di prestiti funziona questo calcolatore?",
+            "answer": "Questo calcolatore funziona per qualsiasi prestito ammortizzabile a tasso fisso, inclusi mutui, prestiti auto, prestiti personali, prestiti studenteschi e finanziamenti aziendali. Calcola le rate in base al metodo di ammortamento standard a rate costanti utilizzato dalla maggior parte degli istituti di credito."
+          },
+          {
+            "question": "Perché la maggior parte delle prime rate va agli interessi?",
+            "answer": "Gli interessi vengono calcolati ogni mese sul saldo residuo. Quando il saldo è elevato all'inizio del prestito, la quota di interessi è consistente, lasciando una parte minore di ogni rata per la riduzione del capitale. Man mano che il saldo diminuisce, la quota di interessi si riduce e una proporzione crescente di ogni rata viene destinata al capitale. Questa è una caratteristica naturale dei prestiti ammortizzabili."
+          },
+          {
+            "question": "Posso usare questo calcolatore sul mio telefono?",
+            "answer": "Sì, il nostro calcolatore di rate è completamente responsivo e funziona perfettamente su smartphone, tablet e computer desktop. Basta aprire la pagina nel browser del telefono e iniziare a calcolare istantaneamente, senza bisogno di scaricare alcuna app."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri i nostri altri strumenti finanziari",
+        "description": "Gestisci ogni aspetto delle tue finanze con i nostri calcolatori e strumenti di monitoraggio gratuiti e facili da usare."
+      }
     }
   }
 }

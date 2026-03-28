@@ -667,6 +667,173 @@
         "title": "Découvrez nos autres outils financiers",
         "description": "Gérez tous les aspects de vos finances grâce à nos calculateurs et outils de suivi gratuits et faciles à utiliser."
       }
+    },
+    "it": {
+      "slug": "tracker-budget-mensile",
+      "meta": {
+        "title": "Tracker Budget Mensile | Pianificatore Gratuito di Entrate e Uscite",
+        "description": "Tracker di budget mensile gratuito. Pianifica e monitora le tue entrate e uscite, confronta le spese previste con quelle effettive e mantieni il controllo delle tue finanze personali. Nessuna registrazione richiesta.",
+        "keywords": ["tracker budget", "budget mensile", "tracker spese", "tracker entrate", "pianificatore budget", "finanze personali", "monitoraggio spese", "gestione denaro"]
+      },
+      "hero": {
+        "headline": "Tracker Budget Mensile",
+        "description": "Pianifica le tue entrate e uscite mensili, monitora le spese effettive e scopri esattamente dove vanno i tuoi soldi. Tutti i dati restano nel tuo browser."
+      },
+      "tool": {
+        "incomeTitle": "Entrate",
+        "expensesTitle": "Uscite",
+        "categoryLabel": "Categoria",
+        "categoryPlaceholder": "Nome della categoria",
+        "plannedLabel": "Previsto",
+        "plannedPlaceholder": "0.00",
+        "actualLabel": "Effettivo",
+        "actualPlaceholder": "0.00",
+        "addButtonLabel": "Aggiungi categoria",
+        "removeButtonAriaLabel": "Rimuovi categoria",
+        "summaryTitle": "Riepilogo Mensile",
+        "totalIncomePlanLabel": "Entrate Totali (Previste)",
+        "totalIncomeActualLabel": "Entrate Totali (Effettive)",
+        "totalExpensesPlanLabel": "Uscite Totali (Previste)",
+        "totalExpensesActualLabel": "Uscite Totali (Effettive)",
+        "balancePlanLabel": "Saldo (Previsto)",
+        "balanceActualLabel": "Saldo (Effettivo)",
+        "differenceLabel": "Differenza",
+        "resetButtonLabel": "Reimposta tutti i dati",
+        "resetConfirmMessage": "Sei sicuro di voler reimpostare tutti i dati del budget? Questa azione non può essere annullata.",
+        "noDataMessage": "Aggiungi almeno una categoria di entrate e una di uscite per visualizzare il riepilogo.",
+        "progressLabel": "{percent}% del previsto",
+        "defaultCategories": {
+          "income": [
+            { "name": "Stipendio", "planned": 5000 },
+            { "name": "Freelance / Reddito Secondario", "planned": 0 }
+          ],
+          "expenses": [
+            { "name": "Affitto / Mutuo", "planned": 1500 },
+            { "name": "Utenze", "planned": 200 },
+            { "name": "Alimentari", "planned": 400 },
+            { "name": "Trasporti", "planned": 150 },
+            { "name": "Salute", "planned": 100 },
+            { "name": "Svago", "planned": 100 },
+            { "name": "Abbonamenti", "planned": 50 },
+            { "name": "Risparmi", "planned": 500 }
+          ]
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Come Monitorare il Tuo Budget Mensile",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "listPlus",
+            "title": "Configura le Categorie",
+            "description": "Inizia con le categorie predefinite di entrate e uscite, oppure personalizzale in base alla tua situazione finanziaria. Aggiungi o rimuovi categorie in qualsiasi momento."
+          },
+          {
+            "number": 2,
+            "icon": "pencilLine",
+            "title": "Inserisci gli Importi Previsti ed Effettivi",
+            "description": "A inizio mese, imposta i budget previsti per ogni categoria. Man mano che spendi e guadagni, aggiorna gli importi effettivi per monitorare i tuoi progressi."
+          },
+          {
+            "number": 3,
+            "icon": "chartBar",
+            "title": "Consulta il Riepilogo",
+            "description": "Il riepilogo si aggiorna istantaneamente, mostrando entrate totali, uscite, saldo e il confronto tra le spese effettive e il piano. Il verde indica che sei in linea, il rosso indica uno sforamento del budget."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché Usare il Nostro Tracker di Budget",
+        "sectionDescription": "Strumenti semplici ma potenti per aiutarti a tenere sotto controllo le tue finanze mensili.",
+        "items": [
+          {
+            "icon": "save",
+            "title": "Salvataggio Automatico nel Browser",
+            "description": "I dati del tuo budget vengono salvati automaticamente nella memoria locale del browser. Torna quando vuoi e riprendi esattamente da dove avevi lasciato."
+          },
+          {
+            "icon": "layoutList",
+            "title": "Categorie Personalizzabili",
+            "description": "Inizia con le categorie predefinite intelligenti o creane di nuove. Aggiungi, rinomina o rimuovi categorie per adattarle perfettamente alle tue abitudini di spesa."
+          },
+          {
+            "icon": "barChart3",
+            "title": "Confronto Previsto vs Effettivo",
+            "description": "Imposta i budget previsti a inizio mese e monitora le spese effettive man mano. Scopri subito dove sei sotto o sopra il budget."
+          },
+          {
+            "icon": "shield",
+            "title": "Privato e Sicuro",
+            "description": "Tutti i tuoi dati finanziari restano nel tuo browser. Non raccogliamo, memorizziamo o trasmettiamo mai le tue informazioni di budget personali ad alcun server."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Padroneggiare il Tuo Budget Mensile",
+        "articles": [
+          {
+            "title": "La Regola del Budget 50/30/20",
+            "content": "Uno dei metodi di budgeting più diffusi prevede di destinare il 50% del reddito netto alle necessità (affitto, utenze, alimentari), il 30% ai desideri (svago, cene fuori, hobby) e il 20% al risparmio e al rimborso dei debiti. Questa regola semplice offre un punto di partenza equilibrato per chiunque si avvicini alla gestione del budget. Adatta le percentuali alla tua situazione, ma il principio fondamentale resta: dai la priorità alle necessità, goditi la vita e paga sempre prima te stesso attraverso il risparmio."
+          },
+          {
+            "title": "Perché Monitorare le Spese è Importante",
+            "content": "Le ricerche dimostrano che le persone che monitorano attivamente le proprie spese risparmiano significativamente di più rispetto a chi non lo fa. Registrare le uscite crea consapevolezza sulle abitudini di spesa e riduce gli acquisti impulsivi. Gli studi evidenziano che il semplice monitoraggio delle finanze può ridurre le spese superflue del 15-20%. Un tracker di budget mensile rende questo processo semplice, mostrando esattamente dove vanno i tuoi soldi e mettendo in evidenza le aree in cui puoi risparmiare."
+          },
+          {
+            "title": "Costruire un Fondo di Emergenza",
+            "content": "Gli esperti finanziari raccomandano di accantonare da tre a sei mesi di spese correnti in un fondo di emergenza facilmente accessibile. Inizia inserendo una categoria di risparmio nel tuo budget mensile, anche se all'inizio puoi mettere da parte solo una piccola somma. La costanza conta più dell'importo. Una volta che disponi di un cuscinetto per le spese impreviste come riparazioni auto, spese mediche o perdita del lavoro, acquisisci sicurezza finanziaria e serenità, riducendo lo stress e migliorando la capacità decisionale."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Dove vengono salvati i miei dati di budget?",
+            "answer": "I dati del tuo budget sono salvati esclusivamente nella memoria locale del tuo browser. Non inviamo mai le tue informazioni finanziarie ad alcun server. Ciò significa che i tuoi dati sono completamente privati, ma anche che la cancellazione dei dati del browser eliminerà il tuo budget. Ti consigliamo di esportare periodicamente i dati come backup."
+          },
+          {
+            "question": "Posso personalizzare le categorie di budget?",
+            "answer": "Sì, puoi personalizzare completamente le tue categorie di budget. Aggiungi nuove categorie cliccando sul pulsante 'Aggiungi categoria' nella sezione Entrate o Uscite. Puoi anche rinominare qualsiasi categoria esistente modificando il campo del nome, oppure rimuovere le categorie di cui non hai bisogno."
+          },
+          {
+            "question": "Cosa significano i colori nel riepilogo?",
+            "answer": "I valori verdi indicano risultati positivi: le tue entrate effettive hanno raggiunto o superato il piano, oppure le tue uscite effettive sono rimaste nel budget. I valori rossi indicano aree che richiedono attenzione: le entrate sono state inferiori al previsto, oppure le uscite hanno superato il budget. Questo sistema visivo permette di individuare i problemi a colpo d'occhio."
+          },
+          {
+            "question": "Come inizio un nuovo mese?",
+            "answer": "Usa il pulsante 'Reimposta tutti i dati' per azzerare tutti gli importi effettivi e ricominciare da zero. Gli importi previsti e le categorie resteranno come modello. In alternativa, puoi aggiornare manualmente gli importi effettivi a zero per ogni categoria, mantenendo intatti i budget previsti."
+          },
+          {
+            "question": "Qual è la differenza tra importi previsti ed effettivi?",
+            "answer": "Gli importi previsti rappresentano gli obiettivi di budget fissati a inizio mese. Gli importi effettivi riflettono ciò che hai realmente guadagnato o speso. Il confronto tra i due rivela se sei in linea, sotto budget o in eccesso di spesa in ogni categoria."
+          },
+          {
+            "question": "Posso usare questo tracker per un'altra valuta?",
+            "answer": "Sì, il tracker funziona con qualsiasi valuta. Gli importi che inserisci sono semplicemente numeri e i calcoli del riepilogo funzionano allo stesso modo indipendentemente dalla valuta. Attualmente viene utilizzato il simbolo del dollaro ($) per la visualizzazione, ma i valori rappresentano qualsiasi valuta tu scelga per il tuo budget."
+          },
+          {
+            "question": "Come gestisco le entrate irregolari?",
+            "answer": "Per entrate irregolari come il lavoro freelance o le provvigioni, stima un importo previsto prudente basato sui tuoi guadagni medi degli ultimi mesi. Aggiorna l'importo effettivo man mano che i pagamenti arrivano. Questo approccio ti offre una base realistica tenendo conto della variabilità."
+          },
+          {
+            "question": "Cosa rappresenta la 'Differenza' nel riepilogo?",
+            "answer": "La Differenza mostra come il tuo saldo effettivo si confronta con il saldo previsto. Una differenza positiva significa che hai fatto meglio del previsto (guadagnato di più o speso meno). Una differenza negativa significa che non hai raggiunto i tuoi obiettivi di budget. Fornisce un unico indicatore per valutare la tua performance finanziaria mensile complessiva."
+          },
+          {
+            "question": "Devo includere i risparmi come uscita?",
+            "answer": "Sì, trattare i risparmi come un'uscita è una strategia di budgeting collaudata chiamata 'paga prima te stesso'. Includendo i risparmi come uscita prevista, dai la priorità alla costruzione delle tue riserve finanziarie prima delle spese discrezionali. Questo garantisce un risparmio costante ogni mese, anche quando altre spese variano."
+          },
+          {
+            "question": "Posso usare questo tracker sul mio telefono?",
+            "answer": "Sì, il nostro tracker di budget è completamente responsive e funziona perfettamente su smartphone, tablet e computer desktop. Basta aprire la pagina nel browser del tuo telefono per iniziare a monitorare il budget istantaneamente, senza bisogno di scaricare alcuna app."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri i Nostri Altri Strumenti Finanziari",
+        "description": "Gestisci ogni aspetto delle tue finanze con i nostri calcolatori e strumenti di monitoraggio gratuiti e facili da usare."
+      }
     }
   }
 }
