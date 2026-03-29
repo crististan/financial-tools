@@ -784,6 +784,162 @@
         "title": "Scopri i nostri altri strumenti finanziari",
         "description": "Gestisci ogni aspetto delle tue finanze con i nostri calcolatori e strumenti di monitoraggio gratuiti e facili da usare."
       }
+    },
+    "es": {
+      "slug": "conversor-de-divisas",
+      "meta": {
+        "title": "Conversor de Divisas Gratuito | Tipos de Cambio en Tiempo Real",
+        "description": "Convierte entre 10 divisas principales del mundo con nuestro conversor de divisas online gratuito. Obtén tipos de cambio instantáneos para USD, EUR, GBP, JPY y más.",
+        "keywords": ["conversor de divisas", "tipos de cambio", "USD a EUR", "convertir divisas", "cambio de divisas", "calculadora de divisas", "conversor de moneda"]
+      },
+      "hero": {
+        "headline": "Conversor de Divisas",
+        "description": "Convierte divisas de forma rápida y fiable con tipos de cambio actualizados. Compatible con 10 divisas principales del mundo."
+      },
+      "tool": {
+        "fromLabel": "De",
+        "toLabel": "A",
+        "amountPlaceholder": "Introduce el importe",
+        "switchButtonAriaLabel": "Invertir divisas",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "lastUpdated": "Última actualización: {date}",
+        "options": {
+          "USD": "Dólar estadounidense",
+          "EUR": "Euro",
+          "GBP": "Libra esterlina",
+          "JPY": "Yen japonés",
+          "AUD": "Dólar australiano",
+          "CAD": "Dólar canadiense",
+          "CHF": "Franco suizo",
+          "CNY": "Yuan chino",
+          "SEK": "Corona sueca",
+          "NZD": "Dólar neozelandés"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo convertir divisas en línea",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "keyboard",
+            "title": "Introduce el importe",
+            "description": "Escribe el importe que deseas convertir en el campo de entrada. Nuestro conversor acepta cualquier valor desde 0,01 hasta 999.999.999."
+          },
+          {
+            "number": 2,
+            "icon": "arrowLeftRight",
+            "title": "Selecciona las divisas",
+            "description": "Elige la divisa de origen y la divisa de destino en los menús desplegables. Admitimos 10 divisas principales del mundo."
+          },
+          {
+            "number": 3,
+            "icon": "zap",
+            "title": "Obtén resultados al instante",
+            "description": "La conversión se calcula automáticamente en tiempo real. Sin botones que pulsar, sin esperas. Los resultados se actualizan a medida que escribes."
+          }
+        ]
+      },
+      "ratesTable": {
+        "sectionTitle": "Tipos de cambio populares",
+        "sectionDescription": "Compara los tipos de cambio entre los pares de divisas más negociados del mundo.",
+        "headers": {
+          "pair": "Par de divisas",
+          "rate": "Tipo de cambio",
+          "inverseRate": "Tipo inverso"
+        }
+      },
+      "features": {
+        "sectionTitle": "Por qué usar nuestro conversor de divisas",
+        "sectionDescription": "Funcionalidades de confianza diseñadas para conversiones de divisas precisas y sin complicaciones.",
+        "items": [
+          {
+            "icon": "refreshCw",
+            "title": "Tipos de cambio en tiempo real",
+            "description": "Nuestros tipos se actualizan periódicamente para reflejar las últimas condiciones del mercado, garantizando conversiones siempre precisas."
+          },
+          {
+            "icon": "globe",
+            "title": "10+ divisas principales",
+            "description": "Convierte entre USD, EUR, GBP, JPY y otras 6 divisas principales utilizadas en el comercio y los viajes internacionales."
+          },
+          {
+            "icon": "badgeDollarSign",
+            "title": "100 % gratuito para siempre",
+            "description": "Sin comisiones ocultas, sin niveles premium, sin suscripciones. Nuestro conversor de divisas es completamente gratuito, siempre."
+          },
+          {
+            "icon": "userX",
+            "title": "Sin registro necesario",
+            "description": "Empieza a convertir divisas al instante. Sin crear cuenta, sin verificación de correo electrónico, sin recopilación de datos personales."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Entender el cambio de divisas",
+        "articles": [
+          {
+            "title": "¿Qué factores impulsan los movimientos de los tipos de cambio?",
+            "content": "Los tipos de cambio están influenciados por una compleja interacción de factores económicos. Los diferenciales de tipos de interés entre países, las tasas de inflación, las balanzas comerciales y la estabilidad política desempeñan un papel significativo. Cuando un país sube sus tipos de interés, su moneda suele fortalecerse, ya que los inversores extranjeros buscan rentabilidades más altas. Por el contrario, una inflación elevada erosiona el poder adquisitivo y tiende a debilitar la moneda con el tiempo."
+          },
+          {
+            "title": "Las divisas más negociadas del mundo",
+            "content": "El dólar estadounidense domina los mercados mundiales de divisas, interviniendo en aproximadamente el 88 % de todas las transacciones. El euro le sigue como la segunda divisa más negociada, con alrededor del 31 % de las operaciones. El yen japonés, la libra esterlina y el dólar australiano completan los cinco primeros puestos. En conjunto, estas cinco divisas representan la gran mayoría de los 7,5 billones de dólares que se negocian a diario en los mercados de divisas."
+          },
+          {
+            "title": "Consejos para obtener los mejores tipos de cambio",
+            "content": "Para maximizar el valor de tu cambio de divisas, compara los tipos de varios proveedores antes de convertir. Evita cambiar dinero en aeropuertos u hoteles, donde los tipos suelen ser desfavorables. Considera usar conversores en línea para consultar los tipos antes de acudir a una casa de cambio física. En el caso de importes elevados, incluso pequeñas diferencias en los tipos de cambio pueden suponer ahorros significativos."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas frecuentes",
+        "items": [
+          {
+            "question": "¿Cómo funciona un conversor de divisas?",
+            "answer": "Un conversor de divisas utiliza los tipos de cambio actuales para calcular cuánto vale una moneda en otra. Introduces un importe, seleccionas las divisas de origen y destino, y el conversor multiplica el importe por el tipo de cambio para mostrar el valor equivalente."
+          },
+          {
+            "question": "¿Qué son los tipos de cambio y cómo se determinan?",
+            "answer": "Los tipos de cambio representan el valor de una moneda en relación con otra. Se determinan por la oferta y la demanda en los mercados de divisas, influenciados por factores como los tipos de interés, la inflación, las balanzas comerciales y la estabilidad económica."
+          },
+          {
+            "question": "¿Cuál es la diferencia entre el precio de compra y el de venta?",
+            "answer": "El precio de compra (bid) es el precio al que un operador compra una divisa, mientras que el precio de venta (ask) es el precio al que la vende. La diferencia entre ambos se denomina spread y representa el margen de beneficio del operador."
+          },
+          {
+            "question": "¿Por qué fluctúan los tipos de cambio?",
+            "answer": "Los tipos de cambio fluctúan debido a cambios en los indicadores económicos, eventos geopolíticos, políticas de los bancos centrales, especulación del mercado y diferencias en los tipos de interés entre países. Estos factores afectan a la oferta y la demanda de cada divisa."
+          },
+          {
+            "question": "¿Cuáles son las divisas más negociadas del mundo?",
+            "answer": "Las divisas más negociadas son el dólar estadounidense (USD), el euro (EUR), el yen japonés (JPY), la libra esterlina (GBP) y el dólar australiano (AUD). El USD interviene en aproximadamente el 88 % de todas las transacciones de divisas."
+          },
+          {
+            "question": "¿Es mejor cambiar divisas en el banco o en línea?",
+            "answer": "Los servicios de cambio de divisas en línea suelen ofrecer tipos más competitivos que los bancos, ya que tienen costes operativos más bajos. Sin embargo, los bancos ofrecen mayor seguridad y son adecuados para transacciones de importes elevados. Compara siempre los tipos y las comisiones antes de realizar el cambio."
+          },
+          {
+            "question": "¿Qué es un par de divisas?",
+            "answer": "Un par de divisas muestra el tipo de cambio entre dos monedas. La primera moneda es la divisa base y la segunda es la divisa cotizada. Por ejemplo, USD/EUR = 0,92 significa que 1 dólar estadounidense equivale a 0,92 euros."
+          },
+          {
+            "question": "¿Con qué frecuencia se actualizan los tipos de cambio?",
+            "answer": "Nuestros tipos de cambio se actualizan periódicamente a lo largo del día para reflejar las condiciones actuales del mercado. Para las transacciones más sensibles al tiempo, recomendamos consultar los tipos justo antes de convertir, ya que los mercados de divisas operan las 24 horas del día, cinco días a la semana."
+          },
+          {
+            "question": "¿Puedo convertir divisas desde mi teléfono móvil?",
+            "answer": "Sí, nuestro conversor de divisas es completamente responsivo y funciona en cualquier dispositivo, incluidos teléfonos inteligentes, tabletas y ordenadores de escritorio. Solo tienes que abrir la página en el navegador de tu móvil y empezar a convertir de inmediato, sin necesidad de descargar ninguna aplicación."
+          },
+          {
+            "question": "¿Qué es el tipo de cambio interbancario?",
+            "answer": "El tipo interbancario, también llamado tipo mid-market, es el punto medio entre los precios de compra y venta de dos divisas en el mercado mundial. Se considera el tipo de cambio más justo y es el que muestra nuestro conversor. Los bancos y los servicios de cambio suelen añadir un margen sobre este tipo como beneficio."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Descubre nuestras otras herramientas financieras",
+        "description": "Gestiona cada aspecto de tus finanzas con nuestras calculadoras y herramientas de seguimiento gratuitas y fáciles de usar."
+      }
     }
   }
 }

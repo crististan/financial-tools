@@ -764,6 +764,159 @@
         "title": "Scopri i nostri altri strumenti finanziari",
         "description": "Gestisci ogni aspetto delle tue finanze con i nostri calcolatori e strumenti di monitoraggio gratuiti e facili da usare."
       }
+    },
+    "es": {
+      "slug": "calculadora-prestamos",
+      "meta": {
+        "title": "Calculadora de Préstamos | Cuota Mensual y Tabla de Amortización",
+        "description": "Calculadora de préstamos gratuita. Calcula las cuotas mensuales, los intereses totales y consulta una tabla de amortización completa para cualquier préstamo. Compatible con hipotecas, préstamos de automóvil y préstamos personales.",
+        "keywords": ["calculadora de préstamos", "calculadora de amortización", "calculadora de cuota mensual", "calculadora hipotecaria", "tabla de amortización", "calculadora de intereses", "calculadora préstamo auto", "calculadora préstamo personal"]
+      },
+      "hero": {
+        "headline": "Calculadora de Préstamos",
+        "description": "Calcula tus cuotas mensuales del préstamo, los intereses totales y consulta una tabla de amortización detallada. Compatible con hipotecas, préstamos de automóvil, préstamos personales y más."
+      },
+      "tool": {
+        "loanAmountLabel": "Monto del préstamo",
+        "loanAmountPlaceholder": "ej. 250000",
+        "interestRateLabel": "Tasa de interés anual (%)",
+        "interestRatePlaceholder": "ej. 6,5",
+        "loanTermLabel": "Plazo del préstamo",
+        "loanTermPlaceholder": "ej. 30",
+        "termUnitLabel": "Unidad de plazo",
+        "termUnitYears": "Años",
+        "termUnitMonths": "Meses",
+        "monthlyPaymentLabel": "Cuota mensual",
+        "totalPaymentLabel": "Total pagado",
+        "totalInterestLabel": "Intereses totales",
+        "amortizationTable": {
+          "sectionTitle": "Tabla de amortización",
+          "sectionDescription": "Observa cómo cada cuota se distribuye entre capital e intereses a lo largo de la vida de tu préstamo.",
+          "toggleLabel": "Mostrar tabla de amortización",
+          "headers": {
+            "month": "Mes",
+            "payment": "Cuota",
+            "principal": "Capital",
+            "interest": "Intereses",
+            "balance": "Saldo pendiente"
+          }
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo calcular el reembolso de tu préstamo",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "dollarSign",
+            "title": "Introduce el monto del préstamo",
+            "description": "Escribe el monto total que planeas solicitar en préstamo. Este es el capital principal antes de la aplicación de cualquier interés."
+          },
+          {
+            "number": 2,
+            "icon": "percent",
+            "title": "Establece la tasa de interés y el plazo",
+            "description": "Introduce tu tasa de interés anual y la duración del préstamo en años o meses. La calculadora realiza la conversión automáticamente."
+          },
+          {
+            "number": 3,
+            "icon": "chartBar",
+            "title": "Revisa tus resultados",
+            "description": "Visualiza al instante tu cuota mensual, el monto total pagado y los intereses totales. Expande la tabla de amortización para ver un desglose mes a mes."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por qué usar nuestra calculadora de préstamos",
+        "sectionDescription": "Funcionalidades avanzadas para comprender y planificar tu estrategia de reembolso del préstamo.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Cálculo instantáneo",
+            "description": "Los resultados se actualizan en tiempo real cada vez que ajustas cualquier valor. Sin botones que pulsar, sin recargas de página. Solo cálculos rápidos y precisos."
+          },
+          {
+            "icon": "table",
+            "title": "Tabla de amortización completa",
+            "description": "Consulta un desglose detallado mes a mes que muestra cómo cada cuota se distribuye entre capital e intereses a lo largo de la vida de tu préstamo."
+          },
+          {
+            "icon": "arrowLeftRight",
+            "title": "Unidades de plazo flexibles",
+            "description": "Introduce el plazo de tu préstamo en años o meses. La calculadora realiza la conversión automáticamente, dándote total flexibilidad para simular cualquier escenario."
+          },
+          {
+            "icon": "shield",
+            "title": "Precisa y transparente",
+            "description": "Utiliza la fórmula de amortización estándar empleada por bancos y entidades financieras en todo el mundo. Sin comisiones ocultas, sin sorpresas en nuestros cálculos."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Comprender el reembolso de un préstamo",
+        "articles": [
+          {
+            "title": "Cómo funciona la amortización",
+            "content": "La amortización es el proceso de devolver un préstamo mediante cuotas mensuales regulares. Cada pago cubre dos componentes: los intereses generados sobre el saldo pendiente y una parte que reduce el capital. En los primeros años del préstamo, la mayor parte de cada cuota se destina a los intereses. A medida que el saldo disminuye, una proporción mayor de cada pago se aplica al capital. Por eso, realizar pagos adicionales al inicio del préstamo puede reducir significativamente los intereses totales pagados."
+          },
+          {
+            "title": "Préstamos a tasa fija vs tasa variable",
+            "content": "Un préstamo a tasa fija mantiene la tasa de interés durante todo el plazo, haciendo que las cuotas mensuales sean predecibles y fáciles de presupuestar. Un préstamo a tasa variable comienza con una tasa más baja que puede cambiar periódicamente según las condiciones del mercado. Las tasas fijas ofrecen estabilidad, mientras que las tasas variables pueden generar ahorros si los tipos de interés bajan. Nuestra calculadora modela préstamos a tasa fija, el tipo más común para hipotecas y préstamos de automóvil."
+          },
+          {
+            "title": "El verdadero costo del endeudamiento",
+            "content": "El costo total de un préstamo va mucho más allá del monto solicitado. En una hipoteca a 30 años de 300.000 $ al 6,5% de interés, pagarías aproximadamente 382.000 $ solo en intereses, casi duplicando el préstamo original. Los plazos más cortos reducen drásticamente los intereses totales: el mismo préstamo a 15 años costaría aproximadamente 170.000 $ en intereses. Comprender esta relación entre la duración del plazo y el costo total es fundamental para tomar decisiones de endeudamiento informadas."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas frecuentes",
+        "items": [
+          {
+            "question": "¿Cómo se calcula la cuota mensual?",
+            "answer": "La cuota mensual se calcula utilizando la fórmula de amortización estándar: M = P × [r(1+r)^n] / [(1+r)^n – 1], donde P es el monto del préstamo, r es la tasa de interés mensual (tasa anual dividida entre 12) y n es el número total de cuotas mensuales. Esta fórmula garantiza pagos iguales durante todo el plazo del préstamo."
+          },
+          {
+            "question": "¿Qué sucede si la tasa de interés es del 0%?",
+            "answer": "Con una tasa de interés del 0%, la cuota mensual es simplemente el monto del préstamo dividido entre el número de meses. No se generan intereses, por lo que solo se devuelve el capital. Este escenario es habitual en las ofertas de financiación promocionales de comercios o concesionarios de automóviles."
+          },
+          {
+            "question": "¿Cuál es la diferencia entre la tasa de interés y la TAE?",
+            "answer": "La tasa de interés es el costo de solicitar el capital en préstamo. La TAE (Tasa Anual Equivalente) incluye la tasa de interés más otros gastos como comisiones de apertura, costos de cierre y seguros. La TAE ofrece una imagen más completa del costo total del endeudamiento y suele ser superior a la tasa de interés base."
+          },
+          {
+            "question": "¿Cómo afecta el plazo del préstamo al costo total?",
+            "answer": "Los plazos más largos resultan en cuotas mensuales más bajas, pero con intereses totales significativamente más altos. Un plazo más corto significa cuotas mensuales más elevadas, pero menos intereses en total. Por ejemplo, un préstamo de 200.000 $ al 6% cuesta aproximadamente 231.000 $ en intereses a 30 años, pero solo unos 103.000 $ en intereses a 15 años."
+          },
+          {
+            "question": "¿Puedo pagar mi préstamo de forma anticipada?",
+            "answer": "La mayoría de los préstamos permiten el pago anticipado, aunque algunos pueden incluir penalizaciones por amortización anticipada. Realizar pagos adicionales al capital reduce los intereses totales y acorta el plazo del préstamo. Incluso pequeños pagos mensuales adicionales pueden ahorrar miles de euros a lo largo de una hipoteca."
+          },
+          {
+            "question": "¿Qué es una tabla de amortización?",
+            "answer": "Una tabla de amortización es un cuadro que muestra cada cuota mensual desglosada en las partes de capital e intereses, junto con el saldo pendiente. Ilustra cómo el saldo del préstamo disminuye con el tiempo y cómo la proporción de cada pago destinada al capital aumenta a medida que el préstamo avanza."
+          },
+          {
+            "question": "¿Es precisa esta calculadora para mi hipoteca?",
+            "answer": "Esta calculadora proporciona estimaciones precisas para préstamos a tasa fija utilizando la fórmula de amortización estándar. Sin embargo, las cuotas reales de una hipoteca pueden diferir ligeramente debido a impuestos sobre la propiedad, seguro de vivienda, seguro hipotecario privado y gastos de comunidad, que suelen incluirse en la cuota mensual total pero no forman parte del cálculo del préstamo en sí."
+          },
+          {
+            "question": "¿Para qué tipos de préstamos funciona esta calculadora?",
+            "answer": "Esta calculadora funciona para cualquier préstamo amortizable a tasa fija, incluyendo hipotecas, préstamos de automóvil, préstamos personales, préstamos estudiantiles y créditos empresariales. Calcula las cuotas según el método de amortización estándar de pagos iguales utilizado por la mayoría de las entidades financieras."
+          },
+          {
+            "question": "¿Por qué la mayor parte de mis primeros pagos se destina a intereses?",
+            "answer": "Los intereses se calculan cada mes sobre el saldo pendiente. Cuando el saldo es alto al inicio del préstamo, el cargo por intereses es elevado, dejando una parte menor de cada pago para la reducción del capital. A medida que se amortiza el saldo, la porción de intereses disminuye y una proporción mayor de cada cuota se destina al capital. Esta es una característica natural de los préstamos amortizables."
+          },
+          {
+            "question": "¿Puedo usar esta calculadora en mi teléfono móvil?",
+            "answer": "Sí, nuestra calculadora de préstamos es completamente responsiva y funciona a la perfección en teléfonos inteligentes, tabletas y ordenadores de escritorio. Simplemente abre la página en el navegador de tu dispositivo móvil y comienza a calcular al instante, sin necesidad de descargar ninguna aplicación."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Descubre nuestras otras herramientas financieras",
+        "description": "Gestiona todos los aspectos de tus finanzas con nuestras calculadoras y herramientas de seguimiento gratuitas y fáciles de usar."
+      }
     }
   }
 }

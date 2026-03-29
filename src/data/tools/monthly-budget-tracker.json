@@ -834,6 +834,173 @@
         "title": "Scopri i Nostri Altri Strumenti Finanziari",
         "description": "Gestisci ogni aspetto delle tue finanze con i nostri calcolatori e strumenti di monitoraggio gratuiti e facili da usare."
       }
+    },
+    "es": {
+      "slug": "planificador-presupuesto-mensual",
+      "meta": {
+        "title": "Planificador de Presupuesto Mensual | Herramienta Gratuita de Ingresos y Gastos",
+        "description": "Planificador de presupuesto mensual gratuito. Planifica y controla tus ingresos y gastos, compara lo presupuestado con lo real y mantén el control de tus finanzas personales. Sin necesidad de registro.",
+        "keywords": ["planificador presupuesto", "presupuesto mensual", "control de gastos", "control de ingresos", "planificación financiera", "finanzas personales", "seguimiento de gastos", "gestión del dinero"]
+      },
+      "hero": {
+        "headline": "Planificador de Presupuesto Mensual",
+        "description": "Planifica tus ingresos y gastos mensuales, controla los gastos reales y descubre exactamente a dónde va tu dinero. Todos los datos permanecen en tu navegador."
+      },
+      "tool": {
+        "incomeTitle": "Ingresos",
+        "expensesTitle": "Gastos",
+        "categoryLabel": "Categoría",
+        "categoryPlaceholder": "Nombre de la categoría",
+        "plannedLabel": "Presupuestado",
+        "plannedPlaceholder": "0.00",
+        "actualLabel": "Real",
+        "actualPlaceholder": "0.00",
+        "addButtonLabel": "Añadir categoría",
+        "removeButtonAriaLabel": "Eliminar categoría",
+        "summaryTitle": "Resumen Mensual",
+        "totalIncomePlanLabel": "Total Ingresos (Presupuestado)",
+        "totalIncomeActualLabel": "Total Ingresos (Real)",
+        "totalExpensesPlanLabel": "Total Gastos (Presupuestado)",
+        "totalExpensesActualLabel": "Total Gastos (Real)",
+        "balancePlanLabel": "Saldo (Presupuestado)",
+        "balanceActualLabel": "Saldo (Real)",
+        "differenceLabel": "Diferencia",
+        "resetButtonLabel": "Restablecer todos los datos",
+        "resetConfirmMessage": "¿Estás seguro de que deseas restablecer todos los datos del presupuesto? Esta acción no se puede deshacer.",
+        "noDataMessage": "Añade al menos una categoría de ingresos y una de gastos para ver tu resumen.",
+        "progressLabel": "{percent}% de lo presupuestado",
+        "defaultCategories": {
+          "income": [
+            { "name": "Salario", "planned": 5000 },
+            { "name": "Freelance / Ingresos Secundarios", "planned": 0 }
+          ],
+          "expenses": [
+            { "name": "Alquiler / Hipoteca", "planned": 1500 },
+            { "name": "Servicios Públicos", "planned": 200 },
+            { "name": "Alimentación", "planned": 400 },
+            { "name": "Transporte", "planned": 150 },
+            { "name": "Salud", "planned": 100 },
+            { "name": "Entretenimiento", "planned": 100 },
+            { "name": "Suscripciones", "planned": 50 },
+            { "name": "Ahorro", "planned": 500 }
+          ]
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo Controlar Tu Presupuesto Mensual",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "listPlus",
+            "title": "Configura las Categorías",
+            "description": "Comienza con las categorías predefinidas de ingresos y gastos, o personalízalas según tu situación financiera. Añade o elimina categorías en cualquier momento."
+          },
+          {
+            "number": 2,
+            "icon": "pencilLine",
+            "title": "Introduce los Importes Presupuestados y Reales",
+            "description": "A principio de mes, establece los presupuestos planificados para cada categoría. A medida que gastas y ganas, actualiza los importes reales para hacer seguimiento de tu progreso."
+          },
+          {
+            "number": 3,
+            "icon": "chartBar",
+            "title": "Revisa Tu Resumen",
+            "description": "El resumen se actualiza de forma instantánea, mostrando el total de ingresos, gastos, saldo y cómo se comparan tus gastos reales con lo planificado. Verde significa que vas por buen camino, rojo indica que se ha superado el presupuesto."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Qué Usar Nuestro Planificador de Presupuesto",
+        "sectionDescription": "Herramientas simples pero potentes para ayudarte a tomar el control de tus finanzas mensuales.",
+        "items": [
+          {
+            "icon": "save",
+            "title": "Guardado Automático en el Navegador",
+            "description": "Los datos de tu presupuesto se guardan automáticamente en el almacenamiento local de tu navegador. Vuelve en cualquier momento y retoma justo donde lo dejaste."
+          },
+          {
+            "icon": "layoutList",
+            "title": "Categorías Personalizables",
+            "description": "Comienza con categorías predeterminadas inteligentes o crea las tuyas propias. Añade, renombra o elimina categorías para que se adapten perfectamente a tus hábitos de gasto."
+          },
+          {
+            "icon": "barChart3",
+            "title": "Seguimiento de Presupuestado vs Real",
+            "description": "Establece los presupuestos planificados a principio de mes y controla los gastos reales sobre la marcha. Descubre al instante dónde estás por debajo o por encima del presupuesto."
+          },
+          {
+            "icon": "shield",
+            "title": "Privado y Seguro",
+            "description": "Todos tus datos financieros permanecen en tu navegador. Nunca recopilamos, almacenamos ni transmitimos tu información presupuestaria personal a ningún servidor."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Domina Tu Presupuesto Mensual",
+        "articles": [
+          {
+            "title": "La Regla del Presupuesto 50/30/20",
+            "content": "Uno de los métodos de presupuestación más populares asigna el 50% de los ingresos netos a las necesidades (alquiler, servicios públicos, alimentación), el 30% a los deseos (entretenimiento, salir a comer, hobbies) y el 20% al ahorro y al pago de deudas. Esta regla sencilla ofrece un punto de partida equilibrado para cualquier persona que se inicie en la gestión presupuestaria. Ajusta los porcentajes a tu situación, pero el principio clave se mantiene: prioriza las necesidades, disfruta de la vida y págate siempre a ti mismo primero a través del ahorro."
+          },
+          {
+            "title": "Por Qué Es Importante Controlar los Gastos",
+            "content": "Las investigaciones demuestran que las personas que controlan activamente sus gastos ahorran significativamente más que quienes no lo hacen. El acto de registrar los gastos genera conciencia sobre los patrones de consumo y reduce las compras impulsivas. Los estudios revelan que el simple seguimiento de las finanzas puede reducir los gastos innecesarios entre un 15 y un 20%. Un planificador de presupuesto mensual hace que este proceso sea sencillo, mostrando exactamente a dónde va tu dinero y destacando las áreas donde puedes recortar."
+          },
+          {
+            "title": "Cómo Crear un Fondo de Emergencia",
+            "content": "Los expertos financieros recomiendan ahorrar de tres a seis meses de gastos de subsistencia en un fondo de emergencia de fácil acceso. Comienza incluyendo una categoría de ahorro en tu presupuesto mensual, aunque al principio solo puedas reservar una cantidad pequeña. La constancia importa más que la cantidad. Una vez que cuentes con un colchón para gastos inesperados como reparaciones del coche, facturas médicas o pérdida de empleo, ganarás seguridad financiera y tranquilidad, lo que reduce el estrés y mejora la toma de decisiones."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Dónde se almacenan mis datos de presupuesto?",
+            "answer": "Los datos de tu presupuesto se almacenan exclusivamente en el almacenamiento local de tu navegador. Nunca enviamos tu información financiera a ningún servidor. Esto significa que tus datos son completamente privados, pero también que borrar los datos del navegador eliminará tu presupuesto. Considera exportar tus datos periódicamente como copia de seguridad."
+          },
+          {
+            "question": "¿Puedo personalizar las categorías del presupuesto?",
+            "answer": "Sí, puedes personalizar completamente tus categorías de presupuesto. Añade nuevas categorías haciendo clic en el botón 'Añadir categoría' en la sección de Ingresos o Gastos. También puedes renombrar cualquier categoría existente editando su campo de nombre, o eliminar las categorías que no necesites."
+          },
+          {
+            "question": "¿Qué significan los colores en el resumen?",
+            "answer": "Los valores verdes indican resultados positivos: tus ingresos reales alcanzaron o superaron lo planificado, o tus gastos reales se mantuvieron dentro del presupuesto. Los valores rojos indican áreas que requieren atención: los ingresos fueron inferiores al plan, o los gastos superaron el presupuesto. Este sistema visual facilita la identificación de problemas de un vistazo."
+          },
+          {
+            "question": "¿Cómo empiezo un nuevo mes?",
+            "answer": "Utiliza el botón 'Restablecer todos los datos' para borrar todos los importes reales y empezar de cero. Los importes presupuestados y las categorías se mantendrán como plantilla. Alternativamente, puedes actualizar manualmente los importes reales a cero en cada categoría, conservando tus presupuestos planificados intactos."
+          },
+          {
+            "question": "¿Cuál es la diferencia entre los importes presupuestados y los reales?",
+            "answer": "Los importes presupuestados representan tus objetivos de presupuesto establecidos a principio de mes. Los importes reales reflejan lo que realmente ganaste o gastaste. Comparar ambos revela si vas por buen camino, estás por debajo del presupuesto o estás gastando de más en cada categoría."
+          },
+          {
+            "question": "¿Puedo usar este planificador con otra moneda?",
+            "answer": "Sí, el planificador funciona con cualquier moneda. Los importes que introduces son simplemente números, y los cálculos del resumen funcionan igual independientemente de la moneda. Actualmente se usa el símbolo del dólar ($) para la visualización, pero los valores representan la moneda que elijas para tu presupuesto."
+          },
+          {
+            "question": "¿Cómo debo gestionar los ingresos irregulares?",
+            "answer": "Para ingresos irregulares como el trabajo freelance o las comisiones, estima un importe presupuestado conservador basado en tus ganancias promedio de los últimos meses. Actualiza el importe real a medida que llegan los pagos. Este enfoque te proporciona una base realista teniendo en cuenta la variabilidad."
+          },
+          {
+            "question": "¿Qué es la 'Diferencia' en el resumen?",
+            "answer": "La Diferencia muestra cómo se compara tu saldo real con el saldo presupuestado. Una diferencia positiva significa que lo hiciste mejor de lo planificado (ganaste más o gastaste menos). Una diferencia negativa significa que no alcanzaste tus objetivos presupuestarios. Proporciona un único indicador para evaluar tu rendimiento financiero mensual general."
+          },
+          {
+            "question": "¿Debería incluir el ahorro como gasto?",
+            "answer": "Sí, tratar el ahorro como un gasto es una estrategia presupuestaria probada llamada 'págate a ti mismo primero'. Al incluir el ahorro como gasto planificado, priorizas la construcción de tus reservas financieras antes de los gastos discrecionales. Esto garantiza un ahorro constante cada mes, incluso cuando otros gastos fluctúan."
+          },
+          {
+            "question": "¿Puedo usar este planificador en mi teléfono?",
+            "answer": "Sí, nuestro planificador de presupuesto es totalmente responsive y funciona perfectamente en smartphones, tabletas y computadoras de escritorio. Simplemente abre la página en el navegador de tu teléfono para empezar a controlar tu presupuesto de forma instantánea, sin necesidad de descargar ninguna aplicación."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Descubre Nuestras Otras Herramientas Financieras",
+        "description": "Gestiona cada aspecto de tus finanzas con nuestras calculadoras y herramientas de seguimiento gratuitas y fáciles de usar."
+      }
     }
   }
 }

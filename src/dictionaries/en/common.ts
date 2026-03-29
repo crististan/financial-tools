@@ -30,6 +30,7 @@ export type CommonDictionary = {
         de: string;
         fr: string;
         it: string;
+        es: string;
     };
     sponsor: {
         label: string;
@@ -68,6 +69,7 @@ const commonDictionary: CommonDictionary = {
         de: "Deutsch",
         fr: "Français",
         it: "Italiano",
+        es: "Español",
     },
     sponsor: {
         label: "Sponsored",

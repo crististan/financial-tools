@@ -32,6 +32,7 @@ const commonDictionary: CommonDictionary = {
         de: "Deutsch",
         fr: "Français",
         it: "Italiano",
+        es: "Spagnolo",
     },
     sponsor: {
         label: "Sponsorizzato",

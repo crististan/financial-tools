@@ -724,6 +724,151 @@
         "title": "Scopri i Nostri Altri Strumenti Finanziari",
         "description": "Gestisci ogni aspetto delle tue finanze con i nostri calcolatori e tracker gratuiti e facili da usare."
       }
+    },
+    "es": {
+      "slug": "calculadora-interes-compuesto",
+      "meta": {
+        "title": "Calculadora de Interés Compuesto | Visualización de Crecimiento y Comparación de Escenarios",
+        "description": "Calculadora de interés compuesto gratuita con gráfico interactivo. Calcula el crecimiento de tu inversión con aportaciones mensuales, compara escenarios y consulta el desglose año a año.",
+        "keywords": ["calculadora interés compuesto", "calculadora inversiones", "interés compuesto", "calculadora intereses", "calculadora ahorros", "calculadora crecimiento inversión", "calculadora aportaciones mensuales", "gráfico interés compuesto"]
+      },
+      "hero": {
+        "headline": "Calculadora de Interés Compuesto",
+        "description": "Calcula cómo crecen tus inversiones a lo largo del tiempo con el interés compuesto. Visualiza el crecimiento en un gráfico interactivo y compara diferentes escenarios de aportaciones."
+      },
+      "tool": {
+        "initialDepositLabel": "Depósito Inicial",
+        "initialDepositPlaceholder": "ej. 10000",
+        "monthlyContributionLabel": "Aportación Mensual",
+        "monthlyContributionPlaceholder": "ej. 500",
+        "interestRateLabel": "Tasa de Interés Anual (%)",
+        "interestRatePlaceholder": "ej. 7",
+        "periodLabel": "Período de Inversión (Años)",
+        "periodPlaceholder": "ej. 20",
+        "compoundingLabel": "Frecuencia de Capitalización",
+        "compoundingOptions": {
+          "monthly": "Mensual",
+          "quarterly": "Trimestral",
+          "annually": "Anual"
+        },
+        "scenarioToggleLabel": "Comparar con una aportación mensual diferente",
+        "scenario2Label": "Escenario 2 — Aportación Mensual",
+        "scenario2Placeholder": "ej. 1000",
+        "resultFinalAmount": "Monto Final",
+        "resultTotalContributions": "Total de Aportaciones",
+        "resultTotalInterest": "Intereses Generados",
+        "comparisonTitle": "Comparación de Escenarios",
+        "scenario1Name": "Escenario 1",
+        "scenario2Name": "Escenario 2",
+        "differenceLabel": "Diferencia",
+        "breakdownTitle": "Desglose Anual",
+        "breakdownToggle": "Mostrar desglose anual",
+        "breakdownHeaders": {
+          "year": "Año",
+          "contributions": "Aportaciones",
+          "interest": "Intereses",
+          "balance": "Saldo"
+        },
+        "chartContributions": "Aportaciones",
+        "chartInterest": "Intereses Generados",
+        "chartScenario2": "Saldo Escenario 2",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo Usar la Calculadora de Interés Compuesto",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "dollarSign",
+            "title": "Introduce los Datos de tu Inversión",
+            "description": "Completa el depósito inicial, la aportación mensual, la tasa de interés anual estimada y el horizonte temporal de la inversión."
+          },
+          {
+            "number": 2,
+            "icon": "trendingUp",
+            "title": "Visualiza el Gráfico de Crecimiento",
+            "description": "Observa cómo crece tu inversión en un gráfico interactivo que muestra cómo las aportaciones y el interés compuesto construyen tu patrimonio a lo largo del tiempo."
+          },
+          {
+            "number": 3,
+            "icon": "gitCompare",
+            "title": "Compara Escenarios",
+            "description": "Activa la comparación de escenarios para ver cómo diferentes aportaciones mensuales afectan tu saldo final. El gráfico superpone ambos escenarios para una comparación sencilla."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Qué Usar Nuestra Calculadora de Interés Compuesto",
+        "sectionDescription": "Funcionalidades avanzadas para ayudarte a comprender y planificar tu estrategia de inversión a largo plazo.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Gráfico de Crecimiento Interactivo",
+            "description": "Visualiza el crecimiento de tu inversión con un gráfico de áreas que muestra claramente la distribución entre tus aportaciones y los intereses generados a lo largo del tiempo."
+          },
+          {
+            "icon": "gitCompare",
+            "title": "Comparación de Escenarios",
+            "description": "Compara dos aportaciones mensuales diferentes una junto a la otra. Descubre exactamente cuánto representa el ahorro adicional de hoy en el futuro."
+          },
+          {
+            "icon": "zap",
+            "title": "Cálculo en Tiempo Real",
+            "description": "Los resultados se actualizan instantáneamente al modificar cualquier valor. Sin botones que pulsar — simplemente ajusta los valores y observa el impacto de inmediato."
+          },
+          {
+            "icon": "table",
+            "title": "Desglose Año a Año",
+            "description": "Despliega la tabla de desglose anual para ver exactamente cómo crece tu saldo cada año, con aportaciones e intereses separados."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Entendiendo el Interés Compuesto",
+        "articles": [
+          {
+            "title": "El Poder del Interés Compuesto",
+            "content": "El interés compuesto es a menudo llamado la octava maravilla del mundo. A diferencia del interés simple, que se calcula únicamente sobre el capital inicial, el interés compuesto se calcula sobre el capital más todos los intereses acumulados anteriormente. Esto significa que tu dinero genera intereses sobre los intereses, creando un crecimiento exponencial a lo largo del tiempo. Cuanto más largo sea tu horizonte de inversión, más espectacular se vuelve este efecto de capitalización."
+          },
+          {
+            "title": "La Importancia de la Frecuencia de Capitalización",
+            "content": "La frecuencia con la que se capitalizan los intereses afecta a tu rendimiento total. La capitalización mensual genera ligeramente más que la trimestral, que a su vez genera más que la capitalización anual. Esto se debe a que una capitalización más frecuente significa que los intereses se añaden a tu saldo antes, permitiéndoles comenzar a generar sus propios intereses más rápidamente. Para la mayoría de las cuentas de ahorro e inversión, la capitalización mensual es lo habitual."
+          },
+          {
+            "title": "El Impacto de Empezar Pronto",
+            "content": "El tiempo es el factor más poderoso en el interés compuesto. Un inversor que empieza a ahorrar 300 € al mes a los 25 años con un rendimiento anual del 7% acumularía aproximadamente 680.000 € a los 60 años. Empezar el mismo ahorro a los 35 años produciría solo unos 320.000 € — menos de la mitad. Esos 10 años adicionales de capitalización casi duplican el monto final, aunque las aportaciones adicionales solo suman 36.000 €."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Qué es el interés compuesto?",
+            "answer": "El interés compuesto es el interés calculado tanto sobre el capital inicial como sobre los intereses acumulados de períodos anteriores. Esto crea un efecto de bola de nieve en el que tu dinero crece cada vez más rápido con el tiempo, ya que los intereses de cada período se añaden al saldo y generan a su vez intereses en los períodos siguientes."
+          },
+          {
+            "question": "¿Cómo se calcula el interés compuesto?",
+            "answer": "La fórmula es A = P(1 + r/n)^(nt) + PMT × [((1 + r/n)^(nt) - 1) / (r/n)], donde P es el depósito inicial, r es la tasa de interés anual (en decimal), n es el número de capitalizaciones por año, t es el número de años y PMT es la aportación mensual. Esta fórmula tiene en cuenta tanto el depósito inicial como las aportaciones regulares."
+          },
+          {
+            "question": "¿Qué frecuencia de capitalización debo elegir?",
+            "answer": "Elige la frecuencia que corresponda a tu cuenta real de inversión o ahorro. La mayoría de las cuentas de ahorro bancarias capitalizan mensual o diariamente, mientras que algunos depósitos a plazo capitalizan trimestral o anualmente. La capitalización mensual es la más común y produce rendimientos ligeramente superiores a la capitalización trimestral o anual."
+          },
+          {
+            "question": "¿Qué tasa de interés es realista?",
+            "answer": "Las tasas realistas dependen del tipo de inversión. Las cuentas de ahorro de alto rendimiento ofrecen actualmente entre el 4 y el 5% anual. Los fondos indexados del mercado bursátil han generado históricamente entre el 7 y el 10% anual a largo plazo (después de la inflación, más cerca del 5-7%). Los bonos suelen rendir entre el 3 y el 5%. Utiliza una estimación conservadora para la planificación financiera."
+          },
+          {
+            "question": "¿Cómo funciona la comparación de escenarios?",
+            "answer": "Cuando activas la comparación de escenarios, puedes introducir un segundo importe de aportación mensual. La calculadora calcula ambos escenarios utilizando el mismo depósito inicial, la misma tasa de interés y el mismo período de tiempo. El gráfico superpone ambos escenarios y una tabla comparativa muestra los montos finales y la diferencia entre ellos."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Descubre Nuestras Otras Herramientas Financieras",
+        "description": "Gestiona cada aspecto de tus finanzas con nuestras calculadoras y herramientas de seguimiento gratuitas y fáciles de usar."
+      }
     }
   }
 }

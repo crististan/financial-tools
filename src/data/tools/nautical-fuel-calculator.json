@@ -754,6 +754,157 @@
         "title": "Scopri i Nostri Altri Strumenti",
         "description": "Esplora la nostra gamma completa di calcolatori e strumenti di pianificazione gratuiti per finanza, navigazione e molto altro."
       }
+    },
+    "es": {
+      "slug": "calculadora-combustible-nautico",
+      "meta": {
+        "title": "Calculadora de Combustible N\u00e1utico | Estimaci\u00f3n de Consumo y Autonom\u00eda de Embarcaciones",
+        "description": "Calculadora gratuita de consumo de combustible n\u00e1utico para patrones. Estima el consumo de combustible seg\u00fan distancia, velocidad, tipo de motor, potencia y condiciones meteorol\u00f3gicas. Gr\u00e1fico de consumo vs velocidad, coste total y autonom\u00eda.",
+        "keywords": ["calculadora combustible n\u00e1utico", "consumo combustible barco", "calculadora combustible marino", "estimador combustible navegaci\u00f3n", "calculadora autonom\u00eda barco", "millas n\u00e1uticas combustible", "coste combustible barco", "herramientas patr\u00f3n"]
+      },
+      "hero": {
+        "headline": "Calculadora de Combustible N\u00e1utico",
+        "description": "Estima el consumo de combustible de tu embarcaci\u00f3n seg\u00fan la distancia, velocidad, tipo de motor y condiciones meteorol\u00f3gicas. Consulta el gr\u00e1fico de consumo vs velocidad, calcula el coste total y comprueba la autonom\u00eda de tu nave."
+      },
+      "tool": {
+        "distanceLabel": "Distancia (Millas N\u00e1uticas)",
+        "distancePlaceholder": "ej. 50",
+        "speedLabel": "Velocidad (Nudos)",
+        "speedPlaceholder": "ej. 8",
+        "engineTypeLabel": "Tipo de Motor",
+        "engineTypes": {
+          "outboard": "Fueraborda (Gasolina)",
+          "inboard": "Intraborda (Di\u00e9sel)",
+          "sailAux": "Vela + Motor Auxiliar"
+        },
+        "enginePowerLabel": "Potencia del Motor (CV)",
+        "enginePowerPlaceholder": "ej. 150",
+        "tankCapacityLabel": "Capacidad del Dep\u00f3sito (Litros)",
+        "tankCapacityPlaceholder": "ej. 300",
+        "fuelPriceLabel": "Precio del Combustible (por Litro)",
+        "fuelPricePlaceholder": "ej. 1,85",
+        "windLabel": "Condiciones de Viento",
+        "windOptions": {
+          "calm": "Calma",
+          "light": "Brisa Ligera",
+          "moderate": "Viento Moderado",
+          "strong": "Viento Fuerte"
+        },
+        "currentLabel": "Corriente Marina",
+        "currentOptions": {
+          "none": "Sin Corriente",
+          "favorable": "Corriente Favorable",
+          "against": "Corriente en Contra"
+        },
+        "resultTravelTime": "Tiempo de Navegaci\u00f3n",
+        "resultFuelConsumption": "Combustible Necesario",
+        "resultTotalCost": "Coste Total",
+        "resultAutonomy": "Autonom\u00eda",
+        "hoursUnit": "horas",
+        "litersUnit": "L",
+        "nmiUnit": "mn",
+        "chartTitle": "Consumo de Combustible vs Velocidad",
+        "chartFuelRate": "Base (L/h)",
+        "chartFuelRateWeather": "Con Meteorolog\u00eda (L/h)",
+        "chartSpeed": "Velocidad (nudos)",
+        "currencySymbol": "\u20ac",
+        "currentSpeedMarker": "Tu velocidad"
+      },
+      "howItWorks": {
+        "sectionTitle": "C\u00f3mo Estimar el Consumo de Combustible de tu Embarcaci\u00f3n",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "ship",
+            "title": "Introduce los Datos del Viaje",
+            "description": "Introduce la distancia prevista en millas n\u00e1uticas, la velocidad de crucero en nudos y selecciona el tipo de motor con su potencia en caballos de vapor."
+          },
+          {
+            "number": 2,
+            "icon": "cloudRain",
+            "title": "Configura las Condiciones Meteorol\u00f3gicas",
+            "description": "Selecciona las condiciones de viento y la direcci\u00f3n de la corriente marina. Estos factores afectan significativamente al consumo de combustible y a la velocidad efectiva durante la traves\u00eda."
+          },
+          {
+            "number": 3,
+            "icon": "fuel",
+            "title": "Revisa las Estimaciones",
+            "description": "Consulta el tiempo de navegaci\u00f3n estimado, el combustible total necesario, el coste y la autonom\u00eda. El gr\u00e1fico de consumo vs velocidad te ayuda a encontrar la velocidad de crucero m\u00e1s eficiente."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Qu\u00e9 Usar Nuestra Calculadora N\u00e1utica",
+        "sectionDescription": "Funcionalidades esenciales para patrones y propietarios de embarcaciones para planificar traves\u00edas eficientes en consumo de combustible.",
+        "items": [
+          {
+            "icon": "trendingUp",
+            "title": "Gr\u00e1fico de Consumo vs Velocidad",
+            "description": "Gr\u00e1fico interactivo que muestra c\u00f3mo aumenta el consumo de combustible con la velocidad. Encuentra el punto \u00f3ptimo entre tiempo de navegaci\u00f3n y eficiencia energ\u00e9tica de tu motor."
+          },
+          {
+            "icon": "wind",
+            "title": "An\u00e1lisis del Impacto Meteorol\u00f3gico",
+            "description": "Observa c\u00f3mo las condiciones de viento y corriente afectan a tu consumo. Planifica tu salida para lograr la traves\u00eda m\u00e1s econ\u00f3mica."
+          },
+          {
+            "icon": "gauge",
+            "title": "Autonom\u00eda de Navegaci\u00f3n",
+            "description": "Conoce exactamente cu\u00e1ntas millas puede recorrer tu embarcaci\u00f3n con el dep\u00f3sito lleno en las condiciones actuales. Informaci\u00f3n cr\u00edtica de seguridad para la planificaci\u00f3n del viaje."
+          },
+          {
+            "icon": "zap",
+            "title": "C\u00e1lculo en Tiempo Real",
+            "description": "Todos los resultados se actualizan de forma instant\u00e1nea al modificar cualquier par\u00e1metro. Compara r\u00e1pidamente distintas velocidades, rutas y condiciones para optimizar tu plan de navegaci\u00f3n."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Comprender el Consumo de Combustible Marino",
+        "articles": [
+          {
+            "title": "Velocidad y Combustible: la Ley del Cuadrado",
+            "content": "El consumo de combustible en las embarcaciones aumenta aproximadamente con el cuadrado de la velocidad: duplicar la velocidad puede casi cuadruplicar el consumo. Esto se debe a que la resistencia del agua crece de forma exponencial con la velocidad. Para los cascos de desplazamiento, la velocidad de crucero m\u00e1s eficiente se sit\u00faa generalmente entre el 60 y el 70 % de la velocidad m\u00e1xima del casco. Comprender esta relaci\u00f3n es fundamental para navegar de manera econ\u00f3mica y puede suponer un ahorro de cientos de euros en traves\u00edas largas."
+          },
+          {
+            "title": "C\u00f3mo Afecta la Meteorolog\u00eda al Consumo de Combustible",
+            "content": "El viento y el estado de la mar tienen un impacto considerable en el consumo de combustible marino. Navegar contra viento y oleaje moderado puede incrementar el consumo entre un 25 y un 50 % respecto a condiciones de calma. Los vientos favorables bajo vela pueden reducir dr\u00e1sticamente el uso del motor. Las corrientes marinas tambi\u00e9n desempe\u00f1an un papel fundamental: una corriente adversa de 1 a 2 nudos reduce la velocidad sobre el fondo manteniendo el mismo r\u00e9gimen de motor, lo que aumenta significativamente el consumo por milla n\u00e1utica recorrida."
+          },
+          {
+            "title": "Motores Marinos: Di\u00e9sel frente a Gasolina",
+            "content": "Los motores di\u00e9sel marinos son considerablemente m\u00e1s eficientes que los fueraborda de gasolina, consumiendo generalmente entre un 30 y un 40 % menos de combustible por caballo-hora. El gas\u00f3leo contiene adem\u00e1s aproximadamente un 10 % m\u00e1s de energ\u00eda por litro. Sin embargo, los motores di\u00e9sel son m\u00e1s pesados y costosos de mantener. Para embarcaciones peque\u00f1as y auxiliares, los fueraborda de gasolina ofrecen simplicidad. Para veleros de crucero, los peque\u00f1os motores auxiliares di\u00e9sel ofrecen la mejor combinaci\u00f3n de eficiencia y fiabilidad para traves\u00edas largas."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "\u00bfQu\u00e9 precisi\u00f3n tiene esta estimaci\u00f3n de consumo?",
+            "answer": "Esta calculadora ofrece estimaciones razonables basadas en f\u00f3rmulas consolidadas de ingenier\u00eda naval. El consumo real puede variar entre un 10 y un 20 % en funci\u00f3n del estado del casco, la carga de la embarcaci\u00f3n, el estado de la mar, la eficiencia de la h\u00e9lice y el mantenimiento del motor. Lleva siempre una reserva del 20 al 30 % por encima de las necesidades calculadas como medida de seguridad."
+          },
+          {
+            "question": "\u00bfQu\u00e9 tipo de motor debo seleccionar para mi embarcaci\u00f3n?",
+            "answer": "Selecciona 'Fueraborda (Gasolina)' para embarcaciones con motores externos de gasolina. Elige 'Intraborda (Di\u00e9sel)' para embarcaciones con motores di\u00e9sel integrados, incluida la mayor\u00eda de yates de crucero y lanchas motoras. Selecciona 'Vela + Motor Auxiliar' para veleros que utilizan el motor principalmente para maniobras y en condiciones de calma."
+          },
+          {
+            "question": "\u00bfC\u00f3mo afecta el viento al consumo de combustible?",
+            "answer": "El viento genera oleaje y aumenta la resistencia del aire, lo que requiere m\u00e1s potencia del motor para mantener la velocidad. Una brisa ligera a\u00f1ade aproximadamente un 10 % al consumo, el viento moderado un 25 %, y el viento fuerte puede incrementar el consumo en un 50 % o m\u00e1s. El viento de proa tiene el mayor impacto, mientras que el viento de trav\u00e9s genera un balance inc\u00f3modo que tambi\u00e9n aumenta el consumo."
+          },
+          {
+            "question": "\u00bfCu\u00e1l es la reserva de combustible segura para navegar?",
+            "answer": "La regla est\u00e1ndar es la 'regla de los tercios': un tercio del combustible para la ida, un tercio para la vuelta y un tercio como reserva. Para traves\u00edas en mar abierto, se recomienda una reserva m\u00ednima del 30 % por encima del consumo calculado. Esto contempla cambios meteorol\u00f3gicos imprevistos, desv\u00edos de ruta e ineficiencias del motor."
+          },
+          {
+            "question": "\u00bfPor qu\u00e9 el gr\u00e1fico muestra un aumento exponencial del consumo con la velocidad?",
+            "answer": "La resistencia del agua aumenta aproximadamente con el cuadrado de la velocidad debido a la resistencia por formaci\u00f3n de olas y la fricci\u00f3n. La mayor\u00eda de las embarcaciones de desplazamiento tienen una velocidad de crucero econ\u00f3mica en torno al 60-70 % de su velocidad m\u00e1xima de casco, donde la relaci\u00f3n de combustible por milla es m\u00e1s favorable."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Descubre Nuestras Otras Herramientas",
+        "description": "Explora nuestra gama completa de calculadoras y herramientas de planificaci\u00f3n gratuitas para finanzas, navegaci\u00f3n y mucho m\u00e1s."
+      }
     }
   }
 }
