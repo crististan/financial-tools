@@ -632,6 +632,320 @@
         "title": "Découvrez nos autres outils financiers",
         "description": "Gérez chaque aspect de vos finances avec nos calculatrices et outils de suivi gratuits et faciles à utiliser."
       }
+    },
+    "it": {
+      "slug": "convertitore-unita",
+      "meta": {
+        "title": "Convertitore di Metri | Converti Metri in Miglia, Piedi, Yard e Altro",
+        "description": "Convertitore di metri online gratuito. Converti metri in chilometri, miglia, miglia nautiche, piedi, pollici, yard e altro. Risultati istantanei senza registrazione.",
+        "keywords": ["convertitore metri", "metri in piedi", "metri in miglia", "metri in miglia nautiche", "convertitore lunghezza", "convertitore unità", "convertitore distanza", "metri in yard", "metri in pollici"]
+      },
+      "hero": {
+        "headline": "Convertitore di Metri",
+        "description": "Converti i metri in qualsiasi unità di lunghezza all'istante. Supporta chilometri, miglia, miglia nautiche, piedi, pollici, yard e altro."
+      },
+      "tool": {
+        "fromLabel": "Da",
+        "toLabel": "A",
+        "amountPlaceholder": "Inserisci il valore",
+        "switchButtonAriaLabel": "Inverti le unità",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "options": {
+          "mm": "Millimetro",
+          "cm": "Centimetro",
+          "m": "Metro",
+          "km": "Chilometro",
+          "in": "Pollice",
+          "ft": "Piede",
+          "yd": "Yard",
+          "mi": "Miglio",
+          "nmi": "Miglio nautico",
+          "fathom": "Braccio",
+          "furlong": "Furlong",
+          "league": "Lega"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Come convertire le unità di lunghezza online",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "keyboard",
+            "title": "Inserisci il valore",
+            "description": "Digita il valore di lunghezza che desideri convertire. Il nostro convertitore supporta qualsiasi valore numerico con alta precisione."
+          },
+          {
+            "number": 2,
+            "icon": "arrowLeftRight",
+            "title": "Seleziona le unità",
+            "description": "Scegli le unità di origine e di destinazione dai menu a tendina. Supportiamo 12 unità di lunghezza, dal millimetro al miglio nautico."
+          },
+          {
+            "number": 3,
+            "icon": "zap",
+            "title": "Ottieni risultati istantanei",
+            "description": "La conversione viene calcolata automaticamente utilizzando fattori di conversione precisi. I risultati si aggiornano in tempo reale mentre digiti."
+          }
+        ]
+      },
+      "ratesTable": {
+        "sectionTitle": "Conversioni di lunghezza comuni",
+        "sectionDescription": "Riferimento rapido per le conversioni di unità di lunghezza più utilizzate a partire dal metro.",
+        "headers": {
+          "pair": "Conversione",
+          "rate": "Fattore",
+          "inverseRate": "Fattore inverso"
+        }
+      },
+      "features": {
+        "sectionTitle": "Perché usare il nostro convertitore di metri",
+        "sectionDescription": "Conversioni di lunghezza precise e affidabili per ingegneria, scienza, viaggi e uso quotidiano.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Conversione istantanea",
+            "description": "I risultati appaiono in tempo reale mentre digiti. Nessun pulsante da cliccare, nessun ricaricamento della pagina. Solo conversioni rapide e precise."
+          },
+          {
+            "icon": "globe",
+            "title": "12 unità di lunghezza",
+            "description": "Converti tra unità metriche, imperiali e nautiche, inclusi metri, chilometri, miglia, miglia nautiche, piedi e altro."
+          },
+          {
+            "icon": "shield",
+            "title": "Alta precisione",
+            "description": "I nostri fattori di conversione si basano su standard internazionali riconosciuti, garantendo risultati affidabili per uso professionale."
+          },
+          {
+            "icon": "calculator",
+            "title": "Funziona in entrambe le direzioni",
+            "description": "Passa facilmente da un'unità all'altra con un solo clic. Converti metri in piedi o piedi in metri con lo stesso strumento."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Capire la misurazione delle lunghezze",
+        "articles": [
+          {
+            "title": "Il sistema metrico e il metro",
+            "content": "Il metro è l'unità di base della lunghezza nel Sistema Internazionale di Unità (SI). Definito originariamente nel 1793 come un decimilionesimo della distanza dall'equatore al Polo Nord, oggi è definito dalla velocità della luce: un metro è la distanza percorsa dalla luce nel vuoto in 1/299.792.458 di secondo. La struttura decimale del sistema metrico rende semplice la conversione tra millimetri, centimetri, metri e chilometri."
+          },
+          {
+            "title": "Sistema imperiale e metrico: una divisione globale",
+            "content": "Mentre la maggior parte del mondo utilizza il sistema metrico, gli Stati Uniti, la Liberia e il Myanmar usano ancora prevalentemente le unità imperiali per le misurazioni quotidiane. Il sistema imperiale comprende pollici, piedi, yard e miglia. Un miglio equivale esattamente a 1.609,344 metri. Comprendere le conversioni tra questi sistemi è essenziale per il commercio internazionale, i viaggi e la collaborazione scientifica."
+          },
+          {
+            "title": "Le miglia nautiche: misurare le distanze in mare",
+            "content": "Un miglio nautico si basa sulla circonferenza della Terra ed equivale esattamente a 1.852 metri. Viene utilizzato nell'aviazione e nella navigazione marittima perché corrisponde a un primo di latitudine. I nodi, l'unità di velocità in mare, misurano le miglia nautiche all'ora. Questa relazione rende le carte nautiche e i calcoli di navigazione semplici e intuitivi."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande frequenti",
+        "items": [
+          {
+            "question": "Quanti piedi ci sono in un metro?",
+            "answer": "Un metro equivale esattamente a 3,28084 piedi. Questa conversione si basa sull'accordo internazionale secondo cui un pollice equivale esattamente a 25,4 millimetri, il che rende un piede (12 pollici) pari a 0,3048 metri."
+          },
+          {
+            "question": "Qual è la differenza tra un miglio e un miglio nautico?",
+            "answer": "Un miglio terrestre equivale a 1.609,344 metri (5.280 piedi), mentre un miglio nautico equivale esattamente a 1.852 metri. Un miglio nautico è circa il 15% più lungo di un miglio terrestre. Le miglia nautiche sono utilizzate nella navigazione marittima e aerea perché sono direttamente legate ai gradi di latitudine."
+          },
+          {
+            "question": "Come si convertono i metri in chilometri?",
+            "answer": "Per convertire i metri in chilometri, dividi il numero di metri per 1.000. Ad esempio, 5.000 metri equivalgono a 5 chilometri. Il prefisso 'chilo' significa mille, quindi un chilometro è letteralmente mille metri."
+          },
+          {
+            "question": "Perché gli Stati Uniti usano ancora le unità imperiali?",
+            "answer": "Gli Stati Uniti hanno adottato le unità consuetudinarie basate sul sistema imperiale prima che il sistema metrico fosse ampiamente diffuso. Sebbene il governo statunitense sostenga la metrificazione volontaria dal 1975, i costi e i disagi legati al cambiamento delle misurazioni quotidiane hanno rallentato l'adozione. Molti settori negli USA, in particolare la scienza e la medicina, utilizzano già le unità metriche."
+          },
+          {
+            "question": "Qual è la più piccola unità di lunghezza?",
+            "answer": "Nell'uso quotidiano, i millimetri (0,001 metri) sono tra le più piccole unità pratiche. In ambito scientifico, i micrometri (0,000001 metri) misurano le cellule, i nanometri (0,000000001 metri) misurano le molecole e la lunghezza di Planck (circa 1,6 x 10^-35 metri) è considerata la più piccola lunghezza significativa in fisica."
+          },
+          {
+            "question": "Quanto sono precisi i convertitori di unità online?",
+            "answer": "I convertitori di unità online come il nostro utilizzano fattori di conversione standardizzati a livello internazionale e sono estremamente precisi per scopi pratici. Il nostro convertitore utilizza le relazioni esatte e ufficialmente definite tra le unità (ad es., 1 pollice = esattamente 25,4 mm), garantendo risultati sufficientemente affidabili per lavori di ingegneria e scientifici."
+          },
+          {
+            "question": "Cos'è un yard e come si rapporta al metro?",
+            "answer": "Uno yard è un'unità di lunghezza imperiale equivalente a 3 piedi o 36 pollici. Uno yard equivale esattamente a 0,9144 metri. Lo yard era storicamente definito da una barra campione fisica in Inghilterra, ma oggi è definito in rapporto al metro per garantire la precisione."
+          },
+          {
+            "question": "Quanti metri ci sono in un miglio?",
+            "answer": "Un miglio equivale esattamente a 1.609,344 metri. Si tratta del miglio terrestre utilizzato per le distanze sulla terraferma. Per convertire le miglia in metri, moltiplica il numero di miglia per 1.609,344. Ad esempio, una gara di 5 km corrisponde a circa 3,107 miglia."
+          },
+          {
+            "question": "Quali unità usano gli scienziati per misurare la lunghezza?",
+            "answer": "Gli scienziati utilizzano il sistema metrico, con il metro come unità di base. A seconda della scala, usano i chilometri per le grandi distanze, metri e centimetri per gli oggetti di uso quotidiano, millimetri per gli oggetti piccoli, micrometri per le cellule e nanometri per le molecole e le lunghezze d'onda della luce."
+          },
+          {
+            "question": "Posso usare questo convertitore sul mio telefono?",
+            "answer": "Sì, il nostro convertitore di unità è completamente responsive e funziona perfettamente su smartphone, tablet e computer desktop. Basta aprire la pagina nel browser del telefono e iniziare a convertire all'istante, senza bisogno di scaricare alcuna app."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri i nostri altri strumenti finanziari",
+        "description": "Gestisci ogni aspetto delle tue finanze con i nostri calcolatori e strumenti di monitoraggio gratuiti e facili da usare."
+      }
+    },
+    "es": {
+      "slug": "conversor-de-unidades",
+      "meta": {
+        "title": "Conversor de Metros | Convierte Metros a Millas, Pies, Yardas y Más",
+        "description": "Conversor de metros en línea gratuito. Convierte metros a kilómetros, millas, millas náuticas, pies, pulgadas, yardas y más. Resultados instantáneos sin necesidad de registro.",
+        "keywords": ["conversor de metros", "metros a pies", "metros a millas", "metros a millas náuticas", "conversor de longitud", "conversor de unidades", "conversor de distancia", "metros a yardas", "metros a pulgadas"]
+      },
+      "hero": {
+        "headline": "Conversor de Metros",
+        "description": "Convierte metros a cualquier unidad de longitud al instante. Compatible con kilómetros, millas, millas náuticas, pies, pulgadas, yardas y más."
+      },
+      "tool": {
+        "fromLabel": "De",
+        "toLabel": "A",
+        "amountPlaceholder": "Introduce el valor",
+        "switchButtonAriaLabel": "Intercambiar unidades",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "options": {
+          "mm": "Milímetro",
+          "cm": "Centímetro",
+          "m": "Metro",
+          "km": "Kilómetro",
+          "in": "Pulgada",
+          "ft": "Pie",
+          "yd": "Yarda",
+          "mi": "Milla",
+          "nmi": "Milla náutica",
+          "fathom": "Braza",
+          "furlong": "Furlong",
+          "league": "Legua"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo convertir unidades de longitud en línea",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "keyboard",
+            "title": "Introduce tu valor",
+            "description": "Escribe el valor de longitud que deseas convertir. Nuestro conversor admite cualquier valor numérico con alta precisión."
+          },
+          {
+            "number": 2,
+            "icon": "arrowLeftRight",
+            "title": "Selecciona las unidades",
+            "description": "Elige las unidades de origen y destino en los menús desplegables. Admitimos 12 unidades de longitud, desde milímetros hasta millas náuticas."
+          },
+          {
+            "number": 3,
+            "icon": "zap",
+            "title": "Obtén resultados al instante",
+            "description": "Tu conversión se calcula automáticamente usando factores de conversión precisos. Los resultados se actualizan en tiempo real mientras escribes."
+          }
+        ]
+      },
+      "ratesTable": {
+        "sectionTitle": "Conversiones de longitud comunes",
+        "sectionDescription": "Referencia rápida de las conversiones de unidades de longitud más utilizadas a partir del metro.",
+        "headers": {
+          "pair": "Conversión",
+          "rate": "Factor",
+          "inverseRate": "Factor inverso"
+        }
+      },
+      "features": {
+        "sectionTitle": "Por qué usar nuestro conversor de metros",
+        "sectionDescription": "Conversiones de longitud precisas y fiables para ingeniería, ciencia, viajes y uso cotidiano.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Conversión instantánea",
+            "description": "Los resultados aparecen en tiempo real mientras escribes. Sin botones que pulsar, sin recargas de página. Solo conversiones rápidas y precisas."
+          },
+          {
+            "icon": "globe",
+            "title": "12 unidades de longitud",
+            "description": "Convierte entre unidades métricas, imperiales y náuticas, incluyendo metros, kilómetros, millas, millas náuticas, pies y más."
+          },
+          {
+            "icon": "shield",
+            "title": "Alta precisión",
+            "description": "Nuestros factores de conversión se basan en estándares internacionales acordados, garantizando resultados confiables para uso profesional."
+          },
+          {
+            "icon": "calculator",
+            "title": "Funciona en ambos sentidos",
+            "description": "Cambia fácilmente entre unidades con un solo clic. Convierte metros a pies o pies a metros con la misma herramienta."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Entendiendo la medición de longitudes",
+        "articles": [
+          {
+            "title": "El sistema métrico y el metro",
+            "content": "El metro es la unidad base de longitud en el Sistema Internacional de Unidades (SI). Definido originalmente en 1793 como la diezmillonésima parte de la distancia desde el ecuador hasta el Polo Norte, ahora se define por la velocidad de la luz: un metro es la distancia que recorre la luz en el vacío en 1/299.792.458 de segundo. La estructura decimal del sistema métrico facilita la conversión entre milímetros, centímetros, metros y kilómetros."
+          },
+          {
+            "title": "Sistema imperial vs métrico: una división global",
+            "content": "Mientras que la mayor parte del mundo utiliza el sistema métrico, Estados Unidos, Liberia y Myanmar siguen usando principalmente las unidades imperiales para las mediciones cotidianas. El sistema imperial incluye pulgadas, pies, yardas y millas. Una milla equivale exactamente a 1.609,344 metros. Comprender las conversiones entre estos sistemas es esencial para el comercio internacional, los viajes y la colaboración científica."
+          },
+          {
+            "title": "Las millas náuticas: midiendo distancias en el mar",
+            "content": "Una milla náutica se basa en la circunferencia de la Tierra y equivale exactamente a 1.852 metros. Se utiliza en la aviación y la navegación marítima porque corresponde a un minuto de latitud. Los nudos, la unidad de velocidad en el mar, miden millas náuticas por hora. Esta relación hace que las cartas náuticas y los cálculos de navegación sean sencillos e intuitivos."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas frecuentes",
+        "items": [
+          {
+            "question": "¿Cuántos pies tiene un metro?",
+            "answer": "Un metro equivale exactamente a 3,28084 pies. Esta conversión se basa en el acuerdo internacional según el cual una pulgada equivale exactamente a 25,4 milímetros, lo que hace que un pie (12 pulgadas) sea igual a 0,3048 metros."
+          },
+          {
+            "question": "¿Cuál es la diferencia entre una milla y una milla náutica?",
+            "answer": "Una milla terrestre equivale a 1.609,344 metros (5.280 pies), mientras que una milla náutica equivale exactamente a 1.852 metros. Una milla náutica es aproximadamente un 15 % más larga que una milla terrestre. Las millas náuticas se utilizan en la navegación marítima y aérea porque se relacionan directamente con los grados de latitud."
+          },
+          {
+            "question": "¿Cómo convierto metros a kilómetros?",
+            "answer": "Para convertir metros a kilómetros, divide el número de metros entre 1.000. Por ejemplo, 5.000 metros equivalen a 5 kilómetros. El prefijo 'kilo' significa mil, por lo que un kilómetro es literalmente mil metros."
+          },
+          {
+            "question": "¿Por qué Estados Unidos sigue usando unidades imperiales?",
+            "answer": "Estados Unidos adoptó las unidades consuetudinarias basadas en el sistema imperial antes de que el sistema métrico estuviera ampliamente establecido. Aunque el gobierno estadounidense ha apoyado la metrificación voluntaria desde 1975, el coste y la disrupción de cambiar las mediciones cotidianas han ralentizado la adopción. Muchas industrias en EE. UU., especialmente la ciencia y la medicina, ya utilizan unidades métricas."
+          },
+          {
+            "question": "¿Cuál es la unidad de longitud más pequeña?",
+            "answer": "En el uso cotidiano, los milímetros (0,001 metros) se encuentran entre las unidades prácticas más pequeñas. En ciencia, los micrómetros (0,000001 metros) miden células, los nanómetros (0,000000001 metros) miden moléculas, y la longitud de Planck (aproximadamente 1,6 x 10^-35 metros) se considera la longitud más pequeña con significado en física."
+          },
+          {
+            "question": "¿Qué tan precisos son los conversores de unidades en línea?",
+            "answer": "Los conversores de unidades en línea como el nuestro utilizan factores de conversión estandarizados internacionalmente y son extremadamente precisos para fines prácticos. Nuestro conversor emplea las relaciones exactas y oficialmente definidas entre unidades (p. ej., 1 pulgada = exactamente 25,4 mm), garantizando resultados lo suficientemente fiables para trabajos de ingeniería y científicos."
+          },
+          {
+            "question": "¿Qué es una yarda y cómo se relaciona con el metro?",
+            "answer": "Una yarda es una unidad de longitud imperial equivalente a 3 pies o 36 pulgadas. Una yarda equivale exactamente a 0,9144 metros. La yarda se definía históricamente mediante una barra patrón física en Inglaterra, pero ahora se define en función del metro para mayor precisión."
+          },
+          {
+            "question": "¿Cuántos metros tiene una milla?",
+            "answer": "Una milla equivale exactamente a 1.609,344 metros. Se trata de la milla terrestre utilizada para distancias en tierra. Para convertir millas a metros, multiplica el número de millas por 1.609,344. Por ejemplo, una carrera de 5K equivale a aproximadamente 3,107 millas."
+          },
+          {
+            "question": "¿Qué unidades usan los científicos para medir la longitud?",
+            "answer": "Los científicos utilizan el sistema métrico, con el metro como unidad base. Según la escala, usan kilómetros para grandes distancias, metros y centímetros para objetos cotidianos, milímetros para objetos pequeños, micrómetros para células y nanómetros para moléculas y longitudes de onda de la luz."
+          },
+          {
+            "question": "¿Puedo usar este conversor en mi teléfono?",
+            "answer": "Sí, nuestro conversor de unidades es totalmente responsivo y funciona perfectamente en smartphones, tabletas y ordenadores de escritorio. Simplemente abre la página en tu navegador móvil y comienza a convertir al instante, sin necesidad de descargar ninguna aplicación."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explora nuestras otras herramientas financieras",
+        "description": "Gestiona cada aspecto de tus finanzas con nuestras calculadoras y herramientas de seguimiento gratuitas y fáciles de usar."
+      }
     }
   }
 }

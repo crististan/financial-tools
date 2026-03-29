@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, useRef } from 'react';
 import { ChevronDown, ChevronUp } from 'lucide-react';
 
 interface SalaryLabels {
@@ -199,6 +199,13 @@ export default function SalaryCalculator({ labels, configData, onSalaryChange, i
   const [hasDisability, setHasDisability] = useState(false);
   const [isMinimumWage, setIsMinimumWage] = useState(false);
   const [showDetails, setShowDetails] = useState(false);
+  const userHasInteracted = useRef(false);
+
+  useEffect(() => {
+    if (initialSalary && initialSalary > 0) {
+      setSalary(initialSalary.toString());
+    }
+  }, [initialSalary]);
 
   const result = useMemo(() => {
     const salaryValue = parseFloat(salary) || 0;
@@ -212,7 +219,7 @@ export default function SalaryCalculator({ labels, configData, onSalaryChange, i
   }, [salary, mode, semester, dependents, hasDisability, isMinimumWage, configData]);
 
   useEffect(() => {
-    if (onSalaryChange && result) {
+    if (onSalaryChange && result && userHasInteracted.current) {
       onSalaryChange(result.gross);
     }
   }, [result, onSalaryChange]);
@@ -257,7 +264,7 @@ export default function SalaryCalculator({ labels, configData, onSalaryChange, i
           <input
             type="number"
             value={salary}
-            onChange={(e) => setSalary(e.target.value)}
+            onChange={(e) => { userHasInteracted.current = true; setSalary(e.target.value); }}
             min="0"
             className="w-full rounded-md border border-[var(--clr-neutral-1000)] bg-[var(--clr-neutral-800)] px-4 py-3 text-[var(--clr-neutral-0)] outline-none focus:border-[var(--clr-green-500)]"
             placeholder="0"

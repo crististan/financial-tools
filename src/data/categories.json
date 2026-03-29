@@ -127,6 +127,68 @@
               }
             ]
           }
+        },
+        "it": {
+          "slug": "finanza",
+          "meta": {
+            "title": "Calcolatori Finanziari – Prestiti, Interessi e Stipendi | ToolFrame",
+            "description": "Calcolatori finanziari gratuiti online per il rimborso di prestiti, l'interesse composto e il calcolo dello stipendio. Pianifica le tue finanze con strumenti precisi e facili da usare.",
+            "keywords": ["calcolatore finanziario", "calcolatore prestiti", "calcolatore interesse composto", "calcolatore stipendio", "strumenti finanziari", "calcolatore denaro"]
+          },
+          "headline": "Calcolatori Finanziari",
+          "description": "Pianifica le tue finanze con precisione. I nostri calcolatori finanziari gratuiti ti aiutano a stimare le rate del prestito, calcolare la crescita dell'interesse composto e comprendere la ripartizione del tuo stipendio — tutto in un unico posto.",
+          "faq": {
+            "sectionTitle": "Domande frequenti",
+            "items": [
+              {
+                "question": "Quali calcolatori finanziari sono disponibili su ToolFrame?",
+                "answer": "ToolFrame offre un Calcolatore di Rimborso Prestiti per stimare le rate mensili e il piano di ammortamento, un Calcolatore di Interesse Composto per proiettare la crescita degli investimenti nel tempo e un Calcolatore di Stipendio per comprendere lo stipendio netto e lordo con la ripartizione delle tasse."
+              },
+              {
+                "question": "Questi calcolatori finanziari sono gratuiti?",
+                "answer": "Sì, tutti i calcolatori finanziari su ToolFrame sono completamente gratuiti e non richiedono registrazione. Puoi effettuare calcoli illimitati in qualsiasi momento."
+              },
+              {
+                "question": "Quanto sono precisi i calcoli finanziari?",
+                "answer": "I nostri calcolatori utilizzano formule finanziarie standard — come la formula di ammortamento per i prestiti e le formule dell'interesse composto per gli investimenti. I risultati sono matematicamente accurati in base ai dati inseriti. Per decisioni finanziarie ufficiali, consulta sempre un consulente finanziario qualificato."
+              },
+              {
+                "question": "Posso confrontare diversi scenari finanziari?",
+                "answer": "Sì. Il Calcolatore di Interesse Composto include una funzione di confronto degli scenari che mostra i risultati per diversi importi di contributo mensile. Il Calcolatore di Rimborso Prestiti mostra un piano di ammortamento completo per valutare diverse durate del prestito."
+              }
+            ]
+          }
+        },
+        "es": {
+          "slug": "finanzas",
+          "meta": {
+            "title": "Calculadoras Financieras – Préstamos, Intereses y Herramientas Salariales | ToolFrame",
+            "description": "Calculadoras financieras gratuitas en línea para el reembolso de préstamos, interés compuesto y cálculos salariales. Planifica tus finanzas con herramientas precisas y fáciles de usar.",
+            "keywords": ["calculadora financiera", "calculadora de préstamos", "calculadora interés compuesto", "calculadora salario", "herramientas financieras", "calculadora dinero"]
+          },
+          "headline": "Calculadoras Financieras",
+          "description": "Planifica tus finanzas con precisión. Nuestras calculadoras financieras gratuitas te ayudan a estimar las cuotas de préstamos, calcular el crecimiento del interés compuesto y comprender el desglose de tu salario — todo en un solo lugar.",
+          "faq": {
+            "sectionTitle": "Preguntas frecuentes",
+            "items": [
+              {
+                "question": "¿Qué calculadoras financieras están disponibles en ToolFrame?",
+                "answer": "ToolFrame ofrece una Calculadora de Préstamos para estimar cuotas mensuales y tablas de amortización, una Calculadora de Interés Compuesto para proyectar el crecimiento de inversiones a lo largo del tiempo, y una Calculadora de Salario para comprender el salario neto vs. bruto con desglose de impuestos."
+              },
+              {
+                "question": "¿Son gratuitas estas calculadoras financieras?",
+                "answer": "Sí, todas las calculadoras financieras de ToolFrame son completamente gratuitas y no requieren registro. Puedes realizar cálculos ilimitados en cualquier momento."
+              },
+              {
+                "question": "¿Qué tan precisos son los cálculos financieros?",
+                "answer": "Nuestras calculadoras utilizan fórmulas financieras estándar, como la fórmula de amortización para préstamos y las fórmulas de interés compuesto para inversiones. Los resultados son matemáticamente precisos según los datos que introduzcas. Para decisiones financieras oficiales, consulta siempre a un asesor financiero cualificado."
+              },
+              {
+                "question": "¿Puedo comparar diferentes escenarios financieros?",
+                "answer": "Sí. La Calculadora de Interés Compuesto incluye una función de comparación de escenarios que muestra resultados para diferentes montos de contribución mensual. La Calculadora de Préstamos muestra una tabla de amortización completa para evaluar diferentes plazos de préstamo."
+              }
+            ]
+          }
         }
       }
     },
@@ -254,6 +316,68 @@
               {
                 "question": "D'autres outils nautiques seront-ils ajoutés ?",
                 "answer": "Oui, nous prévoyons d'enrichir notre section d'outils nautiques avec des calculateurs supplémentaires pour la planification de trajets multi-étapes, la comparaison de types de carburant et d'autres utilitaires maritimes."
+              }
+            ]
+          }
+        },
+        "it": {
+          "slug": "nautica",
+          "meta": {
+            "title": "Strumenti Nautici – Calcolatore Carburante e Pianificazione Marittima | ToolFrame",
+            "description": "Strumenti nautici gratuiti per il calcolo del consumo di carburante marino, la pianificazione dei viaggi e la stima dei costi. Strumenti essenziali per proprietari di barche e navigatori.",
+            "keywords": ["calcolatore nautico", "calcolatore carburante marino", "consumo carburante barca", "strumenti nautici", "calcolatore navigazione", "pianificazione marittima"]
+          },
+          "headline": "Strumenti Nautici",
+          "description": "Strumenti essenziali per il mare. Calcola il consumo di carburante, stima i costi di viaggio e pianifica le tue traversate con fiducia utilizzando i nostri calcolatori nautici gratuiti.",
+          "faq": {
+            "sectionTitle": "Domande frequenti",
+            "items": [
+              {
+                "question": "Quali strumenti nautici offre ToolFrame?",
+                "answer": "ToolFrame offre attualmente un Calcolatore di Carburante Nautico che stima il consumo di carburante, il costo totale del viaggio, il tempo di percorrenza e l'autonomia in base alla distanza, alla velocità, al tipo di motore e alle condizioni meteorologiche."
+              },
+              {
+                "question": "Il calcolatore di carburante tiene conto delle condizioni meteorologiche?",
+                "answer": "Sì. Il Calcolatore di Carburante Nautico include le condizioni del vento (calmo, leggero, moderato, forte) e della corrente (assente, favorevole, contraria) che influenzano il consumo di carburante attraverso moltiplicatori realistici."
+              },
+              {
+                "question": "Quali tipi di motore sono supportati?",
+                "answer": "Il calcolatore supporta motori fuoribordo, motori entrobordo e motori ausiliari a vela. Ogni tipo di motore ha tassi di consumo base diversi che riflettono le prestazioni reali."
+              },
+              {
+                "question": "Verranno aggiunti altri strumenti nautici?",
+                "answer": "Sì, prevediamo di ampliare la nostra sezione di strumenti nautici con calcolatori aggiuntivi per la pianificazione di viaggi multi-tappa, il confronto dei tipi di carburante e altre utilità marittime."
+              }
+            ]
+          }
+        },
+        "es": {
+          "slug": "nautica",
+          "meta": {
+            "title": "Herramientas Náuticas – Calculadora de Combustible y Planificación Marítima | ToolFrame",
+            "description": "Herramientas náuticas gratuitas para el cálculo del consumo de combustible marino, planificación de travesías y estimación de costes. Herramientas esenciales para propietarios de embarcaciones y navegantes.",
+            "keywords": ["calculadora náutica", "calculadora combustible marino", "consumo combustible barco", "herramientas náuticas", "calculadora navegación", "planificación marítima"]
+          },
+          "headline": "Herramientas Náuticas",
+          "description": "Herramientas esenciales para el mar. Calcula el consumo de combustible, estima los costes de travesía y planifica tus viajes con confianza utilizando nuestras calculadoras náuticas gratuitas.",
+          "faq": {
+            "sectionTitle": "Preguntas frecuentes",
+            "items": [
+              {
+                "question": "¿Qué herramientas náuticas ofrece ToolFrame?",
+                "answer": "ToolFrame ofrece actualmente una Calculadora de Combustible Náutico que estima el consumo de combustible, el coste total de la travesía, el tiempo de viaje y la autonomía en función de la distancia, la velocidad, el tipo de motor y las condiciones meteorológicas."
+              },
+              {
+                "question": "¿La calculadora de combustible tiene en cuenta las condiciones meteorológicas?",
+                "answer": "Sí. La Calculadora de Combustible Náutico incluye condiciones de viento (calma, ligero, moderado, fuerte) y corriente (ninguna, favorable, en contra) que afectan al consumo de combustible mediante multiplicadores realistas."
+              },
+              {
+                "question": "¿Qué tipos de motor son compatibles?",
+                "answer": "La calculadora admite motores fueraborda, motores intraborda y motores auxiliares de vela. Cada tipo de motor tiene diferentes tasas de consumo base que reflejan el rendimiento real."
+              },
+              {
+                "question": "¿Se añadirán más herramientas náuticas?",
+                "answer": "Sí, planeamos ampliar nuestra sección de herramientas náuticas con calculadoras adicionales para la planificación de rutas con múltiples etapas, comparación de tipos de combustible y otras utilidades marítimas."
               }
             ]
           }
@@ -387,6 +511,68 @@
               }
             ]
           }
+        },
+        "it": {
+          "slug": "convertitori",
+          "meta": {
+            "title": "Convertitori Online Gratuiti – Valute e Unità di Misura | ToolFrame",
+            "description": "Converti valute e unità di misura istantaneamente con i nostri strumenti di conversione gratuiti online. Conversioni precise in tempo reale, senza registrazione.",
+            "keywords": ["convertitore online", "convertitore valute", "convertitore unità", "strumenti di conversione", "convertitore misure", "convertitore gratuito"]
+          },
+          "headline": "Convertitori",
+          "description": "Conversioni istantanee e precise a portata di mano. Converti tra valute e unità di misura con i nostri strumenti gratuiti online — senza registrazione necessaria.",
+          "faq": {
+            "sectionTitle": "Domande frequenti",
+            "items": [
+              {
+                "question": "Quali tipi di conversioni posso effettuare su ToolFrame?",
+                "answer": "ToolFrame offre un Convertitore di Valute che supporta 10 principali valute mondiali (USD, EUR, GBP, JPY e altre) e un Convertitore di Unità per 12 unità di misura di lunghezza (dai millimetri alle leghe, incluse le miglia nautiche)."
+              },
+              {
+                "question": "Le conversioni vengono calcolate in tempo reale?",
+                "answer": "Sì, tutte le conversioni vengono calcolate istantaneamente mentre digiti — non è necessario premere un pulsante di calcolo. I risultati si aggiornano automaticamente ad ogni modifica."
+              },
+              {
+                "question": "Posso invertire i valori di origine e destinazione?",
+                "answer": "Sì, sia il Convertitore di Valute che il Convertitore di Unità includono un pulsante di inversione che cambia istantaneamente la direzione della conversione con un'animazione fluida di rotazione."
+              },
+              {
+                "question": "Questi strumenti di conversione sono gratuiti?",
+                "answer": "Sì, tutti gli strumenti di conversione su ToolFrame sono completamente gratuiti, senza registrazione né creazione di account. Puoi effettuare conversioni illimitate in qualsiasi momento."
+              }
+            ]
+          }
+        },
+        "es": {
+          "slug": "conversores",
+          "meta": {
+            "title": "Conversores en Línea Gratuitos – Divisas y Unidades de Medida | ToolFrame",
+            "description": "Convierte divisas y unidades de medida al instante con nuestras herramientas de conversión gratuitas en línea. Conversiones precisas en tiempo real, sin necesidad de registro.",
+            "keywords": ["conversor en línea", "conversor de divisas", "conversor de unidades", "herramientas de conversión", "conversor de medidas", "conversor gratuito"]
+          },
+          "headline": "Conversores",
+          "description": "Conversiones instantáneas y precisas al alcance de tu mano. Convierte entre divisas y unidades de medida con nuestras herramientas gratuitas en línea — sin necesidad de registro.",
+          "faq": {
+            "sectionTitle": "Preguntas frecuentes",
+            "items": [
+              {
+                "question": "¿Qué tipos de conversiones puedo hacer en ToolFrame?",
+                "answer": "ToolFrame ofrece un Conversor de Divisas que admite 10 monedas mundiales principales (USD, EUR, GBP, JPY y más) y un Conversor de Unidades para 12 unidades de medida de longitud (desde milímetros hasta leguas, incluyendo millas náuticas)."
+              },
+              {
+                "question": "¿Las conversiones se calculan en tiempo real?",
+                "answer": "Sí, todas las conversiones se calculan instantáneamente mientras escribes — no es necesario pulsar un botón de cálculo. Los resultados se actualizan automáticamente con cada cambio."
+              },
+              {
+                "question": "¿Puedo invertir los valores de origen y destino?",
+                "answer": "Sí, tanto el Conversor de Divisas como el Conversor de Unidades incluyen un botón de inversión que cambia instantáneamente la dirección de la conversión con una animación fluida de rotación."
+              },
+              {
+                "question": "¿Son gratuitas estas herramientas de conversión?",
+                "answer": "Sí, todas las herramientas de conversión de ToolFrame son completamente gratuitas, sin necesidad de registro ni cuenta. Puedes realizar conversiones ilimitadas en cualquier momento."
+              }
+            ]
+          }
         }
       }
     },
@@ -517,6 +703,68 @@
               }
             ]
           }
+        },
+        "it": {
+          "slug": "pianificazione",
+          "meta": {
+            "title": "Strumenti di Pianificazione – Tracker Budget e Stimatore Energia | ToolFrame",
+            "description": "Strumenti di pianificazione gratuiti per budget mensili e stima energetica. Monitora le spese, pianifica le finanze e stima la produzione di energia solare con i nostri strumenti facili da usare.",
+            "keywords": ["strumenti di pianificazione", "tracker budget", "pianificatore budget", "stimatore energia", "pianificazione finanziaria", "tracker spese"]
+          },
+          "headline": "Strumenti di Pianificazione",
+          "description": "Pianifica in modo intelligente, vivi meglio. Monitora il tuo budget mensile, gestisci le spese e stima la produzione energetica con i nostri strumenti di pianificazione gratuiti pensati per le decisioni quotidiane.",
+          "faq": {
+            "sectionTitle": "Domande frequenti",
+            "items": [
+              {
+                "question": "Quali strumenti di pianificazione sono disponibili su ToolFrame?",
+                "answer": "ToolFrame offre un Tracker di Budget Mensile per gestire entrate e uscite con indicatori visivi di progresso e uno Stimatore di Energia Solare per calcolare la produzione di energia solare e il ritorno sull'investimento."
+              },
+              {
+                "question": "I dati del mio budget vengono salvati tra le sessioni?",
+                "answer": "Sì. Il Tracker di Budget Mensile salva automaticamente i tuoi dati nella memoria locale del browser, così le informazioni sul budget vengono mantenute tra le sessioni senza necessità di account o registrazione."
+              },
+              {
+                "question": "Posso personalizzare le categorie del budget?",
+                "answer": "Sì. Il Tracker di Budget include categorie predefinite di entrate e uscite, ma puoi aggiungere categorie personalizzate o rimuovere quelle esistenti per adattarle alla tua struttura finanziaria personale."
+              },
+              {
+                "question": "Questi strumenti di pianificazione sono gratuiti?",
+                "answer": "Sì, tutti gli strumenti di pianificazione su ToolFrame sono completamente gratuiti e non richiedono registrazione. I tuoi dati restano nel browser per la massima privacy."
+              }
+            ]
+          }
+        },
+        "es": {
+          "slug": "planificacion",
+          "meta": {
+            "title": "Herramientas de Planificación – Presupuesto Mensual y Estimador de Energía | ToolFrame",
+            "description": "Herramientas de planificación gratuitas para presupuestos mensuales y estimación de energía. Controla tus gastos, planifica tus finanzas y estima la producción de energía solar con nuestras herramientas fáciles de usar.",
+            "keywords": ["herramientas de planificación", "tracker presupuesto", "planificador presupuesto", "estimador energía", "planificación financiera", "tracker gastos"]
+          },
+          "headline": "Herramientas de Planificación",
+          "description": "Planifica mejor, vive mejor. Controla tu presupuesto mensual, gestiona los gastos y estima la producción de energía con nuestras herramientas de planificación gratuitas diseñadas para las decisiones del día a día.",
+          "faq": {
+            "sectionTitle": "Preguntas frecuentes",
+            "items": [
+              {
+                "question": "¿Qué herramientas de planificación están disponibles en ToolFrame?",
+                "answer": "ToolFrame ofrece un Planificador de Presupuesto Mensual para gestionar ingresos y gastos con indicadores visuales de progreso, y un Estimador de Energía Solar para calcular la producción de energía solar y el retorno de la inversión."
+              },
+              {
+                "question": "¿Se guardan mis datos de presupuesto entre sesiones?",
+                "answer": "Sí. El Planificador de Presupuesto Mensual guarda automáticamente tus datos en el almacenamiento local del navegador, por lo que la información del presupuesto se mantiene entre sesiones sin necesidad de cuenta ni registro."
+              },
+              {
+                "question": "¿Puedo personalizar las categorías del presupuesto?",
+                "answer": "Sí. El Planificador de Presupuesto viene con categorías predefinidas de ingresos y gastos, pero puedes añadir categorías personalizadas o eliminar las existentes para adaptarlas a tu estructura financiera personal."
+              },
+              {
+                "question": "¿Son gratuitas estas herramientas de planificación?",
+                "answer": "Sí, todas las herramientas de planificación de ToolFrame son completamente gratuitas y no requieren registro. Tus datos permanecen en tu navegador para máxima privacidad."
+              }
+            ]
+          }
         }
       }
     },
@@ -644,6 +892,68 @@
               {
                 "question": "D'autres outils énergie seront-ils ajoutés ?",
                 "answer": "Oui, nous prévoyons d'enrichir notre section énergie avec des calculateurs supplémentaires pour différentes sources d'énergie renouvelable et des analyses d'efficacité énergétique."
+              }
+            ]
+          }
+        },
+        "it": {
+          "slug": "energia",
+          "meta": {
+            "title": "Strumenti Energia – Stimatore Solare e Calcolatore di Produzione | ToolFrame",
+            "description": "Strumenti energia gratuiti per la stima della produzione di pannelli solari, il calcolo del ROI e l'analisi dei costi energetici. Pianifica il tuo investimento in energia rinnovabile con fiducia.",
+            "keywords": ["strumenti energia", "calcolatore solare", "stimatore pannelli solari", "produzione energia", "ROI solare", "calcolatore energia rinnovabile"]
+          },
+          "headline": "Strumenti Energia",
+          "description": "Alimenta le tue decisioni con i dati. Stima la produzione di energia solare, calcola il ritorno sull'investimento e confronta scenari energetici con i nostri strumenti energia gratuiti.",
+          "faq": {
+            "sectionTitle": "Domande frequenti",
+            "items": [
+              {
+                "question": "Quali strumenti energia offre ToolFrame?",
+                "answer": "ToolFrame offre uno Stimatore di Energia Solare che calcola la produzione solare annuale e mensile, i tassi di autoconsumo, i costi del sistema e il ritorno sull'investimento su 25 anni in base alla posizione e alla configurazione dell'impianto."
+              },
+              {
+                "question": "Quanto è precisa la stima dell'energia solare?",
+                "answer": "Lo stimatore utilizza dati di irradiazione solare specifici per regione (valori kWh/kWp) e tiene conto della degradazione dei pannelli su 25 anni, degli aumenti dei prezzi dell'energia, dell'impatto delle batterie e dei programmi di incentivi locali per fornire proiezioni realistiche."
+              },
+              {
+                "question": "Lo stimatore tiene conto dell'accumulo con batteria?",
+                "answer": "Sì. Puoi attivare o disattivare l'accumulo con batteria e impostare la capacità. Lo strumento confronta gli scenari con e senza batteria, mostrando come l'accumulo influisce sui tassi di autoconsumo e sui risparmi complessivi."
+              },
+              {
+                "question": "Verranno aggiunti altri strumenti energia?",
+                "answer": "Sì, prevediamo di ampliare la nostra sezione energia con calcolatori aggiuntivi per diverse fonti di energia rinnovabile e analisi dell'efficienza energetica."
+              }
+            ]
+          }
+        },
+        "es": {
+          "slug": "energia",
+          "meta": {
+            "title": "Herramientas de Energía – Estimador Solar y Calculadora de Producción | ToolFrame",
+            "description": "Herramientas de energía gratuitas para la estimación de producción de paneles solares, cálculo de ROI y análisis de costes energéticos. Planifica tu inversión en energía renovable con confianza.",
+            "keywords": ["herramientas energía", "calculadora solar", "estimador paneles solares", "producción energía", "ROI solar", "calculadora energía renovable"]
+          },
+          "headline": "Herramientas de Energía",
+          "description": "Impulsa tus decisiones con datos. Estima la producción de energía solar, calcula el retorno de la inversión y compara escenarios energéticos con nuestras herramientas de energía gratuitas.",
+          "faq": {
+            "sectionTitle": "Preguntas frecuentes",
+            "items": [
+              {
+                "question": "¿Qué herramientas de energía ofrece ToolFrame?",
+                "answer": "ToolFrame ofrece un Estimador de Energía Solar que calcula la producción solar anual y mensual, las tasas de autoconsumo, los costes del sistema y el retorno de la inversión a 25 años según tu ubicación y la configuración del sistema."
+              },
+              {
+                "question": "¿Qué tan precisa es la estimación de energía solar?",
+                "answer": "El estimador utiliza datos de irradiación solar específicos por región (valores kWh/kWp) y tiene en cuenta la degradación de los paneles a lo largo de 25 años, los aumentos de precios de la energía, el impacto de las baterías y los programas de subvenciones locales para proporcionar proyecciones realistas."
+              },
+              {
+                "question": "¿El estimador tiene en cuenta el almacenamiento con batería?",
+                "answer": "Sí. Puedes activar o desactivar el almacenamiento con batería y establecer la capacidad. La herramienta compara escenarios con y sin batería, mostrando cómo el almacenamiento afecta a las tasas de autoconsumo y al ahorro total."
+              },
+              {
+                "question": "¿Se añadirán más herramientas de energía?",
+                "answer": "Sí, planeamos ampliar nuestra sección de herramientas de energía con calculadoras adicionales para diferentes fuentes de energía renovable y análisis de eficiencia energética."
               }
             ]
           }

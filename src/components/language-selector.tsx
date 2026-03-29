@@ -11,6 +11,8 @@ type LanguageSelectorProps = {
         ro: string;
         de: string;
         fr: string;
+        it: string;
+        es: string;
     };
     slugMaps?: Record<string, Record<string, string>>;
 };

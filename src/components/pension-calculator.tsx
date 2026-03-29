@@ -67,12 +67,14 @@ export default function PensionCalculator({ labels, configData, initialSalary, o
     }
   }, [initialSalary]);
 
-  useEffect(() => {
-    const salary = parseFloat(avgGrossSalary) || 0;
+  // Only notify parent when user changes salary via input, not on mount default
+  const handleSalaryInput = (value: string) => {
+    setAvgGrossSalary(value);
+    const salary = parseFloat(value) || 0;
     if (onSalaryChange && salary > 0) {
       onSalaryChange(salary);
     }
-  }, [avgGrossSalary, onSalaryChange]);
+  };
 
   const result = useMemo(() => {
     const salary = parseFloat(avgGrossSalary) || 0;
@@ -178,7 +180,7 @@ export default function PensionCalculator({ labels, configData, initialSalary, o
           <input
             type="number"
             value={avgGrossSalary}
-            onChange={(e) => setAvgGrossSalary(e.target.value)}
+            onChange={(e) => handleSalaryInput(e.target.value)}
             min="0"
             className="w-full rounded-md border border-[var(--clr-neutral-1000)] bg-[var(--clr-neutral-800)] px-4 py-3 text-[var(--clr-neutral-0)] outline-none focus:border-[var(--clr-green-500)]"
             placeholder="0"

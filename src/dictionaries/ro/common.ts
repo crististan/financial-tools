@@ -31,6 +31,8 @@ const commonDictionary: CommonDictionary = {
         ro: "Română",
         de: "Germană",
         fr: "Franceză",
+        it: "Italiană",
+        es: "Spaniolă",
     },
     sponsor: {
         label: "Publicitate",
