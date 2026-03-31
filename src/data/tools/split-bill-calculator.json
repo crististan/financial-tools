@@ -1,0 +1,790 @@
+{
+  "id": "split-bill-calculator",
+  "component": "split-bill-calculator",
+  "iconPath": "/icons/split-bill-calculator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "config": {},
+  "translations": {
+    "en": {
+      "slug": "split-bill-calculator",
+      "meta": {
+        "title": "Split Bill Calculator – Tip & Per Person Cost | ToolFrame",
+        "description": "Free split bill calculator with tip percentage presets. Instantly calculate how much each person owes, including tip. Perfect for restaurants, group dinners, and shared expenses.",
+        "keywords": ["split bill calculator", "tip calculator", "bill splitter", "restaurant bill split", "tip per person", "gratuity calculator", "split check calculator", "group bill calculator"]
+      },
+      "hero": {
+        "headline": "Split Bill Calculator",
+        "description": "Split the bill and calculate the tip per person instantly. Choose a tip percentage, set the number of people, and see exactly how much everyone owes."
+      },
+      "tool": {
+        "billAmountLabel": "Bill Amount",
+        "billAmountPlaceholder": "e.g. 120.00",
+        "tipLabel": "Tip Percentage",
+        "customTipPlaceholder": "Custom %",
+        "numberOfPeopleLabel": "Number of People",
+        "currencyLabel": "Currency",
+        "resultTotalWithTip": "Total with Tip",
+        "resultTipAmount": "Tip Amount",
+        "resultPerPersonTotal": "Per Person Total",
+        "resultPerPersonTip": "Per Person Tip",
+        "summaryTitle": "Breakdown",
+        "summaryBillPerPerson": "Bill per person",
+        "summaryTipPerPerson": "Tip per person",
+        "summaryTotalPerPerson": "Total per person",
+        "currencySymbol": "$"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Use the Split Bill Calculator",
+        "steps": [
+          {
+            "title": "Enter the Bill Amount",
+            "description": "Type in the total bill amount from your receipt. You can also select your preferred currency for display formatting."
+          },
+          {
+            "title": "Choose a Tip Percentage",
+            "description": "Select a quick preset (10%, 15%, 18%, 20%, or 25%) or enter a custom tip percentage. The calculator updates in real time."
+          },
+          {
+            "title": "Set the Number of People",
+            "description": "Use the plus and minus buttons to set how many people are splitting the bill. Instantly see the total and tip per person."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Split Bill Calculator",
+        "sectionDescription": "Simple, fast, and accurate bill splitting for any group size.",
+        "items": [
+          {
+            "icon": "users",
+            "title": "Any Group Size",
+            "description": "Split the bill between 2 or 20 people — the calculator handles any group size with instant per-person breakdowns."
+          },
+          {
+            "icon": "percent",
+            "title": "Quick Tip Presets",
+            "description": "Choose from popular tip percentages (10%, 15%, 18%, 20%, 25%) or enter a custom amount. No mental math required."
+          },
+          {
+            "icon": "zap",
+            "title": "Instant Results",
+            "description": "All calculations update in real time as you type. No buttons to click — just enter your values and get instant answers."
+          },
+          {
+            "icon": "globe",
+            "title": "Multi-Currency Support",
+            "description": "Display results in your preferred currency symbol — dollars, euros, pounds, or lei. Perfect for international dining."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide to Tipping & Bill Splitting",
+        "articles": [
+          {
+            "title": "Tipping Etiquette Around the World",
+            "content": "Tipping customs vary widely across countries. In the United States, a 15–20% tip is standard at restaurants, while in many European countries, a 5–10% tip is generous since service charges are often included. In Japan and South Korea, tipping is generally not expected and can even be considered impolite. In the UK, 10–12.5% is customary when service isn't included. When traveling, it's always a good idea to research local customs to avoid awkward situations. Our calculator makes it easy to adjust the tip percentage to match any country's norms."
+          },
+          {
+            "title": "How to Split a Bill Fairly",
+            "content": "Splitting a bill equally is the simplest approach when everyone ordered items of similar value. However, if some guests ordered significantly more expensive dishes or drinks, consider splitting proportionally based on what each person ordered. For large groups, many restaurants will automatically add a gratuity of 18–20%. Always check your receipt before adding an additional tip. When using a split bill calculator, the equal split method works best for casual dining with friends, while itemized splitting may be more appropriate for business dinners or mixed-budget groups."
+          },
+          {
+            "title": "Understanding Gratuity and Service Charges",
+            "content": "A gratuity (tip) is a voluntary amount given to reward good service, while a service charge is a mandatory fee added by the establishment. In many countries, restaurants include a service charge of 10–15% on the bill, which goes to the staff. When a service charge is already included, additional tipping is optional — usually reserved for exceptional service. Before calculating your tip, always check the bill for any pre-included charges. If a service charge is present, you may want to set the tip percentage to 0% in the calculator and only tip extra if desired."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "How does the split bill calculator work?",
+            "answer": "Enter the total bill amount, choose a tip percentage (or enter a custom one), and set the number of people. The calculator instantly shows the total with tip, total tip amount, and exactly how much each person pays — including their share of the tip."
+          },
+          {
+            "question": "What tip percentage should I leave?",
+            "answer": "It depends on the country and type of service. In the US, 15–20% is standard for restaurants. In Europe, 5–10% is common. For exceptional service, 20–25% is generous. Our preset buttons (10%, 15%, 18%, 20%, 25%) cover the most common tipping scenarios."
+          },
+          {
+            "question": "Can I split the bill between any number of people?",
+            "answer": "Yes, you can split the bill between 1 and any number of people. Use the plus and minus buttons or type in the number directly."
+          },
+          {
+            "question": "Is this calculator free to use?",
+            "answer": "Yes, the split bill calculator is completely free with no registration required. You can use it as many times as you need."
+          },
+          {
+            "question": "Can I use a custom tip percentage?",
+            "answer": "Absolutely. While we provide quick presets (10%, 15%, 18%, 20%, 25%), you can also type in any custom percentage in the input field."
+          },
+          {
+            "question": "Does the calculator work with different currencies?",
+            "answer": "Yes. You can select your preferred currency symbol ($, €, £, lei) for display formatting. The math works the same regardless of currency."
+          },
+          {
+            "question": "What if the bill already includes a service charge?",
+            "answer": "If your bill already includes a service charge, you can set the tip percentage to 0% to see the equal split without additional gratuity, or add a smaller tip on top if you wish."
+          },
+          {
+            "question": "How is the tip calculated?",
+            "answer": "The tip is calculated as: Tip = Bill Amount × Tip Percentage ÷ 100. For example, a 20% tip on a $100 bill equals $20. The total per person is then (Bill + Tip) ÷ Number of People."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore More Financial Tools",
+        "description": "Discover our collection of free financial calculators for loans, investments, budgeting, and more."
+      }
+    },
+    "ro": {
+      "slug": "calculator-impartire-nota",
+      "meta": {
+        "title": "Calculator Împărțire Notă de Plată – Bacșiș per Persoană | ToolFrame",
+        "description": "Calculator gratuit pentru împărțirea notei de plată cu bacșiș. Calculează instant cât plătește fiecare persoană, inclusiv bacșișul. Perfect pentru restaurant și ieșiri în grup.",
+        "keywords": ["calculator impartire nota", "calculator bacsis", "impartire nota plata", "split bill", "calculator restaurant", "bacsis per persoana", "impartire cheltuieli grup"]
+      },
+      "hero": {
+        "headline": "Calculator Împărțire Notă",
+        "description": "Împarte nota de plată și calculează bacșișul per persoană instant. Alege procentul de bacșiș, setează numărul de persoane și vezi exact cât datorează fiecare."
+      },
+      "tool": {
+        "billAmountLabel": "Suma Notei",
+        "billAmountPlaceholder": "ex. 250.00",
+        "tipLabel": "Procent Bacșiș",
+        "customTipPlaceholder": "Custom %",
+        "numberOfPeopleLabel": "Număr Persoane",
+        "currencyLabel": "Monedă",
+        "resultTotalWithTip": "Total cu Bacșiș",
+        "resultTipAmount": "Suma Bacșiș",
+        "resultPerPersonTotal": "Total per Persoană",
+        "resultPerPersonTip": "Bacșiș per Persoană",
+        "summaryTitle": "Detalii",
+        "summaryBillPerPerson": "Notă per persoană",
+        "summaryTipPerPerson": "Bacșiș per persoană",
+        "summaryTotalPerPerson": "Total per persoană",
+        "currencySymbol": "lei"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum Folosești Calculatorul de Împărțire Notă",
+        "steps": [
+          {
+            "title": "Introdu Suma Notei",
+            "description": "Scrie suma totală de pe bon. Poți selecta și moneda preferată pentru formatarea afișării."
+          },
+          {
+            "title": "Alege Procentul de Bacșiș",
+            "description": "Selectează un preset rapid (10%, 15%, 18%, 20% sau 25%) sau introdu un procent personalizat. Calculatorul se actualizează în timp real."
+          },
+          {
+            "title": "Setează Numărul de Persoane",
+            "description": "Folosește butoanele plus și minus pentru a seta câte persoane împart nota. Vezi instant totalul și bacșișul per persoană."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Calculatorul Nostru",
+        "sectionDescription": "Simplu, rapid și precis pentru împărțirea notei în orice grup.",
+        "items": [
+          {
+            "icon": "users",
+            "title": "Orice Dimensiune de Grup",
+            "description": "Împarte nota între 2 sau 20 de persoane — calculatorul gestionează orice dimensiune de grup cu defalcare instantanee per persoană."
+          },
+          {
+            "icon": "percent",
+            "title": "Preseturi Rapide de Bacșiș",
+            "description": "Alege dintre procentele populare (10%, 15%, 18%, 20%, 25%) sau introdu o sumă personalizată. Fără calcule mintale."
+          },
+          {
+            "icon": "zap",
+            "title": "Rezultate Instantanee",
+            "description": "Toate calculele se actualizează în timp real. Nu trebuie să apeși niciun buton — doar introdu valorile și primești răspunsuri instant."
+          },
+          {
+            "icon": "globe",
+            "title": "Suport Multi-Monedă",
+            "description": "Afișează rezultatele în moneda ta preferată — dolari, euro, lire sau lei. Perfect pentru orice situație."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid despre Bacșiș și Împărțirea Notei",
+        "articles": [
+          {
+            "title": "Eticheta Bacșișului în Lume",
+            "content": "Obiceiurile legate de bacșiș variază semnificativ între țări. În Statele Unite, un bacșiș de 15–20% este standard la restaurante, în timp ce în multe țări europene, 5–10% este generos deoarece taxa de serviciu este adesea inclusă. În Japonia și Coreea de Sud, bacșișul nu este de obicei așteptat. În România, bacșișul de 5-10% este obișnuit la restaurante, deși nu este obligatoriu. Calculatorul nostru facilitează ajustarea procentului de bacșiș pentru a se potrivi normelor oricărei țări."
+          },
+          {
+            "title": "Cum Împărți Nota Corect",
+            "content": "Împărțirea egală a notei este cea mai simplă abordare când toată lumea a comandat mâncăruri de valoare similară. Dacă unii invitați au comandat preparate semnificativ mai scumpe, ia în considerare împărțirea proporțională. Pentru grupuri mari, multe restaurante adaugă automat un bacșiș de 15–20%. Verifică întotdeauna bonul înainte de a adăuga bacșiș suplimentar. Metoda împărțirii egale funcționează cel mai bine pentru ieșirile casual cu prietenii."
+          },
+          {
+            "title": "Înțelegerea Bacșișului și a Taxei de Serviciu",
+            "content": "Bacșișul este o sumă voluntară oferită pentru a recompensa serviciul bun, în timp ce taxa de serviciu este o taxă obligatorie adăugată de restaurant. În multe țări, restaurantele includ o taxă de serviciu de 10–15% pe notă. Când taxa de serviciu este deja inclusă, bacșișul suplimentar este opțional. Înainte de a calcula bacșișul, verifică întotdeauna nota pentru eventuale taxe pre-incluse."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Cum funcționează calculatorul de împărțire notă?",
+            "answer": "Introdu suma totală a notei, alege un procent de bacșiș (sau introdu unul personalizat) și setează numărul de persoane. Calculatorul arată instant totalul cu bacșiș, suma totală a bacșișului și exact cât plătește fiecare persoană."
+          },
+          {
+            "question": "Ce procent de bacșiș ar trebui să las?",
+            "answer": "Depinde de țară și tipul serviciului. În SUA, 15–20% este standard. În Europa, 5–10% este obișnuit. În România, 5-10% este practica curentă. Butoanele noastre preset (10%, 15%, 18%, 20%, 25%) acoperă cele mai comune scenarii."
+          },
+          {
+            "question": "Pot împărți nota între oricâte persoane?",
+            "answer": "Da, poți împărți nota între 1 și oricâte persoane. Folosește butoanele plus și minus sau scrie direct numărul."
+          },
+          {
+            "question": "Este gratuit calculatorul?",
+            "answer": "Da, calculatorul de împărțire notă este complet gratuit, fără înregistrare necesară. Îl poți folosi de câte ori ai nevoie."
+          },
+          {
+            "question": "Pot folosi un procent de bacșiș personalizat?",
+            "answer": "Absolut. Pe lângă preseturile rapide (10%, 15%, 18%, 20%, 25%), poți introduce orice procent personalizat în câmpul de input."
+          },
+          {
+            "question": "Funcționează calculatorul cu diferite monede?",
+            "answer": "Da. Poți selecta simbolul monedei preferate ($, €, £, lei) pentru formatarea afișării. Calculele funcționează la fel indiferent de monedă."
+          },
+          {
+            "question": "Ce fac dacă nota include deja taxa de serviciu?",
+            "answer": "Dacă nota ta include deja o taxă de serviciu, poți seta procentul de bacșiș la 0% pentru a vedea împărțirea egală fără bacșiș suplimentar."
+          },
+          {
+            "question": "Cum se calculează bacșișul?",
+            "answer": "Bacșișul se calculează astfel: Bacșiș = Suma Notei × Procent Bacșiș ÷ 100. De exemplu, un bacșiș de 20% la o notă de 100 lei este 20 lei. Totalul per persoană este apoi (Notă + Bacșiș) ÷ Număr Persoane."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Alte Instrumente Financiare",
+        "description": "Descoperă colecția noastră de calculatoare financiare gratuite pentru credite, investiții, buget și multe altele."
+      }
+    },
+    "de": {
+      "slug": "rechnungsteiler",
+      "meta": {
+        "title": "Rechnungsteiler – Trinkgeld & Kosten pro Person | ToolFrame",
+        "description": "Kostenloser Rechnungsteiler mit Trinkgeld-Prozentsätzen. Berechnen Sie sofort, wie viel jede Person schuldet, einschließlich Trinkgeld. Perfekt für Restaurants und Gruppenessen.",
+        "keywords": ["rechnungsteiler", "trinkgeld rechner", "rechnung teilen", "restaurant rechnung teilen", "trinkgeld pro person", "gruppenrechnung", "bill splitter deutsch"]
+      },
+      "hero": {
+        "headline": "Rechnungsteiler",
+        "description": "Teilen Sie die Rechnung und berechnen Sie das Trinkgeld pro Person sofort. Wählen Sie einen Trinkgeld-Prozentsatz, legen Sie die Anzahl der Personen fest und sehen Sie genau, wie viel jeder schuldet."
+      },
+      "tool": {
+        "billAmountLabel": "Rechnungsbetrag",
+        "billAmountPlaceholder": "z.B. 120,00",
+        "tipLabel": "Trinkgeld-Prozentsatz",
+        "customTipPlaceholder": "Eigener %",
+        "numberOfPeopleLabel": "Anzahl Personen",
+        "currencyLabel": "Währung",
+        "resultTotalWithTip": "Gesamt mit Trinkgeld",
+        "resultTipAmount": "Trinkgeldbetrag",
+        "resultPerPersonTotal": "Gesamt pro Person",
+        "resultPerPersonTip": "Trinkgeld pro Person",
+        "summaryTitle": "Aufschlüsselung",
+        "summaryBillPerPerson": "Rechnung pro Person",
+        "summaryTipPerPerson": "Trinkgeld pro Person",
+        "summaryTotalPerPerson": "Gesamt pro Person",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "So Verwenden Sie den Rechnungsteiler",
+        "steps": [
+          {
+            "title": "Rechnungsbetrag Eingeben",
+            "description": "Geben Sie den Gesamtbetrag Ihrer Rechnung ein. Sie können auch Ihre bevorzugte Währung für die Anzeige auswählen."
+          },
+          {
+            "title": "Trinkgeld-Prozentsatz Wählen",
+            "description": "Wählen Sie ein schnelles Preset (10%, 15%, 18%, 20% oder 25%) oder geben Sie einen benutzerdefinierten Prozentsatz ein. Der Rechner aktualisiert sich in Echtzeit."
+          },
+          {
+            "title": "Anzahl der Personen Festlegen",
+            "description": "Verwenden Sie die Plus- und Minus-Tasten, um die Anzahl der Personen festzulegen. Sehen Sie sofort den Gesamt- und Trinkgeldbetrag pro Person."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum Unseren Rechnungsteiler Verwenden",
+        "sectionDescription": "Einfach, schnell und genau — Rechnung teilen für jede Gruppengröße.",
+        "items": [
+          {
+            "icon": "users",
+            "title": "Jede Gruppengröße",
+            "description": "Teilen Sie die Rechnung zwischen 2 oder 20 Personen — der Rechner bewältigt jede Gruppengröße mit sofortiger Aufschlüsselung pro Person."
+          },
+          {
+            "icon": "percent",
+            "title": "Schnelle Trinkgeld-Presets",
+            "description": "Wählen Sie aus beliebten Prozentsätzen (10%, 15%, 18%, 20%, 25%) oder geben Sie einen eigenen Betrag ein. Kein Kopfrechnen nötig."
+          },
+          {
+            "icon": "zap",
+            "title": "Sofortige Ergebnisse",
+            "description": "Alle Berechnungen aktualisieren sich in Echtzeit. Keine Schaltflächen — geben Sie einfach Ihre Werte ein und erhalten Sie sofortige Antworten."
+          },
+          {
+            "icon": "globe",
+            "title": "Mehrere Währungen",
+            "description": "Zeigen Sie Ergebnisse in Ihrem bevorzugten Währungssymbol an — Dollar, Euro, Pfund oder Lei. Perfekt für internationales Dining."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Leitfaden zum Trinkgeld & Rechnung Teilen",
+        "articles": [
+          {
+            "title": "Trinkgeld-Etikette Weltweit",
+            "content": "Trinkgeld-Bräuche variieren stark zwischen Ländern. In den USA sind 15–20% in Restaurants Standard, während in vielen europäischen Ländern 5–10% großzügig sind, da Servicegebühren oft enthalten sind. In Japan und Südkorea wird Trinkgeld normalerweise nicht erwartet. In Deutschland ist ein Trinkgeld von 5–10% üblich, oft aufgerundet auf einen glatten Betrag. Unser Rechner erleichtert die Anpassung des Trinkgeld-Prozentsatzes an die Normen jedes Landes."
+          },
+          {
+            "title": "Wie Man eine Rechnung Fair Teilt",
+            "content": "Die gleichmäßige Aufteilung der Rechnung ist der einfachste Ansatz, wenn alle Gerichte ähnlichen Wertes bestellt haben. Wenn einige Gäste deutlich teurere Gerichte bestellt haben, sollten Sie eine proportionale Aufteilung in Betracht ziehen. Bei großen Gruppen fügen viele Restaurants automatisch ein Trinkgeld von 18–20% hinzu. Überprüfen Sie immer die Rechnung, bevor Sie zusätzliches Trinkgeld hinzufügen."
+          },
+          {
+            "title": "Trinkgeld und Servicegebühren Verstehen",
+            "content": "Ein Trinkgeld ist ein freiwilliger Betrag zur Belohnung guten Services, während eine Servicegebühr eine obligatorische Gebühr des Restaurants ist. In vielen Ländern enthalten Restaurants eine Servicegebühr von 10–15% auf der Rechnung. Wenn eine Servicegebühr bereits enthalten ist, ist zusätzliches Trinkgeld optional. Überprüfen Sie immer die Rechnung auf vorinkludierte Gebühren, bevor Sie Ihr Trinkgeld berechnen."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig Gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie funktioniert der Rechnungsteiler?",
+            "answer": "Geben Sie den Gesamtbetrag der Rechnung ein, wählen Sie einen Trinkgeld-Prozentsatz und legen Sie die Anzahl der Personen fest. Der Rechner zeigt sofort den Gesamtbetrag mit Trinkgeld, den Trinkgeldbetrag und genau, wie viel jede Person zahlt."
+          },
+          {
+            "question": "Wie viel Trinkgeld sollte ich geben?",
+            "answer": "Das hängt vom Land und der Art des Services ab. In den USA sind 15–20% Standard. In Europa sind 5–10% üblich. In Deutschland ist 5–10% die gängige Praxis. Unsere Preset-Buttons decken die häufigsten Szenarien ab."
+          },
+          {
+            "question": "Kann ich die Rechnung zwischen beliebig vielen Personen teilen?",
+            "answer": "Ja, Sie können die Rechnung zwischen 1 und beliebig vielen Personen teilen. Verwenden Sie die Plus- und Minus-Tasten oder geben Sie die Zahl direkt ein."
+          },
+          {
+            "question": "Ist der Rechner kostenlos?",
+            "answer": "Ja, der Rechnungsteiler ist völlig kostenlos und ohne Registrierung nutzbar."
+          },
+          {
+            "question": "Kann ich einen benutzerdefinierten Trinkgeld-Prozentsatz verwenden?",
+            "answer": "Ja. Neben den schnellen Presets können Sie jeden beliebigen Prozentsatz im Eingabefeld eingeben."
+          },
+          {
+            "question": "Funktioniert der Rechner mit verschiedenen Währungen?",
+            "answer": "Ja. Sie können Ihr bevorzugtes Währungssymbol ($, €, £, lei) für die Anzeige auswählen."
+          },
+          {
+            "question": "Was wenn die Rechnung bereits eine Servicegebühr enthält?",
+            "answer": "Wenn Ihre Rechnung bereits eine Servicegebühr enthält, können Sie den Trinkgeld-Prozentsatz auf 0% setzen."
+          },
+          {
+            "question": "Wie wird das Trinkgeld berechnet?",
+            "answer": "Trinkgeld = Rechnungsbetrag × Trinkgeld-Prozentsatz ÷ 100. Zum Beispiel ergibt ein 20% Trinkgeld auf eine 100€ Rechnung 20€. Der Gesamtbetrag pro Person ist dann (Rechnung + Trinkgeld) ÷ Anzahl Personen."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Weitere Finanzrechner Entdecken",
+        "description": "Entdecken Sie unsere Sammlung kostenloser Finanzrechner für Kredite, Investitionen, Budgetplanung und mehr."
+      }
+    },
+    "fr": {
+      "slug": "calculateur-partage-addition",
+      "meta": {
+        "title": "Calculateur Partage d'Addition – Pourboire par Personne | ToolFrame",
+        "description": "Calculateur gratuit pour partager l'addition avec pourboire. Calculez instantanément combien chaque personne doit payer, pourboire inclus. Parfait pour les restaurants et sorties en groupe.",
+        "keywords": ["calculateur partage addition", "calculateur pourboire", "diviser addition", "partage note restaurant", "pourboire par personne", "calculateur restaurant", "diviser note groupe"]
+      },
+      "hero": {
+        "headline": "Calculateur Partage d'Addition",
+        "description": "Partagez l'addition et calculez le pourboire par personne instantanément. Choisissez un pourcentage de pourboire, définissez le nombre de personnes et voyez exactement combien chacun doit."
+      },
+      "tool": {
+        "billAmountLabel": "Montant de l'Addition",
+        "billAmountPlaceholder": "ex. 120,00",
+        "tipLabel": "Pourcentage de Pourboire",
+        "customTipPlaceholder": "Autre %",
+        "numberOfPeopleLabel": "Nombre de Personnes",
+        "currencyLabel": "Devise",
+        "resultTotalWithTip": "Total avec Pourboire",
+        "resultTipAmount": "Montant du Pourboire",
+        "resultPerPersonTotal": "Total par Personne",
+        "resultPerPersonTip": "Pourboire par Personne",
+        "summaryTitle": "Détails",
+        "summaryBillPerPerson": "Addition par personne",
+        "summaryTipPerPerson": "Pourboire par personne",
+        "summaryTotalPerPerson": "Total par personne",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment Utiliser le Calculateur de Partage d'Addition",
+        "steps": [
+          {
+            "title": "Entrez le Montant de l'Addition",
+            "description": "Saisissez le montant total de votre facture. Vous pouvez également sélectionner votre devise préférée pour le format d'affichage."
+          },
+          {
+            "title": "Choisissez le Pourcentage de Pourboire",
+            "description": "Sélectionnez un preset rapide (10%, 15%, 18%, 20% ou 25%) ou entrez un pourcentage personnalisé. Le calculateur se met à jour en temps réel."
+          },
+          {
+            "title": "Définissez le Nombre de Personnes",
+            "description": "Utilisez les boutons plus et moins pour définir combien de personnes partagent l'addition. Voyez instantanément le total et le pourboire par personne."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi Utiliser Notre Calculateur",
+        "sectionDescription": "Simple, rapide et précis pour partager l'addition dans n'importe quel groupe.",
+        "items": [
+          {
+            "icon": "users",
+            "title": "Toute Taille de Groupe",
+            "description": "Partagez l'addition entre 2 ou 20 personnes — le calculateur gère toute taille de groupe avec une répartition instantanée par personne."
+          },
+          {
+            "icon": "percent",
+            "title": "Presets de Pourboire Rapides",
+            "description": "Choisissez parmi les pourcentages populaires (10%, 15%, 18%, 20%, 25%) ou entrez un montant personnalisé. Pas de calcul mental nécessaire."
+          },
+          {
+            "icon": "zap",
+            "title": "Résultats Instantanés",
+            "description": "Tous les calculs se mettent à jour en temps réel. Pas de bouton à cliquer — entrez vos valeurs et obtenez des réponses immédiates."
+          },
+          {
+            "icon": "globe",
+            "title": "Support Multi-Devises",
+            "description": "Affichez les résultats dans votre symbole de devise préféré — dollars, euros, livres ou lei. Parfait pour les repas internationaux."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide du Pourboire et du Partage d'Addition",
+        "articles": [
+          {
+            "title": "L'Étiquette du Pourboire dans le Monde",
+            "content": "Les coutumes de pourboire varient considérablement entre les pays. Aux États-Unis, un pourboire de 15–20% est standard dans les restaurants, tandis qu'en France et dans de nombreux pays européens, le service est souvent inclus dans l'addition (15% en général). Un pourboire supplémentaire de 5–10% est apprécié pour un service exceptionnel. Au Japon, le pourboire n'est pas attendu. Notre calculateur facilite l'ajustement du pourcentage selon les normes de chaque pays."
+          },
+          {
+            "title": "Comment Partager l'Addition Équitablement",
+            "content": "Le partage égal de l'addition est l'approche la plus simple quand tout le monde a commandé des plats de valeur similaire. Si certains convives ont commandé des plats nettement plus chers, envisagez un partage proportionnel. Pour les grands groupes, de nombreux restaurants ajoutent automatiquement un service de 15–20%. Vérifiez toujours l'addition avant d'ajouter un pourboire supplémentaire."
+          },
+          {
+            "title": "Comprendre le Pourboire et le Service",
+            "content": "Le pourboire est un montant volontaire pour récompenser un bon service, tandis que le service est une charge obligatoire ajoutée par l'établissement. En France, le service est inclus dans les prix (service compris). Quand le service est déjà inclus, un pourboire supplémentaire est optionnel — généralement réservé à un service exceptionnel. Vérifiez toujours l'addition pour les charges pré-incluses avant de calculer votre pourboire."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions Fréquemment Posées",
+        "items": [
+          {
+            "question": "Comment fonctionne le calculateur de partage d'addition ?",
+            "answer": "Entrez le montant total de l'addition, choisissez un pourcentage de pourboire et définissez le nombre de personnes. Le calculateur affiche instantanément le total avec pourboire, le montant du pourboire et exactement combien chaque personne paie."
+          },
+          {
+            "question": "Quel pourcentage de pourboire devrais-je laisser ?",
+            "answer": "Cela dépend du pays. Aux USA, 15–20% est standard. En France, le service est inclus, donc 5–10% supplémentaire est optionnel. Nos boutons preset couvrent les scénarios les plus courants."
+          },
+          {
+            "question": "Puis-je partager l'addition entre n'importe quel nombre de personnes ?",
+            "answer": "Oui, vous pouvez partager entre 1 et autant de personnes que vous le souhaitez."
+          },
+          {
+            "question": "Ce calculateur est-il gratuit ?",
+            "answer": "Oui, le calculateur est entièrement gratuit et sans inscription requise."
+          },
+          {
+            "question": "Puis-je utiliser un pourcentage de pourboire personnalisé ?",
+            "answer": "Absolument. En plus des presets rapides, vous pouvez entrer n'importe quel pourcentage personnalisé."
+          },
+          {
+            "question": "Le calculateur fonctionne-t-il avec différentes devises ?",
+            "answer": "Oui. Vous pouvez sélectionner votre symbole de devise préféré ($, €, £, lei) pour le format d'affichage."
+          },
+          {
+            "question": "Que faire si l'addition inclut déjà le service ?",
+            "answer": "Si votre addition inclut déjà le service, vous pouvez mettre le pourcentage de pourboire à 0% pour voir le partage sans pourboire supplémentaire."
+          },
+          {
+            "question": "Comment le pourboire est-il calculé ?",
+            "answer": "Pourboire = Montant × Pourcentage ÷ 100. Par exemple, 20% sur une addition de 100€ donne 20€. Le total par personne est (Addition + Pourboire) ÷ Nombre de Personnes."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez d'Autres Outils Financiers",
+        "description": "Explorez notre collection de calculateurs financiers gratuits pour les prêts, investissements, budget et plus encore."
+      }
+    },
+    "it": {
+      "slug": "calcolatore-divisione-conto",
+      "meta": {
+        "title": "Calcolatore Divisione Conto – Mancia per Persona | ToolFrame",
+        "description": "Calcolatore gratuito per dividere il conto con la mancia. Calcola istantaneamente quanto deve pagare ogni persona, mancia inclusa. Perfetto per ristoranti e cene di gruppo.",
+        "keywords": ["calcolatore divisione conto", "calcolatore mancia", "dividere conto", "conto ristorante", "mancia per persona", "split bill italiano", "dividere spese gruppo"]
+      },
+      "hero": {
+        "headline": "Calcolatore Divisione Conto",
+        "description": "Dividi il conto e calcola la mancia per persona istantaneamente. Scegli una percentuale di mancia, imposta il numero di persone e scopri esattamente quanto deve ognuno."
+      },
+      "tool": {
+        "billAmountLabel": "Importo del Conto",
+        "billAmountPlaceholder": "es. 120,00",
+        "tipLabel": "Percentuale Mancia",
+        "customTipPlaceholder": "Altro %",
+        "numberOfPeopleLabel": "Numero di Persone",
+        "currencyLabel": "Valuta",
+        "resultTotalWithTip": "Totale con Mancia",
+        "resultTipAmount": "Importo Mancia",
+        "resultPerPersonTotal": "Totale per Persona",
+        "resultPerPersonTip": "Mancia per Persona",
+        "summaryTitle": "Riepilogo",
+        "summaryBillPerPerson": "Conto per persona",
+        "summaryTipPerPerson": "Mancia per persona",
+        "summaryTotalPerPerson": "Totale per persona",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Come Usare il Calcolatore di Divisione Conto",
+        "steps": [
+          {
+            "title": "Inserisci l'Importo del Conto",
+            "description": "Digita l'importo totale dallo scontrino. Puoi anche selezionare la valuta preferita per la formattazione."
+          },
+          {
+            "title": "Scegli la Percentuale di Mancia",
+            "description": "Seleziona un preset rapido (10%, 15%, 18%, 20% o 25%) o inserisci una percentuale personalizzata. Il calcolatore si aggiorna in tempo reale."
+          },
+          {
+            "title": "Imposta il Numero di Persone",
+            "description": "Usa i pulsanti più e meno per impostare quante persone dividono il conto. Vedi istantaneamente il totale e la mancia per persona."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché Usare il Nostro Calcolatore",
+        "sectionDescription": "Semplice, veloce e preciso per dividere il conto in qualsiasi gruppo.",
+        "items": [
+          {
+            "icon": "users",
+            "title": "Qualsiasi Dimensione di Gruppo",
+            "description": "Dividi il conto tra 2 o 20 persone — il calcolatore gestisce qualsiasi dimensione di gruppo con ripartizione istantanea per persona."
+          },
+          {
+            "icon": "percent",
+            "title": "Preset Mancia Rapidi",
+            "description": "Scegli tra le percentuali popolari (10%, 15%, 18%, 20%, 25%) o inserisci un importo personalizzato. Nessun calcolo mentale necessario."
+          },
+          {
+            "icon": "zap",
+            "title": "Risultati Istantanei",
+            "description": "Tutti i calcoli si aggiornano in tempo reale. Nessun pulsante da cliccare — inserisci i valori e ottieni risposte immediate."
+          },
+          {
+            "icon": "globe",
+            "title": "Supporto Multi-Valuta",
+            "description": "Visualizza i risultati nel simbolo della valuta preferita — dollari, euro, sterline o lei. Perfetto per cene internazionali."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guida alla Mancia e Divisione del Conto",
+        "articles": [
+          {
+            "title": "L'Etichetta della Mancia nel Mondo",
+            "content": "Le usanze sulla mancia variano notevolmente tra i paesi. Negli Stati Uniti, una mancia del 15–20% è standard nei ristoranti, mentre in Italia e in molti paesi europei il servizio è spesso incluso nel conto (coperto). Una mancia extra del 5–10% è apprezzata per un servizio eccezionale. In Giappone, la mancia non è attesa. Il nostro calcolatore facilita l'adattamento della percentuale alle norme di ogni paese."
+          },
+          {
+            "title": "Come Dividere il Conto Equamente",
+            "content": "La divisione equa del conto è l'approccio più semplice quando tutti hanno ordinato piatti di valore simile. Se alcuni commensali hanno ordinato piatti significativamente più costosi, considera la divisione proporzionale. Per gruppi numerosi, molti ristoranti aggiungono automaticamente un servizio del 15–20%. Controlla sempre lo scontrino prima di aggiungere una mancia supplementare."
+          },
+          {
+            "title": "Capire la Mancia e il Servizio",
+            "content": "La mancia è un importo volontario per premiare un buon servizio, mentre il coperto o servizio è una tariffa obbligatoria del ristorante. In Italia, il coperto (1-3€ a persona) è comune e separato dalla mancia. Quando il servizio è già incluso, la mancia aggiuntiva è facoltativa. Controlla sempre il conto per eventuali addebiti pre-inclusi prima di calcolare la mancia."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Come funziona il calcolatore di divisione conto?",
+            "answer": "Inserisci l'importo totale del conto, scegli una percentuale di mancia e imposta il numero di persone. Il calcolatore mostra istantaneamente il totale con mancia, l'importo della mancia e esattamente quanto paga ogni persona."
+          },
+          {
+            "question": "Quale percentuale di mancia dovrei lasciare?",
+            "answer": "Dipende dal paese. Negli USA, 15–20% è standard. In Italia, il coperto è spesso incluso, quindi una mancia del 5–10% è facoltativa ma apprezzata. I nostri pulsanti preset coprono gli scenari più comuni."
+          },
+          {
+            "question": "Posso dividere il conto tra qualsiasi numero di persone?",
+            "answer": "Sì, puoi dividere il conto tra 1 e qualsiasi numero di persone."
+          },
+          {
+            "question": "Il calcolatore è gratuito?",
+            "answer": "Sì, il calcolatore è completamente gratuito e senza registrazione necessaria."
+          },
+          {
+            "question": "Posso usare una percentuale di mancia personalizzata?",
+            "answer": "Assolutamente. Oltre ai preset rapidi, puoi inserire qualsiasi percentuale personalizzata nel campo di input."
+          },
+          {
+            "question": "Il calcolatore funziona con diverse valute?",
+            "answer": "Sì. Puoi selezionare il simbolo della valuta preferita ($, €, £, lei) per la formattazione."
+          },
+          {
+            "question": "Cosa faccio se il conto include già il servizio?",
+            "answer": "Se il conto include già il servizio, puoi impostare la percentuale di mancia a 0% per vedere la divisione senza mancia aggiuntiva."
+          },
+          {
+            "question": "Come viene calcolata la mancia?",
+            "answer": "Mancia = Importo × Percentuale ÷ 100. Ad esempio, il 20% su un conto di 100€ equivale a 20€. Il totale per persona è (Conto + Mancia) ÷ Numero di Persone."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri Altri Strumenti Finanziari",
+        "description": "Esplora la nostra collezione di calcolatori finanziari gratuiti per prestiti, investimenti, budget e altro ancora."
+      }
+    },
+    "es": {
+      "slug": "calculadora-dividir-cuenta",
+      "meta": {
+        "title": "Calculadora para Dividir la Cuenta – Propina por Persona | ToolFrame",
+        "description": "Calculadora gratuita para dividir la cuenta con propina. Calcula al instante cuánto debe pagar cada persona, incluyendo la propina. Perfecta para restaurantes y cenas en grupo.",
+        "keywords": ["calculadora dividir cuenta", "calculadora propina", "dividir cuenta restaurante", "propina por persona", "split bill español", "calculadora restaurante", "dividir gastos grupo"]
+      },
+      "hero": {
+        "headline": "Calculadora para Dividir la Cuenta",
+        "description": "Divide la cuenta y calcula la propina por persona al instante. Elige un porcentaje de propina, establece el número de personas y ve exactamente cuánto debe cada uno."
+      },
+      "tool": {
+        "billAmountLabel": "Monto de la Cuenta",
+        "billAmountPlaceholder": "ej. 120.00",
+        "tipLabel": "Porcentaje de Propina",
+        "customTipPlaceholder": "Otro %",
+        "numberOfPeopleLabel": "Número de Personas",
+        "currencyLabel": "Moneda",
+        "resultTotalWithTip": "Total con Propina",
+        "resultTipAmount": "Monto de la Propina",
+        "resultPerPersonTotal": "Total por Persona",
+        "resultPerPersonTip": "Propina por Persona",
+        "summaryTitle": "Desglose",
+        "summaryBillPerPerson": "Cuenta por persona",
+        "summaryTipPerPerson": "Propina por persona",
+        "summaryTotalPerPerson": "Total por persona",
+        "currencySymbol": "$"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo Usar la Calculadora para Dividir la Cuenta",
+        "steps": [
+          {
+            "title": "Ingresa el Monto de la Cuenta",
+            "description": "Escribe el monto total de tu recibo. También puedes seleccionar tu moneda preferida para el formato de visualización."
+          },
+          {
+            "title": "Elige el Porcentaje de Propina",
+            "description": "Selecciona un preset rápido (10%, 15%, 18%, 20% o 25%) o ingresa un porcentaje personalizado. La calculadora se actualiza en tiempo real."
+          },
+          {
+            "title": "Establece el Número de Personas",
+            "description": "Usa los botones más y menos para establecer cuántas personas dividen la cuenta. Ve al instante el total y la propina por persona."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Qué Usar Nuestra Calculadora",
+        "sectionDescription": "Simple, rápida y precisa para dividir la cuenta en cualquier grupo.",
+        "items": [
+          {
+            "icon": "users",
+            "title": "Cualquier Tamaño de Grupo",
+            "description": "Divide la cuenta entre 2 o 20 personas — la calculadora maneja cualquier tamaño de grupo con desglose instantáneo por persona."
+          },
+          {
+            "icon": "percent",
+            "title": "Presets de Propina Rápidos",
+            "description": "Elige entre los porcentajes populares (10%, 15%, 18%, 20%, 25%) o ingresa un monto personalizado. Sin cálculos mentales."
+          },
+          {
+            "icon": "zap",
+            "title": "Resultados Instantáneos",
+            "description": "Todos los cálculos se actualizan en tiempo real. Sin botones que presionar — solo ingresa tus valores y obtén respuestas inmediatas."
+          },
+          {
+            "icon": "globe",
+            "title": "Soporte Multi-Moneda",
+            "description": "Muestra los resultados en tu símbolo de moneda preferido — dólares, euros, libras o lei. Perfecto para cenas internacionales."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guía sobre Propinas y División de la Cuenta",
+        "articles": [
+          {
+            "title": "Etiqueta de la Propina en el Mundo",
+            "content": "Las costumbres sobre propinas varían ampliamente entre países. En Estados Unidos, una propina del 15–20% es estándar en restaurantes, mientras que en España y muchos países europeos, el servicio suele estar incluido. Una propina adicional del 5–10% se aprecia por un servicio excepcional. En México y Latinoamérica, 10–15% es lo habitual. En Japón, la propina no se espera. Nuestra calculadora facilita el ajuste del porcentaje según las normas de cada país."
+          },
+          {
+            "title": "Cómo Dividir la Cuenta de Forma Justa",
+            "content": "Dividir la cuenta por igual es el enfoque más sencillo cuando todos pidieron platos de valor similar. Si algunos comensales pidieron platos significativamente más caros, considera la división proporcional. Para grupos grandes, muchos restaurantes agregan automáticamente una propina del 15–20%. Siempre revisa el recibo antes de agregar propina adicional. El método de división igual funciona mejor para salidas casuales con amigos."
+          },
+          {
+            "title": "Entendiendo la Propina y el Cargo por Servicio",
+            "content": "La propina es un monto voluntario para recompensar un buen servicio, mientras que el cargo por servicio es una tarifa obligatoria del establecimiento. En muchos países, los restaurantes incluyen un cargo de servicio del 10–15% en la cuenta. Cuando el servicio ya está incluido, la propina adicional es opcional. Siempre verifica la cuenta para cargos pre-incluidos antes de calcular tu propina."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Cómo funciona la calculadora para dividir la cuenta?",
+            "answer": "Ingresa el monto total de la cuenta, elige un porcentaje de propina y establece el número de personas. La calculadora muestra al instante el total con propina, el monto de la propina y exactamente cuánto paga cada persona."
+          },
+          {
+            "question": "¿Qué porcentaje de propina debería dejar?",
+            "answer": "Depende del país. En EE.UU., 15–20% es estándar. En España, el servicio suele estar incluido, así que 5–10% adicional es opcional. En Latinoamérica, 10–15% es habitual. Nuestros botones preset cubren los escenarios más comunes."
+          },
+          {
+            "question": "¿Puedo dividir la cuenta entre cualquier número de personas?",
+            "answer": "Sí, puedes dividir la cuenta entre 1 y cualquier número de personas."
+          },
+          {
+            "question": "¿Es gratuita esta calculadora?",
+            "answer": "Sí, la calculadora es completamente gratuita y sin registro necesario."
+          },
+          {
+            "question": "¿Puedo usar un porcentaje de propina personalizado?",
+            "answer": "Por supuesto. Además de los presets rápidos, puedes ingresar cualquier porcentaje personalizado en el campo de entrada."
+          },
+          {
+            "question": "¿La calculadora funciona con diferentes monedas?",
+            "answer": "Sí. Puedes seleccionar tu símbolo de moneda preferido ($, €, £, lei) para el formato de visualización."
+          },
+          {
+            "question": "¿Qué pasa si la cuenta ya incluye cargo por servicio?",
+            "answer": "Si tu cuenta ya incluye un cargo por servicio, puedes establecer el porcentaje de propina en 0% para ver la división sin propina adicional."
+          },
+          {
+            "question": "¿Cómo se calcula la propina?",
+            "answer": "Propina = Monto × Porcentaje ÷ 100. Por ejemplo, el 20% sobre una cuenta de $100 equivale a $20. El total por persona es (Cuenta + Propina) ÷ Número de Personas."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explora Más Herramientas Financieras",
+        "description": "Descubre nuestra colección de calculadoras financieras gratuitas para préstamos, inversiones, presupuestos y más."
+      }
+    }
+  }
+}
