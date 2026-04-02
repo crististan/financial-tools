@@ -18,6 +18,7 @@
         "description": "Plan your monthly income and expenses, track actual spending, and see exactly where your money goes. All data stays in your browser."
       },
       "tool": {
+        "currencySymbol": "$",
         "incomeTitle": "Income",
         "expensesTitle": "Expenses",
         "categoryLabel": "Category",
@@ -179,6 +180,7 @@
         "description": "Planifică veniturile și cheltuielile lunare, urmărește cheltuielile reale și vezi exact unde se duc banii tăi. Toate datele rămân în browser-ul tău."
       },
       "tool": {
+        "currencySymbol": "lei",
         "incomeTitle": "Venituri",
         "expensesTitle": "Cheltuieli",
         "categoryLabel": "Categorie",
@@ -346,6 +348,7 @@
         "description": "Planen Sie Ihre monatlichen Einnahmen und Ausgaben, verfolgen Sie die tatsächlichen Ausgaben und sehen Sie genau, wohin Ihr Geld fließt. Alle Daten bleiben in Ihrem Browser."
       },
       "tool": {
+        "currencySymbol": "€",
         "incomeTitle": "Einnahmen",
         "expensesTitle": "Ausgaben",
         "categoryLabel": "Kategorie",
@@ -513,6 +516,7 @@
         "description": "Planifiez vos revenus et dépenses mensuels, suivez vos dépenses réelles et voyez exactement où va votre argent. Toutes les données restent dans votre navigateur."
       },
       "tool": {
+        "currencySymbol": "€",
         "incomeTitle": "Revenus",
         "expensesTitle": "Dépenses",
         "categoryLabel": "Catégorie",
@@ -680,6 +684,7 @@
         "description": "Pianifica le tue entrate e uscite mensili, monitora le spese effettive e scopri esattamente dove vanno i tuoi soldi. Tutti i dati restano nel tuo browser."
       },
       "tool": {
+        "currencySymbol": "€",
         "incomeTitle": "Entrate",
         "expensesTitle": "Uscite",
         "categoryLabel": "Categoria",
@@ -847,6 +852,7 @@
         "description": "Planifica tus ingresos y gastos mensuales, controla los gastos reales y descubre exactamente a dónde va tu dinero. Todos los datos permanecen en tu navegador."
       },
       "tool": {
+        "currencySymbol": "€",
         "incomeTitle": "Ingresos",
         "expensesTitle": "Gastos",
         "categoryLabel": "Categoría",

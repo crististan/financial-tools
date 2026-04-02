@@ -125,19 +125,25 @@ function calculateFIREData(
 
 function formatCurrency(value: number, symbol: string): string {
     if (Math.abs(value) >= 1_000_000) {
-        return `${symbol}${(value / 1_000_000).toFixed(1)}M`;
+        const abbrev = `${(value / 1_000_000).toFixed(1)}M`;
+        if (symbol === 'lei') return `${abbrev} lei`;
+        return `${symbol}${abbrev}`;
     }
-    return `${symbol}${value.toLocaleString('en-US', {
+    const formatted = value.toLocaleString('en-US', {
         minimumFractionDigits: 0,
         maximumFractionDigits: 0,
-    })}`;
+    });
+    if (symbol === 'lei') return `${formatted} lei`;
+    return `${symbol}${formatted}`;
 }
 
 function formatCurrencyFull(value: number, symbol: string): string {
-    return `${symbol}${value.toLocaleString('en-US', {
+    const formatted = value.toLocaleString('en-US', {
         minimumFractionDigits: 0,
         maximumFractionDigits: 0,
-    })}`;
+    });
+    if (symbol === 'lei') return `${formatted} lei`;
+    return `${symbol}${formatted}`;
 }
 
 export default function FireCalculator({ labels }: FireCalculatorProps) {
@@ -370,8 +376,13 @@ export default function FireCalculator({ labels }: FireCalculatorProps) {
                                 <YAxis
                                     tick={{ fill: 'var(--clr-neutral-100)', fontSize: 12 }}
                                     tickFormatter={(v: number) => {
-                                        if (v >= 1_000_000) return `${labels.currencySymbol}${(v / 1_000_000).toFixed(1)}M`;
-                                        return `${labels.currencySymbol}${(v / 1000).toFixed(0)}k`;
+                                        const s = labels.currencySymbol;
+                                        if (v >= 1_000_000) {
+                                            const abbrev = `${(v / 1_000_000).toFixed(1)}M`;
+                                            return s === 'lei' ? `${abbrev} lei` : `${s}${abbrev}`;
+                                        }
+                                        const abbrev = `${(v / 1000).toFixed(0)}k`;
+                                        return s === 'lei' ? `${abbrev} lei` : `${s}${abbrev}`;
                                     }}
                                 />
                                 <Tooltip

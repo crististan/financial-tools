@@ -23,6 +23,7 @@ export default function LoanCalculatorTool({ translation }: LoanCalculatorToolPr
                 monthlyPaymentLabel: toolLabels.monthlyPaymentLabel,
                 totalPaymentLabel: toolLabels.totalPaymentLabel,
                 totalInterestLabel: toolLabels.totalInterestLabel,
+                currencySymbol: toolLabels.currencySymbol,
             }}
             amortizationLabels={toolLabels.amortizationTable}
         />

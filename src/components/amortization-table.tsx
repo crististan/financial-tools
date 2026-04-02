@@ -11,16 +11,23 @@ type AmortizationTableProps = {
     };
     title: string;
     description: string;
+    currencySymbol: string;
 };
 
-function formatCurrency(value: number): string {
+function formatNumber(value: number): string {
     return value.toLocaleString('en-US', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
     });
 }
 
-export default function AmortizationTable({ schedule, headers, title, description }: AmortizationTableProps) {
+function formatWithCurrency(value: number, symbol: string): string {
+    const formatted = formatNumber(value);
+    if (symbol === 'lei') return `${formatted} lei`;
+    return `${symbol}${formatted}`;
+}
+
+export default function AmortizationTable({ schedule, headers, title, description, currencySymbol }: AmortizationTableProps) {
     return (
         <div>
             <h2 className="text-2xl md:text-4xl font-medium mb-4">{title}</h2>
@@ -44,10 +51,10 @@ export default function AmortizationTable({ schedule, headers, title, descriptio
                                 className={`border-b border-[var(--clr-neutral-900)] last:border-b-0 transition-colors duration-200 hover:bg-[var(--clr-neutral-900)] ${index % 2 === 1 ? 'bg-[var(--clr-neutral-900)]/30' : ''}`}
                             >
                                 <td className="px-4 py-2.5 text-sm font-medium">{row.month}</td>
-                                <td className="px-4 py-2.5 text-sm font-mono">${formatCurrency(row.payment)}</td>
-                                <td className="px-4 py-2.5 text-sm font-mono">${formatCurrency(row.principal)}</td>
-                                <td className="px-4 py-2.5 text-sm font-mono">${formatCurrency(row.interest)}</td>
-                                <td className="px-4 py-2.5 text-sm font-mono">${formatCurrency(row.balance)}</td>
+                                <td className="px-4 py-2.5 text-sm font-mono">{formatWithCurrency(row.payment, currencySymbol)}</td>
+                                <td className="px-4 py-2.5 text-sm font-mono">{formatWithCurrency(row.principal, currencySymbol)}</td>
+                                <td className="px-4 py-2.5 text-sm font-mono">{formatWithCurrency(row.interest, currencySymbol)}</td>
+                                <td className="px-4 py-2.5 text-sm font-mono">{formatWithCurrency(row.balance, currencySymbol)}</td>
                             </tr>
                         ))}
                     </tbody>

@@ -106,10 +106,12 @@ function calculateCompoundInterest(
 }
 
 function formatCurrency(value: number, symbol: string): string {
-    return `${symbol}${value.toLocaleString('en-US', {
+    const formatted = value.toLocaleString('en-US', {
         minimumFractionDigits: 0,
         maximumFractionDigits: 0,
-    })}`;
+    });
+    if (symbol === 'lei') return `${formatted} lei`;
+    return `${symbol}${formatted}`;
 }
 
 export default function CompoundInterestCalculator({ labels }: CompoundInterestCalculatorProps) {
@@ -312,7 +314,7 @@ export default function CompoundInterestCalculator({ labels }: CompoundInterestC
                                 />
                                 <YAxis
                                     tick={{ fill: 'var(--clr-neutral-100)', fontSize: 12 }}
-                                    tickFormatter={(v: number) => `${labels.currencySymbol}${(v / 1000).toFixed(0)}k`}
+                                    tickFormatter={(v: number) => labels.currencySymbol === 'lei' ? `${(v / 1000).toFixed(0)}k lei` : `${labels.currencySymbol}${(v / 1000).toFixed(0)}k`}
                                 />
                                 <Tooltip
                                     contentStyle={{
