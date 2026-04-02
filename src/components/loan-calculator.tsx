@@ -17,6 +17,7 @@ type LoanCalculatorProps = {
         monthlyPaymentLabel: string;
         totalPaymentLabel: string;
         totalInterestLabel: string;
+        currencySymbol: string;
     };
     amortizationLabels: {
         sectionTitle: string;
@@ -69,11 +70,17 @@ function generateAmortizationSchedule(principal: number, annualRate: number, tot
     return schedule;
 }
 
-function formatCurrency(value: number): string {
+function formatNumber(value: number): string {
     return value.toLocaleString('en-US', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
     });
+}
+
+function formatWithCurrency(value: number, symbol: string): string {
+    const formatted = formatNumber(value);
+    if (symbol === 'lei') return `${formatted} lei`;
+    return `${symbol}${formatted}`;
 }
 
 export default function LoanCalculator({ labels, amortizationLabels }: LoanCalculatorProps) {
@@ -204,7 +211,7 @@ export default function LoanCalculator({ labels, amortizationLabels }: LoanCalcu
                             {labels.monthlyPaymentLabel}
                         </p>
                         <p className="text-xl md:text-2xl font-bold text-[var(--clr-green-500)]">
-                            {isValid ? `$${formatCurrency(monthlyPayment)}` : '—'}
+                            {isValid ? formatWithCurrency(monthlyPayment, labels.currencySymbol) : '—'}
                         </p>
                     </div>
                     <div className="bg-[var(--clr-neutral-1000)] rounded-xl p-4 text-center">
@@ -212,7 +219,7 @@ export default function LoanCalculator({ labels, amortizationLabels }: LoanCalcu
                             {labels.totalPaymentLabel}
                         </p>
                         <p className="text-xl md:text-2xl font-bold text-[var(--clr-neutral-0)]">
-                            {isValid ? `$${formatCurrency(totalPayment)}` : '—'}
+                            {isValid ? formatWithCurrency(totalPayment, labels.currencySymbol) : '—'}
                         </p>
                     </div>
                     <div className="bg-[var(--clr-neutral-1000)] rounded-xl p-4 text-center">
@@ -220,7 +227,7 @@ export default function LoanCalculator({ labels, amortizationLabels }: LoanCalcu
                             {labels.totalInterestLabel}
                         </p>
                         <p className="text-xl md:text-2xl font-bold text-[var(--clr-neutral-0)]">
-                            {isValid ? `$${formatCurrency(totalInterest)}` : '—'}
+                            {isValid ? formatWithCurrency(totalInterest, labels.currencySymbol) : '—'}
                         </p>
                     </div>
                 </div>
@@ -255,6 +262,7 @@ export default function LoanCalculator({ labels, amortizationLabels }: LoanCalcu
                             headers={amortizationLabels.headers}
                             title={amortizationLabels.sectionTitle}
                             description={amortizationLabels.sectionDescription}
+                            currencySymbol={labels.currencySymbol}
                         />
                     )}
                 </div>

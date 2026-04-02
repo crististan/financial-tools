@@ -315,7 +315,7 @@ export default function NauticalFuelCalculator({ labels }: NauticalFuelCalculato
                             {labels.resultTotalCost}
                         </p>
                         <p className="text-lg md:text-xl font-bold text-[var(--clr-neutral-0)]">
-                            {isValid ? `${labels.currencySymbol}${formatNumber(totalCost, 2)}` : '—'}
+                            {isValid ? (labels.currencySymbol === 'lei' ? `${formatNumber(totalCost, 2)} lei` : `${labels.currencySymbol}${formatNumber(totalCost, 2)}`) : '—'}
                         </p>
                     </div>
                     <div className="bg-[var(--clr-neutral-1000)] rounded-xl p-4 text-center">

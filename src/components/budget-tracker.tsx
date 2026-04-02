@@ -11,6 +11,7 @@ type BudgetCategory = {
 
 type BudgetTrackerProps = {
     labels: {
+        currencySymbol: string;
         incomeTitle: string;
         expensesTitle: string;
         categoryLabel: string;
@@ -46,11 +47,17 @@ function generateId(): string {
     return Math.random().toString(36).substring(2, 9);
 }
 
-function formatCurrency(value: number): string {
+function formatNumber(value: number): string {
     return value.toLocaleString('en-US', {
         minimumFractionDigits: 2,
         maximumFractionDigits: 2,
     });
+}
+
+function formatWithCurrency(value: number, symbol: string): string {
+    const formatted = formatNumber(value);
+    if (symbol === 'lei') return `${formatted} lei`;
+    return `${symbol}${formatted}`;
 }
 
 function createDefaults(defaults: Array<{ name: string; planned: number }>): BudgetCategory[] {
@@ -212,18 +219,18 @@ export default function BudgetTracker({ labels, defaultCategories }: BudgetTrack
                 {hasData ? (
                     <>
                         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-4">
-                            <SummaryRow label={labels.totalIncomePlanLabel} value={summary.totalIncomePlan} />
-                            <SummaryRow label={labels.totalIncomeActualLabel} value={summary.totalIncomeActual} positive={summary.totalIncomeActual >= summary.totalIncomePlan} />
-                            <SummaryRow label={labels.totalExpensesPlanLabel} value={summary.totalExpensesPlan} />
-                            <SummaryRow label={labels.totalExpensesActualLabel} value={summary.totalExpensesActual} positive={summary.totalExpensesActual <= summary.totalExpensesPlan} />
+                            <SummaryRow label={labels.totalIncomePlanLabel} value={summary.totalIncomePlan} currencySymbol={labels.currencySymbol} />
+                            <SummaryRow label={labels.totalIncomeActualLabel} value={summary.totalIncomeActual} positive={summary.totalIncomeActual >= summary.totalIncomePlan} currencySymbol={labels.currencySymbol} />
+                            <SummaryRow label={labels.totalExpensesPlanLabel} value={summary.totalExpensesPlan} currencySymbol={labels.currencySymbol} />
+                            <SummaryRow label={labels.totalExpensesActualLabel} value={summary.totalExpensesActual} positive={summary.totalExpensesActual <= summary.totalExpensesPlan} currencySymbol={labels.currencySymbol} />
                         </div>
 
                         <div className="h-px bg-[var(--clr-neutral-1000)] my-5" />
 
                         <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
-                            <SummaryCard label={labels.balancePlanLabel} value={summary.balancePlan} highlight={false} />
-                            <SummaryCard label={labels.balanceActualLabel} value={summary.balanceActual} highlight={true} />
-                            <SummaryCard label={labels.differenceLabel} value={summary.difference} highlight={false} />
+                            <SummaryCard label={labels.balancePlanLabel} value={summary.balancePlan} highlight={false} currencySymbol={labels.currencySymbol} />
+                            <SummaryCard label={labels.balanceActualLabel} value={summary.balanceActual} highlight={true} currencySymbol={labels.currencySymbol} />
+                            <SummaryCard label={labels.differenceLabel} value={summary.difference} highlight={false} currencySymbol={labels.currencySymbol} />
                         </div>
 
                         <div className="mt-6 flex justify-center">
@@ -329,7 +336,7 @@ function CategorySection({ title, categories, labels, isExpense, onUpdate, onAdd
                                 <div className="mt-2">
                                     <div className="flex justify-between items-center mb-1">
                                         <span className="text-xs text-[var(--clr-neutral-100)]">{progressText}</span>
-                                        <span className="text-xs text-[var(--clr-neutral-100)]">${formatCurrency(category.actual)} / ${formatCurrency(category.planned)}</span>
+                                        <span className="text-xs text-[var(--clr-neutral-100)]">{formatWithCurrency(category.actual, labels.currencySymbol)} / {formatWithCurrency(category.planned, labels.currencySymbol)}</span>
                                     </div>
                                     <div className="h-1.5 bg-[var(--clr-neutral-800)] rounded-full overflow-hidden">
                                         <div
@@ -363,9 +370,10 @@ type SummaryRowProps = {
     label: string;
     value: number;
     positive?: boolean;
+    currencySymbol: string;
 };
 
-function SummaryRow({ label, value, positive }: SummaryRowProps) {
+function SummaryRow({ label, value, positive, currencySymbol }: SummaryRowProps) {
     const colorClass = positive === undefined
         ? 'text-[var(--clr-neutral-0)]'
         : positive
@@ -376,7 +384,7 @@ function SummaryRow({ label, value, positive }: SummaryRowProps) {
         <div className="flex justify-between items-center bg-[var(--clr-neutral-1000)] rounded-xl px-4 py-3">
             <span className="text-sm text-[var(--clr-neutral-100)]">{label}</span>
             <span className={`text-sm font-mono font-medium ${colorClass}`}>
-                ${formatCurrency(value)}
+                {formatWithCurrency(value, currencySymbol)}
             </span>
         </div>
     );
@@ -386,9 +394,10 @@ type SummaryCardProps = {
     label: string;
     value: number;
     highlight: boolean;
+    currencySymbol: string;
 };
 
-function SummaryCard({ label, value, highlight }: SummaryCardProps) {
+function SummaryCard({ label, value, highlight, currencySymbol }: SummaryCardProps) {
     const valueColor = value >= 0
         ? highlight ? 'text-[var(--clr-green-500)]' : 'text-[var(--clr-neutral-0)]'
         : 'text-red-500';
@@ -397,7 +406,7 @@ function SummaryCard({ label, value, highlight }: SummaryCardProps) {
         <div className="bg-[var(--clr-neutral-1000)] rounded-xl p-4 text-center">
             <p className="text-xs uppercase tracking-wider text-[var(--clr-neutral-100)] mb-2">{label}</p>
             <p className={`text-xl md:text-2xl font-bold ${valueColor}`}>
-                {value < 0 ? '-' : ''}${formatCurrency(Math.abs(value))}
+                {value < 0 ? '-' : ''}{formatWithCurrency(Math.abs(value), currencySymbol)}
             </p>
         </div>
     );

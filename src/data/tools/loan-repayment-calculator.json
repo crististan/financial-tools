@@ -30,6 +30,7 @@
         "monthlyPaymentLabel": "Monthly Payment",
         "totalPaymentLabel": "Total Payment",
         "totalInterestLabel": "Total Interest",
+        "currencySymbol": "$",
         "amortizationTable": {
           "sectionTitle": "Amortization Schedule",
           "sectionDescription": "See how each payment is split between principal and interest over the life of your loan.",
@@ -177,6 +178,7 @@
         "monthlyPaymentLabel": "Rata Lunară",
         "totalPaymentLabel": "Total Plătit",
         "totalInterestLabel": "Total Dobândă",
+        "currencySymbol": "lei",
         "amortizationTable": {
           "sectionTitle": "Grafic de Amortizare",
           "sectionDescription": "Vezi cum fiecare plată este împărțită între principal și dobândă pe toată durata împrumutului.",
@@ -330,6 +332,7 @@
         "monthlyPaymentLabel": "Monatliche Rate",
         "totalPaymentLabel": "Gesamtzahlung",
         "totalInterestLabel": "Gesamtzinsen",
+        "currencySymbol": "€",
         "amortizationTable": {
           "sectionTitle": "Tilgungsplan",
           "sectionDescription": "Sehen Sie, wie jede Zahlung über die gesamte Laufzeit Ihres Kredits auf Tilgung und Zinsen aufgeteilt wird.",
@@ -483,6 +486,7 @@
         "monthlyPaymentLabel": "Mensualité",
         "totalPaymentLabel": "Total payé",
         "totalInterestLabel": "Total des intérêts",
+        "currencySymbol": "€",
         "amortizationTable": {
           "sectionTitle": "Tableau d'amortissement",
           "sectionDescription": "Découvrez comment chaque mensualité est répartie entre le capital et les intérêts sur toute la durée de votre prêt.",
@@ -636,6 +640,7 @@
         "monthlyPaymentLabel": "Rata mensile",
         "totalPaymentLabel": "Totale pagato",
         "totalInterestLabel": "Interessi totali",
+        "currencySymbol": "€",
         "amortizationTable": {
           "sectionTitle": "Piano di ammortamento",
           "sectionDescription": "Scopri come ogni rata viene suddivisa tra capitale e interessi per l'intera durata del prestito.",
@@ -789,6 +794,7 @@
         "monthlyPaymentLabel": "Cuota mensual",
         "totalPaymentLabel": "Total pagado",
         "totalInterestLabel": "Intereses totales",
+        "currencySymbol": "€",
         "amortizationTable": {
           "sectionTitle": "Tabla de amortización",
           "sectionDescription": "Observa cómo cada cuota se distribuye entre capital e intereses a lo largo de la vida de tu préstamo.",

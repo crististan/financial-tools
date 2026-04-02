@@ -1,0 +1,856 @@
+{
+  "id": "fire-calculator",
+  "component": "fire-calculator",
+  "iconPath": "/icons/fire-calculator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "config": {},
+  "translations": {
+    "en": {
+      "slug": "fire-calculator",
+      "meta": {
+        "title": "FIRE Calculator – Financial Independence, Retire Early | ToolFrame",
+        "description": "Free FIRE calculator to estimate your path to financial independence. Calculate your savings rate, years to FI, and safe withdrawal rate. Plan your early retirement with confidence.",
+        "keywords": ["fire calculator", "financial independence calculator", "retire early calculator", "savings rate calculator", "safe withdrawal rate", "FI number", "early retirement planner", "FIRE movement calculator"]
+      },
+      "hero": {
+        "headline": "FIRE Calculator",
+        "description": "Calculate your path to Financial Independence and Retire Early. Enter your income, expenses, and savings to see how soon you can achieve financial freedom."
+      },
+      "tool": {
+        "annualIncomeLabel": "Annual Income",
+        "annualIncomePlaceholder": "e.g. 75000",
+        "annualExpensesLabel": "Annual Expenses",
+        "annualExpensesPlaceholder": "e.g. 40000",
+        "currentSavingsLabel": "Current Savings",
+        "currentSavingsPlaceholder": "e.g. 50000",
+        "expectedReturnLabel": "Expected Annual Return (%)",
+        "expectedReturnPlaceholder": "e.g. 7",
+        "withdrawalRateLabel": "Safe Withdrawal Rate (%)",
+        "withdrawalRatePlaceholder": "e.g. 4",
+        "inflationRateLabel": "Inflation Rate (%)",
+        "inflationRatePlaceholder": "e.g. 2",
+        "resultFINumber": "FI Number",
+        "resultYearsToFI": "Years to FI",
+        "resultSavingsRate": "Savings Rate",
+        "resultMonthlyBudget": "Monthly Budget at FI",
+        "resultCoastFIAge": "Coast FI Reached",
+        "fiReachedMessage": "Already FI!",
+        "fiDateLabel": "Projected FI Date",
+        "yearsLabel": "years",
+        "chartPortfolio": "Portfolio",
+        "chartFITarget": "FI Target",
+        "chartContributions": "Contributions",
+        "breakdownToggle": "Show Year-by-Year Breakdown",
+        "breakdownHeaders": {
+          "year": "Year",
+          "age": "Age",
+          "contributions": "Total Saved",
+          "portfolio": "Portfolio",
+          "fiProgress": "FI Progress"
+        },
+        "currentAgeLabel": "Current Age",
+        "currentAgePlaceholder": "e.g. 30",
+        "currencySymbol": "$"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Use the FIRE Calculator",
+        "steps": [
+          {
+            "title": "Enter Your Financial Details",
+            "description": "Input your annual income, expenses, and current savings. The calculator automatically computes your savings rate and annual investment amount."
+          },
+          {
+            "title": "Adjust Return & Withdrawal Rates",
+            "description": "Set your expected investment return rate and safe withdrawal rate (default 4%). Optionally adjust for inflation to see real purchasing power."
+          },
+          {
+            "title": "See Your Path to FI",
+            "description": "Instantly see your FI number, years to financial independence, and a portfolio growth chart showing your journey to freedom."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our FIRE Calculator",
+        "sectionDescription": "A comprehensive tool to plan your journey to financial independence and early retirement.",
+        "items": [
+          {
+            "icon": "target",
+            "title": "FI Number Calculation",
+            "description": "Instantly calculate how much you need to retire based on your expenses and safe withdrawal rate — the core number of the FIRE movement."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Portfolio Growth Projection",
+            "description": "Visualize how your savings grow over time with compound returns. See exactly when your portfolio crosses the FI threshold."
+          },
+          {
+            "icon": "percent",
+            "title": "Savings Rate Analysis",
+            "description": "Your savings rate is the single most important factor in reaching FI. See how changes in income or expenses impact your timeline."
+          },
+          {
+            "icon": "shield",
+            "title": "Safe Withdrawal Rate",
+            "description": "Based on the Trinity Study, the 4% rule helps ensure your portfolio lasts 30+ years in retirement. Adjust to match your risk tolerance."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide to Financial Independence",
+        "articles": [
+          {
+            "title": "What is the FIRE Movement?",
+            "content": "FIRE stands for Financial Independence, Retire Early. It's a lifestyle movement focused on extreme savings and investment to achieve financial freedom much earlier than traditional retirement age. The core principle is simple: save a large percentage of your income, invest it wisely, and live off the returns. There are several variations including Fat FIRE (higher spending), Lean FIRE (minimalist lifestyle), Barista FIRE (part-time work for benefits), and Coast FIRE (enough saved that compound growth alone will fund retirement). The movement gained popularity through blogs and communities sharing strategies for achieving financial independence in 10-15 years rather than the traditional 40-year career."
+          },
+          {
+            "title": "Understanding the 4% Rule",
+            "content": "The 4% rule, derived from the Trinity Study, suggests that if you withdraw 4% of your portfolio in the first year of retirement and adjust for inflation each subsequent year, your portfolio has a high probability of lasting at least 30 years. This means your FI number is simply your annual expenses multiplied by 25 (the inverse of 4%). For example, if you spend $40,000 per year, you need $1,000,000 to be financially independent. While the 4% rule is widely used, some people prefer a more conservative 3.5% or even 3% withdrawal rate for greater safety margins, especially for very early retirees with 40-50 year time horizons."
+          },
+          {
+            "title": "The Power of Savings Rate",
+            "content": "Your savings rate — the percentage of income you save and invest — is the most critical factor determining how quickly you reach financial independence. At a 10% savings rate, you'd need about 51 years of work to retire. At 25%, it drops to about 32 years. At 50%, just 17 years. And at 75%, you could reach FI in roughly 7 years. This is because a higher savings rate has a double effect: it increases the amount you invest while simultaneously proving you can live on less money, which lowers your FI number. Even small improvements in your savings rate can shave years off your timeline."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "What is a FI number?",
+            "answer": "Your FI (Financial Independence) number is the total amount you need invested to cover your annual expenses indefinitely. It's calculated by dividing your annual expenses by your safe withdrawal rate. With a 4% withdrawal rate, your FI number is 25 times your annual expenses."
+          },
+          {
+            "question": "What is a good savings rate for FIRE?",
+            "answer": "Most FIRE practitioners aim for a 50-70% savings rate. However, even a 25-30% savings rate puts you on a much faster track than average. The key is finding a sustainable rate that balances current enjoyment with future freedom."
+          },
+          {
+            "question": "Is the 4% withdrawal rate safe?",
+            "answer": "The 4% rule has historically worked over 30-year periods with high success rates. For very early retirees (40+ year horizons), consider a more conservative 3-3.5% rate, or plan for flexible spending that can adapt to market conditions."
+          },
+          {
+            "question": "Does the calculator account for inflation?",
+            "answer": "Yes, you can set an inflation rate to see results in real (inflation-adjusted) terms. This gives you a more accurate picture of your future purchasing power and timeline."
+          },
+          {
+            "question": "What investment return should I assume?",
+            "answer": "A 7% nominal return (or 5% real/inflation-adjusted) is commonly used based on historical stock market averages. Conservative planners may use 5-6% nominal. The calculator lets you adjust this to match your investment strategy."
+          },
+          {
+            "question": "What is Coast FI?",
+            "answer": "Coast FI means you've saved enough that even without additional contributions, compound growth will grow your portfolio to your FI number by traditional retirement age. Once you reach Coast FI, you only need to earn enough to cover current expenses."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Plan Your Financial Independence",
+        "description": "Use our other financial tools to optimize your savings, track your budget, and calculate investment returns on your FIRE journey."
+      }
+    },
+    "ro": {
+      "slug": "calculator-fire",
+      "meta": {
+        "title": "Calculator FIRE – Independenta Financiara, Pensionare Anticipata | ToolFrame",
+        "description": "Calculator FIRE gratuit pentru a estima drumul spre independenta financiara. Calculeaza rata de economisire, anii pana la FI si rata sigura de retragere. Planifica-ti pensionarea anticipata cu incredere.",
+        "keywords": ["calculator fire", "independenta financiara calculator", "pensionare anticipata calculator", "rata economisire", "rata retragere sigura", "numar FI", "planificare pensionare", "miscare FIRE"]
+      },
+      "hero": {
+        "headline": "Calculator FIRE",
+        "description": "Calculeaza drumul spre Independenta Financiara si Pensionare Anticipata. Introdu veniturile, cheltuielile si economiile pentru a vedea cat de curand poti atinge libertatea financiara."
+      },
+      "tool": {
+        "annualIncomeLabel": "Venit Anual",
+        "annualIncomePlaceholder": "ex. 75000",
+        "annualExpensesLabel": "Cheltuieli Anuale",
+        "annualExpensesPlaceholder": "ex. 40000",
+        "currentSavingsLabel": "Economii Actuale",
+        "currentSavingsPlaceholder": "ex. 50000",
+        "expectedReturnLabel": "Randament Anual Asteptat (%)",
+        "expectedReturnPlaceholder": "ex. 7",
+        "withdrawalRateLabel": "Rata Sigura de Retragere (%)",
+        "withdrawalRatePlaceholder": "ex. 4",
+        "inflationRateLabel": "Rata Inflatiei (%)",
+        "inflationRatePlaceholder": "ex. 2",
+        "resultFINumber": "Numar FI",
+        "resultYearsToFI": "Ani pana la FI",
+        "resultSavingsRate": "Rata Economisire",
+        "resultMonthlyBudget": "Buget Lunar la FI",
+        "resultCoastFIAge": "Coast FI Atins",
+        "fiReachedMessage": "Deja FI!",
+        "fiDateLabel": "Data Estimata FI",
+        "yearsLabel": "ani",
+        "chartPortfolio": "Portofoliu",
+        "chartFITarget": "Tinta FI",
+        "chartContributions": "Contributii",
+        "breakdownToggle": "Arata Detalii An cu An",
+        "breakdownHeaders": {
+          "year": "An",
+          "age": "Varsta",
+          "contributions": "Total Economisit",
+          "portfolio": "Portofoliu",
+          "fiProgress": "Progres FI"
+        },
+        "currentAgeLabel": "Varsta Curenta",
+        "currentAgePlaceholder": "ex. 30",
+        "currencySymbol": "lei"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum sa Folosesti Calculatorul FIRE",
+        "steps": [
+          {
+            "title": "Introdu Detaliile Financiare",
+            "description": "Introdu venitul anual, cheltuielile si economiile actuale. Calculatorul calculeaza automat rata de economisire si suma anuala de investitie."
+          },
+          {
+            "title": "Ajusteaza Randamentul si Rata de Retragere",
+            "description": "Seteaza randamentul asteptat al investitiilor si rata sigura de retragere (implicit 4%). Optional, ajusteaza pentru inflatie pentru a vedea puterea reala de cumparare."
+          },
+          {
+            "title": "Vezi Drumul spre FI",
+            "description": "Vezi instant numarul FI, anii pana la independenta financiara si un grafic al cresterii portofoliului care arata calatoria ta spre libertate."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce sa Folosesti Calculatorul Nostru FIRE",
+        "sectionDescription": "Un instrument complet pentru a planifica calatoria ta spre independenta financiara si pensionare anticipata.",
+        "items": [
+          {
+            "icon": "target",
+            "title": "Calcul Numar FI",
+            "description": "Calculeaza instant cat ai nevoie pentru pensionare pe baza cheltuielilor si ratei sigure de retragere — numarul central al miscarii FIRE."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Proiectie Crestere Portofoliu",
+            "description": "Vizualizeaza cum cresc economiile tale in timp cu randamente compuse. Vezi exact cand portofoliul depaseste pragul FI."
+          },
+          {
+            "icon": "percent",
+            "title": "Analiza Rata Economisire",
+            "description": "Rata de economisire este cel mai important factor pentru a atinge FI. Vezi cum schimbarile de venit sau cheltuieli impacteaza cronologia."
+          },
+          {
+            "icon": "shield",
+            "title": "Rata Sigura de Retragere",
+            "description": "Bazata pe Studiul Trinity, regula 4% asigura ca portofoliul tau dureaza 30+ ani in pensionare. Ajusteaza dupa toleranta la risc."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid pentru Independenta Financiara",
+        "articles": [
+          {
+            "title": "Ce este Miscarea FIRE?",
+            "content": "FIRE inseamna Financial Independence, Retire Early (Independenta Financiara, Pensionare Anticipata). Este o miscare de stil de viata axata pe economisire si investitii extreme pentru a atinge libertatea financiara mult mai devreme decat varsta traditionala de pensionare. Principiul de baza este simplu: economiseste un procent mare din venit, investeste-l inteligent si traieste din randamente. Exista mai multe variante, inclusiv Fat FIRE (cheltuieli mai mari), Lean FIRE (stil de viata minimalist), Barista FIRE (munca part-time pentru beneficii) si Coast FIRE (suficient economisit incat doar cresterea compusa va finanta pensionarea)."
+          },
+          {
+            "title": "Intelegerea Regulii de 4%",
+            "content": "Regula de 4%, derivata din Studiul Trinity, sugereaza ca daca retragi 4% din portofoliu in primul an de pensionare si ajustezi pentru inflatie in fiecare an ulterior, portofoliul tau are o probabilitate mare de a dura cel putin 30 de ani. Aceasta inseamna ca numarul tau FI este pur si simplu cheltuielile anuale inmultite cu 25 (inversul lui 4%). De exemplu, daca cheltuiesti 40.000$ pe an, ai nevoie de 1.000.000$ pentru a fi independent financiar. Unii prefera o rata mai conservatoare de 3,5% sau chiar 3% pentru marje de siguranta mai mari."
+          },
+          {
+            "title": "Puterea Ratei de Economisire",
+            "content": "Rata de economisire — procentul din venit pe care il economisesti si investesti — este cel mai critic factor care determina cat de repede atingi independenta financiara. La o rata de 10%, ai avea nevoie de aproximativ 51 de ani de munca. La 25%, scade la aproximativ 32 de ani. La 50%, doar 17 ani. Si la 75%, ai putea atinge FI in aproximativ 7 ani. Aceasta deoarece o rata mai mare de economisire are un efect dublu: creste suma investita si demonstreaza ca poti trai cu mai putini bani, ceea ce scade numarul FI."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Intrebari Frecvente",
+        "items": [
+          {
+            "question": "Ce este numarul FI?",
+            "answer": "Numarul FI (Independenta Financiara) este suma totala de care ai nevoie investita pentru a-ti acoperi cheltuielile anuale pe termen nedefinit. Se calculeaza impartind cheltuielile anuale la rata sigura de retragere. Cu o rata de retragere de 4%, numarul FI este de 25 de ori cheltuielile anuale."
+          },
+          {
+            "question": "Care este o rata buna de economisire pentru FIRE?",
+            "answer": "Majoritatea practicantilor FIRE tintesc o rata de economisire de 50-70%. Totusi, chiar si o rata de 25-30% te pune pe un traseu mult mai rapid decat media. Cheia este gasirea unei rate sustenabile."
+          },
+          {
+            "question": "Este sigura rata de retragere de 4%?",
+            "answer": "Regula de 4% a functionat istoric pe perioade de 30 de ani cu rate ridicate de succes. Pentru pensionari foarte tineri (orizonturi de 40+ ani), ia in considerare o rata mai conservatoare de 3-3,5%."
+          },
+          {
+            "question": "Calculatorul tine cont de inflatie?",
+            "answer": "Da, poti seta o rata a inflatiei pentru a vedea rezultatele in termeni reali (ajustati la inflatie). Aceasta iti ofera o imagine mai precisa a puterii tale de cumparare viitoare."
+          },
+          {
+            "question": "Ce randament al investitiei ar trebui sa presupun?",
+            "answer": "Un randament nominal de 7% (sau 5% real/ajustat la inflatie) este frecvent utilizat pe baza mediilor istorice ale pietei de actiuni. Planificatorii conservatori pot folosi 5-6% nominal."
+          },
+          {
+            "question": "Ce este Coast FI?",
+            "answer": "Coast FI inseamna ca ai economisit suficient incat, chiar si fara contributii suplimentare, cresterea compusa va creste portofoliul la numarul FI pana la varsta traditionala de pensionare."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Planifica-ti Independenta Financiara",
+        "description": "Foloseste celelalte instrumente financiare pentru a-ti optimiza economiile, urmari bugetul si calcula randamentele investitiilor in calatoria ta FIRE."
+      }
+    },
+    "de": {
+      "slug": "fire-rechner",
+      "meta": {
+        "title": "FIRE-Rechner – Finanzielle Unabhaengigkeit, Fruehzeitig in Rente | ToolFrame",
+        "description": "Kostenloser FIRE-Rechner zur Berechnung Ihres Wegs zur finanziellen Unabhaengigkeit. Berechnen Sie Ihre Sparquote, Jahre bis zur FI und sichere Entnahmerate. Planen Sie Ihren fruehen Ruhestand.",
+        "keywords": ["FIRE Rechner", "finanzielle Unabhaengigkeit Rechner", "Fruehpension Rechner", "Sparquote Rechner", "sichere Entnahmerate", "FI Nummer", "Ruhestandsplanung", "FIRE Bewegung"]
+      },
+      "hero": {
+        "headline": "FIRE-Rechner",
+        "description": "Berechnen Sie Ihren Weg zur Finanziellen Unabhaengigkeit und fruehen Rente. Geben Sie Einkommen, Ausgaben und Ersparnisse ein, um zu sehen, wie schnell Sie finanzielle Freiheit erreichen."
+      },
+      "tool": {
+        "annualIncomeLabel": "Jaehrliches Einkommen",
+        "annualIncomePlaceholder": "z.B. 75000",
+        "annualExpensesLabel": "Jaehrliche Ausgaben",
+        "annualExpensesPlaceholder": "z.B. 40000",
+        "currentSavingsLabel": "Aktuelle Ersparnisse",
+        "currentSavingsPlaceholder": "z.B. 50000",
+        "expectedReturnLabel": "Erwartete Jaehrliche Rendite (%)",
+        "expectedReturnPlaceholder": "z.B. 7",
+        "withdrawalRateLabel": "Sichere Entnahmerate (%)",
+        "withdrawalRatePlaceholder": "z.B. 4",
+        "inflationRateLabel": "Inflationsrate (%)",
+        "inflationRatePlaceholder": "z.B. 2",
+        "resultFINumber": "FI-Zahl",
+        "resultYearsToFI": "Jahre bis FI",
+        "resultSavingsRate": "Sparquote",
+        "resultMonthlyBudget": "Monatsbudget bei FI",
+        "resultCoastFIAge": "Coast FI Erreicht",
+        "fiReachedMessage": "Bereits FI!",
+        "fiDateLabel": "Voraussichtliches FI-Datum",
+        "yearsLabel": "Jahre",
+        "chartPortfolio": "Portfolio",
+        "chartFITarget": "FI-Ziel",
+        "chartContributions": "Beitraege",
+        "breakdownToggle": "Jaehrliche Aufschluesselung Anzeigen",
+        "breakdownHeaders": {
+          "year": "Jahr",
+          "age": "Alter",
+          "contributions": "Gesamt Gespart",
+          "portfolio": "Portfolio",
+          "fiProgress": "FI-Fortschritt"
+        },
+        "currentAgeLabel": "Aktuelles Alter",
+        "currentAgePlaceholder": "z.B. 30",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "So Verwenden Sie den FIRE-Rechner",
+        "steps": [
+          {
+            "title": "Finanzielle Details Eingeben",
+            "description": "Geben Sie Ihr Jahreseinkommen, Ausgaben und aktuelle Ersparnisse ein. Der Rechner berechnet automatisch Ihre Sparquote und den jaehrlichen Investitionsbetrag."
+          },
+          {
+            "title": "Rendite & Entnahmerate Anpassen",
+            "description": "Stellen Sie Ihre erwartete Investitionsrendite und sichere Entnahmerate ein (Standard 4%). Optional koennen Sie die Inflation anpassen."
+          },
+          {
+            "title": "Ihren Weg zur FI Sehen",
+            "description": "Sehen Sie sofort Ihre FI-Zahl, Jahre bis zur finanziellen Unabhaengigkeit und ein Portfolio-Wachstumsdiagramm."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum Unseren FIRE-Rechner Verwenden",
+        "sectionDescription": "Ein umfassendes Werkzeug zur Planung Ihres Wegs zur finanziellen Unabhaengigkeit und fruehen Rente.",
+        "items": [
+          {
+            "icon": "target",
+            "title": "FI-Zahl Berechnung",
+            "description": "Berechnen Sie sofort, wie viel Sie fuer den Ruhestand benoetigen, basierend auf Ihren Ausgaben und der sicheren Entnahmerate."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Portfolio-Wachstumsprojektion",
+            "description": "Visualisieren Sie, wie Ihre Ersparnisse im Laufe der Zeit mit Zinseszins wachsen. Sehen Sie genau, wann Ihr Portfolio die FI-Schwelle ueberschreitet."
+          },
+          {
+            "icon": "percent",
+            "title": "Sparquoten-Analyse",
+            "description": "Ihre Sparquote ist der wichtigste Faktor beim Erreichen von FI. Sehen Sie, wie Aenderungen bei Einkommen oder Ausgaben Ihren Zeitplan beeinflussen."
+          },
+          {
+            "icon": "shield",
+            "title": "Sichere Entnahmerate",
+            "description": "Basierend auf der Trinity-Studie stellt die 4%-Regel sicher, dass Ihr Portfolio 30+ Jahre im Ruhestand haelt."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Leitfaden zur Finanziellen Unabhaengigkeit",
+        "articles": [
+          {
+            "title": "Was ist die FIRE-Bewegung?",
+            "content": "FIRE steht fuer Financial Independence, Retire Early (Finanzielle Unabhaengigkeit, Frueh in Rente). Es ist eine Lifestyle-Bewegung, die auf extremes Sparen und Investieren fokussiert ist, um finanzielle Freiheit viel frueher als das traditionelle Rentenalter zu erreichen. Das Kernprinzip ist einfach: Sparen Sie einen grossen Prozentsatz Ihres Einkommens, investieren Sie klug und leben Sie von den Ertraegen. Es gibt verschiedene Varianten: Fat FIRE (hoehere Ausgaben), Lean FIRE (minimalistischer Lebensstil), Barista FIRE (Teilzeitarbeit fuer Sozialleistungen) und Coast FIRE (genug gespart, dass allein das Wachstum den Ruhestand finanziert)."
+          },
+          {
+            "title": "Die 4%-Regel Verstehen",
+            "content": "Die 4%-Regel aus der Trinity-Studie besagt, dass wenn Sie im ersten Ruhestandsjahr 4% Ihres Portfolios entnehmen und jedes Folgejahr inflationsbereinigt anpassen, Ihr Portfolio mit hoher Wahrscheinlichkeit mindestens 30 Jahre haelt. Das bedeutet, Ihre FI-Zahl ist einfach Ihre Jahresausgaben mal 25. Zum Beispiel: Bei 40.000 EUR Jahresausgaben benoetigen Sie 1.000.000 EUR. Manche bevorzugen konservativere 3,5% oder sogar 3% fuer groessere Sicherheitsmargen."
+          },
+          {
+            "title": "Die Macht der Sparquote",
+            "content": "Ihre Sparquote — der Prozentsatz des Einkommens, den Sie sparen und investieren — ist der kritischste Faktor. Bei einer Sparquote von 10% brauchen Sie etwa 51 Arbeitsjahre. Bei 25% sinkt es auf etwa 32 Jahre. Bei 50% nur 17 Jahre. Und bei 75% koennten Sie FI in etwa 7 Jahren erreichen. Eine hoehere Sparquote hat einen doppelten Effekt: Sie erhoeht den Investitionsbetrag und beweist gleichzeitig, dass Sie mit weniger Geld leben koennen."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Haeufig Gestellte Fragen",
+        "items": [
+          {
+            "question": "Was ist eine FI-Zahl?",
+            "answer": "Ihre FI-Zahl ist der Gesamtbetrag, den Sie investiert haben muessen, um Ihre Jahresausgaben unbegrenzt zu decken. Sie wird berechnet, indem Sie Ihre Jahresausgaben durch die sichere Entnahmerate teilen. Bei 4% Entnahmerate ist Ihre FI-Zahl das 25-fache Ihrer Jahresausgaben."
+          },
+          {
+            "question": "Was ist eine gute Sparquote fuer FIRE?",
+            "answer": "Die meisten FIRE-Praktizierenden streben eine Sparquote von 50-70% an. Aber selbst 25-30% bringen Sie deutlich schneller ans Ziel als der Durchschnitt."
+          },
+          {
+            "question": "Ist die 4%-Entnahmerate sicher?",
+            "answer": "Die 4%-Regel hat historisch ueber 30-Jahres-Zeitraeume mit hohen Erfolgsraten funktioniert. Fuer sehr fruehe Rentner (40+ Jahre Horizont) empfiehlt sich eine konservativere Rate von 3-3,5%."
+          },
+          {
+            "question": "Beruecksichtigt der Rechner die Inflation?",
+            "answer": "Ja, Sie koennen eine Inflationsrate einstellen, um Ergebnisse in realen (inflationsbereinigten) Werten zu sehen."
+          },
+          {
+            "question": "Welche Investitionsrendite sollte ich annehmen?",
+            "answer": "Eine nominale Rendite von 7% (oder 5% real) wird haeufig verwendet, basierend auf historischen Aktienmarktdurchschnitten. Konservative Planer verwenden 5-6% nominal."
+          },
+          {
+            "question": "Was ist Coast FI?",
+            "answer": "Coast FI bedeutet, dass Sie genug gespart haben, dass allein das Wachstum Ihr Portfolio bis zum traditionellen Rentenalter auf die FI-Zahl bringt — ohne weitere Beitraege."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Planen Sie Ihre Finanzielle Unabhaengigkeit",
+        "description": "Nutzen Sie unsere anderen Finanztools, um Ihre Ersparnisse zu optimieren, Ihr Budget zu verfolgen und Investitionsrenditen auf Ihrem FIRE-Weg zu berechnen."
+      }
+    },
+    "fr": {
+      "slug": "calculateur-fire",
+      "meta": {
+        "title": "Calculateur FIRE – Independance Financiere, Retraite Anticipee | ToolFrame",
+        "description": "Calculateur FIRE gratuit pour estimer votre chemin vers l'independance financiere. Calculez votre taux d'epargne, les annees jusqu'a l'IF et le taux de retrait sur. Planifiez votre retraite anticipee.",
+        "keywords": ["calculateur fire", "independance financiere calculateur", "retraite anticipee calculateur", "taux epargne", "taux retrait sur", "nombre IF", "planification retraite", "mouvement FIRE"]
+      },
+      "hero": {
+        "headline": "Calculateur FIRE",
+        "description": "Calculez votre chemin vers l'Independance Financiere et la Retraite Anticipee. Entrez vos revenus, depenses et epargne pour voir quand vous atteindrez la liberte financiere."
+      },
+      "tool": {
+        "annualIncomeLabel": "Revenu Annuel",
+        "annualIncomePlaceholder": "ex. 75000",
+        "annualExpensesLabel": "Depenses Annuelles",
+        "annualExpensesPlaceholder": "ex. 40000",
+        "currentSavingsLabel": "Epargne Actuelle",
+        "currentSavingsPlaceholder": "ex. 50000",
+        "expectedReturnLabel": "Rendement Annuel Attendu (%)",
+        "expectedReturnPlaceholder": "ex. 7",
+        "withdrawalRateLabel": "Taux de Retrait Sur (%)",
+        "withdrawalRatePlaceholder": "ex. 4",
+        "inflationRateLabel": "Taux d'Inflation (%)",
+        "inflationRatePlaceholder": "ex. 2",
+        "resultFINumber": "Nombre IF",
+        "resultYearsToFI": "Annees jusqu'a IF",
+        "resultSavingsRate": "Taux d'Epargne",
+        "resultMonthlyBudget": "Budget Mensuel a IF",
+        "resultCoastFIAge": "Coast FI Atteint",
+        "fiReachedMessage": "Deja IF!",
+        "fiDateLabel": "Date IF Prevue",
+        "yearsLabel": "ans",
+        "chartPortfolio": "Portefeuille",
+        "chartFITarget": "Objectif IF",
+        "chartContributions": "Contributions",
+        "breakdownToggle": "Afficher le Detail Annuel",
+        "breakdownHeaders": {
+          "year": "Annee",
+          "age": "Age",
+          "contributions": "Total Epargne",
+          "portfolio": "Portefeuille",
+          "fiProgress": "Progres IF"
+        },
+        "currentAgeLabel": "Age Actuel",
+        "currentAgePlaceholder": "ex. 30",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment Utiliser le Calculateur FIRE",
+        "steps": [
+          {
+            "title": "Entrez Vos Details Financiers",
+            "description": "Saisissez votre revenu annuel, vos depenses et votre epargne actuelle. Le calculateur determine automatiquement votre taux d'epargne et le montant annuel d'investissement."
+          },
+          {
+            "title": "Ajustez le Rendement et le Taux de Retrait",
+            "description": "Definissez votre rendement d'investissement attendu et le taux de retrait sur (par defaut 4%). Ajustez optionnellement pour l'inflation."
+          },
+          {
+            "title": "Voyez Votre Chemin vers l'IF",
+            "description": "Voyez instantanement votre nombre IF, les annees jusqu'a l'independance financiere et un graphique de croissance du portefeuille."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi Utiliser Notre Calculateur FIRE",
+        "sectionDescription": "Un outil complet pour planifier votre parcours vers l'independance financiere et la retraite anticipee.",
+        "items": [
+          {
+            "icon": "target",
+            "title": "Calcul du Nombre IF",
+            "description": "Calculez instantanement combien vous avez besoin pour la retraite en fonction de vos depenses et du taux de retrait sur."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Projection de Croissance",
+            "description": "Visualisez comment votre epargne croit au fil du temps avec les rendements composes. Voyez exactement quand votre portefeuille depasse le seuil IF."
+          },
+          {
+            "icon": "percent",
+            "title": "Analyse du Taux d'Epargne",
+            "description": "Votre taux d'epargne est le facteur le plus important pour atteindre l'IF. Voyez comment les changements de revenu ou de depenses impactent votre calendrier."
+          },
+          {
+            "icon": "shield",
+            "title": "Taux de Retrait Sur",
+            "description": "Basee sur l'Etude Trinity, la regle des 4% assure que votre portefeuille dure 30+ ans a la retraite."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide de l'Independance Financiere",
+        "articles": [
+          {
+            "title": "Qu'est-ce que le Mouvement FIRE?",
+            "content": "FIRE signifie Financial Independence, Retire Early (Independance Financiere, Retraite Anticipee). C'est un mouvement de style de vie axe sur l'epargne et l'investissement extremes pour atteindre la liberte financiere bien avant l'age traditionnel de la retraite. Le principe est simple: epargnez un grand pourcentage de vos revenus, investissez judicieusement et vivez des rendements. Il existe plusieurs variantes: Fat FIRE (depenses plus elevees), Lean FIRE (style de vie minimaliste), Barista FIRE (travail a temps partiel) et Coast FIRE (assez epargne pour que la croissance seule finance la retraite)."
+          },
+          {
+            "title": "Comprendre la Regle des 4%",
+            "content": "La regle des 4%, issue de l'Etude Trinity, suggere que si vous retirez 4% de votre portefeuille la premiere annee de retraite et ajustez pour l'inflation chaque annee suivante, votre portefeuille a une forte probabilite de durer au moins 30 ans. Cela signifie que votre nombre IF est simplement vos depenses annuelles multipliees par 25. Par exemple, si vous depensez 40 000 EUR par an, vous avez besoin de 1 000 000 EUR."
+          },
+          {
+            "title": "La Puissance du Taux d'Epargne",
+            "content": "Votre taux d'epargne — le pourcentage de revenu que vous epargnez et investissez — est le facteur le plus critique. A un taux de 10%, il faudrait environ 51 ans de travail. A 25%, environ 32 ans. A 50%, seulement 17 ans. Et a 75%, vous pourriez atteindre l'IF en environ 7 ans. Un taux d'epargne plus eleve a un double effet: il augmente le montant investi tout en prouvant que vous pouvez vivre avec moins."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions Frequemment Posees",
+        "items": [
+          {
+            "question": "Qu'est-ce qu'un nombre IF?",
+            "answer": "Votre nombre IF est le montant total dont vous avez besoin investi pour couvrir vos depenses annuelles indefiniment. Il se calcule en divisant vos depenses annuelles par le taux de retrait sur. Avec un taux de 4%, votre nombre IF est 25 fois vos depenses annuelles."
+          },
+          {
+            "question": "Quel est un bon taux d'epargne pour FIRE?",
+            "answer": "La plupart des praticiens FIRE visent un taux de 50-70%. Cependant, meme 25-30% vous met sur une voie beaucoup plus rapide que la moyenne."
+          },
+          {
+            "question": "Le taux de retrait de 4% est-il sur?",
+            "answer": "La regle des 4% a historiquement fonctionne sur des periodes de 30 ans avec des taux de succes eleves. Pour les retraites tres precoces (horizons de 40+ ans), envisagez un taux plus conservateur de 3-3,5%."
+          },
+          {
+            "question": "Le calculateur tient-il compte de l'inflation?",
+            "answer": "Oui, vous pouvez definir un taux d'inflation pour voir les resultats en termes reels (ajustes a l'inflation)."
+          },
+          {
+            "question": "Quel rendement d'investissement dois-je supposer?",
+            "answer": "Un rendement nominal de 7% (ou 5% reel) est couramment utilise base sur les moyennes historiques du marche boursier."
+          },
+          {
+            "question": "Qu'est-ce que Coast FI?",
+            "answer": "Coast FI signifie que vous avez assez epargne pour que la croissance composee seule amene votre portefeuille au nombre IF a l'age traditionnel de la retraite."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Planifiez Votre Independance Financiere",
+        "description": "Utilisez nos autres outils financiers pour optimiser votre epargne, suivre votre budget et calculer les rendements sur votre parcours FIRE."
+      }
+    },
+    "it": {
+      "slug": "calcolatore-fire",
+      "meta": {
+        "title": "Calcolatore FIRE – Indipendenza Finanziaria, Pensione Anticipata | ToolFrame",
+        "description": "Calcolatore FIRE gratuito per stimare il tuo percorso verso l'indipendenza finanziaria. Calcola il tasso di risparmio, gli anni fino all'IF e il tasso di prelievo sicuro.",
+        "keywords": ["calcolatore fire", "indipendenza finanziaria calcolatore", "pensione anticipata calcolatore", "tasso risparmio", "tasso prelievo sicuro", "numero IF", "pianificazione pensione", "movimento FIRE"]
+      },
+      "hero": {
+        "headline": "Calcolatore FIRE",
+        "description": "Calcola il tuo percorso verso l'Indipendenza Finanziaria e la Pensione Anticipata. Inserisci reddito, spese e risparmi per vedere quando raggiungerai la liberta finanziaria."
+      },
+      "tool": {
+        "annualIncomeLabel": "Reddito Annuale",
+        "annualIncomePlaceholder": "es. 75000",
+        "annualExpensesLabel": "Spese Annuali",
+        "annualExpensesPlaceholder": "es. 40000",
+        "currentSavingsLabel": "Risparmi Attuali",
+        "currentSavingsPlaceholder": "es. 50000",
+        "expectedReturnLabel": "Rendimento Annuo Atteso (%)",
+        "expectedReturnPlaceholder": "es. 7",
+        "withdrawalRateLabel": "Tasso di Prelievo Sicuro (%)",
+        "withdrawalRatePlaceholder": "es. 4",
+        "inflationRateLabel": "Tasso di Inflazione (%)",
+        "inflationRatePlaceholder": "es. 2",
+        "resultFINumber": "Numero IF",
+        "resultYearsToFI": "Anni fino a IF",
+        "resultSavingsRate": "Tasso di Risparmio",
+        "resultMonthlyBudget": "Budget Mensile a IF",
+        "resultCoastFIAge": "Coast FI Raggiunto",
+        "fiReachedMessage": "Gia IF!",
+        "fiDateLabel": "Data IF Prevista",
+        "yearsLabel": "anni",
+        "chartPortfolio": "Portafoglio",
+        "chartFITarget": "Obiettivo IF",
+        "chartContributions": "Contributi",
+        "breakdownToggle": "Mostra Dettaglio Annuale",
+        "breakdownHeaders": {
+          "year": "Anno",
+          "age": "Eta",
+          "contributions": "Totale Risparmiato",
+          "portfolio": "Portafoglio",
+          "fiProgress": "Progresso IF"
+        },
+        "currentAgeLabel": "Eta Attuale",
+        "currentAgePlaceholder": "es. 30",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Come Usare il Calcolatore FIRE",
+        "steps": [
+          {
+            "title": "Inserisci i Dettagli Finanziari",
+            "description": "Inserisci il reddito annuale, le spese e i risparmi attuali. Il calcolatore determina automaticamente il tasso di risparmio e l'importo annuale di investimento."
+          },
+          {
+            "title": "Regola Rendimento e Tasso di Prelievo",
+            "description": "Imposta il rendimento atteso degli investimenti e il tasso di prelievo sicuro (predefinito 4%). Regola opzionalmente per l'inflazione."
+          },
+          {
+            "title": "Vedi il Tuo Percorso verso IF",
+            "description": "Vedi istantaneamente il numero IF, gli anni fino all'indipendenza finanziaria e un grafico di crescita del portafoglio."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perche Usare il Nostro Calcolatore FIRE",
+        "sectionDescription": "Uno strumento completo per pianificare il tuo percorso verso l'indipendenza finanziaria e la pensione anticipata.",
+        "items": [
+          {
+            "icon": "target",
+            "title": "Calcolo Numero IF",
+            "description": "Calcola istantaneamente quanto ti serve per la pensione in base alle spese e al tasso di prelievo sicuro."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Proiezione Crescita Portafoglio",
+            "description": "Visualizza come crescono i tuoi risparmi nel tempo con i rendimenti composti. Vedi esattamente quando il portafoglio supera la soglia IF."
+          },
+          {
+            "icon": "percent",
+            "title": "Analisi Tasso di Risparmio",
+            "description": "Il tasso di risparmio e il fattore piu importante per raggiungere l'IF. Vedi come i cambiamenti di reddito o spese impattano la tempistica."
+          },
+          {
+            "icon": "shield",
+            "title": "Tasso di Prelievo Sicuro",
+            "description": "Basata sullo Studio Trinity, la regola del 4% assicura che il portafoglio duri 30+ anni in pensione."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guida all'Indipendenza Finanziaria",
+        "articles": [
+          {
+            "title": "Cos'e il Movimento FIRE?",
+            "content": "FIRE sta per Financial Independence, Retire Early (Indipendenza Finanziaria, Pensione Anticipata). E un movimento di stile di vita focalizzato sul risparmio e investimento estremi per raggiungere la liberta finanziaria molto prima dell'eta pensionabile tradizionale. Il principio e semplice: risparmia una grande percentuale del reddito, investi saggiamente e vivi dei rendimenti. Esistono diverse varianti: Fat FIRE (spese piu alte), Lean FIRE (stile di vita minimalista), Barista FIRE (lavoro part-time) e Coast FIRE (abbastanza risparmiato perche la sola crescita finanzi la pensione)."
+          },
+          {
+            "title": "Capire la Regola del 4%",
+            "content": "La regola del 4%, derivata dallo Studio Trinity, suggerisce che se prelevi il 4% del portafoglio nel primo anno di pensione e aggiusti per l'inflazione ogni anno successivo, il portafoglio ha un'alta probabilita di durare almeno 30 anni. Questo significa che il numero IF e semplicemente le spese annuali moltiplicate per 25. Ad esempio, con 40.000 EUR di spese annuali, servono 1.000.000 EUR."
+          },
+          {
+            "title": "Il Potere del Tasso di Risparmio",
+            "content": "Il tasso di risparmio — la percentuale di reddito risparmiata e investita — e il fattore piu critico. Con un tasso del 10%, servirebbero circa 51 anni di lavoro. Al 25%, scende a circa 32 anni. Al 50%, solo 17 anni. E al 75%, potresti raggiungere l'IF in circa 7 anni. Un tasso piu alto ha un doppio effetto: aumenta l'importo investito e dimostra che puoi vivere con meno."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Cos'e un numero IF?",
+            "answer": "Il numero IF e l'importo totale che devi avere investito per coprire le spese annuali indefinitamente. Si calcola dividendo le spese annuali per il tasso di prelievo sicuro. Con un tasso del 4%, il numero IF e 25 volte le spese annuali."
+          },
+          {
+            "question": "Qual e un buon tasso di risparmio per FIRE?",
+            "answer": "La maggior parte dei praticanti FIRE mira a un tasso del 50-70%. Tuttavia, anche il 25-30% ti mette su un percorso molto piu veloce della media."
+          },
+          {
+            "question": "Il tasso di prelievo del 4% e sicuro?",
+            "answer": "La regola del 4% ha storicamente funzionato su periodi di 30 anni con alti tassi di successo. Per pensionati molto giovani (orizzonti 40+ anni), considera un tasso piu conservativo del 3-3,5%."
+          },
+          {
+            "question": "Il calcolatore tiene conto dell'inflazione?",
+            "answer": "Si, puoi impostare un tasso di inflazione per vedere i risultati in termini reali (aggiustati per l'inflazione)."
+          },
+          {
+            "question": "Quale rendimento degli investimenti dovrei assumere?",
+            "answer": "Un rendimento nominale del 7% (o 5% reale) e comunemente usato basato sulle medie storiche del mercato azionario."
+          },
+          {
+            "question": "Cos'e Coast FI?",
+            "answer": "Coast FI significa che hai risparmiato abbastanza perche la sola crescita composta porti il portafoglio al numero IF entro l'eta pensionabile tradizionale."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Pianifica la Tua Indipendenza Finanziaria",
+        "description": "Usa i nostri altri strumenti finanziari per ottimizzare i risparmi, monitorare il budget e calcolare i rendimenti nel tuo percorso FIRE."
+      }
+    },
+    "es": {
+      "slug": "calculadora-fire",
+      "meta": {
+        "title": "Calculadora FIRE – Independencia Financiera, Jubilacion Anticipada | ToolFrame",
+        "description": "Calculadora FIRE gratuita para estimar tu camino hacia la independencia financiera. Calcula tu tasa de ahorro, anos hasta IF y tasa de retiro segura. Planifica tu jubilacion anticipada.",
+        "keywords": ["calculadora fire", "independencia financiera calculadora", "jubilacion anticipada calculadora", "tasa ahorro", "tasa retiro segura", "numero IF", "planificacion jubilacion", "movimiento FIRE"]
+      },
+      "hero": {
+        "headline": "Calculadora FIRE",
+        "description": "Calcula tu camino hacia la Independencia Financiera y Jubilacion Anticipada. Ingresa tus ingresos, gastos y ahorros para ver cuando alcanzaras la libertad financiera."
+      },
+      "tool": {
+        "annualIncomeLabel": "Ingreso Anual",
+        "annualIncomePlaceholder": "ej. 75000",
+        "annualExpensesLabel": "Gastos Anuales",
+        "annualExpensesPlaceholder": "ej. 40000",
+        "currentSavingsLabel": "Ahorros Actuales",
+        "currentSavingsPlaceholder": "ej. 50000",
+        "expectedReturnLabel": "Rendimiento Anual Esperado (%)",
+        "expectedReturnPlaceholder": "ej. 7",
+        "withdrawalRateLabel": "Tasa de Retiro Segura (%)",
+        "withdrawalRatePlaceholder": "ej. 4",
+        "inflationRateLabel": "Tasa de Inflacion (%)",
+        "inflationRatePlaceholder": "ej. 2",
+        "resultFINumber": "Numero IF",
+        "resultYearsToFI": "Anos hasta IF",
+        "resultSavingsRate": "Tasa de Ahorro",
+        "resultMonthlyBudget": "Presupuesto Mensual en IF",
+        "resultCoastFIAge": "Coast FI Alcanzado",
+        "fiReachedMessage": "Ya eres IF!",
+        "fiDateLabel": "Fecha IF Estimada",
+        "yearsLabel": "anos",
+        "chartPortfolio": "Portafolio",
+        "chartFITarget": "Objetivo IF",
+        "chartContributions": "Contribuciones",
+        "breakdownToggle": "Mostrar Desglose Anual",
+        "breakdownHeaders": {
+          "year": "Ano",
+          "age": "Edad",
+          "contributions": "Total Ahorrado",
+          "portfolio": "Portafolio",
+          "fiProgress": "Progreso IF"
+        },
+        "currentAgeLabel": "Edad Actual",
+        "currentAgePlaceholder": "ej. 30",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Como Usar la Calculadora FIRE",
+        "steps": [
+          {
+            "title": "Ingresa Tus Detalles Financieros",
+            "description": "Ingresa tu ingreso anual, gastos y ahorros actuales. La calculadora determina automaticamente tu tasa de ahorro y el monto anual de inversion."
+          },
+          {
+            "title": "Ajusta Rendimiento y Tasa de Retiro",
+            "description": "Establece tu rendimiento de inversion esperado y la tasa de retiro segura (predeterminado 4%). Opcionalmente ajusta por inflacion."
+          },
+          {
+            "title": "Ve Tu Camino hacia IF",
+            "description": "Ve instantaneamente tu numero IF, los anos hasta la independencia financiera y un grafico de crecimiento del portafolio."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Que Usar Nuestra Calculadora FIRE",
+        "sectionDescription": "Una herramienta completa para planificar tu camino hacia la independencia financiera y jubilacion anticipada.",
+        "items": [
+          {
+            "icon": "target",
+            "title": "Calculo del Numero IF",
+            "description": "Calcula instantaneamente cuanto necesitas para jubilarte basado en tus gastos y la tasa de retiro segura."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Proyeccion de Crecimiento",
+            "description": "Visualiza como crecen tus ahorros con el tiempo con rendimientos compuestos. Ve exactamente cuando tu portafolio supera el umbral IF."
+          },
+          {
+            "icon": "percent",
+            "title": "Analisis de Tasa de Ahorro",
+            "description": "Tu tasa de ahorro es el factor mas importante para alcanzar IF. Ve como los cambios en ingresos o gastos impactan tu cronograma."
+          },
+          {
+            "icon": "shield",
+            "title": "Tasa de Retiro Segura",
+            "description": "Basada en el Estudio Trinity, la regla del 4% asegura que tu portafolio dure 30+ anos en jubilacion."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guia de Independencia Financiera",
+        "articles": [
+          {
+            "title": "Que es el Movimiento FIRE?",
+            "content": "FIRE significa Financial Independence, Retire Early (Independencia Financiera, Jubilacion Anticipada). Es un movimiento de estilo de vida enfocado en el ahorro e inversion extremos para alcanzar la libertad financiera mucho antes de la edad tradicional de jubilacion. El principio es simple: ahorra un gran porcentaje de tus ingresos, invierte sabiamente y vive de los rendimientos. Existen varias variantes: Fat FIRE (gastos mas altos), Lean FIRE (estilo de vida minimalista), Barista FIRE (trabajo a tiempo parcial) y Coast FIRE (suficiente ahorrado para que el crecimiento solo financie la jubilacion)."
+          },
+          {
+            "title": "Entendiendo la Regla del 4%",
+            "content": "La regla del 4%, derivada del Estudio Trinity, sugiere que si retiras el 4% de tu portafolio en el primer ano de jubilacion y ajustas por inflacion cada ano siguiente, tu portafolio tiene alta probabilidad de durar al menos 30 anos. Esto significa que tu numero IF es simplemente tus gastos anuales multiplicados por 25. Por ejemplo, con 40.000 EUR de gastos anuales, necesitas 1.000.000 EUR."
+          },
+          {
+            "title": "El Poder de la Tasa de Ahorro",
+            "content": "Tu tasa de ahorro — el porcentaje de ingreso que ahorras e inviertes — es el factor mas critico. Con una tasa del 10%, necesitarias unos 51 anos de trabajo. Al 25%, baja a unos 32 anos. Al 50%, solo 17 anos. Y al 75%, podrias alcanzar IF en unos 7 anos. Una tasa mas alta tiene doble efecto: aumenta el monto invertido y demuestra que puedes vivir con menos."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "Que es un numero IF?",
+            "answer": "Tu numero IF es el monto total que necesitas invertido para cubrir tus gastos anuales indefinidamente. Se calcula dividiendo tus gastos anuales por la tasa de retiro segura. Con una tasa del 4%, tu numero IF es 25 veces tus gastos anuales."
+          },
+          {
+            "question": "Cual es una buena tasa de ahorro para FIRE?",
+            "answer": "La mayoria de los practicantes FIRE apuntan a una tasa del 50-70%. Sin embargo, incluso el 25-30% te pone en un camino mucho mas rapido que el promedio."
+          },
+          {
+            "question": "Es segura la tasa de retiro del 4%?",
+            "answer": "La regla del 4% ha funcionado historicamente en periodos de 30 anos con altas tasas de exito. Para jubilados muy jovenes (horizontes de 40+ anos), considera una tasa mas conservadora del 3-3,5%."
+          },
+          {
+            "question": "La calculadora considera la inflacion?",
+            "answer": "Si, puedes establecer una tasa de inflacion para ver resultados en terminos reales (ajustados por inflacion)."
+          },
+          {
+            "question": "Que rendimiento de inversion debo asumir?",
+            "answer": "Un rendimiento nominal del 7% (o 5% real) se usa comunmente basado en promedios historicos del mercado de valores."
+          },
+          {
+            "question": "Que es Coast FI?",
+            "answer": "Coast FI significa que has ahorrado suficiente para que el crecimiento compuesto solo lleve tu portafolio al numero IF para la edad tradicional de jubilacion."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Planifica Tu Independencia Financiera",
+        "description": "Usa nuestras otras herramientas financieras para optimizar tus ahorros, rastrear tu presupuesto y calcular rendimientos en tu camino FIRE."
+      }
+    }
+  }
+}

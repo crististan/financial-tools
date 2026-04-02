@@ -682,7 +682,7 @@
         "summaryBillPerPerson": "Cuenta por persona",
         "summaryTipPerPerson": "Propina por persona",
         "summaryTotalPerPerson": "Total por persona",
-        "currencySymbol": "$"
+        "currencySymbol": "€"
       },
       "howItWorks": {
         "sectionTitle": "Cómo Usar la Calculadora para Dividir la Cuenta",
