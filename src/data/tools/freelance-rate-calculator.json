@@ -1,0 +1,778 @@
+{
+  "id": "freelance-rate-calculator",
+  "component": "freelance-rate-calculator",
+  "iconPath": "/icons/freelance-rate-calculator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "config": {},
+  "translations": {
+    "en": {
+      "slug": "freelance-rate-calculator",
+      "meta": {
+        "title": "Freelance Rate Calculator – Hourly & Daily Rate | ToolFrame",
+        "description": "Free freelance rate calculator. Calculate your minimum hourly and daily rate based on desired income, taxes, expenses, and billable hours. Perfect for freelancers and consultants.",
+        "keywords": ["freelance rate calculator", "hourly rate calculator", "freelancer pricing", "consulting rate", "daily rate calculator", "self-employment income", "freelance income calculator", "contractor rate"]
+      },
+      "hero": {
+        "headline": "Freelance Rate Calculator",
+        "description": "Calculate the minimum hourly and daily rate you need to charge to meet your income goals. Factor in taxes, business expenses, and billable hours for accurate pricing."
+      },
+      "tool": {
+        "annualIncomeLabel": "Desired Annual Net Income",
+        "annualIncomePlaceholder": "e.g. 60000",
+        "billableWeeksLabel": "Billable Weeks per Year",
+        "billableWeeksPlaceholder": "e.g. 46",
+        "billableHoursLabel": "Billable Hours per Week",
+        "billableHoursPlaceholder": "e.g. 30",
+        "expensesLabel": "Annual Business Expenses",
+        "expensesPlaceholder": "e.g. 5000",
+        "taxRateLabel": "Tax Rate (%)",
+        "taxRatePlaceholder": "e.g. 30",
+        "currencyLabel": "Currency",
+        "resultHourlyRate": "Hourly Rate",
+        "resultDailyRate": "Daily Rate (8h)",
+        "resultGrossAnnual": "Gross Annual Income",
+        "resultAnnualHours": "Annual Billable Hours",
+        "summaryTitle": "Breakdown",
+        "summaryNetIncome": "Net income target",
+        "summaryExpenses": "Business expenses",
+        "summaryTaxBuffer": "Tax buffer",
+        "summaryGrossNeeded": "Total gross needed",
+        "currencySymbol": "$"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Use the Freelance Rate Calculator",
+        "steps": [
+          {
+            "title": "Set Your Income Goal",
+            "description": "Enter your desired annual net income — the amount you want to take home after taxes and expenses. Add your estimated annual business expenses."
+          },
+          {
+            "title": "Define Your Availability",
+            "description": "Set billable weeks per year (accounting for vacation and sick days) and billable hours per week (not all working hours are client-facing)."
+          },
+          {
+            "title": "Get Your Rates",
+            "description": "Instantly see your minimum hourly rate, daily rate, required gross income, and total billable hours. Adjust inputs to explore different scenarios."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Freelance Rate Calculator",
+        "sectionDescription": "Price your services with confidence using data-driven calculations.",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Accurate Pricing",
+            "description": "Factor in taxes, expenses, and realistic billable hours to calculate a rate that actually meets your financial goals — no guesswork."
+          },
+          {
+            "icon": "clock",
+            "title": "Billable Hour Awareness",
+            "description": "Account for the reality that not all working hours are billable. Admin, marketing, and learning time reduce your effective earning hours."
+          },
+          {
+            "icon": "shield",
+            "title": "Tax Buffer Built In",
+            "description": "Automatically includes your self-employment tax rate in the calculation so you're not caught off guard at tax time."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Scenario Exploration",
+            "description": "Adjust any input and see how it impacts your rate instantly. Compare different income targets, work schedules, and expense levels."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Freelance Pricing Guide",
+        "articles": [
+          {
+            "title": "Why Most Freelancers Undercharge",
+            "content": "Many freelancers make the mistake of converting their previous salary to an hourly rate without accounting for self-employment taxes (often 25-40%), business expenses (software, insurance, equipment), unpaid time (admin, marketing, professional development), and benefits they no longer receive (health insurance, retirement contributions, paid leave). A proper freelance rate is typically 2-3x higher than an equivalent employee hourly rate to achieve the same take-home pay."
+          },
+          {
+            "title": "Understanding Billable vs. Working Hours",
+            "content": "A common misconception is that all 40 working hours per week can be billed to clients. In reality, freelancers typically bill 60-75% of their working time. The remaining hours go to business administration, invoicing, client communication, marketing, skill development, and finding new projects. For a 40-hour work week, 25-30 billable hours is a realistic target. Our calculator uses 30 hours as the default, but you should adjust based on your specific situation and industry."
+          },
+          {
+            "title": "Setting Rates by Industry and Experience",
+            "content": "Freelance rates vary significantly by industry, location, and expertise level. Web developers might charge $50-200/hour, while graphic designers range from $35-150/hour. Consultants and specialized professionals can command $150-500+/hour. Research your market, check platforms like Glassdoor and Upwork for benchmarks, and consider your unique value proposition. Remember: your rate should cover your costs first, then align with market rates. Never price below your calculated minimum rate, even if market rates seem lower — that path leads to burnout."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "How does the freelance rate calculator work?",
+            "answer": "Enter your desired annual net income, billable weeks and hours, business expenses, and tax rate. The calculator computes your required gross income (net + expenses + taxes) and divides it by your annual billable hours to determine your minimum hourly rate. The daily rate assumes an 8-hour billable day."
+          },
+          {
+            "question": "What should I set as billable hours per week?",
+            "answer": "Most freelancers can realistically bill 25-30 hours per week out of a 40-hour work week. The remaining time goes to admin, marketing, invoicing, and professional development. We default to 30 hours, but adjust based on your situation."
+          },
+          {
+            "question": "How many billable weeks should I plan for?",
+            "answer": "We default to 46 weeks, which accounts for about 4 weeks of vacation and 2 weeks of sick days or holidays. Adjust based on your planned time off and local holidays."
+          },
+          {
+            "question": "What tax rate should I use?",
+            "answer": "This depends on your country and tax situation. In the US, self-employment tax is about 15.3% plus income tax (10-37%). In many European countries, freelancer tax rates range from 20-50%. We default to 30% as a common middle ground. Consult a tax professional for your specific rate."
+          },
+          {
+            "question": "What counts as business expenses?",
+            "answer": "Common freelance expenses include software subscriptions, computer and equipment, office space or coworking fees, professional insurance, accounting services, marketing costs, professional development, and internet/phone bills. Total these up for an annual estimate."
+          },
+          {
+            "question": "Is this calculator free to use?",
+            "answer": "Yes, the freelance rate calculator is completely free with no registration required. Use it as often as you need to plan your pricing strategy."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore More Financial Tools",
+        "description": "Discover our collection of free financial calculators for loans, investments, budgeting, and more."
+      }
+    },
+    "ro": {
+      "slug": "calculator-tarif-freelancer",
+      "meta": {
+        "title": "Calculator Tarif Freelancer – Rată Orară și Zilnică | ToolFrame",
+        "description": "Calculator gratuit pentru tariful de freelancer. Calculează rata orară și zilnică minimă în funcție de venitul dorit, taxe, cheltuieli și ore facturabile. Perfect pentru freelanceri și consultanți.",
+        "keywords": ["calculator tarif freelancer", "rata orara freelancer", "pret ora freelancer", "tarif consultant", "calculator venit freelancer", "pfa tarif", "rata zilnica freelancer"]
+      },
+      "hero": {
+        "headline": "Calculator Tarif Freelancer",
+        "description": "Calculează rata orară și zilnică minimă pe care trebuie să o percepi pentru a-ți atinge obiectivele de venit. Include taxe, cheltuieli de afaceri și ore facturabile."
+      },
+      "tool": {
+        "annualIncomeLabel": "Venit Anual Net Dorit",
+        "annualIncomePlaceholder": "ex. 120000",
+        "billableWeeksLabel": "Săptămâni Facturabile pe An",
+        "billableWeeksPlaceholder": "ex. 46",
+        "billableHoursLabel": "Ore Facturabile pe Săptămână",
+        "billableHoursPlaceholder": "ex. 30",
+        "expensesLabel": "Cheltuieli Anuale de Afaceri",
+        "expensesPlaceholder": "ex. 10000",
+        "taxRateLabel": "Rata Taxelor (%)",
+        "taxRatePlaceholder": "ex. 30",
+        "currencyLabel": "Monedă",
+        "resultHourlyRate": "Tarif Orar",
+        "resultDailyRate": "Tarif Zilnic (8h)",
+        "resultGrossAnnual": "Venit Brut Anual",
+        "resultAnnualHours": "Ore Facturabile Anual",
+        "summaryTitle": "Detalii",
+        "summaryNetIncome": "Venit net țintă",
+        "summaryExpenses": "Cheltuieli de afaceri",
+        "summaryTaxBuffer": "Buffer taxe",
+        "summaryGrossNeeded": "Total brut necesar",
+        "currencySymbol": "lei"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum Folosești Calculatorul de Tarif Freelancer",
+        "steps": [
+          {
+            "title": "Setează Obiectivul de Venit",
+            "description": "Introdu venitul anual net dorit — suma pe care vrei să o încasezi după taxe și cheltuieli. Adaugă cheltuielile anuale estimate de afaceri."
+          },
+          {
+            "title": "Definește Disponibilitatea",
+            "description": "Setează săptămânile facturabile pe an (ținând cont de concediu și zile libere) și orele facturabile pe săptămână (nu toate orele de lucru sunt pentru clienți)."
+          },
+          {
+            "title": "Obține Tarifele",
+            "description": "Vezi instant tariful orar minim, tariful zilnic, venitul brut necesar și totalul orelor facturabile. Ajustează inputurile pentru diferite scenarii."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Calculatorul Nostru",
+        "sectionDescription": "Stabilește-ți prețul cu încredere folosind calcule bazate pe date.",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Tarifare Precisă",
+            "description": "Include taxe, cheltuieli și ore facturabile realiste pentru a calcula un tarif care chiar îți atinge obiectivele financiare — fără ghicit."
+          },
+          {
+            "icon": "clock",
+            "title": "Ore Facturabile Realiste",
+            "description": "Ține cont de faptul că nu toate orele de lucru sunt facturabile. Administrarea, marketingul și învățarea reduc orele efective de câștig."
+          },
+          {
+            "icon": "shield",
+            "title": "Buffer de Taxe Inclus",
+            "description": "Include automat rata taxelor în calcul pentru a nu fi luat prin surprindere la plata impozitelor."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Explorare Scenarii",
+            "description": "Ajustează orice input și vezi cum impactează tariful instant. Compară diferite obiective de venit, programe și niveluri de cheltuieli."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid de Tarifare Freelancer",
+        "articles": [
+          {
+            "title": "De Ce Majoritatea Freelancerilor Percep Prea Puțin",
+            "content": "Mulți freelanceri fac greșeala de a-și converti salariul anterior într-o rată orară fără a ține cont de taxele pe venit (adesea 10-40%), cheltuielile de afaceri (software, echipamente, asigurări), timpul neplătit (administrare, marketing, dezvoltare profesională) și beneficiile pe care nu le mai primesc (asigurare de sănătate, concediu plătit). Un tarif corect de freelancer este de obicei de 2-3 ori mai mare decât rata orară echivalentă a unui angajat."
+          },
+          {
+            "title": "Ore Facturabile vs. Ore de Lucru",
+            "content": "O concepție greșită este că toate cele 40 de ore de lucru pe săptămână pot fi facturate clienților. În realitate, freelancerii facturează de obicei 60-75% din timpul lor de lucru. Restul orelor merg către administrare, facturare, comunicare cu clienții, marketing și dezvoltare profesională. Pentru o săptămână de 40 de ore, 25-30 de ore facturabile este o țintă realistă."
+          },
+          {
+            "title": "Stabilirea Tarifelor după Industrie și Experiență",
+            "content": "Tarifele freelancer variază semnificativ în funcție de industrie, locație și nivel de expertiză. Dezvoltatorii web pot percepe 25-100€/oră, designerii grafici 20-80€/oră, iar consultanții specializați 80-250+€/oră. Cercetează piața, verifică platforme precum Upwork pentru referințe și consideră propunerea ta unică de valoare. Nu prețui niciodată sub rata ta minimă calculată."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Cum funcționează calculatorul de tarif freelancer?",
+            "answer": "Introdu venitul anual net dorit, săptămânile și orele facturabile, cheltuielile de afaceri și rata taxelor. Calculatorul determină venitul brut necesar (net + cheltuieli + taxe) și îl împarte la orele facturabile anuale pentru a determina tariful orar minim."
+          },
+          {
+            "question": "Câte ore facturabile pe săptămână ar trebui să setez?",
+            "answer": "Majoritatea freelancerilor pot factura realist 25-30 de ore pe săptămână dintr-o săptămână de lucru de 40 de ore. Restul timpului merge către administrare, marketing și dezvoltare profesională. Implicit este 30 de ore."
+          },
+          {
+            "question": "Câte săptămâni facturabile ar trebui să planific?",
+            "answer": "Implicit sunt 46 de săptămâni, ceea ce ține cont de aproximativ 4 săptămâni de concediu și 2 săptămâni de zile libere sau sărbători. Ajustează în funcție de planurile tale."
+          },
+          {
+            "question": "Ce rată a taxelor ar trebui să folosesc?",
+            "answer": "Depinde de țara ta și situația fiscală. În România, pentru PFA cu normă de venit sau impozit pe venit, ratele variază. Un freelancer PFA plătește de obicei CAS, CASS și impozit pe venit. Consultă un contabil pentru rata ta specifică."
+          },
+          {
+            "question": "Ce se consideră cheltuieli de afaceri?",
+            "answer": "Cheltuielile comune includ abonamente software, calculator și echipamente, spațiu de birou sau coworking, asigurări profesionale, servicii contabile, costuri de marketing și facturi de internet/telefon."
+          },
+          {
+            "question": "Este gratuit calculatorul?",
+            "answer": "Da, calculatorul de tarif freelancer este complet gratuit, fără înregistrare necesară."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Alte Instrumente Financiare",
+        "description": "Descoperă colecția noastră de calculatoare financiare gratuite pentru credite, investiții, buget și multe altele."
+      }
+    },
+    "de": {
+      "slug": "freiberufler-stundensatz-rechner",
+      "meta": {
+        "title": "Freiberufler Stundensatz-Rechner – Stunden- & Tagessatz | ToolFrame",
+        "description": "Kostenloser Stundensatz-Rechner für Freiberufler. Berechnen Sie Ihren Mindest-Stunden- und Tagessatz basierend auf Wunscheinkommen, Steuern, Ausgaben und abrechenbaren Stunden.",
+        "keywords": ["freiberufler stundensatz rechner", "stundensatz berechnen", "tagessatz rechner", "freelancer honorar", "selbstständig stundenlohn", "berater stundensatz", "freiberufler einkommen"]
+      },
+      "hero": {
+        "headline": "Freiberufler Stundensatz-Rechner",
+        "description": "Berechnen Sie den Mindest-Stunden- und Tagessatz, den Sie verlangen müssen, um Ihre Einkommensziele zu erreichen. Berücksichtigt Steuern, Betriebsausgaben und abrechenbare Stunden."
+      },
+      "tool": {
+        "annualIncomeLabel": "Gewünschtes Jahresnettoeinkommen",
+        "annualIncomePlaceholder": "z.B. 60000",
+        "billableWeeksLabel": "Abrechenbare Wochen pro Jahr",
+        "billableWeeksPlaceholder": "z.B. 46",
+        "billableHoursLabel": "Abrechenbare Stunden pro Woche",
+        "billableHoursPlaceholder": "z.B. 30",
+        "expensesLabel": "Jährliche Betriebsausgaben",
+        "expensesPlaceholder": "z.B. 5000",
+        "taxRateLabel": "Steuersatz (%)",
+        "taxRatePlaceholder": "z.B. 30",
+        "currencyLabel": "Währung",
+        "resultHourlyRate": "Stundensatz",
+        "resultDailyRate": "Tagessatz (8h)",
+        "resultGrossAnnual": "Bruttojahreseinkommen",
+        "resultAnnualHours": "Abrechenbare Stunden/Jahr",
+        "summaryTitle": "Aufschlüsselung",
+        "summaryNetIncome": "Nettoeinkommen-Ziel",
+        "summaryExpenses": "Betriebsausgaben",
+        "summaryTaxBuffer": "Steuerpuffer",
+        "summaryGrossNeeded": "Benötigtes Brutto gesamt",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "So Verwenden Sie den Stundensatz-Rechner",
+        "steps": [
+          {
+            "title": "Einkommensziel Festlegen",
+            "description": "Geben Sie Ihr gewünschtes Jahresnettoeinkommen ein — den Betrag, den Sie nach Steuern und Ausgaben erhalten möchten. Fügen Sie Ihre geschätzten jährlichen Betriebsausgaben hinzu."
+          },
+          {
+            "title": "Verfügbarkeit Definieren",
+            "description": "Legen Sie abrechenbare Wochen pro Jahr (abzüglich Urlaub und Krankheitstage) und abrechenbare Stunden pro Woche (nicht alle Arbeitsstunden sind kundenorientiert) fest."
+          },
+          {
+            "title": "Sätze Erhalten",
+            "description": "Sehen Sie sofort Ihren Mindest-Stundensatz, Tagessatz, erforderliches Bruttoeinkommen und abrechenbare Jahresstunden. Passen Sie Eingaben für verschiedene Szenarien an."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum Unseren Stundensatz-Rechner Verwenden",
+        "sectionDescription": "Bepreisen Sie Ihre Dienstleistungen mit datengestützten Berechnungen.",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Genaue Preisgestaltung",
+            "description": "Berücksichtigt Steuern, Ausgaben und realistische abrechenbare Stunden für einen Satz, der Ihre finanziellen Ziele tatsächlich erreicht."
+          },
+          {
+            "icon": "clock",
+            "title": "Realistische Arbeitsstunden",
+            "description": "Berücksichtigt, dass nicht alle Arbeitsstunden abrechenbar sind. Verwaltung, Marketing und Weiterbildung reduzieren Ihre effektiven Einnahmestunden."
+          },
+          {
+            "icon": "shield",
+            "title": "Steuerpuffer Integriert",
+            "description": "Berechnet automatisch Ihren Steuersatz ein, damit Sie bei der Steuererklärung nicht überrascht werden."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Szenario-Erkundung",
+            "description": "Passen Sie jede Eingabe an und sehen Sie sofort die Auswirkung auf Ihren Satz. Vergleichen Sie verschiedene Einkommensziele und Zeitpläne."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Leitfaden zur Freiberufler-Preisgestaltung",
+        "articles": [
+          {
+            "title": "Warum die Meisten Freiberufler zu Wenig Verlangen",
+            "content": "Viele Freiberufler machen den Fehler, ihr früheres Gehalt in einen Stundensatz umzurechnen, ohne Selbstständigensteuern (oft 30-50% in Deutschland), Betriebsausgaben (Software, Versicherung, Ausrüstung), unbezahlte Zeit (Verwaltung, Marketing, Weiterbildung) und entfallene Arbeitgeberleistungen zu berücksichtigen. Ein korrekter Freiberufler-Satz ist typischerweise 2-3x höher als der entsprechende Angestellten-Stundensatz."
+          },
+          {
+            "title": "Abrechenbare vs. Arbeitsstunden Verstehen",
+            "content": "Ein häufiger Irrtum ist, dass alle 40 Arbeitsstunden pro Woche Kunden in Rechnung gestellt werden können. In der Realität rechnen Freiberufler typischerweise 60-75% ihrer Arbeitszeit ab. Die übrigen Stunden gehen für Verwaltung, Rechnungsstellung, Kundenkommunikation, Marketing und Weiterbildung drauf. Bei einer 40-Stunden-Woche sind 25-30 abrechenbare Stunden ein realistisches Ziel."
+          },
+          {
+            "title": "Sätze nach Branche und Erfahrung Festlegen",
+            "content": "Freiberufler-Sätze variieren erheblich nach Branche, Standort und Expertise. Webentwickler verlangen typischerweise 60-150€/Stunde, Grafikdesigner 40-120€/Stunde und spezialisierte Berater 120-300+€/Stunde. Recherchieren Sie Ihren Markt, prüfen Sie Plattformen wie Freelancermap oder GULP für Benchmarks. Bepreisen Sie niemals unter Ihrem kalkulierten Mindestsatz."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig Gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie funktioniert der Stundensatz-Rechner?",
+            "answer": "Geben Sie Ihr gewünschtes Nettoeinkommen, abrechenbare Wochen und Stunden, Betriebsausgaben und Steuersatz ein. Der Rechner ermittelt das erforderliche Bruttoeinkommen und teilt es durch die jährlichen abrechenbaren Stunden."
+          },
+          {
+            "question": "Wie viele abrechenbare Stunden pro Woche sind realistisch?",
+            "answer": "Die meisten Freiberufler können realistisch 25-30 Stunden pro Woche abrechnen. Der Rest geht für Verwaltung, Marketing und Weiterbildung drauf. Standard sind 30 Stunden."
+          },
+          {
+            "question": "Wie viele abrechenbare Wochen sollte ich planen?",
+            "answer": "Standard sind 46 Wochen, was etwa 4 Wochen Urlaub und 2 Wochen Krankheit/Feiertage berücksichtigt. Passen Sie dies an Ihre geplante Freizeit an."
+          },
+          {
+            "question": "Welchen Steuersatz sollte ich verwenden?",
+            "answer": "In Deutschland hängt dies von Ihrem Einkommen und Ihrer Rechtsform ab. Einkommensteuer (14-45%), Solidaritätszuschlag und ggf. Gewerbesteuer. Ein Steuerberater kann Ihren individuellen Satz berechnen. 30% ist ein guter Ausgangswert."
+          },
+          {
+            "question": "Was zählt als Betriebsausgaben?",
+            "answer": "Typische Ausgaben: Software-Abonnements, Computer und Ausrüstung, Büro oder Coworking, Berufshaftpflicht, Steuerberater, Marketing, Weiterbildung, Internet und Telefon."
+          },
+          {
+            "question": "Ist der Rechner kostenlos?",
+            "answer": "Ja, der Stundensatz-Rechner ist völlig kostenlos und ohne Registrierung nutzbar."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Weitere Finanzrechner Entdecken",
+        "description": "Entdecken Sie unsere Sammlung kostenloser Finanzrechner für Kredite, Investitionen, Budgetplanung und mehr."
+      }
+    },
+    "fr": {
+      "slug": "calculateur-taux-freelance",
+      "meta": {
+        "title": "Calculateur Taux Freelance – Taux Horaire & Journalier | ToolFrame",
+        "description": "Calculateur gratuit de taux freelance. Calculez votre taux horaire et journalier minimum en fonction du revenu souhaité, des impôts, des dépenses et des heures facturables.",
+        "keywords": ["calculateur taux freelance", "taux horaire freelance", "tarif journalier", "prix freelance", "calculateur revenu freelance", "auto-entrepreneur tarif", "consultant taux horaire"]
+      },
+      "hero": {
+        "headline": "Calculateur Taux Freelance",
+        "description": "Calculez le taux horaire et journalier minimum que vous devez facturer pour atteindre vos objectifs de revenus. Inclut les impôts, les dépenses professionnelles et les heures facturables."
+      },
+      "tool": {
+        "annualIncomeLabel": "Revenu Annuel Net Souhaité",
+        "annualIncomePlaceholder": "ex. 50000",
+        "billableWeeksLabel": "Semaines Facturables par An",
+        "billableWeeksPlaceholder": "ex. 46",
+        "billableHoursLabel": "Heures Facturables par Semaine",
+        "billableHoursPlaceholder": "ex. 30",
+        "expensesLabel": "Dépenses Professionnelles Annuelles",
+        "expensesPlaceholder": "ex. 5000",
+        "taxRateLabel": "Taux d'Imposition (%)",
+        "taxRatePlaceholder": "ex. 30",
+        "currencyLabel": "Devise",
+        "resultHourlyRate": "Taux Horaire",
+        "resultDailyRate": "Taux Journalier (8h)",
+        "resultGrossAnnual": "Revenu Brut Annuel",
+        "resultAnnualHours": "Heures Facturables/An",
+        "summaryTitle": "Détails",
+        "summaryNetIncome": "Revenu net cible",
+        "summaryExpenses": "Dépenses professionnelles",
+        "summaryTaxBuffer": "Provision impôts",
+        "summaryGrossNeeded": "Brut total nécessaire",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment Utiliser le Calculateur de Taux Freelance",
+        "steps": [
+          {
+            "title": "Définissez Votre Objectif de Revenu",
+            "description": "Entrez votre revenu annuel net souhaité — le montant que vous voulez percevoir après impôts et dépenses. Ajoutez vos dépenses professionnelles annuelles estimées."
+          },
+          {
+            "title": "Définissez Votre Disponibilité",
+            "description": "Fixez les semaines facturables par an (en tenant compte des vacances et arrêts maladie) et les heures facturables par semaine (toutes les heures ne sont pas facturables)."
+          },
+          {
+            "title": "Obtenez Vos Taux",
+            "description": "Voyez instantanément votre taux horaire minimum, taux journalier, revenu brut requis et total des heures facturables. Ajustez les entrées pour explorer différents scénarios."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi Utiliser Notre Calculateur",
+        "sectionDescription": "Fixez vos prix avec confiance grâce à des calculs basés sur les données.",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Tarification Précise",
+            "description": "Intègre les impôts, dépenses et heures facturables réalistes pour calculer un taux qui atteint réellement vos objectifs financiers."
+          },
+          {
+            "icon": "clock",
+            "title": "Heures Facturables Réalistes",
+            "description": "Tient compte du fait que toutes les heures de travail ne sont pas facturables. L'administration, le marketing et la formation réduisent vos heures productives."
+          },
+          {
+            "icon": "shield",
+            "title": "Provision Fiscale Intégrée",
+            "description": "Inclut automatiquement votre taux d'imposition dans le calcul pour éviter les mauvaises surprises fiscales."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Exploration de Scénarios",
+            "description": "Ajustez n'importe quelle entrée et voyez l'impact sur votre taux instantanément. Comparez différents objectifs de revenu et plannings."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide de Tarification Freelance",
+        "articles": [
+          {
+            "title": "Pourquoi la Plupart des Freelances Sous-Facturent",
+            "content": "Beaucoup de freelances font l'erreur de convertir leur ancien salaire en taux horaire sans tenir compte des cotisations sociales (souvent 22-45% en France), des dépenses professionnelles (logiciels, assurances, équipements), du temps non rémunéré (administration, marketing, formation) et des avantages perdus (mutuelle, congés payés, retraite). Un taux freelance correct est typiquement 2-3 fois plus élevé que le taux horaire équivalent d'un salarié."
+          },
+          {
+            "title": "Heures Facturables vs. Heures de Travail",
+            "content": "Une idée reçue courante est que les 40 heures de travail hebdomadaires peuvent toutes être facturées aux clients. En réalité, les freelances facturent généralement 60-75% de leur temps de travail. Les heures restantes sont consacrées à l'administration, la facturation, la communication client, le marketing et la formation. Pour une semaine de 40 heures, 25-30 heures facturables est un objectif réaliste."
+          },
+          {
+            "title": "Fixer ses Taux par Secteur et Expérience",
+            "content": "Les taux freelance varient considérablement selon le secteur, la localisation et le niveau d'expertise. Les développeurs web facturent généralement 40-150€/heure, les graphistes 30-100€/heure et les consultants spécialisés 100-300+€/heure. Étudiez votre marché, consultez des plateformes comme Malt pour des références. Ne facturez jamais en dessous de votre taux minimum calculé."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions Fréquemment Posées",
+        "items": [
+          {
+            "question": "Comment fonctionne le calculateur de taux freelance ?",
+            "answer": "Entrez votre revenu net souhaité, semaines et heures facturables, dépenses et taux d'imposition. Le calculateur détermine le revenu brut nécessaire et le divise par les heures facturables annuelles pour votre taux horaire minimum."
+          },
+          {
+            "question": "Combien d'heures facturables par semaine sont réalistes ?",
+            "answer": "La plupart des freelances peuvent facturer 25-30 heures par semaine sur 40. Le reste va à l'administration, au marketing et à la formation. La valeur par défaut est 30 heures."
+          },
+          {
+            "question": "Combien de semaines facturables prévoir ?",
+            "answer": "Par défaut 46 semaines, soit environ 4 semaines de vacances et 2 semaines de maladie/jours fériés. Ajustez selon vos congés prévus."
+          },
+          {
+            "question": "Quel taux d'imposition utiliser ?",
+            "answer": "En France, cela dépend de votre statut (auto-entrepreneur, EURL, SASU). Les cotisations sociales auto-entrepreneur sont d'environ 22%, plus l'impôt sur le revenu. Consultez un expert-comptable. 30% est un bon point de départ."
+          },
+          {
+            "question": "Que comprennent les dépenses professionnelles ?",
+            "answer": "Dépenses courantes : abonnements logiciels, ordinateur et équipement, bureau ou coworking, assurance professionnelle, comptabilité, marketing, formation et internet/téléphone."
+          },
+          {
+            "question": "Ce calculateur est-il gratuit ?",
+            "answer": "Oui, le calculateur est entièrement gratuit et sans inscription requise."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez d'Autres Outils Financiers",
+        "description": "Explorez notre collection de calculateurs financiers gratuits pour les prêts, investissements, budget et plus encore."
+      }
+    },
+    "it": {
+      "slug": "calcolatore-tariffa-freelance",
+      "meta": {
+        "title": "Calcolatore Tariffa Freelance – Tariffa Oraria e Giornaliera | ToolFrame",
+        "description": "Calcolatore gratuito per la tariffa freelance. Calcola la tariffa oraria e giornaliera minima in base al reddito desiderato, tasse, spese e ore fatturabili. Perfetto per freelancer e consulenti.",
+        "keywords": ["calcolatore tariffa freelance", "tariffa oraria freelance", "tariffa giornaliera", "prezzo freelance", "calcolatore reddito freelance", "partita iva tariffa", "consulente tariffa oraria"]
+      },
+      "hero": {
+        "headline": "Calcolatore Tariffa Freelance",
+        "description": "Calcola la tariffa oraria e giornaliera minima che devi applicare per raggiungere i tuoi obiettivi di reddito. Include tasse, spese aziendali e ore fatturabili."
+      },
+      "tool": {
+        "annualIncomeLabel": "Reddito Annuo Netto Desiderato",
+        "annualIncomePlaceholder": "es. 50000",
+        "billableWeeksLabel": "Settimane Fatturabili all'Anno",
+        "billableWeeksPlaceholder": "es. 46",
+        "billableHoursLabel": "Ore Fatturabili a Settimana",
+        "billableHoursPlaceholder": "es. 30",
+        "expensesLabel": "Spese Aziendali Annuali",
+        "expensesPlaceholder": "es. 5000",
+        "taxRateLabel": "Aliquota Fiscale (%)",
+        "taxRatePlaceholder": "es. 30",
+        "currencyLabel": "Valuta",
+        "resultHourlyRate": "Tariffa Oraria",
+        "resultDailyRate": "Tariffa Giornaliera (8h)",
+        "resultGrossAnnual": "Reddito Lordo Annuo",
+        "resultAnnualHours": "Ore Fatturabili/Anno",
+        "summaryTitle": "Riepilogo",
+        "summaryNetIncome": "Reddito netto obiettivo",
+        "summaryExpenses": "Spese aziendali",
+        "summaryTaxBuffer": "Riserva fiscale",
+        "summaryGrossNeeded": "Lordo totale necessario",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Come Usare il Calcolatore di Tariffa Freelance",
+        "steps": [
+          {
+            "title": "Imposta il Tuo Obiettivo di Reddito",
+            "description": "Inserisci il reddito annuo netto desiderato — l'importo che vuoi portare a casa dopo tasse e spese. Aggiungi le spese aziendali annuali stimate."
+          },
+          {
+            "title": "Definisci la Tua Disponibilità",
+            "description": "Imposta le settimane fatturabili all'anno (tenendo conto di ferie e malattia) e le ore fatturabili a settimana (non tutte le ore lavorative sono per i clienti)."
+          },
+          {
+            "title": "Ottieni le Tue Tariffe",
+            "description": "Vedi istantaneamente la tariffa oraria minima, la tariffa giornaliera, il reddito lordo necessario e il totale delle ore fatturabili. Modifica gli input per esplorare diversi scenari."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché Usare il Nostro Calcolatore",
+        "sectionDescription": "Stabilisci i tuoi prezzi con sicurezza usando calcoli basati sui dati.",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Tariffazione Precisa",
+            "description": "Include tasse, spese e ore fatturabili realistiche per calcolare una tariffa che raggiunge effettivamente i tuoi obiettivi finanziari."
+          },
+          {
+            "icon": "clock",
+            "title": "Ore Fatturabili Realistiche",
+            "description": "Tiene conto del fatto che non tutte le ore lavorative sono fatturabili. Amministrazione, marketing e formazione riducono le ore produttive effettive."
+          },
+          {
+            "icon": "shield",
+            "title": "Riserva Fiscale Integrata",
+            "description": "Include automaticamente la tua aliquota fiscale nel calcolo per evitare sorprese al momento della dichiarazione dei redditi."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Esplorazione Scenari",
+            "description": "Modifica qualsiasi input e vedi come influisce sulla tariffa istantaneamente. Confronta diversi obiettivi di reddito e programmi di lavoro."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guida alla Tariffazione Freelance",
+        "articles": [
+          {
+            "title": "Perché la Maggior Parte dei Freelancer Sottovaluta le Tariffe",
+            "content": "Molti freelancer commettono l'errore di convertire il precedente stipendio in una tariffa oraria senza considerare i contributi previdenziali (spesso 25-40% in Italia con partita IVA), le spese aziendali (software, assicurazione, attrezzature), il tempo non retribuito (amministrazione, marketing, formazione) e i benefit persi (ferie pagate, TFR, contributi pensionistici del datore). Una tariffa freelance corretta è tipicamente 2-3 volte superiore alla tariffa oraria equivalente di un dipendente."
+          },
+          {
+            "title": "Ore Fatturabili vs. Ore di Lavoro",
+            "content": "Un'idea sbagliata comune è che tutte le 40 ore lavorative settimanali possano essere fatturate ai clienti. In realtà, i freelancer fatturano tipicamente il 60-75% del loro tempo lavorativo. Le ore rimanenti vanno in amministrazione, fatturazione, comunicazione con i clienti, marketing e formazione. Per una settimana di 40 ore, 25-30 ore fatturabili è un obiettivo realistico."
+          },
+          {
+            "title": "Stabilire le Tariffe per Settore ed Esperienza",
+            "content": "Le tariffe freelance variano significativamente per settore, località e livello di competenza. Gli sviluppatori web possono fatturare 35-120€/ora, i grafici 25-90€/ora e i consulenti specializzati 80-250+€/ora. Studia il tuo mercato, consulta piattaforme come AddLance o Freelancer per riferimenti. Non fatturare mai al di sotto della tua tariffa minima calcolata."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Come funziona il calcolatore di tariffa freelance?",
+            "answer": "Inserisci il reddito netto desiderato, settimane e ore fatturabili, spese aziendali e aliquota fiscale. Il calcolatore determina il reddito lordo necessario e lo divide per le ore fatturabili annuali per la tariffa oraria minima."
+          },
+          {
+            "question": "Quante ore fatturabili a settimana sono realistiche?",
+            "answer": "La maggior parte dei freelancer può fatturare realisticamente 25-30 ore a settimana su 40. Il resto va in amministrazione, marketing e formazione. Il valore predefinito è 30 ore."
+          },
+          {
+            "question": "Quante settimane fatturabili pianificare?",
+            "answer": "Il valore predefinito è 46 settimane, che tiene conto di circa 4 settimane di ferie e 2 settimane di malattia/festività. Regola in base ai tuoi piani."
+          },
+          {
+            "question": "Quale aliquota fiscale usare?",
+            "answer": "In Italia dipende dal regime fiscale (forfettario 15% o 5%, ordinario con IRPEF progressiva). Con partita IVA in regime forfettario le tasse sono circa 20-25% inclusi i contributi. Consulta un commercialista. 30% è un buon punto di partenza."
+          },
+          {
+            "question": "Cosa si considera spese aziendali?",
+            "answer": "Spese comuni: abbonamenti software, computer e attrezzature, ufficio o coworking, assicurazione professionale, commercialista, marketing, formazione e internet/telefono."
+          },
+          {
+            "question": "Il calcolatore è gratuito?",
+            "answer": "Sì, il calcolatore è completamente gratuito e senza registrazione necessaria."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri Altri Strumenti Finanziari",
+        "description": "Esplora la nostra collezione di calcolatori finanziari gratuiti per prestiti, investimenti, budget e altro."
+      }
+    },
+    "es": {
+      "slug": "calculadora-tarifa-freelance",
+      "meta": {
+        "title": "Calculadora Tarifa Freelance – Tarifa por Hora y por Día | ToolFrame",
+        "description": "Calculadora gratuita de tarifa freelance. Calcula tu tarifa por hora y por día mínima según tus ingresos deseados, impuestos, gastos y horas facturables. Perfecta para freelancers y consultores.",
+        "keywords": ["calculadora tarifa freelance", "tarifa por hora freelance", "tarifa diaria", "precio freelance", "calculadora ingresos freelance", "autonomo tarifa", "consultor tarifa hora"]
+      },
+      "hero": {
+        "headline": "Calculadora Tarifa Freelance",
+        "description": "Calcula la tarifa por hora y por día mínima que necesitas cobrar para alcanzar tus objetivos de ingresos. Incluye impuestos, gastos empresariales y horas facturables."
+      },
+      "tool": {
+        "annualIncomeLabel": "Ingreso Anual Neto Deseado",
+        "annualIncomePlaceholder": "ej. 40000",
+        "billableWeeksLabel": "Semanas Facturables por Año",
+        "billableWeeksPlaceholder": "ej. 46",
+        "billableHoursLabel": "Horas Facturables por Semana",
+        "billableHoursPlaceholder": "ej. 30",
+        "expensesLabel": "Gastos Empresariales Anuales",
+        "expensesPlaceholder": "ej. 5000",
+        "taxRateLabel": "Tasa de Impuestos (%)",
+        "taxRatePlaceholder": "ej. 30",
+        "currencyLabel": "Moneda",
+        "resultHourlyRate": "Tarifa por Hora",
+        "resultDailyRate": "Tarifa Diaria (8h)",
+        "resultGrossAnnual": "Ingreso Bruto Anual",
+        "resultAnnualHours": "Horas Facturables/Año",
+        "summaryTitle": "Desglose",
+        "summaryNetIncome": "Ingreso neto objetivo",
+        "summaryExpenses": "Gastos empresariales",
+        "summaryTaxBuffer": "Reserva de impuestos",
+        "summaryGrossNeeded": "Bruto total necesario",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo Usar la Calculadora de Tarifa Freelance",
+        "steps": [
+          {
+            "title": "Establece Tu Objetivo de Ingresos",
+            "description": "Ingresa tu ingreso anual neto deseado — la cantidad que quieres llevar a casa después de impuestos y gastos. Añade tus gastos empresariales anuales estimados."
+          },
+          {
+            "title": "Define Tu Disponibilidad",
+            "description": "Establece las semanas facturables por año (teniendo en cuenta vacaciones y bajas) y las horas facturables por semana (no todas las horas son para clientes)."
+          },
+          {
+            "title": "Obtén Tus Tarifas",
+            "description": "Ve instantáneamente tu tarifa por hora mínima, tarifa diaria, ingreso bruto requerido y total de horas facturables. Ajusta los valores para explorar diferentes escenarios."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Qué Usar Nuestra Calculadora",
+        "sectionDescription": "Fija tus precios con confianza usando cálculos basados en datos.",
+        "items": [
+          {
+            "icon": "calculator",
+            "title": "Tarifas Precisas",
+            "description": "Incluye impuestos, gastos y horas facturables realistas para calcular una tarifa que realmente alcance tus objetivos financieros."
+          },
+          {
+            "icon": "clock",
+            "title": "Horas Facturables Realistas",
+            "description": "Tiene en cuenta que no todas las horas de trabajo son facturables. Administración, marketing y formación reducen tus horas productivas efectivas."
+          },
+          {
+            "icon": "shield",
+            "title": "Reserva Fiscal Integrada",
+            "description": "Incluye automáticamente tu tasa de impuestos en el cálculo para evitar sorpresas al momento de la declaración fiscal."
+          },
+          {
+            "icon": "trending-up",
+            "title": "Exploración de Escenarios",
+            "description": "Ajusta cualquier valor y ve cómo impacta en tu tarifa al instante. Compara diferentes objetivos de ingresos y horarios de trabajo."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guía de Tarifas Freelance",
+        "articles": [
+          {
+            "title": "Por Qué la Mayoría de los Freelancers Cobran Poco",
+            "content": "Muchos freelancers cometen el error de convertir su salario anterior en una tarifa por hora sin considerar los impuestos de autónomos (a menudo 30-50% en España), los gastos empresariales (software, seguros, equipos), el tiempo no remunerado (administración, marketing, formación) y los beneficios perdidos (vacaciones pagadas, seguridad social del empleador). Una tarifa freelance correcta es típicamente 2-3 veces mayor que la tarifa por hora equivalente de un empleado."
+          },
+          {
+            "title": "Horas Facturables vs. Horas de Trabajo",
+            "content": "Un error común es pensar que todas las 40 horas laborales semanales pueden facturarse a los clientes. En realidad, los freelancers facturan típicamente el 60-75% de su tiempo de trabajo. Las horas restantes se destinan a administración, facturación, comunicación con clientes, marketing y formación. Para una semana de 40 horas, 25-30 horas facturables es un objetivo realista."
+          },
+          {
+            "title": "Establecer Tarifas por Sector y Experiencia",
+            "content": "Las tarifas freelance varían significativamente por sector, ubicación y nivel de experiencia. Los desarrolladores web pueden cobrar 30-120€/hora, los diseñadores gráficos 25-80€/hora y los consultores especializados 80-250+€/hora. Investiga tu mercado, consulta plataformas como Freelancer.es o Malt para referencias. Nunca cobres por debajo de tu tarifa mínima calculada."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Cómo funciona la calculadora de tarifa freelance?",
+            "answer": "Ingresa tu ingreso neto deseado, semanas y horas facturables, gastos empresariales y tasa de impuestos. La calculadora determina el ingreso bruto necesario y lo divide por las horas facturables anuales para tu tarifa por hora mínima."
+          },
+          {
+            "question": "¿Cuántas horas facturables por semana son realistas?",
+            "answer": "La mayoría de los freelancers pueden facturar 25-30 horas por semana de 40. El resto va a administración, marketing y formación. El valor predeterminado es 30 horas."
+          },
+          {
+            "question": "¿Cuántas semanas facturables debo planificar?",
+            "answer": "El valor predeterminado es 46 semanas, considerando unas 4 semanas de vacaciones y 2 semanas de enfermedad/festivos. Ajusta según tus planes de descanso."
+          },
+          {
+            "question": "¿Qué tasa de impuestos debo usar?",
+            "answer": "En España, depende de tu régimen (autónomo, sociedad). La cuota de autónomos más IRPF puede suponer un 30-45% de tus ingresos. Consulta con un asesor fiscal. El 30% es un buen punto de partida."
+          },
+          {
+            "question": "¿Qué se considera gastos empresariales?",
+            "answer": "Gastos comunes: suscripciones de software, ordenador y equipos, oficina o coworking, seguro profesional, asesoría fiscal, marketing, formación e internet/teléfono."
+          },
+          {
+            "question": "¿Es gratuita la calculadora?",
+            "answer": "Sí, la calculadora es completamente gratuita y sin registro necesario."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explora Más Herramientas Financieras",
+        "description": "Descubre nuestra colección de calculadoras financieras gratuitas para préstamos, inversiones, presupuestos y más."
+      }
+    }
+  }
+}
