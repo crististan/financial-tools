@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Building -->
+  <rect x="14" y="20" width="22" height="30" rx="2" stroke="#09E789" stroke-width="2.5" fill="none"/>
+  <!-- Windows -->
+  <rect x="19" y="26" width="5" height="5" rx="1" stroke="#09E789" stroke-width="1.5" fill="none"/>
+  <rect x="26" y="26" width="5" height="5" rx="1" stroke="#09E789" stroke-width="1.5" fill="none"/>
+  <rect x="19" y="34" width="5" height="5" rx="1" stroke="#09E789" stroke-width="1.5" fill="none"/>
+  <rect x="26" y="34" width="5" height="5" rx="1" stroke="#09E789" stroke-width="1.5" fill="none"/>
+  <!-- Door -->
+  <rect x="22" y="43" width="6" height="7" rx="1" stroke="#09E789" stroke-width="1.5" fill="none"/>
+  <!-- Roof -->
+  <path d="M12 20L25 10L38 20" stroke="#09E789" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Upward arrow (yield) -->
+  <line x1="46" y1="42" x2="46" y2="18" stroke="#09E789" stroke-width="2.5" stroke-linecap="round"/>
+  <polyline points="40,24 46,18 52,24" stroke="#09E789" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <!-- Percentage sign -->
+  <circle cx="43" cy="46" r="2.5" stroke="#09E789" stroke-width="1.5" fill="none"/>
+  <circle cx="49" cy="54" r="2.5" stroke="#09E789" stroke-width="1.5" fill="none"/>
+  <line x1="50" y1="44" x2="42" y2="56" stroke="#09E789" stroke-width="1.5" stroke-linecap="round"/>
+</svg>

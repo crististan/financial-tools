@@ -14,6 +14,7 @@ import PensionCalculatorTool from "./pension-calculator-tool";
 import SplitBillCalculatorTool from "./split-bill-calculator-tool";
 import FireCalculatorTool from "./fire-calculator-tool";
 import FreelanceRateCalculatorTool from "./freelance-rate-calculator-tool";
+import RentalYieldCalculatorTool from "./rental-yield-calculator-tool";
 
 // Common props that all tool components receive
 export type ToolComponentProps = {
@@ -36,6 +37,7 @@ const toolComponentMap: Record<string, ComponentType<ToolComponentProps>> = {
     "split-bill-calculator": SplitBillCalculatorTool as ComponentType<ToolComponentProps>,
     "fire-calculator": FireCalculatorTool as ComponentType<ToolComponentProps>,
     "freelance-rate-calculator": FreelanceRateCalculatorTool as ComponentType<ToolComponentProps>,
+    "rental-yield-calculator": RentalYieldCalculatorTool as ComponentType<ToolComponentProps>,
 };
 
 export function getToolComponent(componentId: string): ComponentType<ToolComponentProps> | null {
