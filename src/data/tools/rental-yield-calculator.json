@@ -1,0 +1,800 @@
+{
+  "id": "rental-yield-calculator",
+  "component": "rental-yield-calculator",
+  "iconPath": "/icons/rental-yield-calculator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "config": {},
+  "translations": {
+    "en": {
+      "slug": "rental-yield-calculator",
+      "meta": {
+        "title": "Rental Yield Calculator – Gross & Net Yield | ToolFrame",
+        "description": "Free rental yield calculator. Calculate gross yield, net yield, cash-on-cash return, and break-even rent for any investment property. Instant results with annual breakdown.",
+        "keywords": ["rental yield calculator", "gross rental yield", "net rental yield", "cash on cash return", "property investment calculator", "buy to let calculator", "rental property ROI", "break even rent"]
+      },
+      "hero": {
+        "headline": "Rental Yield Calculator",
+        "description": "Analyze the profitability of any rental property. Calculate gross yield, net yield, cash-on-cash return, and break-even rent with a detailed annual breakdown."
+      },
+      "tool": {
+        "purchasePriceLabel": "Property Purchase Price",
+        "purchasePricePlaceholder": "e.g. 250000",
+        "monthlyRentLabel": "Monthly Rental Income",
+        "monthlyRentPlaceholder": "e.g. 1500",
+        "annualCostsLabel": "Annual Operating Costs",
+        "annualCostsPlaceholder": "e.g. 3000",
+        "annualCostsHint": "Maintenance, insurance, property tax, management fees",
+        "downPaymentLabel": "Down Payment",
+        "downPaymentPlaceholder": "e.g. 50000",
+        "annualMortgageLabel": "Annual Mortgage Payments",
+        "annualMortgagePlaceholder": "e.g. 12000",
+        "annualMortgageHint": "Optional — for net yield and cash-on-cash return",
+        "vacancyRateLabel": "Vacancy Rate (%)",
+        "vacancyRatePlaceholder": "e.g. 5",
+        "resultGrossYield": "Gross Yield",
+        "resultNetYield": "Net Yield",
+        "resultCashOnCash": "Cash-on-Cash Return",
+        "resultBreakEvenRent": "Break-Even Rent",
+        "breakdownToggle": "Show Annual Breakdown",
+        "breakdownTitle": "Annual Breakdown",
+        "breakdownGrossIncome": "Gross Rental Income",
+        "breakdownVacancyLoss": "Vacancy Loss",
+        "breakdownEffectiveIncome": "Effective Rental Income",
+        "breakdownOperatingCosts": "Operating Costs",
+        "breakdownMortgage": "Mortgage Payments",
+        "breakdownNetCashFlow": "Net Cash Flow",
+        "perMonth": "/mo",
+        "currencySymbol": "$"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Use the Rental Yield Calculator",
+        "steps": [
+          {
+            "title": "Enter Property Details",
+            "description": "Input the property purchase price, expected monthly rent, and annual operating costs including maintenance, insurance, property tax, and management fees."
+          },
+          {
+            "title": "Add Financing Details",
+            "description": "Enter your down payment amount and annual mortgage payments if applicable. Set the expected vacancy rate to account for periods without tenants."
+          },
+          {
+            "title": "Review Your Returns",
+            "description": "Instantly see gross yield, net yield, cash-on-cash return, and break-even rent. Expand the annual breakdown for a detailed view of income and expenses."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Rental Yield Calculator",
+        "sectionDescription": "Make informed property investment decisions with comprehensive yield analysis.",
+        "items": [
+          {
+            "icon": "trending-up",
+            "title": "Multiple Yield Metrics",
+            "description": "See gross yield, net yield, and cash-on-cash return side by side. Each metric tells a different story about your investment's profitability."
+          },
+          {
+            "icon": "calculator",
+            "title": "Break-Even Analysis",
+            "description": "Know exactly how much rent you need to cover all costs. The break-even rent calculation includes operating expenses and mortgage payments."
+          },
+          {
+            "icon": "shield",
+            "title": "Vacancy Adjustment",
+            "description": "Account for realistic vacancy periods that reduce your effective income. The default 5% rate represents about 2.5 weeks per year without tenants."
+          },
+          {
+            "icon": "bar-chart-3",
+            "title": "Detailed Breakdown",
+            "description": "Expand the annual breakdown to see exactly where your rental income goes — from gross income to vacancy loss, costs, mortgage, and net cash flow."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Property Investment Guide",
+        "articles": [
+          {
+            "title": "Understanding Rental Yield Types",
+            "content": "Gross rental yield is the simplest measure — annual rent divided by property price. It's useful for quick comparisons but ignores costs. Net rental yield subtracts operating costs (maintenance, insurance, taxes, management) from the annual rent before dividing by the property price, giving a more realistic picture. Cash-on-cash return focuses on the actual cash invested (your down payment) relative to the annual cash flow after all expenses and mortgage payments. This metric is especially relevant for leveraged investments where you finance part of the purchase."
+          },
+          {
+            "title": "What Makes a Good Rental Yield?",
+            "content": "A gross yield of 5-8% is generally considered good for residential property, though this varies significantly by location and market conditions. City centers often have lower yields (3-5%) but stronger capital appreciation, while suburban or regional properties may offer higher yields (7-12%) with less price growth. Net yields are typically 1-3 percentage points lower than gross yields. Cash-on-cash returns above 8-10% are generally considered strong, especially when combined with potential property appreciation. Always compare yields against alternative investments and factor in your risk tolerance."
+          },
+          {
+            "title": "Hidden Costs That Impact Your Yield",
+            "content": "Many new investors underestimate operating costs, which can significantly reduce net yield. Common expenses include property management fees (8-12% of rent), maintenance and repairs (1-2% of property value annually), insurance, property taxes, landlord licensing, accounting fees, and void periods between tenants. Capital expenditure items like roof replacement, heating systems, or major renovations should also be budgeted for. A thorough cost analysis before purchasing ensures your expected yield is realistic and the investment truly meets your financial goals."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "What is gross rental yield?",
+            "answer": "Gross rental yield is calculated by dividing the annual rental income by the property purchase price and multiplying by 100. For example, a property bought for $250,000 that generates $15,000 per year in rent has a gross yield of 6%. It's a quick metric for comparing properties but doesn't account for costs."
+          },
+          {
+            "question": "What is the difference between net yield and cash-on-cash return?",
+            "answer": "Net yield measures annual rent minus operating costs as a percentage of the total property price. Cash-on-cash return measures annual cash flow (after all costs and mortgage) as a percentage of only your down payment — the actual cash you invested. Cash-on-cash is more relevant when using a mortgage because it shows the return on your out-of-pocket investment."
+          },
+          {
+            "question": "What vacancy rate should I use?",
+            "answer": "A 5% vacancy rate is a common default, representing about 2-3 weeks per year without a tenant. In high-demand areas with low turnover, 2-3% may be realistic. In areas with higher turnover or seasonal demand, 8-10% or more may be appropriate. Check local market data for accurate vacancy rates in your area."
+          },
+          {
+            "question": "What costs should I include in annual operating costs?",
+            "answer": "Include property management fees, maintenance and repairs, building insurance, property taxes, landlord licensing fees, accounting costs, and any homeowner association (HOA) or strata fees. A common rule of thumb is 1-2% of the property's value per year for maintenance alone."
+          },
+          {
+            "question": "How does the break-even rent work?",
+            "answer": "Break-even rent is the minimum monthly rent needed to cover all annual costs. It's calculated by adding annual operating costs and annual mortgage payments, then dividing by 12. Any rent above this amount represents positive cash flow before accounting for vacancy."
+          },
+          {
+            "question": "Is this calculator free to use?",
+            "answer": "Yes, the rental yield calculator is completely free with no registration required. Use it as many times as you need to analyze different investment properties and scenarios."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore More Financial Tools",
+        "description": "Discover our collection of free financial calculators for loans, investments, budgeting, and more."
+      }
+    },
+    "ro": {
+      "slug": "calculator-randament-chirii",
+      "meta": {
+        "title": "Calculator Randament Chirii – Randament Brut și Net | ToolFrame",
+        "description": "Calculator gratuit de randament chirii. Calculează randamentul brut, net, cash-on-cash și chiria de echilibru pentru orice proprietate de investiție. Rezultate instantanee cu defalcare anuală.",
+        "keywords": ["calculator randament chirii", "randament brut chirii", "randament net chirii", "cash on cash return", "calculator investitii imobiliare", "ROI chirii", "calculator proprietate de inchiriat"]
+      },
+      "hero": {
+        "headline": "Calculator Randament Chirii",
+        "description": "Analizează profitabilitatea oricărei proprietăți de închiriat. Calculează randamentul brut, net, cash-on-cash și chiria de echilibru cu defalcare anuală detaliată."
+      },
+      "tool": {
+        "purchasePriceLabel": "Prețul de Achiziție al Proprietății",
+        "purchasePricePlaceholder": "ex. 100000",
+        "monthlyRentLabel": "Venitul Lunar din Chirie",
+        "monthlyRentPlaceholder": "ex. 500",
+        "annualCostsLabel": "Costuri Anuale de Operare",
+        "annualCostsPlaceholder": "ex. 2000",
+        "annualCostsHint": "Întreținere, asigurare, impozit proprietate, administrare",
+        "downPaymentLabel": "Avans",
+        "downPaymentPlaceholder": "ex. 20000",
+        "annualMortgageLabel": "Rate Anuale Credit Ipotecar",
+        "annualMortgagePlaceholder": "ex. 6000",
+        "annualMortgageHint": "Opțional — pentru randament net și cash-on-cash",
+        "vacancyRateLabel": "Rata de Neocupare (%)",
+        "vacancyRatePlaceholder": "ex. 5",
+        "resultGrossYield": "Randament Brut",
+        "resultNetYield": "Randament Net",
+        "resultCashOnCash": "Randament Cash-on-Cash",
+        "resultBreakEvenRent": "Chirie de Echilibru",
+        "breakdownToggle": "Afișează Defalcarea Anuală",
+        "breakdownTitle": "Defalcare Anuală",
+        "breakdownGrossIncome": "Venit Brut din Chirii",
+        "breakdownVacancyLoss": "Pierderi din Neocupare",
+        "breakdownEffectiveIncome": "Venit Efectiv din Chirii",
+        "breakdownOperatingCosts": "Costuri de Operare",
+        "breakdownMortgage": "Rate Credit Ipotecar",
+        "breakdownNetCashFlow": "Flux Net de Numerar",
+        "perMonth": "/lună",
+        "currencySymbol": "lei"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum Folosești Calculatorul de Randament Chirii",
+        "steps": [
+          {
+            "title": "Introdu Detaliile Proprietății",
+            "description": "Introdu prețul de achiziție, chiria lunară așteptată și costurile anuale de operare incluzând întreținere, asigurare, impozit și administrare."
+          },
+          {
+            "title": "Adaugă Detaliile de Finanțare",
+            "description": "Introdu avansul și ratele anuale ale creditului ipotecar dacă este cazul. Setează rata de neocupare estimată pentru perioadele fără chiriași."
+          },
+          {
+            "title": "Analizează Randamentele",
+            "description": "Vezi instant randamentul brut, net, cash-on-cash și chiria de echilibru. Extinde defalcarea anuală pentru o vedere detaliată a veniturilor și cheltuielilor."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Calculatorul Nostru",
+        "sectionDescription": "Ia decizii informate de investiții imobiliare cu analiză completă a randamentului.",
+        "items": [
+          {
+            "icon": "trending-up",
+            "title": "Metrici Multiple de Randament",
+            "description": "Vezi randamentul brut, net și cash-on-cash una lângă alta. Fiecare metrică spune o poveste diferită despre profitabilitatea investiției."
+          },
+          {
+            "icon": "calculator",
+            "title": "Analiză de Echilibru",
+            "description": "Află exact cât de multă chirie ai nevoie pentru a acoperi toate costurile. Calculul chiriei de echilibru include cheltuieli de operare și rate ipotecare."
+          },
+          {
+            "icon": "shield",
+            "title": "Ajustare pentru Neocupare",
+            "description": "Ia în calcul perioadele realiste fără chiriași care reduc venitul efectiv. Rata implicită de 5% reprezintă circa 2,5 săptămâni pe an fără chiriași."
+          },
+          {
+            "icon": "bar-chart-3",
+            "title": "Defalcare Detaliată",
+            "description": "Extinde defalcarea anuală pentru a vedea exact unde se duc banii din chirie — de la venitul brut la neocupare, costuri, rate și flux net."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid Investiții Imobiliare",
+        "articles": [
+          {
+            "title": "Tipuri de Randament pentru Chirii",
+            "content": "Randamentul brut este cea mai simplă măsură — chiria anuală împărțită la prețul proprietății. Este util pentru comparații rapide dar ignoră costurile. Randamentul net scade costurile de operare (întreținere, asigurare, impozite, administrare) din chiria anuală înainte de a împărți la preț, oferind o imagine mai realistă. Cash-on-cash return se concentrează pe numerarul efectiv investit (avansul) raportat la fluxul anual de numerar după toate cheltuielile și ratele ipotecare."
+          },
+          {
+            "title": "Ce Reprezintă un Randament Bun?",
+            "content": "Un randament brut de 5-8% este considerat în general bun pentru proprietăți rezidențiale, deși variază semnificativ în funcție de locație și condițiile pieței. Centrele orașelor au adesea randamente mai mici (3-5%) dar apreciere mai puternică a capitalului, în timp ce proprietățile suburbane pot oferi randamente mai mari (7-12%) cu creștere mai mică a prețului. Randamentele nete sunt de obicei cu 1-3 puncte procentuale mai mici decât cele brute."
+          },
+          {
+            "title": "Costuri Ascunse Care Afectează Randamentul",
+            "content": "Mulți investitori noi subestimează costurile de operare, care pot reduce semnificativ randamentul net. Cheltuielile comune includ taxe de administrare (8-12% din chirie), întreținere și reparații (1-2% din valoarea proprietății anual), asigurare, impozite pe proprietate, taxe contabile și perioade goale între chiriași. Cheltuielile de capital precum înlocuirea acoperișului sau sistemului de încălzire trebuie de asemenea bugetate."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Ce este randamentul brut al chiriei?",
+            "answer": "Randamentul brut se calculează împărțind venitul anual din chirie la prețul de achiziție al proprietății și înmulțind cu 100. De exemplu, o proprietate cumpărată cu 100.000€ care generează 6.000€/an din chirie are un randament brut de 6%. Este o metrică rapidă pentru compararea proprietăților dar nu ia în calcul costurile."
+          },
+          {
+            "question": "Care este diferența dintre randamentul net și cash-on-cash?",
+            "answer": "Randamentul net măsoară chiria anuală minus costurile de operare ca procent din prețul total al proprietății. Cash-on-cash return măsoară fluxul anual de numerar (după toate costurile și ratele) ca procent doar din avans — numerarul efectiv investit."
+          },
+          {
+            "question": "Ce rată de neocupare ar trebui să folosesc?",
+            "answer": "O rată de 5% este un standard comun, reprezentând circa 2-3 săptămâni pe an fără chiriaș. În zone cu cerere mare, 2-3% poate fi realistă. În zone cu fluctuație mare sau cerere sezonieră, 8-10% sau mai mult poate fi adecvat."
+          },
+          {
+            "question": "Ce costuri trebuie incluse în costurile anuale de operare?",
+            "answer": "Includeți taxele de administrare, întreținerea și reparațiile, asigurarea clădirii, impozitele pe proprietate, taxele contabile și eventualele taxe de asociație de proprietari. O regulă generală este 1-2% din valoarea proprietății pe an doar pentru întreținere."
+          },
+          {
+            "question": "Cum funcționează chiria de echilibru?",
+            "answer": "Chiria de echilibru este chiria lunară minimă necesară pentru a acoperi toate costurile anuale. Se calculează adunând costurile anuale de operare și ratele ipotecare anuale, apoi împărțind la 12. Orice chirie peste această sumă reprezintă flux pozitiv de numerar."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Mai Multe Instrumente Financiare",
+        "description": "Descoperă colecția noastră de calculatoare financiare gratuite pentru credite, investiții, bugete și altele."
+      }
+    },
+    "de": {
+      "slug": "mietrendite-rechner",
+      "meta": {
+        "title": "Mietrendite-Rechner – Brutto- und Nettorendite | ToolFrame",
+        "description": "Kostenloser Mietrendite-Rechner. Berechnen Sie Bruttorendite, Nettorendite, Cash-on-Cash-Rendite und Break-Even-Miete für jede Anlageimmobilie. Sofortige Ergebnisse mit Jahresübersicht.",
+        "keywords": ["Mietrendite Rechner", "Bruttorendite Immobilie", "Nettorendite Immobilie", "Cash on Cash Rendite", "Immobilien Renditerechner", "Kapitalanlage Rechner", "Mietobjekt ROI", "Break-Even Miete"]
+      },
+      "hero": {
+        "headline": "Mietrendite-Rechner",
+        "description": "Analysieren Sie die Rentabilität jeder Mietimmobilie. Berechnen Sie Bruttorendite, Nettorendite, Cash-on-Cash-Rendite und Break-Even-Miete mit detaillierter Jahresübersicht."
+      },
+      "tool": {
+        "purchasePriceLabel": "Kaufpreis der Immobilie",
+        "purchasePricePlaceholder": "z.B. 300000",
+        "monthlyRentLabel": "Monatliche Mieteinnahmen",
+        "monthlyRentPlaceholder": "z.B. 1200",
+        "annualCostsLabel": "Jährliche Betriebskosten",
+        "annualCostsPlaceholder": "z.B. 4000",
+        "annualCostsHint": "Instandhaltung, Versicherung, Grundsteuer, Verwaltung",
+        "downPaymentLabel": "Eigenkapital",
+        "downPaymentPlaceholder": "z.B. 60000",
+        "annualMortgageLabel": "Jährliche Hypothekenzahlungen",
+        "annualMortgagePlaceholder": "z.B. 14000",
+        "annualMortgageHint": "Optional — für Netto- und Cash-on-Cash-Rendite",
+        "vacancyRateLabel": "Leerstandsrate (%)",
+        "vacancyRatePlaceholder": "z.B. 5",
+        "resultGrossYield": "Bruttorendite",
+        "resultNetYield": "Nettorendite",
+        "resultCashOnCash": "Cash-on-Cash-Rendite",
+        "resultBreakEvenRent": "Break-Even-Miete",
+        "breakdownToggle": "Jahresübersicht anzeigen",
+        "breakdownTitle": "Jahresübersicht",
+        "breakdownGrossIncome": "Brutto-Mieteinnahmen",
+        "breakdownVacancyLoss": "Leerstandsverlust",
+        "breakdownEffectiveIncome": "Effektive Mieteinnahmen",
+        "breakdownOperatingCosts": "Betriebskosten",
+        "breakdownMortgage": "Hypothekenzahlungen",
+        "breakdownNetCashFlow": "Netto-Cashflow",
+        "perMonth": "/Monat",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "So verwenden Sie den Mietrendite-Rechner",
+        "steps": [
+          {
+            "title": "Immobiliendetails eingeben",
+            "description": "Geben Sie den Kaufpreis, die erwartete monatliche Miete und die jährlichen Betriebskosten ein, einschließlich Instandhaltung, Versicherung, Grundsteuer und Verwaltung."
+          },
+          {
+            "title": "Finanzierungsdetails hinzufügen",
+            "description": "Geben Sie Ihr Eigenkapital und die jährlichen Hypothekenzahlungen ein, falls zutreffend. Setzen Sie die erwartete Leerstandsrate für Zeiten ohne Mieter."
+          },
+          {
+            "title": "Renditen überprüfen",
+            "description": "Sehen Sie sofort Bruttorendite, Nettorendite, Cash-on-Cash-Rendite und Break-Even-Miete. Erweitern Sie die Jahresübersicht für eine detaillierte Ansicht."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum unseren Mietrendite-Rechner verwenden",
+        "sectionDescription": "Treffen Sie fundierte Immobilieninvestitionsentscheidungen mit umfassender Renditeanalyse.",
+        "items": [
+          {
+            "icon": "trending-up",
+            "title": "Mehrere Renditemetriken",
+            "description": "Sehen Sie Brutto-, Netto- und Cash-on-Cash-Rendite nebeneinander. Jede Metrik erzählt eine andere Geschichte über die Rentabilität Ihrer Investition."
+          },
+          {
+            "icon": "calculator",
+            "title": "Break-Even-Analyse",
+            "description": "Wissen Sie genau, wie viel Miete Sie benötigen, um alle Kosten zu decken. Die Break-Even-Miete umfasst Betriebskosten und Hypothekenzahlungen."
+          },
+          {
+            "icon": "shield",
+            "title": "Leerstandsberücksichtigung",
+            "description": "Berücksichtigen Sie realistische Leerstandszeiten, die Ihr effektives Einkommen reduzieren. Die Standard-Rate von 5% entspricht etwa 2,5 Wochen pro Jahr ohne Mieter."
+          },
+          {
+            "icon": "bar-chart-3",
+            "title": "Detaillierte Aufschlüsselung",
+            "description": "Erweitern Sie die Jahresübersicht, um genau zu sehen, wohin Ihre Mieteinnahmen fließen — von Bruttoeinnahmen über Leerstand, Kosten, Hypothek bis zum Netto-Cashflow."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Leitfaden für Immobilieninvestitionen",
+        "articles": [
+          {
+            "title": "Arten der Mietrendite verstehen",
+            "content": "Die Bruttorendite ist die einfachste Kennzahl — Jahresmiete geteilt durch den Immobilienpreis. Sie ist nützlich für schnelle Vergleiche, ignoriert aber Kosten. Die Nettorendite zieht Betriebskosten (Instandhaltung, Versicherung, Steuern, Verwaltung) von der Jahresmiete ab, bevor durch den Immobilienpreis geteilt wird. Die Cash-on-Cash-Rendite konzentriert sich auf das tatsächlich investierte Eigenkapital im Verhältnis zum jährlichen Cashflow nach allen Ausgaben und Hypothekenzahlungen."
+          },
+          {
+            "title": "Was ist eine gute Mietrendite?",
+            "content": "Eine Bruttorendite von 5-8% gilt allgemein als gut für Wohnimmobilien, variiert aber stark nach Standort und Marktbedingungen. Innenstädte haben oft niedrigere Renditen (3-5%) aber stärkere Wertsteigerung, während Vorort- oder Regionalimmobilien höhere Renditen (7-12%) bei geringerem Preiswachstum bieten können. Nettorenditen liegen typischerweise 1-3 Prozentpunkte unter Bruttorenditen."
+          },
+          {
+            "title": "Versteckte Kosten, die Ihre Rendite beeinflussen",
+            "content": "Viele neue Investoren unterschätzen die Betriebskosten, die die Nettorendite erheblich reduzieren können. Häufige Ausgaben umfassen Verwaltungsgebühren (8-12% der Miete), Instandhaltung und Reparaturen (1-2% des Immobilienwerts jährlich), Versicherung, Grundsteuer, Buchhaltungskosten und Leerstandszeiten zwischen Mietern. Kapitalausgaben wie Dacherneuerung oder Heizungsanlagen sollten ebenfalls eingeplant werden."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "question": "Was ist die Bruttorendite?",
+            "answer": "Die Bruttorendite wird berechnet, indem die jährlichen Mieteinnahmen durch den Kaufpreis der Immobilie geteilt und mit 100 multipliziert werden. Zum Beispiel hat eine für 300.000€ gekaufte Immobilie, die 18.000€ pro Jahr an Miete generiert, eine Bruttorendite von 6%. Sie ist eine schnelle Kennzahl zum Vergleich von Immobilien."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Nettorendite und Cash-on-Cash-Rendite?",
+            "answer": "Die Nettorendite misst die Jahresmiete minus Betriebskosten als Prozentsatz des gesamten Immobilienpreises. Die Cash-on-Cash-Rendite misst den jährlichen Cashflow (nach allen Kosten und Hypothek) als Prozentsatz nur Ihres Eigenkapitals — des tatsächlich investierten Geldes."
+          },
+          {
+            "question": "Welche Leerstandsrate sollte ich verwenden?",
+            "answer": "Eine Leerstandsrate von 5% ist ein gängiger Standard und entspricht etwa 2-3 Wochen pro Jahr ohne Mieter. In Gebieten mit hoher Nachfrage können 2-3% realistisch sein. In Gebieten mit höherer Fluktuation können 8-10% oder mehr angemessen sein."
+          },
+          {
+            "question": "Welche Kosten sollten in den jährlichen Betriebskosten enthalten sein?",
+            "answer": "Berücksichtigen Sie Verwaltungsgebühren, Instandhaltung und Reparaturen, Gebäudeversicherung, Grundsteuer, Buchhaltungskosten und eventuelle Hausgeld-/Eigentümergemeinschaftsbeiträge. Eine Faustregel ist 1-2% des Immobilienwerts pro Jahr allein für Instandhaltung."
+          },
+          {
+            "question": "Wie funktioniert die Break-Even-Miete?",
+            "answer": "Die Break-Even-Miete ist die monatliche Mindestmiete, die benötigt wird, um alle jährlichen Kosten zu decken. Sie wird berechnet, indem jährliche Betriebskosten und Hypothekenzahlungen addiert und durch 12 geteilt werden. Jede Miete darüber stellt positiven Cashflow dar."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Weitere Finanztools entdecken",
+        "description": "Entdecken Sie unsere Sammlung kostenloser Finanzrechner für Kredite, Investitionen, Budgetplanung und mehr."
+      }
+    },
+    "fr": {
+      "slug": "calculateur-rendement-locatif",
+      "meta": {
+        "title": "Calculateur Rendement Locatif – Rendement Brut et Net | ToolFrame",
+        "description": "Calculateur gratuit de rendement locatif. Calculez le rendement brut, net, cash-on-cash et le loyer d'équilibre pour tout investissement immobilier. Résultats instantanés avec détail annuel.",
+        "keywords": ["calculateur rendement locatif", "rendement brut locatif", "rendement net locatif", "cash on cash return", "calculateur investissement immobilier", "ROI locatif", "rentabilité locative"]
+      },
+      "hero": {
+        "headline": "Calculateur Rendement Locatif",
+        "description": "Analysez la rentabilité de tout bien locatif. Calculez le rendement brut, net, cash-on-cash et le loyer d'équilibre avec un détail annuel complet."
+      },
+      "tool": {
+        "purchasePriceLabel": "Prix d'Achat du Bien",
+        "purchasePricePlaceholder": "ex. 200000",
+        "monthlyRentLabel": "Loyer Mensuel",
+        "monthlyRentPlaceholder": "ex. 900",
+        "annualCostsLabel": "Charges Annuelles",
+        "annualCostsPlaceholder": "ex. 3000",
+        "annualCostsHint": "Entretien, assurance, taxe foncière, frais de gestion",
+        "downPaymentLabel": "Apport Personnel",
+        "downPaymentPlaceholder": "ex. 40000",
+        "annualMortgageLabel": "Remboursements Annuels du Crédit",
+        "annualMortgagePlaceholder": "ex. 10000",
+        "annualMortgageHint": "Optionnel — pour le rendement net et cash-on-cash",
+        "vacancyRateLabel": "Taux de Vacance (%)",
+        "vacancyRatePlaceholder": "ex. 5",
+        "resultGrossYield": "Rendement Brut",
+        "resultNetYield": "Rendement Net",
+        "resultCashOnCash": "Rendement Cash-on-Cash",
+        "resultBreakEvenRent": "Loyer d'Équilibre",
+        "breakdownToggle": "Afficher le Détail Annuel",
+        "breakdownTitle": "Détail Annuel",
+        "breakdownGrossIncome": "Revenus Locatifs Bruts",
+        "breakdownVacancyLoss": "Perte de Vacance",
+        "breakdownEffectiveIncome": "Revenus Locatifs Effectifs",
+        "breakdownOperatingCosts": "Charges d'Exploitation",
+        "breakdownMortgage": "Remboursements de Crédit",
+        "breakdownNetCashFlow": "Flux de Trésorerie Net",
+        "perMonth": "/mois",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment Utiliser le Calculateur de Rendement Locatif",
+        "steps": [
+          {
+            "title": "Entrez les Détails du Bien",
+            "description": "Saisissez le prix d'achat, le loyer mensuel attendu et les charges annuelles incluant entretien, assurance, taxe foncière et frais de gestion."
+          },
+          {
+            "title": "Ajoutez les Détails de Financement",
+            "description": "Entrez votre apport personnel et les remboursements annuels du crédit le cas échéant. Définissez le taux de vacance prévu pour les périodes sans locataire."
+          },
+          {
+            "title": "Analysez vos Rendements",
+            "description": "Voyez instantanément le rendement brut, net, cash-on-cash et le loyer d'équilibre. Développez le détail annuel pour une vue complète des revenus et dépenses."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi Utiliser Notre Calculateur",
+        "sectionDescription": "Prenez des décisions d'investissement immobilier éclairées avec une analyse complète du rendement.",
+        "items": [
+          {
+            "icon": "trending-up",
+            "title": "Métriques de Rendement Multiples",
+            "description": "Voyez le rendement brut, net et cash-on-cash côte à côte. Chaque métrique raconte une histoire différente sur la rentabilité de votre investissement."
+          },
+          {
+            "icon": "calculator",
+            "title": "Analyse du Seuil de Rentabilité",
+            "description": "Sachez exactement combien de loyer vous devez percevoir pour couvrir tous les coûts. Le loyer d'équilibre inclut les charges et les remboursements de crédit."
+          },
+          {
+            "icon": "shield",
+            "title": "Ajustement de Vacance",
+            "description": "Tenez compte des périodes réalistes sans locataire qui réduisent votre revenu effectif. Le taux par défaut de 5% représente environ 2,5 semaines par an sans locataire."
+          },
+          {
+            "icon": "bar-chart-3",
+            "title": "Détail Complet",
+            "description": "Développez le détail annuel pour voir exactement où vont vos revenus locatifs — du revenu brut à la vacance, charges, crédit et flux net de trésorerie."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide de l'Investissement Locatif",
+        "articles": [
+          {
+            "title": "Comprendre les Types de Rendement Locatif",
+            "content": "Le rendement brut est la mesure la plus simple — loyer annuel divisé par le prix du bien. Il est utile pour des comparaisons rapides mais ignore les charges. Le rendement net soustrait les charges d'exploitation (entretien, assurance, impôts, gestion) du loyer annuel avant de diviser par le prix, donnant une image plus réaliste. Le rendement cash-on-cash se concentre sur le capital réellement investi (votre apport) par rapport au flux de trésorerie annuel après toutes les dépenses et remboursements de crédit."
+          },
+          {
+            "title": "Qu'est-ce qu'un Bon Rendement Locatif ?",
+            "content": "Un rendement brut de 5-8% est généralement considéré comme bon pour l'immobilier résidentiel, bien que cela varie significativement selon l'emplacement et les conditions du marché. Les centres-villes ont souvent des rendements plus faibles (3-5%) mais une plus forte appréciation du capital, tandis que les propriétés en banlieue peuvent offrir des rendements plus élevés (7-12%) avec moins de croissance des prix. Les rendements nets sont typiquement inférieurs de 1 à 3 points de pourcentage aux rendements bruts."
+          },
+          {
+            "title": "Coûts Cachés Qui Impactent Votre Rendement",
+            "content": "Beaucoup de nouveaux investisseurs sous-estiment les charges d'exploitation qui peuvent réduire significativement le rendement net. Les dépenses courantes incluent les frais de gestion (8-12% du loyer), l'entretien et réparations (1-2% de la valeur du bien annuellement), l'assurance, la taxe foncière, les frais comptables et les périodes de vacance entre locataires. Les dépenses d'investissement comme le remplacement de toiture ou de chaudière doivent également être budgétées."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions Fréquentes",
+        "items": [
+          {
+            "question": "Qu'est-ce que le rendement locatif brut ?",
+            "answer": "Le rendement brut se calcule en divisant le revenu locatif annuel par le prix d'achat du bien et en multipliant par 100. Par exemple, un bien acheté 200 000€ qui génère 12 000€/an de loyer a un rendement brut de 6%. C'est une métrique rapide pour comparer les biens mais ne prend pas en compte les charges."
+          },
+          {
+            "question": "Quelle est la différence entre rendement net et cash-on-cash ?",
+            "answer": "Le rendement net mesure le loyer annuel moins les charges d'exploitation en pourcentage du prix total du bien. Le rendement cash-on-cash mesure le flux de trésorerie annuel (après toutes charges et crédit) en pourcentage uniquement de votre apport — le capital réellement investi."
+          },
+          {
+            "question": "Quel taux de vacance utiliser ?",
+            "answer": "Un taux de 5% est un standard courant, représentant environ 2-3 semaines par an sans locataire. Dans les zones à forte demande, 2-3% peut être réaliste. Dans les zones à forte rotation ou demande saisonnière, 8-10% ou plus peut être approprié."
+          },
+          {
+            "question": "Quelles charges inclure dans les coûts annuels ?",
+            "answer": "Incluez les frais de gestion, l'entretien et réparations, l'assurance du bâtiment, la taxe foncière, les frais comptables et les éventuelles charges de copropriété. Une règle générale est 1-2% de la valeur du bien par an pour l'entretien seul."
+          },
+          {
+            "question": "Comment fonctionne le loyer d'équilibre ?",
+            "answer": "Le loyer d'équilibre est le loyer mensuel minimum nécessaire pour couvrir tous les coûts annuels. Il se calcule en additionnant les charges annuelles et les remboursements de crédit, puis en divisant par 12. Tout loyer au-dessus représente un flux de trésorerie positif."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez Plus d'Outils Financiers",
+        "description": "Découvrez notre collection de calculateurs financiers gratuits pour crédits, investissements, budgets et plus encore."
+      }
+    },
+    "it": {
+      "slug": "calcolatore-rendimento-affitto",
+      "meta": {
+        "title": "Calcolatore Rendimento Affitto – Rendimento Lordo e Netto | ToolFrame",
+        "description": "Calcolatore gratuito di rendimento affitto. Calcola rendimento lordo, netto, cash-on-cash e affitto di pareggio per qualsiasi immobile da investimento. Risultati istantanei con dettaglio annuale.",
+        "keywords": ["calcolatore rendimento affitto", "rendimento lordo affitto", "rendimento netto affitto", "cash on cash return", "calcolatore investimento immobiliare", "ROI affitto", "redditività immobiliare"]
+      },
+      "hero": {
+        "headline": "Calcolatore Rendimento Affitto",
+        "description": "Analizza la redditività di qualsiasi immobile in affitto. Calcola rendimento lordo, netto, cash-on-cash e affitto di pareggio con un dettaglio annuale completo."
+      },
+      "tool": {
+        "purchasePriceLabel": "Prezzo di Acquisto dell'Immobile",
+        "purchasePricePlaceholder": "es. 200000",
+        "monthlyRentLabel": "Reddito Mensile da Affitto",
+        "monthlyRentPlaceholder": "es. 800",
+        "annualCostsLabel": "Costi Annuali di Gestione",
+        "annualCostsPlaceholder": "es. 3000",
+        "annualCostsHint": "Manutenzione, assicurazione, tasse immobiliari, gestione",
+        "downPaymentLabel": "Anticipo",
+        "downPaymentPlaceholder": "es. 40000",
+        "annualMortgageLabel": "Rate Annuali del Mutuo",
+        "annualMortgagePlaceholder": "es. 10000",
+        "annualMortgageHint": "Opzionale — per rendimento netto e cash-on-cash",
+        "vacancyRateLabel": "Tasso di Sfitto (%)",
+        "vacancyRatePlaceholder": "es. 5",
+        "resultGrossYield": "Rendimento Lordo",
+        "resultNetYield": "Rendimento Netto",
+        "resultCashOnCash": "Rendimento Cash-on-Cash",
+        "resultBreakEvenRent": "Affitto di Pareggio",
+        "breakdownToggle": "Mostra Dettaglio Annuale",
+        "breakdownTitle": "Dettaglio Annuale",
+        "breakdownGrossIncome": "Reddito Lordo da Affitti",
+        "breakdownVacancyLoss": "Perdita per Sfitto",
+        "breakdownEffectiveIncome": "Reddito Effettivo da Affitti",
+        "breakdownOperatingCosts": "Costi di Gestione",
+        "breakdownMortgage": "Rate del Mutuo",
+        "breakdownNetCashFlow": "Flusso di Cassa Netto",
+        "perMonth": "/mese",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Come Usare il Calcolatore di Rendimento Affitto",
+        "steps": [
+          {
+            "title": "Inserisci i Dettagli dell'Immobile",
+            "description": "Inserisci il prezzo di acquisto, l'affitto mensile previsto e i costi annuali di gestione inclusi manutenzione, assicurazione, tasse immobiliari e gestione."
+          },
+          {
+            "title": "Aggiungi i Dettagli di Finanziamento",
+            "description": "Inserisci il tuo anticipo e le rate annuali del mutuo se applicabile. Imposta il tasso di sfitto previsto per i periodi senza inquilini."
+          },
+          {
+            "title": "Analizza i Rendimenti",
+            "description": "Vedi istantaneamente rendimento lordo, netto, cash-on-cash e affitto di pareggio. Espandi il dettaglio annuale per una vista completa di entrate e uscite."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché Usare il Nostro Calcolatore",
+        "sectionDescription": "Prendi decisioni informate sugli investimenti immobiliari con un'analisi completa del rendimento.",
+        "items": [
+          {
+            "icon": "trending-up",
+            "title": "Metriche di Rendimento Multiple",
+            "description": "Visualizza rendimento lordo, netto e cash-on-cash affiancati. Ogni metrica racconta una storia diversa sulla redditività del tuo investimento."
+          },
+          {
+            "icon": "calculator",
+            "title": "Analisi di Pareggio",
+            "description": "Sappi esattamente quanto affitto ti serve per coprire tutti i costi. Il calcolo dell'affitto di pareggio include spese di gestione e rate del mutuo."
+          },
+          {
+            "icon": "shield",
+            "title": "Rettifica per Sfitto",
+            "description": "Tieni conto dei periodi realistici senza inquilini che riducono il tuo reddito effettivo. Il tasso predefinito del 5% rappresenta circa 2,5 settimane all'anno senza inquilini."
+          },
+          {
+            "icon": "bar-chart-3",
+            "title": "Dettaglio Completo",
+            "description": "Espandi il dettaglio annuale per vedere esattamente dove vanno i tuoi redditi da affitto — dal reddito lordo allo sfitto, costi, mutuo e flusso di cassa netto."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guida agli Investimenti Immobiliari",
+        "articles": [
+          {
+            "title": "Capire i Tipi di Rendimento da Affitto",
+            "content": "Il rendimento lordo è la misura più semplice — affitto annuale diviso per il prezzo dell'immobile. È utile per confronti rapidi ma ignora i costi. Il rendimento netto sottrae i costi di gestione (manutenzione, assicurazione, tasse, gestione) dall'affitto annuale prima di dividere per il prezzo, fornendo un'immagine più realistica. Il rendimento cash-on-cash si concentra sul capitale effettivamente investito (il tuo anticipo) rispetto al flusso di cassa annuale dopo tutte le spese e le rate del mutuo."
+          },
+          {
+            "title": "Cos'è un Buon Rendimento da Affitto?",
+            "content": "Un rendimento lordo del 5-8% è generalmente considerato buono per gli immobili residenziali, anche se varia significativamente in base alla posizione e alle condizioni di mercato. I centri città hanno spesso rendimenti più bassi (3-5%) ma un'apprezzamento del capitale più forte, mentre le proprietà in periferia possono offrire rendimenti più alti (7-12%) con minore crescita dei prezzi. I rendimenti netti sono tipicamente inferiori di 1-3 punti percentuali rispetto a quelli lordi."
+          },
+          {
+            "title": "Costi Nascosti Che Influenzano il Rendimento",
+            "content": "Molti nuovi investitori sottostimano i costi di gestione, che possono ridurre significativamente il rendimento netto. Le spese comuni includono commissioni di gestione (8-12% dell'affitto), manutenzione e riparazioni (1-2% del valore dell'immobile annualmente), assicurazione, tasse immobiliari, spese contabili e periodi di sfitto tra un inquilino e l'altro. Le spese in conto capitale come sostituzione del tetto o dell'impianto di riscaldamento devono anch'esse essere preventivate."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Cos'è il rendimento lordo da affitto?",
+            "answer": "Il rendimento lordo si calcola dividendo il reddito annuale da affitto per il prezzo di acquisto dell'immobile e moltiplicando per 100. Ad esempio, un immobile acquistato a 200.000€ che genera 12.000€/anno di affitto ha un rendimento lordo del 6%. È una metrica rapida per confrontare immobili ma non considera i costi."
+          },
+          {
+            "question": "Qual è la differenza tra rendimento netto e cash-on-cash?",
+            "answer": "Il rendimento netto misura l'affitto annuale meno i costi di gestione come percentuale del prezzo totale dell'immobile. Il rendimento cash-on-cash misura il flusso di cassa annuale (dopo tutti i costi e il mutuo) come percentuale solo del tuo anticipo — il capitale effettivamente investito."
+          },
+          {
+            "question": "Quale tasso di sfitto dovrei usare?",
+            "answer": "Un tasso del 5% è uno standard comune, che rappresenta circa 2-3 settimane all'anno senza inquilino. In zone ad alta domanda, il 2-3% può essere realistico. In zone con maggiore rotazione o domanda stagionale, l'8-10% o più può essere appropriato."
+          },
+          {
+            "question": "Quali costi includere nei costi annuali di gestione?",
+            "answer": "Includete le commissioni di gestione, manutenzione e riparazioni, assicurazione dell'edificio, tasse immobiliari, spese contabili e eventuali spese condominiali. Una regola generale è l'1-2% del valore dell'immobile all'anno solo per la manutenzione."
+          },
+          {
+            "question": "Come funziona l'affitto di pareggio?",
+            "answer": "L'affitto di pareggio è l'affitto mensile minimo necessario per coprire tutti i costi annuali. Si calcola sommando i costi annuali di gestione e le rate del mutuo, poi dividendo per 12. Qualsiasi affitto superiore rappresenta un flusso di cassa positivo."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri Altri Strumenti Finanziari",
+        "description": "Scopri la nostra collezione di calcolatori finanziari gratuiti per prestiti, investimenti, budget e altro ancora."
+      }
+    },
+    "es": {
+      "slug": "calculadora-rentabilidad-alquiler",
+      "meta": {
+        "title": "Calculadora Rentabilidad Alquiler – Rendimiento Bruto y Neto | ToolFrame",
+        "description": "Calculadora gratuita de rentabilidad de alquiler. Calcula rendimiento bruto, neto, cash-on-cash y alquiler de equilibrio para cualquier propiedad de inversión. Resultados instantáneos con desglose anual.",
+        "keywords": ["calculadora rentabilidad alquiler", "rendimiento bruto alquiler", "rendimiento neto alquiler", "cash on cash return", "calculadora inversión inmobiliaria", "ROI alquiler", "rentabilidad inmobiliaria"]
+      },
+      "hero": {
+        "headline": "Calculadora Rentabilidad Alquiler",
+        "description": "Analiza la rentabilidad de cualquier propiedad en alquiler. Calcula rendimiento bruto, neto, cash-on-cash y alquiler de equilibrio con un desglose anual detallado."
+      },
+      "tool": {
+        "purchasePriceLabel": "Precio de Compra del Inmueble",
+        "purchasePricePlaceholder": "ej. 200000",
+        "monthlyRentLabel": "Ingreso Mensual por Alquiler",
+        "monthlyRentPlaceholder": "ej. 800",
+        "annualCostsLabel": "Costes Anuales de Operación",
+        "annualCostsPlaceholder": "ej. 3000",
+        "annualCostsHint": "Mantenimiento, seguro, impuesto inmobiliario, gestión",
+        "downPaymentLabel": "Entrada",
+        "downPaymentPlaceholder": "ej. 40000",
+        "annualMortgageLabel": "Pagos Anuales de Hipoteca",
+        "annualMortgagePlaceholder": "ej. 10000",
+        "annualMortgageHint": "Opcional — para rendimiento neto y cash-on-cash",
+        "vacancyRateLabel": "Tasa de Vacancia (%)",
+        "vacancyRatePlaceholder": "ej. 5",
+        "resultGrossYield": "Rendimiento Bruto",
+        "resultNetYield": "Rendimiento Neto",
+        "resultCashOnCash": "Rendimiento Cash-on-Cash",
+        "resultBreakEvenRent": "Alquiler de Equilibrio",
+        "breakdownToggle": "Mostrar Desglose Anual",
+        "breakdownTitle": "Desglose Anual",
+        "breakdownGrossIncome": "Ingresos Brutos por Alquiler",
+        "breakdownVacancyLoss": "Pérdida por Vacancia",
+        "breakdownEffectiveIncome": "Ingresos Efectivos por Alquiler",
+        "breakdownOperatingCosts": "Costes de Operación",
+        "breakdownMortgage": "Pagos de Hipoteca",
+        "breakdownNetCashFlow": "Flujo de Caja Neto",
+        "perMonth": "/mes",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo Usar la Calculadora de Rentabilidad",
+        "steps": [
+          {
+            "title": "Ingresa los Detalles del Inmueble",
+            "description": "Introduce el precio de compra, el alquiler mensual esperado y los costes anuales de operación incluyendo mantenimiento, seguro, impuestos y gestión."
+          },
+          {
+            "title": "Añade los Detalles de Financiación",
+            "description": "Introduce tu entrada y los pagos anuales de hipoteca si aplica. Establece la tasa de vacancia esperada para los períodos sin inquilinos."
+          },
+          {
+            "title": "Analiza tus Rendimientos",
+            "description": "Ve instantáneamente el rendimiento bruto, neto, cash-on-cash y alquiler de equilibrio. Expande el desglose anual para una vista detallada de ingresos y gastos."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Qué Usar Nuestra Calculadora",
+        "sectionDescription": "Toma decisiones informadas de inversión inmobiliaria con un análisis completo del rendimiento.",
+        "items": [
+          {
+            "icon": "trending-up",
+            "title": "Métricas de Rendimiento Múltiples",
+            "description": "Visualiza rendimiento bruto, neto y cash-on-cash uno al lado del otro. Cada métrica cuenta una historia diferente sobre la rentabilidad de tu inversión."
+          },
+          {
+            "icon": "calculator",
+            "title": "Análisis de Equilibrio",
+            "description": "Sabe exactamente cuánto alquiler necesitas para cubrir todos los costes. El alquiler de equilibrio incluye gastos operativos y pagos de hipoteca."
+          },
+          {
+            "icon": "shield",
+            "title": "Ajuste por Vacancia",
+            "description": "Ten en cuenta los períodos realistas sin inquilinos que reducen tus ingresos efectivos. La tasa predeterminada del 5% representa unas 2,5 semanas al año sin inquilinos."
+          },
+          {
+            "icon": "bar-chart-3",
+            "title": "Desglose Detallado",
+            "description": "Expande el desglose anual para ver exactamente a dónde van tus ingresos por alquiler — desde ingresos brutos hasta vacancia, costes, hipoteca y flujo de caja neto."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guía de Inversión Inmobiliaria",
+        "articles": [
+          {
+            "title": "Entendiendo los Tipos de Rendimiento de Alquiler",
+            "content": "El rendimiento bruto es la medida más simple — alquiler anual dividido por el precio del inmueble. Es útil para comparaciones rápidas pero ignora los costes. El rendimiento neto resta los costes de operación (mantenimiento, seguro, impuestos, gestión) del alquiler anual antes de dividir por el precio, dando una imagen más realista. El rendimiento cash-on-cash se centra en el capital efectivamente invertido (tu entrada) en relación al flujo de caja anual después de todos los gastos y pagos de hipoteca."
+          },
+          {
+            "title": "¿Qué es un Buen Rendimiento de Alquiler?",
+            "content": "Un rendimiento bruto del 5-8% se considera generalmente bueno para inmuebles residenciales, aunque varía significativamente según la ubicación y las condiciones del mercado. Los centros de ciudad suelen tener rendimientos más bajos (3-5%) pero mayor apreciación del capital, mientras que las propiedades suburbanas pueden ofrecer rendimientos más altos (7-12%) con menor crecimiento del precio. Los rendimientos netos son típicamente 1-3 puntos porcentuales menores que los brutos."
+          },
+          {
+            "title": "Costes Ocultos Que Afectan Tu Rendimiento",
+            "content": "Muchos inversores nuevos subestiman los costes operativos, que pueden reducir significativamente el rendimiento neto. Los gastos comunes incluyen comisiones de gestión (8-12% del alquiler), mantenimiento y reparaciones (1-2% del valor del inmueble anualmente), seguro, impuestos inmobiliarios, gastos contables y períodos vacantes entre inquilinos. Los gastos de capital como reemplazo de tejado o sistema de calefacción también deben presupuestarse."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Qué es el rendimiento bruto del alquiler?",
+            "answer": "El rendimiento bruto se calcula dividiendo los ingresos anuales por alquiler por el precio de compra del inmueble y multiplicando por 100. Por ejemplo, un inmueble comprado por 200.000€ que genera 12.000€/año de alquiler tiene un rendimiento bruto del 6%. Es una métrica rápida para comparar inmuebles pero no considera los costes."
+          },
+          {
+            "question": "¿Cuál es la diferencia entre rendimiento neto y cash-on-cash?",
+            "answer": "El rendimiento neto mide el alquiler anual menos los costes operativos como porcentaje del precio total del inmueble. El rendimiento cash-on-cash mide el flujo de caja anual (después de todos los costes e hipoteca) como porcentaje solo de tu entrada — el capital efectivamente invertido."
+          },
+          {
+            "question": "¿Qué tasa de vacancia debería usar?",
+            "answer": "Una tasa del 5% es un estándar común, representando unas 2-3 semanas al año sin inquilino. En zonas de alta demanda, el 2-3% puede ser realista. En zonas con mayor rotación o demanda estacional, el 8-10% o más puede ser apropiado."
+          },
+          {
+            "question": "¿Qué costes incluir en los costes anuales de operación?",
+            "answer": "Incluye comisiones de gestión, mantenimiento y reparaciones, seguro del edificio, impuestos inmobiliarios, gastos contables y eventuales gastos de comunidad. Una regla general es el 1-2% del valor del inmueble al año solo para mantenimiento."
+          },
+          {
+            "question": "¿Cómo funciona el alquiler de equilibrio?",
+            "answer": "El alquiler de equilibrio es el alquiler mensual mínimo necesario para cubrir todos los costes anuales. Se calcula sumando los costes anuales de operación y los pagos de hipoteca, luego dividiendo por 12. Cualquier alquiler por encima representa un flujo de caja positivo."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explora Más Herramientas Financieras",
+        "description": "Descubre nuestra colección de calculadoras financieras gratuitas para préstamos, inversiones, presupuestos y más."
+      }
+    }
+  }
+}

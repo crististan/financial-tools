@@ -1,0 +1,815 @@
+{
+  "id": "weight-volume-converter",
+  "component": "weight-volume-converter",
+  "iconPath": "/icons/weight-volume-converter-icon.svg",
+  "categories": ["converters"],
+  "applicationCategory": "UtilityApplication",
+  "config": {
+    "defaultFrom": "kg",
+    "defaultTo": "lb"
+  },
+  "translations": {
+    "en": {
+      "slug": "weight-volume-converter",
+      "meta": {
+        "title": "Weight & Volume Converter | Convert kg, lb, oz, L, gal & More",
+        "description": "Free online weight and volume converter. Convert kilograms to pounds, liters to gallons, ounces, stones, and more. Instant results with no registration required.",
+        "keywords": ["weight converter", "volume converter", "kg to lb", "liters to gallons", "oz to grams", "stone to kg", "mass converter", "liquid converter", "unit converter"]
+      },
+      "hero": {
+        "headline": "Weight & Volume Converter",
+        "description": "Convert between weight and volume units instantly. Supporting kilograms, pounds, ounces, stones, liters, gallons, and more."
+      },
+      "tool": {
+        "fromLabel": "From",
+        "toLabel": "To",
+        "amountPlaceholder": "Enter value",
+        "switchButtonAriaLabel": "Switch units",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "modeLabels": {
+          "weight": "Weight",
+          "volume": "Volume"
+        },
+        "weightOptions": {
+          "kg": "Kilogram",
+          "g": "Gram",
+          "lb": "Pound",
+          "oz": "Ounce",
+          "st": "Stone"
+        },
+        "volumeOptions": {
+          "L": "Liter",
+          "mL": "Milliliter",
+          "gal": "Gallon (US)",
+          "fl oz": "Fluid Ounce (US)",
+          "pt": "Pint (US)",
+          "qt": "Quart (US)"
+        },
+        "tableTitle": "Popular Conversions",
+        "tableHeaders": {
+          "pair": "Conversion",
+          "rate": "Factor",
+          "inverseRate": "Inverse Factor"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Convert Weight & Volume Units",
+        "steps": [
+          {
+            "title": "Choose a Mode",
+            "description": "Select Weight or Volume mode using the tabs at the top. Each mode provides the relevant units for that measurement type."
+          },
+          {
+            "title": "Enter Your Value",
+            "description": "Type the value you want to convert. Choose source and target units from the dropdown menus. We support 5 weight and 6 volume units."
+          },
+          {
+            "title": "Get Instant Results",
+            "description": "Your conversion is calculated automatically using precise conversion factors. Results update in real time as you type."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Weight & Volume Converter",
+        "sectionDescription": "Precise and reliable weight and volume conversions for cooking, science, shipping, and everyday use.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Instant Conversion",
+            "description": "Results appear in real time as you type. No buttons to click, no page reloads. Just fast, accurate conversions."
+          },
+          {
+            "icon": "scale",
+            "title": "Two Modes in One Tool",
+            "description": "Switch seamlessly between Weight and Volume modes. Convert kilograms to pounds or liters to gallons — all in the same converter."
+          },
+          {
+            "icon": "shield",
+            "title": "High Precision",
+            "description": "Our conversion factors are based on internationally agreed standards, ensuring results you can trust for professional use."
+          },
+          {
+            "icon": "calculator",
+            "title": "Works Both Ways",
+            "description": "Easily switch between units with one click. Convert kg to lb or lb to kg with the same tool."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Understanding Weight & Volume",
+        "articles": [
+          {
+            "title": "Metric vs Imperial Weight",
+            "content": "The kilogram is the base unit of mass in the International System of Units (SI), defined by the Planck constant since 2019. The imperial system uses pounds (lb) and ounces (oz), where 1 pound equals exactly 0.45359237 kilograms. The stone (14 pounds) remains widely used in the UK and Ireland for body weight. Understanding these conversions is essential for international trade, recipes, and health metrics."
+          },
+          {
+            "title": "Volume Measurement Systems",
+            "content": "The liter is the standard metric unit of volume, equal to 1,000 cubic centimeters. The US customary system uses gallons, quarts, pints, and fluid ounces, where 1 US gallon equals approximately 3.785 liters. These units are critical in cooking, fuel measurement, and liquid packaging. Note that US and Imperial gallons differ — 1 Imperial gallon equals about 4.546 liters."
+          },
+          {
+            "title": "Weight vs Mass: What's the Difference?",
+            "content": "In everyday language, weight and mass are used interchangeably, but in physics they differ. Mass measures the amount of matter in an object (kilograms), while weight measures the gravitational force on that object (newtons). On Earth's surface, the distinction rarely matters for practical conversions. Our converter handles mass units, which is what most people mean when they say 'weight' in daily life."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "How many pounds are in a kilogram?",
+            "answer": "One kilogram equals approximately 2.20462 pounds. This conversion is based on the international avoirdupois pound, defined as exactly 0.45359237 kilograms. To convert kg to lb, multiply by 2.20462."
+          },
+          {
+            "question": "How many liters are in a US gallon?",
+            "answer": "One US gallon equals approximately 3.78541 liters. This is the US liquid gallon used for fuel and beverages. The Imperial gallon (used in the UK) is larger at approximately 4.54609 liters."
+          },
+          {
+            "question": "What is a stone and how does it relate to pounds?",
+            "answer": "A stone is an imperial unit of weight equal to 14 pounds (approximately 6.35 kg). It is commonly used in the UK and Ireland to express body weight. For example, a person weighing 150 pounds weighs approximately 10 stone 10 pounds."
+          },
+          {
+            "question": "What is the difference between a fluid ounce and a dry ounce?",
+            "answer": "A fluid ounce (fl oz) measures volume — approximately 29.57 mL for US fluid ounces. A dry ounce (oz) measures weight — approximately 28.35 grams. They are different measurements entirely, though for water they happen to be close in value due to water's density."
+          },
+          {
+            "question": "How do I convert between metric and US volume units?",
+            "answer": "For common conversions: 1 liter ≈ 33.814 US fluid ounces, 1 liter ≈ 2.113 US pints, 1 liter ≈ 1.057 US quarts, and 1 US gallon ≈ 3.785 liters. Our converter handles all these conversions automatically and with high precision."
+          },
+          {
+            "question": "Can I use this converter on my phone?",
+            "answer": "Yes, our weight and volume converter is fully responsive and works perfectly on smartphones, tablets, and desktop computers. Simply open the page in your mobile browser and start converting instantly with no app download required."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore Our Other Financial Tools",
+        "description": "Manage every aspect of your finances with our free, easy-to-use calculators and trackers."
+      }
+    },
+    "ro": {
+      "slug": "convertor-greutate-volum",
+      "meta": {
+        "title": "Convertor Greutate & Volum | Convertește kg, lb, oz, L, gal și Altele",
+        "description": "Convertor online gratuit de greutate și volum. Convertește kilograme în livre, litri în galoane, uncii, stone și altele. Rezultate instant fără înregistrare.",
+        "keywords": ["convertor greutate", "convertor volum", "kg în lb", "litri în galoane", "uncii în grame", "stone în kg", "convertor masă", "convertor lichide"]
+      },
+      "hero": {
+        "headline": "Convertor Greutate & Volum",
+        "description": "Convertește între unități de greutate și volum instant. Suportă kilograme, livre, uncii, stone, litri, galoane și altele."
+      },
+      "tool": {
+        "fromLabel": "Din",
+        "toLabel": "În",
+        "amountPlaceholder": "Introduceți valoarea",
+        "switchButtonAriaLabel": "Inversează unitățile",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "modeLabels": {
+          "weight": "Greutate",
+          "volume": "Volum"
+        },
+        "weightOptions": {
+          "kg": "Kilogram",
+          "g": "Gram",
+          "lb": "Livră",
+          "oz": "Uncie",
+          "st": "Stone"
+        },
+        "volumeOptions": {
+          "L": "Litru",
+          "mL": "Mililitru",
+          "gal": "Galon (US)",
+          "fl oz": "Uncie Lichidă (US)",
+          "pt": "Pintă (US)",
+          "qt": "Quart (US)"
+        },
+        "tableTitle": "Conversii Populare",
+        "tableHeaders": {
+          "pair": "Conversie",
+          "rate": "Factor",
+          "inverseRate": "Factor Invers"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum să Convertești Unități de Greutate & Volum",
+        "steps": [
+          {
+            "title": "Alege un Mod",
+            "description": "Selectează modul Greutate sau Volum folosind taburile de sus. Fiecare mod oferă unitățile relevante pentru tipul de măsurare."
+          },
+          {
+            "title": "Introduceți Valoarea",
+            "description": "Tastați valoarea pe care doriți să o convertiți. Alegeți unitățile sursă și țintă din meniurile derulante. Suportăm 5 unități de greutate și 6 de volum."
+          },
+          {
+            "title": "Obțineți Rezultate Instant",
+            "description": "Conversia se calculează automat folosind factori de conversie preciși. Rezultatele se actualizează în timp real pe măsură ce tastați."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Convertorul Nostru de Greutate & Volum",
+        "sectionDescription": "Conversii precise și fiabile de greutate și volum pentru gătit, știință, expediere și utilizare zilnică.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Conversie Instantă",
+            "description": "Rezultatele apar în timp real pe măsură ce tastați. Fără butoane de apăsat, fără reîncărcări de pagină. Doar conversii rapide și precise."
+          },
+          {
+            "icon": "scale",
+            "title": "Două Moduri într-un Singur Instrument",
+            "description": "Comutează fără probleme între modurile Greutate și Volum. Convertește kilograme în livre sau litri în galoane — totul în același convertor."
+          },
+          {
+            "icon": "shield",
+            "title": "Precizie Ridicată",
+            "description": "Factorii noștri de conversie se bazează pe standarde internaționale agreate, asigurând rezultate de încredere pentru utilizare profesională."
+          },
+          {
+            "icon": "calculator",
+            "title": "Funcționează în Ambele Sensuri",
+            "description": "Comutați ușor între unități cu un singur clic. Convertiți kg în lb sau lb în kg cu același instrument."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Înțelegerea Greutății & Volumului",
+        "articles": [
+          {
+            "title": "Greutate Metrică vs Imperială",
+            "content": "Kilogramul este unitatea de bază a masei în Sistemul Internațional de Unități (SI), definit prin constanta Planck din 2019. Sistemul imperial folosește livre (lb) și uncii (oz), unde 1 livră este egală cu exact 0,45359237 kilograme. Stone-ul (14 livre) rămâne folosit pe scară largă în Regatul Unit și Irlanda pentru greutatea corporală. Înțelegerea acestor conversii este esențială pentru comerțul internațional, rețete și metrici de sănătate."
+          },
+          {
+            "title": "Sisteme de Măsurare a Volumului",
+            "content": "Litrul este unitatea metrică standard de volum, egală cu 1.000 de centimetri cubi. Sistemul american folosește galoane, quarturi, pinte și uncii lichide, unde 1 galon american este egal cu aproximativ 3,785 litri. Aceste unități sunt esențiale în gătit, măsurarea combustibilului și ambalarea lichidelor."
+          },
+          {
+            "title": "Greutate vs Masă: Care Este Diferența?",
+            "content": "În limbajul de zi cu zi, greutatea și masa sunt folosite interschimbabil, dar în fizică diferă. Masa măsoară cantitatea de materie dintr-un obiect (kilograme), în timp ce greutatea măsoară forța gravitațională asupra obiectului (newtoni). Pe suprafața Pământului, distincția contează rar pentru conversii practice. Convertorul nostru operează cu unități de masă, ceea ce majoritatea oamenilor numesc 'greutate' in viata de zi cu zi."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Câte livre sunt într-un kilogram?",
+            "answer": "Un kilogram este egal cu aproximativ 2,20462 livre. Această conversie se bazează pe livra internațională avoirdupois, definită ca exact 0,45359237 kilograme."
+          },
+          {
+            "question": "Câți litri sunt într-un galon american?",
+            "answer": "Un galon american este egal cu aproximativ 3,78541 litri. Acesta este galonul lichid american folosit pentru combustibil și băuturi. Galonul imperial (folosit în Regatul Unit) este mai mare, cu aproximativ 4,54609 litri."
+          },
+          {
+            "question": "Ce este un stone și cum se raportează la livre?",
+            "answer": "Un stone este o unitate imperială de greutate egală cu 14 livre (aproximativ 6,35 kg). Este folosit frecvent în Regatul Unit și Irlanda pentru a exprima greutatea corporală."
+          },
+          {
+            "question": "Care este diferența dintre o uncie lichidă și o uncie uscată?",
+            "answer": "O uncie lichidă (fl oz) măsoară volumul — aproximativ 29,57 mL pentru uncii lichide americane. O uncie uscată (oz) măsoară greutatea — aproximativ 28,35 grame. Sunt măsurători complet diferite."
+          },
+          {
+            "question": "Pot folosi acest convertor pe telefon?",
+            "answer": "Da, convertorul nostru de greutate și volum este complet responsive și funcționează perfect pe smartphone-uri, tablete și computere desktop. Deschideți pagina în browserul mobil și începeți să convertiți instant."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Celelalte Instrumente Financiare",
+        "description": "Gestionează fiecare aspect al finanțelor tale cu calculatoarele și urmăritoarele noastre gratuite și ușor de utilizat."
+      }
+    },
+    "de": {
+      "slug": "gewicht-volumen-rechner",
+      "meta": {
+        "title": "Gewicht- & Volumenrechner | kg, lb, oz, L, gal und mehr umrechnen",
+        "description": "Kostenloser Online-Rechner für Gewicht und Volumen. Kilogramm in Pfund, Liter in Gallonen, Unzen, Stone und mehr umrechnen. Sofortige Ergebnisse ohne Registrierung.",
+        "keywords": ["Gewichtumrechner", "Volumenrechner", "kg in lb", "Liter in Gallonen", "Unzen in Gramm", "Stone in kg", "Masseumrechner", "Flüssigkeitsrechner"]
+      },
+      "hero": {
+        "headline": "Gewicht- & Volumenrechner",
+        "description": "Gewichts- und Volumeneinheiten sofort umrechnen. Unterstützt Kilogramm, Pfund, Unzen, Stone, Liter, Gallonen und mehr."
+      },
+      "tool": {
+        "fromLabel": "Von",
+        "toLabel": "Nach",
+        "amountPlaceholder": "Wert eingeben",
+        "switchButtonAriaLabel": "Einheiten tauschen",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "modeLabels": {
+          "weight": "Gewicht",
+          "volume": "Volumen"
+        },
+        "weightOptions": {
+          "kg": "Kilogramm",
+          "g": "Gramm",
+          "lb": "Pfund",
+          "oz": "Unze",
+          "st": "Stone"
+        },
+        "volumeOptions": {
+          "L": "Liter",
+          "mL": "Milliliter",
+          "gal": "Gallone (US)",
+          "fl oz": "Flüssigunze (US)",
+          "pt": "Pint (US)",
+          "qt": "Quart (US)"
+        },
+        "tableTitle": "Beliebte Umrechnungen",
+        "tableHeaders": {
+          "pair": "Umrechnung",
+          "rate": "Faktor",
+          "inverseRate": "Umkehrfaktor"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "So rechnen Sie Gewichts- & Volumeneinheiten um",
+        "steps": [
+          {
+            "title": "Modus wählen",
+            "description": "Wählen Sie den Gewichts- oder Volumenmodus über die Tabs oben. Jeder Modus bietet die relevanten Einheiten für den jeweiligen Messtyp."
+          },
+          {
+            "title": "Wert eingeben",
+            "description": "Geben Sie den Wert ein, den Sie umrechnen möchten. Wählen Sie Quell- und Zieleinheiten aus den Dropdown-Menüs. Wir unterstützen 5 Gewichts- und 6 Volumeneinheiten."
+          },
+          {
+            "title": "Sofortige Ergebnisse",
+            "description": "Ihre Umrechnung wird automatisch mit präzisen Umrechnungsfaktoren berechnet. Ergebnisse aktualisieren sich in Echtzeit, während Sie tippen."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum unseren Gewicht- & Volumenrechner nutzen",
+        "sectionDescription": "Präzise und zuverlässige Gewichts- und Volumenumrechnungen für Kochen, Wissenschaft, Versand und Alltag.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Sofortige Umrechnung",
+            "description": "Ergebnisse erscheinen in Echtzeit, während Sie tippen. Keine Buttons, keine Seitenneuladen. Nur schnelle, genaue Umrechnungen."
+          },
+          {
+            "icon": "scale",
+            "title": "Zwei Modi in einem Tool",
+            "description": "Wechseln Sie nahtlos zwischen Gewichts- und Volumenmodus. Rechnen Sie Kilogramm in Pfund oder Liter in Gallonen um — alles im selben Rechner."
+          },
+          {
+            "icon": "shield",
+            "title": "Hohe Präzision",
+            "description": "Unsere Umrechnungsfaktoren basieren auf international vereinbarten Standards und gewährleisten zuverlässige Ergebnisse für den professionellen Einsatz."
+          },
+          {
+            "icon": "calculator",
+            "title": "Funktioniert in beide Richtungen",
+            "description": "Wechseln Sie einfach mit einem Klick zwischen den Einheiten. Rechnen Sie kg in lb oder lb in kg mit demselben Tool um."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Gewicht & Volumen verstehen",
+        "articles": [
+          {
+            "title": "Metrisches vs. Imperiales Gewicht",
+            "content": "Das Kilogramm ist die Basiseinheit der Masse im Internationalen Einheitensystem (SI), seit 2019 durch die Planck-Konstante definiert. Das imperiale System verwendet Pfund (lb) und Unzen (oz), wobei 1 Pfund genau 0,45359237 Kilogramm entspricht. Der Stone (14 Pfund) wird im Vereinigten Königreich und Irland weiterhin häufig für das Körpergewicht verwendet."
+          },
+          {
+            "title": "Volumen-Messsysteme",
+            "content": "Der Liter ist die metrische Standardeinheit für Volumen und entspricht 1.000 Kubikzentimetern. Das US-amerikanische System verwendet Gallonen, Quarts, Pints und Flüssigunzen, wobei 1 US-Gallone ungefähr 3,785 Litern entspricht. Diese Einheiten sind beim Kochen, bei der Kraftstoffmessung und bei der Flüssigkeitsverpackung von entscheidender Bedeutung."
+          },
+          {
+            "title": "Gewicht vs. Masse: Was ist der Unterschied?",
+            "content": "Im Alltag werden Gewicht und Masse austauschbar verwendet, aber in der Physik unterscheiden sie sich. Die Masse misst die Menge an Materie in einem Objekt (Kilogramm), während das Gewicht die Gravitationskraft auf dieses Objekt misst (Newton). Auf der Erdoberfläche spielt die Unterscheidung für praktische Umrechnungen selten eine Rolle."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie viele Pfund sind ein Kilogramm?",
+            "answer": "Ein Kilogramm entspricht ungefähr 2,20462 Pfund. Diese Umrechnung basiert auf dem internationalen Avoirdupois-Pfund, definiert als genau 0,45359237 Kilogramm."
+          },
+          {
+            "question": "Wie viele Liter hat eine US-Gallone?",
+            "answer": "Eine US-Gallone entspricht ungefähr 3,78541 Litern. Dies ist die US-Flüssiggallone für Kraftstoff und Getränke. Die imperiale Gallone (in Großbritannien) ist größer mit etwa 4,54609 Litern."
+          },
+          {
+            "question": "Was ist ein Stone und wie verhält er sich zu Pfund?",
+            "answer": "Ein Stone ist eine imperiale Gewichtseinheit von 14 Pfund (ungefähr 6,35 kg). Er wird häufig im Vereinigten Königreich und Irland für das Körpergewicht verwendet."
+          },
+          {
+            "question": "Was ist der Unterschied zwischen Flüssigunze und trockener Unze?",
+            "answer": "Eine Flüssigunze (fl oz) misst Volumen — ungefähr 29,57 mL für US-Flüssigunzen. Eine trockene Unze (oz) misst Gewicht — ungefähr 28,35 Gramm. Es handelt sich um völlig unterschiedliche Messungen."
+          },
+          {
+            "question": "Kann ich diesen Rechner auf meinem Handy nutzen?",
+            "answer": "Ja, unser Gewichts- und Volumenrechner ist vollständig responsiv und funktioniert perfekt auf Smartphones, Tablets und Desktop-Computern."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Entdecken Sie unsere weiteren Finanztools",
+        "description": "Verwalten Sie jeden Aspekt Ihrer Finanzen mit unseren kostenlosen, benutzerfreundlichen Rechnern und Trackern."
+      }
+    },
+    "fr": {
+      "slug": "convertisseur-poids-volume",
+      "meta": {
+        "title": "Convertisseur Poids & Volume | Convertir kg, lb, oz, L, gal et plus",
+        "description": "Convertisseur gratuit de poids et volume en ligne. Convertissez kilogrammes en livres, litres en gallons, onces, stones et plus. Résultats instantanés sans inscription.",
+        "keywords": ["convertisseur poids", "convertisseur volume", "kg en lb", "litres en gallons", "onces en grammes", "stone en kg", "convertisseur masse", "convertisseur liquides"]
+      },
+      "hero": {
+        "headline": "Convertisseur Poids & Volume",
+        "description": "Convertissez entre unités de poids et de volume instantanément. Supporte kilogrammes, livres, onces, stones, litres, gallons et plus."
+      },
+      "tool": {
+        "fromLabel": "De",
+        "toLabel": "Vers",
+        "amountPlaceholder": "Entrer une valeur",
+        "switchButtonAriaLabel": "Inverser les unités",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "modeLabels": {
+          "weight": "Poids",
+          "volume": "Volume"
+        },
+        "weightOptions": {
+          "kg": "Kilogramme",
+          "g": "Gramme",
+          "lb": "Livre",
+          "oz": "Once",
+          "st": "Stone"
+        },
+        "volumeOptions": {
+          "L": "Litre",
+          "mL": "Millilitre",
+          "gal": "Gallon (US)",
+          "fl oz": "Once Liquide (US)",
+          "pt": "Pinte (US)",
+          "qt": "Quart (US)"
+        },
+        "tableTitle": "Conversions Populaires",
+        "tableHeaders": {
+          "pair": "Conversion",
+          "rate": "Facteur",
+          "inverseRate": "Facteur Inverse"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment convertir les unités de poids & volume",
+        "steps": [
+          {
+            "title": "Choisir un mode",
+            "description": "Sélectionnez le mode Poids ou Volume en utilisant les onglets en haut. Chaque mode fournit les unités pertinentes pour ce type de mesure."
+          },
+          {
+            "title": "Entrer votre valeur",
+            "description": "Tapez la valeur que vous souhaitez convertir. Choisissez les unités source et cible dans les menus déroulants. Nous supportons 5 unités de poids et 6 de volume."
+          },
+          {
+            "title": "Résultats instantanés",
+            "description": "Votre conversion est calculée automatiquement avec des facteurs de conversion précis. Les résultats se mettent à jour en temps réel pendant que vous tapez."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi utiliser notre convertisseur poids & volume",
+        "sectionDescription": "Conversions de poids et volume précises et fiables pour la cuisine, la science, l'expédition et l'usage quotidien.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Conversion instantanée",
+            "description": "Les résultats apparaissent en temps réel pendant que vous tapez. Pas de boutons, pas de rechargement. Juste des conversions rapides et précises."
+          },
+          {
+            "icon": "scale",
+            "title": "Deux modes en un seul outil",
+            "description": "Passez facilement du mode Poids au mode Volume. Convertissez kilogrammes en livres ou litres en gallons — tout dans le même convertisseur."
+          },
+          {
+            "icon": "shield",
+            "title": "Haute précision",
+            "description": "Nos facteurs de conversion sont basés sur des normes internationales convenues, garantissant des résultats fiables pour un usage professionnel."
+          },
+          {
+            "icon": "calculator",
+            "title": "Fonctionne dans les deux sens",
+            "description": "Basculez facilement entre les unités en un clic. Convertissez kg en lb ou lb en kg avec le même outil."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Comprendre le Poids & le Volume",
+        "articles": [
+          {
+            "title": "Poids métrique vs impérial",
+            "content": "Le kilogramme est l'unité de base de la masse dans le Système international d'unités (SI), défini par la constante de Planck depuis 2019. Le système impérial utilise les livres (lb) et les onces (oz), où 1 livre équivaut exactement à 0,45359237 kilogramme. Le stone (14 livres) reste largement utilisé au Royaume-Uni et en Irlande pour le poids corporel."
+          },
+          {
+            "title": "Systèmes de mesure du volume",
+            "content": "Le litre est l'unité métrique standard de volume, égal à 1 000 centimètres cubes. Le système américain utilise gallons, quarts, pintes et onces liquides, où 1 gallon américain équivaut à environ 3,785 litres. Ces unités sont essentielles en cuisine, pour la mesure du carburant et l'emballage de liquides."
+          },
+          {
+            "title": "Poids vs masse : quelle différence ?",
+            "content": "Dans le langage courant, poids et masse sont utilisés de manière interchangeable, mais en physique ils diffèrent. La masse mesure la quantité de matière d'un objet (kilogrammes), tandis que le poids mesure la force gravitationnelle sur cet objet (newtons). À la surface de la Terre, la distinction importe rarement pour les conversions pratiques."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions Fréquemment Posées",
+        "items": [
+          {
+            "question": "Combien de livres font un kilogramme ?",
+            "answer": "Un kilogramme équivaut à environ 2,20462 livres. Cette conversion est basée sur la livre avoirdupois internationale, définie comme exactement 0,45359237 kilogramme."
+          },
+          {
+            "question": "Combien de litres font un gallon américain ?",
+            "answer": "Un gallon américain équivaut à environ 3,78541 litres. C'est le gallon liquide américain utilisé pour le carburant et les boissons. Le gallon impérial (utilisé au Royaume-Uni) est plus grand, environ 4,54609 litres."
+          },
+          {
+            "question": "Qu'est-ce qu'un stone et quel est son rapport avec les livres ?",
+            "answer": "Un stone est une unité impériale de poids égale à 14 livres (environ 6,35 kg). Il est couramment utilisé au Royaume-Uni et en Irlande pour exprimer le poids corporel."
+          },
+          {
+            "question": "Quelle est la différence entre une once liquide et une once sèche ?",
+            "answer": "Une once liquide (fl oz) mesure le volume — environ 29,57 mL pour les onces liquides américaines. Une once sèche (oz) mesure le poids — environ 28,35 grammes. Ce sont des mesures entièrement différentes."
+          },
+          {
+            "question": "Puis-je utiliser ce convertisseur sur mon téléphone ?",
+            "answer": "Oui, notre convertisseur de poids et volume est entièrement responsive et fonctionne parfaitement sur smartphones, tablettes et ordinateurs de bureau."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez nos autres outils financiers",
+        "description": "Gérez chaque aspect de vos finances avec nos calculatrices et outils de suivi gratuits et faciles à utiliser."
+      }
+    },
+    "it": {
+      "slug": "convertitore-peso-volume",
+      "meta": {
+        "title": "Convertitore Peso & Volume | Converti kg, lb, oz, L, gal e altro",
+        "description": "Convertitore online gratuito di peso e volume. Converti chilogrammi in libbre, litri in galloni, once, stone e altro. Risultati istantanei senza registrazione.",
+        "keywords": ["convertitore peso", "convertitore volume", "kg in lb", "litri in galloni", "once in grammi", "stone in kg", "convertitore massa", "convertitore liquidi"]
+      },
+      "hero": {
+        "headline": "Convertitore Peso & Volume",
+        "description": "Converti tra unità di peso e volume istantaneamente. Supporta chilogrammi, libbre, once, stone, litri, galloni e altro."
+      },
+      "tool": {
+        "fromLabel": "Da",
+        "toLabel": "A",
+        "amountPlaceholder": "Inserisci valore",
+        "switchButtonAriaLabel": "Inverti le unità",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "modeLabels": {
+          "weight": "Peso",
+          "volume": "Volume"
+        },
+        "weightOptions": {
+          "kg": "Chilogrammo",
+          "g": "Grammo",
+          "lb": "Libbra",
+          "oz": "Oncia",
+          "st": "Stone"
+        },
+        "volumeOptions": {
+          "L": "Litro",
+          "mL": "Millilitro",
+          "gal": "Gallone (US)",
+          "fl oz": "Oncia Liquida (US)",
+          "pt": "Pinta (US)",
+          "qt": "Quarto (US)"
+        },
+        "tableTitle": "Conversioni Popolari",
+        "tableHeaders": {
+          "pair": "Conversione",
+          "rate": "Fattore",
+          "inverseRate": "Fattore Inverso"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Come convertire unità di peso & volume",
+        "steps": [
+          {
+            "title": "Scegli una modalità",
+            "description": "Seleziona la modalità Peso o Volume utilizzando le schede in alto. Ogni modalità fornisce le unità pertinenti per quel tipo di misurazione."
+          },
+          {
+            "title": "Inserisci il valore",
+            "description": "Digita il valore che desideri convertire. Scegli le unità di origine e destinazione dai menu a tendina. Supportiamo 5 unità di peso e 6 di volume."
+          },
+          {
+            "title": "Risultati istantanei",
+            "description": "La conversione viene calcolata automaticamente con fattori di conversione precisi. I risultati si aggiornano in tempo reale mentre digiti."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché usare il nostro convertitore peso & volume",
+        "sectionDescription": "Conversioni precise e affidabili di peso e volume per cucina, scienza, spedizioni e uso quotidiano.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Conversione istantanea",
+            "description": "I risultati appaiono in tempo reale mentre digiti. Nessun pulsante, nessun ricaricamento. Solo conversioni veloci e precise."
+          },
+          {
+            "icon": "scale",
+            "title": "Due modalità in un unico strumento",
+            "description": "Passa facilmente dalla modalità Peso a quella Volume. Converti chilogrammi in libbre o litri in galloni — tutto nello stesso convertitore."
+          },
+          {
+            "icon": "shield",
+            "title": "Alta precisione",
+            "description": "I nostri fattori di conversione si basano su standard internazionali concordati, garantendo risultati affidabili per uso professionale."
+          },
+          {
+            "icon": "calculator",
+            "title": "Funziona in entrambe le direzioni",
+            "description": "Passa facilmente tra le unità con un clic. Converti kg in lb o lb in kg con lo stesso strumento."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Capire Peso & Volume",
+        "articles": [
+          {
+            "title": "Peso metrico vs imperiale",
+            "content": "Il chilogrammo è l'unità di base della massa nel Sistema Internazionale di Unità (SI), definito dalla costante di Planck dal 2019. Il sistema imperiale usa libbre (lb) e once (oz), dove 1 libbra equivale esattamente a 0,45359237 chilogrammi. Lo stone (14 libbre) rimane ampiamente usato nel Regno Unito e in Irlanda per il peso corporeo."
+          },
+          {
+            "title": "Sistemi di misurazione del volume",
+            "content": "Il litro è l'unità metrica standard di volume, pari a 1.000 centimetri cubi. Il sistema statunitense usa galloni, quarti, pinte e once liquide, dove 1 gallone USA equivale a circa 3,785 litri. Queste unità sono fondamentali in cucina, nella misurazione del carburante e nel confezionamento di liquidi."
+          },
+          {
+            "title": "Peso vs massa: qual è la differenza?",
+            "content": "Nel linguaggio quotidiano, peso e massa sono usati in modo intercambiabile, ma in fisica differiscono. La massa misura la quantità di materia in un oggetto (chilogrammi), mentre il peso misura la forza gravitazionale su quell'oggetto (newton). Sulla superficie terrestre, la distinzione raramente conta per le conversioni pratiche."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Quante libbre ci sono in un chilogrammo?",
+            "answer": "Un chilogrammo equivale a circa 2,20462 libbre. Questa conversione si basa sulla libbra avoirdupois internazionale, definita come esattamente 0,45359237 chilogrammi."
+          },
+          {
+            "question": "Quanti litri ci sono in un gallone USA?",
+            "answer": "Un gallone USA equivale a circa 3,78541 litri. Questo è il gallone liquido USA usato per carburante e bevande. Il gallone imperiale (usato nel Regno Unito) è più grande, circa 4,54609 litri."
+          },
+          {
+            "question": "Cos'è uno stone e come si rapporta alle libbre?",
+            "answer": "Uno stone è un'unità imperiale di peso pari a 14 libbre (circa 6,35 kg). È comunemente usato nel Regno Unito e in Irlanda per esprimere il peso corporeo."
+          },
+          {
+            "question": "Qual è la differenza tra oncia liquida e oncia secca?",
+            "answer": "Un'oncia liquida (fl oz) misura il volume — circa 29,57 mL per le once liquide USA. Un'oncia secca (oz) misura il peso — circa 28,35 grammi. Sono misurazioni completamente diverse."
+          },
+          {
+            "question": "Posso usare questo convertitore sul telefono?",
+            "answer": "Sì, il nostro convertitore di peso e volume è completamente responsive e funziona perfettamente su smartphone, tablet e computer desktop."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri i nostri altri strumenti finanziari",
+        "description": "Gestisci ogni aspetto delle tue finanze con i nostri calcolatori e strumenti di monitoraggio gratuiti e facili da usare."
+      }
+    },
+    "es": {
+      "slug": "conversor-peso-volumen",
+      "meta": {
+        "title": "Conversor de Peso y Volumen | Convertir kg, lb, oz, L, gal y más",
+        "description": "Conversor gratuito de peso y volumen en línea. Convierte kilogramos a libras, litros a galones, onzas, stones y más. Resultados instantáneos sin registro.",
+        "keywords": ["conversor peso", "conversor volumen", "kg a lb", "litros a galones", "onzas a gramos", "stone a kg", "conversor masa", "conversor líquidos"]
+      },
+      "hero": {
+        "headline": "Conversor de Peso y Volumen",
+        "description": "Convierte entre unidades de peso y volumen al instante. Soporta kilogramos, libras, onzas, stones, litros, galones y más."
+      },
+      "tool": {
+        "fromLabel": "De",
+        "toLabel": "A",
+        "amountPlaceholder": "Ingrese un valor",
+        "switchButtonAriaLabel": "Intercambiar unidades",
+        "rateDisplay": "1 {from} = {rate} {to}",
+        "modeLabels": {
+          "weight": "Peso",
+          "volume": "Volumen"
+        },
+        "weightOptions": {
+          "kg": "Kilogramo",
+          "g": "Gramo",
+          "lb": "Libra",
+          "oz": "Onza",
+          "st": "Stone"
+        },
+        "volumeOptions": {
+          "L": "Litro",
+          "mL": "Mililitro",
+          "gal": "Galón (US)",
+          "fl oz": "Onza Líquida (US)",
+          "pt": "Pinta (US)",
+          "qt": "Cuarto (US)"
+        },
+        "tableTitle": "Conversiones Populares",
+        "tableHeaders": {
+          "pair": "Conversión",
+          "rate": "Factor",
+          "inverseRate": "Factor Inverso"
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo convertir unidades de peso y volumen",
+        "steps": [
+          {
+            "title": "Elige un modo",
+            "description": "Selecciona el modo Peso o Volumen usando las pestañas superiores. Cada modo proporciona las unidades relevantes para ese tipo de medición."
+          },
+          {
+            "title": "Ingresa tu valor",
+            "description": "Escribe el valor que deseas convertir. Elige las unidades de origen y destino en los menús desplegables. Soportamos 5 unidades de peso y 6 de volumen."
+          },
+          {
+            "title": "Resultados instantáneos",
+            "description": "Tu conversión se calcula automáticamente con factores de conversión precisos. Los resultados se actualizan en tiempo real mientras escribes."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por qué usar nuestro conversor de peso y volumen",
+        "sectionDescription": "Conversiones precisas y confiables de peso y volumen para cocina, ciencia, envíos y uso diario.",
+        "items": [
+          {
+            "icon": "zap",
+            "title": "Conversión instantánea",
+            "description": "Los resultados aparecen en tiempo real mientras escribes. Sin botones, sin recargas. Solo conversiones rápidas y precisas."
+          },
+          {
+            "icon": "scale",
+            "title": "Dos modos en una herramienta",
+            "description": "Cambia fácilmente entre los modos Peso y Volumen. Convierte kilogramos a libras o litros a galones — todo en el mismo conversor."
+          },
+          {
+            "icon": "shield",
+            "title": "Alta precisión",
+            "description": "Nuestros factores de conversión se basan en estándares internacionales acordados, garantizando resultados confiables para uso profesional."
+          },
+          {
+            "icon": "calculator",
+            "title": "Funciona en ambas direcciones",
+            "description": "Cambia fácilmente entre unidades con un clic. Convierte kg a lb o lb a kg con la misma herramienta."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Entendiendo Peso y Volumen",
+        "articles": [
+          {
+            "title": "Peso métrico vs imperial",
+            "content": "El kilogramo es la unidad base de masa en el Sistema Internacional de Unidades (SI), definido por la constante de Planck desde 2019. El sistema imperial usa libras (lb) y onzas (oz), donde 1 libra equivale exactamente a 0,45359237 kilogramos. El stone (14 libras) sigue siendo ampliamente usado en el Reino Unido e Irlanda para el peso corporal."
+          },
+          {
+            "title": "Sistemas de medición de volumen",
+            "content": "El litro es la unidad métrica estándar de volumen, igual a 1.000 centímetros cúbicos. El sistema estadounidense usa galones, cuartos, pintas y onzas líquidas, donde 1 galón US equivale a aproximadamente 3,785 litros. Estas unidades son fundamentales en la cocina, medición de combustible y envasado de líquidos."
+          },
+          {
+            "title": "Peso vs masa: ¿cuál es la diferencia?",
+            "content": "En el lenguaje cotidiano, peso y masa se usan indistintamente, pero en física difieren. La masa mide la cantidad de materia en un objeto (kilogramos), mientras que el peso mide la fuerza gravitacional sobre ese objeto (newtons). En la superficie terrestre, la distinción rara vez importa para conversiones prácticas."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Cuántas libras hay en un kilogramo?",
+            "answer": "Un kilogramo equivale a aproximadamente 2,20462 libras. Esta conversión se basa en la libra avoirdupois internacional, definida como exactamente 0,45359237 kilogramos."
+          },
+          {
+            "question": "¿Cuántos litros tiene un galón estadounidense?",
+            "answer": "Un galón estadounidense equivale a aproximadamente 3,78541 litros. Este es el galón líquido US usado para combustible y bebidas. El galón imperial (usado en el Reino Unido) es más grande, aproximadamente 4,54609 litros."
+          },
+          {
+            "question": "¿Qué es un stone y cómo se relaciona con las libras?",
+            "answer": "Un stone es una unidad imperial de peso igual a 14 libras (aproximadamente 6,35 kg). Se usa comúnmente en el Reino Unido e Irlanda para expresar el peso corporal."
+          },
+          {
+            "question": "¿Cuál es la diferencia entre onza líquida y onza seca?",
+            "answer": "Una onza líquida (fl oz) mide volumen — aproximadamente 29,57 mL para onzas líquidas US. Una onza seca (oz) mide peso — aproximadamente 28,35 gramos. Son mediciones completamente diferentes."
+          },
+          {
+            "question": "¿Puedo usar este conversor en mi teléfono?",
+            "answer": "Sí, nuestro conversor de peso y volumen es completamente responsive y funciona perfectamente en smartphones, tablets y computadoras de escritorio."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explora nuestras otras herramientas financieras",
+        "description": "Gestiona cada aspecto de tus finanzas con nuestras calculadoras y herramientas de seguimiento gratuitas y fáciles de usar."
+      }
+    }
+  }
+}

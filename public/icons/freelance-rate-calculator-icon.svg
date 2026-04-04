@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Clock face -->
+  <circle cx="32" cy="30" r="18" stroke="#09E789" stroke-width="2.5" fill="none"/>
+  <!-- Clock hands -->
+  <line x1="32" y1="30" x2="32" y2="18" stroke="#09E789" stroke-width="2.5" stroke-linecap="round"/>
+  <line x1="32" y1="30" x2="40" y2="30" stroke="#09E789" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- Clock center dot -->
+  <circle cx="32" cy="30" r="2" fill="#09E789"/>
+  <!-- Dollar/currency sign below -->
+  <path d="M28 52v-2c-2 0-4-1.5-4-3.5s2-3.5 4-3.5h4c2 0 4 1.5 4 3.5s-2 3.5-4 3.5H28" stroke="#09E789" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+  <line x1="32" y1="42" x2="32" y2="54" stroke="#09E789" stroke-width="2" stroke-linecap="round"/>
+</svg>
