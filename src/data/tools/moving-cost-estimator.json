@@ -1,0 +1,850 @@
+{
+  "id": "moving-cost-estimator",
+  "component": "moving-cost-estimator",
+  "iconPath": "/icons/moving-cost-estimator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "config": {
+    "data": {
+      "baseRatePerKmPerM3": 0.15,
+      "volumeTiers": {
+        "small": 10,
+        "medium": 25,
+        "large": 40,
+        "xl": 60
+      },
+      "packingMultipliers": {
+        "none": 0,
+        "partial": 0.25,
+        "full": 0.45
+      },
+      "storageRatePerWeekPerM3": 2.50,
+      "peakSurcharge": 0.15,
+      "costRangeSpread": 0.15
+    }
+  },
+  "translations": {
+    "en": {
+      "slug": "moving-cost-estimator",
+      "meta": {
+        "title": "Moving Cost Estimator – Calculate Your Relocation Expenses | ToolFrame",
+        "description": "Free moving cost estimator. Calculate transport, packing, and storage costs based on distance, volume, and services. Get an instant cost range for your move.",
+        "keywords": ["moving cost estimator", "relocation cost calculator", "moving expenses", "moving quote calculator", "house moving cost", "packing cost estimate", "storage cost calculator", "moving budget planner"]
+      },
+      "hero": {
+        "headline": "Moving Cost Estimator",
+        "description": "Estimate your moving costs instantly. Enter the distance, volume, and services needed to get a detailed cost breakdown with transport, packing, and storage."
+      },
+      "tool": {
+        "distanceLabel": "Move Distance",
+        "distancePlaceholder": "e.g. 150",
+        "distanceUnit": "km",
+        "volumeLabel": "Volume of Belongings",
+        "volumeSmall": "Small (studio / 1 room)",
+        "volumeMedium": "Medium (2–3 rooms)",
+        "volumeLarge": "Large (4+ rooms)",
+        "volumeXL": "Extra Large (house / villa)",
+        "packingLabel": "Packing Service",
+        "packingNone": "None",
+        "packingPartial": "Partial",
+        "packingFull": "Full",
+        "storageLabel": "Storage Needed",
+        "storageYes": "Yes",
+        "storageNo": "No",
+        "storageDurationLabel": "Storage Duration",
+        "storageDurationUnit": "weeks",
+        "flexibilityLabel": "Move Date",
+        "flexibilityFlexible": "Flexible (weekday / off-peak)",
+        "flexibilityFixed": "Fixed (weekend / peak)",
+        "currencyLabel": "Currency",
+        "resultEstimatedCost": "Estimated Cost",
+        "resultTransportCost": "Transport Cost",
+        "resultPackingCost": "Packing & Extras",
+        "resultStorageCost": "Storage Cost",
+        "summaryTitle": "Cost Breakdown",
+        "summaryTransport": "Base transport",
+        "summaryPacking": "Packing service",
+        "summaryStorage": "Storage",
+        "summarySurcharge": "Peak surcharge",
+        "summaryTotal": "Estimated total",
+        "currencySymbol": "$"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Use the Moving Cost Estimator",
+        "steps": [
+          {
+            "title": "Enter Move Details",
+            "description": "Type in the distance of your move in kilometers and select the volume of your belongings — from a small studio to a full house."
+          },
+          {
+            "title": "Choose Services",
+            "description": "Select your packing service level (none, partial, or full), whether you need storage, and if your move date is flexible or fixed."
+          },
+          {
+            "title": "Review Your Estimate",
+            "description": "Instantly see a cost range with a detailed breakdown of transport, packing, storage, and any peak surcharges."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Moving Cost Estimator",
+        "sectionDescription": "Plan your move with confidence using accurate, real-time cost estimates.",
+        "items": [
+          {
+            "icon": "truck",
+            "title": "Distance-Based Pricing",
+            "description": "Costs are calculated based on actual distance and volume, giving you a realistic estimate for local or long-distance moves."
+          },
+          {
+            "icon": "package",
+            "title": "Packing Options",
+            "description": "Choose between no packing, partial, or full packing service. Each option is factored into the total cost automatically."
+          },
+          {
+            "icon": "warehouse",
+            "title": "Storage Estimates",
+            "description": "Need temporary storage? Add it to your estimate with weekly rates based on the volume of your belongings."
+          },
+          {
+            "icon": "calendar",
+            "title": "Flexible vs Peak Pricing",
+            "description": "See how choosing a weekday move can save you money compared to peak weekend rates with our flexibility toggle."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide to Planning Your Move",
+        "articles": [
+          {
+            "title": "How to Reduce Moving Costs",
+            "content": "Moving expenses can add up quickly, but there are several strategies to keep costs manageable. Start by decluttering before the move — fewer items mean less volume and lower transport costs. Get quotes from multiple movers and compare services. If possible, choose a weekday or off-peak season (typically October through April) for your move, as rates are significantly lower. Pack some items yourself to reduce packing service costs. Book your movers at least 4–6 weeks in advance to secure better rates. Finally, consider whether you truly need full-service packing or if partial packing for fragile items only would suffice."
+          },
+          {
+            "title": "What Affects Moving Costs the Most",
+            "content": "The biggest factors in moving costs are distance and volume. A long-distance move with a full house will always cost significantly more than a local studio move. However, additional services like packing, insurance, and storage can increase the total by 30–50%. The time of year matters too — summer months (June through August) and month-end dates are peak moving times with higher prices. Access difficulty at either location (stairs, narrow streets, no elevator) can also add surcharges. Understanding these factors helps you budget accurately and identify areas where you can save."
+          },
+          {
+            "title": "Packing Tips for a Smooth Move",
+            "content": "Proper packing is essential for protecting your belongings and keeping costs down. Start packing non-essential items 2–3 weeks before the move. Use quality boxes in uniform sizes — they stack better and protect contents more effectively. Wrap fragile items individually with bubble wrap or packing paper. Label every box with its contents and destination room. Keep an essentials box with items you'll need immediately (toiletries, chargers, basic tools, change of clothes). For valuable or irreplaceable items, consider carrying them personally rather than putting them on the truck. If you opt for professional packing, focus it on fragile and high-value items to get the most value."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "How accurate is the moving cost estimate?",
+            "answer": "Our estimator provides a realistic cost range (±15% around the base estimate) based on distance, volume, and services. Actual costs may vary depending on specific moving company rates, access conditions, and local factors. Use the estimate as a budgeting guide and compare with real quotes."
+          },
+          {
+            "question": "What does the volume tier mean?",
+            "answer": "Volume tiers represent the approximate cubic meters of belongings. Small (10 m³) covers a studio or single room. Medium (25 m³) fits 2–3 rooms. Large (40 m³) handles 4+ rooms. Extra Large (60 m³) is for a full house or villa."
+          },
+          {
+            "question": "Why is a weekend move more expensive?",
+            "answer": "Weekend and end-of-month moves are peak times for moving companies. Demand is higher, which drives up prices — typically by about 15%. Choosing a weekday or mid-month date can significantly reduce your costs."
+          },
+          {
+            "question": "What does the packing service include?",
+            "answer": "Partial packing typically covers fragile items, kitchenware, and artwork. Full packing means the movers pack everything in your home, including clothing, books, and personal items. The cost is calculated as a percentage of the transport cost."
+          },
+          {
+            "question": "How is the storage cost calculated?",
+            "answer": "Storage is charged per week based on the volume of your belongings. The rate is per cubic meter per week, so a small move needing 2 weeks of storage costs less than a large move needing the same period."
+          },
+          {
+            "question": "Can I use this calculator for international moves?",
+            "answer": "This calculator is designed primarily for domestic moves. International relocations involve additional costs like customs, shipping, and insurance that are not included in this estimate."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore More Financial Tools",
+        "description": "Discover our collection of free financial calculators for loans, investments, budgeting, and more."
+      }
+    },
+    "ro": {
+      "slug": "calculator-cost-mutare",
+      "meta": {
+        "title": "Calculator Cost Mutare – Estimare Cheltuieli Relocare | ToolFrame",
+        "description": "Calculator gratuit pentru estimarea costurilor de mutare. Calculează transport, ambalare și depozitare în funcție de distanță, volum și servicii. Obține instant o estimare detaliată.",
+        "keywords": ["calculator cost mutare", "estimare cost relocare", "cheltuieli mutare", "cost transport mobila", "pret mutare casa", "calculator ambalare", "cost depozitare", "buget mutare"]
+      },
+      "hero": {
+        "headline": "Calculator Cost Mutare",
+        "description": "Estimează costurile mutării instant. Introdu distanța, volumul și serviciile necesare pentru o estimare detaliată cu transport, ambalare și depozitare."
+      },
+      "tool": {
+        "distanceLabel": "Distanța Mutării",
+        "distancePlaceholder": "ex. 150",
+        "distanceUnit": "km",
+        "volumeLabel": "Volumul Bunurilor",
+        "volumeSmall": "Mic (garsonieră / 1 cameră)",
+        "volumeMedium": "Mediu (2–3 camere)",
+        "volumeLarge": "Mare (4+ camere)",
+        "volumeXL": "Extra Mare (casă / vilă)",
+        "packingLabel": "Serviciu Ambalare",
+        "packingNone": "Fără",
+        "packingPartial": "Parțial",
+        "packingFull": "Complet",
+        "storageLabel": "Depozitare Necesară",
+        "storageYes": "Da",
+        "storageNo": "Nu",
+        "storageDurationLabel": "Durata Depozitării",
+        "storageDurationUnit": "săptămâni",
+        "flexibilityLabel": "Data Mutării",
+        "flexibilityFlexible": "Flexibilă (zi lucrătoare)",
+        "flexibilityFixed": "Fixă (weekend / vârf)",
+        "currencyLabel": "Monedă",
+        "resultEstimatedCost": "Cost Estimat",
+        "resultTransportCost": "Cost Transport",
+        "resultPackingCost": "Ambalare & Extra",
+        "resultStorageCost": "Cost Depozitare",
+        "summaryTitle": "Detaliere Costuri",
+        "summaryTransport": "Transport de bază",
+        "summaryPacking": "Serviciu ambalare",
+        "summaryStorage": "Depozitare",
+        "summarySurcharge": "Supliment vârf",
+        "summaryTotal": "Total estimat",
+        "currencySymbol": "lei"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum Folosești Calculatorul de Cost Mutare",
+        "steps": [
+          {
+            "title": "Introdu Detaliile Mutării",
+            "description": "Scrie distanța mutării în kilometri și selectează volumul bunurilor — de la o garsonieră mică la o casă completă."
+          },
+          {
+            "title": "Alege Serviciile",
+            "description": "Selectează nivelul de ambalare (fără, parțial sau complet), dacă ai nevoie de depozitare și dacă data mutării este flexibilă sau fixă."
+          },
+          {
+            "title": "Verifică Estimarea",
+            "description": "Vezi instant un interval de cost cu detaliere completă: transport, ambalare, depozitare și eventuale suplimente de vârf."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Calculatorul Nostru",
+        "sectionDescription": "Planifică-ți mutarea cu încredere folosind estimări precise și în timp real.",
+        "items": [
+          {
+            "icon": "truck",
+            "title": "Preț Bazat pe Distanță",
+            "description": "Costurile sunt calculate pe baza distanței reale și a volumului, oferindu-ți o estimare realistă pentru mutări locale sau la distanță mare."
+          },
+          {
+            "icon": "package",
+            "title": "Opțiuni de Ambalare",
+            "description": "Alege între fără ambalare, ambalare parțială sau completă. Fiecare opțiune este inclusă automat în costul total."
+          },
+          {
+            "icon": "warehouse",
+            "title": "Estimări Depozitare",
+            "description": "Ai nevoie de depozitare temporară? Adaug-o la estimare cu tarife săptămânale bazate pe volumul bunurilor tale."
+          },
+          {
+            "icon": "calendar",
+            "title": "Flexibil vs. Vârf de Sezon",
+            "description": "Vezi cum alegerea unei zile lucrătoare te poate ajuta să economisești comparativ cu tarifele de weekend."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid pentru Planificarea Mutării",
+        "articles": [
+          {
+            "title": "Cum Să Reduci Costurile Mutării",
+            "content": "Cheltuielile de mutare pot crește rapid, dar există mai multe strategii pentru a le menține la un nivel rezonabil. Începe prin a face curățenie înainte de mutare — mai puține obiecte înseamnă volum mai mic și costuri de transport mai reduse. Cere oferte de la mai multe firme și compară serviciile. Dacă este posibil, alege o zi lucrătoare sau o perioadă în afara sezonului de vârf (de obicei octombrie–aprilie), deoarece tarifele sunt semnificativ mai mici. Ambalează singur unele obiecte pentru a reduce costurile serviciului de ambalare. Rezervă mutarea cu cel puțin 4–6 săptămâni înainte pentru a obține tarife mai bune."
+          },
+          {
+            "title": "Ce Afectează Cel Mai Mult Costul Mutării",
+            "content": "Cei mai mari factori în costurile de mutare sunt distanța și volumul. O mutare la distanță mare cu o casă întreagă va costa întotdeauna semnificativ mai mult decât mutarea locală a unei garsoniere. Cu toate acestea, serviciile suplimentare precum ambalarea, asigurarea și depozitarea pot crește totalul cu 30–50%. Perioada din an contează și ea — lunile de vară (iunie–august) și sfârșitul de lună sunt perioade de vârf cu prețuri mai mari. Dificultatea de acces la oricare locație (scări, străzi înguste, fără lift) poate adăuga suplimente."
+          },
+          {
+            "title": "Sfaturi de Ambalare pentru o Mutare Reușită",
+            "content": "Ambalarea corectă este esențială pentru protejarea bunurilor și menținerea costurilor scăzute. Începe să ambalezi obiectele neesențiale cu 2–3 săptămâni înainte de mutare. Folosește cutii de calitate în dimensiuni uniforme — se stivuiesc mai bine și protejează conținutul mai eficient. Învelește obiectele fragile individual cu folie cu bule sau hârtie de ambalare. Etichetează fiecare cutie cu conținutul și camera de destinație. Păstrează o cutie cu esențiale ce vei avea nevoie imediat (articole de toaletă, încărcătoare, unelte de bază, schimb de haine)."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Cât de precisă este estimarea costurilor?",
+            "answer": "Calculatorul nostru oferă un interval realist de cost (±15% față de estimarea de bază) bazat pe distanță, volum și servicii. Costurile reale pot varia în funcție de tarifele specifice ale firmei de mutări, condițiile de acces și factorii locali."
+          },
+          {
+            "question": "Ce înseamnă categoriile de volum?",
+            "answer": "Categoriile de volum reprezintă metrii cubi aproximativi ai bunurilor. Mic (10 m³) acoperă o garsonieră sau o cameră. Mediu (25 m³) se potrivește pentru 2–3 camere. Mare (40 m³) este pentru 4+ camere. Extra Mare (60 m³) este pentru o casă sau vilă completă."
+          },
+          {
+            "question": "De ce este mai scumpă mutarea în weekend?",
+            "answer": "Mutările de weekend și de sfârșit de lună sunt perioade de vârf pentru firmele de mutări. Cererea este mai mare, ceea ce crește prețurile — de obicei cu aproximativ 15%. Alegerea unei zile lucrătoare sau a mijlocului de lună poate reduce semnificativ costurile."
+          },
+          {
+            "question": "Ce include serviciul de ambalare?",
+            "answer": "Ambalarea parțială acoperă de obicei obiectele fragile, veselă și operele de artă. Ambalarea completă înseamnă că mutătorii ambalează totul din casă, inclusiv hainele, cărțile și obiectele personale."
+          },
+          {
+            "question": "Cum se calculează costul depozitării?",
+            "answer": "Depozitarea se tarifează pe săptămână în funcție de volumul bunurilor. Tariful este per metru cub pe săptămână, deci o mutare mică ce necesită 2 săptămâni de depozitare costă mai puțin decât una mare pentru aceeași perioadă."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Mai Multe Instrumente Financiare",
+        "description": "Descoperă colecția noastră de calculatoare financiare gratuite pentru împrumuturi, investiții, bugetare și multe altele."
+      }
+    },
+    "de": {
+      "slug": "umzugskostenrechner",
+      "meta": {
+        "title": "Umzugskostenrechner – Umzugskosten Berechnen | ToolFrame",
+        "description": "Kostenloser Umzugskostenrechner. Berechnen Sie Transport-, Verpackungs- und Lagerkosten basierend auf Entfernung, Volumen und Dienstleistungen. Sofortige Kostenschätzung.",
+        "keywords": ["umzugskostenrechner", "umzugskosten berechnen", "umzug kosten schätzen", "transportkosten umzug", "verpackungskosten", "lagerkosten berechnen", "umzugsbudget", "umzugsplaner"]
+      },
+      "hero": {
+        "headline": "Umzugskostenrechner",
+        "description": "Schätzen Sie Ihre Umzugskosten sofort. Geben Sie Entfernung, Volumen und benötigte Dienstleistungen ein, um eine detaillierte Kostenaufschlüsselung zu erhalten."
+      },
+      "tool": {
+        "distanceLabel": "Umzugsentfernung",
+        "distancePlaceholder": "z.B. 150",
+        "distanceUnit": "km",
+        "volumeLabel": "Volumen des Hausrats",
+        "volumeSmall": "Klein (Studio / 1 Zimmer)",
+        "volumeMedium": "Mittel (2–3 Zimmer)",
+        "volumeLarge": "Groß (4+ Zimmer)",
+        "volumeXL": "Extra Groß (Haus / Villa)",
+        "packingLabel": "Verpackungsservice",
+        "packingNone": "Keiner",
+        "packingPartial": "Teilweise",
+        "packingFull": "Komplett",
+        "storageLabel": "Lagerung Benötigt",
+        "storageYes": "Ja",
+        "storageNo": "Nein",
+        "storageDurationLabel": "Lagerdauer",
+        "storageDurationUnit": "Wochen",
+        "flexibilityLabel": "Umzugsdatum",
+        "flexibilityFlexible": "Flexibel (Werktag / Nebensaison)",
+        "flexibilityFixed": "Fest (Wochenende / Hauptsaison)",
+        "currencyLabel": "Währung",
+        "resultEstimatedCost": "Geschätzte Kosten",
+        "resultTransportCost": "Transportkosten",
+        "resultPackingCost": "Verpackung & Extras",
+        "resultStorageCost": "Lagerkosten",
+        "summaryTitle": "Kostenaufschlüsselung",
+        "summaryTransport": "Basistransport",
+        "summaryPacking": "Verpackungsservice",
+        "summaryStorage": "Lagerung",
+        "summarySurcharge": "Hauptsaisonzuschlag",
+        "summaryTotal": "Geschätztes Gesamt",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "So Verwenden Sie den Umzugskostenrechner",
+        "steps": [
+          {
+            "title": "Umzugsdetails Eingeben",
+            "description": "Geben Sie die Umzugsentfernung in Kilometern ein und wählen Sie das Volumen Ihres Hausrats — von einem kleinen Studio bis zu einem ganzen Haus."
+          },
+          {
+            "title": "Dienstleistungen Wählen",
+            "description": "Wählen Sie Ihr Verpackungsniveau (keines, teilweise oder komplett), ob Sie Lagerung benötigen und ob Ihr Umzugsdatum flexibel oder fest ist."
+          },
+          {
+            "title": "Schätzung Prüfen",
+            "description": "Sehen Sie sofort eine Kostenspanne mit detaillierter Aufschlüsselung von Transport, Verpackung, Lagerung und möglichen Zuschlägen."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum Unseren Umzugskostenrechner Nutzen",
+        "sectionDescription": "Planen Sie Ihren Umzug mit Vertrauen dank präziser Echtzeit-Kostenschätzungen.",
+        "items": [
+          {
+            "icon": "truck",
+            "title": "Entfernungsbasierte Preise",
+            "description": "Die Kosten werden anhand der tatsächlichen Entfernung und des Volumens berechnet und liefern eine realistische Schätzung für lokale oder Fernumzüge."
+          },
+          {
+            "icon": "package",
+            "title": "Verpackungsoptionen",
+            "description": "Wählen Sie zwischen keiner, teilweiser oder vollständiger Verpackung. Jede Option wird automatisch in die Gesamtkosten einberechnet."
+          },
+          {
+            "icon": "warehouse",
+            "title": "Lagerschätzungen",
+            "description": "Benötigen Sie Zwischenlagerung? Fügen Sie sie zu Ihrer Schätzung hinzu mit wöchentlichen Raten basierend auf dem Volumen."
+          },
+          {
+            "icon": "calendar",
+            "title": "Flexibel vs. Hauptsaison",
+            "description": "Sehen Sie, wie ein Werktags-Umzug im Vergleich zu Wochenendtarifen Geld sparen kann."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ratgeber zur Umzugsplanung",
+        "articles": [
+          {
+            "title": "So Senken Sie Ihre Umzugskosten",
+            "content": "Umzugskosten können sich schnell summieren, aber es gibt mehrere Strategien, um sie überschaubar zu halten. Beginnen Sie damit, vor dem Umzug auszumisten — weniger Gegenstände bedeuten weniger Volumen und niedrigere Transportkosten. Holen Sie Angebote von mehreren Umzugsunternehmen ein und vergleichen Sie die Leistungen. Wenn möglich, wählen Sie einen Werktag oder die Nebensaison (Oktober bis April), da die Tarife deutlich günstiger sind. Packen Sie einige Gegenstände selbst ein, um die Verpackungskosten zu reduzieren. Buchen Sie Ihren Umzug mindestens 4–6 Wochen im Voraus, um bessere Preise zu sichern."
+          },
+          {
+            "title": "Was die Umzugskosten Am Meisten Beeinflusst",
+            "content": "Die größten Faktoren bei den Umzugskosten sind Entfernung und Volumen. Ein Fernumzug mit einem ganzen Haus wird immer deutlich mehr kosten als ein lokaler Studio-Umzug. Zusätzliche Dienstleistungen wie Verpackung, Versicherung und Lagerung können die Gesamtkosten um 30–50% erhöhen. Die Jahreszeit spielt ebenfalls eine Rolle — die Sommermonate (Juni bis August) und das Monatsende sind Hochsaison mit höheren Preisen."
+          },
+          {
+            "title": "Packtipps für einen Reibungslosen Umzug",
+            "content": "Richtiges Packen ist entscheidend für den Schutz Ihrer Habseligkeiten und die Kostensenkung. Beginnen Sie 2–3 Wochen vor dem Umzug mit dem Packen nicht-wesentlicher Gegenstände. Verwenden Sie hochwertige Kartons in einheitlichen Größen — sie lassen sich besser stapeln und schützen den Inhalt effektiver. Wickeln Sie zerbrechliche Gegenstände einzeln in Luftpolsterfolie oder Packpapier. Beschriften Sie jeden Karton mit Inhalt und Zielraum. Halten Sie eine Essentials-Box mit Artikeln bereit, die Sie sofort brauchen."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig Gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie genau ist die Umzugskostenschätzung?",
+            "answer": "Unser Rechner liefert eine realistische Kostenspanne (±15% um die Basisschätzung) basierend auf Entfernung, Volumen und Dienstleistungen. Die tatsächlichen Kosten können je nach Umzugsunternehmen, Zugangsbedingungen und lokalen Faktoren variieren."
+          },
+          {
+            "question": "Was bedeuten die Volumenkategorien?",
+            "answer": "Die Volumenkategorien stellen die ungefähren Kubikmeter des Hausrats dar. Klein (10 m³) deckt ein Studio oder einzelnes Zimmer ab. Mittel (25 m³) passt für 2–3 Zimmer. Groß (40 m³) für 4+ Zimmer. Extra Groß (60 m³) für ein ganzes Haus oder eine Villa."
+          },
+          {
+            "question": "Warum ist ein Wochenend-Umzug teurer?",
+            "answer": "Wochenend- und Monatsendumzüge sind Stoßzeiten für Umzugsunternehmen. Die Nachfrage ist höher, was die Preise in die Höhe treibt — typischerweise um etwa 15%. Ein Werktags- oder Monatsmitte-Termin kann die Kosten erheblich senken."
+          },
+          {
+            "question": "Was beinhaltet der Verpackungsservice?",
+            "answer": "Die Teilverpackung deckt typischerweise zerbrechliche Gegenstände, Geschirr und Kunstwerke ab. Die Vollverpackung bedeutet, dass die Umzugshelfer alles in Ihrem Haushalt einpacken, einschließlich Kleidung, Bücher und persönliche Gegenstände."
+          },
+          {
+            "question": "Wie werden die Lagerkosten berechnet?",
+            "answer": "Die Lagerung wird wöchentlich basierend auf dem Volumen Ihrer Habseligkeiten berechnet. Der Tarif ist pro Kubikmeter pro Woche, sodass ein kleiner Umzug mit 2 Wochen Lagerung weniger kostet als ein großer für denselben Zeitraum."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Weitere Finanztools Entdecken",
+        "description": "Entdecken Sie unsere Sammlung kostenloser Finanzrechner für Kredite, Investitionen, Budgetplanung und mehr."
+      }
+    },
+    "fr": {
+      "slug": "calculateur-cout-demenagement",
+      "meta": {
+        "title": "Calculateur Coût Déménagement – Estimez Vos Frais | ToolFrame",
+        "description": "Calculateur gratuit de coûts de déménagement. Estimez le transport, l'emballage et le stockage selon la distance, le volume et les services. Estimation instantanée détaillée.",
+        "keywords": ["calculateur cout demenagement", "estimation frais demenagement", "prix demenagement", "cout transport demenagement", "frais emballage", "cout stockage", "budget demenagement", "devis demenagement"]
+      },
+      "hero": {
+        "headline": "Calculateur Coût Déménagement",
+        "description": "Estimez vos frais de déménagement instantanément. Entrez la distance, le volume et les services nécessaires pour obtenir une estimation détaillée avec transport, emballage et stockage."
+      },
+      "tool": {
+        "distanceLabel": "Distance du Déménagement",
+        "distancePlaceholder": "ex. 150",
+        "distanceUnit": "km",
+        "volumeLabel": "Volume des Biens",
+        "volumeSmall": "Petit (studio / 1 pièce)",
+        "volumeMedium": "Moyen (2–3 pièces)",
+        "volumeLarge": "Grand (4+ pièces)",
+        "volumeXL": "Très Grand (maison / villa)",
+        "packingLabel": "Service d'Emballage",
+        "packingNone": "Aucun",
+        "packingPartial": "Partiel",
+        "packingFull": "Complet",
+        "storageLabel": "Stockage Nécessaire",
+        "storageYes": "Oui",
+        "storageNo": "Non",
+        "storageDurationLabel": "Durée de Stockage",
+        "storageDurationUnit": "semaines",
+        "flexibilityLabel": "Date du Déménagement",
+        "flexibilityFlexible": "Flexible (jour ouvrable / hors pointe)",
+        "flexibilityFixed": "Fixe (week-end / haute saison)",
+        "currencyLabel": "Devise",
+        "resultEstimatedCost": "Coût Estimé",
+        "resultTransportCost": "Coût Transport",
+        "resultPackingCost": "Emballage & Extras",
+        "resultStorageCost": "Coût Stockage",
+        "summaryTitle": "Détail des Coûts",
+        "summaryTransport": "Transport de base",
+        "summaryPacking": "Service d'emballage",
+        "summaryStorage": "Stockage",
+        "summarySurcharge": "Supplément haute saison",
+        "summaryTotal": "Total estimé",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment Utiliser le Calculateur de Coût",
+        "steps": [
+          {
+            "title": "Entrez les Détails du Déménagement",
+            "description": "Saisissez la distance en kilomètres et sélectionnez le volume de vos biens — d'un petit studio à une maison complète."
+          },
+          {
+            "title": "Choisissez les Services",
+            "description": "Sélectionnez le niveau d'emballage (aucun, partiel ou complet), si vous avez besoin de stockage et si votre date est flexible ou fixe."
+          },
+          {
+            "title": "Consultez Votre Estimation",
+            "description": "Voyez instantanément une fourchette de prix avec un détail complet : transport, emballage, stockage et éventuels suppléments."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi Utiliser Notre Calculateur",
+        "sectionDescription": "Planifiez votre déménagement en toute confiance avec des estimations précises en temps réel.",
+        "items": [
+          {
+            "icon": "truck",
+            "title": "Tarification par Distance",
+            "description": "Les coûts sont calculés en fonction de la distance réelle et du volume, vous donnant une estimation réaliste pour les déménagements locaux ou longue distance."
+          },
+          {
+            "icon": "package",
+            "title": "Options d'Emballage",
+            "description": "Choisissez entre aucun emballage, partiel ou complet. Chaque option est automatiquement intégrée au coût total."
+          },
+          {
+            "icon": "warehouse",
+            "title": "Estimations de Stockage",
+            "description": "Besoin de stockage temporaire ? Ajoutez-le à votre estimation avec des tarifs hebdomadaires basés sur le volume."
+          },
+          {
+            "icon": "calendar",
+            "title": "Flexible vs. Haute Saison",
+            "description": "Découvrez comment choisir un jour ouvrable peut vous faire économiser par rapport aux tarifs de week-end."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide pour Planifier Votre Déménagement",
+        "articles": [
+          {
+            "title": "Comment Réduire les Coûts de Déménagement",
+            "content": "Les frais de déménagement peuvent s'accumuler rapidement, mais plusieurs stratégies permettent de les maîtriser. Commencez par désencombrer avant le déménagement — moins d'objets signifie moins de volume et des coûts de transport réduits. Demandez des devis à plusieurs déménageurs et comparez les services. Si possible, choisissez un jour ouvrable ou la basse saison (octobre à avril) car les tarifs sont nettement inférieurs. Emballez certains objets vous-même pour réduire les frais d'emballage. Réservez vos déménageurs au moins 4 à 6 semaines à l'avance pour obtenir de meilleurs prix."
+          },
+          {
+            "title": "Ce Qui Influence le Plus les Coûts",
+            "content": "Les facteurs les plus importants dans les coûts de déménagement sont la distance et le volume. Un déménagement longue distance avec une maison entière coûtera toujours beaucoup plus qu'un déménagement local de studio. Cependant, les services supplémentaires comme l'emballage, l'assurance et le stockage peuvent augmenter le total de 30 à 50%. La période de l'année compte aussi — les mois d'été (juin à août) et les fins de mois sont des périodes de pointe avec des prix plus élevés."
+          },
+          {
+            "title": "Conseils d'Emballage pour un Déménagement Réussi",
+            "content": "Un emballage correct est essentiel pour protéger vos biens et maintenir les coûts bas. Commencez à emballer les objets non essentiels 2 à 3 semaines avant le déménagement. Utilisez des cartons de qualité de tailles uniformes — ils s'empilent mieux et protègent le contenu plus efficacement. Emballez les objets fragiles individuellement avec du papier bulle ou du papier d'emballage. Étiquetez chaque carton avec son contenu et la pièce de destination. Gardez un carton d'essentiels avec les articles dont vous aurez besoin immédiatement."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions Fréquemment Posées",
+        "items": [
+          {
+            "question": "Quelle est la précision de l'estimation ?",
+            "answer": "Notre calculateur fournit une fourchette de coût réaliste (±15% autour de l'estimation de base) basée sur la distance, le volume et les services. Les coûts réels peuvent varier selon les tarifs du déménageur, les conditions d'accès et les facteurs locaux."
+          },
+          {
+            "question": "Que signifient les catégories de volume ?",
+            "answer": "Les catégories de volume représentent les mètres cubes approximatifs de biens. Petit (10 m³) couvre un studio ou une pièce. Moyen (25 m³) convient pour 2–3 pièces. Grand (40 m³) pour 4+ pièces. Très Grand (60 m³) pour une maison ou villa complète."
+          },
+          {
+            "question": "Pourquoi un déménagement le week-end est-il plus cher ?",
+            "answer": "Les déménagements de week-end et de fin de mois sont des périodes de pointe. La demande est plus forte, ce qui fait monter les prix — généralement d'environ 15%. Choisir un jour ouvrable ou le milieu de mois peut réduire significativement vos coûts."
+          },
+          {
+            "question": "Que comprend le service d'emballage ?",
+            "answer": "L'emballage partiel couvre généralement les objets fragiles, la vaisselle et les œuvres d'art. L'emballage complet signifie que les déménageurs emballent tout, y compris les vêtements, livres et objets personnels."
+          },
+          {
+            "question": "Comment le coût de stockage est-il calculé ?",
+            "answer": "Le stockage est facturé par semaine en fonction du volume de vos biens. Le tarif est par mètre cube par semaine, donc un petit déménagement nécessitant 2 semaines de stockage coûte moins qu'un grand pour la même période."
+          },
+          {
+            "question": "Puis-je utiliser ce calculateur pour un déménagement international ?",
+            "answer": "Ce calculateur est conçu principalement pour les déménagements nationaux. Les relocalisations internationales impliquent des frais supplémentaires comme les douanes, l'expédition et l'assurance qui ne sont pas inclus."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez Plus d'Outils Financiers",
+        "description": "Explorez notre collection de calculateurs financiers gratuits pour les prêts, investissements, budgets et plus encore."
+      }
+    },
+    "it": {
+      "slug": "calcolatore-costo-trasloco",
+      "meta": {
+        "title": "Calcolatore Costo Trasloco – Stima Spese Trasloco | ToolFrame",
+        "description": "Calcolatore gratuito dei costi di trasloco. Calcola trasporto, imballaggio e deposito in base a distanza, volume e servizi. Stima istantanea dettagliata.",
+        "keywords": ["calcolatore costo trasloco", "stima costi trasloco", "spese trasloco", "costo trasporto trasloco", "costo imballaggio", "costo deposito", "budget trasloco", "preventivo trasloco"]
+      },
+      "hero": {
+        "headline": "Calcolatore Costo Trasloco",
+        "description": "Stima i costi del trasloco istantaneamente. Inserisci distanza, volume e servizi necessari per ottenere un dettaglio completo con trasporto, imballaggio e deposito."
+      },
+      "tool": {
+        "distanceLabel": "Distanza del Trasloco",
+        "distancePlaceholder": "es. 150",
+        "distanceUnit": "km",
+        "volumeLabel": "Volume degli Oggetti",
+        "volumeSmall": "Piccolo (monolocale / 1 stanza)",
+        "volumeMedium": "Medio (2–3 stanze)",
+        "volumeLarge": "Grande (4+ stanze)",
+        "volumeXL": "Extra Grande (casa / villa)",
+        "packingLabel": "Servizio Imballaggio",
+        "packingNone": "Nessuno",
+        "packingPartial": "Parziale",
+        "packingFull": "Completo",
+        "storageLabel": "Deposito Necessario",
+        "storageYes": "Sì",
+        "storageNo": "No",
+        "storageDurationLabel": "Durata del Deposito",
+        "storageDurationUnit": "settimane",
+        "flexibilityLabel": "Data del Trasloco",
+        "flexibilityFlexible": "Flessibile (giorno feriale)",
+        "flexibilityFixed": "Fisso (weekend / alta stagione)",
+        "currencyLabel": "Valuta",
+        "resultEstimatedCost": "Costo Stimato",
+        "resultTransportCost": "Costo Trasporto",
+        "resultPackingCost": "Imballaggio & Extra",
+        "resultStorageCost": "Costo Deposito",
+        "summaryTitle": "Dettaglio Costi",
+        "summaryTransport": "Trasporto base",
+        "summaryPacking": "Servizio imballaggio",
+        "summaryStorage": "Deposito",
+        "summarySurcharge": "Supplemento alta stagione",
+        "summaryTotal": "Totale stimato",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Come Usare il Calcolatore Costo Trasloco",
+        "steps": [
+          {
+            "title": "Inserisci i Dettagli del Trasloco",
+            "description": "Digita la distanza del trasloco in chilometri e seleziona il volume dei tuoi oggetti — da un piccolo monolocale a una casa intera."
+          },
+          {
+            "title": "Scegli i Servizi",
+            "description": "Seleziona il livello di imballaggio (nessuno, parziale o completo), se hai bisogno di deposito e se la data è flessibile o fissa."
+          },
+          {
+            "title": "Controlla la Stima",
+            "description": "Visualizza istantaneamente una fascia di costo con dettaglio completo: trasporto, imballaggio, deposito e eventuali supplementi."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché Usare il Nostro Calcolatore",
+        "sectionDescription": "Pianifica il tuo trasloco con sicurezza grazie a stime precise in tempo reale.",
+        "items": [
+          {
+            "icon": "truck",
+            "title": "Prezzi Basati sulla Distanza",
+            "description": "I costi vengono calcolati in base alla distanza effettiva e al volume, fornendo una stima realistica per traslochi locali o a lunga distanza."
+          },
+          {
+            "icon": "package",
+            "title": "Opzioni di Imballaggio",
+            "description": "Scegli tra nessun imballaggio, parziale o completo. Ogni opzione viene automaticamente inclusa nel costo totale."
+          },
+          {
+            "icon": "warehouse",
+            "title": "Stime di Deposito",
+            "description": "Hai bisogno di deposito temporaneo? Aggiungilo alla stima con tariffe settimanali basate sul volume dei tuoi oggetti."
+          },
+          {
+            "icon": "calendar",
+            "title": "Flessibile vs. Alta Stagione",
+            "description": "Scopri come scegliere un giorno feriale può farti risparmiare rispetto alle tariffe del weekend."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guida alla Pianificazione del Trasloco",
+        "articles": [
+          {
+            "title": "Come Ridurre i Costi del Trasloco",
+            "content": "Le spese di trasloco possono accumularsi rapidamente, ma ci sono diverse strategie per mantenerle sotto controllo. Inizia facendo decluttering prima del trasloco — meno oggetti significano meno volume e costi di trasporto inferiori. Richiedi preventivi a più aziende e confronta i servizi. Se possibile, scegli un giorno feriale o la bassa stagione (da ottobre ad aprile) perché le tariffe sono significativamente più basse. Imballa tu stesso alcuni oggetti per ridurre i costi del servizio. Prenota i traslocatori con almeno 4–6 settimane di anticipo per ottenere tariffe migliori."
+          },
+          {
+            "title": "Cosa Influenza di Più i Costi",
+            "content": "I fattori più importanti nei costi di trasloco sono la distanza e il volume. Un trasloco a lunga distanza con una casa intera costerà sempre molto più di un trasloco locale di un monolocale. Tuttavia, servizi aggiuntivi come imballaggio, assicurazione e deposito possono aumentare il totale del 30–50%. Anche il periodo dell'anno conta — i mesi estivi (giugno–agosto) e la fine del mese sono periodi di punta con prezzi più alti."
+          },
+          {
+            "title": "Consigli per un Imballaggio Efficace",
+            "content": "Un imballaggio corretto è essenziale per proteggere i tuoi oggetti e contenere i costi. Inizia a imballare gli oggetti non essenziali 2–3 settimane prima del trasloco. Usa scatole di qualità in dimensioni uniformi — si impilano meglio e proteggono il contenuto più efficacemente. Avvolgi gli oggetti fragili singolarmente con pluriball o carta da imballaggio. Etichetta ogni scatola con il contenuto e la stanza di destinazione. Tieni pronta una scatola con gli essenziali di cui avrai bisogno subito."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Quanto è precisa la stima dei costi?",
+            "answer": "Il nostro calcolatore fornisce una fascia di costo realistica (±15% rispetto alla stima base) basata su distanza, volume e servizi. I costi effettivi possono variare in base alle tariffe specifiche dell'azienda, condizioni di accesso e fattori locali."
+          },
+          {
+            "question": "Cosa significano le categorie di volume?",
+            "answer": "Le categorie di volume rappresentano i metri cubi approssimativi degli oggetti. Piccolo (10 m³) copre un monolocale o una stanza. Medio (25 m³) si adatta a 2–3 stanze. Grande (40 m³) per 4+ stanze. Extra Grande (60 m³) per una casa o villa completa."
+          },
+          {
+            "question": "Perché il trasloco nel weekend è più costoso?",
+            "answer": "I traslochi di weekend e fine mese sono periodi di punta per le aziende di trasloco. La domanda è più alta, il che fa salire i prezzi — tipicamente di circa il 15%. Scegliere un giorno feriale o metà mese può ridurre significativamente i costi."
+          },
+          {
+            "question": "Cosa include il servizio di imballaggio?",
+            "answer": "L'imballaggio parziale copre tipicamente oggetti fragili, stoviglie e opere d'arte. L'imballaggio completo significa che i traslocatori imballano tutto nella casa, inclusi vestiti, libri e oggetti personali."
+          },
+          {
+            "question": "Come viene calcolato il costo del deposito?",
+            "answer": "Il deposito viene addebitato settimanalmente in base al volume dei tuoi oggetti. La tariffa è per metro cubo per settimana, quindi un trasloco piccolo con 2 settimane di deposito costa meno di uno grande per lo stesso periodo."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri Altri Strumenti Finanziari",
+        "description": "Esplora la nostra collezione di calcolatori finanziari gratuiti per prestiti, investimenti, budget e altro."
+      }
+    },
+    "es": {
+      "slug": "calculadora-costo-mudanza",
+      "meta": {
+        "title": "Calculadora Costo Mudanza – Estima Gastos de Mudanza | ToolFrame",
+        "description": "Calculadora gratuita de costos de mudanza. Calcula transporte, embalaje y almacenamiento según distancia, volumen y servicios. Estimación instantánea detallada.",
+        "keywords": ["calculadora costo mudanza", "estimacion gastos mudanza", "precio mudanza", "costo transporte mudanza", "costo embalaje", "costo almacenamiento", "presupuesto mudanza", "cotizacion mudanza"]
+      },
+      "hero": {
+        "headline": "Calculadora Costo Mudanza",
+        "description": "Estima los costos de tu mudanza al instante. Ingresa la distancia, volumen y servicios necesarios para obtener un desglose detallado con transporte, embalaje y almacenamiento."
+      },
+      "tool": {
+        "distanceLabel": "Distancia de la Mudanza",
+        "distancePlaceholder": "ej. 150",
+        "distanceUnit": "km",
+        "volumeLabel": "Volumen de Pertenencias",
+        "volumeSmall": "Pequeño (estudio / 1 habitación)",
+        "volumeMedium": "Mediano (2–3 habitaciones)",
+        "volumeLarge": "Grande (4+ habitaciones)",
+        "volumeXL": "Extra Grande (casa / villa)",
+        "packingLabel": "Servicio de Embalaje",
+        "packingNone": "Ninguno",
+        "packingPartial": "Parcial",
+        "packingFull": "Completo",
+        "storageLabel": "Almacenamiento Necesario",
+        "storageYes": "Sí",
+        "storageNo": "No",
+        "storageDurationLabel": "Duración del Almacenamiento",
+        "storageDurationUnit": "semanas",
+        "flexibilityLabel": "Fecha de Mudanza",
+        "flexibilityFlexible": "Flexible (día laboral / fuera de temporada)",
+        "flexibilityFixed": "Fija (fin de semana / temporada alta)",
+        "currencyLabel": "Moneda",
+        "resultEstimatedCost": "Costo Estimado",
+        "resultTransportCost": "Costo Transporte",
+        "resultPackingCost": "Embalaje y Extras",
+        "resultStorageCost": "Costo Almacenamiento",
+        "summaryTitle": "Desglose de Costos",
+        "summaryTransport": "Transporte base",
+        "summaryPacking": "Servicio de embalaje",
+        "summaryStorage": "Almacenamiento",
+        "summarySurcharge": "Recargo temporada alta",
+        "summaryTotal": "Total estimado",
+        "currencySymbol": "$"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo Usar la Calculadora de Costo de Mudanza",
+        "steps": [
+          {
+            "title": "Ingresa los Detalles de la Mudanza",
+            "description": "Escribe la distancia de tu mudanza en kilómetros y selecciona el volumen de tus pertenencias — desde un pequeño estudio hasta una casa completa."
+          },
+          {
+            "title": "Elige los Servicios",
+            "description": "Selecciona el nivel de embalaje (ninguno, parcial o completo), si necesitas almacenamiento y si tu fecha es flexible o fija."
+          },
+          {
+            "title": "Revisa Tu Estimación",
+            "description": "Ve al instante un rango de costos con desglose completo: transporte, embalaje, almacenamiento y posibles recargos."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Qué Usar Nuestra Calculadora",
+        "sectionDescription": "Planifica tu mudanza con confianza usando estimaciones precisas en tiempo real.",
+        "items": [
+          {
+            "icon": "truck",
+            "title": "Precios por Distancia",
+            "description": "Los costos se calculan según la distancia real y el volumen, dándote una estimación realista para mudanzas locales o de larga distancia."
+          },
+          {
+            "icon": "package",
+            "title": "Opciones de Embalaje",
+            "description": "Elige entre sin embalaje, parcial o completo. Cada opción se incluye automáticamente en el costo total."
+          },
+          {
+            "icon": "warehouse",
+            "title": "Estimaciones de Almacenamiento",
+            "description": "¿Necesitas almacenamiento temporal? Agrégalo a tu estimación con tarifas semanales basadas en el volumen."
+          },
+          {
+            "icon": "calendar",
+            "title": "Flexible vs. Temporada Alta",
+            "description": "Descubre cómo elegir un día laboral puede ahorrarte dinero comparado con las tarifas de fin de semana."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guía para Planificar Tu Mudanza",
+        "articles": [
+          {
+            "title": "Cómo Reducir los Costos de Mudanza",
+            "content": "Los gastos de mudanza pueden acumularse rápidamente, pero existen varias estrategias para mantenerlos controlados. Comienza por eliminar lo innecesario antes de la mudanza — menos objetos significan menos volumen y costos de transporte más bajos. Solicita cotizaciones de varias empresas y compara servicios. Si es posible, elige un día laboral o la temporada baja (octubre a abril) ya que las tarifas son significativamente menores. Empaca algunos objetos tú mismo para reducir los costos de embalaje. Reserva tus mudadores con al menos 4 a 6 semanas de anticipación para obtener mejores precios."
+          },
+          {
+            "title": "Qué Factores Influyen Más en los Costos",
+            "content": "Los factores más importantes en los costos de mudanza son la distancia y el volumen. Una mudanza de larga distancia con una casa entera siempre costará significativamente más que una mudanza local de un estudio. Sin embargo, servicios adicionales como embalaje, seguro y almacenamiento pueden aumentar el total un 30–50%. La época del año también importa — los meses de verano (junio a agosto) y los finales de mes son temporadas altas con precios más elevados."
+          },
+          {
+            "title": "Consejos de Embalaje para una Mudanza Exitosa",
+            "content": "Un embalaje adecuado es esencial para proteger tus pertenencias y mantener los costos bajos. Comienza a embalar los objetos no esenciales 2 a 3 semanas antes de la mudanza. Usa cajas de calidad en tamaños uniformes — se apilan mejor y protegen el contenido más eficazmente. Envuelve los objetos frágiles individualmente con plástico de burbujas o papel de embalaje. Etiqueta cada caja con su contenido y la habitación de destino. Mantén una caja de esenciales con artículos que necesitarás de inmediato."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Qué tan precisa es la estimación de costos?",
+            "answer": "Nuestra calculadora proporciona un rango de costos realista (±15% alrededor de la estimación base) basado en distancia, volumen y servicios. Los costos reales pueden variar según las tarifas de la empresa, condiciones de acceso y factores locales."
+          },
+          {
+            "question": "¿Qué significan las categorías de volumen?",
+            "answer": "Las categorías de volumen representan los metros cúbicos aproximados de pertenencias. Pequeño (10 m³) cubre un estudio o una habitación. Mediano (25 m³) se ajusta a 2–3 habitaciones. Grande (40 m³) para 4+ habitaciones. Extra Grande (60 m³) para una casa o villa completa."
+          },
+          {
+            "question": "¿Por qué es más cara la mudanza en fin de semana?",
+            "answer": "Las mudanzas de fin de semana y fin de mes son periodos pico para las empresas de mudanza. La demanda es mayor, lo que eleva los precios — típicamente un 15%. Elegir un día laboral o mediados de mes puede reducir significativamente los costos."
+          },
+          {
+            "question": "¿Qué incluye el servicio de embalaje?",
+            "answer": "El embalaje parcial cubre típicamente objetos frágiles, vajilla y obras de arte. El embalaje completo significa que los mudadores empaquetan todo en tu casa, incluyendo ropa, libros y objetos personales."
+          },
+          {
+            "question": "¿Cómo se calcula el costo de almacenamiento?",
+            "answer": "El almacenamiento se cobra por semana según el volumen de tus pertenencias. La tarifa es por metro cúbico por semana, así que una mudanza pequeña con 2 semanas de almacenamiento cuesta menos que una grande por el mismo periodo."
+          },
+          {
+            "question": "¿Puedo usar esta calculadora para mudanzas internacionales?",
+            "answer": "Esta calculadora está diseñada principalmente para mudanzas nacionales. Las reubicaciones internacionales implican costos adicionales como aduanas, envío y seguro que no están incluidos en esta estimación."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explora Más Herramientas Financieras",
+        "description": "Descubre nuestra colección de calculadoras financieras gratuitas para préstamos, inversiones, presupuestos y más."
+      }
+    }
+  }
+}
