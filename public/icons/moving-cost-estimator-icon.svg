@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" fill="none">
+  <!-- Truck body -->
+  <rect x="4" y="22" width="36" height="22" rx="3" stroke="#09E789" stroke-width="2.5" fill="none"/>
+  <!-- Truck cab -->
+  <path d="M40 30h12a4 4 0 0 1 4 4v10H40V30z" stroke="#09E789" stroke-width="2.5" fill="none"/>
+  <!-- Windshield -->
+  <path d="M44 30l6-0a4 4 0 0 1 3.46 2L56 36H44V30z" stroke="#09E789" stroke-width="1.5" fill="none" opacity="0.6"/>
+  <!-- Wheels -->
+  <circle cx="16" cy="46" r="5" stroke="#09E789" stroke-width="2.5" fill="none"/>
+  <circle cx="48" cy="46" r="5" stroke="#09E789" stroke-width="2.5" fill="none"/>
+  <!-- Boxes on truck -->
+  <rect x="10" y="26" width="10" height="10" rx="1" stroke="#09E789" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <rect x="22" y="28" width="8" height="8" rx="1" stroke="#09E789" stroke-width="1.5" fill="none" opacity="0.7"/>
+  <rect x="14" y="14" width="8" height="8" rx="1" stroke="#09E789" stroke-width="1.5" fill="none" opacity="0.5"/>
+  <!-- Arrow indicating movement -->
+  <path d="M8 14l-4 4m4-4l-4-4" stroke="#09E789" stroke-width="1.5" stroke-linecap="round" opacity="0.5"/>
+</svg>

@@ -1,0 +1,897 @@
+{
+  "id": "wedding-budget-calculator",
+  "component": "wedding-budget-calculator",
+  "iconPath": "/icons/wedding-budget-calculator-icon.svg",
+  "categories": ["planning"],
+  "applicationCategory": "FinanceApplication",
+  "config": {
+    "data": {
+      "defaultCategories": [
+        { "key": "venue", "percentage": 30 },
+        { "key": "catering", "percentage": 20 },
+        { "key": "photography", "percentage": 10 },
+        { "key": "music", "percentage": 8 },
+        { "key": "flowers", "percentage": 7 },
+        { "key": "attire", "percentage": 7 },
+        { "key": "invitations", "percentage": 3 },
+        { "key": "transport", "percentage": 3 },
+        { "key": "honeymoon", "percentage": 7 },
+        { "key": "miscellaneous", "percentage": 5 }
+      ]
+    }
+  },
+  "translations": {
+    "en": {
+      "slug": "wedding-budget-calculator",
+      "meta": {
+        "title": "Wedding Budget Calculator – Plan Your Wedding Costs | ToolFrame",
+        "description": "Free wedding budget calculator with customizable category allocations. Plan venue, catering, photography, and more. Visualize your wedding spending with interactive charts.",
+        "keywords": ["wedding budget calculator", "wedding cost planner", "wedding budget planner", "wedding expense tracker", "wedding budget breakdown", "how much does a wedding cost", "wedding planning tool"]
+      },
+      "hero": {
+        "headline": "Wedding Budget Calculator",
+        "description": "Plan your perfect wedding within budget. Set your total budget, customize category allocations, and see exactly where every dollar goes — with real-time breakdowns and visual charts."
+      },
+      "tool": {
+        "totalBudgetLabel": "Total Budget",
+        "totalBudgetPlaceholder": "e.g. 25000",
+        "numberOfGuestsLabel": "Number of Guests",
+        "numberOfGuestsPlaceholder": "e.g. 100",
+        "currencyLabel": "Currency",
+        "categoriesTitle": "Budget Categories",
+        "categoryNames": {
+          "venue": "Venue",
+          "catering": "Catering",
+          "photography": "Photography",
+          "music": "Music & Entertainment",
+          "flowers": "Flowers & Decoration",
+          "attire": "Attire & Accessories",
+          "invitations": "Invitations & Stationery",
+          "transport": "Transport",
+          "honeymoon": "Honeymoon",
+          "miscellaneous": "Miscellaneous"
+        },
+        "percentageLabel": "%",
+        "amountLabel": "Amount",
+        "totalAllocatedLabel": "Total Allocated",
+        "warningNotHundred": "Percentages must sum to 100%",
+        "resultTotalBudget": "Total Budget",
+        "resultAllocated": "Allocated",
+        "resultRemaining": "Remaining",
+        "resultOverBudget": "Over Budget",
+        "resultCostPerGuest": "Cost per Guest",
+        "breakdownTitle": "Budget Breakdown",
+        "chartTitle": "Budget Distribution",
+        "currencySymbol": "$",
+        "resetLabel": "Reset to Defaults",
+        "addCategoryLabel": "Add Category",
+        "newCategoryNamePlaceholder": "Category name",
+        "editCategoryAriaLabel": "Edit category",
+        "deleteCategoryAriaLabel": "Delete category",
+        "confirmDeleteMessage": "Are you sure?",
+        "confirmLabel": "Confirm",
+        "cancelLabel": "Cancel",
+        "confirmResetMessage": "Reset all data to defaults?"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Use the Wedding Budget Calculator",
+        "steps": [
+          {
+            "title": "Set Your Total Budget",
+            "description": "Enter your total wedding budget and number of guests. Select your preferred currency for display formatting."
+          },
+          {
+            "title": "Customize Category Allocations",
+            "description": "Adjust the percentage or amount for each category (venue, catering, photography, etc.). Percentages auto-normalize to 100%, or enter specific amounts to back-calculate percentages."
+          },
+          {
+            "title": "Review Your Budget Plan",
+            "description": "See your complete budget breakdown with metric cards, a detailed category list, and a donut chart showing how your wedding budget is distributed."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Wedding Budget Calculator",
+        "sectionDescription": "Plan your dream wedding without financial stress — clear allocations, real-time updates, and visual breakdowns.",
+        "items": [
+          {
+            "icon": "heart",
+            "title": "10 Budget Categories",
+            "description": "Cover every aspect of your wedding — from venue and catering to honeymoon and miscellaneous expenses. Each category is fully customizable."
+          },
+          {
+            "icon": "pie-chart",
+            "title": "Visual Budget Chart",
+            "description": "See your budget distribution at a glance with an interactive donut chart. Instantly spot which categories consume the most of your budget."
+          },
+          {
+            "icon": "sliders-horizontal",
+            "title": "Flexible Allocation",
+            "description": "Set budgets by percentage or exact amount — the calculator keeps everything in sync. Percentages always sum to 100% with auto-normalization."
+          },
+          {
+            "icon": "users",
+            "title": "Per-Guest Cost Tracking",
+            "description": "Know exactly how much your wedding costs per guest. Essential for making informed decisions about your guest list size."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Wedding Budget Planning Guide",
+        "articles": [
+          {
+            "title": "How to Set a Realistic Wedding Budget",
+            "content": "Start by determining how much you can comfortably spend without going into debt. Consider contributions from family, your own savings, and any financing options. A good rule of thumb is to never spend more than you can pay off within a year after the wedding. Prioritize what matters most to you and your partner — whether that's the venue, food, or photography — and allocate more of your budget there. Remember to include a 5-10% buffer for unexpected expenses."
+          },
+          {
+            "title": "Typical Wedding Budget Breakdown",
+            "content": "While every wedding is unique, industry data suggests common allocations: venue (25-35%), catering (20-25%), photography/videography (8-12%), music and entertainment (6-10%), flowers and decoration (5-8%), attire (5-8%), invitations (2-4%), transport (2-4%), honeymoon (5-10%), and miscellaneous (3-5%). These percentages serve as starting points — adjust based on your priorities. Couples who prioritize food might allocate 30% to catering, while those who love photography might spend 15% on a premium photographer."
+          },
+          {
+            "title": "Money-Saving Tips for Your Wedding",
+            "content": "Choose an off-peak date (weekday or winter) for significant venue discounts. Limit your guest list — each additional guest increases catering, invitation, and favor costs. Consider a brunch or lunch reception instead of dinner. DIY elements like centerpieces and favors can save hundreds. Book vendors early for better rates, and don't be afraid to negotiate. Use seasonal, locally-sourced flowers to reduce floral costs. Finally, set clear priorities with your partner so you invest in what truly matters to you."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "How does the wedding budget calculator work?",
+            "answer": "Enter your total budget and number of guests, then customize the percentage allocation for each wedding category (venue, catering, photography, etc.). The calculator instantly shows the dollar amount per category, total allocated vs. remaining budget, cost per guest, and a visual chart of your budget distribution."
+          },
+          {
+            "question": "What is a typical wedding budget breakdown?",
+            "answer": "A common breakdown allocates 30% to venue, 20% to catering, 10% to photography, 8% to music, 7% each to flowers, attire, and honeymoon, 3% each to invitations and transport, and 5% to miscellaneous. These are starting points — adjust based on your priorities."
+          },
+          {
+            "question": "Can I change the budget amounts instead of percentages?",
+            "answer": "Yes. You can edit either the percentage or the amount for any category. When you change an amount, the percentage updates automatically, and vice versa. This gives you full flexibility in planning."
+          },
+          {
+            "question": "What happens if my percentages don't add up to 100%?",
+            "answer": "The calculator shows a warning when percentages don't sum to 100%. You can use the auto-normalize feature to proportionally adjust all percentages back to 100%, or manually adjust individual categories."
+          },
+          {
+            "question": "How much should I budget per guest?",
+            "answer": "Per-guest costs vary widely by location and style. In the US, the average ranges from $100-$300 per guest. Upscale venues in major cities can exceed $500 per guest. Our calculator shows your per-guest cost in real time so you can evaluate trade-offs between guest count and overall spending."
+          },
+          {
+            "question": "Is the wedding budget calculator free?",
+            "answer": "Yes, the wedding budget calculator is completely free with no registration required. Use it as many times as you need while planning your wedding."
+          },
+          {
+            "question": "Can I use different currencies?",
+            "answer": "Yes. You can select your preferred currency symbol ($, €, £, lei) for display formatting. The calculations work the same regardless of currency."
+          },
+          {
+            "question": "What categories are included?",
+            "answer": "The calculator includes 10 standard wedding categories: Venue, Catering, Photography, Music & Entertainment, Flowers & Decoration, Attire & Accessories, Invitations & Stationery, Transport, Honeymoon, and Miscellaneous. Each has a default percentage that you can customize."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore More Planning Tools",
+        "description": "Discover our collection of free planning and financial calculators for budgeting, investments, and more."
+      }
+    },
+    "ro": {
+      "slug": "calculator-buget-nunta",
+      "meta": {
+        "title": "Calculator Buget Nuntă – Planifică Cheltuielile Nunții | ToolFrame",
+        "description": "Calculator gratuit de buget pentru nuntă cu alocare personalizabilă pe categorii. Planifică locația, catering, fotografie și multe altele. Vizualizează cheltuielile cu grafice interactive.",
+        "keywords": ["calculator buget nunta", "planificare buget nunta", "cheltuieli nunta", "cost nunta", "buget nunta calculator", "planificare nunta", "cat costa o nunta"]
+      },
+      "hero": {
+        "headline": "Calculator Buget Nuntă",
+        "description": "Planifică nunta perfectă în limita bugetului. Setează bugetul total, personalizează alocările pe categorii și vezi exact unde se duc banii — cu defalcări în timp real și grafice vizuale."
+      },
+      "tool": {
+        "totalBudgetLabel": "Buget Total",
+        "totalBudgetPlaceholder": "ex. 50000",
+        "numberOfGuestsLabel": "Număr de Invitați",
+        "numberOfGuestsPlaceholder": "ex. 100",
+        "currencyLabel": "Monedă",
+        "categoriesTitle": "Categorii Buget",
+        "categoryNames": {
+          "venue": "Locație",
+          "catering": "Catering",
+          "photography": "Fotografie",
+          "music": "Muzică & Divertisment",
+          "flowers": "Flori & Decorațiuni",
+          "attire": "Ținută & Accesorii",
+          "invitations": "Invitații & Papetărie",
+          "transport": "Transport",
+          "honeymoon": "Luna de Miere",
+          "miscellaneous": "Diverse"
+        },
+        "percentageLabel": "%",
+        "amountLabel": "Sumă",
+        "totalAllocatedLabel": "Total Alocat",
+        "warningNotHundred": "Procentele trebuie să totalizeze 100%",
+        "resultTotalBudget": "Buget Total",
+        "resultAllocated": "Alocat",
+        "resultRemaining": "Rămas",
+        "resultOverBudget": "Depășire Buget",
+        "resultCostPerGuest": "Cost per Invitat",
+        "breakdownTitle": "Defalcare Buget",
+        "chartTitle": "Distribuție Buget",
+        "currencySymbol": "lei",
+        "resetLabel": "Resetează la Implicit",
+        "addCategoryLabel": "Adaugă Categorie",
+        "newCategoryNamePlaceholder": "Numele categoriei",
+        "editCategoryAriaLabel": "Editează categoria",
+        "deleteCategoryAriaLabel": "Șterge categoria",
+        "confirmDeleteMessage": "Ești sigur?",
+        "confirmLabel": "Confirmă",
+        "cancelLabel": "Anulează",
+        "confirmResetMessage": "Resetezi toate datele la implicit?"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum Folosești Calculatorul de Buget Nuntă",
+        "steps": [
+          {
+            "title": "Setează Bugetul Total",
+            "description": "Introdu bugetul total pentru nuntă și numărul de invitați. Selectează moneda preferată pentru afișare."
+          },
+          {
+            "title": "Personalizează Alocările",
+            "description": "Ajustează procentul sau suma pentru fiecare categorie (locație, catering, fotografie etc.). Procentele se auto-normalizează la 100%."
+          },
+          {
+            "title": "Revizuiește Planul de Buget",
+            "description": "Vezi defalcarea completă cu carduri de metrici, lista detaliată pe categorii și un grafic care arată distribuția bugetului."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Calculatorul Nostru",
+        "sectionDescription": "Planifică nunta visurilor fără stres financiar — alocări clare, actualizări în timp real și vizualizări grafice.",
+        "items": [
+          {
+            "icon": "heart",
+            "title": "10 Categorii de Buget",
+            "description": "Acoperă fiecare aspect al nunții — de la locație și catering la luna de miere. Fiecare categorie este complet personalizabilă."
+          },
+          {
+            "icon": "pie-chart",
+            "title": "Grafic Vizual",
+            "description": "Vezi distribuția bugetului dintr-o privire cu un grafic donut interactiv. Identifică instant categoriile care consumă cel mai mult."
+          },
+          {
+            "icon": "sliders-horizontal",
+            "title": "Alocare Flexibilă",
+            "description": "Setează bugetele ca procent sau sumă exactă — calculatorul menține totul sincronizat. Procentele totalizează întotdeauna 100%."
+          },
+          {
+            "icon": "users",
+            "title": "Cost per Invitat",
+            "description": "Știi exact cât costă nunta per invitat. Esențial pentru decizii informate despre dimensiunea listei de invitați."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid Planificare Buget Nuntă",
+        "articles": [
+          {
+            "title": "Cum Stabilești un Buget Realist pentru Nuntă",
+            "content": "Începe prin a determina cât poți cheltui confortabil fără a te îndatora. Ia în considerare contribuțiile familiei, economiile proprii și opțiunile de finanțare. O regulă bună este să nu cheltuiești mai mult decât poți achita într-un an după nuntă. Prioritizează ce contează cel mai mult pentru tine și partenerul tău — fie că e locația, mâncarea sau fotografia — și alocă mai mult din buget acolo. Include un buffer de 5-10% pentru cheltuieli neprevăzute."
+          },
+          {
+            "title": "Defalcarea Tipică a Bugetului de Nuntă",
+            "content": "Deși fiecare nuntă este unică, datele din industrie sugerează alocări comune: locație (25-35%), catering (20-25%), fotografie/videografie (8-12%), muzică și divertisment (6-10%), flori și decorațiuni (5-8%), ținută (5-8%), invitații (2-4%), transport (2-4%), luna de miere (5-10%) și diverse (3-5%). Aceste procente sunt puncte de plecare — ajustează în funcție de prioritățile tale."
+          },
+          {
+            "title": "Sfaturi pentru Economii la Nuntă",
+            "content": "Alege o dată în afara sezonului (zi de lucru sau iarnă) pentru reduceri semnificative la locație. Limitează lista de invitați — fiecare invitat suplimentar crește costurile. Ia în considerare o recepție la prânz în loc de cină. Elementele DIY pot economisi sute. Rezervă devreme pentru tarife mai bune și nu ezita să negociezi. Folosește flori de sezon pentru a reduce costurile florale."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Cum funcționează calculatorul de buget nuntă?",
+            "answer": "Introdu bugetul total și numărul de invitați, apoi personalizează procentul alocat fiecărei categorii. Calculatorul arată instant suma per categorie, bugetul alocat vs. rămas, costul per invitat și un grafic al distribuției."
+          },
+          {
+            "question": "Care este defalcarea tipică a bugetului de nuntă?",
+            "answer": "O defalcare comună alocă 30% locației, 20% catering, 10% fotografiei, 8% muzicii, câte 7% florilor, ținutei și lunii de miere, câte 3% invitațiilor și transportului și 5% diverselor."
+          },
+          {
+            "question": "Pot modifica sumele în loc de procente?",
+            "answer": "Da. Poți edita fie procentul, fie suma pentru orice categorie. Când modifici o sumă, procentul se actualizează automat, și invers."
+          },
+          {
+            "question": "Ce se întâmplă dacă procentele nu totalizează 100%?",
+            "answer": "Calculatorul afișează un avertisment. Poți folosi funcția de auto-normalizare pentru a ajusta proporțional toate procentele la 100%."
+          },
+          {
+            "question": "Calculatorul este gratuit?",
+            "answer": "Da, calculatorul de buget nuntă este complet gratuit, fără înregistrare necesară."
+          },
+          {
+            "question": "Pot folosi diferite monede?",
+            "answer": "Da. Poți selecta simbolul monedei preferate ($, €, £, lei) pentru formatarea afișării."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Mai Multe Instrumente de Planificare",
+        "description": "Descoperă colecția noastră de calculatoare gratuite de planificare și finanțe."
+      }
+    },
+    "de": {
+      "slug": "hochzeitsbudget-rechner",
+      "meta": {
+        "title": "Hochzeitsbudget-Rechner – Hochzeitskosten planen | ToolFrame",
+        "description": "Kostenloser Hochzeitsbudget-Rechner mit anpassbarer Kategorienaufteilung. Planen Sie Location, Catering, Fotografie und mehr. Visualisieren Sie Ihre Hochzeitsausgaben mit interaktiven Diagrammen.",
+        "keywords": ["hochzeitsbudget rechner", "hochzeit kosten planer", "hochzeitsbudget planer", "hochzeit ausgaben", "hochzeitskosten", "was kostet eine hochzeit", "hochzeit planen budget"]
+      },
+      "hero": {
+        "headline": "Hochzeitsbudget-Rechner",
+        "description": "Planen Sie Ihre perfekte Hochzeit im Budget. Legen Sie Ihr Gesamtbudget fest, passen Sie die Kategorienaufteilung an und sehen Sie genau, wohin jeder Euro fließt."
+      },
+      "tool": {
+        "totalBudgetLabel": "Gesamtbudget",
+        "totalBudgetPlaceholder": "z.B. 25000",
+        "numberOfGuestsLabel": "Anzahl der Gäste",
+        "numberOfGuestsPlaceholder": "z.B. 100",
+        "currencyLabel": "Währung",
+        "categoriesTitle": "Budgetkategorien",
+        "categoryNames": {
+          "venue": "Location",
+          "catering": "Catering",
+          "photography": "Fotografie",
+          "music": "Musik & Unterhaltung",
+          "flowers": "Blumen & Dekoration",
+          "attire": "Kleidung & Accessoires",
+          "invitations": "Einladungen & Papeterie",
+          "transport": "Transport",
+          "honeymoon": "Flitterwochen",
+          "miscellaneous": "Sonstiges"
+        },
+        "percentageLabel": "%",
+        "amountLabel": "Betrag",
+        "totalAllocatedLabel": "Gesamt zugewiesen",
+        "warningNotHundred": "Prozentsätze müssen 100% ergeben",
+        "resultTotalBudget": "Gesamtbudget",
+        "resultAllocated": "Zugewiesen",
+        "resultRemaining": "Verbleibend",
+        "resultOverBudget": "Über Budget",
+        "resultCostPerGuest": "Kosten pro Gast",
+        "breakdownTitle": "Budgetaufschlüsselung",
+        "chartTitle": "Budgetverteilung",
+        "currencySymbol": "€",
+        "resetLabel": "Auf Standard zurücksetzen",
+        "addCategoryLabel": "Kategorie hinzufügen",
+        "newCategoryNamePlaceholder": "Kategoriename",
+        "editCategoryAriaLabel": "Kategorie bearbeiten",
+        "deleteCategoryAriaLabel": "Kategorie löschen",
+        "confirmDeleteMessage": "Sind Sie sicher?",
+        "confirmLabel": "Bestätigen",
+        "cancelLabel": "Abbrechen",
+        "confirmResetMessage": "Alle Daten zurücksetzen?"
+      },
+      "howItWorks": {
+        "sectionTitle": "So verwenden Sie den Hochzeitsbudget-Rechner",
+        "steps": [
+          {
+            "title": "Gesamtbudget festlegen",
+            "description": "Geben Sie Ihr Gesamtbudget für die Hochzeit und die Anzahl der Gäste ein. Wählen Sie Ihre bevorzugte Währung."
+          },
+          {
+            "title": "Kategorien anpassen",
+            "description": "Passen Sie den Prozentsatz oder Betrag für jede Kategorie an (Location, Catering, Fotografie usw.). Prozentsätze werden automatisch auf 100% normalisiert."
+          },
+          {
+            "title": "Budgetplan überprüfen",
+            "description": "Sehen Sie Ihre vollständige Aufschlüsselung mit Metrikkarten, einer detaillierten Kategorienliste und einem Diagramm der Budgetverteilung."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum unseren Hochzeitsbudget-Rechner nutzen",
+        "sectionDescription": "Planen Sie Ihre Traumhochzeit ohne finanziellen Stress — klare Zuweisungen, Echtzeit-Updates und visuelle Aufschlüsselungen.",
+        "items": [
+          {
+            "icon": "heart",
+            "title": "10 Budgetkategorien",
+            "description": "Decken Sie jeden Aspekt Ihrer Hochzeit ab — von Location und Catering bis zu Flitterwochen. Jede Kategorie ist vollständig anpassbar."
+          },
+          {
+            "icon": "pie-chart",
+            "title": "Visuelles Budgetdiagramm",
+            "description": "Sehen Sie Ihre Budgetverteilung auf einen Blick mit einem interaktiven Donut-Diagramm."
+          },
+          {
+            "icon": "sliders-horizontal",
+            "title": "Flexible Zuweisung",
+            "description": "Legen Sie Budgets als Prozentsatz oder genauen Betrag fest — der Rechner hält alles synchron."
+          },
+          {
+            "icon": "users",
+            "title": "Kosten pro Gast",
+            "description": "Wissen Sie genau, wie viel Ihre Hochzeit pro Gast kostet. Wichtig für Entscheidungen über die Gästelistengröße."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ratgeber zur Hochzeitsbudgetplanung",
+        "articles": [
+          {
+            "title": "So setzen Sie ein realistisches Hochzeitsbudget",
+            "content": "Beginnen Sie damit, zu bestimmen, wie viel Sie bequem ausgeben können, ohne Schulden zu machen. Berücksichtigen Sie Beiträge der Familie, eigene Ersparnisse und Finanzierungsmöglichkeiten. Eine gute Faustregel: Geben Sie nie mehr aus, als Sie innerhalb eines Jahres nach der Hochzeit abbezahlen können. Priorisieren Sie, was Ihnen und Ihrem Partner am wichtigsten ist — ob Location, Essen oder Fotografie. Planen Sie einen Puffer von 5-10% für unerwartete Ausgaben ein."
+          },
+          {
+            "title": "Typische Hochzeitsbudget-Aufteilung",
+            "content": "Branchendaten zeigen gängige Aufteilungen: Location (25-35%), Catering (20-25%), Fotografie/Video (8-12%), Musik und Unterhaltung (6-10%), Blumen und Dekoration (5-8%), Kleidung (5-8%), Einladungen (2-4%), Transport (2-4%), Flitterwochen (5-10%) und Sonstiges (3-5%). Diese Prozentsätze sind Ausgangspunkte — passen Sie sie nach Ihren Prioritäten an."
+          },
+          {
+            "title": "Spartipps für Ihre Hochzeit",
+            "content": "Wählen Sie ein Datum außerhalb der Hochsaison für deutliche Rabatte. Begrenzen Sie die Gästeliste — jeder zusätzliche Gast erhöht die Kosten. Erwägen Sie einen Brunch statt Abendessen. DIY-Elemente können Hunderte sparen. Buchen Sie frühzeitig für bessere Preise und scheuen Sie sich nicht zu verhandeln. Verwenden Sie saisonale, lokale Blumen."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie funktioniert der Hochzeitsbudget-Rechner?",
+            "answer": "Geben Sie Ihr Gesamtbudget und die Gästeanzahl ein, dann passen Sie die Prozentzuweisung für jede Kategorie an. Der Rechner zeigt sofort den Betrag pro Kategorie, zugewiesenes vs. verbleibendes Budget, Kosten pro Gast und ein Verteilungsdiagramm."
+          },
+          {
+            "question": "Was ist eine typische Hochzeitsbudget-Aufteilung?",
+            "answer": "Eine gängige Aufteilung: 30% Location, 20% Catering, 10% Fotografie, 8% Musik, je 7% Blumen, Kleidung und Flitterwochen, je 3% Einladungen und Transport, 5% Sonstiges."
+          },
+          {
+            "question": "Kann ich Beträge statt Prozentsätze ändern?",
+            "answer": "Ja. Sie können entweder den Prozentsatz oder den Betrag für jede Kategorie bearbeiten. Ändern Sie einen Betrag, aktualisiert sich der Prozentsatz automatisch."
+          },
+          {
+            "question": "Was passiert, wenn die Prozentsätze nicht 100% ergeben?",
+            "answer": "Der Rechner zeigt eine Warnung an. Sie können die Auto-Normalisierung verwenden, um alle Prozentsätze proportional auf 100% anzupassen."
+          },
+          {
+            "question": "Ist der Rechner kostenlos?",
+            "answer": "Ja, der Hochzeitsbudget-Rechner ist völlig kostenlos und ohne Registrierung nutzbar."
+          },
+          {
+            "question": "Kann ich verschiedene Währungen verwenden?",
+            "answer": "Ja. Wählen Sie Ihr bevorzugtes Währungssymbol ($, €, £, lei) für die Anzeige."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Weitere Planungstools entdecken",
+        "description": "Entdecken Sie unsere Sammlung kostenloser Planungs- und Finanzrechner."
+      }
+    },
+    "fr": {
+      "slug": "calculateur-budget-mariage",
+      "meta": {
+        "title": "Calculateur Budget Mariage – Planifiez vos Dépenses | ToolFrame",
+        "description": "Calculateur gratuit de budget mariage avec répartition personnalisable par catégorie. Planifiez lieu, traiteur, photographie et plus. Visualisez vos dépenses avec des graphiques interactifs.",
+        "keywords": ["calculateur budget mariage", "planificateur budget mariage", "cout mariage", "budget mariage calculatrice", "depenses mariage", "combien coute un mariage", "planification mariage"]
+      },
+      "hero": {
+        "headline": "Calculateur Budget Mariage",
+        "description": "Planifiez votre mariage parfait dans les limites de votre budget. Définissez votre budget total, personnalisez les allocations par catégorie et voyez exactement où va chaque euro."
+      },
+      "tool": {
+        "totalBudgetLabel": "Budget Total",
+        "totalBudgetPlaceholder": "ex. 25000",
+        "numberOfGuestsLabel": "Nombre d'Invités",
+        "numberOfGuestsPlaceholder": "ex. 100",
+        "currencyLabel": "Devise",
+        "categoriesTitle": "Catégories du Budget",
+        "categoryNames": {
+          "venue": "Lieu de Réception",
+          "catering": "Traiteur",
+          "photography": "Photographie",
+          "music": "Musique & Animation",
+          "flowers": "Fleurs & Décoration",
+          "attire": "Tenue & Accessoires",
+          "invitations": "Faire-part & Papeterie",
+          "transport": "Transport",
+          "honeymoon": "Lune de Miel",
+          "miscellaneous": "Divers"
+        },
+        "percentageLabel": "%",
+        "amountLabel": "Montant",
+        "totalAllocatedLabel": "Total alloué",
+        "warningNotHundred": "Les pourcentages doivent totaliser 100%",
+        "resultTotalBudget": "Budget Total",
+        "resultAllocated": "Alloué",
+        "resultRemaining": "Restant",
+        "resultOverBudget": "Dépassement",
+        "resultCostPerGuest": "Coût par Invité",
+        "breakdownTitle": "Répartition du Budget",
+        "chartTitle": "Distribution du Budget",
+        "currencySymbol": "€",
+        "resetLabel": "Réinitialiser",
+        "addCategoryLabel": "Ajouter Catégorie",
+        "newCategoryNamePlaceholder": "Nom de la catégorie",
+        "editCategoryAriaLabel": "Modifier la catégorie",
+        "deleteCategoryAriaLabel": "Supprimer la catégorie",
+        "confirmDeleteMessage": "Êtes-vous sûr ?",
+        "confirmLabel": "Confirmer",
+        "cancelLabel": "Annuler",
+        "confirmResetMessage": "Réinitialiser toutes les données ?"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment utiliser le Calculateur Budget Mariage",
+        "steps": [
+          {
+            "title": "Définir le Budget Total",
+            "description": "Entrez votre budget total pour le mariage et le nombre d'invités. Sélectionnez votre devise préférée."
+          },
+          {
+            "title": "Personnaliser les Allocations",
+            "description": "Ajustez le pourcentage ou le montant pour chaque catégorie (lieu, traiteur, photographie, etc.). Les pourcentages se normalisent automatiquement à 100%."
+          },
+          {
+            "title": "Examiner votre Plan Budget",
+            "description": "Consultez votre répartition complète avec des cartes métriques, une liste détaillée par catégorie et un graphique de distribution."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi utiliser notre Calculateur Budget Mariage",
+        "sectionDescription": "Planifiez le mariage de vos rêves sans stress financier — allocations claires, mises à jour en temps réel et visualisations graphiques.",
+        "items": [
+          {
+            "icon": "heart",
+            "title": "10 Catégories de Budget",
+            "description": "Couvrez chaque aspect de votre mariage — du lieu au voyage de noces. Chaque catégorie est entièrement personnalisable."
+          },
+          {
+            "icon": "pie-chart",
+            "title": "Graphique Visuel",
+            "description": "Visualisez la distribution de votre budget en un coup d'œil avec un graphique donut interactif."
+          },
+          {
+            "icon": "sliders-horizontal",
+            "title": "Allocation Flexible",
+            "description": "Définissez les budgets en pourcentage ou montant exact — le calculateur garde tout synchronisé."
+          },
+          {
+            "icon": "users",
+            "title": "Coût par Invité",
+            "description": "Sachez exactement combien votre mariage coûte par invité. Essentiel pour optimiser votre liste d'invités."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide de Planification Budget Mariage",
+        "articles": [
+          {
+            "title": "Comment établir un budget mariage réaliste",
+            "content": "Commencez par déterminer combien vous pouvez dépenser confortablement sans vous endetter. Considérez les contributions familiales, vos économies et les options de financement. Ne dépensez jamais plus que ce que vous pouvez rembourser dans l'année suivant le mariage. Priorisez ce qui compte le plus pour vous et votre partenaire. Prévoyez un tampon de 5-10% pour les dépenses imprévues."
+          },
+          {
+            "title": "Répartition typique du budget mariage",
+            "content": "Les données du secteur suggèrent : lieu (25-35%), traiteur (20-25%), photographie/vidéo (8-12%), musique et animation (6-10%), fleurs et décoration (5-8%), tenue (5-8%), faire-part (2-4%), transport (2-4%), lune de miel (5-10%) et divers (3-5%). Ces pourcentages sont des points de départ — ajustez selon vos priorités."
+          },
+          {
+            "title": "Astuces pour économiser sur votre mariage",
+            "content": "Choisissez une date hors saison pour des remises significatives. Limitez la liste d'invités. Envisagez un brunch ou déjeuner au lieu d'un dîner. Les éléments DIY peuvent économiser des centaines d'euros. Réservez tôt pour de meilleurs tarifs et n'hésitez pas à négocier. Utilisez des fleurs de saison et locales."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions Fréquentes",
+        "items": [
+          {
+            "question": "Comment fonctionne le calculateur budget mariage ?",
+            "answer": "Entrez votre budget total et le nombre d'invités, puis personnalisez le pourcentage pour chaque catégorie. Le calculateur affiche instantanément le montant par catégorie, le budget alloué vs restant, le coût par invité et un graphique de distribution."
+          },
+          {
+            "question": "Quelle est la répartition typique d'un budget mariage ?",
+            "answer": "Une répartition courante : 30% lieu, 20% traiteur, 10% photographie, 8% musique, 7% chacun pour fleurs, tenue et lune de miel, 3% chacun pour faire-part et transport, 5% divers."
+          },
+          {
+            "question": "Puis-je modifier les montants au lieu des pourcentages ?",
+            "answer": "Oui. Vous pouvez modifier le pourcentage ou le montant pour chaque catégorie. Le calculateur synchronise automatiquement l'autre valeur."
+          },
+          {
+            "question": "Le calculateur est-il gratuit ?",
+            "answer": "Oui, le calculateur est entièrement gratuit et sans inscription nécessaire."
+          },
+          {
+            "question": "Puis-je utiliser différentes devises ?",
+            "answer": "Oui. Sélectionnez votre symbole de devise préféré ($, €, £, lei) pour le formatage de l'affichage."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrir plus d'outils de planification",
+        "description": "Découvrez notre collection de calculateurs gratuits de planification et de finances."
+      }
+    },
+    "it": {
+      "slug": "calcolatore-budget-matrimonio",
+      "meta": {
+        "title": "Calcolatore Budget Matrimonio – Pianifica le Spese | ToolFrame",
+        "description": "Calcolatore gratuito del budget matrimonio con allocazione personalizzabile per categoria. Pianifica location, catering, fotografia e altro. Visualizza le spese con grafici interattivi.",
+        "keywords": ["calcolatore budget matrimonio", "pianificatore budget matrimonio", "costo matrimonio", "spese matrimonio", "quanto costa un matrimonio", "pianificazione matrimonio", "budget matrimonio"]
+      },
+      "hero": {
+        "headline": "Calcolatore Budget Matrimonio",
+        "description": "Pianifica il tuo matrimonio perfetto nel budget. Imposta il budget totale, personalizza le allocazioni per categoria e vedi esattamente dove va ogni euro."
+      },
+      "tool": {
+        "totalBudgetLabel": "Budget Totale",
+        "totalBudgetPlaceholder": "es. 25000",
+        "numberOfGuestsLabel": "Numero di Invitati",
+        "numberOfGuestsPlaceholder": "es. 100",
+        "currencyLabel": "Valuta",
+        "categoriesTitle": "Categorie Budget",
+        "categoryNames": {
+          "venue": "Location",
+          "catering": "Catering",
+          "photography": "Fotografia",
+          "music": "Musica & Intrattenimento",
+          "flowers": "Fiori & Decorazioni",
+          "attire": "Abbigliamento & Accessori",
+          "invitations": "Inviti & Cancelleria",
+          "transport": "Trasporto",
+          "honeymoon": "Luna di Miele",
+          "miscellaneous": "Varie"
+        },
+        "percentageLabel": "%",
+        "amountLabel": "Importo",
+        "totalAllocatedLabel": "Totale allocato",
+        "warningNotHundred": "Le percentuali devono sommare al 100%",
+        "resultTotalBudget": "Budget Totale",
+        "resultAllocated": "Allocato",
+        "resultRemaining": "Rimanente",
+        "resultOverBudget": "Oltre Budget",
+        "resultCostPerGuest": "Costo per Invitato",
+        "breakdownTitle": "Ripartizione Budget",
+        "chartTitle": "Distribuzione Budget",
+        "currencySymbol": "€",
+        "resetLabel": "Ripristina Predefiniti",
+        "addCategoryLabel": "Aggiungi Categoria",
+        "newCategoryNamePlaceholder": "Nome categoria",
+        "editCategoryAriaLabel": "Modifica categoria",
+        "deleteCategoryAriaLabel": "Elimina categoria",
+        "confirmDeleteMessage": "Sei sicuro?",
+        "confirmLabel": "Conferma",
+        "cancelLabel": "Annulla",
+        "confirmResetMessage": "Ripristinare tutti i dati?"
+      },
+      "howItWorks": {
+        "sectionTitle": "Come usare il Calcolatore Budget Matrimonio",
+        "steps": [
+          {
+            "title": "Imposta il Budget Totale",
+            "description": "Inserisci il budget totale per il matrimonio e il numero di invitati. Seleziona la valuta preferita."
+          },
+          {
+            "title": "Personalizza le Allocazioni",
+            "description": "Regola la percentuale o l'importo per ogni categoria (location, catering, fotografia, ecc.). Le percentuali si normalizzano automaticamente al 100%."
+          },
+          {
+            "title": "Esamina il Piano Budget",
+            "description": "Consulta la ripartizione completa con schede metriche, lista dettagliata per categoria e un grafico della distribuzione."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché usare il nostro Calcolatore Budget Matrimonio",
+        "sectionDescription": "Pianifica il matrimonio dei tuoi sogni senza stress finanziario — allocazioni chiare, aggiornamenti in tempo reale e visualizzazioni grafiche.",
+        "items": [
+          {
+            "icon": "heart",
+            "title": "10 Categorie di Budget",
+            "description": "Copri ogni aspetto del tuo matrimonio — dalla location alla luna di miele. Ogni categoria è completamente personalizzabile."
+          },
+          {
+            "icon": "pie-chart",
+            "title": "Grafico Visuale",
+            "description": "Visualizza la distribuzione del budget a colpo d'occhio con un grafico donut interattivo."
+          },
+          {
+            "icon": "sliders-horizontal",
+            "title": "Allocazione Flessibile",
+            "description": "Imposta budget come percentuale o importo esatto — il calcolatore mantiene tutto sincronizzato."
+          },
+          {
+            "icon": "users",
+            "title": "Costo per Invitato",
+            "description": "Scopri esattamente quanto costa il tuo matrimonio per invitato. Essenziale per ottimizzare la lista degli invitati."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guida alla Pianificazione del Budget Matrimonio",
+        "articles": [
+          {
+            "title": "Come stabilire un budget matrimonio realistico",
+            "content": "Inizia determinando quanto puoi spendere comodamente senza indebitarti. Considera i contributi familiari, i tuoi risparmi e le opzioni di finanziamento. Non spendere mai più di quanto puoi ripagare entro un anno dal matrimonio. Dai priorità a ciò che conta di più per te e il tuo partner. Prevedi un margine del 5-10% per spese impreviste."
+          },
+          {
+            "title": "Ripartizione tipica del budget matrimonio",
+            "content": "I dati del settore suggeriscono: location (25-35%), catering (20-25%), fotografia/video (8-12%), musica e intrattenimento (6-10%), fiori e decorazioni (5-8%), abbigliamento (5-8%), inviti (2-4%), trasporto (2-4%), luna di miele (5-10%) e varie (3-5%). Queste percentuali sono punti di partenza — regola secondo le tue priorità."
+          },
+          {
+            "title": "Consigli per risparmiare sul matrimonio",
+            "content": "Scegli una data fuori stagione per sconti significativi. Limita la lista degli invitati. Considera un brunch o pranzo invece di una cena. Gli elementi fai-da-te possono far risparmiare centinaia di euro. Prenota presto per tariffe migliori e non esitare a negoziare. Usa fiori di stagione e locali."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Come funziona il calcolatore budget matrimonio?",
+            "answer": "Inserisci il budget totale e il numero di invitati, poi personalizza la percentuale per ogni categoria. Il calcolatore mostra istantaneamente l'importo per categoria, budget allocato vs rimanente, costo per invitato e un grafico di distribuzione."
+          },
+          {
+            "question": "Qual è la ripartizione tipica del budget matrimonio?",
+            "answer": "Una ripartizione comune: 30% location, 20% catering, 10% fotografia, 8% musica, 7% ciascuno per fiori, abbigliamento e luna di miele, 3% ciascuno per inviti e trasporto, 5% varie."
+          },
+          {
+            "question": "Posso modificare gli importi invece delle percentuali?",
+            "answer": "Sì. Puoi modificare la percentuale o l'importo per ogni categoria. Il calcolatore sincronizza automaticamente l'altro valore."
+          },
+          {
+            "question": "Il calcolatore è gratuito?",
+            "answer": "Sì, il calcolatore è completamente gratuito e senza registrazione necessaria."
+          },
+          {
+            "question": "Posso usare diverse valute?",
+            "answer": "Sì. Seleziona il simbolo di valuta preferito ($, €, £, lei) per la formattazione della visualizzazione."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri altri strumenti di pianificazione",
+        "description": "Scopri la nostra collezione di calcolatori gratuiti per pianificazione e finanza."
+      }
+    },
+    "es": {
+      "slug": "calculadora-presupuesto-boda",
+      "meta": {
+        "title": "Calculadora Presupuesto Boda – Planifica tus Gastos | ToolFrame",
+        "description": "Calculadora gratuita de presupuesto de boda con asignación personalizable por categoría. Planifica local, catering, fotografía y más. Visualiza tus gastos con gráficos interactivos.",
+        "keywords": ["calculadora presupuesto boda", "planificador presupuesto boda", "costo boda", "gastos boda", "cuanto cuesta una boda", "planificacion boda", "presupuesto boda calculadora"]
+      },
+      "hero": {
+        "headline": "Calculadora Presupuesto Boda",
+        "description": "Planifica tu boda perfecta dentro del presupuesto. Establece tu presupuesto total, personaliza las asignaciones por categoría y ve exactamente a dónde va cada euro."
+      },
+      "tool": {
+        "totalBudgetLabel": "Presupuesto Total",
+        "totalBudgetPlaceholder": "ej. 25000",
+        "numberOfGuestsLabel": "Número de Invitados",
+        "numberOfGuestsPlaceholder": "ej. 100",
+        "currencyLabel": "Moneda",
+        "categoriesTitle": "Categorías del Presupuesto",
+        "categoryNames": {
+          "venue": "Local",
+          "catering": "Catering",
+          "photography": "Fotografía",
+          "music": "Música y Entretenimiento",
+          "flowers": "Flores y Decoración",
+          "attire": "Vestimenta y Accesorios",
+          "invitations": "Invitaciones y Papelería",
+          "transport": "Transporte",
+          "honeymoon": "Luna de Miel",
+          "miscellaneous": "Varios"
+        },
+        "percentageLabel": "%",
+        "amountLabel": "Monto",
+        "totalAllocatedLabel": "Total asignado",
+        "warningNotHundred": "Los porcentajes deben sumar 100%",
+        "resultTotalBudget": "Presupuesto Total",
+        "resultAllocated": "Asignado",
+        "resultRemaining": "Restante",
+        "resultOverBudget": "Sobre Presupuesto",
+        "resultCostPerGuest": "Costo por Invitado",
+        "breakdownTitle": "Desglose del Presupuesto",
+        "chartTitle": "Distribución del Presupuesto",
+        "currencySymbol": "€",
+        "resetLabel": "Restablecer Predeterminados",
+        "addCategoryLabel": "Añadir Categoría",
+        "newCategoryNamePlaceholder": "Nombre de categoría",
+        "editCategoryAriaLabel": "Editar categoría",
+        "deleteCategoryAriaLabel": "Eliminar categoría",
+        "confirmDeleteMessage": "¿Estás seguro?",
+        "confirmLabel": "Confirmar",
+        "cancelLabel": "Cancelar",
+        "confirmResetMessage": "¿Restablecer todos los datos?"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo usar la Calculadora de Presupuesto de Boda",
+        "steps": [
+          {
+            "title": "Establece el Presupuesto Total",
+            "description": "Ingresa tu presupuesto total para la boda y el número de invitados. Selecciona tu moneda preferida."
+          },
+          {
+            "title": "Personaliza las Asignaciones",
+            "description": "Ajusta el porcentaje o monto para cada categoría (local, catering, fotografía, etc.). Los porcentajes se normalizan automáticamente al 100%."
+          },
+          {
+            "title": "Revisa tu Plan de Presupuesto",
+            "description": "Consulta el desglose completo con tarjetas de métricas, lista detallada por categoría y un gráfico de distribución."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por qué usar nuestra Calculadora de Presupuesto Boda",
+        "sectionDescription": "Planifica la boda de tus sueños sin estrés financiero — asignaciones claras, actualizaciones en tiempo real y visualizaciones gráficas.",
+        "items": [
+          {
+            "icon": "heart",
+            "title": "10 Categorías de Presupuesto",
+            "description": "Cubre cada aspecto de tu boda — desde el local hasta la luna de miel. Cada categoría es completamente personalizable."
+          },
+          {
+            "icon": "pie-chart",
+            "title": "Gráfico Visual",
+            "description": "Visualiza la distribución de tu presupuesto de un vistazo con un gráfico donut interactivo."
+          },
+          {
+            "icon": "sliders-horizontal",
+            "title": "Asignación Flexible",
+            "description": "Establece presupuestos como porcentaje o monto exacto — la calculadora mantiene todo sincronizado."
+          },
+          {
+            "icon": "users",
+            "title": "Costo por Invitado",
+            "description": "Sabe exactamente cuánto cuesta tu boda por invitado. Esencial para optimizar tu lista de invitados."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guía de Planificación Presupuesto Boda",
+        "articles": [
+          {
+            "title": "Cómo establecer un presupuesto de boda realista",
+            "content": "Comienza determinando cuánto puedes gastar cómodamente sin endeudarte. Considera las contribuciones familiares, tus ahorros y opciones de financiamiento. Nunca gastes más de lo que puedes pagar en un año después de la boda. Prioriza lo que más importa para ti y tu pareja. Incluye un colchón del 5-10% para gastos imprevistos."
+          },
+          {
+            "title": "Desglose típico del presupuesto de boda",
+            "content": "Los datos del sector sugieren: local (25-35%), catering (20-25%), fotografía/video (8-12%), música y entretenimiento (6-10%), flores y decoración (5-8%), vestimenta (5-8%), invitaciones (2-4%), transporte (2-4%), luna de miel (5-10%) y varios (3-5%). Estos porcentajes son puntos de partida — ajusta según tus prioridades."
+          },
+          {
+            "title": "Consejos para ahorrar en tu boda",
+            "content": "Elige una fecha fuera de temporada para descuentos significativos. Limita la lista de invitados. Considera un brunch o almuerzo en lugar de cena. Los elementos DIY pueden ahorrar cientos de euros. Reserva temprano para mejores tarifas y no dudes en negociar. Usa flores de temporada y locales."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Cómo funciona la calculadora de presupuesto boda?",
+            "answer": "Ingresa tu presupuesto total y número de invitados, luego personaliza el porcentaje para cada categoría. La calculadora muestra instantáneamente el monto por categoría, presupuesto asignado vs restante, costo por invitado y un gráfico de distribución."
+          },
+          {
+            "question": "¿Cuál es el desglose típico del presupuesto de boda?",
+            "answer": "Un desglose común: 30% local, 20% catering, 10% fotografía, 8% música, 7% cada uno para flores, vestimenta y luna de miel, 3% cada uno para invitaciones y transporte, 5% varios."
+          },
+          {
+            "question": "¿Puedo modificar los montos en lugar de los porcentajes?",
+            "answer": "Sí. Puedes editar el porcentaje o el monto para cualquier categoría. La calculadora sincroniza automáticamente el otro valor."
+          },
+          {
+            "question": "¿La calculadora es gratuita?",
+            "answer": "Sí, la calculadora es completamente gratuita y sin registro necesario."
+          },
+          {
+            "question": "¿Puedo usar diferentes monedas?",
+            "answer": "Sí. Selecciona tu símbolo de moneda preferido ($, €, £, lei) para el formato de visualización."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Descubre más herramientas de planificación",
+        "description": "Descubre nuestra colección de calculadoras gratuitas de planificación y finanzas."
+      }
+    }
+  }
+}
