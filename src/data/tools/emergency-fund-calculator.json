@@ -1,0 +1,833 @@
+{
+  "id": "emergency-fund-calculator",
+  "component": "emergency-fund-calculator",
+  "iconPath": "/icons/emergency-fund-calculator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "config": {
+    "data": {
+      "defaultMonths": 6,
+      "minMonths": 1,
+      "maxMonths": 24,
+      "defaultMonthlySavings": 500
+    }
+  },
+  "translations": {
+    "en": {
+      "slug": "emergency-fund-calculator",
+      "meta": {
+        "title": "Emergency Fund Calculator – Savings Goal & Timeline | ToolFrame",
+        "description": "Free emergency fund calculator. Find out how much you need in savings, how many months until you reach your goal, and the projected completion date based on your monthly contribution.",
+        "keywords": ["emergency fund calculator", "savings goal calculator", "rainy day fund", "financial safety net", "savings timeline", "monthly savings calculator", "emergency savings planner", "how much emergency fund"]
+      },
+      "hero": {
+        "headline": "Emergency Fund Calculator",
+        "description": "Calculate how much you need in an emergency fund, track what you've saved so far, and see exactly when you'll hit your goal at your chosen monthly contribution."
+      },
+      "tool": {
+        "monthlyExpensesLabel": "Monthly Expenses",
+        "monthlyExpensesPlaceholder": "e.g. 2000",
+        "monthsOfCoverageLabel": "Months of Coverage",
+        "monthsOfCoveragePlaceholder": "e.g. 6",
+        "currentSavingsLabel": "Current Savings",
+        "currentSavingsPlaceholder": "e.g. 3000",
+        "monthlyContributionLabel": "Monthly Savings Contribution",
+        "monthlyContributionPlaceholder": "e.g. 500",
+        "currencyLabel": "Currency",
+        "currencySymbol": "$",
+        "resultTargetLabel": "Emergency Fund Target",
+        "resultStillNeededLabel": "Amount Still Needed",
+        "resultMonthsToGoalLabel": "Months to Goal",
+        "resultCompletionDateLabel": "Completion Date",
+        "summaryTitle": "Breakdown",
+        "summaryTarget": "Target fund",
+        "summaryCurrent": "Current savings",
+        "summaryGap": "Remaining gap",
+        "summaryContribution": "Monthly contribution",
+        "summaryCompletion": "Completion date",
+        "timelineToggleLabel": "Show savings timeline",
+        "timelineTitle": "Savings Timeline",
+        "timelineDescription": "Month-by-month projection of your emergency fund growth until the goal is reached.",
+        "timelineColMonth": "Month",
+        "timelineColContribution": "Contribution",
+        "timelineColCumulative": "Cumulative Savings",
+        "timelineColGap": "Remaining Gap",
+        "monthsUnit": "months",
+        "goalReachedLabel": "Goal reached"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Use the Emergency Fund Calculator",
+        "steps": [
+          {
+            "title": "Enter Your Monthly Expenses",
+            "description": "Type in the average amount you spend each month on rent, food, utilities, transportation, and other essentials. This is the base for your fund size."
+          },
+          {
+            "title": "Choose Months of Coverage",
+            "description": "Pick how many months of expenses you want to cover. Most advisors recommend 3–6 months; choose more if your income is variable or you have dependents."
+          },
+          {
+            "title": "Track Your Progress",
+            "description": "Enter your current savings and the amount you can set aside each month. The calculator shows your timeline, completion date, and a full month-by-month savings table."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Emergency Fund Calculator",
+        "sectionDescription": "Plan your financial safety net with clarity — know exactly how much you need and when you'll get there.",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "Right-Sized Safety Net",
+            "description": "Calibrate your emergency fund to your actual expenses and risk profile — between 1 and 24 months of coverage."
+          },
+          {
+            "icon": "piggy-bank",
+            "title": "Track Current Savings",
+            "description": "Factor in what you've already saved to see the exact remaining gap — no double-counting, no guesswork."
+          },
+          {
+            "icon": "calendar",
+            "title": "Projected Completion Date",
+            "description": "Instantly see the month and year you'll hit your goal based on your monthly contribution — stay motivated with a clear finish line."
+          },
+          {
+            "icon": "zap",
+            "title": "Instant Recalculation",
+            "description": "All results and the full savings timeline update in real time as you adjust any input — no submit button needed."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide to Building an Emergency Fund",
+        "articles": [
+          {
+            "title": "Why an Emergency Fund Matters",
+            "content": "An emergency fund is a dedicated pool of savings you only touch when life throws a financial curveball — job loss, medical bills, urgent car repairs, or a broken appliance. Without one, these events force you into high-interest debt that can take years to pay off. Financial advisors agree that an emergency fund is the very first savings goal, ahead of investing, because it protects every other part of your financial plan. Even a small cushion of one month's expenses dramatically reduces stress and gives you room to make better long-term decisions."
+          },
+          {
+            "title": "How Many Months Should You Save?",
+            "content": "The classic rule is 3–6 months of essential expenses, but the right number depends on your situation. If you have stable employment, no dependents, and good insurance, 3 months may be enough. If your income is variable (freelancer, commission-based, seasonal) or you support a family, aim for 6–12 months. In the aftermath of the 2020 pandemic, many experts now recommend closer to 6 months as a baseline. Start small — even $1,000 is better than nothing — and build up from there."
+          },
+          {
+            "title": "Where to Keep Your Emergency Fund",
+            "content": "An emergency fund needs to be safe and accessible, not invested for growth. The best options are high-yield savings accounts, money market accounts, or short-term certificates of deposit (though CDs lock your money up). Avoid keeping it in stocks or crypto — the point is that it's there when you need it, not when the market feels like cooperating. Keep it separate from your everyday checking account to resist the temptation to dip in. Treat withdrawals like a last resort, and always rebuild the fund after using it."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "How much should be in my emergency fund?",
+            "answer": "Multiply your essential monthly expenses by 3–6 months as a starting point. If your income is unstable or you have dependents, aim for 6–12 months. The calculator lets you adjust the months of coverage from 1 to 24 to match your situation."
+          },
+          {
+            "question": "Does current savings include my checking account?",
+            "answer": "No — only count money specifically set aside as emergency savings. Funds earmarked for other goals (vacation, down payment) or money in your regular checking account shouldn't be included, as they'll likely be spent elsewhere."
+          },
+          {
+            "question": "How is the completion date calculated?",
+            "answer": "It's today's date plus the number of months needed to fill the remaining gap at your monthly contribution. For example, a $9,000 gap at $500/month means 18 months — so if today is January 2026, the completion date is July 2027."
+          },
+          {
+            "question": "What if my monthly contribution is zero?",
+            "answer": "If you can't contribute anything, the calculator simply shows the target and gap. You'll need to find room in your budget before a timeline can be projected — even $50/month gets you started."
+          },
+          {
+            "question": "Should I pay off debt before building an emergency fund?",
+            "answer": "A small starter fund ($500–$1,000) comes first, then focus on high-interest debt, then build the fund to full size. This prevents you from going deeper into debt when unexpected expenses hit while you're in repayment mode."
+          },
+          {
+            "question": "Is this calculator free to use?",
+            "answer": "Yes, completely free with no registration required. All calculations happen in your browser — no data is stored or sent anywhere."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore More Financial Tools",
+        "description": "Discover our collection of free financial calculators for loans, investments, budgeting, and more."
+      }
+    },
+    "ro": {
+      "slug": "calculator-fond-urgenta",
+      "meta": {
+        "title": "Calculator Fond de Urgență – Obiectiv Economii & Termen | ToolFrame",
+        "description": "Calculator gratuit pentru fondul de urgență. Află cât ai nevoie să economisești, în câte luni atingi obiectivul și data estimată de finalizare pe baza contribuției lunare.",
+        "keywords": ["calculator fond urgenta", "fond de urgenta", "economii de siguranta", "calculator economii", "obiectiv economii", "plasa financiara de siguranta", "fond de rezerva", "economii lunare"]
+      },
+      "hero": {
+        "headline": "Calculator Fond de Urgență",
+        "description": "Calculează cât trebuie să ai în fondul de urgență, urmărește cât ai economisit deja și vezi exact când îți atingi obiectivul la contribuția lunară aleasă."
+      },
+      "tool": {
+        "monthlyExpensesLabel": "Cheltuieli Lunare",
+        "monthlyExpensesPlaceholder": "ex. 4000",
+        "monthsOfCoverageLabel": "Luni de Acoperire",
+        "monthsOfCoveragePlaceholder": "ex. 6",
+        "currentSavingsLabel": "Economii Curente",
+        "currentSavingsPlaceholder": "ex. 6000",
+        "monthlyContributionLabel": "Contribuție Lunară",
+        "monthlyContributionPlaceholder": "ex. 1000",
+        "currencyLabel": "Monedă",
+        "currencySymbol": "lei",
+        "resultTargetLabel": "Obiectiv Fond Urgență",
+        "resultStillNeededLabel": "Sumă Rămasă de Adunat",
+        "resultMonthsToGoalLabel": "Luni până la Obiectiv",
+        "resultCompletionDateLabel": "Data de Finalizare",
+        "summaryTitle": "Detalii",
+        "summaryTarget": "Obiectiv fond",
+        "summaryCurrent": "Economii curente",
+        "summaryGap": "Diferență rămasă",
+        "summaryContribution": "Contribuție lunară",
+        "summaryCompletion": "Data de finalizare",
+        "timelineToggleLabel": "Afișează planul de economisire",
+        "timelineTitle": "Plan de Economisire",
+        "timelineDescription": "Proiecție lună de lună a creșterii fondului tău de urgență până la atingerea obiectivului.",
+        "timelineColMonth": "Luna",
+        "timelineColContribution": "Contribuție",
+        "timelineColCumulative": "Economii Cumulate",
+        "timelineColGap": "Diferență Rămasă",
+        "monthsUnit": "luni",
+        "goalReachedLabel": "Obiectiv atins"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum Folosești Calculatorul de Fond de Urgență",
+        "steps": [
+          {
+            "title": "Introdu Cheltuielile Lunare",
+            "description": "Scrie suma medie pe care o cheltuiești lunar pe chirie, mâncare, utilități, transport și alte necesități. Aceasta este baza mărimii fondului."
+          },
+          {
+            "title": "Alege Lunile de Acoperire",
+            "description": "Selectează câte luni de cheltuieli vrei să acoperi. Majoritatea consilierilor recomandă 3–6 luni; alege mai mult dacă venitul e variabil sau ai persoane în întreținere."
+          },
+          {
+            "title": "Urmărește Progresul",
+            "description": "Introdu economiile curente și suma pe care o poți pune deoparte lunar. Calculatorul arată termenul, data finalizării și un tabel complet lună cu lună."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Calculatorul Nostru",
+        "sectionDescription": "Planifică-ți plasa financiară de siguranță cu claritate — știi exact cât ai nevoie și când ajungi acolo.",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "Siguranță Personalizată",
+            "description": "Ajustează fondul la cheltuielile tale reale și profilul de risc — între 1 și 24 de luni de acoperire."
+          },
+          {
+            "icon": "piggy-bank",
+            "title": "Urmărire Economii Curente",
+            "description": "Include ce ai economisit deja pentru a vedea diferența rămasă exactă — fără dublă numărare, fără ghicit."
+          },
+          {
+            "icon": "calendar",
+            "title": "Data Estimată de Finalizare",
+            "description": "Vezi instant luna și anul când atingi obiectivul în funcție de contribuția lunară — rămâi motivat cu o linie de sosire clară."
+          },
+          {
+            "icon": "zap",
+            "title": "Recalculare Instantanee",
+            "description": "Toate rezultatele și tabelul complet se actualizează în timp real când modifici orice input — fără buton de trimitere."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid pentru Construirea Fondului de Urgență",
+        "articles": [
+          {
+            "title": "De Ce Contează Fondul de Urgență",
+            "content": "Fondul de urgență este o rezervă dedicată pe care o folosești doar când apar situații financiare neprevăzute — pierderea locului de muncă, cheltuieli medicale, reparații urgente sau defectarea aparatelor. Fără el, aceste evenimente te împing către credite cu dobândă mare care pot dura ani să fie achitate. Consilierii financiari sunt de acord că fondul de urgență este primul obiectiv de economisire, înaintea investițiilor, pentru că protejează restul planului financiar. Chiar și o rezervă mică de o lună de cheltuieli reduce semnificativ stresul."
+          },
+          {
+            "title": "Câte Luni Să Economisești?",
+            "content": "Regula clasică este 3–6 luni de cheltuieli esențiale, dar numărul potrivit depinde de situația ta. Cu loc de muncă stabil, fără persoane în întreținere și asigurare bună, 3 luni pot fi suficiente. Dacă venitul e variabil (freelancer, comisioane, sezonier) sau întreții o familie, țintește 6–12 luni. După pandemia din 2020, mulți experți recomandă acum 6 luni ca bază. Începe cu sume mici — chiar și 1.000 lei e mai bine decât nimic."
+          },
+          {
+            "title": "Unde Ții Fondul de Urgență",
+            "content": "Fondul de urgență trebuie să fie sigur și accesibil, nu investit pentru creștere. Cele mai bune opțiuni sunt conturile de economii cu dobândă bună, depozitele la termen scurt (deși blochează banii) sau fondurile monetare. Evită acțiunile sau criptomoneda — scopul este să fie acolo când ai nevoie, nu când piața cooperează. Ține-l separat de contul curent ca să reziști tentației de a cheltui. Tratează retragerile ca ultimă soluție și reconstruiește fondul după fiecare utilizare."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Cât ar trebui să am în fondul de urgență?",
+            "answer": "Înmulțește cheltuielile lunare esențiale cu 3–6 luni ca punct de plecare. Dacă venitul e instabil sau ai persoane în întreținere, țintește 6–12 luni. Calculatorul îți permite să ajustezi între 1 și 24 de luni."
+          },
+          {
+            "question": "Contul curent contează ca economii curente?",
+            "answer": "Nu — include doar banii puși deoparte special pentru urgențe. Fondurile destinate altor obiective (vacanță, avans) sau banii din contul curent obișnuit nu ar trebui incluși."
+          },
+          {
+            "question": "Cum se calculează data de finalizare?",
+            "answer": "Este data de azi plus numărul de luni necesare pentru a acoperi diferența rămasă la contribuția ta lunară. De exemplu, o diferență de 9.000 lei la 500 lei/lună înseamnă 18 luni."
+          },
+          {
+            "question": "Ce fac dacă nu pot contribui nimic lunar?",
+            "answer": "Dacă nu poți contribui, calculatorul arată doar obiectivul și diferența. Trebuie să găsești loc în buget înainte de a proiecta un termen — chiar și 100 lei/lună e un început bun."
+          },
+          {
+            "question": "Mai întâi plătesc datoriile sau construiesc fondul?",
+            "answer": "Un fond mic de pornire (2.500–5.000 lei) vine primul, apoi te concentrezi pe datoriile cu dobândă mare, apoi îți construiești fondul complet. Asta previne intrarea în mai multe datorii când apar cheltuieli neprevăzute."
+          },
+          {
+            "question": "Este gratuit acest calculator?",
+            "answer": "Da, complet gratuit, fără înregistrare necesară. Toate calculele se fac în browser — nu se stochează sau trimite nicio informație."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Alte Instrumente Financiare",
+        "description": "Descoperă colecția noastră de calculatoare financiare gratuite pentru credite, investiții, buget și multe altele."
+      }
+    },
+    "de": {
+      "slug": "notfallfonds-rechner",
+      "meta": {
+        "title": "Notfallfonds-Rechner – Sparziel & Zeitplan | ToolFrame",
+        "description": "Kostenloser Notfallfonds-Rechner. Erfahren Sie, wie viel Sie sparen müssen, in wie vielen Monaten Sie Ihr Ziel erreichen und das voraussichtliche Fertigstellungsdatum basierend auf Ihrem monatlichen Beitrag.",
+        "keywords": ["notfallfonds rechner", "notgroschen rechner", "sparziel rechner", "finanzieller notgroschen", "sparplan rechner", "monatliche sparrate", "finanzielles polster", "notfallrücklage"]
+      },
+      "hero": {
+        "headline": "Notfallfonds-Rechner",
+        "description": "Berechnen Sie, wie viel Sie für einen Notfallfonds benötigen, verfolgen Sie Ihre bisherigen Ersparnisse und sehen Sie genau, wann Sie Ihr Ziel mit Ihrem monatlichen Beitrag erreichen."
+      },
+      "tool": {
+        "monthlyExpensesLabel": "Monatliche Ausgaben",
+        "monthlyExpensesPlaceholder": "z.B. 2000",
+        "monthsOfCoverageLabel": "Monate Abdeckung",
+        "monthsOfCoveragePlaceholder": "z.B. 6",
+        "currentSavingsLabel": "Aktuelle Ersparnisse",
+        "currentSavingsPlaceholder": "z.B. 3000",
+        "monthlyContributionLabel": "Monatlicher Sparbeitrag",
+        "monthlyContributionPlaceholder": "z.B. 500",
+        "currencyLabel": "Währung",
+        "currencySymbol": "€",
+        "resultTargetLabel": "Notfallfonds-Ziel",
+        "resultStillNeededLabel": "Noch Benötigter Betrag",
+        "resultMonthsToGoalLabel": "Monate bis zum Ziel",
+        "resultCompletionDateLabel": "Fertigstellungsdatum",
+        "summaryTitle": "Aufschlüsselung",
+        "summaryTarget": "Zielbetrag",
+        "summaryCurrent": "Aktuelle Ersparnisse",
+        "summaryGap": "Verbleibende Lücke",
+        "summaryContribution": "Monatlicher Beitrag",
+        "summaryCompletion": "Fertigstellungsdatum",
+        "timelineToggleLabel": "Sparplan anzeigen",
+        "timelineTitle": "Sparplan",
+        "timelineDescription": "Monatliche Projektion des Wachstums Ihres Notfallfonds bis zum Erreichen des Ziels.",
+        "timelineColMonth": "Monat",
+        "timelineColContribution": "Beitrag",
+        "timelineColCumulative": "Kumulierte Ersparnisse",
+        "timelineColGap": "Verbleibende Lücke",
+        "monthsUnit": "Monate",
+        "goalReachedLabel": "Ziel erreicht"
+      },
+      "howItWorks": {
+        "sectionTitle": "So Verwenden Sie den Notfallfonds-Rechner",
+        "steps": [
+          {
+            "title": "Monatliche Ausgaben Eingeben",
+            "description": "Geben Sie den durchschnittlichen Betrag ein, den Sie monatlich für Miete, Lebensmittel, Nebenkosten und andere Notwendigkeiten ausgeben. Dies ist die Grundlage für die Größe Ihres Fonds."
+          },
+          {
+            "title": "Monate der Abdeckung Wählen",
+            "description": "Wählen Sie, wie viele Monate an Ausgaben Sie abdecken möchten. Berater empfehlen meist 3–6 Monate; wählen Sie mehr bei variablem Einkommen oder Angehörigen."
+          },
+          {
+            "title": "Fortschritt Verfolgen",
+            "description": "Geben Sie Ihre aktuellen Ersparnisse und den Betrag ein, den Sie monatlich zurücklegen können. Der Rechner zeigt Zeitplan, Fertigstellungsdatum und eine vollständige Monatstabelle."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum Unseren Notfallfonds-Rechner Verwenden",
+        "sectionDescription": "Planen Sie Ihr finanzielles Sicherheitsnetz mit Klarheit — wissen Sie genau, wie viel Sie brauchen und wann Sie dort ankommen.",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "Maßgeschneiderte Sicherheit",
+            "description": "Kalibrieren Sie Ihren Notfallfonds nach Ihren tatsächlichen Ausgaben und Risikoprofil — zwischen 1 und 24 Monaten Abdeckung."
+          },
+          {
+            "icon": "piggy-bank",
+            "title": "Aktuelle Ersparnisse Verfolgen",
+            "description": "Berücksichtigen Sie bereits Gespartes, um die exakte verbleibende Lücke zu sehen — keine Doppelzählung, kein Raten."
+          },
+          {
+            "icon": "calendar",
+            "title": "Voraussichtliches Fertigstellungsdatum",
+            "description": "Sehen Sie sofort Monat und Jahr, in dem Sie Ihr Ziel erreichen — bleiben Sie mit einer klaren Ziellinie motiviert."
+          },
+          {
+            "icon": "zap",
+            "title": "Sofortige Neuberechnung",
+            "description": "Alle Ergebnisse und der komplette Sparplan aktualisieren sich in Echtzeit bei jeder Eingabeänderung — keine Schaltfläche nötig."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Leitfaden zum Aufbau eines Notfallfonds",
+        "articles": [
+          {
+            "title": "Warum ein Notfallfonds Wichtig Ist",
+            "content": "Ein Notfallfonds ist eine dedizierte Rücklage, die Sie nur bei finanziellen Notfällen anrühren — Jobverlust, Arztrechnungen, dringende Autoreparaturen oder defekte Geräte. Ohne ihn zwingen Sie diese Ereignisse in hochverzinste Schulden, deren Tilgung Jahre dauern kann. Finanzberater sind sich einig, dass der Notfallfonds das allererste Sparziel ist, noch vor dem Investieren, weil er jeden anderen Teil Ihres Finanzplans schützt. Schon ein kleines Polster von einem Monat Ausgaben reduziert Stress dramatisch."
+          },
+          {
+            "title": "Wie Viele Monate Sollten Sie Sparen?",
+            "content": "Die klassische Regel sind 3–6 Monate essenzielle Ausgaben, aber die richtige Zahl hängt von Ihrer Situation ab. Mit stabilem Job, ohne Angehörige und guter Versicherung können 3 Monate reichen. Bei variablem Einkommen (Freiberufler, Provision, saisonal) oder einer Familie zielen Sie auf 6–12 Monate. Nach der Pandemie 2020 empfehlen viele Experten nun 6 Monate als Basis. Fangen Sie klein an — selbst 1.000 € sind besser als nichts."
+          },
+          {
+            "title": "Wo Sie Ihren Notfallfonds Aufbewahren",
+            "content": "Ein Notfallfonds muss sicher und zugänglich sein, nicht auf Wachstum ausgelegt. Die besten Optionen sind Tagesgeldkonten, Geldmarktkonten oder kurzfristige Festgeldanlagen (obwohl diese Geld blockieren). Vermeiden Sie Aktien oder Krypto — der Sinn ist, dass es da ist, wenn Sie es brauchen, nicht wenn der Markt mitspielt. Halten Sie ihn getrennt vom Girokonto, um der Versuchung zu widerstehen. Behandeln Sie Entnahmen als letztes Mittel und bauen Sie den Fonds nach Nutzung wieder auf."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig Gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie viel sollte in meinem Notfallfonds sein?",
+            "answer": "Multiplizieren Sie Ihre essenziellen Monatsausgaben mit 3–6 Monaten als Startpunkt. Bei instabilem Einkommen oder Angehörigen zielen Sie auf 6–12 Monate. Der Rechner erlaubt 1 bis 24 Monate Abdeckung."
+          },
+          {
+            "question": "Zählt mein Girokonto zu den aktuellen Ersparnissen?",
+            "answer": "Nein — zählen Sie nur Geld, das speziell als Notfallrücklage beiseitegelegt wurde. Mittel für andere Ziele (Urlaub, Anzahlung) oder auf Ihrem regulären Girokonto sollten nicht enthalten sein."
+          },
+          {
+            "question": "Wie wird das Fertigstellungsdatum berechnet?",
+            "answer": "Es ist das heutige Datum plus die Anzahl Monate, die nötig sind, um die verbleibende Lücke mit Ihrem Monatsbeitrag zu schließen. Beispiel: 9.000 € Lücke bei 500 €/Monat ergibt 18 Monate."
+          },
+          {
+            "question": "Was wenn mein Monatsbeitrag Null ist?",
+            "answer": "Wenn Sie nichts beitragen können, zeigt der Rechner nur Ziel und Lücke. Sie müssen Budgetspielraum schaffen, bevor ein Zeitplan projiziert werden kann — selbst 50 €/Monat sind ein Anfang."
+          },
+          {
+            "question": "Schulden abzahlen oder Notfallfonds aufbauen?",
+            "answer": "Ein kleiner Starter-Fonds (500–1.000 €) kommt zuerst, dann fokussieren Sie auf hochverzinste Schulden, dann bauen Sie den Fonds voll auf. Das verhindert weitere Verschuldung bei unerwarteten Kosten."
+          },
+          {
+            "question": "Ist dieser Rechner kostenlos?",
+            "answer": "Ja, völlig kostenlos ohne Registrierung. Alle Berechnungen laufen im Browser — keine Daten werden gespeichert oder übertragen."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Weitere Finanzrechner Entdecken",
+        "description": "Entdecken Sie unsere Sammlung kostenloser Finanzrechner für Kredite, Investitionen, Budgetplanung und mehr."
+      }
+    },
+    "fr": {
+      "slug": "calculateur-fonds-urgence",
+      "meta": {
+        "title": "Calculateur Fonds d'Urgence – Objectif Épargne & Échéance | ToolFrame",
+        "description": "Calculateur gratuit de fonds d'urgence. Découvrez combien vous devez épargner, en combien de mois vous atteindrez votre objectif et la date prévue de réalisation selon votre contribution mensuelle.",
+        "keywords": ["calculateur fonds urgence", "épargne de précaution", "matelas financier", "objectif épargne", "calculateur épargne", "filet de sécurité financier", "épargne mensuelle", "fonds de réserve"]
+      },
+      "hero": {
+        "headline": "Calculateur de Fonds d'Urgence",
+        "description": "Calculez combien vous devez avoir dans votre fonds d'urgence, suivez ce que vous avez déjà épargné et voyez exactement quand vous atteindrez votre objectif selon votre contribution mensuelle."
+      },
+      "tool": {
+        "monthlyExpensesLabel": "Dépenses Mensuelles",
+        "monthlyExpensesPlaceholder": "ex. 2000",
+        "monthsOfCoverageLabel": "Mois de Couverture",
+        "monthsOfCoveragePlaceholder": "ex. 6",
+        "currentSavingsLabel": "Épargne Actuelle",
+        "currentSavingsPlaceholder": "ex. 3000",
+        "monthlyContributionLabel": "Contribution Mensuelle",
+        "monthlyContributionPlaceholder": "ex. 500",
+        "currencyLabel": "Devise",
+        "currencySymbol": "€",
+        "resultTargetLabel": "Objectif Fonds d'Urgence",
+        "resultStillNeededLabel": "Montant Restant à Épargner",
+        "resultMonthsToGoalLabel": "Mois avant l'Objectif",
+        "resultCompletionDateLabel": "Date de Réalisation",
+        "summaryTitle": "Détails",
+        "summaryTarget": "Objectif du fonds",
+        "summaryCurrent": "Épargne actuelle",
+        "summaryGap": "Écart restant",
+        "summaryContribution": "Contribution mensuelle",
+        "summaryCompletion": "Date de réalisation",
+        "timelineToggleLabel": "Afficher le calendrier d'épargne",
+        "timelineTitle": "Calendrier d'Épargne",
+        "timelineDescription": "Projection mois par mois de la croissance de votre fonds d'urgence jusqu'à l'atteinte de l'objectif.",
+        "timelineColMonth": "Mois",
+        "timelineColContribution": "Contribution",
+        "timelineColCumulative": "Épargne Cumulée",
+        "timelineColGap": "Écart Restant",
+        "monthsUnit": "mois",
+        "goalReachedLabel": "Objectif atteint"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment Utiliser le Calculateur de Fonds d'Urgence",
+        "steps": [
+          {
+            "title": "Entrez Vos Dépenses Mensuelles",
+            "description": "Saisissez le montant moyen que vous dépensez chaque mois en loyer, alimentation, services, transport et autres nécessités. C'est la base de la taille de votre fonds."
+          },
+          {
+            "title": "Choisissez les Mois de Couverture",
+            "description": "Sélectionnez combien de mois de dépenses vous voulez couvrir. La plupart des conseillers recommandent 3–6 mois ; choisissez plus si votre revenu est variable ou avec personnes à charge."
+          },
+          {
+            "title": "Suivez Votre Progression",
+            "description": "Entrez votre épargne actuelle et le montant que vous pouvez mettre de côté chaque mois. Le calculateur affiche l'échéance, la date de réalisation et un tableau mois par mois."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi Utiliser Notre Calculateur",
+        "sectionDescription": "Planifiez votre filet de sécurité financier avec clarté — sachez exactement combien il vous faut et quand vous y arriverez.",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "Sécurité Sur Mesure",
+            "description": "Calibrez votre fonds d'urgence selon vos dépenses réelles et votre profil de risque — entre 1 et 24 mois de couverture."
+          },
+          {
+            "icon": "piggy-bank",
+            "title": "Suivi de l'Épargne Actuelle",
+            "description": "Intégrez ce que vous avez déjà épargné pour voir l'écart restant exact — pas de double comptage, pas d'approximation."
+          },
+          {
+            "icon": "calendar",
+            "title": "Date de Réalisation Prévue",
+            "description": "Voyez instantanément le mois et l'année où vous atteignez l'objectif selon votre contribution — restez motivé avec une ligne d'arrivée claire."
+          },
+          {
+            "icon": "zap",
+            "title": "Recalcul Instantané",
+            "description": "Tous les résultats et le calendrier complet se mettent à jour en temps réel à chaque modification — aucun bouton à cliquer."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide pour Constituer un Fonds d'Urgence",
+        "articles": [
+          {
+            "title": "Pourquoi un Fonds d'Urgence Est Important",
+            "content": "Un fonds d'urgence est une réserve dédiée que vous n'utilisez qu'en cas d'imprévu financier — perte d'emploi, frais médicaux, réparations urgentes ou appareils en panne. Sans lui, ces événements vous poussent vers des dettes à taux élevé qui peuvent mettre des années à être remboursées. Les conseillers financiers s'accordent : le fonds d'urgence est le premier objectif d'épargne, avant l'investissement, car il protège tout le reste de votre plan financier. Même un petit coussin d'un mois de dépenses réduit considérablement le stress."
+          },
+          {
+            "title": "Combien de Mois Épargner ?",
+            "content": "La règle classique est 3–6 mois de dépenses essentielles, mais le bon nombre dépend de votre situation. Avec un emploi stable, sans personnes à charge et une bonne assurance, 3 mois peuvent suffire. Si votre revenu est variable (freelance, commissions, saisonnier) ou si vous soutenez une famille, visez 6–12 mois. Depuis la pandémie de 2020, beaucoup d'experts recommandent maintenant 6 mois comme base. Commencez petit — même 1 000 € valent mieux que rien."
+          },
+          {
+            "title": "Où Placer Votre Fonds d'Urgence",
+            "content": "Un fonds d'urgence doit être sûr et accessible, pas investi pour la croissance. Les meilleures options sont les livrets d'épargne à haut rendement, les comptes du marché monétaire ou les dépôts à court terme (bien que bloquants). Évitez les actions ou cryptomonnaies — l'objectif est qu'il soit là quand vous en avez besoin. Gardez-le séparé de votre compte courant pour résister à la tentation. Traitez les retraits comme un dernier recours et reconstituez le fonds après usage."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions Fréquemment Posées",
+        "items": [
+          {
+            "question": "Combien devrait contenir mon fonds d'urgence ?",
+            "answer": "Multipliez vos dépenses mensuelles essentielles par 3–6 mois comme point de départ. Si votre revenu est instable ou si vous avez des personnes à charge, visez 6–12 mois. Le calculateur permet 1 à 24 mois."
+          },
+          {
+            "question": "Mon compte courant compte-t-il comme épargne actuelle ?",
+            "answer": "Non — ne comptez que l'argent spécifiquement mis de côté comme épargne d'urgence. Les fonds pour d'autres objectifs (vacances, apport) ou sur votre compte courant ne devraient pas être inclus."
+          },
+          {
+            "question": "Comment la date de réalisation est-elle calculée ?",
+            "answer": "C'est la date d'aujourd'hui plus le nombre de mois nécessaires pour combler l'écart avec votre contribution mensuelle. Exemple : 9 000 € d'écart à 500 €/mois = 18 mois."
+          },
+          {
+            "question": "Et si ma contribution mensuelle est zéro ?",
+            "answer": "Si vous ne pouvez rien contribuer, le calculateur n'affiche que l'objectif et l'écart. Vous devrez trouver de la marge dans votre budget avant qu'un calendrier puisse être projeté — même 50 €/mois sont un début."
+          },
+          {
+            "question": "Dois-je rembourser mes dettes avant de constituer le fonds ?",
+            "answer": "Un petit fonds de départ (500–1 000 €) en premier, puis concentrez-vous sur les dettes à taux élevé, puis construisez le fonds complet. Cela évite de s'endetter davantage lors d'imprévus."
+          },
+          {
+            "question": "Ce calculateur est-il gratuit ?",
+            "answer": "Oui, entièrement gratuit et sans inscription. Tous les calculs se font dans votre navigateur — aucune donnée n'est stockée ou envoyée."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez d'Autres Outils Financiers",
+        "description": "Explorez notre collection de calculateurs financiers gratuits pour les prêts, investissements, budget et plus encore."
+      }
+    },
+    "it": {
+      "slug": "calcolatore-fondo-emergenza",
+      "meta": {
+        "title": "Calcolatore Fondo di Emergenza – Obiettivo Risparmio & Tempi | ToolFrame",
+        "description": "Calcolatore gratuito del fondo di emergenza. Scopri quanto devi risparmiare, in quanti mesi raggiungerai il tuo obiettivo e la data prevista di completamento in base al contributo mensile.",
+        "keywords": ["calcolatore fondo emergenza", "fondo di emergenza", "risparmio di sicurezza", "obiettivo risparmio", "rete di sicurezza finanziaria", "risparmio mensile", "fondo riserva", "pianificazione risparmio"]
+      },
+      "hero": {
+        "headline": "Calcolatore Fondo di Emergenza",
+        "description": "Calcola quanto ti serve nel fondo di emergenza, tieni traccia di ciò che hai già risparmiato e vedi esattamente quando raggiungi l'obiettivo al tuo contributo mensile."
+      },
+      "tool": {
+        "monthlyExpensesLabel": "Spese Mensili",
+        "monthlyExpensesPlaceholder": "es. 2000",
+        "monthsOfCoverageLabel": "Mesi di Copertura",
+        "monthsOfCoveragePlaceholder": "es. 6",
+        "currentSavingsLabel": "Risparmi Attuali",
+        "currentSavingsPlaceholder": "es. 3000",
+        "monthlyContributionLabel": "Contributo Mensile",
+        "monthlyContributionPlaceholder": "es. 500",
+        "currencyLabel": "Valuta",
+        "currencySymbol": "€",
+        "resultTargetLabel": "Obiettivo Fondo Emergenza",
+        "resultStillNeededLabel": "Importo Ancora Necessario",
+        "resultMonthsToGoalLabel": "Mesi all'Obiettivo",
+        "resultCompletionDateLabel": "Data di Completamento",
+        "summaryTitle": "Riepilogo",
+        "summaryTarget": "Obiettivo fondo",
+        "summaryCurrent": "Risparmi attuali",
+        "summaryGap": "Divario rimanente",
+        "summaryContribution": "Contributo mensile",
+        "summaryCompletion": "Data di completamento",
+        "timelineToggleLabel": "Mostra piano di risparmio",
+        "timelineTitle": "Piano di Risparmio",
+        "timelineDescription": "Proiezione mese per mese della crescita del tuo fondo di emergenza fino al raggiungimento dell'obiettivo.",
+        "timelineColMonth": "Mese",
+        "timelineColContribution": "Contributo",
+        "timelineColCumulative": "Risparmi Cumulativi",
+        "timelineColGap": "Divario Rimanente",
+        "monthsUnit": "mesi",
+        "goalReachedLabel": "Obiettivo raggiunto"
+      },
+      "howItWorks": {
+        "sectionTitle": "Come Usare il Calcolatore del Fondo di Emergenza",
+        "steps": [
+          {
+            "title": "Inserisci le Spese Mensili",
+            "description": "Digita l'importo medio che spendi ogni mese per affitto, cibo, utenze, trasporti e altre necessità. È la base per la dimensione del tuo fondo."
+          },
+          {
+            "title": "Scegli i Mesi di Copertura",
+            "description": "Seleziona quanti mesi di spese vuoi coprire. Gli esperti raccomandano 3–6 mesi; scegli di più se il reddito è variabile o hai familiari a carico."
+          },
+          {
+            "title": "Monitora i Progressi",
+            "description": "Inserisci i risparmi attuali e l'importo che puoi mettere da parte ogni mese. Il calcolatore mostra tempistica, data di completamento e una tabella mese per mese."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché Usare il Nostro Calcolatore",
+        "sectionDescription": "Pianifica la tua rete di sicurezza finanziaria con chiarezza — sai esattamente quanto ti serve e quando ci arriverai.",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "Sicurezza Su Misura",
+            "description": "Calibra il fondo di emergenza in base alle tue spese reali e al profilo di rischio — tra 1 e 24 mesi di copertura."
+          },
+          {
+            "icon": "piggy-bank",
+            "title": "Tracciamento Risparmi Attuali",
+            "description": "Includi ciò che hai già risparmiato per vedere il divario rimanente esatto — nessun doppio conteggio, nessuna supposizione."
+          },
+          {
+            "icon": "calendar",
+            "title": "Data di Completamento Prevista",
+            "description": "Vedi istantaneamente mese e anno in cui raggiungi l'obiettivo in base al contributo — resta motivato con un traguardo chiaro."
+          },
+          {
+            "icon": "zap",
+            "title": "Ricalcolo Istantaneo",
+            "description": "Tutti i risultati e il piano completo si aggiornano in tempo reale quando modifichi qualsiasi input — nessun pulsante da premere."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guida alla Creazione di un Fondo di Emergenza",
+        "articles": [
+          {
+            "title": "Perché un Fondo di Emergenza è Importante",
+            "content": "Un fondo di emergenza è una riserva dedicata che usi solo in caso di imprevisti finanziari — perdita del lavoro, spese mediche, riparazioni urgenti o elettrodomestici guasti. Senza, questi eventi ti spingono verso debiti ad alto tasso che possono richiedere anni per essere estinti. I consulenti finanziari concordano: il fondo di emergenza è il primo obiettivo di risparmio, prima degli investimenti, perché protegge tutto il resto del piano. Anche un piccolo cuscinetto di un mese di spese riduce enormemente lo stress."
+          },
+          {
+            "title": "Quanti Mesi Risparmiare?",
+            "content": "La regola classica è 3–6 mesi di spese essenziali, ma il numero giusto dipende dalla situazione. Con lavoro stabile, senza familiari a carico e buona assicurazione, 3 mesi possono bastare. Se il reddito è variabile (freelance, commissioni, stagionale) o sostieni una famiglia, punta a 6–12 mesi. Dopo la pandemia del 2020, molti esperti raccomandano 6 mesi come base. Inizia in piccolo — anche 1.000 € sono meglio di niente."
+          },
+          {
+            "title": "Dove Tenere il Fondo di Emergenza",
+            "content": "Un fondo di emergenza deve essere sicuro e accessibile, non investito per la crescita. Le migliori opzioni sono conti di risparmio ad alto rendimento, conti del mercato monetario o depositi a breve termine (che però bloccano i soldi). Evita azioni o criptovalute — lo scopo è che sia lì quando serve. Tienilo separato dal conto corrente per resistere alla tentazione. Tratta i prelievi come ultima risorsa e ricostruisci il fondo dopo l'uso."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Quanto dovrebbe esserci nel mio fondo di emergenza?",
+            "answer": "Moltiplica le spese mensili essenziali per 3–6 mesi come punto di partenza. Se il reddito è instabile o hai familiari a carico, punta a 6–12 mesi. Il calcolatore permette da 1 a 24 mesi."
+          },
+          {
+            "question": "Il mio conto corrente conta come risparmi attuali?",
+            "answer": "No — conta solo il denaro messo da parte specificamente come risparmio di emergenza. Fondi per altri obiettivi (vacanze, anticipo) o sul conto corrente non vanno inclusi."
+          },
+          {
+            "question": "Come viene calcolata la data di completamento?",
+            "answer": "È la data odierna più il numero di mesi necessari per colmare il divario al tuo contributo mensile. Esempio: divario di 9.000 € a 500 €/mese = 18 mesi."
+          },
+          {
+            "question": "E se il mio contributo mensile è zero?",
+            "answer": "Se non puoi contribuire, il calcolatore mostra solo obiettivo e divario. Devi trovare margine nel budget prima di proiettare una tempistica — anche 50 €/mese sono un inizio."
+          },
+          {
+            "question": "Prima pago i debiti o costruisco il fondo?",
+            "answer": "Un piccolo fondo iniziale (500–1.000 €) viene prima, poi concentrati sui debiti ad alto tasso, poi costruisci il fondo completo. Previene nuovi debiti in caso di imprevisti."
+          },
+          {
+            "question": "Questo calcolatore è gratuito?",
+            "answer": "Sì, completamente gratuito e senza registrazione. Tutti i calcoli avvengono nel browser — nessun dato viene memorizzato o inviato."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri Altri Strumenti Finanziari",
+        "description": "Esplora la nostra collezione di calcolatori finanziari gratuiti per prestiti, investimenti, budget e altro ancora."
+      }
+    },
+    "es": {
+      "slug": "calculadora-fondo-emergencia",
+      "meta": {
+        "title": "Calculadora de Fondo de Emergencia – Objetivo y Plazo | ToolFrame",
+        "description": "Calculadora gratuita de fondo de emergencia. Descubre cuánto necesitas ahorrar, en cuántos meses alcanzarás tu objetivo y la fecha estimada de finalización según tu aportación mensual.",
+        "keywords": ["calculadora fondo emergencia", "fondo de emergencia", "ahorro de seguridad", "red financiera seguridad", "objetivo ahorro", "calculadora ahorros", "colchón financiero", "ahorro mensual"]
+      },
+      "hero": {
+        "headline": "Calculadora de Fondo de Emergencia",
+        "description": "Calcula cuánto necesitas en tu fondo de emergencia, controla lo que ya has ahorrado y ve exactamente cuándo alcanzarás tu objetivo con tu aportación mensual."
+      },
+      "tool": {
+        "monthlyExpensesLabel": "Gastos Mensuales",
+        "monthlyExpensesPlaceholder": "ej. 2000",
+        "monthsOfCoverageLabel": "Meses de Cobertura",
+        "monthsOfCoveragePlaceholder": "ej. 6",
+        "currentSavingsLabel": "Ahorros Actuales",
+        "currentSavingsPlaceholder": "ej. 3000",
+        "monthlyContributionLabel": "Aportación Mensual",
+        "monthlyContributionPlaceholder": "ej. 500",
+        "currencyLabel": "Moneda",
+        "currencySymbol": "€",
+        "resultTargetLabel": "Objetivo Fondo Emergencia",
+        "resultStillNeededLabel": "Cantidad Aún Necesaria",
+        "resultMonthsToGoalLabel": "Meses hasta el Objetivo",
+        "resultCompletionDateLabel": "Fecha de Finalización",
+        "summaryTitle": "Desglose",
+        "summaryTarget": "Objetivo del fondo",
+        "summaryCurrent": "Ahorros actuales",
+        "summaryGap": "Brecha restante",
+        "summaryContribution": "Aportación mensual",
+        "summaryCompletion": "Fecha de finalización",
+        "timelineToggleLabel": "Mostrar plan de ahorro",
+        "timelineTitle": "Plan de Ahorro",
+        "timelineDescription": "Proyección mes a mes del crecimiento de tu fondo de emergencia hasta alcanzar el objetivo.",
+        "timelineColMonth": "Mes",
+        "timelineColContribution": "Aportación",
+        "timelineColCumulative": "Ahorros Acumulados",
+        "timelineColGap": "Brecha Restante",
+        "monthsUnit": "meses",
+        "goalReachedLabel": "Objetivo alcanzado"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo Usar la Calculadora de Fondo de Emergencia",
+        "steps": [
+          {
+            "title": "Ingresa Tus Gastos Mensuales",
+            "description": "Escribe el monto promedio que gastas cada mes en alquiler, comida, servicios, transporte y otras necesidades. Es la base del tamaño de tu fondo."
+          },
+          {
+            "title": "Elige los Meses de Cobertura",
+            "description": "Selecciona cuántos meses de gastos quieres cubrir. La mayoría de asesores recomiendan 3–6 meses; elige más si tu ingreso es variable o tienes dependientes."
+          },
+          {
+            "title": "Monitorea Tu Progreso",
+            "description": "Ingresa tus ahorros actuales y el monto que puedes apartar cada mes. La calculadora muestra el plazo, la fecha de finalización y una tabla mes a mes."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Qué Usar Nuestra Calculadora",
+        "sectionDescription": "Planifica tu red de seguridad financiera con claridad — sabe exactamente cuánto necesitas y cuándo llegarás.",
+        "items": [
+          {
+            "icon": "shield",
+            "title": "Seguridad a Medida",
+            "description": "Calibra tu fondo de emergencia según tus gastos reales y perfil de riesgo — entre 1 y 24 meses de cobertura."
+          },
+          {
+            "icon": "piggy-bank",
+            "title": "Seguimiento de Ahorros Actuales",
+            "description": "Incluye lo que ya has ahorrado para ver la brecha restante exacta — sin doble conteo, sin suposiciones."
+          },
+          {
+            "icon": "calendar",
+            "title": "Fecha de Finalización Prevista",
+            "description": "Ve al instante el mes y año en que alcanzas el objetivo según tu aportación — mantén la motivación con una meta clara."
+          },
+          {
+            "icon": "zap",
+            "title": "Recálculo Instantáneo",
+            "description": "Todos los resultados y el plan completo se actualizan en tiempo real al modificar cualquier valor — sin botón para enviar."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guía para Construir un Fondo de Emergencia",
+        "articles": [
+          {
+            "title": "Por Qué Importa un Fondo de Emergencia",
+            "content": "Un fondo de emergencia es una reserva dedicada que solo usas ante imprevistos financieros — pérdida de empleo, gastos médicos, reparaciones urgentes o electrodomésticos averiados. Sin él, estos eventos te empujan a deudas de alto interés que pueden tardar años en pagarse. Los asesores financieros coinciden: el fondo de emergencia es el primer objetivo de ahorro, antes de invertir, porque protege todo el resto del plan financiero. Incluso un pequeño colchón de un mes reduce drásticamente el estrés."
+          },
+          {
+            "title": "¿Cuántos Meses Debes Ahorrar?",
+            "content": "La regla clásica es 3–6 meses de gastos esenciales, pero el número correcto depende de tu situación. Con empleo estable, sin dependientes y buen seguro, 3 meses pueden bastar. Si tu ingreso es variable (freelance, comisión, estacional) o mantienes a una familia, apunta a 6–12 meses. Tras la pandemia de 2020, muchos expertos ahora recomiendan 6 meses como base. Empieza pequeño — incluso 1.000 € son mejor que nada."
+          },
+          {
+            "title": "Dónde Guardar Tu Fondo de Emergencia",
+            "content": "Un fondo de emergencia debe ser seguro y accesible, no invertido para crecimiento. Las mejores opciones son cuentas de ahorro de alto rendimiento, cuentas del mercado monetario o depósitos a corto plazo (aunque bloquean dinero). Evita acciones o criptomonedas — el objetivo es que esté ahí cuando lo necesites. Mantenlo separado de tu cuenta corriente para resistir la tentación. Trata los retiros como último recurso y reconstruye el fondo tras usarlo."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Cuánto debería tener en mi fondo de emergencia?",
+            "answer": "Multiplica tus gastos mensuales esenciales por 3–6 meses como punto de partida. Si tu ingreso es inestable o tienes dependientes, apunta a 6–12 meses. La calculadora permite de 1 a 24 meses."
+          },
+          {
+            "question": "¿Mi cuenta corriente cuenta como ahorros actuales?",
+            "answer": "No — solo cuenta el dinero específicamente apartado como ahorro de emergencia. Fondos para otros objetivos (vacaciones, entrada) o en tu cuenta corriente regular no deben incluirse."
+          },
+          {
+            "question": "¿Cómo se calcula la fecha de finalización?",
+            "answer": "Es la fecha de hoy más el número de meses necesarios para cubrir la brecha con tu aportación mensual. Ejemplo: brecha de 9.000 € a 500 €/mes = 18 meses."
+          },
+          {
+            "question": "¿Qué pasa si mi aportación mensual es cero?",
+            "answer": "Si no puedes aportar nada, la calculadora muestra solo el objetivo y la brecha. Necesitas encontrar margen en tu presupuesto antes de proyectar un plazo — incluso 50 €/mes son un comienzo."
+          },
+          {
+            "question": "¿Primero pago deudas o construyo el fondo?",
+            "answer": "Un pequeño fondo inicial (500–1.000 €) va primero, luego enfócate en deudas de alto interés y después construye el fondo completo. Esto previene endeudarse más ante imprevistos."
+          },
+          {
+            "question": "¿Esta calculadora es gratuita?",
+            "answer": "Sí, completamente gratuita y sin registro. Todos los cálculos se hacen en tu navegador — no se almacena ni envía ningún dato."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explora Más Herramientas Financieras",
+        "description": "Descubre nuestra colección de calculadoras financieras gratuitas para préstamos, inversiones, presupuestos y más."
+      }
+    }
+  }
+}

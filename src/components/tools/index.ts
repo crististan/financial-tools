@@ -18,6 +18,7 @@ import RentalYieldCalculatorTool from "./rental-yield-calculator-tool";
 import WeightVolumeConverterTool from "./weight-volume-converter-tool";
 import WeddingBudgetCalculatorTool from "./wedding-budget-calculator-tool";
 import MovingCostEstimatorTool from "./moving-cost-estimator-tool";
+import EmergencyFundCalculatorTool from "./emergency-fund-calculator-tool";
 
 // Common props that all tool components receive
 export type ToolComponentProps = {
@@ -44,6 +45,7 @@ const toolComponentMap: Record<string, ComponentType<ToolComponentProps>> = {
     "weight-volume-converter": WeightVolumeConverterTool as ComponentType<ToolComponentProps>,
     "wedding-budget-calculator": WeddingBudgetCalculatorTool as ComponentType<ToolComponentProps>,
     "moving-cost-estimator": MovingCostEstimatorTool as ComponentType<ToolComponentProps>,
+    "emergency-fund-calculator": EmergencyFundCalculatorTool as ComponentType<ToolComponentProps>,
 };
 
 export function getToolComponent(componentId: string): ComponentType<ToolComponentProps> | null {
