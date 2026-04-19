@@ -140,6 +140,7 @@ const toolModules: Record<string, () => Promise<ToolData>> = {
     "weight-volume-converter": () => import("@/data/tools/weight-volume-converter.json").then((m) => m.default as unknown as ToolData),
     "wedding-budget-calculator": () => import("@/data/tools/wedding-budget-calculator.json").then((m) => m.default as unknown as ToolData),
     "moving-cost-estimator": () => import("@/data/tools/moving-cost-estimator.json").then((m) => m.default as unknown as ToolData),
+    "emergency-fund-calculator": () => import("@/data/tools/emergency-fund-calculator.json").then((m) => m.default as unknown as ToolData),
 };
 
 const toolIds = Object.keys(toolModules);
