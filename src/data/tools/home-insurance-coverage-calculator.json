@@ -1,0 +1,834 @@
+{
+  "id": "home-insurance-coverage-calculator",
+  "component": "home-insurance-coverage-calculator",
+  "iconPath": "/icons/home-insurance-coverage-calculator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "config": {
+    "data": {
+      "rebuildRates": {
+        "masonry": 1500,
+        "mixed": 1200,
+        "wood": 1000,
+        "prefabricated": 800
+      },
+      "riskMultipliers": { "low": 1.0, "medium": 1.15, "high": 1.30 },
+      "contentsRiskAdjustment": { "low": 1.0, "medium": 1.05, "high": 1.10 },
+      "liabilityPercentage": 0.25,
+      "premiumRate": 0.004,
+      "premiumSpread": 0.15
+    }
+  },
+  "translations": {
+    "en": {
+      "slug": "home-insurance-coverage-calculator",
+      "meta": {
+        "title": "Home Insurance Coverage Calculator – Estimate Recommended Coverage | ToolFrame",
+        "description": "Free home insurance coverage calculator. Estimate dwelling, contents, and liability coverage based on property size, construction type, and location risk. See your estimated annual premium range.",
+        "keywords": ["home insurance calculator", "home insurance coverage", "dwelling coverage calculator", "contents insurance", "homeowners insurance estimate", "rebuild cost calculator", "liability coverage", "home insurance premium"]
+      },
+      "hero": {
+        "headline": "Home Insurance Coverage Calculator",
+        "description": "Estimate the home insurance coverage you need. Enter your property size, construction type, location risk, and contents value to get recommended dwelling, contents, and liability coverage — plus an estimated annual premium range."
+      },
+      "tool": {
+        "propertySizeLabel": "Property Size",
+        "propertySizePlaceholder": "e.g. 100",
+        "propertySizeUnit": "m²",
+        "constructionLabel": "Construction Type",
+        "constructionMasonry": "Masonry (brick / concrete / stone)",
+        "constructionMixed": "Mixed (part masonry, part wood)",
+        "constructionWood": "Wood frame / timber",
+        "constructionPrefab": "Prefabricated / lightweight",
+        "riskLabel": "Location Risk",
+        "riskLow": "Low",
+        "riskMedium": "Medium",
+        "riskHigh": "High",
+        "contentsLabel": "Contents Value",
+        "contentsPlaceholder": "e.g. 25000",
+        "currencyLabel": "Currency",
+        "resultDwelling": "Dwelling Coverage",
+        "resultContents": "Contents Coverage",
+        "resultLiability": "Liability Coverage",
+        "resultTotal": "Total Coverage",
+        "summaryTitle": "Coverage Breakdown",
+        "summaryRebuildRate": "Rebuild cost per m²",
+        "summaryRiskAdjustment": "Risk adjustment",
+        "summaryDwelling": "Dwelling coverage",
+        "summaryContents": "Contents coverage",
+        "summaryLiability": "Liability coverage",
+        "summaryPremiumRange": "Estimated annual premium",
+        "summaryTotal": "Total recommended coverage",
+        "currencySymbol": "$"
+      },
+      "howItWorks": {
+        "sectionTitle": "How to Use the Home Insurance Coverage Calculator",
+        "steps": [
+          {
+            "title": "Enter Property Details",
+            "description": "Input your home's size in square meters and select the construction type — masonry, mixed, wood frame, or prefabricated."
+          },
+          {
+            "title": "Choose Risk & Contents Value",
+            "description": "Pick your location risk level (low, medium, or high) and enter the estimated value of your belongings."
+          },
+          {
+            "title": "Review Recommended Coverage",
+            "description": "See dwelling, contents, liability, and total recommended coverage instantly, along with an estimated annual premium range."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Why Use Our Home Insurance Calculator",
+        "sectionDescription": "Make informed decisions about your home insurance coverage with realistic estimates.",
+        "items": [
+          {
+            "icon": "home",
+            "title": "Rebuild Cost Estimates",
+            "description": "Dwelling coverage is based on construction type and location — not just market value — so you know what it costs to rebuild."
+          },
+          {
+            "icon": "shield",
+            "title": "Risk-Adjusted Coverage",
+            "description": "Location risk adjusts both dwelling and contents recommendations, reflecting higher exposure in medium and high-risk areas."
+          },
+          {
+            "icon": "package",
+            "title": "Contents Protection",
+            "description": "Enter the value of your belongings to see how much contents coverage you should carry."
+          },
+          {
+            "icon": "wallet",
+            "title": "Premium Range Estimate",
+            "description": "See a realistic annual premium range (±15%) based on your total recommended coverage."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide to Home Insurance Coverage",
+        "articles": [
+          {
+            "title": "How Much Dwelling Coverage Do You Need",
+            "content": "Dwelling coverage should reflect the cost to rebuild your home from scratch, not its market value. Rebuild cost depends on construction type, labor rates, and local materials. Masonry homes typically cost more per square meter to rebuild than wood or prefabricated structures because of material and labor intensity. Location matters too — homes in areas prone to flooding, earthquakes, or severe weather carry more risk, which is reflected in both premiums and recommended coverage. Under-insuring your dwelling can leave you with a large out-of-pocket gap after a total loss, while over-insuring means paying for coverage you'll never use. Aim to match coverage to current rebuild costs and review it every few years as construction prices change."
+          },
+          {
+            "title": "Understanding Contents and Liability Coverage",
+            "content": "Contents coverage protects your personal belongings — furniture, electronics, clothing, and appliances — if they're damaged, destroyed, or stolen. A good rule of thumb is to do a full inventory: walk through each room and estimate the replacement cost of what's inside. Don't forget high-value items like jewelry, art, or musical instruments, which may need separate riders. Liability coverage protects you if someone is injured on your property and decides to sue, or if you or a family member accidentally damage someone else's property. A typical recommendation is to carry liability equal to at least 25% of your dwelling coverage, though higher limits are often inexpensive and worth considering."
+          },
+          {
+            "title": "What Affects Your Home Insurance Premium",
+            "content": "Premiums are influenced by several factors: the total insured value (dwelling + contents + liability), construction type, age of the home, roof condition, proximity to a fire station, and local risk factors like weather, crime, and natural hazards. Installing smoke detectors, security systems, storm shutters, or a reinforced roof can lower your premium. Raising your deductible is another lever — a higher deductible means a lower annual premium but more out-of-pocket costs if you file a claim. Bundling home and auto insurance with one carrier, maintaining good credit, and staying claim-free for several years typically earn further discounts. Shop around every 2–3 years to make sure you're still getting a competitive rate."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Frequently Asked Questions",
+        "items": [
+          {
+            "question": "How accurate is this coverage estimate?",
+            "answer": "This calculator provides a realistic starting point based on typical rebuild rates, risk multipliers, and industry norms. Actual rebuild costs and premiums vary by carrier, region, and individual property characteristics. Use the estimate as a guide and compare it with quotes from licensed insurers."
+          },
+          {
+            "question": "Why is rebuild cost different from market value?",
+            "answer": "Market value includes the land, location premium, and demand — none of which need to be rebuilt after a loss. Rebuild cost is purely the price of materials and labor to reconstruct your home. Depending on the market, rebuild cost can be significantly higher or lower than market value."
+          },
+          {
+            "question": "What counts as high location risk?",
+            "answer": "High-risk locations include flood-prone areas, wildfire zones, earthquake zones, coastal regions exposed to storms, and neighborhoods with elevated crime rates. Your insurer or local risk map can confirm how your address is classified."
+          },
+          {
+            "question": "Why is liability coverage recommended at 25% of dwelling?",
+            "answer": "Using 25% of dwelling value is a common starting point, but many homeowners carry much higher liability limits (often $300,000–$500,000) because the marginal cost is low relative to the protection. If you have significant assets, consider an umbrella policy on top of your home liability coverage."
+          },
+          {
+            "question": "Does this calculator account for earthquake or flood insurance?",
+            "answer": "No — earthquake and flood damage are typically excluded from standard home policies and require separate coverage. This calculator estimates standard homeowners coverage only."
+          },
+          {
+            "question": "How often should I update my coverage?",
+            "answer": "Review your coverage at least once every two to three years, or any time you do a major renovation, buy expensive items, or see large changes in local construction costs. Inflation and supply shocks can quickly make older coverage inadequate."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explore More Financial Tools",
+        "description": "Discover our collection of free financial calculators for loans, investments, budgeting, and more."
+      }
+    },
+    "ro": {
+      "slug": "calculator-asigurare-locuinta",
+      "meta": {
+        "title": "Calculator Asigurare Locuință – Estimează Acoperirea Recomandată | ToolFrame",
+        "description": "Calculator gratuit pentru asigurarea locuinței. Estimează acoperirea pentru clădire, bunuri și răspundere civilă în funcție de suprafață, tip construcție și risc de locație. Vezi și o estimare a primei anuale.",
+        "keywords": ["calculator asigurare locuinta", "asigurare casa", "acoperire asigurare locuinta", "asigurare bunuri", "asigurare raspundere civila", "prima asigurare casa", "estimare asigurare locuinta", "cost reconstructie casa"]
+      },
+      "hero": {
+        "headline": "Calculator Asigurare Locuință",
+        "description": "Estimează acoperirea necesară pentru asigurarea locuinței. Introdu suprafața, tipul de construcție, riscul locației și valoarea bunurilor pentru a vedea acoperirea recomandată și intervalul estimat al primei anuale."
+      },
+      "tool": {
+        "propertySizeLabel": "Suprafața Locuinței",
+        "propertySizePlaceholder": "ex. 100",
+        "propertySizeUnit": "m²",
+        "constructionLabel": "Tip Construcție",
+        "constructionMasonry": "Zidărie (cărămidă / beton / piatră)",
+        "constructionMixed": "Mixtă (parțial zidărie, parțial lemn)",
+        "constructionWood": "Structură din lemn",
+        "constructionPrefab": "Prefabricată / ușoară",
+        "riskLabel": "Risc Locație",
+        "riskLow": "Scăzut",
+        "riskMedium": "Mediu",
+        "riskHigh": "Ridicat",
+        "contentsLabel": "Valoare Bunuri",
+        "contentsPlaceholder": "ex. 25000",
+        "currencyLabel": "Monedă",
+        "resultDwelling": "Acoperire Clădire",
+        "resultContents": "Acoperire Bunuri",
+        "resultLiability": "Răspundere Civilă",
+        "resultTotal": "Acoperire Totală",
+        "summaryTitle": "Detaliere Acoperire",
+        "summaryRebuildRate": "Cost reconstrucție pe m²",
+        "summaryRiskAdjustment": "Ajustare risc",
+        "summaryDwelling": "Acoperire clădire",
+        "summaryContents": "Acoperire bunuri",
+        "summaryLiability": "Răspundere civilă",
+        "summaryPremiumRange": "Prima anuală estimată",
+        "summaryTotal": "Acoperire totală recomandată",
+        "currencySymbol": "lei"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum Folosești Calculatorul de Asigurare",
+        "steps": [
+          {
+            "title": "Introdu Datele Locuinței",
+            "description": "Completează suprafața locuinței în metri pătrați și selectează tipul de construcție — zidărie, mixtă, lemn sau prefabricată."
+          },
+          {
+            "title": "Alege Riscul și Valoarea Bunurilor",
+            "description": "Selectează nivelul de risc al locației (scăzut, mediu sau ridicat) și introdu valoarea estimată a bunurilor tale."
+          },
+          {
+            "title": "Verifică Acoperirea Recomandată",
+            "description": "Vezi instant acoperirea pentru clădire, bunuri, răspundere civilă și total, împreună cu o estimare a primei anuale."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De Ce Să Folosești Calculatorul Nostru",
+        "sectionDescription": "Ia decizii informate despre asigurarea locuinței cu estimări realiste.",
+        "items": [
+          {
+            "icon": "home",
+            "title": "Estimare Cost Reconstrucție",
+            "description": "Acoperirea clădirii se bazează pe tipul de construcție și locație — nu pe valoarea de piață — ca să știi cât costă reconstrucția."
+          },
+          {
+            "icon": "shield",
+            "title": "Acoperire Ajustată la Risc",
+            "description": "Riscul locației ajustează recomandările pentru clădire și bunuri, reflectând expunerea mai mare în zonele cu risc mediu și ridicat."
+          },
+          {
+            "icon": "package",
+            "title": "Protecție Bunuri",
+            "description": "Introdu valoarea bunurilor pentru a vedea cât ar trebui să acopere asigurarea pentru conținutul locuinței."
+          },
+          {
+            "icon": "wallet",
+            "title": "Interval Prima Estimată",
+            "description": "Vezi un interval realist al primei anuale (±15%) calculat pe baza acoperirii totale recomandate."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid pentru Asigurarea Locuinței",
+        "articles": [
+          {
+            "title": "Câtă Acoperire pentru Clădire Îți Trebuie",
+            "content": "Acoperirea clădirii ar trebui să reflecte costul reconstruirii locuinței de la zero, nu valoarea de piață. Costul de reconstrucție depinde de tipul de construcție, de prețul manoperei și al materialelor. Casele din zidărie costă de regulă mai mult pe metru pătrat la reconstrucție decât cele din lemn sau prefabricate. Și locația contează — casele din zone expuse la inundații, cutremure sau furtuni au un risc mai mare, reflectat atât în primele de asigurare, cât și în acoperirea recomandată. Subasigurarea poate lăsa goluri mari după o pagubă totală, iar supraasigurarea înseamnă să plătești pentru o acoperire de care nu ai nevoie."
+          },
+          {
+            "title": "Acoperire pentru Bunuri și Răspundere Civilă",
+            "content": "Acoperirea bunurilor protejează bunurile personale — mobilă, electronice, haine, electrocasnice — dacă sunt deteriorate, distruse sau furate. O regulă bună este să faci un inventar complet: parcurge fiecare cameră și estimează costul de înlocuire. Nu uita bijuteriile, arta sau instrumentele muzicale, care pot necesita clauze separate. Răspunderea civilă te protejează dacă cineva se rănește la tine acasă și te dă în judecată, sau dacă tu sau un membru al familiei produceți accidental daune altor persoane. O recomandare tipică este ca răspunderea să fie cel puțin 25% din acoperirea clădirii."
+          },
+          {
+            "title": "Ce Influențează Prima de Asigurare",
+            "content": "Prima este influențată de mai mulți factori: valoarea totală asigurată (clădire + bunuri + răspundere), tipul de construcție, vechimea casei, starea acoperișului, distanța față de cea mai apropiată unitate de pompieri și factorii locali de risc, precum vremea, infracționalitatea și hazardele naturale. Instalarea detectoarelor de fum, a sistemelor de alarmă sau a unui acoperiș consolidat poate reduce prima. Creșterea franșizei este altă pârghie — o franșiză mai mare înseamnă o primă mai mică, dar costuri mai mari în caz de daună. Pachetele cu mai multe polițe la același asigurător și lipsa daunelor în ultimii ani aduc de obicei reduceri suplimentare."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări Frecvente",
+        "items": [
+          {
+            "question": "Cât de precisă este estimarea?",
+            "answer": "Acest calculator oferă un punct de plecare realist bazat pe costuri tipice de reconstrucție, multiplicatori de risc și norme de piață. Costurile reale și primele variază în funcție de asigurător, regiune și caracteristicile proprietății. Folosește estimarea ca ghid și compar-o cu oferte de la asigurători autorizați."
+          },
+          {
+            "question": "De ce costul de reconstrucție diferă de valoarea de piață?",
+            "answer": "Valoarea de piață include terenul, poziționarea și cererea — niciuna nu trebuie reconstruită după o pagubă. Costul de reconstrucție este strict prețul materialelor și al manoperei pentru a reface locuința. În funcție de piață, acesta poate fi semnificativ mai mare sau mai mic decât valoarea de piață."
+          },
+          {
+            "question": "Ce înseamnă risc ridicat al locației?",
+            "answer": "Locațiile cu risc ridicat includ zone predispuse la inundații, zone seismice, regiuni de coastă expuse la furtuni și cartiere cu rate mai mari de infracționalitate. Asigurătorul sau harta locală de risc pot confirma cum este clasificată adresa ta."
+          },
+          {
+            "question": "De ce răspunderea este recomandată la 25% din clădire?",
+            "answer": "25% din valoarea clădirii este un punct de plecare uzual, dar mulți proprietari aleg limite mult mai mari, deoarece costul marginal este scăzut raportat la protecția oferită. Dacă ai active semnificative, ia în calcul și o poliță umbrelă peste răspunderea din locuință."
+          },
+          {
+            "question": "Calculatorul ia în considerare cutremurele sau inundațiile?",
+            "answer": "Nu — daunele din cutremure și inundații sunt de regulă excluse din polițele standard și necesită acoperire separată. Acest calculator estimează doar asigurarea standard a locuinței."
+          },
+          {
+            "question": "Cât de des ar trebui să actualizez acoperirea?",
+            "answer": "Revizuiește acoperirea cel puțin o dată la doi-trei ani sau de fiecare dată când faci o renovare majoră, cumperi obiecte scumpe sau observi schimbări mari în costurile locale de construcție. Inflația poate face rapid ca polițele vechi să fie insuficiente."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explorează Mai Multe Instrumente Financiare",
+        "description": "Descoperă colecția noastră de calculatoare financiare gratuite pentru împrumuturi, investiții, bugetare și multe altele."
+      }
+    },
+    "de": {
+      "slug": "hausversicherung-deckung-rechner",
+      "meta": {
+        "title": "Hausversicherung Deckung Rechner – Empfohlene Versicherungssumme | ToolFrame",
+        "description": "Kostenloser Rechner für die Hausversicherung. Schätzen Sie Gebäude-, Hausrat- und Haftpflichtdeckung basierend auf Wohnfläche, Bauweise und Standortrisiko. Inklusive geschätztem Jahresbeitrag.",
+        "keywords": ["hausversicherung rechner", "wohngebäudeversicherung", "hausratversicherung rechner", "haftpflicht deckung", "versicherungssumme haus", "gebäudeversicherung berechnen", "wiederaufbauwert", "hausversicherung prämie"]
+      },
+      "hero": {
+        "headline": "Hausversicherung Deckungsrechner",
+        "description": "Schätzen Sie die benötigte Versicherungssumme für Ihr Haus. Geben Sie Wohnfläche, Bauweise, Standortrisiko und Hausratwert ein, um empfohlene Deckungen für Gebäude, Hausrat und Haftpflicht sowie einen geschätzten Jahresbeitrag zu erhalten."
+      },
+      "tool": {
+        "propertySizeLabel": "Wohnfläche",
+        "propertySizePlaceholder": "z.B. 100",
+        "propertySizeUnit": "m²",
+        "constructionLabel": "Bauweise",
+        "constructionMasonry": "Massivbau (Ziegel / Beton / Stein)",
+        "constructionMixed": "Gemischt (teils massiv, teils Holz)",
+        "constructionWood": "Holzrahmen / Holzbau",
+        "constructionPrefab": "Fertigbau / Leichtbau",
+        "riskLabel": "Standortrisiko",
+        "riskLow": "Niedrig",
+        "riskMedium": "Mittel",
+        "riskHigh": "Hoch",
+        "contentsLabel": "Hausratwert",
+        "contentsPlaceholder": "z.B. 25000",
+        "currencyLabel": "Währung",
+        "resultDwelling": "Gebäudedeckung",
+        "resultContents": "Hausratdeckung",
+        "resultLiability": "Haftpflichtdeckung",
+        "resultTotal": "Gesamtdeckung",
+        "summaryTitle": "Deckungsaufschlüsselung",
+        "summaryRebuildRate": "Wiederaufbaukosten pro m²",
+        "summaryRiskAdjustment": "Risikozuschlag",
+        "summaryDwelling": "Gebäudedeckung",
+        "summaryContents": "Hausratdeckung",
+        "summaryLiability": "Haftpflichtdeckung",
+        "summaryPremiumRange": "Geschätzter Jahresbeitrag",
+        "summaryTotal": "Empfohlene Gesamtdeckung",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "So Verwenden Sie den Hausversicherungsrechner",
+        "steps": [
+          {
+            "title": "Objektdaten Eingeben",
+            "description": "Geben Sie die Wohnfläche in Quadratmetern ein und wählen Sie die Bauweise — Massivbau, gemischt, Holzbau oder Fertigbau."
+          },
+          {
+            "title": "Risiko und Hausratwert Wählen",
+            "description": "Wählen Sie das Standortrisiko (niedrig, mittel oder hoch) und geben Sie den geschätzten Wert Ihres Hausrats ein."
+          },
+          {
+            "title": "Empfohlene Deckung Prüfen",
+            "description": "Sehen Sie sofort Gebäude-, Hausrat-, Haftpflicht- und Gesamtdeckung sowie einen geschätzten Jahresbeitrag."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Warum Unseren Rechner Nutzen",
+        "sectionDescription": "Treffen Sie fundierte Entscheidungen zu Ihrer Hausversicherung mit realistischen Schätzungen.",
+        "items": [
+          {
+            "icon": "home",
+            "title": "Wiederaufbaukosten",
+            "description": "Die Gebäudedeckung basiert auf Bauweise und Standort — nicht auf dem Marktwert — damit Sie die tatsächlichen Wiederaufbaukosten kennen."
+          },
+          {
+            "icon": "shield",
+            "title": "Risikogerechte Deckung",
+            "description": "Das Standortrisiko passt die Empfehlungen für Gebäude und Hausrat an und spiegelt höhere Gefährdung in Regionen mit mittlerem oder hohem Risiko wider."
+          },
+          {
+            "icon": "package",
+            "title": "Hausratschutz",
+            "description": "Geben Sie den Hausratwert ein, um zu sehen, wie hoch die Hausratversicherung sein sollte."
+          },
+          {
+            "icon": "wallet",
+            "title": "Beitragsbereich",
+            "description": "Sehen Sie einen realistischen Jahresbeitragsbereich (±15%) basierend auf Ihrer empfohlenen Gesamtdeckung."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ratgeber zur Hausversicherung",
+        "articles": [
+          {
+            "title": "Wie Viel Gebäudedeckung Brauchen Sie",
+            "content": "Die Gebäudedeckung sollte die Kosten für den vollständigen Wiederaufbau Ihres Hauses widerspiegeln, nicht den Marktwert. Die Wiederaufbaukosten hängen von Bauweise, Lohn- und Materialpreisen ab. Massivhäuser kosten in der Regel mehr pro Quadratmeter als Holz- oder Fertighäuser. Auch der Standort zählt — Häuser in Hochwasser-, Erdbeben- oder Sturmzonen tragen ein höheres Risiko. Unterversicherung kann nach einem Totalschaden zu erheblichen Deckungslücken führen, während Überversicherung nur zusätzliche Kosten verursacht. Überprüfen Sie Ihre Summen alle paar Jahre, da sich Baukosten stark ändern können."
+          },
+          {
+            "title": "Hausrat- und Haftpflichtdeckung Verstehen",
+            "content": "Die Hausratdeckung schützt persönliche Gegenstände — Möbel, Elektronik, Kleidung, Haushaltsgeräte — bei Beschädigung, Zerstörung oder Diebstahl. Eine gute Methode ist eine vollständige Inventur: Gehen Sie durch jeden Raum und schätzen Sie die Wiederbeschaffungskosten. Denken Sie an hochwertige Gegenstände wie Schmuck, Kunst oder Musikinstrumente, die gesonderte Zusatzvereinbarungen benötigen können. Die Haftpflichtdeckung schützt Sie, wenn sich jemand auf Ihrem Grundstück verletzt oder wenn Sie versehentlich fremdes Eigentum beschädigen. Eine übliche Empfehlung liegt bei mindestens 25% der Gebäudedeckung."
+          },
+          {
+            "title": "Was Beeinflusst Ihren Beitrag",
+            "content": "Der Beitrag hängt von mehreren Faktoren ab: Gesamtversicherungssumme (Gebäude + Hausrat + Haftpflicht), Bauweise, Alter des Hauses, Dachzustand, Entfernung zur Feuerwache sowie lokale Risikofaktoren wie Wetter, Kriminalität und Naturgefahren. Rauchmelder, Alarmanlagen oder ein verstärktes Dach können den Beitrag senken. Eine höhere Selbstbeteiligung reduziert ebenfalls den Jahresbeitrag, erhöht aber die Eigenkosten im Schadensfall. Kombinierte Verträge (z.B. Haus und Auto beim selben Versicherer) und Schadenfreiheit bringen oft zusätzliche Rabatte."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Häufig Gestellte Fragen",
+        "items": [
+          {
+            "question": "Wie genau ist die Schätzung?",
+            "answer": "Dieser Rechner bietet einen realistischen Ausgangspunkt auf Basis typischer Wiederaufbaukosten, Risikofaktoren und Marktwerte. Tatsächliche Kosten und Beiträge variieren je nach Versicherer, Region und Objekt. Vergleichen Sie die Schätzung mit Angeboten lizenzierter Versicherer."
+          },
+          {
+            "question": "Warum unterscheidet sich Wiederaufbauwert vom Marktwert?",
+            "answer": "Der Marktwert enthält Grundstück, Lage und Nachfrage — keines davon muss nach einem Schaden wieder aufgebaut werden. Der Wiederaufbauwert ist der reine Preis für Material und Arbeit, um das Haus neu zu errichten. Er kann je nach Markt deutlich höher oder niedriger als der Marktwert sein."
+          },
+          {
+            "question": "Was zählt als hohes Standortrisiko?",
+            "answer": "Hochrisikolagen umfassen Hochwasser-, Erdbeben- und Sturmgebiete, Küstenregionen sowie Gegenden mit erhöhter Kriminalitätsrate. Ihr Versicherer oder lokale Risikokarten zeigen, wie Ihre Adresse eingestuft wird."
+          },
+          {
+            "question": "Warum sind 25% der Gebäudedeckung für Haftpflicht?",
+            "answer": "25% ist ein üblicher Ausgangspunkt, doch viele Hausbesitzer wählen deutlich höhere Haftpflichtsummen, da die Mehrkosten im Verhältnis zum Schutz gering sind. Bei hohem Vermögen kann eine zusätzliche Privathaftpflicht-Schirmpolice sinnvoll sein."
+          },
+          {
+            "question": "Berücksichtigt der Rechner Erdbeben oder Hochwasser?",
+            "answer": "Nein — Erdbeben- und Hochwasserschäden sind in Standardpolicen meist ausgeschlossen und erfordern gesonderte Deckung. Dieser Rechner schätzt nur die Standard-Wohngebäudedeckung."
+          },
+          {
+            "question": "Wie oft sollte ich die Deckung aktualisieren?",
+            "answer": "Überprüfen Sie Ihre Deckung mindestens alle zwei bis drei Jahre oder wenn Sie eine größere Renovierung durchführen, teure Gegenstände kaufen oder sich die Baukosten stark ändern. Inflation kann ältere Policen schnell unzureichend machen."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Weitere Finanztools Entdecken",
+        "description": "Entdecken Sie unsere Sammlung kostenloser Finanzrechner für Kredite, Investitionen, Budgetplanung und mehr."
+      }
+    },
+    "fr": {
+      "slug": "calculateur-couverture-assurance-habitation",
+      "meta": {
+        "title": "Calculateur Couverture Assurance Habitation – Estimez Votre Garantie | ToolFrame",
+        "description": "Calculateur gratuit de couverture d'assurance habitation. Estimez les garanties bâtiment, contenu et responsabilité civile selon la surface, le type de construction et le risque de la zone. Prime annuelle estimée incluse.",
+        "keywords": ["calculateur assurance habitation", "couverture assurance maison", "garantie batiment", "assurance contenu", "responsabilite civile habitation", "prime assurance habitation", "cout reconstruction maison", "assurance logement"]
+      },
+      "hero": {
+        "headline": "Calculateur Couverture Assurance Habitation",
+        "description": "Estimez la couverture d'assurance nécessaire pour votre logement. Saisissez la surface, le type de construction, le risque de la zone et la valeur du contenu pour obtenir des garanties recommandées et une estimation de la prime annuelle."
+      },
+      "tool": {
+        "propertySizeLabel": "Surface du Logement",
+        "propertySizePlaceholder": "ex. 100",
+        "propertySizeUnit": "m²",
+        "constructionLabel": "Type de Construction",
+        "constructionMasonry": "Maçonnerie (brique / béton / pierre)",
+        "constructionMixed": "Mixte (partie maçonnerie, partie bois)",
+        "constructionWood": "Ossature bois",
+        "constructionPrefab": "Préfabriqué / léger",
+        "riskLabel": "Risque de la Zone",
+        "riskLow": "Faible",
+        "riskMedium": "Moyen",
+        "riskHigh": "Élevé",
+        "contentsLabel": "Valeur du Contenu",
+        "contentsPlaceholder": "ex. 25000",
+        "currencyLabel": "Devise",
+        "resultDwelling": "Garantie Bâtiment",
+        "resultContents": "Garantie Contenu",
+        "resultLiability": "Responsabilité Civile",
+        "resultTotal": "Couverture Totale",
+        "summaryTitle": "Détail de la Couverture",
+        "summaryRebuildRate": "Coût de reconstruction au m²",
+        "summaryRiskAdjustment": "Ajustement du risque",
+        "summaryDwelling": "Garantie bâtiment",
+        "summaryContents": "Garantie contenu",
+        "summaryLiability": "Responsabilité civile",
+        "summaryPremiumRange": "Prime annuelle estimée",
+        "summaryTotal": "Couverture totale recommandée",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Comment Utiliser le Calculateur",
+        "steps": [
+          {
+            "title": "Entrez les Détails du Logement",
+            "description": "Saisissez la surface en mètres carrés et sélectionnez le type de construction — maçonnerie, mixte, ossature bois ou préfabriqué."
+          },
+          {
+            "title": "Choisissez le Risque et la Valeur du Contenu",
+            "description": "Sélectionnez le niveau de risque de la zone (faible, moyen ou élevé) et saisissez la valeur estimée de vos biens."
+          },
+          {
+            "title": "Consultez la Couverture Recommandée",
+            "description": "Voyez instantanément les garanties bâtiment, contenu, responsabilité civile et totale, ainsi qu'une prime annuelle estimée."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Pourquoi Utiliser Notre Calculateur",
+        "sectionDescription": "Prenez des décisions éclairées sur votre assurance habitation grâce à des estimations réalistes.",
+        "items": [
+          {
+            "icon": "home",
+            "title": "Coût de Reconstruction",
+            "description": "La garantie bâtiment se base sur le type de construction et la zone — pas sur la valeur du marché — pour refléter le coût réel de reconstruction."
+          },
+          {
+            "icon": "shield",
+            "title": "Couverture Ajustée au Risque",
+            "description": "Le risque de la zone ajuste les recommandations pour le bâtiment et le contenu selon l'exposition locale."
+          },
+          {
+            "icon": "package",
+            "title": "Protection du Contenu",
+            "description": "Saisissez la valeur de vos biens pour voir quel montant de garantie contenu souscrire."
+          },
+          {
+            "icon": "wallet",
+            "title": "Fourchette de Prime",
+            "description": "Obtenez une fourchette réaliste de prime annuelle (±15%) basée sur la couverture totale recommandée."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guide de l'Assurance Habitation",
+        "articles": [
+          {
+            "title": "Quelle Garantie Bâtiment Vous Faut-il",
+            "content": "La garantie bâtiment doit refléter le coût de reconstruction du logement à neuf, pas sa valeur de marché. Le coût de reconstruction dépend du type de construction, des tarifs de main-d'œuvre et des matériaux. Les maisons en maçonnerie coûtent généralement plus cher au mètre carré à reconstruire que les maisons à ossature bois ou préfabriquées. La localisation compte aussi — les zones inondables, sismiques ou exposées aux tempêtes présentent un risque accru, reflété dans les primes et dans les couvertures recommandées. Une sous-assurance laisse un reste à charge important après un sinistre majeur, tandis qu'une sur-assurance fait payer une protection inutile."
+          },
+          {
+            "title": "Comprendre le Contenu et la Responsabilité Civile",
+            "content": "La garantie contenu couvre vos biens personnels — mobilier, électronique, vêtements, électroménager — en cas de dommage, destruction ou vol. Une bonne pratique consiste à faire un inventaire complet pièce par pièce et à estimer le coût de remplacement. N'oubliez pas les objets de valeur comme les bijoux, œuvres d'art ou instruments, qui peuvent nécessiter des avenants. La responsabilité civile vous protège si une personne se blesse chez vous ou si vous causez des dommages à autrui. Une recommandation courante est de souscrire une responsabilité d'au moins 25% du montant bâtiment."
+          },
+          {
+            "title": "Ce qui Influence Votre Prime",
+            "content": "La prime dépend de plusieurs facteurs : la somme totale assurée (bâtiment + contenu + responsabilité), le type de construction, l'âge du logement, l'état du toit, la distance avec la caserne de pompiers, et les facteurs de risque locaux (météo, délinquance, risques naturels). Détecteurs de fumée, alarmes ou toiture renforcée peuvent réduire la prime. Augmenter la franchise diminue aussi la prime annuelle mais augmente le reste à charge en cas de sinistre. Regrouper plusieurs contrats chez le même assureur ou rester sans sinistre pendant plusieurs années donne souvent droit à des remises."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Questions Fréquemment Posées",
+        "items": [
+          {
+            "question": "Quelle est la précision de l'estimation ?",
+            "answer": "Ce calculateur fournit un point de départ réaliste basé sur des coûts de reconstruction typiques, des facteurs de risque et des normes du marché. Les coûts et primes réels varient selon l'assureur, la région et le logement. Utilisez cette estimation comme guide et comparez-la avec des devis d'assureurs agréés."
+          },
+          {
+            "question": "Pourquoi le coût de reconstruction diffère-t-il de la valeur de marché ?",
+            "answer": "La valeur de marché inclut le terrain, l'emplacement et la demande — aucun de ces éléments ne doit être reconstruit après un sinistre. Le coût de reconstruction correspond uniquement au prix des matériaux et de la main-d'œuvre. Selon le marché, il peut être supérieur ou inférieur à la valeur de marché."
+          },
+          {
+            "question": "Qu'est-ce qu'un risque élevé de zone ?",
+            "answer": "Les zones à risque élevé incluent les zones inondables, sismiques, côtières exposées aux tempêtes et les quartiers à forte délinquance. Votre assureur ou la carte locale des risques peut confirmer la classification de votre adresse."
+          },
+          {
+            "question": "Pourquoi la responsabilité à 25% du bâtiment ?",
+            "answer": "25% est un point de départ courant, mais beaucoup de propriétaires souscrivent des limites de responsabilité plus élevées car le coût marginal est faible comparé à la protection. Si vous disposez d'un patrimoine important, envisagez une assurance parapluie complémentaire."
+          },
+          {
+            "question": "Ce calculateur couvre-t-il les séismes ou inondations ?",
+            "answer": "Non — les dommages liés aux séismes et inondations sont généralement exclus des contrats standards et nécessitent des garanties spécifiques. Ce calculateur estime uniquement l'assurance habitation standard."
+          },
+          {
+            "question": "À quelle fréquence mettre à jour ma couverture ?",
+            "answer": "Revoyez votre couverture au moins tous les deux ou trois ans, ou après une rénovation importante, l'achat d'objets de valeur ou lors d'évolutions fortes des coûts de construction. L'inflation peut vite rendre une couverture ancienne insuffisante."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Découvrez Plus d'Outils Financiers",
+        "description": "Explorez notre collection de calculateurs financiers gratuits pour les prêts, investissements, budgets et plus encore."
+      }
+    },
+    "it": {
+      "slug": "calcolatore-copertura-assicurazione-casa",
+      "meta": {
+        "title": "Calcolatore Copertura Assicurazione Casa – Stima la Polizza Consigliata | ToolFrame",
+        "description": "Calcolatore gratuito per l'assicurazione casa. Stima coperture fabbricato, contenuto e responsabilità civile in base a superficie, tipo di costruzione e rischio della zona. Con stima del premio annuo.",
+        "keywords": ["calcolatore assicurazione casa", "copertura assicurazione abitazione", "polizza fabbricato", "assicurazione contenuto", "responsabilita civile casa", "premio assicurazione casa", "costo ricostruzione casa", "polizza abitazione"]
+      },
+      "hero": {
+        "headline": "Calcolatore Copertura Assicurazione Casa",
+        "description": "Stima la copertura necessaria per l'assicurazione della casa. Inserisci superficie, tipo di costruzione, rischio della zona e valore del contenuto per ottenere coperture consigliate e una stima del premio annuo."
+      },
+      "tool": {
+        "propertySizeLabel": "Superficie Abitazione",
+        "propertySizePlaceholder": "es. 100",
+        "propertySizeUnit": "m²",
+        "constructionLabel": "Tipo di Costruzione",
+        "constructionMasonry": "Muratura (mattoni / cemento / pietra)",
+        "constructionMixed": "Mista (parte muratura, parte legno)",
+        "constructionWood": "Struttura in legno",
+        "constructionPrefab": "Prefabbricata / leggera",
+        "riskLabel": "Rischio della Zona",
+        "riskLow": "Basso",
+        "riskMedium": "Medio",
+        "riskHigh": "Alto",
+        "contentsLabel": "Valore del Contenuto",
+        "contentsPlaceholder": "es. 25000",
+        "currencyLabel": "Valuta",
+        "resultDwelling": "Copertura Fabbricato",
+        "resultContents": "Copertura Contenuto",
+        "resultLiability": "Responsabilità Civile",
+        "resultTotal": "Copertura Totale",
+        "summaryTitle": "Dettaglio Copertura",
+        "summaryRebuildRate": "Costo ricostruzione al m²",
+        "summaryRiskAdjustment": "Adeguamento rischio",
+        "summaryDwelling": "Copertura fabbricato",
+        "summaryContents": "Copertura contenuto",
+        "summaryLiability": "Responsabilità civile",
+        "summaryPremiumRange": "Premio annuo stimato",
+        "summaryTotal": "Copertura totale consigliata",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Come Usare il Calcolatore",
+        "steps": [
+          {
+            "title": "Inserisci i Dati della Casa",
+            "description": "Inserisci la superficie in metri quadrati e seleziona il tipo di costruzione — muratura, mista, legno o prefabbricata."
+          },
+          {
+            "title": "Scegli Rischio e Valore Contenuto",
+            "description": "Seleziona il rischio della zona (basso, medio o alto) e inserisci il valore stimato dei tuoi beni."
+          },
+          {
+            "title": "Controlla la Copertura Consigliata",
+            "description": "Visualizza subito le coperture fabbricato, contenuto, responsabilità civile e totale, oltre a una stima del premio annuo."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Perché Usare il Nostro Calcolatore",
+        "sectionDescription": "Prendi decisioni informate sulla tua assicurazione casa con stime realistiche.",
+        "items": [
+          {
+            "icon": "home",
+            "title": "Stima Costo Ricostruzione",
+            "description": "La copertura del fabbricato si basa su tipo di costruzione e zona — non sul valore di mercato — per riflettere il costo reale di ricostruzione."
+          },
+          {
+            "icon": "shield",
+            "title": "Copertura in Base al Rischio",
+            "description": "Il rischio della zona adegua le raccomandazioni per fabbricato e contenuto in base all'esposizione locale."
+          },
+          {
+            "icon": "package",
+            "title": "Protezione del Contenuto",
+            "description": "Inserisci il valore dei beni per vedere quanto dovrebbe coprire la polizza per il contenuto della casa."
+          },
+          {
+            "icon": "wallet",
+            "title": "Intervallo di Premio",
+            "description": "Ottieni un intervallo realistico di premio annuo (±15%) basato sulla copertura totale consigliata."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guida all'Assicurazione Casa",
+        "articles": [
+          {
+            "title": "Quanta Copertura Fabbricato Serve",
+            "content": "La copertura del fabbricato dovrebbe riflettere il costo di ricostruzione della casa da zero, non il valore di mercato. Il costo di ricostruzione dipende da tipo di costruzione, tariffe della manodopera e prezzi dei materiali. Le case in muratura costano di solito di più al metro quadrato rispetto a quelle in legno o prefabbricate. Anche la posizione conta — gli immobili in zone a rischio alluvioni, sismi o tempeste hanno un'esposizione maggiore, riflessa sia nei premi sia nelle coperture consigliate. Una sotto-assicurazione può lasciare grosse lacune dopo un sinistro totale, mentre una sovra-assicurazione fa pagare per una protezione che non serve."
+          },
+          {
+            "title": "Capire Contenuto e Responsabilità Civile",
+            "content": "La copertura contenuto tutela mobilia, elettronica, abbigliamento ed elettrodomestici in caso di danni, distruzione o furto. Un buon metodo è un inventario completo stanza per stanza, stimando il costo di sostituzione. Ricorda oggetti di valore come gioielli, opere d'arte o strumenti musicali, che possono richiedere clausole specifiche. La responsabilità civile protegge se qualcuno si infortuna in casa tua o se tu o un familiare causate danni a terzi. Una raccomandazione tipica è fissare la responsabilità ad almeno il 25% della copertura fabbricato."
+          },
+          {
+            "title": "Cosa Influenza il Premio",
+            "content": "Il premio dipende da vari fattori: somma totale assicurata (fabbricato + contenuto + responsabilità), tipo di costruzione, età dell'abitazione, stato del tetto, distanza dai vigili del fuoco e fattori di rischio locali come clima, criminalità e pericoli naturali. Rilevatori di fumo, allarmi o un tetto rinforzato possono ridurre il premio. Aumentare la franchigia riduce il premio annuo ma aumenta la quota a carico in caso di sinistro. Polizze abbinate presso lo stesso assicuratore e assenza di sinistri per più anni portano spesso sconti aggiuntivi."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Domande Frequenti",
+        "items": [
+          {
+            "question": "Quanto è precisa la stima?",
+            "answer": "Questo calcolatore offre un punto di partenza realistico basato su costi di ricostruzione tipici, moltiplicatori di rischio e standard di mercato. Costi e premi reali variano per compagnia, regione e caratteristiche dell'immobile. Usa la stima come guida e confrontala con preventivi di assicuratori autorizzati."
+          },
+          {
+            "question": "Perché il costo di ricostruzione differisce dal valore di mercato?",
+            "answer": "Il valore di mercato include terreno, posizione e domanda — nessuno di questi va ricostruito dopo un sinistro. Il costo di ricostruzione è solo prezzo di materiali e manodopera. A seconda del mercato, può essere molto più alto o più basso del valore di mercato."
+          },
+          {
+            "question": "Cosa significa rischio alto della zona?",
+            "answer": "Le zone ad alto rischio includono aree esposte ad alluvioni, zone sismiche, regioni costiere soggette a tempeste e quartieri con elevata criminalità. L'assicuratore o le mappe di rischio locali possono confermare la classificazione del tuo indirizzo."
+          },
+          {
+            "question": "Perché il 25% del fabbricato per la responsabilità?",
+            "answer": "Il 25% è un punto di partenza comune, ma molti proprietari scelgono limiti di responsabilità più elevati perché il costo marginale è basso rispetto alla protezione. Con un patrimonio rilevante, considera una polizza ombrello aggiuntiva."
+          },
+          {
+            "question": "Il calcolatore considera terremoti o alluvioni?",
+            "answer": "No — i danni da terremoto e alluvione sono solitamente esclusi dalle polizze standard e richiedono coperture separate. Questo calcolatore stima solo la copertura standard dell'abitazione."
+          },
+          {
+            "question": "Quanto spesso aggiornare la copertura?",
+            "answer": "Rivedi la copertura almeno ogni due o tre anni, o dopo ristrutturazioni importanti, acquisti di oggetti costosi o forti cambiamenti nei costi di costruzione. L'inflazione può rendere rapidamente inadeguate le polizze più vecchie."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Scopri Altri Strumenti Finanziari",
+        "description": "Esplora la nostra collezione di calcolatori finanziari gratuiti per prestiti, investimenti, budget e altro."
+      }
+    },
+    "es": {
+      "slug": "calculadora-cobertura-seguro-hogar",
+      "meta": {
+        "title": "Calculadora Cobertura Seguro Hogar – Estima la Cobertura Recomendada | ToolFrame",
+        "description": "Calculadora gratuita de cobertura de seguro de hogar. Estima las coberturas de continente, contenido y responsabilidad civil según la superficie, el tipo de construcción y el riesgo de la zona. Incluye prima anual estimada.",
+        "keywords": ["calculadora seguro hogar", "cobertura seguro casa", "seguro continente", "seguro contenido", "responsabilidad civil hogar", "prima seguro hogar", "coste reconstruccion casa", "calculadora poliza hogar"]
+      },
+      "hero": {
+        "headline": "Calculadora Cobertura Seguro Hogar",
+        "description": "Estima la cobertura necesaria para tu seguro de hogar. Introduce la superficie, tipo de construcción, riesgo de la zona y valor del contenido para ver las coberturas recomendadas de continente, contenido y responsabilidad civil, además de una prima anual estimada."
+      },
+      "tool": {
+        "propertySizeLabel": "Superficie de la Vivienda",
+        "propertySizePlaceholder": "ej. 100",
+        "propertySizeUnit": "m²",
+        "constructionLabel": "Tipo de Construcción",
+        "constructionMasonry": "Mampostería (ladrillo / hormigón / piedra)",
+        "constructionMixed": "Mixta (parte mampostería, parte madera)",
+        "constructionWood": "Estructura de madera",
+        "constructionPrefab": "Prefabricada / ligera",
+        "riskLabel": "Riesgo de la Zona",
+        "riskLow": "Bajo",
+        "riskMedium": "Medio",
+        "riskHigh": "Alto",
+        "contentsLabel": "Valor del Contenido",
+        "contentsPlaceholder": "ej. 25000",
+        "currencyLabel": "Moneda",
+        "resultDwelling": "Cobertura Continente",
+        "resultContents": "Cobertura Contenido",
+        "resultLiability": "Responsabilidad Civil",
+        "resultTotal": "Cobertura Total",
+        "summaryTitle": "Desglose de la Cobertura",
+        "summaryRebuildRate": "Coste de reconstrucción por m²",
+        "summaryRiskAdjustment": "Ajuste por riesgo",
+        "summaryDwelling": "Cobertura continente",
+        "summaryContents": "Cobertura contenido",
+        "summaryLiability": "Responsabilidad civil",
+        "summaryPremiumRange": "Prima anual estimada",
+        "summaryTotal": "Cobertura total recomendada",
+        "currencySymbol": "€"
+      },
+      "howItWorks": {
+        "sectionTitle": "Cómo Usar la Calculadora",
+        "steps": [
+          {
+            "title": "Ingresa los Datos de la Vivienda",
+            "description": "Introduce la superficie en metros cuadrados y selecciona el tipo de construcción — mampostería, mixta, madera o prefabricada."
+          },
+          {
+            "title": "Elige el Riesgo y Valor del Contenido",
+            "description": "Selecciona el nivel de riesgo de la zona (bajo, medio o alto) e introduce el valor estimado de tus pertenencias."
+          },
+          {
+            "title": "Consulta la Cobertura Recomendada",
+            "description": "Ve al instante las coberturas de continente, contenido, responsabilidad civil y total, junto con una prima anual estimada."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "Por Qué Usar Nuestra Calculadora",
+        "sectionDescription": "Toma decisiones informadas sobre tu seguro de hogar con estimaciones realistas.",
+        "items": [
+          {
+            "icon": "home",
+            "title": "Coste de Reconstrucción",
+            "description": "La cobertura de continente se basa en el tipo de construcción y la zona — no en el valor de mercado — para reflejar el coste real de reconstrucción."
+          },
+          {
+            "icon": "shield",
+            "title": "Cobertura Ajustada al Riesgo",
+            "description": "El riesgo de la zona ajusta las recomendaciones de continente y contenido según la exposición local."
+          },
+          {
+            "icon": "package",
+            "title": "Protección del Contenido",
+            "description": "Introduce el valor de tus pertenencias para ver cuánto debería cubrir la póliza del contenido."
+          },
+          {
+            "icon": "wallet",
+            "title": "Rango de Prima Anual",
+            "description": "Obtén un rango realista de prima anual (±15%) basado en la cobertura total recomendada."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Guía del Seguro de Hogar",
+        "articles": [
+          {
+            "title": "Cuánta Cobertura de Continente Necesitas",
+            "content": "La cobertura de continente debería reflejar el coste de reconstruir tu vivienda desde cero, no su valor de mercado. El coste de reconstrucción depende del tipo de construcción, la mano de obra y los materiales locales. Las viviendas de mampostería suelen costar más por metro cuadrado que las de estructura de madera o prefabricadas. La ubicación también influye — las zonas propensas a inundaciones, terremotos o tormentas tienen mayor riesgo, reflejado tanto en la prima como en la cobertura recomendada. Estar infraasegurado puede dejar una brecha importante tras un siniestro total, mientras que estar sobreasegurado significa pagar por una cobertura innecesaria."
+          },
+          {
+            "title": "Entender Contenido y Responsabilidad Civil",
+            "content": "La cobertura de contenido protege tus bienes personales — muebles, electrónica, ropa, electrodomésticos — si se dañan, destruyen o son robados. Una buena práctica es hacer un inventario completo habitación por habitación y estimar el coste de reposición. No olvides joyas, obras de arte o instrumentos musicales, que pueden requerir cláusulas específicas. La responsabilidad civil te protege si alguien se lesiona en tu vivienda o si tú o un familiar causan daños a terceros. Una recomendación habitual es fijarla en al menos el 25% de la cobertura de continente."
+          },
+          {
+            "title": "Qué Influye en Tu Prima",
+            "content": "La prima depende de varios factores: suma total asegurada (continente + contenido + responsabilidad), tipo de construcción, antigüedad, estado del tejado, distancia al parque de bomberos y factores locales como clima, delincuencia y riesgos naturales. Detectores de humo, alarmas o un tejado reforzado pueden reducir la prima. Subir la franquicia también reduce la prima anual pero incrementa lo que pagarás en caso de siniestro. Agrupar pólizas con la misma aseguradora y años sin siniestros suelen dar descuentos adicionales."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Preguntas Frecuentes",
+        "items": [
+          {
+            "question": "¿Qué tan precisa es la estimación?",
+            "answer": "Esta calculadora ofrece un punto de partida realista basado en costes típicos de reconstrucción, multiplicadores de riesgo y estándares del mercado. Los costes y primas reales varían según aseguradora, región y características del inmueble. Usa la estimación como guía y compárala con presupuestos de aseguradoras autorizadas."
+          },
+          {
+            "question": "¿Por qué difiere el coste de reconstrucción del valor de mercado?",
+            "answer": "El valor de mercado incluye terreno, ubicación y demanda — ninguno necesita reconstruirse tras un siniestro. El coste de reconstrucción es solo el precio de materiales y mano de obra. Dependiendo del mercado, puede ser significativamente superior o inferior al valor de mercado."
+          },
+          {
+            "question": "¿Qué se considera riesgo alto de zona?",
+            "answer": "Las zonas de alto riesgo incluyen áreas inundables, sísmicas, costeras expuestas a tormentas y barrios con alta delincuencia. Tu aseguradora o el mapa de riesgos local pueden confirmar la clasificación de tu dirección."
+          },
+          {
+            "question": "¿Por qué la responsabilidad se recomienda al 25% del continente?",
+            "answer": "El 25% es un punto de partida común, pero muchos propietarios eligen límites más altos porque el coste marginal es bajo en comparación con la protección. Si tienes un patrimonio considerable, considera una póliza paraguas adicional."
+          },
+          {
+            "question": "¿La calculadora contempla terremotos o inundaciones?",
+            "answer": "No — los daños por terremoto e inundación suelen excluirse de las pólizas estándar y requieren coberturas específicas. Esta calculadora estima solo la cobertura estándar de hogar."
+          },
+          {
+            "question": "¿Con qué frecuencia debo actualizar la cobertura?",
+            "answer": "Revisa tu cobertura al menos cada dos o tres años, o cuando hagas una reforma importante, compres objetos caros o veas grandes cambios en los costes de construcción. La inflación puede dejar rápidamente una póliza antigua insuficiente."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Explora Más Herramientas Financieras",
+        "description": "Descubre nuestra colección de calculadoras financieras gratuitas para préstamos, inversiones, presupuestos y más."
+      }
+    }
+  }
+}
