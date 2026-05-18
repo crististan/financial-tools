@@ -142,6 +142,7 @@ const toolModules: Record<string, () => Promise<ToolData>> = {
     "moving-cost-estimator": () => import("@/data/tools/moving-cost-estimator.json").then((m) => m.default as unknown as ToolData),
     "emergency-fund-calculator": () => import("@/data/tools/emergency-fund-calculator.json").then((m) => m.default as unknown as ToolData),
     "home-insurance-coverage-calculator": () => import("@/data/tools/home-insurance-coverage-calculator.json").then((m) => m.default as unknown as ToolData),
+    "mortgage-credit-simulator": () => import("@/data/tools/mortgage-credit-simulator.json").then((m) => m.default as unknown as ToolData),
 };
 
 const toolIds = Object.keys(toolModules);

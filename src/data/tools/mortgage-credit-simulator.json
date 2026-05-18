@@ -1,0 +1,246 @@
+{
+  "id": "mortgage-credit-simulator",
+  "component": "mortgage-credit-simulator",
+  "iconPath": "/icons/mortgage-credit-simulator-icon.svg",
+  "categories": ["financial"],
+  "applicationCategory": "FinanceApplication",
+  "layout": "fullwidth",
+  "config": {},
+  "translations": {
+    "ro": {
+      "slug": "simulator-credit-imobiliar",
+      "meta": {
+        "title": "Simulator Credit Imobiliar România 2026 — Calculator Rată, DAE, Comparație",
+        "description": "Simulator credit imobiliar pentru România 2026. Calculează rata lunară, dobânda totală, DAE și graficul de amortizare. Compară două oferte simultan: dobândă fixă vs variabilă (IRCC + marjă). Include verificarea gradului de îndatorare BNR (40%).",
+        "keywords": [
+          "simulator credit imobiliar",
+          "calculator credit imobiliar",
+          "calculator credit ipotecar",
+          "rata lunara credit",
+          "DAE credit imobiliar",
+          "IRCC 2026",
+          "grad indatorare",
+          "credit casa",
+          "calculator ipoteca",
+          "dobanda fixa vs variabila",
+          "simulator ipotecar romania",
+          "comparatie credite imobiliare"
+        ]
+      },
+      "hero": {
+        "headline": "Simulator Credit Imobiliar România",
+        "description": "Calculează rata lunară, dobânda totală și DAE pentru creditul tău imobiliar. Compară simultan două oferte cu dobândă fixă sau variabilă (IRCC + marjă) și verifică gradul de îndatorare conform regulilor BNR pentru România 2026."
+      },
+      "tool": {
+        "common": {
+          "monthlyIncomeLabel": "Venit lunar net (lei)",
+          "monthlyIncomePlaceholder": "ex. 8000",
+          "monthlyIncomeHelp": "Folosit pentru verificarea gradului de îndatorare (limita BNR este 40%).",
+          "currency": "lei",
+          "irccLabel": "IRCC curent",
+          "irccSource": "Sursa: BNR",
+          "compareTitle": "Compară 2 oferte de credit imobiliar"
+        },
+        "offerA": {
+          "title": "Oferta A",
+          "subtitle": "Prima ofertă"
+        },
+        "offerB": {
+          "title": "Oferta B",
+          "subtitle": "A doua ofertă"
+        },
+        "offer": {
+          "loanAmountLabel": "Sumă credit (lei)",
+          "loanAmountPlaceholder": "ex. 350000",
+          "downPaymentLabel": "Avans (%)",
+          "downPaymentPlaceholder": "ex. 20",
+          "downPaymentHelp": "Minim 15% pentru credit imobiliar standard în România.",
+          "termLabel": "Perioadă (ani)",
+          "termPlaceholder": "ex. 25",
+          "rateTypeLabel": "Tip dobândă",
+          "rateTypeFixed": "Fixă",
+          "rateTypeVariable": "Variabilă (IRCC + marjă)",
+          "fixedRateLabel": "Rată dobândă anuală (%)",
+          "fixedRatePlaceholder": "ex. 6.5",
+          "marginLabel": "Marja băncii (%)",
+          "marginPlaceholder": "ex. 2.0",
+          "marginHelp": "Marja adăugată peste IRCC. Verifică oferta băncii.",
+          "computedRateLabel": "Rată efectivă (IRCC + marjă)",
+          "propertyValueLabel": "Valoare proprietate",
+          "results": {
+            "monthlyPaymentLabel": "Rata Lunară",
+            "totalPaymentLabel": "Total de Plătit",
+            "totalInterestLabel": "Dobânda Totală",
+            "daeLabel": "DAE",
+            "daeTooltip": "Dobânda Anuală Efectivă — include rata nominală și toate comisioanele cunoscute."
+          }
+        },
+        "comparison": {
+          "title": "Rezumat comparație",
+          "monthlyDiffLabel": "Diferență rată lunară",
+          "totalInterestDiffLabel": "Diferență dobândă totală",
+          "betterOfferLabel": "Ofertă mai avantajoasă",
+          "savingsLabel": "Economie totală",
+          "noDifferenceLabel": "Ofertele sunt identice",
+          "selectBoth": "Completează ambele oferte pentru a vedea comparația."
+        },
+        "debtCheck": {
+          "title": "Verificare grad îndatorare",
+          "okLabel": "În limită (sub 40% din venit)",
+          "warningLabel": "Atenție — grad de îndatorare peste limita BNR",
+          "warningText": "Suma ratelor depășește 40% din venitul tău lunar net, limita maximă admisă de BNR pentru credite în lei. Banca probabil nu va aproba creditul cu acești parametri.",
+          "ratioLabel": "Grad de îndatorare",
+          "monthlyIncomeRequiredLabel": "Venit minim necesar pentru această rată"
+        },
+        "amortization": {
+          "toggleLabelA": "Afișează graficul de amortizare — Oferta A",
+          "toggleLabelB": "Afișează graficul de amortizare — Oferta B",
+          "sectionTitleA": "Grafic de amortizare — Oferta A",
+          "sectionTitleB": "Grafic de amortizare — Oferta B",
+          "sectionDescription": "Vezi cum se împarte fiecare rată lunară între principal și dobândă pe toată durata creditului.",
+          "headers": {
+            "month": "Luna",
+            "payment": "Rata",
+            "principal": "Principal",
+            "interest": "Dobândă",
+            "balance": "Sold Rămas"
+          }
+        }
+      },
+      "howItWorks": {
+        "sectionTitle": "Cum folosești simulatorul",
+        "steps": [
+          {
+            "number": 1,
+            "icon": "dollarSign",
+            "title": "Introdu venitul lunar",
+            "description": "Adaugă venitul tău net lunar. Va fi folosit pentru a verifica gradul de îndatorare, conform limitei BNR de 40%."
+          },
+          {
+            "number": 2,
+            "icon": "fileText",
+            "title": "Completează prima ofertă",
+            "description": "Introdu suma creditului, avansul, perioada și tipul dobânzii. Pentru dobândă variabilă, folosește IRCC actual + marja băncii. Vezi instant rata lunară, dobânda totală și DAE."
+          },
+          {
+            "number": 3,
+            "icon": "arrowLeftRight",
+            "title": "Adaugă a doua ofertă",
+            "description": "Completează parametrii ofertei B pentru a o compara cu prima. Vei vedea diferența de rată lunară, dobândă totală și care este oferta mai avantajoasă pe termen lung."
+          },
+          {
+            "number": 4,
+            "icon": "table",
+            "title": "Vezi graficul de amortizare",
+            "description": "Activează graficul de amortizare pentru fiecare ofertă pentru a vedea exact cum scade soldul lună de lună și cum se împarte rata între principal și dobândă."
+          }
+        ]
+      },
+      "features": {
+        "sectionTitle": "De ce să folosești simulatorul",
+        "sectionDescription": "Tool complet pentru analiza creditelor imobiliare din România, adaptat regulilor BNR și pieței bancare locale.",
+        "items": [
+          {
+            "icon": "arrowLeftRight",
+            "title": "Comparare două oferte simultan",
+            "description": "Vezi side-by-side oferta A vs oferta B. Identifică imediat care variantă te costă mai puțin pe termen lung și care are rata lunară mai mică."
+          },
+          {
+            "icon": "Calculator",
+            "title": "Dobândă fixă sau variabilă",
+            "description": "Modelează ambele scenarii: dobândă fixă pe toată perioada sau dobândă variabilă (IRCC + marja băncii). IRCC actual este preluat automat."
+          },
+          {
+            "icon": "shield",
+            "title": "Verificare grad îndatorare BNR",
+            "description": "Verifică automat dacă rata lunară se încadrează în limita de 40% din venit, regula obligatorie BNR pentru credite imobiliare în lei."
+          },
+          {
+            "icon": "table",
+            "title": "Grafic complet de amortizare",
+            "description": "Vezi luna cu lună cum se împarte rata între principal și dobândă, cu soldul rămas — separat pentru fiecare ofertă."
+          },
+          {
+            "icon": "TrendingUp",
+            "title": "DAE corect calculat",
+            "description": "Calculul DAE include rata nominală și comisioanele configurabile. Înțelegi costul real al creditului, nu doar dobânda anunțată."
+          }
+        ]
+      },
+      "educational": {
+        "sectionTitle": "Ghid: Creditul Imobiliar în România 2026",
+        "articles": [
+          {
+            "title": "Ce este IRCC și cum se calculează rata variabilă?",
+            "content": "IRCC (Indicele de Referință pentru Creditele Consumatorilor) este indicele de referință stabilit de BNR, calculat ca media aritmetică a dobânzilor zilnice ale tranzacțiilor interbancare din trimestrul anterior. Se actualizează trimestrial. Pentru un credit cu dobândă variabilă, rata anuală finală este IRCC + marja băncii (de obicei între 1.5% și 3%). De exemplu, dacă IRCC este 5.59% și marja băncii este 2%, dobânda anuală efectivă va fi 7.59%. Important: marja rămâne constantă pe toată durata creditului, dar IRCC se schimbă trimestrial, astfel încât rata lunară poate crește sau scădea."
+          },
+          {
+            "title": "Dobândă fixă vs dobândă variabilă — care este mai bună?",
+            "content": "Dobânda fixă oferă predictibilitate: rata lunară rămâne aceeași pe toată perioada creditului (sau pe o perioadă inițială, de exemplu 5-7 ani, după care devine variabilă). Este preferată în perioade de creștere a dobânzilor BNR. Dobânda variabilă (IRCC + marjă) începe de obicei mai jos, dar poate crește dacă BNR mărește dobânda de politică monetară. Este preferată în perioade de scădere a dobânzilor. Pentru un credit pe 25-30 ani, simularea cu ambele opțiuni te ajută să înțelegi costul total în fiecare scenariu — folosește funcția de comparare pentru a vedea diferența pe perioada completă."
+          },
+          {
+            "title": "Cum se calculează DAE (Dobânda Anuală Efectivă)?",
+            "content": "DAE include rata nominală a dobânzii plus toate comisioanele cunoscute la momentul acordării creditului: comision de analiză dosar, comision de administrare lunar, asigurarea obligatorie a imobilului, asigurarea de viață (dacă e cerută) și alte taxe. DAE este mai mare decât rata nominală a dobânzii și reprezintă costul real, exprimat anual. Conform legislației (OUG 50/2010), băncile sunt obligate să afișeze DAE pentru orice ofertă de credit, pentru ca să poți compara real ofertele diferitelor bănci."
+          },
+          {
+            "title": "Gradul de îndatorare — limita BNR de 40%",
+            "content": "Conform Regulamentului BNR nr. 17/2012, gradul total de îndatorare pentru credite imobiliare în lei nu poate depăși 40% din venitul net lunar al solicitantului. Pentru credite în valută, limita este mai strictă: 20% din venit. Aceste limite se aplică la suma TOATELOR ratelor lunare ale persoanei (credite existente + creditul nou). Dacă suma depășește limita, banca va refuza creditul sau va cere o sumă mai mică, o perioadă mai lungă, sau un co-debitor. Simulatorul nostru calculează automat gradul de îndatorare și te avertizează dacă rata depășește limita."
+          },
+          {
+            "title": "Cât avans este necesar pentru un credit imobiliar?",
+            "content": "Avansul minim standard pentru un credit imobiliar în România este de 15% din valoarea imobilului (LTV maxim de 85%). Pentru a doua locuință sau pentru imobile cu valoare ridicată, băncile pot cere avans mai mare (20-30%). Cu cât avansul este mai mare, cu atât rata lunară și dobânda totală sunt mai mici. Cumpărarea cu avans de 30% în loc de 15% poate reduce dobânda totală cu zeci de mii de lei pe parcursul a 25-30 de ani. Avansul nu include comisioanele notariale, taxele de înregistrare la Cartea Funciară și evaluarea imobilului — bugetează separat aceste costuri."
+          }
+        ]
+      },
+      "faq": {
+        "sectionTitle": "Întrebări frecvente",
+        "items": [
+          {
+            "question": "Care este valoarea IRCC actuală în 2026?",
+            "answer": "IRCC este de aproximativ 5.59% în T1 2026. Valoarea se actualizează trimestrial de către BNR. În simulator, IRCC-ul afișat este valoarea curentă; pentru oferte concrete, verifică pe site-ul BNR sau cere o ofertă personalizată de la bancă."
+          },
+          {
+            "question": "Care este diferența între dobânda nominală și DAE?",
+            "answer": "Dobânda nominală este procentul anual aplicat soldului creditului. DAE (Dobânda Anuală Efectivă) include rata nominală plus toate comisioanele cunoscute: analiză dosar, administrare lunară, asigurări obligatorii. DAE reflectă costul real al creditului și este mai mare decât rata nominală. Conform legii, băncile trebuie să afișeze DAE pentru a permite comparații corecte între oferte."
+          },
+          {
+            "question": "Cât avans trebuie să am pentru un credit imobiliar?",
+            "answer": "Minim 15% din valoarea proprietății pentru un credit imobiliar standard, conform reglementărilor BNR. Pentru a doua locuință sau imobile premium, băncile pot cere 20-30% avans. Cu cât avansul este mai mare, cu atât scade dobânda totală plătită pe durata creditului."
+          },
+          {
+            "question": "Cum verific dacă mă încadrez în gradul de îndatorare?",
+            "answer": "Gradul de îndatorare este suma TOATELOR ratelor lunare (credite existente + creditul nou) împărțită la venitul net lunar. Pentru credite în lei, limita BNR este 40%. Pentru exemplu: cu venit de 8.000 lei, rata maximă totală admisă este 3.200 lei. Simulatorul verifică automat acest lucru și te avertizează dacă rata depășește limita."
+          },
+          {
+            "question": "Cum se calculează rata lunară?",
+            "answer": "Formula este: M = P × [r(1+r)^n] / [(1+r)^n − 1], unde P este suma creditată (sumă credit − avans), r este rata lunară a dobânzii (rata anuală / 12 / 100) și n este numărul total de luni. Aceasta este formula standard de amortizare folosită de toate băncile."
+          },
+          {
+            "question": "Dobânda fixă sau variabilă — ce să aleg?",
+            "answer": "Depinde de orizont și apetit pentru risc. Dobânda fixă oferă predictibilitate — știi exact câți lei plătești în fiecare lună, indiferent de schimbările dobânzii de politică monetară. Dobânda variabilă (IRCC + marjă) începe de obicei mai jos, dar poate crește dacă BNR mărește dobânda. Pentru credite pe 25-30 ani, multe bănci oferă dobândă fixă inițial (5-10 ani) și apoi variabilă. Folosește simulatorul pentru a compara ambele scenarii."
+          },
+          {
+            "question": "Pot rambursa anticipat creditul imobiliar?",
+            "answer": "Da. Conform legii, băncile NU pot percepe comision pentru rambursare anticipată parțială sau totală la creditele cu dobândă variabilă. Pentru credite cu dobândă fixă, băncile pot percepe un comision de maxim 1% din suma rambursată anticipat (0.5% dacă perioada rămasă este sub 1 an). Rambursarea anticipată reduce dobânda totală plătită — chiar și plăți suplimentare mici, lună de lună, pot economisi mii de lei pe durata creditului."
+          },
+          {
+            "question": "Ce comisioane suplimentare am la creditul imobiliar?",
+            "answer": "Pe lângă dobândă, există: comision analiză dosar (de obicei 0% sau o sumă fixă), comision administrare lunar (la unele bănci, sub 0.1% din sold), asigurare imobil (obligatorie, ~150-300 lei/an), asigurare de viață (opțională, dar uneori cerută), evaluarea imobilului (350-650 lei, plătită o singură dată), taxe notariale (~1-2% din valoarea proprietății) și înregistrare la Cartea Funciară. Toate aceste costuri se reflectă în DAE."
+          },
+          {
+            "question": "Care este perioada maximă pentru un credit imobiliar?",
+            "answer": "Perioada maximă standard este 30 de ani. Unele bănci oferă până la 35 de ani pentru clienți tineri. Important: la finalul creditului, debitorul trebuie să nu depășească o anumită vârstă (de obicei 65-70 ani). Perioade mai lungi înseamnă rate lunare mai mici, dar dobândă totală semnificativ mai mare — diferența între un credit pe 20 vs 30 de ani poate fi de zeci de mii de lei."
+          },
+          {
+            "question": "Cât de exacte sunt rezultatele simulatorului?",
+            "answer": "Calculele folosesc formulele standard de amortizare folosite de toate băncile din România. Rata lunară, dobânda totală și DAE sunt mathematic exacte pe baza datelor introduse. Diferențe minore pot apărea în oferta reală a băncii din cauza: comisioanelor specifice fiecărei bănci, asigurărilor (obligatorii sau opționale), eventualelor produse legate (card, cont curent), promoții temporare. Pentru o ofertă oficială, solicită mereu un cont de credit personalizat de la bancă."
+          }
+        ]
+      },
+      "cta": {
+        "title": "Alte instrumente financiare",
+        "description": "Explorează celelalte calculatoare financiare adaptate pentru România: salariu, șomaj, pensie și rate credit."
+      }
+    }
+  }
+}

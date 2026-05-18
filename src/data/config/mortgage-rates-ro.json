@@ -1,0 +1,38 @@
+{
+  "currency": "lei",
+  "ircc": {
+    "value": 5.59,
+    "lastUpdated": "2026-Q1",
+    "source": "BNR — Indicele de Referință pentru Creditele Consumatorilor"
+  },
+  "defaultRates": {
+    "fixedRateDefault": 6.5,
+    "variableMarginDefault": 2.0
+  },
+  "limits": {
+    "minDownPaymentPercent": 15,
+    "maxDebtToIncomePercent": 40,
+    "minTermYears": 5,
+    "maxTermYears": 30,
+    "minLoanAmount": 50000,
+    "maxLoanAmount": 2000000
+  },
+  "fees": {
+    "applicationFeePercent": 0,
+    "applicationFeeMax": 0,
+    "monthlyAdminFeePercent": 0,
+    "propertyInsuranceAnnualPercent": 0,
+    "lifeInsuranceAnnualPercent": 0
+  },
+  "defaults": {
+    "loanAmount": 350000,
+    "downPaymentPercent": 20,
+    "termYears": 25,
+    "monthlyIncome": 8000
+  },
+  "metadata": {
+    "dataSource": "default",
+    "futureApiEndpoint": "/api/mortgage-rates-ro",
+    "notes": "Valorile sunt orientative. IRCC se actualizează trimestrial de BNR. Comisioanele și asigurările au valori default 0; pot fi populate prin API extern sau hardcodate per bancă."
+  }
+}
